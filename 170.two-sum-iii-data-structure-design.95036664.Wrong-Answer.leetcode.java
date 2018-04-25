@@ -14,13 +14,13 @@ public class TwoSum
         {
             int key = ent.getKey();
             int target = val - key;
-            
+
             if (map.containsKey(target))
             {
                 return true;
             }
         }
-        
+
         return false;
     }
 }

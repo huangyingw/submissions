@@ -29,7 +29,7 @@ public class WordDistance
         while (i < idx1.size() && j < idx2.size())
         {
             distance = Math.min(distance, Math.abs(idx1.get(i) - idx2.get(j)));
-            
+
             if (idx1.get(i) < idx2.get(j))
             {
                 i++;
@@ -39,7 +39,7 @@ public class WordDistance
                 j++;
             }
         }
-        
+
         return distance;
     }
 }

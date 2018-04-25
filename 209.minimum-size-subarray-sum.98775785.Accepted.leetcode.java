@@ -17,7 +17,7 @@ public class Solution
                 min = Math.min(min, right - left);
                 sum -= nums[left++];
             }
-       }
+        }
 
         return min == Integer.MAX_VALUE ? 0 : min;
     }

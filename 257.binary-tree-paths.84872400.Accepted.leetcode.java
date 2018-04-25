@@ -20,13 +20,13 @@ public class Solution
             return;
         }
 
-        if(out.length() > 0)
+        if (out.length() > 0)
         {
             out += "->";
         }
-        
+
         out += root.val;
-        
+
         if (root.left == null && root.right == null)
         {
             result.add(out);

@@ -6,8 +6,11 @@ public class Solution
         {
             return 0;
         }
-        if(num.length == 1)
+
+        if (num.length == 1)
+        {
             return num[0];
+        }
 
         int n = num.length;
         int[] dp = new int[n];

@@ -8,7 +8,7 @@ public class TwoSum
         {
             map.put(input, 0);
         }
-        
+
         map.put(input, map.get(input) + 1);
     }
 
@@ -18,25 +18,25 @@ public class TwoSum
         {
             int key = ent.getKey();
             int target = val - key;
-            
+
             if (key == target)
             {
                 if (ent.getValue() > 1)
                 {
-                    return true;    
+                    return true;
                 }
                 else
                 {
                     continue;
                 }
             }
-            
+
             if (map.containsKey(target))
             {
                 return true;
             }
         }
-        
+
         return false;
     }
 }

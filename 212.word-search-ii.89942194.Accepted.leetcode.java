@@ -5,7 +5,7 @@ public class Solution
         Set<String> result = new HashSet<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return new ArrayList<String>(result);
         }
@@ -26,7 +26,7 @@ public class Solution
 
     private void dfs(char[][] board, int i, int j, String str, boolean[][] visited, Trie trie, Set<String> result)
     {
-        if (i < 0 || i>= board.length || j < 0 || j >= board[0].length || visited[i][j])
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || visited[i][j])
         {
             return;
         }

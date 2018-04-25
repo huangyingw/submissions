@@ -19,7 +19,6 @@ public class Solution
                 {
                     num = 10 * num + (s.charAt(++i) - '0');
                 }
-
             }
             else if (c == '+' || c == '(')
             {

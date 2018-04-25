@@ -17,8 +17,6 @@ public class Solution
         }
 
         Iterator<Integer> iter = set1.iterator();
-
-        
         int[] result = new int[set1.size()];
         int i = 0;
 

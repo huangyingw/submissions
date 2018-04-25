@@ -7,22 +7,22 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution 
+public class Solution
 {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) 
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
     {
-        while(true)
+        while (true)
         {
-            if(root == null || p == null || q == null)
+            if (root == null || p == null || q == null)
             {
                 return null;
             }
-            
-            if(Math.max(p.val, q.val) < root.val)
+
+            if (Math.max(p.val, q.val) < root.val)
             {
                 root = root.left;
             }
-            else if(Math.min(p.val, q.val) > root.val)
+            else if (Math.min(p.val, q.val) > root.val)
             {
                 root = root.right;
             }

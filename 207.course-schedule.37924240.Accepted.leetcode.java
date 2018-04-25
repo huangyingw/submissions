@@ -1,55 +1,55 @@
-  public class Solution
-  {
+public class Solution
+{
     public boolean canFinish(int numCourses, int[][] prerequisites)
     {
-      List<List<Integer>> adjacencyList = new ArrayList<List<Integer>>();
-      int[] in = new int[numCourses];
+        List<List<Integer>> adjacencyList = new ArrayList<List<Integer>>();
+        int[] in = new int[numCourses];
 
-      for (int i = 0; i < numCourses; i++ )
-      {
-        adjacencyList.add(new ArrayList<Integer>());
-      }
-
-      for (int i = 0; i < prerequisites.length; i++ )
-      {
-        adjacencyList.get(prerequisites[i][1]).add(prerequisites[i][0]);
-        in[prerequisites[i][0]]++ ;
-      }
-
-      LinkedList<Integer> queue = new LinkedList<Integer>();
-
-      for (int i = 0; i < numCourses; ++i)
-      {
-        if (in[i] == 0)
+        for (int i = 0; i < numCourses; i++)
         {
-          queue.offer(i);
+            adjacencyList.add(new ArrayList<Integer>());
         }
-      }
 
-      while (!queue.isEmpty())
-      {
-        int t = queue.pop();
-
-        for (Integer a : adjacencyList.get(t))
+        for (int i = 0; i < prerequisites.length; i++)
         {
-          in[a]-- ;
-
-          if (in[a] == 0)
-          {
-            queue.offer(a);
-          }
+            adjacencyList.get(prerequisites[i][1]).add(prerequisites[i][0]);
+            in[prerequisites[i][0]]++ ;
         }
-      }
 
-      for (int i = 0; i < numCourses; ++i)
-      {
-        if (in[i] != 0)
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+
+        for (int i = 0; i < numCourses; ++i)
         {
-          return false;
+            if (in[i] == 0)
+            {
+                queue.offer(i);
+            }
         }
-      }
 
-      return true;
+        while (!queue.isEmpty())
+        {
+            int t = queue.pop();
+
+            for (Integer a : adjacencyList.get(t))
+            {
+                in[a]-- ;
+
+                if (in[a] == 0)
+                {
+                    queue.offer(a);
+                }
+            }
+        }
+
+        for (int i = 0; i < numCourses; ++i)
+        {
+            if (in[i] != 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
-  }
+}
 

@@ -9,7 +9,6 @@ public class Solution extends Reader4
         while (!eof && readBytes < n)
         {
             int sz = read4(buffer);
-
             int bytes = Math.min(n - readBytes, sz);
             System.arraycopy(buffer, 0, buf, readBytes, bytes);
             readBytes += bytes;

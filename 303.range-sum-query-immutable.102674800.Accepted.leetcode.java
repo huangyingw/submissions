@@ -9,7 +9,7 @@ public class NumArray
         for (int i = 1; i < nums.length; i++)
         {
             nums[i] += nums[i - 1];
-        }   
+        }
     }
 
     public int sumRange(int i, int j)
@@ -18,7 +18,7 @@ public class NumArray
         {
             return nums[j];
         }
-        
+
         return nums[j] - nums[i - 1];
     }
 }

@@ -10,6 +10,7 @@ public class Solution
         }
 
         Arrays.sort(num);
+
         for (int i = 0; i + 2 < num.length; i++)
         {
             if (i > 0 && num[i] == num[i - 1]) // avoid duplicate solutions
@@ -18,12 +19,11 @@ public class Solution
             }
 
             Set<Integer> set = new HashSet<Integer>();
-            
-            for(int j = i + 1; j + 1 < num.length; j++)
+
+            for (int j = i + 1; j + 1 < num.length; j++)
             {
-                if(set.contains(-num[i] - num[j]))
+                if (set.contains(-num[i] - num[j]))
                 {
-                    
                     List<Integer> temp = new ArrayList<Integer>();
                     temp.add(num[i]);
                     temp.add(num[j]);
@@ -35,9 +35,9 @@ public class Solution
                     set.add(num[j]);
                 }
             }
-      }
+        }
 
-      return res;
+        return res;
     }
 }
 

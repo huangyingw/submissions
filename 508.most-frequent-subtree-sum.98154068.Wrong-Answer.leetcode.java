@@ -48,8 +48,6 @@ public class Solution
         else
         {
             root.val = root.val + treeSum(map, root.left) + treeSum(map, root.right);
-
-
             return root.val;
         }
     }

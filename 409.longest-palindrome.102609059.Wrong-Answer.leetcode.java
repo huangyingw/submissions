@@ -23,7 +23,6 @@ public class Solution
             }
         }
 
- 
         return count * 2;
     }
 }

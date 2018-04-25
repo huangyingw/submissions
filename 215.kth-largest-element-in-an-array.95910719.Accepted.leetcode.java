@@ -41,7 +41,7 @@ public class Solution
     private int select(int[] nums, int k, int left, int right)
     {
         int pivot = partition(nums, left, right);
-        
+
         if (pivot + 1 == k)
         {
             return nums[pivot];

@@ -37,7 +37,6 @@ public class Solution
             }
         }
 
-
         int max = 0;
         int lastStart = 0;
 

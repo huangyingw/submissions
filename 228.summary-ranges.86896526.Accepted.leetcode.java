@@ -9,7 +9,7 @@ public class Solution
             return res;
         }
 
-        for (int start = 0, end = 0; end < nums.length; end++ , start = end)
+        for (int start = 0, end = 0; end < nums.length; end++, start = end)
         {
             while (end + 1 < nums.length && nums[end + 1] == nums[end] + 1)
             {

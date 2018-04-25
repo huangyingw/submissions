@@ -7,7 +7,7 @@ public class Solution extends Reader4
     public int read(char[] buf, int n)
     {
         int readBytes = 0;
-        
+
         while (!eof && readBytes < n)
         {
             int sz = (bufsize > 0) ? bufsize : read4(buffer);

@@ -23,19 +23,19 @@ public class Solution
             {
                 left++;
             }
-            
+
             while (left < right && !vowList.contains(arr[right]))
             {
                 right--;
             }
-            
+
             char temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
             left++;
             right--;
         }
-        
+
         return new String(arr);
     }
 }

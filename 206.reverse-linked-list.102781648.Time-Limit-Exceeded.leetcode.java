@@ -6,7 +6,7 @@ public class Solution
         {
             return head;
         }
-        
+
         ListNode ret = recursive(head);
         return ret;
     }

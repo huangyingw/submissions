@@ -14,7 +14,7 @@ public class TwoSum
         {
             int key = ent.getKey();
             int target = val - key;
-            
+
             if (map.containsKey(target))
             {
                 System.out.println("key --> " + key);
@@ -23,7 +23,7 @@ public class TwoSum
                 return true;
             }
         }
-        
+
         return false;
     }
 }

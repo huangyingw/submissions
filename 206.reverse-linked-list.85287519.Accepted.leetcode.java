@@ -3,7 +3,7 @@ public class Solution
     public ListNode reverseList(ListNode head)
     {
         ListNode prev = null;
-        
+
         while (head != null)
         {
             ListNode temp = head.next;
@@ -11,7 +11,7 @@ public class Solution
             prev = head;
             head = temp;
         }
-        
+
         return prev;
     }
 }

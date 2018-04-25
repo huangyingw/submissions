@@ -26,7 +26,7 @@ class Solution
                 end = mid;
             }
         }
-        
+
         return A[start] < A[end] ? end : start;
     }
 }

@@ -8,7 +8,7 @@ public class Solution
 
         while (k >= 0)
         {
-            if(j < 0 || A[i] >= B[j])
+            if (j < 0 || A[i] >= B[j])
             {
                 A[k-- ] = A[i-- ];
             }

@@ -5,7 +5,7 @@ public class Solution
         Set<String> result = new HashSet<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return new ArrayList<String>(result);
         }
@@ -32,7 +32,7 @@ public class Solution
         }
 
         System.out.println("str --> " + str);
-        
+
         if (trie.startWith(str).isWord)
         {
             result.add(str);

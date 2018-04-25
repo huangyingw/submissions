@@ -1,4 +1,4 @@
-public class Solution 
+public class Solution
 {
     public List<String> generateAbbreviations(String word)
     {
@@ -15,7 +15,7 @@ public class Solution
             {
                 cur += count;
             }
-                
+
             res.add(cur);
         }
         else

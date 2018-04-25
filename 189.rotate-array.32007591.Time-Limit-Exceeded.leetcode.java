@@ -1,23 +1,23 @@
-  public class Solution
-  {
+public class Solution
+{
     public void rotate(int[] nums, int k)
     {
-      if (nums == null || k < 0)
-      {
-        throw new IllegalArgumentException("Illegal argument!");
-      }
-
-      k %= nums.length;
-
-      for (int i = 0; i < k; i++ )
-      {
-        for (int j = nums.length - 1; j > 0; j-- )
+        if (nums == null || k < 0)
         {
-          int temp = nums[j];
-          nums[j] = nums[j - 1];
-          nums[j - 1] = temp;
+            throw new IllegalArgumentException("Illegal argument!");
         }
-      }
+
+        k %= nums.length;
+
+        for (int i = 0; i < k; i++)
+        {
+            for (int j = nums.length - 1; j > 0; j--)
+            {
+                int temp = nums[j];
+                nums[j] = nums[j - 1];
+                nums[j - 1] = temp;
+            }
+        }
     }
-  }
+}
 

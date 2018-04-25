@@ -10,11 +10,11 @@ public class Solution
         }
 
         int start = 0;
-        
+
         for (int end = 0; end < nums.length; end++)
         {
             start = end;
-            
+
             while (end + 1 < nums.length && nums[end + 1] == nums[end] + 1)
             {
                 end++ ;

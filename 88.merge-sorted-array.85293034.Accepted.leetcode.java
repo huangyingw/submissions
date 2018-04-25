@@ -5,8 +5,8 @@ public class Solution
         int i = m - 1;
         int j = n - 1;
         int k = m + n - 1;
-        
-        for(; k >= 0; k--)
+
+        for (; k >= 0; k--)
         {
             if (j < 0 || (i >= 0 && A[i] >= B[j]))
             {
@@ -15,7 +15,7 @@ public class Solution
             else
             {
                 A[k] = B[j--];
-            }    
+            }
         }
     }
 }

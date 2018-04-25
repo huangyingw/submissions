@@ -1,26 +1,26 @@
-  public class Solution
-  {
+public class Solution
+{
     public ArrayList<Integer> preorderTraversal(TreeNode top)
     {
-      ArrayList<Integer> result = new ArrayList<Integer>();
-      Stack<TreeNode> stack = new Stack<TreeNode>();
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
 
-      while (!stack.empty() || null != top)
-      {
-        if (top != null)
+        while (!stack.empty() || null != top)
         {
-          stack.push(top);
-          result.add(top.val);
-          top = top.left;
+            if (top != null)
+            {
+                stack.push(top);
+                result.add(top.val);
+                top = top.left;
+            }
+            else
+            {
+                top = stack.pop();
+                top = top.right;
+            }
         }
-        else
-        {
-          top = stack.pop();
-          top = top.right;
-        }
-      }
 
-      return result;
+        return result;
     }
-  }
+}
 

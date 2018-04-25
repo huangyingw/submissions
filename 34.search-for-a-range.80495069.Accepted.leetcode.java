@@ -11,11 +11,11 @@ public class Solution
 
         int left = 0, right = nums.length - 1;
 
-        while(left + 1 < right)
+        while (left + 1 < right)
         {
             int mid = left + (right - left) / 2;
-            
-            if(nums[mid] >= target)
+
+            if (nums[mid] >= target)
             {
                 right = mid;
             }
@@ -24,20 +24,20 @@ public class Solution
                 left = mid;
             }
         }
-        
-        if(nums[left] == target)
+
+        if (nums[left] == target)
         {
             result[0] = left;
         }
-        else if(nums[right] == target)
+        else if (nums[right] == target)
         {
             result[0] = right;
         }
         else
         {
-            return result;    
+            return result;
         }
-        
+
         left = 0;
         right = nums.length - 1;
 
@@ -55,11 +55,11 @@ public class Solution
             }
         }
 
-        if(nums[right] == target)
+        if (nums[right] == target)
         {
             result[1] = right;
         }
-        else if(nums[left] == target)
+        else if (nums[left] == target)
         {
             result[1] = left;
         }
@@ -68,6 +68,7 @@ public class Solution
             result[0] = result[1] = -1;
             return result;
         }
+
         return result;
     }
 }

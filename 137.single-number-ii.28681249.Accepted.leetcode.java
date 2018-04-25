@@ -1,24 +1,24 @@
-  public class Solution
-  {
+public class Solution
+{
     public int singleNumber(int[] A)
     {
-      int res = 0;
-      int[] digits = new int[32];
+        int res = 0;
+        int[] digits = new int[32];
 
-      for (int i = 0; i < 32; i++ )
-      {
-        for (int j = 0; j < A.length; j++ )
+        for (int i = 0; i < 32; i++)
         {
-          if (1 == ((A[j] >> i) & 1))
-          {
-            digits[i] = (digits[i] + 1) % 3;
-          }
+            for (int j = 0; j < A.length; j++)
+            {
+                if (1 == ((A[j] >> i) & 1))
+                {
+                    digits[i] = (digits[i] + 1) % 3;
+                }
+            }
+
+            res |= (digits[i] << i);
         }
 
-        res |= (digits[i] << i);
-      }
-
-      return res;
+        return res;
     }
-  }
+}
 

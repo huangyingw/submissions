@@ -35,7 +35,7 @@ class MyQueue
     public int pop()
     {
         int result = 0;
-        
+
         if (stack1.size() > 0)
         {
             result = stack1.pop();
@@ -44,7 +44,7 @@ class MyQueue
         {
             result = stack2.pop();
         }
-        
+
         return result;
     }
 

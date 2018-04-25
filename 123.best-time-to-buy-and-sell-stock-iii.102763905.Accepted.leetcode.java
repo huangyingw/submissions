@@ -6,7 +6,7 @@ public class Solution
         {
             return 0;
         }
-        
+
         int[] preProfit = new int[prices.length];
         preProfit[0] = 0;
         int minPrice = prices[0];

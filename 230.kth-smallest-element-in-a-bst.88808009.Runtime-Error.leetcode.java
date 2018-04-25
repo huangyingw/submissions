@@ -22,12 +22,12 @@ public class Solution
     private void inorderTraversal(TreeNode root, int k)
     {
         inorderTraversal(root.left, k);
-        
+
         if (++count == k)
         {
             result = root.val;
         }
-        
+
         inorderTraversal(root.right, k);
     }
 }

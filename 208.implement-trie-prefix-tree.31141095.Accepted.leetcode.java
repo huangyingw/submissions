@@ -1,99 +1,99 @@
 class TrieNode
 {
-  char content;
-  boolean isWord;
-  Map<Character, TrieNode> nexts;
+    char content;
+    boolean isWord;
+    Map<Character, TrieNode> nexts;
 
-  public TrieNode()
-  {
-    this.content = ' ';
-    this.isWord = false;
-    this.nexts = new HashMap<Character, TrieNode>();
-  }
+    public TrieNode()
+    {
+        this.content = ' ';
+        this.isWord = false;
+        this.nexts = new HashMap<Character, TrieNode>();
+    }
 
-  public TrieNode(char content)
-  {
-    this.content = content;
-    this.isWord = false;
-    this.nexts = new HashMap<Character, TrieNode>();
-  }
+    public TrieNode(char content)
+    {
+        this.content = content;
+        this.isWord = false;
+        this.nexts = new HashMap<Character, TrieNode>();
+    }
 }
 
 public class Trie
 {
-  private TrieNode root;
+    private TrieNode root;
 
-  public Trie()
-  {
-    root = new TrieNode();
-  }
-
-  // Inserts a word into the trie.
-  public void insert(String word)
-  {
-    if (search(word) == true)
+    public Trie()
     {
-      return;
+        root = new TrieNode();
     }
 
-    TrieNode current = root;
-
-    for (int i = 0; i < word.length(); i++ )
+    // Inserts a word into the trie.
+    public void insert(String word)
     {
-      char c = word.charAt(i);
-      TrieNode node = current.nexts.get(c);
+        if (search(word) == true)
+        {
+            return;
+        }
 
-      if (node == null)
-      {
-        current.nexts.put(c, new TrieNode(c));
-        node = current.nexts.get(c);
-      }
+        TrieNode current = root;
 
-      current = node;
+        for (int i = 0; i < word.length(); i++)
+        {
+            char c = word.charAt(i);
+            TrieNode node = current.nexts.get(c);
+
+            if (node == null)
+            {
+                current.nexts.put(c, new TrieNode(c));
+                node = current.nexts.get(c);
+            }
+
+            current = node;
+        }
+
+        current.isWord = true;
     }
 
-    current.isWord = true;
-  }
-
-  // Returns if the word is in the trie.
-  public boolean search(String word)
-  {
-    TrieNode current = root;
-
-    for (int i = 0; i < word.length(); i++ )
+    // Returns if the word is in the trie.
+    public boolean search(String word)
     {
-      TrieNode node = current.nexts.get(word.charAt(i));
+        TrieNode current = root;
 
-      if (node == null)
-      {
-        return false;
-      }
+        for (int i = 0; i < word.length(); i++)
+        {
+            TrieNode node = current.nexts.get(word.charAt(i));
 
-      current = node;
+            if (node == null)
+            {
+                return false;
+            }
+
+            current = node;
+        }
+
+        return current.isWord;
     }
 
-    return current.isWord;
-  }
-
-  // Returns if there is any word in the trie
-  // that starts with the given prefix.
-  public boolean startsWith(String prefix)
-  {
-    TrieNode current = root;
-
-    for (int i = 0; i < prefix.length(); i++ )
+    // Returns if there is any word in the trie
+    // that starts with the given prefix.
+    public boolean startsWith(String prefix)
     {
-      TrieNode node = current.nexts.get(prefix.charAt(i));
+        TrieNode current = root;
 
-      if (node == null)
-      {
-        return false;
-      }
+        for (int i = 0; i < prefix.length(); i++)
+        {
+            TrieNode node = current.nexts.get(prefix.charAt(i));
 
-      current = node;
+            if (node == null)
+            {
+                return false;
+            }
+
+            current = node;
+        }
+
+        return true;
     }
-
-    return true;
-  }
 }
 

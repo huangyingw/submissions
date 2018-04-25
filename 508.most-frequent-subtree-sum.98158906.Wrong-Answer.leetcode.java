@@ -22,8 +22,6 @@ public class Solution
 
         int[] res = new int[count];
         count = 0;
-
-        
         return res;
     }
 

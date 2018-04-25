@@ -15,7 +15,7 @@ public class Solution
     {
         Queue<WordNode> queue = new LinkedList<WordNode>();
         queue.add(new WordNode(beginWord, 1));
-        
+
         while (!queue.isEmpty())
         {
             WordNode top = queue.poll();
@@ -31,7 +31,7 @@ public class Solution
             for (int i = 0; i < arr.length; i++)
             {
                 char temp = arr[i];
-                
+
                 for (char c = 'a'; c <= 'z'; c++)
                 {
                     arr[i] = c;
@@ -43,7 +43,7 @@ public class Solution
                         wordDict.remove(newWord);
                     }
                 }
-                
+
                 arr[i] = temp;
             }
         }

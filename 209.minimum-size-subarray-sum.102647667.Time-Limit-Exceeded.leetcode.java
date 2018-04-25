@@ -24,7 +24,7 @@ public class Solution
                 min = Math.min(min, right - left + 1);
                 sum -= nums[left++];
             }
-            
+
             System.out.println(min);
             System.out.println();
         }

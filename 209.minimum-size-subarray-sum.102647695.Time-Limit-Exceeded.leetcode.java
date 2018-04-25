@@ -16,7 +16,7 @@ public class Solution
             {
                 sum += nums[++right];
             }
-            
+
             System.out.println(right);
             System.out.println(sum);
 
@@ -25,7 +25,7 @@ public class Solution
                 min = Math.min(min, right - left + 1);
                 sum -= nums[left++];
             }
-            
+
             System.out.println(min);
             System.out.println();
         }

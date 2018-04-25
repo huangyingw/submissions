@@ -31,7 +31,6 @@ public class Codec
     private TreeNode buildTree(Deque<String> nodes)
     {
         String val = nodes.remove();
-
         TreeNode node = new TreeNode(Integer.valueOf(val));
         node.left = buildTree(nodes);
         node.right = buildTree(nodes);

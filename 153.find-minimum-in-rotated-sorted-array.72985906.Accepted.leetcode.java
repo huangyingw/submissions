@@ -24,7 +24,7 @@ public class Solution
             }
         }
 
-        return Math.min(nums[left],nums[right]);
+        return Math.min(nums[left], nums[right]);
     }
 }
 

@@ -1,36 +1,52 @@
-public class Vector2D implements Iterator<Integer> {
+public class Vector2D implements Iterator<Integer>
+{
 
-    public Vector2D(List<List<Integer>> vec2d) {  
-        row = vec2d.iterator();  
-        if(row.hasNext())  
-            col = row.next().iterator();  
-    } 
-    
-    @Override
-    public Integer next() {
-        int lastValue = col.next();  
-        return lastValue;  
+    public Vector2D(List<List<Integer>> vec2d)
+    {
+        row = vec2d.iterator();
+
+        if (row.hasNext())
+        {
+            col = row.next().iterator();
+        }
     }
 
     @Override
-    public boolean hasNext() {
-            if(col == null) {  
-            return false;  
-        }  
-        if(col.hasNext()) {  
-            return true;  
-        } else {  
-            while(row.hasNext()) {  
-                col = row.next().iterator();  
-                if(col.hasNext())  
-                    return true;  
-            }  
-            return false;  
-        }  
-        
+    public Integer next()
+    {
+        int lastValue = col.next();
+        return lastValue;
     }
-    
-    private Iterator<List<Integer>> row = null;  
+
+    @Override
+    public boolean hasNext()
+    {
+        if (col == null)
+        {
+            return false;
+        }
+
+        if (col.hasNext())
+        {
+            return true;
+        }
+        else
+        {
+            while (row.hasNext())
+            {
+                col = row.next().iterator();
+
+                if (col.hasNext())
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    }
+
+    private Iterator<List<Integer>> row = null;
     private Iterator<Integer> col = null;
 }
 

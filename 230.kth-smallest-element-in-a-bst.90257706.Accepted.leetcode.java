@@ -12,7 +12,7 @@ class Solution
     int kthSmallest(TreeNode root, int k)
     {
         int left = findNodesSum(root.left);
-        
+
         if (left + 1 < k)
         {
             return kthSmallest(root.right, k - left - 1);
@@ -25,16 +25,15 @@ class Solution
         {
             return root.val;
         }
-
     }
 
     int findNodesSum(TreeNode root)
     {
         if (root == null)
         {
-            return 0;    
+            return 0;
         }
-        
+
         int left = findNodesSum(root.left);
         int right = findNodesSum(root.right);
         return left + right + 1;

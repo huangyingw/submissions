@@ -15,7 +15,7 @@ public class Solution
             {
                 idx2 = i;
             }
-            
+
             distance = Math.min(distance, Math.abs(idx1 - idx2));
         }
 

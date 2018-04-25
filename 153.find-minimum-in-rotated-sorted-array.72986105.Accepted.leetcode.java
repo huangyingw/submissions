@@ -12,11 +12,11 @@ public class Solution
 
         while (left + 1 < right)
         {
-            if(nums[left] < nums[right])
+            if (nums[left] < nums[right])
             {
-                return nums[left];    
+                return nums[left];
             }
-            
+
             int mid = left + (right - left) / 2;
 
             if (nums[mid] < nums[right])
@@ -29,7 +29,7 @@ public class Solution
             }
         }
 
-        return Math.min(nums[left],nums[right]);
+        return Math.min(nums[left], nums[right]);
     }
 }
 

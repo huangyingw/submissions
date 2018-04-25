@@ -1,24 +1,24 @@
-  public class Solution
-  {
+public class Solution
+{
     public ListNode removeElements(ListNode head, int val)
     {
-      ListNode dummy = new ListNode(0);
-      dummy.next = head;
-      ListNode p = dummy;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode p = dummy;
 
-      while (p.next != null)
-      {
-        if (p.next.val == val)
+        while (p.next != null)
         {
-          p.next = p.next.next;
+            if (p.next.val == val)
+            {
+                p.next = p.next.next;
+            }
+            else
+            {
+                p = p.next;
+            }
         }
-        else
-        {
-          p = p.next;
-        }
-      }
 
-      return dummy.next;
+        return dummy.next;
     }
-  }
+}
 

@@ -9,9 +9,9 @@ public class Codec
 
     private void buildString(TreeNode node, StringBuilder sb)
     {
-            sb.append(node.val + ",");
-            buildString(node.left, sb);
-            buildString(node.right, sb);
+        sb.append(node.val + ",");
+        buildString(node.left, sb);
+        buildString(node.right, sb);
     }
 
     public TreeNode deserialize(String data)

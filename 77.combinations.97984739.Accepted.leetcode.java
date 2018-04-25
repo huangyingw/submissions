@@ -19,7 +19,7 @@ public class Solution
         {
             cur.add(i);
             helper(i + 1, r, k - 1, res, cur);
-            cur.remove(cur.size() - 1);    
+            cur.remove(cur.size() - 1);
         }
     }
 }

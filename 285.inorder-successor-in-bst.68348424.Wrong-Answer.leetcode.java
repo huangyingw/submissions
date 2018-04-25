@@ -1,39 +1,39 @@
-  public class Solution
-  {
+public class Solution
+{
     public TreeNode minValue(TreeNode root)
     {
-      TreeNode nav = root;
+        TreeNode nav = root;
 
-      while (nav.left != null)
-      {
-        nav = nav.left;
-      }
+        while (nav.left != null)
+        {
+            nav = nav.left;
+        }
 
-      return nav;
+        return nav;
     }
     TreeNode inorderSuccessor(TreeNode cur, TreeNode target)
     {
-      if (target.right != null)
-      {
-        return minValue(target.right);
-      }
-
-      TreeNode pre = null;
-
-      while (cur != null)
-      {
-        if (cur.val > target.val)
+        if (target.right != null)
         {
-          pre = cur;
-          cur = cur.left;
+            return minValue(target.right);
         }
-        else
-        {
-          break;
-        }
-      }
 
-      return pre;
+        TreeNode pre = null;
+
+        while (cur != null)
+        {
+            if (cur.val > target.val)
+            {
+                pre = cur;
+                cur = cur.left;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return pre;
     }
-  }
+}
 

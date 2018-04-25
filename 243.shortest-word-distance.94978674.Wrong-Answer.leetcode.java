@@ -15,7 +15,7 @@ public class Solution
             {
                 p2 = i;
             }
-            
+
             System.out.println("p1 --> " + p1);
             System.out.println("p2 --> " + p2);
             distance = Math.min(distance, Math.abs(p1 - p2));

@@ -4,7 +4,7 @@ public class Solution
     {
         helper(root, null);
     }
-    
+
     public void helper(TreeNode root, TreeNode pre)
     {
         if (root == null)

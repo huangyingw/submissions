@@ -1,6 +1,6 @@
-public class Solution 
+public class Solution
 {
-    public ListNode detectCycle(ListNode head) 
+    public ListNode detectCycle(ListNode head)
     {
         ListNode fast = head;
         ListNode slow = head;
@@ -11,13 +11,13 @@ public class Solution
             {
                 return null;
             }
-            
+
             fast = fast.next.next;
             slow = slow.next;
         }
-        while (fast != slow); 
+        while (fast != slow);
 
-        while (fast != head) 
+        while (fast != head)
         {
             fast = fast.next;
             head = head.next;

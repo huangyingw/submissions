@@ -9,45 +9,49 @@ class Point
         this.flag = s;
     }
 }
- 
-public class Solution 
+
+public class Solution
 {
-    public int minMeetingRooms(Interval[] intervals) 
+    public int minMeetingRooms(Interval[] intervals)
     {
-        List<Point> list = new ArrayList<>(intervals.length*2);
-        for(Interval i : intervals)
+        List<Point> list = new ArrayList<>(intervals.length * 2);
+
+        for (Interval i : intervals)
         {
             list.add(new Point(i.start, 1));
             list.add(new Point(i.end, 0));
         }
-    
-        Collections.sort(list,new Comparator<Point>()
+
+        Collections.sort(list, new Comparator<Point>()
         {
             public int compare(Point p1, Point p2)
             {
-                if(p1.time == p2.time) 
+                if (p1.time == p2.time)
+                {
                     return p1.flag - p2.flag;
-                else 
+                }
+                else
+                {
                     return p1.time - p2.time;
+                }
             }
         });
-    
         int count = 0, ans = 0;
-        
-        for(Point p : list)
+
+        for (Point p : list)
         {
-            if(p.flag == 1) 
+            if (p.flag == 1)
             {
                 count++;
             }
-            else 
+            else
             {
                 count--;
             }
-            
+
             ans = Math.max(ans, count);
         }
-    
+
         return ans;
     }
 }

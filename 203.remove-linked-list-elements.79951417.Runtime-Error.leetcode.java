@@ -12,7 +12,7 @@ public class Solution
             {
                 p.next = p.next.next;
             }
-            
+
             p = p.next;
         }
 

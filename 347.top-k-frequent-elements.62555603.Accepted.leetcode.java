@@ -1,65 +1,65 @@
-  class Pair
-  {
+class Pair
+{
     int num;
     int count;
     public Pair(int num, int count)
     {
-      this.num = num;
-      this.count = count;
+        this.num = num;
+        this.count = count;
     }
-  }
-  public class Solution
-  {
+}
+public class Solution
+{
     public List<Integer> topKFrequent(int[] nums, int k)
     {
-      // count the frequency for each element
-      HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        // count the frequency for each element
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-      for (int num : nums)
-      {
-        if (map.containsKey(num))
+        for (int num : nums)
         {
-          map.put(num, map.get(num) + 1);
+            if (map.containsKey(num))
+            {
+                map.put(num, map.get(num) + 1);
+            }
+            else
+            {
+                map.put(num, 1);
+            }
         }
-        else
+
+        // create a min heap
+        PriorityQueue<Pair> queue =
+            new PriorityQueue<Pair>(new Comparator<Pair>()
         {
-          map.put(num, 1);
-        }
-      }
+            public int compare(Pair a, Pair b)
+            {
+                return a.count - b.count;
+            }
+        });
 
-      // create a min heap
-      PriorityQueue<Pair> queue =
-        new PriorityQueue<Pair>(new Comparator<Pair>()
-      {
-        public int compare(Pair a, Pair b)
+        // maintain a heap of size k.
+        for (Map.Entry<Integer, Integer> entry : map.entrySet())
         {
-          return a.count - b.count;
+            Pair p = new Pair(entry.getKey(), entry.getValue());
+            queue.offer(p);
+
+            if (queue.size() > k)
+            {
+                queue.poll();
+            }
         }
-      });
 
-      // maintain a heap of size k.
-      for (Map.Entry<Integer, Integer> entry : map.entrySet())
-      {
-        Pair p = new Pair(entry.getKey(), entry.getValue());
-        queue.offer(p);
+        // get all elements from the heap
+        List<Integer> result = new ArrayList<Integer>();
 
-        if (queue.size() > k)
+        while (queue.size() > 0)
         {
-          queue.poll();
+            result.add(queue.poll().num);
         }
-      }
 
-      // get all elements from the heap
-      List<Integer> result = new ArrayList<Integer>();
-
-      while (queue.size() > 0)
-      {
-        result.add(queue.poll().num);
-      }
-
-      // reverse the order
-      Collections.reverse(result);
-      return result;
+        // reverse the order
+        Collections.reverse(result);
+        return result;
     }
-  }
+}
 

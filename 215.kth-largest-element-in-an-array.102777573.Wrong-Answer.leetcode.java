@@ -40,10 +40,10 @@ public class Solution
     private int select(int[] nums, int k, int left, int right)
     {
         int result = 0;
-        
+
         while (left < right)
         {
-            int pivot = partition(nums, left, right);    
+            int pivot = partition(nums, left, right);
 
             if (pivot + 1 == k)
             {
@@ -59,7 +59,7 @@ public class Solution
                 left = pivot + 1;
             }
         }
-        
+
         return result;
     }
 }

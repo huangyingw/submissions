@@ -2,7 +2,7 @@ public class Solution
 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
     {
-         while (true)
+        while (true)
         {
             if (root == null || p == null || q == null)
             {

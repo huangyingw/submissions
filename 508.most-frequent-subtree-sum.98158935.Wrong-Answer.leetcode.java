@@ -6,8 +6,6 @@ public class Solution
         treeSum(map, root);
         int max = Integer.MIN_VALUE;
         int count = 0;
-
-        
         int[] res = new int[count];
         count = 0;
 

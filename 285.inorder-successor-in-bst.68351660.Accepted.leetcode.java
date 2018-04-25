@@ -1,40 +1,40 @@
-  public class Solution
-  {
+public class Solution
+{
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p)
     {
-      TreeNode successor = null;
+        TreeNode successor = null;
 
-      while (root != null && root.val != p.val)
-      {
-        if (root.val > p.val)
+        while (root != null && root.val != p.val)
         {
-          successor = root;
-          root = root.left;
+            if (root.val > p.val)
+            {
+                successor = root;
+                root = root.left;
+            }
+            else
+            {
+                root = root.right;
+            }
         }
-        else
+
+        if (root == null)
         {
-          root = root.right;
+            return null;
         }
-      }
 
-      if (root == null)
-      {
-        return null;
-      }
+        if (root.right == null)
+        {
+            return successor;
+        }
 
-      if (root.right == null)
-      {
-        return successor;
-      }
+        root = root.right;
 
-      root = root.right;
+        while (root.left != null)
+        {
+            root = root.left;
+        }
 
-      while (root.left != null)
-      {
-        root = root.left;
-      }
-
-      return root;
+        return root;
     }
-  }
+}
 

@@ -20,7 +20,7 @@ public class Solution
 
         for (int index = start; index < S.length; index++)
         {
-            if(index > start && S[index] == S[index-1])
+            if (index > start && S[index] == S[index - 1])
             {
                 continue;
             }

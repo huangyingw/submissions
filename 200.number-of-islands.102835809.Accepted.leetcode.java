@@ -1,14 +1,14 @@
 public class Solution
 {
     private int m, n;
-    
+
     public int numIslands(char[][] grid)
     {
         if (grid == null || grid.length == 0)
         {
             return 0;
         }
-        
+
         m = grid.length;
         n = grid[0].length;
         int result = 0;

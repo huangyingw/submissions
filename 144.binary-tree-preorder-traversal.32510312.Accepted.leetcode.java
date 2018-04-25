@@ -1,33 +1,33 @@
-  public class Solution
-  {
+public class Solution
+{
     public ArrayList<Integer> preorderTraversal(TreeNode root)
     {
-      ArrayList<Integer> preOrder = new ArrayList<Integer>();
-      Stack<TreeNode> stack = new Stack<TreeNode>();
+        ArrayList<Integer> preOrder = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
 
-      if (root != null)
-      {
-        stack.push(root);
-
-        while (!stack.isEmpty())
+        if (root != null)
         {
-          root = stack.pop();
+            stack.push(root);
 
-          while (root != null)
-          {
-            preOrder.add(root.val);
-
-            if (root.right != null)
+            while (!stack.isEmpty())
             {
-              stack.push(root.right);
+                root = stack.pop();
+
+                while (root != null)
+                {
+                    preOrder.add(root.val);
+
+                    if (root.right != null)
+                    {
+                        stack.push(root.right);
+                    }
+
+                    root = root.left;
+                }
             }
-
-            root = root.left;
-          }
         }
-      }
 
-      return preOrder;
+        return preOrder;
     }
-  }
+}
 

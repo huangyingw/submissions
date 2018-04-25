@@ -25,7 +25,7 @@ public class Solution
             out += root.val;
             result.add(out);
         }
-        
+
         out += root.val + "->";
         binaryTreePathsDFS(root.left, out, result);
         binaryTreePathsDFS(root.right, out, result);

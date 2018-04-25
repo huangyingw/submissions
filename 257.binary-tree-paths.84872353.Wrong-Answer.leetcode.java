@@ -25,11 +25,11 @@ public class Solution
             result.add(out);
         }
 
-        if(out.length() > 0)
+        if (out.length() > 0)
         {
             out += "->";
         }
-        
+
         out += root.val;
         binaryTreePathsDFS(root.left, out, result);
         binaryTreePathsDFS(root.right, out, result);

@@ -6,7 +6,7 @@ public class Solution
         {
             return 0;
         }
-        
+
         if (nums.length == 1)
         {
             return nums[0];

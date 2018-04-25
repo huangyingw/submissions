@@ -26,7 +26,7 @@ public class Solution
         }
 
         out += root.val;
-        
+
         if (root.left == null && root.right == null)
         {
             result.add(out);

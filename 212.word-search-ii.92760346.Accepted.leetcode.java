@@ -5,7 +5,7 @@ public class Solution
         Set<String> result = new HashSet<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return new ArrayList<String>(result);
         }
@@ -33,17 +33,17 @@ public class Solution
 
         String newStr = str + board[i][j];
         TrieNode endNode = trie.startWith(newStr);
-        
+
         if (null == endNode)
         {
             return;
         }
-        
+
         if (trie.startWith(newStr).isWord)
         {
             result.add(newStr);
         }
-        
+
         visited[i][j] = true;
         dfs(board, i + 1, j, newStr, visited, trie, result);
         dfs(board, i - 1, j, newStr, visited, trie, result);

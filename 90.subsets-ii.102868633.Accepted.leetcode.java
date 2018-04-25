@@ -14,7 +14,7 @@ public class Solution
 
         for (int i = start; i < S.length; i++)
         {
-            if (i -1 >= start && S[i] == S[i - 1])
+            if (i - 1 >= start && S[i] == S[i - 1])
             {
                 continue;
             }

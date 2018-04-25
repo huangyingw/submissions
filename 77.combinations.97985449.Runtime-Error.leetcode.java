@@ -13,12 +13,12 @@ public class Solution
         {
             res.add(new ArrayList<Integer>(cur));
         }
-        
+
         for (int i = l; i <= r - k + 1; i++)
         {
             cur.add(i);
             helper(i + 1, r, k - 1, res, cur);
-            cur.remove(cur.size() - 1);    
+            cur.remove(cur.size() - 1);
         }
     }
 }

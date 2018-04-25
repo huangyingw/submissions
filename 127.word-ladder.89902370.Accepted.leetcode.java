@@ -32,7 +32,7 @@ public class Solution
             for (int i = 0; i < arr.length; i++)
             {
                 char temp = arr[i];
-                
+
                 for (char c = 'a'; c <= 'z'; c++)
                 {
                     arr[i] = c;
@@ -44,7 +44,7 @@ public class Solution
                         wordDict.remove(newWord);
                     }
                 }
-                
+
                 arr[i] = temp;
             }
         }

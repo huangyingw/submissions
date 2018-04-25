@@ -26,13 +26,13 @@ public class Solution
                 {
                     k-- ;
                     continue;
-                } 
+                }
 
                 if (j - 1 > i && num[j] == num[j - 1])
                 {
                     j++ ;
                     continue;
-                } 
+                }
 
                 if (num[j] + num[k] + num[i] == 0)
                 {
@@ -53,8 +53,8 @@ public class Solution
                     j++ ;
                 }
             }
-      }
+        }
 
-      return res;
+        return res;
     }
 }

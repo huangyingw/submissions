@@ -14,12 +14,12 @@ public class TwoSum
         {
             int key = ent.getKey();
             int target = val - key;
-            
+
             if (key == target && ent.getValue() > 1)
             {
                 return true;
             }
-            
+
             if (map.containsKey(target))
             {
                 System.out.println("key --> " + key);
@@ -28,7 +28,7 @@ public class TwoSum
                 return true;
             }
         }
-        
+
         return false;
     }
 }

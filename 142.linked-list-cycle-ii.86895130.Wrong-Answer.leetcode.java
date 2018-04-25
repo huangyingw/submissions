@@ -1,19 +1,19 @@
-public class Solution 
+public class Solution
 {
-    public ListNode detectCycle(ListNode head) 
+    public ListNode detectCycle(ListNode head)
     {
         ListNode fast = head;
         ListNode slow = head;
 
-        while (fast != null && fast.next != null && fast != slow) 
+        while (fast != null && fast.next != null && fast != slow)
         {
             fast = fast.next.next;
             slow = slow.next;
         }
 
-        if (fast == slow) 
+        if (fast == slow)
         {
-            while (fast != null && fast != head) 
+            while (fast != null && fast != head)
             {
                 fast = fast.next;
                 head = head.next;

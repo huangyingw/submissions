@@ -5,7 +5,7 @@ public class Solution
         List<String> res = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return res;
         }

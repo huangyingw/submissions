@@ -29,7 +29,7 @@ public class Solution
         {
             result[0] = left;
         }
-        else if(nums[right] == target)
+        else if (nums[right] == target)
         {
             result[0] = right;
         }

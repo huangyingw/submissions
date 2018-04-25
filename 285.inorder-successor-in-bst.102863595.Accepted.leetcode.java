@@ -25,7 +25,7 @@ public class Solution
                 break;
             }
         }
-        
+
         if (root.right == null)
         {
             return successor;

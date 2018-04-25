@@ -5,7 +5,7 @@ public class Solution
         List<String> res = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return res;
         }
@@ -27,7 +27,7 @@ public class Solution
     private void dfs(char[][] board, int i, int j, String str, boolean[][] visited, Trie trie, List<String> result)
     {
         if (i >= board.length || i < 0 || j >= board[0].length || j < 0
-            || visited[i][j] == true)
+                || visited[i][j] == true)
         {
             return;
         }

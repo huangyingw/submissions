@@ -20,8 +20,6 @@ public class Solution
 
         for (int index = start; index < S.length; index++)
         {
-            
-
             current.add(S[index]);
             dfs(S, index + 1, current, result);
             current.remove(current.size() - 1);

@@ -2,11 +2,11 @@ public class Solution
 {
     public boolean canAttendMeetings(Interval[] intervals)
     {
-        if(intervals == null || intervals.length == 0)
+        if (intervals == null || intervals.length == 0)
         {
             return true;
         }
-      
+
         int end = intervals[0].end;
 
         for (int i = 1; i < intervals.length; i++)

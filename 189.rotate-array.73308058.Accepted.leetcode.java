@@ -9,7 +9,7 @@ public class Solution
     }
     public void reverse(int[] nums, int left, int right)
     {
-        for(; left < right; left++, right--)
+        for (; left < right; left++, right--)
         {
             int temp = nums[left];
             nums[left] = nums[right];

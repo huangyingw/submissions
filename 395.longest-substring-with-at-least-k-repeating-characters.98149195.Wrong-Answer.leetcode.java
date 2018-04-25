@@ -13,9 +13,7 @@ public class Solution
         int counter[] = new int[26];
         boolean valid[] = new boolean[26];
         char ss[] = s.toCharArray();
-
         //统计每个字符的长度
-        
         //检查当前字符串是否是完全满足的
         boolean fullValid = true;
 

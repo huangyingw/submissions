@@ -1,29 +1,29 @@
-  public class Solution
-  {
+public class Solution
+{
     public void moveZeroes(int[] nums)
     {
-      int i = 0;
-      int j = 0;
+        int i = 0;
+        int j = 0;
 
-      while (j < nums.length)
-      {
-        if (nums[j] == 0)
+        while (j < nums.length)
         {
-          j++;
+            if (nums[j] == 0)
+            {
+                j++;
+            }
+            else
+            {
+                nums[i] = nums[j];
+                i++;
+                j++;
+            }
         }
-        else
-        {
-          nums[i] = nums[j];
-          i++;
-          j++;
-        }
-      }
 
-      while (i < nums.length)
-      {
-        nums[i] = 0;
-        i++;
-      }
+        while (i < nums.length)
+        {
+            nums[i] = 0;
+            i++;
+        }
     }
-  }
+}
 

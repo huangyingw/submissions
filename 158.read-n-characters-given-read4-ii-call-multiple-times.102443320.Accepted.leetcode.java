@@ -2,7 +2,7 @@ public class Solution extends Reader4
 {
     char[] buffer = new char[4];
     int offset = 0, bufsize = 0;
-        
+
     public int read(char[] buf, int n)
     {
         int readBytes = 0;

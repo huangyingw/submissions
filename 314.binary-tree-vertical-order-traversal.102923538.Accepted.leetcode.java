@@ -15,12 +15,12 @@ public class Solution
     public List<List<Integer>> verticalOrder(TreeNode root)
     {
         List<List<Integer>> results = new ArrayList<>();
-        
+
         if (root == null)
         {
             return results;
         }
-        
+
         Map<Integer, List<Integer>> map = new HashMap<>();
         LinkedList<TreeColumnNode> queue = new LinkedList<>();
         queue.add(new TreeColumnNode(root, 0));
