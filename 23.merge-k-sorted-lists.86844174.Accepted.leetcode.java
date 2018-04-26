@@ -34,7 +34,7 @@ public class Solution
             ListNode node = heap.poll();
             nav.next = node;
             nav = nav.next;
-            
+
             if (node.next != null)
             {
                 heap.add(node.next);

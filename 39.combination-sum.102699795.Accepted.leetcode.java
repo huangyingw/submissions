@@ -15,7 +15,7 @@ public class Solution
             result.add(new ArrayList<Integer>(current));
             return;
         }
-        
+
         if (target < 0 || start >= candidates.length)
         {
             return;

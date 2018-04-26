@@ -11,13 +11,13 @@ public class Solution
         {
             fast = fast.next;
         }
-        
+
         while (fast.next != null)
         {
             slow = slow.next;
             fast = fast.next;
         }
-        
+
         slow.next = fast.next;
         return dummy.next;
     }
