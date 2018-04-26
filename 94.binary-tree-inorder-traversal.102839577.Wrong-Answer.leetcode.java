@@ -3,12 +3,12 @@ public class Solution
     public ArrayList<Integer> inorderTraversal(TreeNode root)
     {
         ArrayList<Integer> inOrder = new ArrayList<Integer>();
-        
+
         if (root == null)
         {
             return inOrder;
         }
-        
+
         Stack<TreeNode> stack = new Stack<TreeNode>();
         stack.push(root);
 

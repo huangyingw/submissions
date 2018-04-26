@@ -6,17 +6,17 @@ public class Solution
         {
             return true;
         }
-        
+
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length)
         {
             return false;
         }
-        
+
         if (visited[i][j] || board[i][j] != word.charAt(begin))
         {
             return false;
         }
-        
+
         visited[i][j] = true;
         boolean re = dfs(board, visited, i + 1, j, word, begin + 1)
                      || dfs(board, visited, i - 1, j, word, begin + 1)
