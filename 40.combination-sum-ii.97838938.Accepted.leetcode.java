@@ -32,7 +32,7 @@ public class Solution
             {
                 continue;
             }
-            
+
             current.add(num[index]);
             dfs(num, index + 1, target - num[index], current, result);
             current.remove(current.size() - 1);
