@@ -8,4 +8,3 @@ class Solution(object):
         for i in nums:
             last, now = now, max(i + last, now)
         return now
-
