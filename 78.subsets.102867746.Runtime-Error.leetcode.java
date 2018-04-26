@@ -10,7 +10,7 @@ public class Solution
     public void dfs(int[] S, int start, List<Integer> current, List<List<Integer>> result)
     {
         result.add(new ArrayList<Integer>(current));
-        
+
         for (int i = start; i < S.length; i++)
         {
             dfs(S, i + 1, current, result);
