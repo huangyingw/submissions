@@ -4,12 +4,12 @@ public class Solution
     {
         String[] dic = { " ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
         ArrayList<String> result = new ArrayList<String>();
-        
+
         if (digits == null || digits.length() == 0)
         {
             return result;
         }
-        
+
         StringBuilder current = new StringBuilder();
         dfs(digits, dic, 0, current, result);
         return result;

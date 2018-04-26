@@ -25,17 +25,17 @@ public class Solution
         {
             int size = queue.size();
             List<Integer> local = new ArrayList<Integer>();
-            
+
             for (int i = 0; i < size; i++)
             {
                 root = queue.poll();
                 local.add(root.val);
-                
+
                 if (null != root.left)
                 {
                     queue.add(root.left);
                 }
-                
+
                 if (null != root.right)
                 {
                     queue.add(root.right);
@@ -44,7 +44,7 @@ public class Solution
 
             result.add(local);
         }
-        
+
         return result;
     }
 }
