@@ -33,12 +33,12 @@ public class Solution
             {
                 continue;
             }
-            
+
             if (visited[i])
             {
                 continue;
             }
-            
+
             current.add(num[i]);
             visited[i] = true;
             dfs(num, visited, current, result);
