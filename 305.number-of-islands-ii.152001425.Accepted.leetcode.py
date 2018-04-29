@@ -29,7 +29,8 @@ class Solution(object):
                 neighbor = (position[0] + d[0], position[1] + d[1])
                 if 0 <= neighbor[0] < m and 0 <= neighbor[1] < n and node_id(neighbor, n) in set:
                     if find_set(node_id(node, n)) != find_set(node_id(neighbor, n)):
-                        # Merge different islands, amortised time: O(log*k) ~= O(1)
+                        # Merge different islands, amortised time: O(log*k) ~=
+                        # O(1)
                         union_set(node_id(node, n), node_id(neighbor, n))
                         number -= 1
             numbers.append(number)
