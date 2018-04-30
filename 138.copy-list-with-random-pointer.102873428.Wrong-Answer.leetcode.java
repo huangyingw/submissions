@@ -14,7 +14,6 @@ public class Solution
 
     private void copyRandom(RandomListNode head)
     {
-        
     }
 
     private RandomListNode splitList(RandomListNode head)

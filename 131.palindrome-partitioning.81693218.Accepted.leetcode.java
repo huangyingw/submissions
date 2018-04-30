@@ -3,7 +3,6 @@ public class Solution
     public List<List<String>> partition(String s)
     {
         List<List<String>> result = new ArrayList<List<String>>();
-
         ArrayList<String> current = new ArrayList<String>();
         dfs(s, 0, current, result);
         return result;

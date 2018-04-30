@@ -31,16 +31,16 @@ public class LRUCache
     public void printNodes()
     {
         Node node = head.next;
-        
+
         while (node.next != null)
         {
             System.out.println(node.key + "->" + node.value + ",");
             node = node.next;
         }
-        
+
         System.out.println();
     }
-    
+
     public int get(int key)
     {
         if (!hs.containsKey(key))

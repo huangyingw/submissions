@@ -11,13 +11,13 @@ public class Solution
 
         for (char c : charArray)
         {
-            if(map.containsKey(c))
+            if (map.containsKey(c))
             {
                 stack.push(c);
             }
             else
             {
-                if(map.isEmpty() || map.get(stack.pop()) != c)
+                if (map.isEmpty() || map.get(stack.pop()) != c)
                 {
                     return false;
                 }

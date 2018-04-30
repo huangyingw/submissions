@@ -1,136 +1,136 @@
-  public class Solution
-  {
+public class Solution
+{
     public List<String> findWords(char[][] board, String[] words)
     {
-      List<String> res = new ArrayList<String>();
+        List<String> res = new ArrayList<String>();
 
-      if (board == null || board.length == 0 || board[0].length == 0
-          || words == null || words.length == 0)
-      {
-        return res;
-      }
-
-      boolean[][] visited = new boolean[board.length][board[0].length];
-      Trie trie = new Trie(new HashSet<String>(Arrays.asList(words)));
-
-      for (int i = 0; i < board.length; i++)
-      {
-        for (int j = 0; j < board[0].length; j++)
+        if (board == null || board.length == 0 || board[0].length == 0
+                || words == null || words.length == 0)
         {
-          dfs(board, i, j, "", visited, trie, res);
+            return res;
         }
-      }
 
-      return res;
+        boolean[][] visited = new boolean[board.length][board[0].length];
+        Trie trie = new Trie(new HashSet<String>(Arrays.asList(words)));
+
+        for (int i = 0; i < board.length; i++)
+        {
+            for (int j = 0; j < board[0].length; j++)
+            {
+                dfs(board, i, j, "", visited, trie, res);
+            }
+        }
+
+        return res;
     }
 
     private void dfs(char[][] board, int i, int j, String str,
                      boolean[][] visited, Trie trie, List<String> result)
     {
-      if (i >= board.length || i < 0 || j >= board[0].length || j < 0
-          || visited[i][j] == true)
-      {
-        return;
-      }
+        if (i >= board.length || i < 0 || j >= board[0].length || j < 0
+                || visited[i][j] == true)
+        {
+            return;
+        }
 
-      String newStr = str + board[i][j];
-      TrieNode endNode = trie.startWith(newStr);
+        String newStr = str + board[i][j];
+        TrieNode endNode = trie.startWith(newStr);
 
-      if (endNode == null)
-      {
-        return;
-      }
+        if (endNode == null)
+        {
+            return;
+        }
 
-      if (endNode.isWord == true)
-      {
-        result.add(newStr);
-        endNode.isWord = false; // avoid duplicate in result
-      }
+        if (endNode.isWord == true)
+        {
+            result.add(newStr);
+            endNode.isWord = false; // avoid duplicate in result
+        }
 
-      visited[i][j] = true;
-      dfs(board, i + 1, j, newStr, visited, trie, result);
-      dfs(board, i - 1, j, newStr, visited, trie, result);
-      dfs(board, i, j + 1, newStr, visited, trie, result);
-      dfs(board, i, j - 1, newStr, visited, trie, result);
-      visited[i][j] = false;
+        visited[i][j] = true;
+        dfs(board, i + 1, j, newStr, visited, trie, result);
+        dfs(board, i - 1, j, newStr, visited, trie, result);
+        dfs(board, i, j + 1, newStr, visited, trie, result);
+        dfs(board, i, j - 1, newStr, visited, trie, result);
+        visited[i][j] = false;
     }
 
     class Trie
     {
-      TrieNode root;
+        TrieNode root;
 
-      public Trie(Set<String> strs)
-      {
-        root = new TrieNode();
-
-        for (String str : strs)
+        public Trie(Set<String> strs)
         {
-          insert(str);
-        }
-      }
+            root = new TrieNode();
 
-      // gets the last node in the tree that matches the str, return null if not
-      // match
-      public TrieNode startWith(String prefix)
-      {
-        TrieNode current = root;
-
-        for (int i = 0; i < prefix.length(); i++)
-        {
-          TrieNode node = current.children.get(prefix.charAt(i));
-
-          if (node == null)
-          {
-            return null;
-          }
-
-          current = node;
+            for (String str : strs)
+            {
+                insert(str);
+            }
         }
 
-        return current;
-      }
-
-      public void insert(String word)
-      {
-        TrieNode current = root;
-
-        for (int i = 0; i < word.length(); i++)
+        // gets the last node in the tree that matches the str, return null if not
+        // match
+        public TrieNode startWith(String prefix)
         {
-          char c = word.charAt(i);
-          TrieNode node = current.children.get(c);
+            TrieNode current = root;
 
-          if (node == null)
-          {
-            current.children.put(c, new TrieNode(c));
-            node = current.children.get(c);
-          }
+            for (int i = 0; i < prefix.length(); i++)
+            {
+                TrieNode node = current.children.get(prefix.charAt(i));
 
-          current = node;
+                if (node == null)
+                {
+                    return null;
+                }
+
+                current = node;
+            }
+
+            return current;
         }
 
-        current.isWord = true;
-      }
+        public void insert(String word)
+        {
+            TrieNode current = root;
+
+            for (int i = 0; i < word.length(); i++)
+            {
+                char c = word.charAt(i);
+                TrieNode node = current.children.get(c);
+
+                if (node == null)
+                {
+                    current.children.put(c, new TrieNode(c));
+                    node = current.children.get(c);
+                }
+
+                current = node;
+            }
+
+            current.isWord = true;
+        }
     }
 
     class TrieNode
     {
-      boolean isWord;
-      char content;
-      Map<Character, TrieNode> children;
+        boolean isWord;
+        char content;
+        Map<Character, TrieNode> children;
 
-      public TrieNode()
-      {
-        this.content = ' ';
-        this.isWord = false;
-        this.children = new HashMap<Character, TrieNode>();
-      }
+        public TrieNode()
+        {
+            this.content = ' ';
+            this.isWord = false;
+            this.children = new HashMap<Character, TrieNode>();
+        }
 
-      public TrieNode(char content)
-      {
-        this.content = content;
-        this.isWord = false;
-        this.children = new HashMap<Character, TrieNode>();
-      }
+        public TrieNode(char content)
+        {
+            this.content = content;
+            this.isWord = false;
+            this.children = new HashMap<Character, TrieNode>();
+        }
     }
-  }
+}
 

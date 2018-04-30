@@ -9,16 +9,16 @@ public class Solution
 
     private void dfs(String str, int start, ArrayList<String> current, List<List<String>> result)
     {
-        if(start == str.length())
+        if (start == str.length())
         {
             result.add(new ArrayList<String>(current));
         }
-        
-        for(int i = start + 1; i <= str.length(); i++)
+
+        for (int i = start + 1; i <= str.length(); i++)
         {
             String subStr = str.substring(start, i);
-            
-            if(isPalindrome(subStr))
+
+            if (isPalindrome(subStr))
             {
                 current.add(subStr);
                 dfs(str, i, current, result);

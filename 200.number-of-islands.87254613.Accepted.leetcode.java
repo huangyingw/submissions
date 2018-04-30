@@ -5,9 +5,9 @@ public class Solution
     {
         if (grid == null || grid.length == 0)
         {
-            return 0;    
+            return 0;
         }
-        
+
         m = grid.length;
         n = grid[0].length;
         int result = 0;
@@ -28,7 +28,7 @@ public class Solution
 
         return result;
     }
-    
+
     public void dfs(char[][] grid, int i, int j)
     {
         if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0')

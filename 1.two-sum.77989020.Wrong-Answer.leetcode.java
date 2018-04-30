@@ -1,18 +1,18 @@
-public class Solution 
+public class Solution
 {
-    public int[] twoSum(final int[] nums, int target) 
+    public int[] twoSum(final int[] nums, int target)
     {
         int[] result = new int[2];
         int left = 0;
         int right = nums.length - 1;
-        
-        while(left < right)
+
+        while (left < right)
         {
-            if((nums[left] + nums[right]) > target)
+            if ((nums[left] + nums[right]) > target)
             {
                 right--;
             }
-            else if((nums[left] + nums[right]) < target)
+            else if ((nums[left] + nums[right]) < target)
             {
                 left++;
             }
@@ -22,7 +22,7 @@ public class Solution
                 result[1] = right;
             }
         }
-      
+
         return result;
     }
 }
