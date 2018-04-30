@@ -1,44 +1,44 @@
 class MyQueue
 {
-  Stack<Integer> stack = new Stack<Integer>();
-  Stack<Integer> buffer = new Stack<Integer>();
+    Stack<Integer> stack = new Stack<Integer>();
+    Stack<Integer> buffer = new Stack<Integer>();
 
-  public void push(int x)
-  {
-    stack.push(x);
-  }
-
-  public void pop()
-  {
-    if (buffer.isEmpty())
+    public void push(int x)
     {
-      shiftStacks();
+        stack.push(x);
     }
 
-    buffer.pop();
-  }
-
-  public int peek()
-  {
-    if (buffer.isEmpty())
+    public void pop()
     {
-      shiftStacks();
+        if (buffer.isEmpty())
+        {
+            shiftStacks();
+        }
+
+        buffer.pop();
     }
 
-    return buffer.peek();
-  }
-
-  private void shiftStacks()
-  {
-    while (!stack.isEmpty())
+    public int peek()
     {
-      buffer.push(stack.pop());
-    }
-  }
+        if (buffer.isEmpty())
+        {
+            shiftStacks();
+        }
 
-  public boolean empty()
-  {
-    return stack.isEmpty() && buffer.isEmpty();
-  }
+        return buffer.peek();
+    }
+
+    private void shiftStacks()
+    {
+        while (!stack.isEmpty())
+        {
+            buffer.push(stack.pop());
+        }
+    }
+
+    public boolean empty()
+    {
+        return stack.isEmpty() && buffer.isEmpty();
+    }
 }
 

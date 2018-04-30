@@ -29,7 +29,6 @@ public class Solution
             {
                 result[i - (k - 1)] = nums[deq.getFirst()];
             }
-
         }
 
         return result;

@@ -26,4 +26,4 @@ public class Solution
 
         return str;
     }
-}   
+}

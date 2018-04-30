@@ -11,11 +11,11 @@ public class Solution
     {
         for (int i = 0; i < num.length; i++)
         {
-            if(current.contains(num[i]))
+            if (current.contains(num[i]))
             {
-                continue;    
+                continue;
             }
-            
+
             current.add(num[i]);
             dfs(num, current, result);
             current.remove(current.size() - 1);

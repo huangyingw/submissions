@@ -1,40 +1,40 @@
-  public class Solution
-  {
+public class Solution
+{
     public ListNode mergeKLists(ListNode[] lists)
     {
-      PriorityQueue<ListNode> heap =
-        new PriorityQueue<ListNode>(10, new Comparator<ListNode>()
+        PriorityQueue<ListNode> heap =
+            new PriorityQueue<ListNode>(10, new Comparator<ListNode>()
         {
-          public int compare(ListNode l1, ListNode l2)
-          {
-            return l1.val - l2.val;
-          }
+            public int compare(ListNode l1, ListNode l2)
+            {
+                return l1.val - l2.val;
+            }
         });
 
-      for (ListNode node : lists)
-      {
-        if (node != null)
+        for (ListNode node : lists)
         {
-          heap.add(node);
+            if (node != null)
+            {
+                heap.add(node);
+            }
         }
-      }
 
-      ListNode dummy = new ListNode(-1);
-      ListNode nav = dummy;
+        ListNode dummy = new ListNode(-1);
+        ListNode nav = dummy;
 
-      while (!heap.isEmpty())
-      {
-        ListNode top = heap.poll();
-        nav.next = top;
-        nav = top;
-
-        if (top.next != null)
+        while (!heap.isEmpty())
         {
-          heap.add(top.next);
-        }
-      }
+            ListNode top = heap.poll();
+            nav.next = top;
+            nav = top;
 
-      return dummy.next;
+            if (top.next != null)
+            {
+                heap.add(top.next);
+            }
+        }
+
+        return dummy.next;
     }
-  }
+}
 

@@ -19,7 +19,7 @@ class Solution
             return val;
         }
 
-        if ( --k == 0)
+        if (--k == 0)
         {
             return root.val;
         }

@@ -1,30 +1,30 @@
-  class Solution
-  {
+class Solution
+{
     public int kthSmallest(TreeNode root, int k)
     {
-      Stack<TreeNode> stack = new Stack<TreeNode>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
 
-      while (k > 0 && (!stack.empty() || root != null))
-      {
-        if (root != null)
+        while (k > 0 && (!stack.empty() || root != null))
         {
-          stack.push(root);
-          root = root.left;
+            if (root != null)
+            {
+                stack.push(root);
+                root = root.left;
+            }
+            else
+            {
+                root = stack.pop();
+
+                if (--k == 0)
+                {
+                    return root.val;
+                }
+
+                root = root.right;
+            }
         }
-        else
-        {
-          root = stack.pop();
 
-          if (--k == 0)
-          {
-            return root.val;
-          }
-
-          root = root.right;
-        }
-      }
-
-      return root.val;
+        return root.val;
     }
-  }
+}
 

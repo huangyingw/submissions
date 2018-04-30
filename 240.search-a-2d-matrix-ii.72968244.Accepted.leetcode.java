@@ -16,11 +16,11 @@ public class Solution
         {
             int cur = matrix[row][col];
 
-            if(cur == target)
+            if (cur == target)
             {
                 return true;
             }
-            else if(cur > target)
+            else if (cur > target)
             {
                 row--;
             }

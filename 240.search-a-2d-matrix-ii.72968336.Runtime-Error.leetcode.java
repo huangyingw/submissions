@@ -12,15 +12,15 @@ public class Solution
         int row = m - 1;
         int col = 0;
 
-        while(row >= 0 && col <= n)
+        while (row >= 0 && col <= n)
         {
             int cur = matrix[row][col];
 
-            if(cur == target)
+            if (cur == target)
             {
                 return true;
             }
-            else if(cur > target)
+            else if (cur > target)
             {
                 row--;
             }

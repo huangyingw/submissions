@@ -1,35 +1,42 @@
-  public class Solution {
-    public List<List<Integer>> permute(int[] num) {
-      List<List<Integer>> result = new ArrayList<List<Integer>>();
-      List<Integer> suffix = new ArrayList<Integer>(num.length);
+public class Solution
+{
+    public List<List<Integer>> permute(int[] num)
+    {
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        List<Integer> suffix = new ArrayList<Integer>(num.length);
 
-      for (int data : num) {
-        suffix.add(data);
-      }
+        for (int data : num)
+        {
+            suffix.add(data);
+        }
 
-      permutation(null, suffix, result);
-      return result;
+        permutation(null, suffix, result);
+        return result;
     }
 
     public void permutation(List<Integer> prefix, List<Integer> suffix,
-                            List<List<Integer>> result) {
-      if (prefix == null) {
-        prefix = new ArrayList<Integer>();
-      }
+                            List<List<Integer>> result)
+    {
+        if (prefix == null)
+        {
+            prefix = new ArrayList<Integer>();
+        }
 
-      if (suffix.size() == 1) {
-        prefix.addAll(suffix);
-        result.add(prefix);
-        return;
-      }
+        if (suffix.size() == 1)
+        {
+            prefix.addAll(suffix);
+            result.add(prefix);
+            return;
+        }
 
-      for (int i = 0; i < suffix.size(); i++) {
-        List<Integer> newPrefix = new ArrayList<Integer>(prefix);
-        List<Integer> newSuffix = new ArrayList<Integer>(suffix);
-        newPrefix.add(newSuffix.get(i));
-        newSuffix.remove(i);
-        permutation(newPrefix, newSuffix, result);
-      }
+        for (int i = 0; i < suffix.size(); i++)
+        {
+            List<Integer> newPrefix = new ArrayList<Integer>(prefix);
+            List<Integer> newSuffix = new ArrayList<Integer>(suffix);
+            newPrefix.add(newSuffix.get(i));
+            newSuffix.remove(i);
+            permutation(newPrefix, newSuffix, result);
+        }
     }
-  }
+}
 

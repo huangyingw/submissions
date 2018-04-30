@@ -3,13 +3,12 @@ public class Solution
     public int[] searchRange(int[] nums, int target)
     {
         int[] result = { -1, -1 };
-
         int left = 0, right = nums.length - 1;
 
         while (left < right)
         {
             int mid = left + (right - left) / 2;
-            
+
             if (nums[mid] >= target)
             {
                 right = mid;
@@ -19,7 +18,7 @@ public class Solution
                 left = mid + 1;
             }
         }
-        
+
         if (nums[left] == target)
         {
             result[0] = left;
@@ -30,9 +29,9 @@ public class Solution
         }
         else
         {
-            return result;    
+            return result;
         }
-        
+
         left = 0;
         right = nums.length - 1;
 
@@ -63,6 +62,7 @@ public class Solution
             result[0] = result[1] = -1;
             return result;
         }
+
         return result;
     }
 }

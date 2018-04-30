@@ -7,7 +7,7 @@ class Solution
             return -1;
         }
 
-        for(int i = 0; i < source.length() - target.length() + 1; i++)
+        for (int i = 0; i < source.length() - target.length() + 1; i++)
         {
             int j = 0;
 
@@ -18,12 +18,11 @@ class Solution
                     break;
                 }
             }
-        
+
             if (j == target.length())
             {
                 return i;
             }
-    
         }
 
         return -1;

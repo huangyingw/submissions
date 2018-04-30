@@ -1,42 +1,42 @@
-  public class Solution
-  {
+public class Solution
+{
     public int calculate(String s)
     {
-      Stack<Integer> stack = new Stack<Integer>();
-      stack.push(1);
-      stack.push(1);
-      int res = 0;
+        Stack<Integer> stack = new Stack<Integer>();
+        stack.push(1);
+        stack.push(1);
+        int res = 0;
 
-      for (int i = 0; i < s.length(); i++ )
-      {
-        char c = s.charAt(i);
-
-        if (Character.isDigit(c))
+        for (int i = 0; i < s.length(); i++)
         {
-          int num = c - '0';
+            char c = s.charAt(i);
 
-          while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1)))
-          {
-            num = 10 * num + (s.charAt(++i) - '0');
-          }
+            if (Character.isDigit(c))
+            {
+                int num = c - '0';
 
-          res += stack.pop() * num;
-        }
-        else if (c == '+' || c == '(')
-        {
-          stack.push(stack.peek());
-        }
-        else if (c == '-')
-        {
-          stack.push(-1 * stack.peek());
-        }
-        else if (c == ')')
-        {
-          stack.pop();
-        }
-      }
+                while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1)))
+                {
+                    num = 10 * num + (s.charAt(++i) - '0');
+                }
 
-      return res;
+                res += stack.pop() * num;
+            }
+            else if (c == '+' || c == '(')
+            {
+                stack.push(stack.peek());
+            }
+            else if (c == '-')
+            {
+                stack.push(-1 * stack.peek());
+            }
+            else if (c == ')')
+            {
+                stack.pop();
+            }
+        }
+
+        return res;
     }
-  }
+}
 
