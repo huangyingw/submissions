@@ -16,11 +16,11 @@ public class Solution
         traversal(root.left, level + 1, result);
         traversal(root.right, level + 1, result);
     }
-    
+
     public List<List<Integer>> levelOrder(TreeNode root)
     {
-      List<List<Integer>> result = new ArrayList<List<Integer>>();
-      traversal(root, 0, result);
-      return result;
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        traversal(root, 0, result);
+        return result;
     }
 }

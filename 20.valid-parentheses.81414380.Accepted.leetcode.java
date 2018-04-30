@@ -9,15 +9,15 @@ public class Solution
         map.put('{', '}');
         Stack<Character> stack = new Stack<Character>();
 
-        for(char c : charArray)
+        for (char c : charArray)
         {
-            if(map.containsKey(c))
+            if (map.containsKey(c))
             {
                 stack.push(c);
             }
             else
             {
-                if(stack.isEmpty() || map.get(stack.pop()) != c)
+                if (stack.isEmpty() || map.get(stack.pop()) != c)
                 {
                     return false;
                 }

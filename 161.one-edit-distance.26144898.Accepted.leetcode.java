@@ -1,42 +1,42 @@
-  public class Solution
-  {
+public class Solution
+{
     public boolean isOneEditDistance(String s, String t)
     {
-      if (Math.abs(t.length() - s.length()) > 1)
-      {
-        return false;
-      }
+        if (Math.abs(t.length() - s.length()) > 1)
+        {
+            return false;
+        }
 
-      if (s.length() > t.length())
-      {
-        return helper(t, s);
-      }
+        if (s.length() > t.length())
+        {
+            return helper(t, s);
+        }
 
-      return helper(s, t);
+        return helper(s, t);
     }
     private boolean helper(String s, String t)
     {
-      boolean has = false;
+        boolean has = false;
 
-      for (int i = 0, j = 0; i < s.length(); ++i, ++j)
-      {
-        if (s.charAt(i) != t.charAt(j))
+        for (int i = 0, j = 0; i < s.length(); ++i, ++j)
         {
-          if (has)
-          {
-            return false;
-          }
+            if (s.charAt(i) != t.charAt(j))
+            {
+                if (has)
+                {
+                    return false;
+                }
 
-          has = true;
+                has = true;
 
-          if (s.length() < t.length())
-          {
-            --i;
-          }
+                if (s.length() < t.length())
+                {
+                    --i;
+                }
+            }
         }
-      }
 
-      return has || s.length() < t.length();
+        return has || s.length() < t.length();
     }
-  }
+}
 

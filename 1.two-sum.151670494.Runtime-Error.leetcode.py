@@ -15,4 +15,3 @@ class Solution(object):
             else:
                 map[target - val] = idx
         return result
-

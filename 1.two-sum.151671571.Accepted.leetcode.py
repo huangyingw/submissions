@@ -10,4 +10,3 @@ class Solution(object):
             if target - val in dict:
                 return (dict[target - val], idx)
             dict[val] = idx
-

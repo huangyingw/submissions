@@ -16,13 +16,13 @@ public class Solution
         {
             TreeNode node = stack.pop();
             preorder.add(node.val);
-            
-            if(node.right != null)
+
+            if (node.right != null)
             {
                 stack.push(node.right);
             }
-            
-            if(node.left != null)
+
+            if (node.left != null)
             {
                 stack.push(node.left);
             }

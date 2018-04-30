@@ -5,7 +5,7 @@ public class Solution
         List<String> res = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
-            || words == null || words.length == 0)
+                || words == null || words.length == 0)
         {
             return res;
         }
@@ -16,16 +16,15 @@ public class Solution
             {
                 System.out.print(" " + board[i][j]);
             }
-            
+
             System.out.println();
         }
-        
+
         for (String str : words)
         {
-            System.out.println("str --> " + str);    
+            System.out.println("str --> " + str);
         }
-        
-        
+
         boolean[][] visited = new boolean[board.length][board[0].length];
         Trie trie = new Trie(new HashSet<String>(Arrays.asList(words)));
 

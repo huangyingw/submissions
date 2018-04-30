@@ -7,7 +7,7 @@ public class Solution
 
         for (int begin = 0, end = 0; end < sb.length(); end++)
         {
-            if(end == sb.length() || sb.charAt(end) == ' ')
+            if (end == sb.length() || sb.charAt(end) == ' ')
             {
                 reverse(sb, begin, end - 1);
                 begin = end + 1;
@@ -19,7 +19,7 @@ public class Solution
 
     public void reverse(StringBuilder sb, int begin, int end)
     {
-        for(; begin < end; begin++,end--)
+        for (; begin < end; begin++, end--)
         {
             char temp = sb.charAt(begin);
             sb.setCharAt(begin, sb.charAt(end));

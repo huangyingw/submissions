@@ -30,15 +30,15 @@ public class LRUCache
 
     public int get(int key)
     {
-        if(!hs.containsKey(key))
+        if (!hs.containsKey(key))
         {
             return -1;
         }
-        
+
         Node node = hs.get(key);
         node.prev.next = node.next;
         node.next.prev = node.prev;
-        moveToTail(node); 
+        moveToTail(node);
         printNodes();
         return node.value;
     }
@@ -46,33 +46,33 @@ public class LRUCache
     public void printNodes()
     {
         Node node = head.next;
-        
+
         while (node.next != null)
         {
             System.out.println(node.key + "->" + node.value + ",");
             node = node.next;
         }
-        
+
         System.out.println();
     }
-    
+
     public void put(int key, int value)
     {
-        if(get(key) != -1)
+        if (get(key) != -1)
         {
             Node node = hs.get(key);
             node.value = value;
             return;
         }
-        
-        if(hs.size() == capacity)
+
+        if (hs.size() == capacity)
         {
             Node temp = head.next;
             head.next = head.next.next;
             head.next.prev = head;
-            hs.remove(temp);   
+            hs.remove(temp);
         }
-        
+
         Node node = new Node(key, value);
         hs.put(key, node);
         moveToTail(node);

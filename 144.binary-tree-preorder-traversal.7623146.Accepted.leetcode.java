@@ -7,30 +7,35 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public List<Integer> preorderTraversal(TreeNode root) {
-              ArrayList<Integer> preorder = new ArrayList<Integer>();
-      Stack<TreeNode> stack = new Stack<TreeNode>();
+public class Solution
+{
+    public List<Integer> preorderTraversal(TreeNode root)
+    {
+        ArrayList<Integer> preorder = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
 
-      if (root != null) {
-        stack.push(root);
+        if (root != null)
+        {
+            stack.push(root);
 
-        while (!stack.isEmpty()) {
-          TreeNode p = stack.pop();
+            while (!stack.isEmpty())
+            {
+                TreeNode p = stack.pop();
 
-          while (p != null) {
-            preorder.add(p.val);
+                while (p != null)
+                {
+                    preorder.add(p.val);
 
-            if (p.right != null) {
-              stack.push(p.right);
+                    if (p.right != null)
+                    {
+                        stack.push(p.right);
+                    }
+
+                    p = p.left;
+                }
             }
-
-            p = p.left;
-          }
         }
-      }
 
-      return preorder;
-
+        return preorder;
     }
 }

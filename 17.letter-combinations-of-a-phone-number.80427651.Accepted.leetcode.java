@@ -4,7 +4,7 @@ public class Solution
     {
         ArrayList<String> result = new ArrayList<String>();
 
-        if (digits == null || digits.equals("")) 
+        if (digits == null || digits.equals(""))
         {
             return result;
         }
@@ -20,22 +20,20 @@ public class Solution
         map.put('7', new char[] { 'p', 'q', 'r', 's' });
         map.put('8', new char[] { 't', 'u', 'v'});
         map.put('9', new char[] { 'w', 'x', 'y', 'z' });
-
         StringBuilder sb = new StringBuilder();
         helper(map, digits, sb, result);
-
         return result;
     }
-    
-    private void helper(Map<Character, char[]> map, String digits, StringBuilder sb, ArrayList<String> result) 
+
+    private void helper(Map<Character, char[]> map, String digits, StringBuilder sb, ArrayList<String> result)
     {
-        if (sb.length() == digits.length()) 
+        if (sb.length() == digits.length())
         {
             result.add(sb.toString());
             return;
         }
 
-        for (char c : map.get(digits.charAt(sb.length()))) 
+        for (char c : map.get(digits.charAt(sb.length())))
         {
             sb.append(c);
             helper(map, digits, sb, result);

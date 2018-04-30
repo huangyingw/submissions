@@ -19,7 +19,7 @@ public class Solution
 
     private void reverse(StringBuilder sb, int begin, int end)
     {
-        for (; begin < end; begin++ , end--)
+        for (; begin < end; begin++, end--)
         {
             char temp = sb.charAt(begin);
             sb.setCharAt(begin, sb.charAt(end));

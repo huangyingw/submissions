@@ -7,14 +7,17 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public List<Integer> postorderTraversal(TreeNode root) {
+public class Solution
+{
+    public List<Integer> postorderTraversal(TreeNode root)
+    {
         List<Integer> result = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
         stack.push(root);
-        while(!stack.empty())
+
+        while (!stack.empty())
         {
-            if(root!=null)
+            if (root != null)
             {
                 stack.push(root.left);
                 root = root.left;
@@ -26,6 +29,7 @@ public class Solution {
                 root = root.right;
             }
         }
+
         return result;
     }
 }
