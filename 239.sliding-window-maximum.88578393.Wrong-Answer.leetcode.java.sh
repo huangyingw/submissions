@@ -3,7 +3,6 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-./build.sh
 leetcode user -l
 leetcode test \
     239.sliding-window-maximum.88578393.Wrong-Answer.leetcode.java \

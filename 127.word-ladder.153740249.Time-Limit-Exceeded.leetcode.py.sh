@@ -3,7 +3,6 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-./build.sh
 leetcode user -l
 leetcode test \
     127.word-ladder.153740249.Time-Limit-Exceeded.leetcode.py \
