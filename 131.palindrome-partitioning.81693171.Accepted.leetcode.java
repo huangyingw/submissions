@@ -3,14 +3,7 @@ public class Solution
     public List<List<String>> partition(String s)
     {
         List<List<String>> result = new ArrayList<List<String>>();
-
-        if (s == null || s.length() == 0)
-        {
-            return result;
-        }
-
-        ArrayList<String> current = new ArrayList<String>();
-        dfs(s, 0, current, result);
+        dfs(s, 0, new ArrayList<String>(), result);
         return result;
     }
 
@@ -19,17 +12,16 @@ public class Solution
         if (start == str.length())
         {
             result.add(new ArrayList<String>(current));
-            return;
         }
 
-        for (int i = start + 1; i <= str.length(); i++)
+        for (int index = start + 1; index <= str.length(); index++)
         {
-            String subStr = str.substring(start, i);
+            String subStr = str.substring(start, index);
 
             if (isPalindrome(subStr))
             {
                 current.add(subStr);
-                dfs(str, i, current, result);
+                dfs(str, index, current, result);
                 current.remove(current.size() - 1);
             }
         }
