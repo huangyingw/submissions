@@ -24,13 +24,13 @@ public class Solution
             {
                 if (k < num.length - 1 && num[k] == num[k + 1])
                 {
-                    k-- ;
+                    k--;
                     continue;
                 }
 
                 if (j > i + 1 && num[j] == num[j - 1])
                 {
-                    j++ ;
+                    j++;
                     continue;
                 }
 
@@ -41,16 +41,16 @@ public class Solution
                     temp.add(num[j]);
                     temp.add(num[k]);
                     res.add(temp);
-                    k-- ;
-                    j++ ;
+                    k--;
+                    j++;
                 }
                 else if (num[j] + num[k] + num[i] > 0)
                 {
-                    k-- ;
+                    k--;
                 }
                 else
                 {
-                    j++ ;
+                    j++;
                 }
             }
         }

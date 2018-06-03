@@ -43,8 +43,8 @@ public class Solution
 
         for (int i = row - 1; i >= 0; i--)
         {
-            leftTop-- ;
-            rightTop++ ;
+            leftTop--;
+            rightTop++;
 
             if (queens[i] == col || queens[i] == leftTop || queens[i] == rightTop)
             {

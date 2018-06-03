@@ -13,7 +13,7 @@ public class Solution
         for (int i = 0; i < prerequisites.length; i++)
         {
             adjacencyList.get(prerequisites[i][1]).add(prerequisites[i][0]);
-            in[prerequisites[i][0]]++ ;
+            in[prerequisites[i][0]]++;
         }
 
         LinkedList<Integer> queue = new LinkedList<Integer>();
@@ -32,7 +32,7 @@ public class Solution
 
             for (Integer a : adjacencyList.get(t))
             {
-                in[a]-- ;
+                in[a]--;
 
                 if (in[a] == 0)
                 {

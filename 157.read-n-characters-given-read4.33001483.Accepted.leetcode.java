@@ -16,7 +16,7 @@ public class Solution extends Reader4
             }
 
             buf[index++ ] = bb[cur++ ];
-            k-- ;
+            k--;
 
             if (k == 0)
             {

@@ -30,7 +30,7 @@ public class Solution
         for (int i = 2; i < n; i++)
             if (primes[i])
             {
-                count++ ;
+                count++;
             }
 
         return count;

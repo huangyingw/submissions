@@ -28,12 +28,12 @@ public class Solution
 
         if (shift == 0)
         {
-            i++ ;
+            i++;
         } // if n==m skip current char in s (modify operation in s)
 
         while (i < m && s.charAt(i) == t.charAt(i + shift))
         {
-            i++ ;
+            i++;
         } // use shift to skip one char in t
 
         return i == m;

@@ -23,18 +23,18 @@ public class Solution
                 while (i < s.length() && s.charAt(i) >= '0' && s.charAt(i) <= '9')
                 {
                     num = num * 10 + (int)(s.charAt(i) - '0');
-                    i++ ;
+                    i++;
                 }
 
                 pushNum(num);
-                i-- ;
+                i--;
             }
             else if (c != ' ')
             {
                 pushOp(c);
             }
 
-            i++ ;
+            i++;
         }
 
         if (!opStack.isEmpty())

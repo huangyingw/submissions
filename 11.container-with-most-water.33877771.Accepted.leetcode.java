@@ -11,12 +11,12 @@ public class Solution
             if (height[start] < height[end])
             {
                 maxArea = Math.max(maxArea, (end - start) * height[start]);
-                start++ ;
+                start++;
             }
             else
             {
                 maxArea = Math.max(maxArea, (end - start) * height[end]);
-                end-- ;
+                end--;
             }
         }
 

@@ -30,11 +30,10 @@ public class Solution
                     return true;
                 }
 
-                i++ ;
+                i++;
             }
 
             return false;
         }
     }
 }
-

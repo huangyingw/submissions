@@ -22,11 +22,11 @@ public class Solution
                 {
                     if (points[i].y == points[j].y)
                     {
-                        duplicate++ ;
+                        duplicate++;
                     }
                     else
                     {
-                        vertical++ ;
+                        vertical++;
                     }
                 }
                 else

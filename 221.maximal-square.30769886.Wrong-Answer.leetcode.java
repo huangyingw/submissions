@@ -44,7 +44,7 @@ public class Solution
             {
                 if (matrix[i][j] == '1')
                 {
-                    height[j]++ ;
+                    height[j]++;
                 }
                 else
                 {

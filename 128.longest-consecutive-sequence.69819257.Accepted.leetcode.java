@@ -18,7 +18,7 @@ public class Solution
             while (used.contains(left))
             {
                 used.remove(left);
-                left-- ;
+                left--;
             }
 
             int right = num + 1;
@@ -26,7 +26,7 @@ public class Solution
             while (used.contains(right))
             {
                 used.remove(right);
-                right++ ;
+                right++;
             }
 
             result = Math.max(result, right - left - 1);

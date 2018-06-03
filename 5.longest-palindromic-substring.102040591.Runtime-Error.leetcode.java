@@ -19,12 +19,12 @@ public class Solution
 
             while (k >= 0 && s.charAt(k) == s.charAt(i))
             {
-                k-- ;
+                k--;
             }
 
             while (j < n && s.charAt(j) == s.charAt(i))
             {
-                j++ ;
+                j++;
             }
 
             i = j;// 这个地方i=j 为了防止 s.charAt(i)出现多次，后面的一些判断就是多余。例如 baaaabc, 当i=1,此时
@@ -34,8 +34,8 @@ public class Solution
 
             while (k >= 0 && j < n && s.charAt(k) == s.charAt(j))
             {
-                k-- ;
-                j++ ;
+                k--;
+                j++;
             }
 
             l = j - k - 1;

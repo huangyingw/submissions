@@ -29,7 +29,7 @@ public class Solution
             }
             else
             {
-                right-- ;
+                right--;
             }
         }
 

@@ -19,7 +19,7 @@ public class Solution
         {
             if (A[i] == A[i + 1])
             {
-                j++ ;
+                j++;
             }
             else
             {

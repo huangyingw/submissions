@@ -11,11 +11,11 @@ public class Solution
         {
             if (num == num1)
             {
-                count1++ ;
+                count1++;
             }
             else if (num == num2)
             {
-                count2++ ;
+                count2++;
             }
             else if (count1 == 0)
             {
@@ -29,8 +29,8 @@ public class Solution
             }
             else
             {
-                count1-- ;
-                count2-- ;
+                count1--;
+                count2--;
             }
         }
 
@@ -41,11 +41,11 @@ public class Solution
         {
             if (i == num1)
             {
-                count1++ ;
+                count1++;
             }
             else if (i == num2)
             {
-                count2++ ;
+                count2++;
             }
         }
 

@@ -34,11 +34,11 @@ public class Solution
                 while (i < s.length() && s.charAt(i) >= '0' && s.charAt(i) <= '9')
                 {
                     curNum = curNum * 10 + s.charAt(i) - '0';
-                    i++ ;
+                    i++;
                 }
 
                 res += sign * curSign * curNum;
-                i-- ;
+                i--;
             }
             else if (s.charAt(i) == '+')
             {

@@ -39,7 +39,7 @@ public class Solution
 
         while (k > 0 && !queue.isEmpty())
         {
-            k-- ;
+            k--;
             Pair p = queue.poll();
             res.add(new int[] { nums1[p.x], nums2[p.y] });
 

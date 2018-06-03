@@ -22,25 +22,25 @@ public class Solution
                 return level;
             }
 
-            lastNum-- ;
+            lastNum--;
 
             if (cur.left != null)
             {
                 queue.offer(cur.left);
-                curNum++ ;
+                curNum++;
             }
 
             if (cur.right != null)
             {
                 queue.offer(cur.right);
-                curNum++ ;
+                curNum++;
             }
 
             if (lastNum == 0)
             {
                 lastNum = curNum;
                 curNum = 0;
-                level++ ;
+                level++;
             }
         }
 

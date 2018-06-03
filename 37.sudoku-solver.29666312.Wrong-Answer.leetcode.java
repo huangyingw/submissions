@@ -29,7 +29,7 @@ public class Solution
                 break;
             }
 
-            pos++ ;
+            pos++;
         }
 
         if (pos == 81)

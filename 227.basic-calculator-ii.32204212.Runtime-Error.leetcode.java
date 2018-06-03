@@ -23,18 +23,18 @@ public class Solution
                 while (i < s.length() && Character.isDigit(s.charAt(i)))
                 {
                     num = num * 10 + (int)(s.charAt(i) - '0');
-                    i++ ;
+                    i++;
                 }
 
                 numStack.push(num);
-                i-- ;
+                i--;
             }
             else if (c != ' ')
             {
                 pushOp(c);
             }
 
-            i++ ;
+            i++;
         }
 
         while (!opStack.isEmpty())

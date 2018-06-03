@@ -19,7 +19,7 @@ public class Solution
 
         for (int i = 0; i < len; i++)
         {
-            pCounter[prerequisites[i][0]]++ ;
+            pCounter[prerequisites[i][0]]++;
         }
 
         // store courses that have no prerequisites
@@ -45,11 +45,11 @@ public class Solution
                 // if a course's prerequisite can be satisfied by a course in queue
                 if (prerequisites[i][1] == top)
                 {
-                    pCounter[prerequisites[i][0]]-- ;
+                    pCounter[prerequisites[i][0]]--;
 
                     if (pCounter[prerequisites[i][0]] == 0)
                     {
-                        numNoPre++ ;
+                        numNoPre++;
                         queue.add(prerequisites[i][0]);
                     }
                 }

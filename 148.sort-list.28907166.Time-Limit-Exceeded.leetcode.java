@@ -14,7 +14,7 @@ public class Solution
         while (run != null)
         {
             run = run.next;
-            len++ ;
+            len++;
         }
 
         while (listLen < len)
@@ -35,7 +35,7 @@ public class Solution
                     run = run.next;
                 }
 
-                count++ ;
+                count++;
             }
 
             list2 = run;
@@ -44,7 +44,7 @@ public class Solution
             while (run != null && count < listLen)
             {
                 run = run.next;
-                count++ ;
+                count++;
             }
 
             ListNode pretmp = merge(list1, list2, pre, run, listLen);
@@ -55,10 +55,10 @@ public class Solution
             }
 
             pre = pretmp;
-            coup++ ;
+            coup++;
         }
 
-        level++ ;
+        level++;
         listLen = 1 << level;
         return head;
     }
@@ -76,13 +76,13 @@ public class Solution
             {
                 run.next = l1;
                 l1 = l1.next;
-                c1++ ;
+                c1++;
             }
             else
             {
                 run.next = l2;
                 l2 = l2.next;
-                c2++ ;
+                c2++;
             }
 
             run = run.next;
@@ -93,7 +93,7 @@ public class Solution
         {
             run.next = l1;
             l1 = l1.next;
-            c1++ ;
+            c1++;
             run = run.next;
         }
 
@@ -101,7 +101,7 @@ public class Solution
         {
             run.next = l2;
             l2 = l2.next;
-            c2++ ;
+            c2++;
             run = run.next;
         }
 

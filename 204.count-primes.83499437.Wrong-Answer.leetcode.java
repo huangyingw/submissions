@@ -31,7 +31,7 @@ public class Solution
         {
             if (primes[i])
             {
-                count++ ;
+                count++;
             }
         }
 

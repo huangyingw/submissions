@@ -15,21 +15,21 @@ public class Solution
         {
             if (data[i] >= pivot)
             {
-                i++ ;
+                i++;
                 continue;
             }
 
             if (data[j] < pivot)
             {
-                j-- ;
+                j--;
                 continue;
             }
 
             int tmp = data[i];
             data[i] = data[j];
             data[j] = tmp;
-            i++ ;
-            j-- ;
+            i++;
+            j--;
         }
 
         data[left] = data[j];

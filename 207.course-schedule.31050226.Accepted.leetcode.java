@@ -22,7 +22,7 @@ public class Solution
 
             while (it.hasNext())
             {
-                in[it.next()]++ ;
+                in[it.next()]++;
             }
         }
 
@@ -42,7 +42,7 @@ public class Solution
 
             for (Integer a : graph.get(t))
             {
-                in[a]-- ;
+                in[a]--;
 
                 if (in[a] == 0)
                 {

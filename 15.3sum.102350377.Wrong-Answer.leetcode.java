@@ -24,12 +24,12 @@ public class Solution
             {
                 if (j < k && k + 1 < num.length && num[k] == num[k + 1])
                 {
-                    k-- ;
+                    k--;
                 }
 
                 if (j < k && j - 1 > i && num[j] == num[j - 1])
                 {
-                    j++ ;
+                    j++;
                 }
 
                 if (j < k && num[j] + num[k] + num[i] == 0)
@@ -43,16 +43,16 @@ public class Solution
                     System.out.println(j);
                     System.out.println(k);
                     System.out.println();
-                    k-- ;
-                    j++ ;
+                    k--;
+                    j++;
                 }
                 else if (num[j] + num[k] + num[i] > 0)
                 {
-                    k-- ;
+                    k--;
                 }
                 else
                 {
-                    j++ ;
+                    j++;
                 }
             }
         }

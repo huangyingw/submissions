@@ -11,26 +11,26 @@ public class Solution
         {
             if (num == num1)
             {
-                count1++ ;
+                count1++;
             }
             else if (num == num2)
             {
-                count2++ ;
+                count2++;
             }
             else if (count1 == 0)
             {
                 num1 = num;
-                count1++ ;
+                count1++;
             }
             else if (count2 == 0)
             {
                 num2 = num;
-                count2++ ;
+                count2++;
             }
             else
             {
-                count1-- ;
-                count2-- ;
+                count1--;
+                count2--;
             }
         }
 

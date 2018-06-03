@@ -20,7 +20,7 @@ public class Solution
             {
                 if (points[j].x == points[i].x && points[j].y == points[i].y)
                 {
-                    numofSame++ ;
+                    numofSame++;
                     continue;
                 }
                 else if (points[j].x == points[i].x)

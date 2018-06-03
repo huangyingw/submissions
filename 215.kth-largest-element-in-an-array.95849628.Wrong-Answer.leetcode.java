@@ -15,12 +15,12 @@ public class Solution
         {
             while (i <= j && data[i] <= pivot)
             {
-                i++ ;
+                i++;
             }
 
             while (i <= j && data[j] > pivot)
             {
-                j-- ;
+                j--;
             }
 
             if (i <= j)
@@ -28,8 +28,8 @@ public class Solution
                 int tmp = data[i];
                 data[i] = data[j];
                 data[j] = tmp;
-                i++ ;
-                j-- ;
+                i++;
+                j--;
             }
         }
 

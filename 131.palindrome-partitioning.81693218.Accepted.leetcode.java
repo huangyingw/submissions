@@ -41,8 +41,8 @@ public class Solution
                 return false;
             }
 
-            left++ ;
-            right-- ;
+            left++;
+            right--;
         }
 
         return true;

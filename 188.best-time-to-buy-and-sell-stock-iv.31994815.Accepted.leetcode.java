@@ -15,7 +15,7 @@ public class Solution
         int[] local = new int[k + 1];
         int[] global = new int[k + 1];
 
-        for (int i = 1; i < prices.length ; i++)
+        for (int i = 1; i < prices.length; i++)
         {
             int diff = prices[i] - prices[i - 1];
 
