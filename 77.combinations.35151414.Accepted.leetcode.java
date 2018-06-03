@@ -1,7 +1,6 @@
 public class Solution
 {
-    private void dfs(int start, int end, int k, List<Integer> current,
-                     List<List<Integer>> result)
+    private void dfs(int start, int end, int k, List<Integer> current, List<List<Integer>> result)
     {
         if (k == 0)
         {
@@ -24,4 +23,3 @@ public class Solution
         return result;
     }
 }
-
