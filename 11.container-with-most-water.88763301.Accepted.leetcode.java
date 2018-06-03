@@ -8,19 +8,18 @@ public class Solution
 
         while (start < end)
         {
+            maxArea = Math.max(maxArea, (end - start) * Math.min(height[start], height[end]));
+
             if (height[start] < height[end])
             {
-                maxArea = Math.max(maxArea, (end - start) * height[start]);
-                start++;
+                start++ ;
             }
             else
             {
-                maxArea = Math.max(maxArea, (end - start) * height[end]);
-                end--;
+                end-- ;
             }
         }
 
         return maxArea;
     }
 }
-
