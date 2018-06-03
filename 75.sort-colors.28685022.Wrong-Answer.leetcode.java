@@ -2,21 +2,15 @@ public class Solution
 {
     public void sortColors(int[] A)
     {
-        if (A == null)
-        {
-            return;
-        }
-
-        int redIndex = 0; // points to the first one that may be not red
-        int blueIndex = A.length - 1; // points to the first one that may be not
-        // blue
+        int redIndex = 0;
+        int blueIndex = A.length - 1;
         int index = 0;
 
         while (index <= blueIndex)
         {
             if (A[index] == 0)
             {
-                swap(A, index++, redIndex++);   // index cannot be less than redIndex
+                swap(A, index++, redIndex++);
             }
             else if (A[index] == 2)
             {
@@ -36,4 +30,3 @@ public class Solution
         a[blueIndex] ^= a[index];
     }
 }
-
