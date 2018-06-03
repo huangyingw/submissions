@@ -14,14 +14,14 @@ public class Solution
             result.add(current);
         }
 
-        for (int i = start; i < str.length(); i++)
+        for (int index = start; index < str.length(); index++)
         {
-            String subStr = str.substring(start, i + 1);
+            String subStr = str.substring(start, index + 1);
 
             if (isPalindrome(subStr))
             {
                 current.add(subStr);
-                dfs(str, i + 1, current, result);
+                dfs(str, index + 1, current, result);
                 current.remove(current.size() - 1);
             }
         }
