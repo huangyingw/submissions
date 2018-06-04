@@ -7,18 +7,12 @@ public class Solution
 
         for (int i = 1; i <= s1.length(); i++)
         {
-            if (s1.charAt(i - 1) == s3.charAt(i - 1) && dp[i - 1][0])
-            {
-                dp[i][0] = true;
-            }
+            dp[i][0] = s1.charAt(i - 1) == s3.charAt(i - 1) && dp[i - 1][0];
         }
 
         for (int j = 1; j <= s2.length(); j++)
         {
-            if (s2.charAt(j - 1) == s3.charAt(j - 1) && dp[0][j - 1])
-            {
-                dp[0][j] = true;
-            }
+            dp[0][j] = s2.charAt(j - 1) == s3.charAt(j - 1) && dp[0][j - 1];
         }
 
         for (int i = 1; i <= s1.length(); i++)
@@ -33,4 +27,3 @@ public class Solution
         return dp[s1.length()][s2.length()];
     }
 }
-
