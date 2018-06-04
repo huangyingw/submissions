@@ -8,7 +8,7 @@ class Solution(object):
             return 0
         queue = [root]
         depth = 0
-        while len(queue) > 0:
+        while queue:
             depth += 1
             size = len(queue)
             for _ in range(size):
