@@ -1,12 +1,3 @@
-/**
- * Definition for binary tree
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 public class Solution
 {
     public int minDepth(TreeNode root)
@@ -16,20 +7,19 @@ public class Solution
             return 0;
         }
 
-        int l = minDepth(root.left);
-        int r = minDepth(root.right);
+        int left = minDepth(root.left);
+        int right = minDepth(root.right);
 
-        if (l == 0)
+        if (left == 0)
         {
-            return r + 1;
+            return right + 1;
         }
 
-        if (r == 0)
+        if (right == 0)
         {
-            return l + 1;
+            return left + 1;
         }
 
-        return Math.min(l, r) + 1;
+        return Math.min(left, right) + 1;
     }
 }
-
