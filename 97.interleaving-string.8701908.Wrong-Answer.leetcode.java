@@ -15,12 +15,10 @@ public class Solution
             {
                 dp[j] = (i == 0 && j == 0)
                         || (i != 0 && dp[j] && s1.charAt(i - 1) == s3.charAt(i + j - 1))
-                        || (j != 0 && dp[j - 1] && s2.charAt(j - 1) == s3.charAt(i + j
-                                - 1));
+                        || (j != 0 && dp[j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
             }
         }
 
         return dp[s2.length()];
     }
 }
-

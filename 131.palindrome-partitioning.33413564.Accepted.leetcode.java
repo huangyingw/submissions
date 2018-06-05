@@ -14,8 +14,7 @@ public class Solution
         return result;
     }
 
-    private void dfs(String str, int start, ArrayList<String> current,
-                     List<List<String>> result)
+    private void dfs(String str, int start, ArrayList<String> current, List<List<String>> result)
     {
         if (start == str.length())
         {
@@ -55,4 +54,3 @@ public class Solution
         return true;
     }
 }
-

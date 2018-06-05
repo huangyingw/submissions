@@ -48,13 +48,13 @@ class Solution(object):
             return 0
         queue = [root]
         depth = 0
-        while len(queue) > 0:
+        while queue:
             depth += 1
             size = len(queue)
             for i in range(size):
                 node = queue.pop()
-                if node.left != None:
+                if node.left:
                     queue.append(node.left)
-                if node.right != None:
+                if node.right:
                     queue.append(node.right)
         return depth
