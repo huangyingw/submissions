@@ -5,18 +5,17 @@ public class Solution
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         int[] result = new int[2];
 
-        for (int i = 0; i < numbers.length; i++)
+        for (int index = 0; index < numbers.length; index++)
         {
-            if (map.containsKey(numbers[i]))
+            if (map.containsKey(numbers[index]))
             {
-                int index = map.get(numbers[i]);
-                result[0] = index;
-                result[1] = i;
+                result[0] = map.get(numbers[index]);
+                result[1] = index;
                 break;
             }
             else
             {
-                map.put(target - numbers[i], i);
+                map.put(target - numbers[index], index);
             }
         }
 
