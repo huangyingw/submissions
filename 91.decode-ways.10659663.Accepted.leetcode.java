@@ -19,8 +19,7 @@ public class Solution
                 dp[i + 1] = dp[i];
             }
 
-            if (s.charAt(i - 1) == '1'
-                    || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6'))
+            if (s.charAt(i - 1) == '1' || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6'))
             {
                 dp[i + 1] += dp[i - 1];
             }
@@ -29,4 +28,3 @@ public class Solution
         return dp[s.length()];
     }
 }
-
