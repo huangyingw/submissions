@@ -11,10 +11,10 @@ public class Solution
     {
         result.add(new ArrayList<Integer>(current));
 
-        for (int i = start; i < S.length; i++)
+        for (int index = start; index < S.length; index++)
         {
-            current.add(S[i]);
-            dfs(S, i + 1, current, result);
+            current.add(S[index]);
+            dfs(S, index + 1, current, result);
             current.remove(current.size() - 1);
         }
     }
