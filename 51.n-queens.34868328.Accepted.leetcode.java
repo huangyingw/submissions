@@ -7,7 +7,7 @@ public class Solution
         return result;
     }
 
-    public void dfs(List<List<String>> result, int[] usedColumns, int curRow, int n)
+    public void dfs(List<List<String>> result, int[] columnForRow, int curRow, int n)
     {
         if (curRow == n)
         {
@@ -15,21 +15,21 @@ public class Solution
 
             for (int row = 0; row < n; row++)
             {
-                StringBuilder sb = new StringBuilder();
+                StringBuilder strRow = new StringBuilder();
 
                 for (int col = 0; col < n; col++)
                 {
-                    if (col == usedColumns[row])
+                    if (col == columnForRow[row])
                     {
-                        sb.append("Q");
+                        strRow.append("Q");
                     }
                     else
                     {
-                        sb.append(".");
+                        strRow.append(".");
                     }
                 }
 
-                board.add(sb.toString());
+                board.add(strRow.toString());
             }
 
             result.add(board);
@@ -38,23 +38,22 @@ public class Solution
 
         for (int col = 0; col < n; col++)
         {
-            usedColumns[curRow] = col;
+            columnForRow[curRow] = col;
 
-            if (isValidSolution(curRow, usedColumns))
+            if (isValid(curRow, columnForRow))
             {
-                dfs(result, usedColumns, curRow + 1, n);
+                dfs(result, columnForRow, curRow + 1, n);
             }
 
-            usedColumns[curRow] = -1;
+            columnForRow[curRow] = -1;
         }
     }
 
-    private boolean isValidSolution(int curRow, int[] usedColumns)
+    private boolean isValid(int curRow, int[] columnForRow)
     {
         for (int row = 0; row < curRow; row++)
         {
-            if (usedColumns[row] == usedColumns[curRow]
-                    || curRow - row == Math.abs(usedColumns[row] - usedColumns[curRow]))
+            if (columnForRow[row] == columnForRow[curRow] || curRow - row == Math.abs(columnForRow[row] - columnForRow[curRow]))
             {
                 return false;
             }
