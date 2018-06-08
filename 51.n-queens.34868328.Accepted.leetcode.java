@@ -3,12 +3,11 @@ public class Solution
     public List<List<String>> solveNQueens(int n)
     {
         List<List<String>> res = new ArrayList<List<String>>();
-        helper(res, new int[n], 0, n);
+        dfs(res, new int[n], 0, n);
         return res;
     }
 
-    public void helper(List<List<String>> res, int[] usedColumns, int curRow,
-                       int total)
+    public void dfs(List<List<String>> res, int[] usedColumns, int curRow, int total)
     {
         if (curRow == total)
         {
@@ -43,7 +42,7 @@ public class Solution
 
             if (isValidSolution(curRow, usedColumns))
             {
-                helper(res, usedColumns, curRow + 1, total);
+                dfs(res, usedColumns, curRow + 1, total);
             }
 
             usedColumns[curRow] = -1;
@@ -64,4 +63,3 @@ public class Solution
         return true;
     }
 }
-

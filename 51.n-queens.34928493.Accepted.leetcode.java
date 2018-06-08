@@ -2,13 +2,12 @@ public class Solution
 {
     public List<List<String>> solveNQueens(int n)
     {
-        List<List<String>> res = new ArrayList<List<String>>();
-        helper(n, 0, new int[n], res);
-        return res;
+        List<List<String>> result = new ArrayList<List<String>>();
+        dfs(n, 0, new int[n], result);
+        return result;
     }
 
-    private void helper(int n, int row, int[] columnForRow,
-                        List<List<String>> res)
+    private void dfs(int n, int row, int[] columnForRow, List<List<String>> result)
     {
         if (row == n)
         {
@@ -33,7 +32,7 @@ public class Solution
                 item.add(strRow.toString());
             }
 
-            res.add(item);
+            result.add(item);
             return;
         }
 
@@ -41,19 +40,18 @@ public class Solution
         {
             columnForRow[row] = i;
 
-            if (check(row, columnForRow))
+            if (isValid(row, columnForRow))
             {
-                helper(n, row + 1, columnForRow, res);
+                dfs(n, row + 1, columnForRow, result);
             }
         }
     }
 
-    private boolean check(int row, int[] columnForRow)
+    private boolean isValid(int row, int[] columnForRow)
     {
         for (int i = 0; i < row; i++)
         {
-            if (columnForRow[row] == columnForRow[i]
-                    || Math.abs(columnForRow[row] - columnForRow[i]) == row - i)
+            if (columnForRow[row] == columnForRow[i] || Math.abs(columnForRow[row] - columnForRow[i]) == row - i)
             {
                 return false;
             }
@@ -62,4 +60,3 @@ public class Solution
         return true;
     }
 }
-
