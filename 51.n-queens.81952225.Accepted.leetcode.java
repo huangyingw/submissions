@@ -1,7 +1,14 @@
 class Solution
 {
+    /**
+     * Get all distinct N-Queen solutions
+     * @param n: The number of queens
+     * @return: All distinct solutions
+     * For example, A string '...Q' shows a queen on forth position
+     */
     List<List<String>> solveNQueens(int n)
     {
+        // write your code here
         List<List<String>> result = new ArrayList<>();
 
         if (n <= 0)
@@ -10,11 +17,14 @@ class Solution
         }
 
         int[] row = new int[n];
-        dfs(result, row, n, 0);
+        solveNQueensCore(result, row, n, 0);
         return result;
     }
 
-    private void dfs(List<List<String>> result, int[] row, int n, int index)
+    private void solveNQueensCore(List<List<String>> result,
+                                  int[] row,
+                                  int n,
+                                  int index)
     {
         if (index == n)
         {
@@ -27,7 +37,7 @@ class Solution
             if (isValid(row, index, i))
             {
                 row[index] = i;
-                dfs(result, row, n, index + 1);
+                solveNQueensCore(result, row, n, index + 1);
                 row[index] = 0;
             }
         }
