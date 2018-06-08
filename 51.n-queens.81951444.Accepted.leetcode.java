@@ -1,35 +1,25 @@
 class Solution
 {
-    /**
-     * Get all distinct N-Queen solutions
-     * @param n: The number of queens
-     * @return: All distinct solutions
-     * For example, A string '...Q' shows a queen on forth position
-     */
     List<List<String>> solveNQueens(int n)
     {
-        // write your code here
-        List<List<String>> resultList = new ArrayList<>();
+        List<List<String>> result = new ArrayList<>();
 
         if (n <= 0)
         {
-            return resultList;
+            return result;
         }
 
         int[] row = new int[n];
-        solveNQueensCore(resultList, row, n, 0);
-        return resultList;
+        dfs(result, row, n, 0);
+        return result;
     }
 
-    private void solveNQueensCore(List<List<String>> resultList,
-                                  int[] row,
-                                  int n,
-                                  int index)
+    private void dfs(List<List<String>> result, int[] row, int n, int index)
     {
         if (index == n)
         {
             ArrayList<String> singleResult = translateString(row);
-            resultList.add(singleResult);
+            result.add(singleResult);
             return;
         }
 
@@ -38,7 +28,7 @@ class Solution
             if (isValid(row, index, i))
             {
                 row[index] = i;
-                solveNQueensCore(resultList, row, n, index + 1);
+                dfs(result, row, n, index + 1);
                 row[index] = 0;
             }
         }
@@ -46,7 +36,7 @@ class Solution
 
     private ArrayList<String> translateString(int[] row)
     {
-        ArrayList<String> resultList = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
 
         for (int i = 0; i < row.length; i++)
         {
@@ -64,10 +54,10 @@ class Solution
                 }
             }
 
-            resultList.add(sb.toString());
+            result.add(sb.toString());
         }
 
-        return resultList;
+        return result;
     }
 
     private boolean isValid(int[] row, int rowNum, int columnNum)
