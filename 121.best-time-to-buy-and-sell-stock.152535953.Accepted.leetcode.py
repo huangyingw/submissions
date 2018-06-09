@@ -4,7 +4,7 @@ class Solution(object):
         minPrice = sys.maxint
 
         for price in prices:
-            minPrice = min(price, minPrice)
             maxProfit = max(price - minPrice, maxProfit)
+            minPrice = min(price, minPrice)
 
         return maxProfit
