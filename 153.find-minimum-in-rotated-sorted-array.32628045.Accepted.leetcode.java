@@ -25,8 +25,7 @@ public class Solution
         }
         else
         {
-            return findMin(num, mid + 1, end);
+            return findMin(num, mid, end);
         }
     }
 }
-
