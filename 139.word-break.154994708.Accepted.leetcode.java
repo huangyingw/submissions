@@ -14,7 +14,7 @@ public class Solution
 
             for (int end = start + 1; end <= s.length(); end++)
             {
-                if (dp[start] && dict.contains(s.substring(start, end)))
+                if (dict.contains(s.substring(start, end)))
                 {
                     dp[end] = true;
                 }
@@ -24,4 +24,3 @@ public class Solution
         return dp[s.length()];
     }
 }
-
