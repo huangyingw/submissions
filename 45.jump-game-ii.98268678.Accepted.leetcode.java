@@ -17,6 +17,6 @@ public class Solution
             reach = Math.max(reach, nums[i] + i);
         }
 
-        return reach >= nums.length - 1 ? step : 0;
+        return step;
     }
 }
