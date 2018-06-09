@@ -7,11 +7,6 @@ public class Solution
 
     public int findMin(int[] num, int start, int end)
     {
-        if (num[start] < num[end])
-        {
-            return num[start];
-        }
-
         if ((end - start) <= 1)
         {
             return Math.min(num[start], num[end]);
