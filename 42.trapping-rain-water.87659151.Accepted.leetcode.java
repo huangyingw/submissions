@@ -19,9 +19,7 @@ public class Solution
 
         for (int i = heights.length - 1; i >= 0; i--)
         {
-            area += Math.min(max, leftMax[i]) > heights[i]
-                    ? Math.min(max, leftMax[i]) - heights[i]
-                    : 0;
+            area += Math.max(Math.min(max, leftMax[i]) - heights[i], 0);
             max = Math.max(max, heights[i]);
         }
 
