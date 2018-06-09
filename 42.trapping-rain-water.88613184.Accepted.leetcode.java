@@ -2,7 +2,7 @@ public class Solution
 {
     public int trap(int[] heights)
     {
-        if (heights == null || heights.length == 0)
+        if (heights.length == 0)
         {
             return 0;
         }
@@ -15,14 +15,14 @@ public class Solution
             leftMax[i] = Math.max(leftMax[i - 1], heights[i - 1]);
         }
 
-        int rightMax = heights[heights.length - 1], result = 0;
+        int rightMax = heights[heights.length - 1], area = 0;
 
         for (int i = heights.length - 1; i >= 0; i--)
         {
             rightMax = Math.max(rightMax, heights[i]);
-            result += Math.max(Math.min(rightMax, leftMax[i]) - heights[i], 0);
+            area += Math.max(Math.min(rightMax, leftMax[i]) - heights[i], 0);
         }
 
-        return result;
+        return area;
     }
 }
