@@ -3,50 +3,50 @@ public class Solution
     public List<List<String>> solveNQueens(int n)
     {
         List<List<String>> result = new ArrayList<List<String>>();
-        dfs(n, 0, new int[n], result);
+        dfs(result, new int[n], 0, n);
         return result;
     }
 
-    private void dfs(int n, int row, int[] columnForRow, List<List<String>> result)
+    public void dfs(List<List<String>> result, int[] columnForRow, int curRow, int n)
     {
-        if (row == n)
+        if (curRow == n)
         {
-            List<String> strRows = new ArrayList<String>();
+            List<String> board = new ArrayList<String>();
             char[] strRow = new char[n];
             Arrays.fill(strRow, '.');
 
-            for (int i = 0; i < n; i++)
+            for (int row = 0; row < n; row++)
             {
-                strRow[columnForRow[i]] = 'Q';
-                strRows.add(new String(strRow));
-                strRow[columnForRow[i]] = '.';
+                strRow[columnForRow[row]] = 'Q';
+                board.add(new String(strRow));
+                strRow[columnForRow[row]] = '.';
             }
 
-            result.add(strRows);
+            result.add(board);
             return;
         }
 
         for (int col = 0; col < n; col++)
         {
-            if (isValid(n, columnForRow, row, col))
+            if (isValid(columnForRow, curRow, col))
             {
-                columnForRow[row] = col;
-                dfs(n, row + 1, columnForRow, result);
+                columnForRow[curRow] = col;
+                dfs(result, columnForRow, curRow + 1, n);
             }
         }
     }
 
-    private boolean isValid(int n, int[] columnForRow, int row, int col)
+    public boolean isValid(int[] columnForRow, int curRow, int col)
     {
         int leftTop = col;
         int rightTop = col;
 
-        for (int i = row - 1; i >= 0; i--)
+        for (int row = curRow - 1; row >= 0; row--)
         {
             leftTop--;
             rightTop++;
 
-            if (columnForRow[i] == col || columnForRow[i] == leftTop || columnForRow[i] == rightTop)
+            if (columnForRow[row] == col || columnForRow[row] == leftTop || columnForRow[row] == rightTop)
             {
                 return false;
             }

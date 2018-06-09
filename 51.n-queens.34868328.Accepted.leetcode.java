@@ -49,7 +49,7 @@ public class Solution
         }
     }
 
-    private boolean isValid(int curRow, int[] columnForRow)
+    public boolean isValid(int curRow, int[] columnForRow)
     {
         for (int row = 0; row < curRow; row++)
         {
