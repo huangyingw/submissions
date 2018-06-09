@@ -14,10 +14,7 @@ public class Solution
                ) / 2.0;
     }
 
-    // find kth number of two sorted array
-    public int findKth(int[] A, int A_start,
-                       int[] B, int B_start,
-                       int k)
+    public int findKth(int[] A, int A_start, int[] B, int B_start, int k)
     {
         if (A_start >= A.length)
         {
@@ -51,4 +48,3 @@ public class Solution
         }
     }
 }
-
