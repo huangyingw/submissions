@@ -2,59 +2,58 @@ public class Solution
 {
     public List<List<String>> solveNQueens(int n)
     {
-        List<List<String>> res = new ArrayList<List<String>>();
-        dfs(res, new int[n], 0, n);
-        return res;
+        List<List<String>> result = new ArrayList<List<String>>();
+        dfs(result, new int[n], 0, n);
+        return result;
     }
 
-    public void dfs(List<List<String>> res, int[] usedColumns, int curRow, int total)
+    public void dfs(List<List<String>> result, int[] columnForRow, int curRow, int n)
     {
-        if (curRow == total)
+        if (curRow == n)
         {
             List<String> board = new ArrayList<String>();
 
-            for (int row = 0; row < total; row++)
+            for (int row = 0; row < n; row++)
             {
-                StringBuilder sb = new StringBuilder();
+                StringBuilder strRow = new StringBuilder();
 
-                for (int col = 0; col < total; col++)
+                for (int col = 0; col < n; col++)
                 {
-                    if (col == usedColumns[row])
+                    if (col == columnForRow[row])
                     {
-                        sb.append("Q");
+                        strRow.append("Q");
                     }
                     else
                     {
-                        sb.append(".");
+                        strRow.append(".");
                     }
                 }
 
-                board.add(sb.toString());
+                board.add(strRow.toString());
             }
 
-            res.add(board);
+            result.add(board);
             return;
         }
 
-        for (int col = 0; col < total; col++)
+        for (int col = 0; col < n; col++)
         {
-            usedColumns[curRow] = col;
+            columnForRow[curRow] = col;
 
-            if (isValidSolution(curRow, usedColumns))
+            if (isValid(curRow, columnForRow))
             {
-                dfs(res, usedColumns, curRow + 1, total);
+                dfs(result, columnForRow, curRow + 1, n);
             }
 
-            usedColumns[curRow] = -1;
+            columnForRow[curRow] = -1;
         }
     }
 
-    private boolean isValidSolution(int curRow, int[] usedColumns)
+    private boolean isValid(int curRow, int[] columnForRow)
     {
         for (int row = 0; row < curRow; row++)
         {
-            if (usedColumns[row] == usedColumns[curRow]
-                    || curRow - row == Math.abs(usedColumns[row] - usedColumns[curRow]))
+            if (columnForRow[row] == columnForRow[curRow] || curRow - row == Math.abs(columnForRow[row] - columnForRow[curRow]))
             {
                 return false;
             }
