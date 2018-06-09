@@ -7,7 +7,7 @@ public class Solution
         {
             return 0;
         }
-        
+
         m = grid.length;
         n = grid[0].length;
         int result = 0;
@@ -21,7 +21,7 @@ public class Solution
                     continue;
                 }
 
-                result++ ;
+                result++;
                 dfs(grid, i, j);
             }
         }
