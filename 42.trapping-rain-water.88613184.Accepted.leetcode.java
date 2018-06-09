@@ -17,7 +17,7 @@ public class Solution
 
         int rightMax = heights[heights.length - 1], area = 0;
 
-        for (int i = heights.length - 1; i >= 0; i--)
+        for (int i = heights.length - 2; i >= 0; i--)
         {
             rightMax = Math.max(rightMax, heights[i]);
             area += Math.max(Math.min(rightMax, leftMax[i]) - heights[i], 0);
