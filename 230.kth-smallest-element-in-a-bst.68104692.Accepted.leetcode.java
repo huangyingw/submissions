@@ -3,31 +3,27 @@ public class Solution
     public int kthSmallest(TreeNode root, int k)
     {
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        TreeNode node = root;
-        int res = 0;
 
-        while (node != null || !stack.isEmpty())
+        while (root != null || !stack.isEmpty())
         {
-            if (node != null)
+            if (root != null)
             {
-                stack.push(node);
-                node = node.left;
+                stack.push(root);
+                root = root.left;
             }
             else
             {
-                node = stack.pop();
+                root = stack.pop();
 
                 if (--k == 0)
                 {
-                    res = node.val;
-                    break;
+                    return root.val;
                 }
 
-                node = node.right;
+                root = root.right;
             }
         }
 
-        return res;
+        return root.val;
     }
 }
-
