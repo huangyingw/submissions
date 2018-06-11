@@ -1,13 +1,10 @@
 public class Solution
 {
-    private double findMedianSortedArrays(int A[], int left, int right,
-                                          int B[])
+    public double findMedianSortedArrays(int A[], int left, int right, int B[])
     {
         if (left > right)
         {
-            return findMedianSortedArrays(B,
-                                          Math.max(0, (A.length + B.length) / 2 - A.length),
-                                          Math.min(B.length - 1, (A.length + B.length) / 2), A);
+            return findMedianSortedArrays(B, Math.max(0, (A.length + B.length) / 2 - A.length), Math.min(B.length - 1, (A.length + B.length) / 2), A);
         }
 
         int i = (left + right) / 2;
@@ -43,9 +40,6 @@ public class Solution
 
     public double findMedianSortedArrays(int A[], int B[])
     {
-        return findMedianSortedArrays(A,
-                                      Math.max(0, (A.length + B.length) / 2 - B.length),
-                                      Math.min(A.length - 1, (A.length + B.length) / 2), B);
+        return findMedianSortedArrays(A, Math.max(0, (A.length + B.length) / 2 - B.length), Math.min(A.length - 1, (A.length + B.length) / 2), B);
     }
 }
-

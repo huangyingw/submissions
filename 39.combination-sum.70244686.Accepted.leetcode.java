@@ -3,18 +3,11 @@ public class Solution
     public List<List<Integer>> combinationSum(int[] num, int target)
     {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
-
-        if (num == null || num.length == 0)
-        {
-            return result;
-        }
-
         Arrays.sort(num);
         dfs(num, 0, target, new ArrayList<Integer>(), result);
         return result;
     }
-    private void dfs(int[] num, int start, int target,
-                     ArrayList<Integer> current, List<List<Integer>> result)
+    public void dfs(int[] num, int start, int target, ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (target == 0)
         {
@@ -35,4 +28,3 @@ public class Solution
         }
     }
 }
-
