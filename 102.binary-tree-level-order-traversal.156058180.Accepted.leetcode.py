@@ -19,7 +19,5 @@ class Solution(object):
 
                 if root.right:
                     queue.append(root.right)
-
             result.append(current)
-
         return result
