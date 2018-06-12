@@ -1,14 +1,13 @@
 public class Solution
 {
-    public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root)
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root)
     {
-        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
+        List<List<Integer>> ans = new ArrayList<List<Integer>>();
         traverse(root, 0, ans, true);
         return ans;
     }
 
-    public void traverse(TreeNode root, int level,
-                         ArrayList<ArrayList<Integer>> result, Boolean left_to_right)
+    public void traverse(TreeNode root, int level, List<List<Integer>> result, Boolean left_to_right)
     {
         if (root == null)
         {
@@ -33,4 +32,3 @@ public class Solution
         traverse(root.right, level + 1, result, !left_to_right);
     }
 }
-

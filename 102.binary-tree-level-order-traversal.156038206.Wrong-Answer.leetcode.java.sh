@@ -3,9 +3,7 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-./build.sh
 leetcode user -l
 leetcode test \
-    ./139.word-break.90221939.Wrong-Answer.leetcode.java \
-    -t '"aaaaaaa"\n["aaaa","aaa"]'
-
+    102.binary-tree-level-order-traversal.156038206.Wrong-Answer.leetcode.java \
+    -t '[]'
