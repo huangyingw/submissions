@@ -2,8 +2,9 @@ public class Solution
 {
     private ListNode current;
 
-    private int getListLength(ListNode head)
+    public TreeNode sortedListToBST(ListNode head)
     {
+        current = head;
         int size = 0;
 
         while (head != null)
@@ -12,16 +13,10 @@ public class Solution
             head = head.next;
         }
 
-        return size;
+        return dfs(0, size - 1);
     }
 
-    public TreeNode sortedListToBST(ListNode head)
-    {
-        current = head;
-        return sortedListToBSTHelper(0, getListLength(head) - 1);
-    }
-
-    public TreeNode sortedListToBSTHelper(int start, int end)
+    public TreeNode dfs(int start, int end)
     {
         if (start > end)
         {
@@ -29,10 +24,10 @@ public class Solution
         }
 
         int mid = (start + end) / 2;
-        TreeNode left = sortedListToBSTHelper(start, mid - 1);
+        TreeNode left = dfs(start, mid - 1);
         TreeNode root = new TreeNode(current.val);
         current = current.next;
-        TreeNode right = sortedListToBSTHelper(mid + 1, end);
+        TreeNode right = dfs(mid + 1, end);
         root.left = left;
         root.right = right;
         return root;
