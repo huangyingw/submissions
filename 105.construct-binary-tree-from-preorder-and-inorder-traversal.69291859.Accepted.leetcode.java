@@ -1,12 +1,3 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 public class Solution
 {
     public TreeNode buildTree(int[] preorder, int[] inorder)
@@ -27,7 +18,6 @@ public class Solution
 
         int val = preorder[preStart];
         TreeNode p = new TreeNode(val);
-        //find parent element index from inorder
         int k = 0;
 
         for (int i = 0; i < inorder.length; i++)
