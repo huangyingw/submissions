@@ -1,7 +1,6 @@
 public class Solution
 {
-    private TreeNode sortedListToBST(ListNode head, ListNode[] tail,
-                                     int begin, int end)
+    private TreeNode sortedListToBST(ListNode head, ListNode[] tail, int begin, int end)
     {
         if (begin > end)
         {
@@ -31,4 +30,3 @@ public class Solution
         return sortedListToBST(head, new ListNode[1], 0, len - 1);
     }
 }
-
