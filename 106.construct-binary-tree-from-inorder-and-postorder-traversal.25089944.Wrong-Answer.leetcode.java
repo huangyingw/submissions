@@ -1,12 +1,3 @@
-/**
- * Definition for binary tree
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 public class Solution
 {
     public TreeNode buildTree(int[] inorder, int[] postorder)
@@ -22,17 +13,17 @@ public class Solution
         return root;
     }
 
-    public TreeNode helper(HashMap inMap, int[] inorder, int il, int ir, int[] postorder, int pl, int pr)
+    public TreeNode helper(HashMap inMap, int[] inorder, int inLeft, int inRight, int[] postorder, int poLeft, int poRight)
     {
-        if (pr < 0 || pl < pr)
+        if (poRight < 0 || poLeft < poRight)
         {
             return null;
         }
 
-        TreeNode root = new TreeNode(postorder[pr]);
-        int im = (int)inMap.get(postorder[pr]);
-        root.left = helper(inMap, inorder, il, im - 1, postorder, pl, pl + im - 1 - il);
-        root.right = helper(inMap, inorder, im + 1, ir, postorder, pl + im - il, pr - 1);
+        TreeNode root = new TreeNode(postorder[poRight]);
+        int mid = (int)inMap.get(postorder[poRight]);
+        root.left = helper(inMap, inorder, inLeft, mid - 1, postorder, poLeft, poLeft + mid - 1 - inLeft);
+        root.right = helper(inMap, inorder, mid + 1, inRight, postorder, poLeft + mid - inLeft, poRight - 1);
         return root;
     }
 }
