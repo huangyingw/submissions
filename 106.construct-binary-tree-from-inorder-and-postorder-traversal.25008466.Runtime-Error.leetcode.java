@@ -9,8 +9,7 @@ public class Solution
             inMap.put(inorder[i], i);
         }
 
-        TreeNode root = helper(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
-        return root;
+        return helper(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
     }
 
     public TreeNode helper(HashMap inMap, int[] inorder, int inLeft, int inRight, int[] postorder, int poLeft, int poRight)
