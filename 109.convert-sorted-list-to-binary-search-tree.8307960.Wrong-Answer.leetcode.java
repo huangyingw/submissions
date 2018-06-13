@@ -9,7 +9,7 @@ public class Solution
         }
 
         TreeNode p = new TreeNode(0);
-        int mid = begin + (end - begin) / 2;
+        int mid = (begin + end) / 2;
         p.left = sortedListToBST(head, tail, begin, mid - 1);
         p.val = head.val;
         p.right = sortedListToBST(head.next, tail, mid + 1, end);
