@@ -1,7 +1,6 @@
 public class Solution
 {
-    private TreeNode sortedListToBST(ListNode head, ListNode[] tail,
-                                     int begin, int end)
+    private TreeNode sortedListToBST(ListNode head, ListNode[] tail, int begin, int end)
     {
         if (begin > end)
         {
@@ -10,7 +9,7 @@ public class Solution
         }
 
         TreeNode p = new TreeNode(0);
-        int mid = begin + (end - begin) / 2;
+        int mid = (begin + end) / 2;
         p.left = sortedListToBST(head, tail, begin, mid - 1);
         p.val = head.val;
         p.right = sortedListToBST(head.next, tail, mid + 1, end);
@@ -31,4 +30,3 @@ public class Solution
         return sortedListToBST(head, new ListNode[1], 0, len - 1);
     }
 }
-
