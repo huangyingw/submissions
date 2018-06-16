@@ -1,10 +1,3 @@
-/*
-  ✘ Wrong Answer
-  ✘ 97/114 cases passed (N/A)
-  ✘ testcase: '[1,2]\n1'
-  ✘ answer: true
-  ✘ expected_answer: false
- */
 public class Solution
 {
     public boolean hasPathSum(TreeNode root, int sum)
@@ -22,4 +15,3 @@ public class Solution
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }
-
