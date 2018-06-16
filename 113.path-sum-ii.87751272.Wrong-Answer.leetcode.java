@@ -12,8 +12,7 @@ public class Solution
         return result;
     }
 
-    private void pathSum(TreeNode root, int sum, ArrayList<Integer> current,
-                         List<List<Integer>> result)
+    private void pathSum(TreeNode root, int sum, ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (root == null)
         {
