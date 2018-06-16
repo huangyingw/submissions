@@ -12,7 +12,6 @@ public class Solution
             return hasBrother ? Integer.MAX_VALUE : 0;
         }
 
-        return 1 + Math.min(minDepth(root.left, root.right != null),
-                            minDepth(root.right, root.left != null));
+        return 1 + Math.min(minDepth(root.left, root.right != null), minDepth(root.right, root.left != null));
     }
 }
