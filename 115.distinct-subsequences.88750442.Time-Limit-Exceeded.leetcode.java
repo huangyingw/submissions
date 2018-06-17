@@ -13,11 +13,7 @@ public class Solution
                 {
                     dp[j] += dp[j - 1];
                 }
-
-                System.out.println(i + "," + j + " --> " + dp[j]);
             }
-
-            System.out.println();
         }
 
         return dp[T.length()];
