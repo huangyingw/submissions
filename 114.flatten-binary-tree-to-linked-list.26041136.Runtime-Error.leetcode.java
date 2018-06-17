@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public void flatten(TreeNode root)
     {
         helper(root, null);
@@ -24,4 +23,3 @@ public class Solution
         helper(savedRight, root.left);
     }
 }
-
