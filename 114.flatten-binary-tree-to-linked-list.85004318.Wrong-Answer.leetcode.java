@@ -25,11 +25,10 @@ public class Solution
         if (root.right == null)
         {
             root.right = root.left;
-            root.left = null; // important!
+            root.left = null;
             return flattenHelper(root.right);
         }
 
-        // Divide
         TreeNode leftLastNode = flattenHelper(root.left);
         TreeNode rightLastNode = flattenHelper(root.right);
         // Conquer
