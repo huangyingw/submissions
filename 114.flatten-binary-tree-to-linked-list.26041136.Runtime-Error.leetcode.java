@@ -1,11 +1,10 @@
 public class Solution
 {
-
     public void flatten(TreeNode root)
     {
-        helper(root, null);
+        dfs(root, null);
     }
-    public void helper(TreeNode root, TreeNode pre)
+    public void dfs(TreeNode root, TreeNode pre)
     {
         if (root == null)
         {
@@ -20,8 +19,7 @@ public class Solution
             pre.right = root;
         }
 
-        helper(root.left, root);
-        helper(savedRight, root.left);
+        dfs(root.left, root);
+        dfs(savedRight, root.left);
     }
 }
-
