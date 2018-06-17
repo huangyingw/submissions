@@ -15,8 +15,6 @@ public class Solution
                 {
                     dp[i][j] += dp[i - 1][j - 1];
                 }
-
-                System.out.println(i + "," + j + " -->" + dp[i][j]);
             }
         }
 
