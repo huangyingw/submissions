@@ -15,9 +15,7 @@ public class Solution
             {
                 son.next = parent.right;
                 son = son.next;
-                System.out.printf("son --> %s\n", son.val);
                 parent = parent.next;
-                System.out.printf("parent --> %s\n", parent.val);
                 son.next = parent != null ? parent.left : null;
             }
 
