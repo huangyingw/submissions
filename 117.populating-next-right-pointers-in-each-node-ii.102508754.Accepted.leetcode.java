@@ -4,8 +4,8 @@ public class Solution
     {
         while (root != null)
         {
-            TreeLinkNode leftMost = null; // the first node of next level
-            TreeLinkNode nav = null; // previous node on the same level
+            TreeLinkNode leftMost = null;
+            TreeLinkNode nav = null;
 
             for (; root != null; root = root.next)
             {
@@ -35,7 +35,7 @@ public class Solution
                 }
             }
 
-            root = leftMost; // turn to next level
+            root = leftMost;
         }
     }
 }
