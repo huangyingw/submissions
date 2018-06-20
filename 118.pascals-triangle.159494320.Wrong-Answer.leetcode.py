@@ -4,5 +4,4 @@ class Solution(object):
 
         for i in range(numRows):
             result.append([1] * i)
-
         return result
