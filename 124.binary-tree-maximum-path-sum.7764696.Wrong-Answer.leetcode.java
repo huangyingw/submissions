@@ -25,8 +25,7 @@ public class Solution
         }
 
         max_sum = Math.max(max_sum, sum);
-        return Math.max(left, right) > 0 ? Math.max(left, right) + root.val
-               : root.val;
+        return Math.max(left, right) > 0 ? Math.max(left, right) + root.val : root.val;
     }
 
     public int maxPathSum(TreeNode root)
@@ -36,4 +35,3 @@ public class Solution
         return max_sum;
     }
 }
-

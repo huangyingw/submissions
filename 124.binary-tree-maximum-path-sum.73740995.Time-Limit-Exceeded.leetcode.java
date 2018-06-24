@@ -2,8 +2,6 @@ public class Solution
 {
     private class ResultType
     {
-        // singlePath: 从root往下走到任意点的最大路径，这条路径可以不包含任何点
-        // maxPath: 从树中任意到任意点的最大路径，这条路径至少包含一个点
         int singlePath, maxPath;
         ResultType(int singlePath, int maxPath)
         {
@@ -19,10 +17,8 @@ public class Solution
             return new ResultType(0, Integer.MIN_VALUE);
         }
 
-        // Divide
         ResultType left = helper(root.left);
         ResultType right = helper(root.right);
-        // Conquer
         int singlePath = Math.max(left.singlePath, right.singlePath) + root.val;
         singlePath = Math.max(singlePath, 0);
         int maxPath = Math.max(left.maxPath, right.maxPath);
