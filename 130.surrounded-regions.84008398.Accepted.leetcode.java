@@ -23,9 +23,7 @@ public class Solution
         {
             int r = i / board[0].length;
             int c = i % board[0].length;
-            edge[i] = (board[r][c] == 'O' &&
-                       (r == 0 || r == board.length - 1
-                        || c == 0 || c == board[0].length - 1));  // true表示没有被包围
+            edge[i] = (board[r][c] == 'O' && (r == 0 || r == board.length - 1 || c == 0 || c == board[0].length - 1));  // true表示没有被包围
         }
 
         // span the matrix
