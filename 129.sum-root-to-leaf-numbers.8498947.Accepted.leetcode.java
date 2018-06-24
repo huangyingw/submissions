@@ -1,7 +1,7 @@
 public class Solution
 {
 
-    private int sumNumbers(TreeNode root, int base)
+    private int dfs(TreeNode root, int base)
     {
         if (root.left == null && root.right == null)
         {
@@ -12,12 +12,12 @@ public class Solution
 
         if (root.left != null)
         {
-            sum += sumNumbers(root.left, base * 10 + root.left.val);
+            sum += dfs(root.left, base * 10 + root.left.val);
         }
 
         if (root.right != null)
         {
-            sum += sumNumbers(root.right, base * 10 + root.right.val);
+            sum += dfs(root.right, base * 10 + root.right.val);
         }
 
         return sum;
@@ -30,6 +30,6 @@ public class Solution
             return 0;
         }
 
-        return sumNumbers(root, root.val);
+        return dfs(root, root.val);
     }
 }
