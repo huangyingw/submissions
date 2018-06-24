@@ -5,9 +5,9 @@ class Solution(object):
         end = len(s) - 1
 
         while start < end:
-            if not 'a' <= s[start] <= 'z':
+            if not s[start].isalnum():
                 start += 1
-            elif not 'a' <= s[end] <= 'z':
+            elif not s[end].isalnum():
                 end -= 1
             elif s[start] != s[end]:
                 return False
