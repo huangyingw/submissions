@@ -46,7 +46,7 @@ public class Solution
             int x = pos.x;
             int y = pos.y;
 
-            if (isOutOfBound(x, y, rows, columns) || board[x][y] != '0')
+            if (isOutOfBound(x, y, rows, columns) || board[x][y] != 'O')
             {
                 continue;
             }
@@ -74,4 +74,3 @@ public class Solution
         }
     }
 }
-
