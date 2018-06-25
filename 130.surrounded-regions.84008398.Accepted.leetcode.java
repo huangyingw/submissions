@@ -37,13 +37,13 @@ public class Solution
             //the unper field
             if (up >= 0 && board[r][c] == board[up][c])
             {
-                unit(i, i - board[0].length);    //应该属于一类，unit一下
+                union_set(i, i - board[0].length);    //应该属于一类，union_set一下
             }
 
             //the pre field
             if (pre >= 0 && board[r][c] == board[r][pre])
             {
-                unit(i, i - 1);
+                union_set(i, i - 1);
             }
         }
 
@@ -52,30 +52,30 @@ public class Solution
             int r = i / board[0].length;
             int c = i % board[0].length;
 
-            if (board[r][c] == 'O' && !edge[find(i)])
+            if (board[r][c] == 'O' && !edge[find_set(i)])
             {
                 board[r][c] = 'X';
             }
         }
     }
 
-    private void unit(int x, int y)
+    private void union_set(int x, int y)
     {
-        int rootX = find(x);   //找到这一类的根
-        int rootY = find(y);
+        int rootX = find_set(x);   //找到这一类的根
+        int rootY = find_set(y);
         boolean edgeU = this.edge[rootX] || this.edge[rootY];  //只要有一个被包围，则都被包围
         unitArray[rootX] = rootY;
         this.edge[rootY] = edgeU;
     }
 
-    private int find(int x)
+    private int find_set(int x)
     {
         if (unitArray[x] == x)
         {
             return x;
         }
 
-        unitArray[x] = find(unitArray[x]);
+        unitArray[x] = find_set(unitArray[x]);
         return unitArray[x];
     }
 }
