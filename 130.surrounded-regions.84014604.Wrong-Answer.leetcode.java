@@ -43,19 +43,17 @@ public class Solution
         while (!queue.isEmpty())
         {
             Pos pos = queue.remove();
-            int x = pos.x;
-            int y = pos.y;
 
-            if (isOutOfBound(x, y, rows, columns) || board[x][y] != 'O')
+            if (isOutOfBound(pos.x, pos.y, rows, columns) || board[pos.x][pos.y] != '0')
             {
                 continue;
             }
 
-            board[x][y] = 'N';
-            queue.add(new Pos(x - 1, y));
-            queue.add(new Pos(x + 1, y));
-            queue.add(new Pos(x, y - 1));
-            queue.add(new Pos(x, y + 1));
+            board[pos.x][pos.y] = 'N';
+            queue.add(new Pos(pos.x - 1, pos.y));
+            queue.add(new Pos(pos.x + 1, pos.y));
+            queue.add(new Pos(pos.x, pos.y - 1));
+            queue.add(new Pos(pos.x, pos.y + 1));
         }
 
         for (int i = 0; i < rows; i++)
@@ -74,3 +72,4 @@ public class Solution
         }
     }
 }
+
