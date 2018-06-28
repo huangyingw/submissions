@@ -1,0 +1,68 @@
+public class Solution
+{
+    private void copyNext(RandomListNode head)
+    {
+        while (head != null)
+        {
+            RandomListNode newNode = new RandomListNode(head.label);
+            newNode.next = head.next;
+            head.next = newNode;
+            head = head.next.next;
+        }
+    }
+
+    private void copyRandom(RandomListNode head)
+    {
+        while (head != null && head.next != null)
+        {
+            if (head.next.random != null)
+            {
+                head.next.random = head.random.next;
+            }
+
+            head = head.next.next;
+        }
+    }
+
+    private RandomListNode splitList(RandomListNode head)
+    {
+        RandomListNode newHead = head.next;
+
+        while (head != null && head.next != null)
+        {
+            RandomListNode temp = head.next;
+            head.next = temp.next;
+            head = temp;
+        }
+
+        return newHead;
+    }
+
+    public void printList(RandomListNode head)
+    {
+        while (head != null)
+        {
+            System.out.printf("%s --> ", head.label);
+            head = head.next;
+        }
+
+        System.out.printf("\n");
+    }
+    public RandomListNode copyRandomList(RandomListNode head)
+    {
+        if (head == null)
+        {
+            return null;
+        }
+
+        printList(head);
+        System.out.printf("head --> %s\n", head);
+        copyNext(head);
+        System.out.printf("head --> %s\n", head);
+        printList(head);
+        copyRandom(head);
+        head = splitList(head);
+        printList(head);
+        return head;
+    }
+}
