@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private ListNode merge(ListNode h1, ListNode h2)
     {
         ListNode dummy = new ListNode(0);
@@ -48,4 +47,3 @@ public class Solution
         return merge(l1, l2);
     }
 }
-

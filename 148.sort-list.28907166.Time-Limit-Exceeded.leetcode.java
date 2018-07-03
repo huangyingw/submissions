@@ -63,8 +63,7 @@ public class Solution
         return head;
     }
 
-    public ListNode merge(ListNode l1, ListNode l2, ListNode pre,
-                          ListNode tail, int len)
+    public ListNode merge(ListNode l1, ListNode l2, ListNode pre, ListNode tail, int len)
     {
         int c1 = 0, c2 = 0;
         ListNode head = new ListNode(-1);
@@ -110,4 +109,3 @@ public class Solution
         return run;
     }
 }
-
