@@ -8,7 +8,8 @@ public class Solution
         }
 
         LinkedList<UndirectedGraphNode> queue = new LinkedList<UndirectedGraphNode>();
-        HashMap<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<UndirectedGraphNode, UndirectedGraphNode>();
+        HashMap<UndirectedGraphNode, UndirectedGraphNode> map =
+            new HashMap<UndirectedGraphNode, UndirectedGraphNode>();
         UndirectedGraphNode newHead = new UndirectedGraphNode(node.label);
         queue.add(node);
         map.put(node, newHead);
@@ -37,3 +38,4 @@ public class Solution
         return newHead;
     }
 }
+

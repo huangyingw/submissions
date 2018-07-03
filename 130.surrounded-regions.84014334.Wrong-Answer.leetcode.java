@@ -44,7 +44,7 @@ public class Solution
         {
             Pos pos = queue.remove();
 
-            if (isOutOfBound(pos.x, pos.y, rows, columns) || board[pos.x][pos.y] != 'O')
+            if (isOutOfBound(pos.x, pos.y, rows, columns) || board[pos.x][pos.y] != '0')
             {
                 continue;
             }
@@ -72,3 +72,4 @@ public class Solution
         }
     }
 }
+
