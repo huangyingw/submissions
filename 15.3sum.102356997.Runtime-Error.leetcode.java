@@ -13,7 +13,7 @@ public class Solution
 
         for (int i = 0; i + 2 < num.length; i++)
         {
-            if (i > 0 && num[i] == num[i - 1]) // avoid duplicate solutions
+            if (i > 0 && num[i] == num[i - 1])
             {
                 continue;
             }

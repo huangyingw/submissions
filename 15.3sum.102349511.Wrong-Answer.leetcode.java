@@ -13,7 +13,7 @@ public class Solution
 
         for (int i = 0; i < num.length - 2; i++)
         {
-            if (i > 0 && num[i] == num[i - 1]) // avoid duplicate solutions
+            if (i > 0 && num[i] == num[i - 1])
             {
                 continue;
             }
@@ -25,12 +25,12 @@ public class Solution
                 while (j < k && num[k] == num[k - 1])
                 {
                     k--;
-                } // avoid duplicate solutions
+                }
 
                 while (j < k && num[j] == num[j + 1])
                 {
                     j++;
-                } // avoid duplicate solutions
+                }
 
                 if (num[j] + num[k] + num[i] == 0)
                 {
