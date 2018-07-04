@@ -11,9 +11,9 @@ public class Solution
 
         Arrays.sort(num);
 
-        for (int i = 0; i < num.length - 2; i++)
+        for (int i = 0; i + 2 < num.length; i++)
         {
-            if (i > 0 && num[i] == num[i - 1]) // avoid duplicate solutions
+            if (i > 0 && num[i] == num[i - 1])
             {
                 continue;
             }
@@ -32,7 +32,7 @@ public class Solution
                     j++;
                 }
 
-                if (num[j] + num[k] + num[i] == 0)
+                if (num[i] + num[j] + num[k] == 0)
                 {
                     ArrayList<Integer> temp = new ArrayList<Integer>();
                     temp.add(num[i]);

@@ -34,15 +34,15 @@ public class Solution
                     continue;
                 }
 
-                if (num[j] + num[k] + num[i] == 0)
+                if (num[i] + num[j] + num[k] == 0)
                 {
                     ArrayList<Integer> temp = new ArrayList<Integer>();
                     temp.add(num[i]);
                     temp.add(num[j]);
                     temp.add(num[k]);
                     res.add(temp);
-                    k--;
                     j++;
+                    k--;
                 }
                 else if (num[j] + num[k] + num[i] > 0)
                 {
