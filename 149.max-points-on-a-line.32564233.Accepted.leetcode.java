@@ -33,8 +33,7 @@ public class Solution
                 }
                 else
                 {
-                    ratio = (double)(points[j].y - points[i].y)
-                            / (double)(points[j].x - points[i].x);
+                    ratio = (double)(points[j].y - points[i].y) / (double)(points[j].x - points[i].x);
                 }
 
                 if (map.containsKey(ratio))
@@ -59,4 +58,3 @@ public class Solution
         return max;
     }
 }
-

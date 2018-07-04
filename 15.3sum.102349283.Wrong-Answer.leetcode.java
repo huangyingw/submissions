@@ -25,12 +25,12 @@ public class Solution
                 while (j < k && k + 1 < num.length && num[k] == num[k + 1])
                 {
                     k--;
-                } // avoid duplicate solutions
+                }
 
                 while (j < k && j - 1 > i && num[j] == num[j - 1])
                 {
                     j++;
-                } // avoid duplicate solutions
+                }
 
                 if (num[j] + num[k] + num[i] == 0)
                 {
