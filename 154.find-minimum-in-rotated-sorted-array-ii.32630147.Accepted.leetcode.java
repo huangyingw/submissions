@@ -2,17 +2,12 @@ public class Solution
 {
     public int findMin(int[] num)
     {
-        if (num == null || num.length == 0)
-        {
-            return 0;
-        }
-
         int start = 0;
         int end = num.length - 1;
 
-        while (start < end - 1)
+        while (start + 1 < end)
         {
-            int mid = start + (end - start) / 2;
+            int mid = (start + end) / 2;
 
             if (num[start] < num[end])
             {
@@ -36,4 +31,3 @@ public class Solution
         return Math.min(num[start], num[end]);
     }
 }
-
