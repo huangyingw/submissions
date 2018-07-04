@@ -17,7 +17,7 @@ public class Solution
 
             for (int j = i + 1; j < points.length; j++)
             {
-                //handle duplicates and vertical
+                // handle duplicates and vertical
                 if (points[i].x == points[j].x)
                 {
                     if (points[i].y == points[j].y)
@@ -61,4 +61,3 @@ public class Solution
         return max;
     }
 }
-
