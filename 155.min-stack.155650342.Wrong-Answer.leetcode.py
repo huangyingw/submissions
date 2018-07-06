@@ -11,9 +11,7 @@ class MinStack(object):
             self.min.append(x)
 
     def pop(self):
-        temp = self.data.pop()
-
-        if temp == self.min[-1]:
+        if self.data.pop() == self.min[-1]:
             self.min.pop(-1)
 
     def top(self):
