@@ -2,20 +2,19 @@ public class Solution
 {
     public TreeNode upsideDownBinaryTree(TreeNode root)
     {
-        return udtree(root, null);
+        return dfs(root, null);
     }
 
-    TreeNode udtree(TreeNode root, TreeNode parent)
+    TreeNode dfs(TreeNode root, TreeNode parent)
     {
         if (root == null)
         {
-            return parent;  // base
+            return parent;
         }
 
-        TreeNode newRoot = udtree(root.left, root);
-        root.left = parent == null ? null : parent.right; // 1st node, both .left .right == null
+        TreeNode newRoot = dfs(root.left, root);
+        root.left = parent == null ? null : parent.right;
         root.right = parent;
         return newRoot;
     }
 }
-
