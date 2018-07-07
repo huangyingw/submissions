@@ -9,11 +9,11 @@ public class Solution
 
         ArrayList<TreeNode> res = new ArrayList<TreeNode>();
         res.add(null);
-        helper(root, res);
+        dfs(root, res);
         return res.get(0);
     }
 
-    public TreeNode helper(TreeNode root, ArrayList<TreeNode> res)
+    public TreeNode dfs(TreeNode root, ArrayList<TreeNode> res)
     {
         if (root.left == null)
         {
@@ -21,10 +21,9 @@ public class Solution
             return root;
         }
 
-        TreeNode newRoot = helper(root.left, res);
+        TreeNode newRoot = dfs(root.left, res);
         newRoot.left = root.right;
         newRoot.right = root;
         return newRoot.right;
     }
 }
-
