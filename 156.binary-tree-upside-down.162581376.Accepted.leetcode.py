@@ -11,4 +11,3 @@ class Solution(object):
         root.left.right = root
         root.left = root.right = None
         return flippedRoot
-
