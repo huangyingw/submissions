@@ -24,7 +24,6 @@ public class Solution
                 pB = headA;
             }
 
-            //The two links have different tails. So just return null;
             if (tailA != null && tailB != null && tailA != tailB)
             {
                 return null;
