@@ -2,29 +2,29 @@ public class Solution extends Reader4
 {
     public int read(char[] buf, int n)
     {
-        System.out.printf("n --> %s\n", n);
         char[] buffer = new char[4];
-        int readBytes = 0;
+        int haveRead = 0;
         boolean eof = false;
 
-        while (!eof && readBytes < n)
+        while (!eof)
         {
-            int sz = read4(buffer);
-            System.out.printf("sz --> %s\n", sz);
+            int oneRead = read4(buffer);
 
-            if (sz < 4)
+            if (oneRead < 4)
             {
                 eof = true;
             }
 
-            int bytes = Math.min(n - readBytes, sz);
-            System.out.printf("bytes --> %s\n", bytes);
-            System.arraycopy(buffer, 0, buf, readBytes, bytes);
-            readBytes += bytes;
-            System.out.printf("readBytes --> %s\n", readBytes);
+            int actRead = Math.min(n - haveRead, oneRead);
+
+            for (int i = 0; i < actRead; i++)
+            {
+                buf[haveRead + i] = buffer[i];
+            }
+
+            haveRead += actRead;
         }
 
-        return readBytes;
+        return haveRead;
     }
 }
-
