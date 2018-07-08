@@ -23,20 +23,19 @@ public class Solution
 
         if (i == m)
         {
-            return shift > 0;  // if two string are the same (shift==0), return false
+            return shift > 0;
         }
 
         if (shift == 0)
         {
-            i++;  // if n==m skip current char in s (modify operation in s)
+            i++;
         }
 
         while (i < m && s.charAt(i) == t.charAt(i + shift))
         {
-            i++;  // use shift to skip one char in t
+            i++;
         }
 
         return i == m;
     }
 }
-
