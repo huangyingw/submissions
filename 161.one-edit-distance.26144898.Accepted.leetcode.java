@@ -9,12 +9,12 @@ public class Solution
 
         if (s.length() > t.length())
         {
-            return helper(t, s);
+            return dfs(t, s);
         }
 
-        return helper(s, t);
+        return dfs(s, t);
     }
-    private boolean helper(String s, String t)
+    private boolean dfs(String s, String t)
     {
         boolean has = false;
 
@@ -39,4 +39,3 @@ public class Solution
         return has || s.length() < t.length();
     }
 }
-
