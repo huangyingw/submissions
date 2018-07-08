@@ -1,13 +1,8 @@
 class Solution
 {
-    /**
-     * @param A: An integers array.
-     * @return: return any of peek positions.
-     */
     public int findPeakElement(int[] A)
     {
-        // write your code here
-        int start = 1, end = A.length - 2; // 1.答案在之间，2.不会出界
+        int start = 1, end = A.length - 2;
 
         while (start + 1 <  end)
         {
