@@ -2,18 +2,13 @@ class Solution
 {
     public int findPeakElement(int[] A)
     {
-        if (A.length == 1)
-        {
-            return 0;
-        }
-
-        int start = 1, end = A.length - 1;
+        int start = 0, end = A.length - 1;
 
         while (start + 1 <  end)
         {
             int mid = (start + end) / 2;
 
-            if (A[mid] < A[mid - 1])
+            if (A[mid - 1] > A[mid])
             {
                 end = mid;
             }
@@ -27,13 +22,6 @@ class Solution
             }
         }
 
-        if (A[start] < A[end])
-        {
-            return end;
-        }
-        else
-        {
-            return start;
-        }
+        return A[start] < A[end] ? end : start;
     }
 }
