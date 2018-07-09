@@ -2,8 +2,8 @@ public class Solution
 {
     public int compareVersion(String version1, String version2)
     {
-        String[] ver1 = version1.split(".");
-        String[] ver2 = version2.split(".");
+        String[] ver1 = version1.split("\\.");
+        String[] ver2 = version2.split("\\.");
         int index1 = 0;
         int index2 = 0;
 
