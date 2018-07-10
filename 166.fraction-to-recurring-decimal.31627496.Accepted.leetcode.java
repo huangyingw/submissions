@@ -24,7 +24,7 @@ public class Solution
         {
             buf.append(".");
             a = a % b * 10;
-            Map<Long, Integer> map = new HashMap();// map numerator a  its sequence number
+            Map<Long, Integer> map = new HashMap();
             int index = buf.length();
 
             while (a != 0 && map.containsKey(a) == false)
@@ -44,4 +44,3 @@ public class Solution
         return buf.toString();
     }
 }
-
