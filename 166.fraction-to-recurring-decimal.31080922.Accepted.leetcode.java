@@ -14,20 +14,16 @@ public class Solution
 
         String result = "";
 
-        // is result is negative
         if ((numerator < 0) ^ (denominator < 0))
         {
             result += "-";
         }
 
-        // convert int to long
         long num = numerator, den = denominator;
         num = Math.abs(num);
         den = Math.abs(den);
-        // quotient
         long res = num / den;
         result += String.valueOf(res);
-        // if remainder is 0, return result
         long remainder = (num % den) * 10;
 
         if (remainder == 0)
@@ -35,13 +31,11 @@ public class Solution
             return result;
         }
 
-        // right-hand side of decimal point
         HashMap<Long, Integer> map = new HashMap<Long, Integer>();
         result += ".";
 
         while (remainder != 0)
         {
-            // if digits repeat
             if (map.containsKey(remainder))
             {
                 int beg = map.get(remainder);
@@ -51,7 +45,6 @@ public class Solution
                 return result;
             }
 
-            // continue
             map.put(remainder, result.length());
             res = remainder / den;
             result += String.valueOf(res);
