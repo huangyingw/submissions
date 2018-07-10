@@ -25,12 +25,11 @@ public class Solution
             result.append(".");
             a = a % b * 10;
             Map<Long, Integer> map = new HashMap<Long, Integer>();
-            int index = result.length();
 
             while (a != 0 && map.containsKey(a) == false)
             {
                 result.append(a / b);
-                map.put(a, index++);
+                map.put(a, result.length() - 1);
                 a = a % b * 10;
             }
 
