@@ -30,8 +30,7 @@ class Solution
         List<Long> save = new ArrayList<Long>();
         Map<Long, Long> have = new HashMap<Long, Long>();
 
-        for (Long i = (long) 0; remainder != 0
-                && (have.get(remainder) == have.size()); ++i)
+        for (Long i = (long) 0; remainder != 0 && (have.get(remainder) == have.size()); ++i)
         {
             have.put(remainder, i);
             remainder *= 10;
@@ -62,4 +61,3 @@ class Solution
         return out.toString();
     }
 }
-
