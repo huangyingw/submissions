@@ -21,11 +21,11 @@ public class Solution
         map.put('8', new char[] { 't', 'u', 'v'});
         map.put('9', new char[] { 'w', 'x', 'y', 'z' });
         StringBuilder sb = new StringBuilder();
-        helper(map, digits, sb, result);
+        dfs(map, digits, sb, result);
         return result;
     }
 
-    private void helper(Map<Character, char[]> map, String digits, StringBuilder sb, ArrayList<String> result)
+    private void dfs(Map<Character, char[]> map, String digits, StringBuilder sb, ArrayList<String> result)
     {
         if (sb.length() == digits.length())
         {
@@ -36,7 +36,7 @@ public class Solution
         for (char c : map.get(digits.charAt(sb.length())))
         {
             sb.append(c);
-            helper(map, digits, sb, result);
+            dfs(map, digits, sb, result);
             sb.deleteCharAt(sb.length() - 1);
         }
     }

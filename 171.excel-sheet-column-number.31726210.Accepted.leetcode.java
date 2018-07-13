@@ -2,11 +2,6 @@ public class Solution
 {
     public int titleToNumber(String s)
     {
-        if (s == null || s.length() == 0)
-        {
-            throw new IllegalArgumentException("Input is not valid!");
-        }
-
         int result = 0;
 
         for (int i = 0; i < s.length(); i++)
@@ -17,4 +12,3 @@ public class Solution
         return result;
     }
 }
-
