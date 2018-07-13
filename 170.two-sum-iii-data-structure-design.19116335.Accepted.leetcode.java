@@ -15,7 +15,6 @@ public class TwoSum
 
             if (y == num)
             {
-// For duplicates, ensure there are at least two individual numbers.
                 if (entry.getValue() >= 2)
                 {
                     return true;
@@ -30,4 +29,3 @@ public class TwoSum
         return false;
     }
 }
-
