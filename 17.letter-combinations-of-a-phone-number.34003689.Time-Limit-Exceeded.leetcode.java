@@ -2,8 +2,7 @@ public class Solution
 {
     public List<String> letterCombinations(String digits)
     {
-        String[] dic =
-        { " ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+        String[] dic = { " ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
         List<String> result = new LinkedList<>();
 
         if (digits == null || digits.length() == 0)
@@ -33,4 +32,3 @@ public class Solution
         return result;
     }
 }
-
