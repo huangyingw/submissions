@@ -2,11 +2,6 @@ public class Solution
 {
     public int calculateMinimumHP(int[][] dungeon)
     {
-        if (dungeon.length == 0)
-        {
-            return 0;
-        }
-
         int m = dungeon.length, n = dungeon[0].length;
         int[] dp = new int[n];
         Arrays.fill(dp, Integer.MAX_VALUE);
