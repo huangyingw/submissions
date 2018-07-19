@@ -29,7 +29,6 @@ public class Solution
                 candies[i] = candies[i + 1] + 1;
             }
 
-            System.out.println(i + " -->" + candies[i]);
             count += candies[i];
         }
 

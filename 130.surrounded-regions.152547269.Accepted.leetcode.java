@@ -40,8 +40,6 @@ public class Solution
             queue.add(new Pos(rows - 1, i));
         }
 
-        System.out.println("queue.isEmpty() --> " + queue.isEmpty());
-
         while (!queue.isEmpty())
         {
             Pos pos = queue.poll();
@@ -52,8 +50,6 @@ public class Solution
             }
 
             board[pos.x][pos.y] = 'N';
-            System.out.println("pos.x --> 2 " + pos.x);
-            System.out.println("pos.y --> 2 " + pos.y);
             queue.add(new Pos(pos.x - 1, pos.y));
             queue.add(new Pos(pos.x + 1, pos.y));
             queue.add(new Pos(pos.x, pos.y - 1));

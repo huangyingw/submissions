@@ -15,10 +15,6 @@ public class Solution
 
             if (stack.size() + k < A.length())
             {
-                System.out.println("stack.size() --> " + stack.size());
-                System.out.println("A.length() - k --> " + (A.length() - k));
-                System.out.println("k --> " + k);
-                System.out.println("num --> " + num);
                 stack.push(num);
             }
         }
@@ -29,8 +25,6 @@ public class Solution
         {
             sb.append(stack.pop());
         }
-
-        System.out.println("sb -->" + sb);
 
         while (sb.length() >= 1 && sb.charAt(sb.length() - 1) == '0')
         {

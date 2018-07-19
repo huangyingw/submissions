@@ -12,9 +12,6 @@ class MedianFinder
         {
             minHeap.offer(maxHeap.poll());
         }
-
-        print(maxHeap);
-        print(minHeap);
     }
 
     public double findMedian()
@@ -29,15 +26,11 @@ class MedianFinder
         }
     }
 
-    public void print(PriorityQueue heap)
     {
         Iterator<Integer> iter = heap.iterator();
 
         while (iter.hasNext())
         {
-            System.out.print(iter.next() + " ");
         }
-
-        System.out.println();
     }
 }

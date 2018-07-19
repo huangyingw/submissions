@@ -11,7 +11,6 @@ public class Solution
             {
                 if (root != null)
                 {
-                    System.out.printf("nav --> %s\n", root.val);
                 }
 
                 if (leftMost == null)
@@ -30,7 +29,6 @@ public class Solution
 
                     if (nav != null)
                     {
-                        System.out.printf("nav --> %s\n", nav.val);
                     }
                 }
 
@@ -45,7 +43,6 @@ public class Solution
 
                     if (nav != null)
                     {
-                        System.out.printf("nav --> %s\n", nav.val);
                     }
                 }
             }

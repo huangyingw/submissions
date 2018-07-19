@@ -23,11 +23,9 @@ public class Solution
                 }
 
                 int q = islands.getID(newX * n + newY);
-                System.out.println(p + " --> " + islands.root(p));
 
                 if (q != -1)
                 {
-                    System.out.println(q + " --> " + islands.root(q));
                 }
 
                 if (q > 0 && !islands.find(p, q))

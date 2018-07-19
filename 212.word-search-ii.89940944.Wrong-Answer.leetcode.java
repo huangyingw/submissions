@@ -14,15 +14,11 @@ public class Solution
         {
             for (int j = 0; j < board[0].length; j++)
             {
-                System.out.print(" " + board[i][j]);
             }
-
-            System.out.println();
         }
 
         for (String str : words)
         {
-            System.out.println("str --> " + str);
         }
 
         boolean[][] visited = new boolean[board.length][board[0].length];

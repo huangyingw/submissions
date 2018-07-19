@@ -2,7 +2,6 @@ public class Solution
 {
     public int longestSubstring(String s, int k)
     {
-        //System.out.println(s);
         int n = s.length();
         int counter[] = new int[26];
         boolean valid[] = new boolean[26];
@@ -44,7 +43,6 @@ public class Solution
         {
             if (valid[ss[i] - 'a'] == false)
             {
-                // System.out.println(lastStart+"  "+i);
                 max = Math.max(max, longestSubstring(s.substring(lastStart, i), k));
                 lastStart = i + 1;
             }
