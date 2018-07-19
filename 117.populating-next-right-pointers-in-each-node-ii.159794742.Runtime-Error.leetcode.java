@@ -22,7 +22,6 @@ public class Solution
                     }
 
                     nav = root.next;
-                    System.out.printf("nav --> %s\n", nav.val);
                 }
 
                 if (root.right != null)
@@ -33,7 +32,6 @@ public class Solution
                     }
 
                     nav = root.right;
-                    System.out.printf("nav --> %s\n", nav.val);
                 }
             }
 

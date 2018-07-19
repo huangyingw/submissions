@@ -25,7 +25,6 @@ public class Solution
 
                     if (nav != null)
                     {
-                        System.out.printf("nav --> %s\n", nav.val);
                     }
                 }
 
@@ -40,7 +39,6 @@ public class Solution
 
                     if (nav != null)
                     {
-                        System.out.printf("nav --> %s\n", nav.val);
                     }
                 }
             }

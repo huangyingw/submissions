@@ -39,7 +39,6 @@ public class Solution
                     nav = root.right;
                 }
 
-                System.out.printf("nav --> %s\n", nav.val);
                 nav = nav.next;
             }
 
