@@ -14,10 +14,8 @@ public class Solution
                     dp[j] += dp[j - 1];
                 }
 
-                System.out.println(j + " --> " + dp[j]);
             }
 
-            System.out.println();
         }
 
         return dp[T.length()];

@@ -12,11 +12,9 @@ public class Solution
                 if (T.charAt(j - 1) == S.charAt(i - 1))
                 {
                     dp[j] += dp[j - 1];
-                    System.out.println(j + " --> " + dp[j]);
                 }
             }
 
-            System.out.println();
         }
 
         return dp[T.length()];
