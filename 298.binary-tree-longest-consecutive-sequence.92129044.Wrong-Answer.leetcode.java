@@ -34,8 +34,6 @@ public class Solution
         int result = Math.max(longestConsecutive(root.left, len, root.val),
                               longestConsecutive(root.right, len, root.val));
         /*
-        System.out.println("val -- > " + root.val);
-        System.out.println("result -- > " + result);
         */
         return result;
     }

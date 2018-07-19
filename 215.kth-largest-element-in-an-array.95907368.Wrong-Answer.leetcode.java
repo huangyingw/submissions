@@ -40,12 +40,7 @@ public class Solution
 
     private int select(int[] nums, int k, int left, int right)
     {
-        System.out.println("k --> " + k);
-        System.out.println("left --> " + left + " : " + nums[left]);
-        System.out.println("right --> " + right + " : " + nums[right]);
         int pivot = partition(nums, left, right);
-        System.out.println("pivot --> " + pivot + " : " + nums[pivot]);
-        System.out.println();
 
         if (pivot + 1 == k)
         {

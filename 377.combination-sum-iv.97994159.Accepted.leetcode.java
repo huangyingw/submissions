@@ -12,7 +12,6 @@ public class Solution
                 if (i >= num)
                 {
                     dp[i] += dp[i - num];
-                    System.out.println(i + " --> " + dp[i]);
                 }
             }
         }

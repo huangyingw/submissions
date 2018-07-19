@@ -50,7 +50,6 @@ public class Solution
                 }
             }
 
-            System.out.println("count --> " + count);
 
             if (count == t.length())
             {
@@ -66,8 +65,6 @@ public class Solution
                     sc = s.charAt(++start);
                 }
 
-                System.out.println("s.charAt(start) --> " + s.charAt(start));
-                System.out.println("s.charAt(end) --> " + s.charAt(end));
 
                 if (end - start + 1 < minLen)
                 {

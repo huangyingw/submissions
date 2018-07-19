@@ -41,10 +41,6 @@ public class Solution
                     temp.add(num[j]);
                     temp.add(num[k]);
                     res.add(temp);
-                    System.out.println(i);
-                    System.out.println(j);
-                    System.out.println(k);
-                    System.out.println();
                     k--;
                     j++;
                 }

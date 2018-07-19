@@ -14,8 +14,6 @@ public class Solution
         {
             for (int j = 0; j < coins.length; j++)
             {
-                System.out.println("i --> " + i);
-                System.out.println("coins[j] --> " + coins[j]);
                 dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
             }
         }

@@ -35,7 +35,6 @@ public class Solution
             }
 
             current.add(num[i]);
-            System.out.println("current --> " + current);
             visited[i] = true;
             dfs(num, visited, current, result);
             current.remove(current.size() - 1);

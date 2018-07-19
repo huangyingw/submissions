@@ -23,8 +23,6 @@ public class Solution
                 if (i + 1 < expression.length() && expression.charAt(i + 1) == '?')
                 {
                     /*
-                    System.out.println("i --> " + i);
-                    System.out.println("char --> " + expression.charAt(i));
                     */
                     first = stack.pop();
                     second = stack.pop();

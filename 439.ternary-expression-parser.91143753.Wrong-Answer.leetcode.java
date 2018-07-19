@@ -22,18 +22,15 @@ public class Solution
 
                 if (c == 'T')
                 {
-                    System.out.println("push first --> " + first);
                     stack.push(first);
                 }
                 else
                 {
-                    System.out.println("push second --> " + second);
                     stack.push(second);
                 }
             }
             else
             {
-                System.out.println("push c --> " + c);
                 stack.push(c);
             }
         }

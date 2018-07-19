@@ -17,12 +17,10 @@ public class Solution
             if (pA == null)
             {
                 pA = headB;
-                System.out.printf("pA --> %s\n", pA.val);
             }
             else if (pB == null)
             {
                 pB = headA;
-                System.out.printf("pB --> %s\n", pB.val);
             }
             else if (pA.next == null)
             {
@@ -43,9 +41,7 @@ public class Solution
             else
             {
                 pA = pA.next;
-                System.out.printf("pA --> %s\n", pA.val);
                 pB = pB.next;
-                System.out.printf("pB --> %s\n", pB.val);
             }
         }
     }

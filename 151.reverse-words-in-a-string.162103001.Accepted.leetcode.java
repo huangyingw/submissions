@@ -4,7 +4,6 @@ public class Solution
     {
         StringBuilder sb = new StringBuilder(s.trim().replaceAll(" +", " "));
         reverse(sb, 0, sb.length() - 1);
-        System.out.printf("sb.length() --> %s\n", sb.length());
 
         for (int begin = 0, end = 0; end <= sb.length(); end++)
         {

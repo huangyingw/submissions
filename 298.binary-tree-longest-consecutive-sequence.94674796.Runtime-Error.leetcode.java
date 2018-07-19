@@ -29,8 +29,6 @@ public class Solution
         if (preVal + 1 == root.val)
         {
             len++;
-            System.out.println("root.val --> " + root.val);
-            System.out.println("len --> " + len);
         }
         else
         {

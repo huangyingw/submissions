@@ -31,7 +31,6 @@ public class Solution
             return;
         }
 
-        System.out.println("str --> " + str);
 
         if (trie.startWith(str).isWord)
         {

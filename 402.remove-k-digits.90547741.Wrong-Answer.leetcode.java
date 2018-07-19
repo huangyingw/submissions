@@ -26,7 +26,6 @@ public class Solution
             sb.append(stack.pop());
         }
 
-        System.out.println("sb -->" + sb);
 
         while (sb.length() >= 1 && sb.charAt(sb.length() - 1) == '0')
         {

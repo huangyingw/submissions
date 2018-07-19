@@ -7,13 +7,11 @@ public class Solution
 
         for (int begin = 0, end = 0; end < sb.length(); end++)
         {
-            System.out.printf("%s --> %s\n", end, sb.charAt(end));
 
             if (end == sb.length() || sb.charAt(end) == ' ')
             {
                 reverse(sb, begin, end - 1);
                 begin = end + 1;
-                System.out.printf("%s --> %s\n", begin, sb.charAt(begin));
             }
         }
 

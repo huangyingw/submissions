@@ -22,9 +22,6 @@ public class TwoSum
 
             if (map.containsKey(target))
             {
-                System.out.println("key --> " + key);
-                System.out.println("target --> " + target);
-                System.out.println();
                 return true;
             }
         }

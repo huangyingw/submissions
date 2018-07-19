@@ -27,13 +27,10 @@ public class Solution
 
             while (!stack.isEmpty() && stack.peek() > c && counts.get(stack.peek()) > 1)
             {
-                System.out.println("count char --> " + counts.get(stack.peek()));
-                System.out.println("pop char --> " + stack.peek());
                 counts.put(stack.peek(), counts.get(stack.peek()) - 1);
                 stack.pop();
             }
 
-            System.out.println("push char --> " + c);
             stack.push(c);
         }
 

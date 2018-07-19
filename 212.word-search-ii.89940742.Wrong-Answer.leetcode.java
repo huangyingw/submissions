@@ -2,8 +2,6 @@ public class Solution
 {
     public List<String> findWords(char[][] board, String[] words)
     {
-        System.out.println("board --> " + board);
-        System.out.println("words --> " + words);
         List<String> res = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0

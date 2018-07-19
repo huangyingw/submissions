@@ -26,16 +26,12 @@ class MedianFinder
         }
     }
 
-    public void print(PriorityQueue heap)
     {
-        System.out.println("heap.peek() --> " + heap.peek());
         Iterator<Integer> iter = heap.iterator();
 
         while (iter.hasNext())
         {
-            System.out.print(iter.next() + ",");
         }
 
-        System.out.println();
     }
 }

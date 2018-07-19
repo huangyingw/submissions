@@ -19,7 +19,6 @@ public class Solution
 
         for (char c : chs)
         {
-            System.out.println("c --> " + c);
 
             if (stack.contains(c))
             {
@@ -32,7 +31,6 @@ public class Solution
                 stack.pop();
             }
 
-            System.out.println("push c --> " + c);
             stack.push(c);
         }
 

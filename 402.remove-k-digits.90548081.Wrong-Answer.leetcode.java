@@ -10,15 +10,12 @@ public class Solution
 
             while (!stack.isEmpty() && stack.peek() > num && k-- > 0)
             {
-                System.out.println("k 1 -->" + k);
                 stack.pop();
             }
 
             if (stack.size() < A.length() - k)
             {
                 stack.push(num);
-                System.out.println("k 2 -->" + k);
-                System.out.println("num -->" + num);
             }
         }
 
@@ -29,7 +26,6 @@ public class Solution
             sb.append(stack.pop());
         }
 
-        System.out.println("sb -->" + sb);
 
         while (sb.length() >= 1 && sb.charAt(sb.length() - 1) == '0')
         {

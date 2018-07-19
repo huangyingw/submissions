@@ -31,7 +31,6 @@ public class Solution
             return;
         }
 
-        System.out.println("str --> " + str);
 
         if (trie.startWith(str).isWord)
         {
@@ -39,7 +38,6 @@ public class Solution
         }
 
         String newStr = str + board[i][j];
-        System.out.println("newStr --> " + newStr);
         visited[i][j] = true;
         dfs(board, i + 1, j, newStr, visited, trie, result);
         dfs(board, i - 1, j, newStr, visited, trie, result);

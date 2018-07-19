@@ -15,8 +15,6 @@ public class Solution
             while (sum < s && right < nums.length - 1)
             {
                 sum += nums[++right];
-                System.out.println(right);
-                System.out.println(sum);
             }
 
             while (sum >= s)

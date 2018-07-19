@@ -50,7 +50,6 @@ public class Solution
                 }
             }
 
-            System.out.println("count --> " + count);
 
             if (count == t.length())
             {

@@ -7,9 +7,6 @@ class MedianFinder
     {
         minHeap.offer(num);
         maxHeap.offer(minHeap.poll());
-        System.out.println("num --> " + num);
-        print(maxHeap);
-        print(minHeap);
 
         while (maxHeap.size() > minHeap.size() + 1)
         {
@@ -29,16 +26,12 @@ class MedianFinder
         }
     }
 
-    public void print(PriorityQueue heap)
     {
-        System.out.println("heap.peek() --> " + heap.peek());
         Iterator<Integer> iter = heap.iterator();
 
         while (iter.hasNext())
         {
-            System.out.print(iter.next() + ",");
         }
 
-        System.out.println();
     }
 }

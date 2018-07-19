@@ -17,8 +17,6 @@ public class Solution
                 sum += nums[++right];
             }
             
-            System.out.println(right);
-            System.out.println(sum);
 
             while (sum >= s)
             {
@@ -26,8 +24,6 @@ public class Solution
                 sum -= nums[left++];
             }
             
-            System.out.println(min);
-            System.out.println();
         }
 
         return min == Integer.MAX_VALUE ? 0 : min;
