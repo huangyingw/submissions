@@ -17,4 +17,3 @@ public class Solution
         return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 }
-

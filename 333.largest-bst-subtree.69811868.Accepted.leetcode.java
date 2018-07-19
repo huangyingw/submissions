@@ -50,4 +50,3 @@ class Data
     // if the tree is BST, size is the size of the tree; otherwise zero
     int size;
 }
-

@@ -16,4 +16,3 @@ public class Solution
         return n < 0 ? 1 / power(x, -n) : power(x, n);
     }
 }
-

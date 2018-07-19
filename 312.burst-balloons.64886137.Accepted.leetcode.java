@@ -30,4 +30,3 @@ public class Solution
         return DP(1, n, nums, dp);
     }
 }
-

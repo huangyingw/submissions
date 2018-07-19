@@ -7,4 +7,3 @@ public class Solution
         return splitted[splitted.length - 1].length();
     }
 }
-

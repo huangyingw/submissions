@@ -33,4 +33,3 @@ public class Solution
         return (matrix[left / columns][left % columns] == target || matrix[right / columns][right % columns] == target);
     }
 }
-

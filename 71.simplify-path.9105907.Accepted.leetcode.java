@@ -38,4 +38,3 @@ public class Solution
         return newPath.length() == 0 ? "/" : newPath.toString();
     }
 }
-

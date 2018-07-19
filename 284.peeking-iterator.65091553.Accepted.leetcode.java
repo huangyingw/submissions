@@ -36,4 +36,3 @@ class PeekingIterator implements Iterator<Integer>
         return next != null;
     }
 }
-

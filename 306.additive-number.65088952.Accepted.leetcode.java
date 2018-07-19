@@ -53,4 +53,3 @@ public class Solution
         return valid(start + sumS.length(), num, second, third);
     }
 }
-

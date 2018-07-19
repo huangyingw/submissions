@@ -25,4 +25,3 @@ public class Solution
         return reach >= nums.length - 1 ? step : 0;
     }
 }
-

@@ -155,4 +155,3 @@ public class Solution
                || status == Status.FRAC || status == Status.INT_E;
     }
 }
-

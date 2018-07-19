@@ -40,4 +40,3 @@ public class Solution
         return j == p.length();
     }
 }
-

@@ -24,4 +24,3 @@ public class Solution
         return dp[amount] == INF ? -1 : dp[amount];
     }
 }
-

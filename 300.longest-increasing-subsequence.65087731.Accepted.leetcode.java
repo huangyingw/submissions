@@ -45,4 +45,3 @@ public class Solution
         return list.size();
     }
 }
-

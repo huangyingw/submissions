@@ -31,4 +31,3 @@ public class Solution
         ((LinkedList<String>) result).addFirst(s);
     }
 }
-

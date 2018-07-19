@@ -47,4 +47,3 @@ public class Solution
         return s.substring(a, maxlen);
     }
 }
-

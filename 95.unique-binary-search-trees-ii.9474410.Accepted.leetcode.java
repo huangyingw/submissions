@@ -33,4 +33,3 @@ public class Solution
         return generateTrees(1, n);
     }
 }
-

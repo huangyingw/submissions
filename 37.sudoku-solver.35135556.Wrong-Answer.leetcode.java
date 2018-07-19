@@ -47,4 +47,3 @@ public class Solution
         dfs(board, 0);
     }
 }
-

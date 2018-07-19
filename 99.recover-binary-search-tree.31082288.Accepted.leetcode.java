@@ -68,4 +68,3 @@ public class Solution
         second.val = temp;
     }
 }
-

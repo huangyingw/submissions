@@ -22,4 +22,3 @@ class MedianFinder
         return maxheap.size() == minheap.size() ? (double)(maxheap.peek() + minheap.peek()) / 2.0 : maxheap.peek();
     }
 }
-

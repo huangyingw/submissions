@@ -24,4 +24,3 @@ public class Solution
         inorderTraversal(root.right, result);
     }
 }
-

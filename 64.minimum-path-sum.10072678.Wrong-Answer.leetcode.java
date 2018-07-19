@@ -18,4 +18,3 @@ public class Solution
         return dp[grid[0].length - 1];
     }
 }
-

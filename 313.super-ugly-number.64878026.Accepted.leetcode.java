@@ -44,4 +44,3 @@ public class Solution
         return ugly_number[n - 1];
     }
 }
-

@@ -26,4 +26,3 @@ public class Solution
         return s.substring(start, end - start + 1);
     }
 }
-

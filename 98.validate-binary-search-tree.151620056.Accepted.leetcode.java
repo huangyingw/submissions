@@ -17,4 +17,3 @@ public class Solution
         return isValidBST(root, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
     }
 }
-

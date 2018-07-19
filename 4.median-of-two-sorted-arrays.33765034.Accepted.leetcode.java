@@ -58,4 +58,3 @@ public class Solution
         return findKth(A, B, k, aStart, aEnd, bStart, bEnd);
     }
 }
-

@@ -32,4 +32,3 @@ public class NumMatrix
                sum[row1][col2 + 1] + sum[row1][col1];
     }
 }
-

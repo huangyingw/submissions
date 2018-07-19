@@ -22,4 +22,3 @@ public class Solution
         return isValidBST(root, Double.MIN_VALUE, Double.MAX_VALUE);
     }
 }
-

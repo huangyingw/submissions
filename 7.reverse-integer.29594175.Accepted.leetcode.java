@@ -22,4 +22,3 @@ public class Solution
         return isNeg == true ? -res : res ;
     }
 }
-

@@ -50,4 +50,3 @@ public class SummaryRanges
         return Arrays.asList(intervalSet.toArray(new Interval[0]));
     }
 }
-

@@ -31,4 +31,3 @@ public class Solution
         nums[j] = temp;
     }
 }
-

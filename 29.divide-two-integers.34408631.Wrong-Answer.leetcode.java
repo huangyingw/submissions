@@ -20,4 +20,3 @@ public class Solution
         return (int)(((dividend ^ divisor) >>> 31 == 1) ? -result : result);
     }
 }
-

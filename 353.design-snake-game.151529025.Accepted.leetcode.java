@@ -112,4 +112,3 @@ class Position
         return y + "," + x;
     }
 }
-

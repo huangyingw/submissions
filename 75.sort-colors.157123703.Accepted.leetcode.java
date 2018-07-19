@@ -35,4 +35,3 @@ public class Solution
         a[blueIndex] = temp;
     }
 }
-

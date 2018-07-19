@@ -26,4 +26,3 @@ public class Solution
         return carry != 0 ? "1" + res : res;
     }
 }
-

@@ -26,4 +26,3 @@ public class Solution
         return dp[0][n - 1];
     }
 }
-

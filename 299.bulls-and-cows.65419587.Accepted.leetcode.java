@@ -31,4 +31,3 @@ public class Solution
         return countBull + "A" + countCow + "B";
     }
 }
-

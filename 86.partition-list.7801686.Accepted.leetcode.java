@@ -26,4 +26,3 @@ public class Solution
         return left_dummy.next;
     }
 }
-

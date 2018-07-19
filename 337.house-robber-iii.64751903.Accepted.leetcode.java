@@ -26,4 +26,3 @@ public class Solution
         max.put(root, Math.max(maxW, maxWO.get(root)));
     }
 }
-
