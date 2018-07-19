@@ -49,7 +49,6 @@ public class LRUCache
         {
             node = node.next;
         }
-
     }
 
     public void put(int key, int value)

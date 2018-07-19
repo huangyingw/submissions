@@ -12,7 +12,6 @@ class MedianFinder
         {
             minHeap.offer(maxHeap.poll());
         }
-
     }
 
     public double findMedian()
@@ -33,6 +32,5 @@ class MedianFinder
         while (iter.hasNext())
         {
         }
-
     }
 }

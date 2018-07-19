@@ -28,7 +28,6 @@ public class Solution
             sb.append(stack.pop());
         }
 
-
         while (sb.length() >= 1 && sb.charAt(sb.length() - 1) == '0')
         {
             sb.deleteCharAt(sb.length() - 1);

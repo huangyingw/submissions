@@ -40,7 +40,6 @@ public class Solution
             queue.add(new Pos(rows - 1, i));
         }
 
-
         while (!queue.isEmpty())
         {
             Pos pos = queue.poll();

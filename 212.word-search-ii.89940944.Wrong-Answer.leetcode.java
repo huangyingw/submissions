@@ -15,7 +15,6 @@ public class Solution
             for (int j = 0; j < board[0].length; j++)
             {
             }
-
         }
 
         for (String str : words)

@@ -11,7 +11,6 @@ public class Solution
             {
                 for (int j = i + 1; j <= s.length(); j++)
                 {
-
                     if (dict.contains(s.substring(i, j)))
                     {
                         dp[j] = true;

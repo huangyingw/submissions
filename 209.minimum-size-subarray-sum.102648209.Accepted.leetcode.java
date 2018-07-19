@@ -16,14 +16,12 @@ public class Solution
             {
                 sum += nums[++right];
             }
-            
 
             while (sum >= s)
             {
                 min = Math.min(min, right - left + 1);
                 sum -= nums[left++];
             }
-            
         }
 
         return min == Integer.MAX_VALUE ? 0 : min;

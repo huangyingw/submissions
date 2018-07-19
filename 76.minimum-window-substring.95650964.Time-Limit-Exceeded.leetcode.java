@@ -50,7 +50,6 @@ public class Solution
                 }
             }
 
-
             if (count == t.length())
             {
                 char sc = s.charAt(start);
@@ -64,7 +63,6 @@ public class Solution
 
                     sc = s.charAt(++start);
                 }
-
 
                 if (end - start + 1 < minLen)
                 {

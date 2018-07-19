@@ -13,7 +13,6 @@ public class Solution
 
         for (int i = 0; i < nums.length; i++)
         {
-
             while (!deq.isEmpty() && nums[deq.getLast()] < nums[i])
             {
                 deq.removeLast();
@@ -25,7 +24,6 @@ public class Solution
             {
                 deq.removeFirst();
             }
-
 
             if (i >= k - 1)
             {
