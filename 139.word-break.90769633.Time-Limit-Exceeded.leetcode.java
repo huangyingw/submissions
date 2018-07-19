@@ -11,11 +11,9 @@ public class Solution
             {
                 for (int j = i + 1; j <= s.length(); j++)
                 {
-                    System.out.println("s.substring(i, j) --> " + s.substring(i, j));
 
                     if (dict.contains(s.substring(i, j)))
                     {
-                        System.out.println("j --> " + j);
                         dp[j] = true;
                     }
                 }

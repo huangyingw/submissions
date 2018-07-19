@@ -42,17 +42,14 @@ public class LRUCache
         return node.value;
     }
 
-    public void printNodes()
     {
         Node node = head.next;
 
         while (node.next != null)
         {
-            System.out.println(node.key + "->" + node.value + ",");
             node = node.next;
         }
 
-        System.out.println();
     }
 
     public void put(int key, int value)
