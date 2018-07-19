@@ -13,7 +13,6 @@ public class Solution
                 {
                     if (dict.contains(s.substring(i + 1, j)))
                     {
-                        System.out.println("j --> " + j);
                         dp[j] = true;
                     }
                 }

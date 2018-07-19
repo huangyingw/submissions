@@ -38,11 +38,9 @@ public class Solution
         return newHead;
     }
 
-    public void printList(RandomListNode head)
     {
         while (head != null)
         {
-            System.out.printf("%s --> ", head.label);
             head = head.next;
         }
     }
@@ -54,10 +52,8 @@ public class Solution
         }
 
         copyNext(head);
-        printList(head);
         copyRandom(head);
         head = splitList(head);
-        printList(head);
         return head;
     }
 }

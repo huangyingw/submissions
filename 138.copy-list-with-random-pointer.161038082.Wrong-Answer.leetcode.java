@@ -38,15 +38,12 @@ public class Solution
         return newHead;
     }
 
-    public void printList(RandomListNode head)
     {
         while (head != null)
         {
-            System.out.printf("%s --> ", head.label);
             head = head.next;
         }
 
-        System.out.printf("\n");
     }
     public RandomListNode copyRandomList(RandomListNode head)
     {
@@ -56,10 +53,8 @@ public class Solution
         }
 
         copyNext(head);
-        printList(head);
         copyRandom(head);
         head = splitList(head);
-        printList(head);
         return head;
     }
 }
