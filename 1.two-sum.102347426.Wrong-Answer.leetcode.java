@@ -20,6 +20,9 @@ public class Solution
             }
         }
 
+        System.out.printf("\n");
         return result;
     }
 }
+
+
