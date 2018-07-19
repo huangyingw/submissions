@@ -42,4 +42,3 @@ public class Solution
         nodes.remove(nodes.size() - 1);
     }
 }
-

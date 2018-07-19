@@ -35,4 +35,3 @@ public class Solution
         return A[A.length - 1];
     }
 }
-

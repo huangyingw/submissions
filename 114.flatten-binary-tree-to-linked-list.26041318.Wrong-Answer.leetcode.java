@@ -24,4 +24,3 @@ public class Solution
         helper(savedRight, root.left);
     }
 }
-

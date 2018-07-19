@@ -124,4 +124,3 @@ public class Trie
 // Trie trie = new Trie();
 // trie.insert("somestring");
 // trie.search("key");
-

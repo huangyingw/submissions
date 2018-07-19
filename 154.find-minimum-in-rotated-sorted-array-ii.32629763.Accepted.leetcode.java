@@ -41,4 +41,3 @@ public class Solution
         return Math.min(num[start], num[end]);
     }
 }
-

@@ -25,4 +25,3 @@ public class Solution
         inorderTraversal(treeMap, root.right, level + 1);
     }
 }
-

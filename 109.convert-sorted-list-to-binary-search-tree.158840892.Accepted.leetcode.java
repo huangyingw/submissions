@@ -31,4 +31,3 @@ public class Solution
         return sortedListToBST(0, len - 1);
     }
 }
-

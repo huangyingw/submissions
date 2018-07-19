@@ -39,4 +39,3 @@ public class Solution
         return has || s.length() < t.length();
     }
 }
-

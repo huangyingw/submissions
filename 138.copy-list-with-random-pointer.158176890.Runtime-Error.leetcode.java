@@ -51,4 +51,3 @@ public class Solution
         return splitList(head);
     }
 }
-

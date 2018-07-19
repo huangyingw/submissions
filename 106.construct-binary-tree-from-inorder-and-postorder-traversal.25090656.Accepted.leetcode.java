@@ -30,4 +30,3 @@ public class Solution
         return buildTree(inorderNodes, 0, postorder, 0, inorder.length);
     }
 }
-

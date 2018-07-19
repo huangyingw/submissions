@@ -28,4 +28,3 @@ public class Solution
         dfs(result, s + ")", left, right - 1);
     }
 }
-

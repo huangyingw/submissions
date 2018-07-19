@@ -72,4 +72,3 @@ public class LRUCache
         current.next = tail;
     }
 }
-

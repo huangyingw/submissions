@@ -20,4 +20,3 @@ public class Solution
         return (leftGas < 0) ? -1 : startnode;
     }
 }
-

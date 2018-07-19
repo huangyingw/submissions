@@ -27,4 +27,3 @@ public class Solution
         result.add(root.val);
     }
 }
-

@@ -30,4 +30,3 @@ public class Solution
         return cut[s.length() - 1];
     }
 }
-

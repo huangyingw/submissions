@@ -27,4 +27,3 @@ public class Solution extends Reader4
         return readBytes;
     }
 }
-

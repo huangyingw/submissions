@@ -23,4 +23,3 @@ public class Solution
         return Math.min(left, right) + 1;
     }
 }
-

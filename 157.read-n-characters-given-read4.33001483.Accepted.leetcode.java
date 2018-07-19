@@ -38,4 +38,3 @@ public class Solution extends Reader4
         return index;
     }
 }
-

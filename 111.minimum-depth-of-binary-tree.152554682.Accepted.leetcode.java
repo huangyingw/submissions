@@ -15,4 +15,3 @@ public class Solution
         return 1 + Math.min(minDepth(root.left, root.right != null), minDepth(root.right, root.left != null));
     }
 }
-

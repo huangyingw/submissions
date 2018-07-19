@@ -150,4 +150,3 @@ public class WordDictionary
         return trie.search(word, trie.root);
     }
 }
-

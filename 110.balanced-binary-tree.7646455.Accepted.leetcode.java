@@ -35,4 +35,3 @@ class Solution
         return getBalancedTreeHeight(root) >= 0;
     }
 }
-

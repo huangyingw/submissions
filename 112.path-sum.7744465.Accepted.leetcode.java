@@ -16,4 +16,3 @@ public class Solution
                || hasPathSum(root.right, sum - root.val);
     }
 }
-

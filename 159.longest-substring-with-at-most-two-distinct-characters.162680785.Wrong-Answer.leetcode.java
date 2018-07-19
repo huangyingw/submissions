@@ -21,4 +21,3 @@ public class Solution
         return Math.max(s.length() - left, maxLen);
     }
 }
-

@@ -56,4 +56,3 @@ public class Solution
         return sign + part1 + "." + part2;
     }
 }
-

@@ -47,4 +47,3 @@ public class Solution
         return dp[p.length()][s.length()];
     }
 }
-

@@ -63,4 +63,3 @@ class MyStack
         return queue1.isEmpty() && queue2.isEmpty();
     }
 }
-

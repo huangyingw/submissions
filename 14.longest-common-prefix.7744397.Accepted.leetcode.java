@@ -26,4 +26,3 @@ public class Solution
         return strs[0].substring(0, longest);
     }
 }
-

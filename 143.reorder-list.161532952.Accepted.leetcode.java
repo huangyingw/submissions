@@ -67,4 +67,3 @@ public class Solution
         merge(lists[0], lists[1]);
     }
 }
-

@@ -79,4 +79,3 @@ public class Solution
         return unitArray[x];
     }
 }
-

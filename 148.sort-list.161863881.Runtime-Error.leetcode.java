@@ -46,4 +46,3 @@ public class Solution
         return merge(left, right);
     }
 }
-

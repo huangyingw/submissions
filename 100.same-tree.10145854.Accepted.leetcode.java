@@ -11,4 +11,3 @@ public class Solution
                && isSameTree(p.right, q.right);
     }
 }
-

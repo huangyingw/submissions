@@ -77,4 +77,3 @@ public class Solution
         return quadruplets;
     }
 }
-

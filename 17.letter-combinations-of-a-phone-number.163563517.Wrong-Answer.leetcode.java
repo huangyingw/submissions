@@ -26,4 +26,3 @@ public class Solution
         String dicStr = dic[digits.charAt(current.length()) - '0'];
     }
 }
-

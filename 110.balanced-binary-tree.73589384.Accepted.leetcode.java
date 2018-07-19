@@ -22,4 +22,3 @@ class Solution
         return maxDepth(root) != -1;
     }
 }
-

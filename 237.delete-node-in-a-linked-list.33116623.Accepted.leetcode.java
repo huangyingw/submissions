@@ -11,4 +11,3 @@ public class Solution
         node.next = node.next.next;
     }
 }
-

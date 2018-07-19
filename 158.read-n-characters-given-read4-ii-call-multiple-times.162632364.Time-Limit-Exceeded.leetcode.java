@@ -32,4 +32,3 @@ public class Solution extends Reader4
         return haveRead;
     }
 }
-

@@ -21,4 +21,3 @@ public class Solution
         return X[2] - X[1];
     }
 }
-

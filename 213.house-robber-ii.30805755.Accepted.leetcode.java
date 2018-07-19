@@ -41,4 +41,3 @@ public class Solution
         return Math.max(withoutLast, withoutFirst);
     }
 }
-

@@ -32,4 +32,3 @@ public class Solution
         traverse(root.right, level + 1, result, !left_to_right);
     }
 }
-

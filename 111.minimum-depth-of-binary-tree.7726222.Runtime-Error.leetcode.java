@@ -16,4 +16,3 @@ public class Solution
                             minDepth(root.right, root.left != null));
     }
 }
-

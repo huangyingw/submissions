@@ -21,4 +21,3 @@ public class Solution
         return root == null ? true : isSymmetric(root.left, root.right);
     }
 }
-

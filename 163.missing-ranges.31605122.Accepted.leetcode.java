@@ -30,4 +30,3 @@ public class Solution
         return (from == to) ? String.valueOf(from) : from + "->" + to;
     }
 }
-

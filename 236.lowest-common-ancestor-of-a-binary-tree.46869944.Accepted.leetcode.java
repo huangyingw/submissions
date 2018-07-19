@@ -23,4 +23,3 @@ public class Solution
         return (left_lca != null) ? left_lca : right_lca;
     }
 }
-

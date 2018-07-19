@@ -19,4 +19,3 @@ public class Solution
         return sortedArrayToBST(num, 0, num.length - 1);
     }
 }
-

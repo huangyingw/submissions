@@ -22,4 +22,3 @@ public class Solution
         flatten(root.right);
     }
 }
-

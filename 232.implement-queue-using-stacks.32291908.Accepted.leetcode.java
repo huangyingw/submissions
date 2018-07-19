@@ -40,4 +40,3 @@ class MyQueue
         return stack.isEmpty();
     }
 }
-

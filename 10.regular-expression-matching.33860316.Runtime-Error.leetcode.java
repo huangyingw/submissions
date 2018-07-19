@@ -23,4 +23,3 @@ public class Solution
                ? isMatch(s.substring(1), p.substring(1)) : false;
     }
 }
-

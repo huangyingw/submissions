@@ -31,4 +31,3 @@ public class Solution
         sb.setLength(sb.length() - 1);
     }
 }
-

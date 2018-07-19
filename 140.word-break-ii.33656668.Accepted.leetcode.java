@@ -39,4 +39,3 @@ public class Solution
         return searchWordBreak(s, dict, new HashMap<String, ArrayList<String>>());
     }
 }
-

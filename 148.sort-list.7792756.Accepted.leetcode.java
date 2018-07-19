@@ -48,4 +48,3 @@ public class Solution
         return merge(h1, h2);
     }
 }
-

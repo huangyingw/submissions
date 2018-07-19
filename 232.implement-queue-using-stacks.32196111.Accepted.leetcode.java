@@ -41,4 +41,3 @@ class MyQueue
         return stack.isEmpty() && buffer.isEmpty();
     }
 }
-
