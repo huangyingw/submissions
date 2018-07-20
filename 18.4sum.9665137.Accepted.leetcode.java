@@ -68,8 +68,7 @@ public class Solution
                     continue;
                 }
 
-                twoSum(num, num[i], num[j], j + 1,
-                       target - num[i] - num[j], quadruplets);
+                twoSum(num, num[i], num[j], j + 1, target - num[i] - num[j], quadruplets);
             }
         }
 
