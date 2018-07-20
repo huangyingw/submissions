@@ -13,8 +13,7 @@ public class Solution
         return l;
     }
 
-    private void twoSum(int[] num, int a, int b, int start, int target,
-                        ArrayList<ArrayList<Integer>> quadruplets)
+    private void twoSum(int[] num, int a, int b, int start, int target, ArrayList<ArrayList<Integer>> quadruplets)
     {
         int low = start;
         int high = num.length - 1;

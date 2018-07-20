@@ -7,14 +7,14 @@ public class Solution
 
         for (int i = 0; i < num.length - 3; i++)
         {
-            if (i > 0 && num[i] == num[i - 1]) // avoid duplicate solutions
+            if (i > 0 && num[i] == num[i - 1])
             {
                 continue;
             }
 
             for (int j = i + 1; j < num.length - 2; j++)
             {
-                if (j > i + 1 && num[j] == num[j - 1]) // avoid duplicate solutions
+                if (j > i + 1 && num[j] == num[j - 1])
                 {
                     continue;
                 }
@@ -49,12 +49,12 @@ public class Solution
                     while (k < l && l + 1 < num.length && num[l] == num[l + 1])
                     {
                         l--;
-                    } // avoid duplicate solutions
+                    }
 
                     while (k < l && k - 1 > j && num[k] == num[k - 1])
                     {
                         k++;
-                    } // avoid duplicate solutions
+                    }
                 }
             }
         }
