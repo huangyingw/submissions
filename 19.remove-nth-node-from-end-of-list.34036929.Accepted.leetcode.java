@@ -12,8 +12,7 @@ public class Solution
 
         if (fast == null)
         {
-            head = head.next;
-            return head;
+            return head.next;
         }
 
         while (fast.next != null)
