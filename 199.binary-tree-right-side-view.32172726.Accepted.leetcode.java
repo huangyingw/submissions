@@ -20,7 +20,7 @@ public class Solution
             return;
         }
 
-        if (res.size() <= cur) // it's ok to add
+        if (res.size() <= cur)
         {
             res.add(root.val);
         }
