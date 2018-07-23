@@ -4,17 +4,17 @@ public class Solution
     {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode quick = dummy, slow = dummy;
+        ListNode slow = dummy, fast = dummy;
 
-        for (int i = 0; i <= n && quick != null; i++)
+        for (int i = 0; i < n; i++)
         {
-            quick = quick.next;
+            fast = fast.next;
         }
 
-        while (quick != null)
+        while (fast.next != null)
         {
             slow = slow.next;
-            quick = quick.next;
+            fast = fast.next;
         }
 
         slow.next = slow.next.next;

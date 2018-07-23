@@ -5,9 +5,10 @@ public class Solution
         ListNode fast = head;
         ListNode slow = head;
 
-        for (int i = 0; i < n; i++)
+        while (n > 1)
         {
             fast = fast.next;
+            n--;
         }
 
         if (fast == null)
@@ -15,10 +16,12 @@ public class Solution
             return head.next;
         }
 
+        fast = fast.next;
+
         while (fast.next != null)
         {
-            fast = fast.next;
             slow = slow.next;
+            fast = fast.next;
         }
 
         slow.next = slow.next.next;
