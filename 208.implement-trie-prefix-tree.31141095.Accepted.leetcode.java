@@ -28,7 +28,6 @@ public class Trie
         root = new TrieNode();
     }
 
-    // Inserts a word into the trie.
     public void insert(String word)
     {
         if (search(word) == true)
@@ -55,7 +54,6 @@ public class Trie
         current.isWord = true;
     }
 
-    // Returns if the word is in the trie.
     public boolean search(String word)
     {
         TrieNode current = root;
@@ -75,8 +73,6 @@ public class Trie
         return current.isWord;
     }
 
-    // Returns if there is any word in the trie
-    // that starts with the given prefix.
     public boolean startsWith(String prefix)
     {
         TrieNode current = root;
