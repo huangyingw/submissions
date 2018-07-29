@@ -28,7 +28,6 @@ public class WordDictionary
         root = new TrieNode();
     }
 
-
     public void addWord(String word)
     {
         TrieNode current = root;
