@@ -1,3 +1,14 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
 public class Solution
 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2)
@@ -15,9 +26,9 @@ public class Solution
         ListNode head = new ListNode(-1);
         ListNode nav = head;
 
-        while (l1 != null || l2 != null)
+        while (l1 != null && l2 != null)
         {
-            if (l2 == null || l1.val < l2.val)
+            if (l1.val < l2.val)
             {
                 nav.next = l1;
                 l1 = l1.next;
