@@ -22,7 +22,7 @@ public class Solution
         {
             if (in[i] == 0)
             {
-                queue.offer(i);
+                queue.push(i);
             }
         }
 

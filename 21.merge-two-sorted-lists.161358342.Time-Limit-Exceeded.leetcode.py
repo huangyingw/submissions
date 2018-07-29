@@ -4,7 +4,7 @@ class Solution(object):
         nav = dummy
 
         while l1 or l2:
-            if not l2 or (l1 and l2.val >= l1.val):
+            if not l2 or (l1 and l1.val <= l2.val):
                 nav.next = l1
             else:
                 nav.next = l2

@@ -7,17 +7,17 @@ public class Solution
         List<List<Integer>> graph = new ArrayList<>();
         int[] path = new int[numCourses];
 
-        for (int i = 0; i < numCourses; i++) // building the base.
+        for (int i = 0; i < numCourses; i++)
         {
             graph.add(new ArrayList<>());
         }
 
-        for (int i = 0; i < prerequisites.length; i++)   // Building graph.
+        for (int i = 0; i < prerequisites.length; i++)
         {
             graph.get(prerequisites[i][0]).add(prerequisites[i][1]);
         }
 
-        for (int i = 0; i < numCourses; i++)   // Actual DFS calls.
+        for (int i = 0; i < numCourses; i++)
         {
             dfs(stack, graph, path, i);
 
@@ -29,7 +29,7 @@ public class Solution
 
         int[] res = new int[numCourses];
 
-        for (int i = numCourses - 1; i >= 0; i--) // Build result.
+        for (int i = numCourses - 1; i >= 0; i--)
         {
             res[i] = stack.pop();
         }
@@ -44,13 +44,13 @@ public class Solution
             return;
         }
 
-        if (path[course] == 1)   // cycle exists.
+        if (path[course] == 1)
         {
             impossible = true;
             return;
         }
 
-        path[course] = 1; // '1' means being explored.
+        path[course] = 1;
 
         for (int nextCourse : graph.get(course))
         {
@@ -62,8 +62,8 @@ public class Solution
             }
         }
 
-        stack.push(course); // done exploring.
-        path[course] = 2; // '2' means Exploration complete.
+        stack.push(course);
+        path[course] = 2;
     }
 
 }
