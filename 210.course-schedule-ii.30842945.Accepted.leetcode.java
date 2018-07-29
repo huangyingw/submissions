@@ -2,25 +2,7 @@ public class Solution
 {
     public int[] findOrder(int numCourses, int[][] prerequisites)
     {
-        if (prerequisites == null)
-        {
-            throw new IllegalArgumentException("illegal prerequisites array");
-        }
-
         int len = prerequisites.length;
-
-        if (len == 0)
-        {
-            int[] res = new int[numCourses];
-
-            for (int m = 0; m < numCourses; m++)
-            {
-                res[m] = m;
-            }
-
-            return res;
-        }
-
         int[] pCounter = new int[numCourses];
 
         for (int i = 0; i < len; i++)
@@ -45,7 +27,7 @@ public class Solution
         while (!queue.isEmpty())
         {
             int c = queue.remove();
-            result[j++ ] = c;
+            result[j++] = c;
 
             for (int i = 0; i < len; i++)
             {
@@ -66,9 +48,7 @@ public class Solution
         {
             return result;
         }
-        else
-        {
-            return new int[0];
-        }
+
+        return new int[0];
     }
 }
