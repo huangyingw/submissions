@@ -19,13 +19,11 @@ public class WordDictionary
         root = new WordTrieNode();
     }
 
-    // Adds a word into the data structure.
     public void addWord(String word)
     {
         WordTrieNode p = root;
         int i = 0, len = word.length();
 
-        // traverse existing
         while (i < len)
         {
             char ch = word.charAt(i);
@@ -41,7 +39,6 @@ public class WordDictionary
             }
         }
 
-        // append new word
         while (i < len)
         {
             WordTrieNode newNode = new WordTrieNode();
@@ -51,12 +48,9 @@ public class WordDictionary
             i ++;
         }
 
-        // set word end
         p.isWord = true;
     }
 
-    // Returns if the word is in the data structure. A word could
-    // contain the dot character '.' to represent any one letter.
     public boolean search(String word)
     {
         if (word == null || word.length() == 0)
