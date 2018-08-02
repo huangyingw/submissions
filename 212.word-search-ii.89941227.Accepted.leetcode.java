@@ -38,7 +38,7 @@ public class Solution
             return;
         }
 
-        if (endNode.isWord == true)
+        if (endNode.isWord)
         {
             result.add(newStr);
             endNode.isWord = false; // avoid duplicate in result
