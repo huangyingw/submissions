@@ -5,7 +5,7 @@ class Solution(object):
             i = left + 1
             j = right
 
-            while(i <= j):
+            while i <= j:
                 if nums[i] >= pivot:
                     i += 1
                     continue
