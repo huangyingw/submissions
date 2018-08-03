@@ -16,18 +16,17 @@ public class Solution
             if (data[right] < pivot)
             {
                 right--;
-                continue;
             }
-
-            if (data[left] >= pivot)
+            else if (data[left] >= pivot)
             {
                 left++;
-                continue;
             }
-
-            int temp = data[left];
-            data[left] = data[right];
-            data[right] = temp;
+            else
+            {
+                int temp = data[left];
+                data[left] = data[right];
+                data[right] = temp;
+            }
         }
 
         data[l] = data[right];

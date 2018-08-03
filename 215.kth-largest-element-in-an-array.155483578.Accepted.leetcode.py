@@ -8,17 +8,14 @@ class Solution(object):
             while i <= j:
                 if nums[i] >= pivot:
                     i += 1
-                    continue
-
-                if nums[j] < pivot:
+                elif nums[j] < pivot:
                     j -= 1
-                    continue
-
-                temp = nums[i]
-                nums[i] = nums[j]
-                nums[j] = temp
-                i += 1
-                j -= 1
+                else:
+                    temp = nums[i]
+                    nums[i] = nums[j]
+                    nums[j] = temp
+                    i += 1
+                    j -= 1
 
             nums[left] = nums[j]
             nums[j] = pivot
