@@ -1,25 +1,23 @@
 class Solution(object):
     def findKthLargest(self, nums, k):
-        def partition(left, right):
-            pivot = nums[left]
-            i = left + 1
-            j = right
+        def partition(start, end):
+            pivot = nums[start]
+            left = start + 1
+            right = end
 
-            while i <= j:
-                if nums[i] >= pivot:
-                    i += 1
-                elif nums[j] < pivot:
-                    j -= 1
+            while left <= right:
+                if nums[left] >= pivot:
+                    left += 1
+                elif nums[right] < pivot:
+                    right -= 1
                 else:
-                    temp = nums[i]
-                    nums[i] = nums[j]
-                    nums[j] = temp
-                    i += 1
-                    j -= 1
+                    nums[left], nums[right] = nums[right], nums[left]
+                    left += 1
+                    right -= 1
 
-            nums[left] = nums[j]
-            nums[j] = pivot
-            return j
+            nums[start] = nums[right]
+            nums[right] = pivot
+            return right
 
         def select(left, right):
             pivot = partition(left, right)
