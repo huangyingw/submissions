@@ -4,21 +4,19 @@ public class Solution
     public ArrayList<ArrayList<Integer>> combinationSum2(int[] num,
             int target)
     {
-        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 
         if (num == null || num.length == 0)
         {
-            return res;
+            return result;
         }
 
         Arrays.sort(num);
-        helper(num, 0, target, new ArrayList<Integer>(), res);
-        return res;
+        dfs(num, 0, target, new ArrayList<Integer>(), result);
+        return result;
     }
 
-    private void helper(int[] num, int start, int target,
-                        ArrayList<Integer> item,
-                        ArrayList<ArrayList<Integer>> res)
+    private void dfs(int[] num, int start, int target, ArrayList<Integer> current, ArrayList<ArrayList<Integer>> result)
     {
         if (target < 0 || start >= num.length)
         {
@@ -27,20 +25,20 @@ public class Solution
 
         if (target == 0)
         {
-            res.add(new ArrayList<Integer>(item));
+            result.add(new ArrayList<Integer>(current));
             return;
         }
 
-        for (int i = start; i < num.length; i++)
+        for (int index = start; index < num.length; index++)
         {
-            if (i > start && num[i] == num[i - 1])
+            if (index > start && num[index] == num[index - 1])
             {
                 continue;
             }
 
-            item.add(num[i]);
-            helper(num, i + 1, target - num[i], item, res);
-            item.remove(item.size() - 1);
+            current.add(num[index]);
+            dfs(num, index + 1, target - num[index], current, result);
+            current.remove(current.size() - 1);
         }
     }
 }
