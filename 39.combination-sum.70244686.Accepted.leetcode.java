@@ -1,13 +1,13 @@
 public class Solution
 {
-    public List<List<Integer>> combinationSum(int[] num, int target)
+    public List<List<Integer>> combinationSum(int[] nums, int target)
     {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
-        Arrays.sort(num);
-        dfs(num, 0, target, new ArrayList<Integer>(), result);
+        Arrays.sort(nums);
+        dfs(nums, 0, target, new ArrayList<Integer>(), result);
         return result;
     }
-    public void dfs(int[] num, int start, int target, ArrayList<Integer> current, List<List<Integer>> result)
+    public void dfs(int[] nums, int start, int target, ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (target == 0)
         {
@@ -20,10 +20,10 @@ public class Solution
             return;
         }
 
-        for (int index = start; index < num.length; index++)
+        for (int index = start; index < nums.length; index++)
         {
-            current.add(num[index]);
-            dfs(num, index, target - num[index], current, result);
+            current.add(nums[index]);
+            dfs(nums, index, target - nums[index], current, result);
             current.remove(current.size() - 1);
         }
     }

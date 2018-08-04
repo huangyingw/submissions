@@ -16,20 +16,19 @@ public class Solution
             if (data[i] >= pivot)
             {
                 i++;
-                continue;
             }
-
-            if (data[j] < pivot)
+            else if (data[j] < pivot)
             {
                 j--;
-                continue;
             }
-
-            int tmp = data[i];
-            data[i] = data[j];
-            data[j] = tmp;
-            i++;
-            j--;
+            else
+            {
+                int tmp = data[i];
+                data[i] = data[j];
+                data[j] = tmp;
+                i++;
+                j--;
+            }
         }
 
         data[left] = data[j];
