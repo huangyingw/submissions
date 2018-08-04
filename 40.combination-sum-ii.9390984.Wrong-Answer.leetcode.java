@@ -1,8 +1,7 @@
 public class Solution
 {
 
-    public ArrayList<ArrayList<Integer>> combinationSum2(int[] num,
-            int target)
+    public ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target)
     {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 
