@@ -14,7 +14,8 @@ public class Solution
         return result;
     }
 
-    private void dfs(int[] num, int start, int target, ArrayList<Integer> current, List<List<Integer>> result)
+    private void dfs(int[] num, int start, int target,
+                     ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (target == 0)
         {
