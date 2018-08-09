@@ -2,9 +2,9 @@ public class Solution
 {
     public List<List<Integer>> combinationSum3(int k, int n)
     {
-        List<List<Integer>> re = new ArrayList<List<Integer>>();
-        dfs(re, 1, 0, k, n, new ArrayList<Integer>());
-        return re;
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        dfs(result, 1, 0, k, n, new ArrayList<Integer>());
+        return result;
     }
 
     private void dfs(List<List<Integer>> result, int start, int target, int k, int n, List<Integer> current)
