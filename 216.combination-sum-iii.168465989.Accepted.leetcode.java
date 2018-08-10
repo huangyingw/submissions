@@ -2,13 +2,12 @@ public class Solution
 {
     public List<List<Integer>> combinationSum3(int k, int n)
     {
-        List<List<Integer>> re = new ArrayList<List<Integer>>();
-        dfs(re, 1, 0, k, n, new ArrayList<Integer>());
-        return re;
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        dfs(result, 1, n, k, new ArrayList<Integer>());
+        return result;
     }
 
-    private void dfs(List<List<Integer>> result, int start, int target, int k,
-                     int n, List<Integer> current)
+    private void dfs(List<List<Integer>> result, int start, int target, int k, List<Integer> current)
     {
         if (target < 0 || k < 0)
         {
@@ -24,7 +23,7 @@ public class Solution
         for (int index = start; index <= 9; index++)
         {
             current.add(index);
-            dfs(result, index + 1, target - index, k - 1, n, current);
+            dfs(result, index + 1, target - index, k - 1, current);
             current.remove(current.size() - 1);
         }
     }
