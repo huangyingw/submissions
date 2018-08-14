@@ -10,8 +10,10 @@ public class Solution
             {
                 return true;
             }
-
-            hash.add(i);
+            else
+            {
+                hash.add(i);
+            }
         }
 
         return false;
