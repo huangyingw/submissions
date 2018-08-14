@@ -8,11 +8,11 @@ public class Solution
         }
 
         List<String> result = new ArrayList<String>();
-        helper(result, new StringBuilder(), n, n);
+        dfs(result, new StringBuilder(), n, n);
         return result;
     }
 
-    private void helper(List<String> result, StringBuilder sb, int left, int right)
+    private void dfs(List<String> result, StringBuilder sb, int left, int right)
     {
         if (left > right)
         {
@@ -26,10 +26,10 @@ public class Solution
         }
 
         sb.append("(");
-        helper(result, sb, left - 1, right);
+        dfs(result, sb, left - 1, right);
         sb.setLength(sb.length() - 1);
         sb.append(")");
-        helper(result, sb, left, right - 1);
+        dfs(result, sb, left, right - 1);
         sb.setLength(sb.length() - 1);
     }
 }
