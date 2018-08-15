@@ -15,10 +15,7 @@ public class Solution
         {
             for (int j = 1; j < matrix[0].length; j++)
             {
-                dp[j] =
-                    matrix[i][j] == '1' ? Math
-                    .min(Math.min(dp[j], dp[j - 1]),
-                         Character.getNumericValue(matrix[i][j - 1])) + 1 : 0;
+                dp[j] = matrix[i][j] == '1' ? Math .min(Math.min(dp[j], dp[j - 1]), Character.getNumericValue(matrix[i][j - 1])) + 1 : 0;
                 maxLen = Math.max(maxLen, dp[j]);
             }
 
