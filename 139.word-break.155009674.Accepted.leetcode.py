@@ -1,6 +1,6 @@
 class Solution(object):
     def wordBreak(self, s, wordDict):
-        dp = [False] * (len(s) + 1)
+        dp = [False for _ in range(len(s) + 1)]
         dp[0] = True
 
         for start in range(len(s)):

@@ -13,7 +13,7 @@ class Solution(object):
                     current.pop()
                     visited[index] = False
 
-        visited = [False] * len(nums)
+        visited = [False for _ in range(len(nums))]
         current = []
         result = []
         helper()

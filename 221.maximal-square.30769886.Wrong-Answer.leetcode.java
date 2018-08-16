@@ -17,7 +17,9 @@ public class Solution
             else
             {
                 int t = stack.pop();
-                maxArea = Math.max(maxArea, h[t] * (stack.isEmpty() ? i : i - stack.peek() - 1));
+                maxArea =
+                    Math.max(maxArea, h[t]
+                             * (stack.isEmpty() ? i : i - stack.peek() - 1));
             }
         }
 
