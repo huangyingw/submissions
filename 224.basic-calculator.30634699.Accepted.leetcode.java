@@ -3,7 +3,7 @@ public class Solution
     public int calculate(String s)
     {
         Stack<Integer> stack = new Stack<>();
-        int res = 0;
+        int result = 0;
         int sign = 1;
         int curSign = 1;
 
@@ -27,7 +27,7 @@ public class Solution
             {
                 sign /= stack.pop();
             }
-            else if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+            else if (Character.isDigit(s.charAt(i)))
             {
                 int curNum = 0;
 
@@ -37,7 +37,7 @@ public class Solution
                     i++;
                 }
 
-                res += sign * curSign * curNum;
+                result += sign * curSign * curNum;
                 i--;
             }
             else if (s.charAt(i) == '+')
@@ -50,6 +50,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }
