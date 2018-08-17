@@ -4,7 +4,7 @@ class Solution(object):
             return 0
 
         maxLen = 0
-        dp = [[0] * (len(matrix[0]) + 1) for _ in range(len(matrix) + 1)]
+        dp = [[0 for _ in range(len(matrix[0]) + 1)] for _ in range(len(matrix) + 1)]
 
         for row in range(1, len(matrix) + 1):
             for col in range(1, len(matrix[0]) + 1):
