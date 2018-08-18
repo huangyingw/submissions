@@ -4,7 +4,7 @@ public class Solution
     {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
-        int result = 0;
+        int res = 0;
 
         for (int i = 0; i < s.length(); i++)
         {
@@ -17,10 +17,11 @@ public class Solution
 
                 while (j < s.length() && Character.isDigit(s.charAt(j)))
                 {
-                    num = 10 * num + (s.charAt(j++) - '0');
+                    num = 10 * num + (s.charAt(j) - '0');
+                    j++;
                 }
 
-                result += stack.pop() * num;
+                res += stack.pop() * num;
                 i = j - 1;
             }
             else if (c == '+' || c == '(')
@@ -37,6 +38,6 @@ public class Solution
             }
         }
 
-        return result;
+        return res;
     }
 }

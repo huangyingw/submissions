@@ -20,7 +20,7 @@ public class Codec
     // Decodes a single string to a list of strings.
     public List<String> decode(String s)
     {
-        List<String> result = new LinkedList<String>();
+        List<String> res = new LinkedList<String>();
         int start = 0;
 
         while (start < s.length())
@@ -29,11 +29,11 @@ public class Codec
             int idx = s.indexOf('#', start);
             int size = Integer.parseInt(s.substring(start, idx));
             // 根据这个长度截取子串
-            result.add(s.substring(idx + 1, idx + size + 1));
+            res.add(s.substring(idx + 1, idx + size + 1));
             // 更新start为子串后面一个位置
             start = idx + size + 1;
         }
 
-        return result;
+        return res;
     }
 }

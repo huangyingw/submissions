@@ -1,10 +1,10 @@
 public class Solution
 {
-    private int result = 0;
+    private int res = 0;
     public int largestBSTSubtree(TreeNode root)
     {
         largestBSTHelper(root);
-        return result;
+        return res;
     }
     private Data largestBSTHelper(TreeNode root)
     {
@@ -28,9 +28,9 @@ public class Solution
             curr.isBST = true;
             curr.size = 1 + left.size + right.size;
 
-            if (curr.size > result)
+            if (curr.size > res)
             {
-                result = curr.size;
+                res = curr.size;
             }
         }
         else

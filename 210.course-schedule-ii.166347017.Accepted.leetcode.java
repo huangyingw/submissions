@@ -6,14 +6,14 @@ public class Solution
 
         if (len == 0)
         {
-            int[] result = new int[numCourses];
+            int[] res = new int[numCourses];
 
             for (int m = 0; m < numCourses; m++)
             {
-                result[m] = m;
+                res[m] = m;
             }
 
-            return result;
+            return res;
         }
 
         int[] pCounter = new int[numCourses];

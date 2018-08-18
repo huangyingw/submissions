@@ -35,14 +35,14 @@ public class NumMatrix
 
     public int sumRegion(int row1, int col1, int row2, int col2)
     {
-        int result = 0;
+        int res = 0;
 
         // 逐行求和，每行的相应和为两sum相减
         for (int i = row1; i <= row2; i++)
         {
-            result += rowSums[i][col2] - (col1 == 0 ? 0 : rowSums[i][col1 - 1]);
+            res += rowSums[i][col2] - (col1 == 0 ? 0 : rowSums[i][col1 - 1]);
         }
 
-        return result;
+        return res;
     }
 }

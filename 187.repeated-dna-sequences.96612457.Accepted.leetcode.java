@@ -2,7 +2,7 @@ public class Solution
 {
     public List<String> findRepeatedDnaSequences(String s)
     {
-        Set<String> result = new HashSet<String>();
+        Set<String> res = new HashSet<String>();
         Set<String> set = new HashSet<String>();
 
         for (int index = 10; index <= s.length(); index++)
@@ -11,7 +11,7 @@ public class Solution
 
             if (set.contains(substr))
             {
-                result.add(substr);
+                res.add(substr);
             }
             else
             {
@@ -19,6 +19,6 @@ public class Solution
             }
         }
 
-        return new ArrayList(result);
+        return new ArrayList(res);
     }
 }

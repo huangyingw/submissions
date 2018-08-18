@@ -4,21 +4,21 @@ public class Solution
     {
         Stack<Integer> stk_val = new Stack<Integer>();
         Stack<Character> stk_op = new Stack<Character>();
-        int result = 0, tmp;
+        int res = 0, tmp;
 
         for (int i = 0; i <= s.length(); ++i)
         {
             if (i < s.length() && Character.isDigit(s.charAt(i)))
             {
-                result = 0;
+                res = 0;
 
                 while (i < s.length() && Character.isDigit(s.charAt(i)))
                 {
-                    result *= 10;
-                    result += s.charAt(i++) - '0';
+                    res *= 10;
+                    res += s.charAt(i++) - '0';
                 }
 
-                stk_val.push(result);
+                stk_val.push(res);
             }
 
             if (i == s.length() || s.charAt(i) == '+' || s.charAt(i) == '-'

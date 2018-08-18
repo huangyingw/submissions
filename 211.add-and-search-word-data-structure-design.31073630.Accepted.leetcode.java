@@ -92,14 +92,14 @@ public class WordDictionary
 
         if (word.charAt(index) == '.')
         {
-            boolean result = false;
+            boolean res = false;
 
             for (WordTrieNode node : p.nexts.values())
             {
-                result |= dfs(word, index + 1, node);
+                res |= dfs(word, index + 1, node);
             }
 
-            return result;
+            return res;
         }
         else
         {

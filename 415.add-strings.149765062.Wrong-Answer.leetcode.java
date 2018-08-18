@@ -3,7 +3,7 @@ public class Solution
     public String addStrings(String num1, String num2)
     {
         int i = num1.length() - 1, j = num2.length() - 1, carry = 0;
-        String result = "";
+        String res = "";
 
         while (i >= 0 || j >= 0)
         {
@@ -17,12 +17,12 @@ public class Solution
                 carry += num2.charAt(j) - '0';
             }
 
-            result = Integer.toString(carry % 10) + result;
+            res = Integer.toString(carry % 10) + res;
             carry /= 10;
             i--;
             j--;
         }
 
-        return carry != 0 ? "1" + result : result;
+        return carry != 0 ? "1" + res : res;
     }
 }

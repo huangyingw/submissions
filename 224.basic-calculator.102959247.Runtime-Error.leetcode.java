@@ -5,7 +5,7 @@ public class Solution
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(1);
         stack.push(1);
-        int result = 0;
+        int res = 0;
 
         for (int i = 0; i < s.length(); i++)
         {
@@ -20,7 +20,7 @@ public class Solution
                     num = 10 * num + (s.charAt(++i) - '0');
                 }
 
-                result += stack.pop() * num;
+                res += stack.pop() * num;
             }
             else if (c == '+' || c == '(')
             {
@@ -35,6 +35,6 @@ public class Solution
             }
         }
 
-        return result;
+        return res;
     }
 }

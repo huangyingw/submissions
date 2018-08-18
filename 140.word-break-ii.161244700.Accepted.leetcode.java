@@ -1,6 +1,6 @@
 public class Solution
 {
-    List<String> result = new ArrayList<String>();
+    List<String> res = new ArrayList<String>();
     boolean[] f = null;
     char[] s;
     List<String> dict = null;
@@ -10,7 +10,7 @@ public class Solution
     {
         if (p == n)
         {
-            result.add(now);
+            res.add(now);
             return true;
         }
 
@@ -55,6 +55,6 @@ public class Solution
         }
 
         dfs(0, "");
-        return result;
+        return res;
     }
 }

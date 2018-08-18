@@ -2,7 +2,7 @@ public class Solution
 {
     public int singleNumber(int[] A)
     {
-        int result = 0;
+        int res = 0;
         int[] digits = new int[32];
 
         for (int i = 0; i < 32; i++)
@@ -15,9 +15,9 @@ public class Solution
                 }
             }
 
-            result |= (digits[i] << i);
+            res |= (digits[i] << i);
         }
 
-        return result;
+        return res;
     }
 }

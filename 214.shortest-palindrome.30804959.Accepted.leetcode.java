@@ -23,8 +23,8 @@ public class Solution
             next[i] = j;
         }
 
-        StringBuilder result = new StringBuilder(s.substring(j + 1));
-        result.reverse();
-        return result.toString() + s;
+        StringBuilder res = new StringBuilder(s.substring(j + 1));
+        res.reverse();
+        return res.toString() + s;
     }
 }

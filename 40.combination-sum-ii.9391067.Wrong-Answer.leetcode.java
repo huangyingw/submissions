@@ -4,21 +4,21 @@ public class Solution
     public ArrayList<ArrayList<Integer>> combinationSum2(int[] num,
             int target)
     {
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 
         if (num == null || num.length == 0)
         {
-            return result;
+            return res;
         }
 
         Arrays.sort(num);
-        helper(num, 0, target, new ArrayList<Integer>(), result);
-        return result;
+        helper(num, 0, target, new ArrayList<Integer>(), res);
+        return res;
     }
 
     private void helper(int[] num, int start, int target,
                         ArrayList<Integer> item,
-                        ArrayList<ArrayList<Integer>> result)
+                        ArrayList<ArrayList<Integer>> res)
     {
         if (target < 0 || start >= num.length)
         {
@@ -27,7 +27,7 @@ public class Solution
 
         if (target == 0)
         {
-            result.add(new ArrayList<Integer>(item));
+            res.add(new ArrayList<Integer>(item));
             return;
         }
 
@@ -39,7 +39,7 @@ public class Solution
             }
 
             item.add(num[i]);
-            helper(num, i + 1, target - num[i], item, result);
+            helper(num, i + 1, target - num[i], item, res);
             item.remove(item.size() - 1);
         }
     }

@@ -2,7 +2,7 @@ public class Solution
 {
     public int maxPoints(Point[] points)
     {
-        int result = 0;
+        int res = 0;
 
         for (int i = 0; i < points.length; ++i)
         {
@@ -24,15 +24,15 @@ public class Solution
                 m.put(t, m.getOrDefault(t, 0) + 1);
             }
 
-            result = Math.max(result, duplicate);
+            res = Math.max(res, duplicate);
 
             for (Map.Entry<Map<Integer, Integer>, Integer> e : m.entrySet())
             {
-                result = Math.max(result, e.getValue() + duplicate);
+                res = Math.max(res, e.getValue() + duplicate);
             }
         }
 
-        return result;
+        return res;
     }
     public int gcd(int a, int b)
     {

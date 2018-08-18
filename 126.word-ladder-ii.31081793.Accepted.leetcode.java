@@ -12,7 +12,7 @@ public class Solution
     }
     public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict)
     {
-        ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
+        ArrayList<ArrayList<String>> res = new ArrayList<ArrayList<String>>();
         HashSet<String> unvisitedSet = new HashSet<String>();
         unvisitedSet.addAll(dict);
         unvisitedSet.add(start);
@@ -93,16 +93,16 @@ public class Solution
         {
             ArrayList<String> list = new ArrayList<String>();
             list.add(start);
-            getPaths(start, end, list, finalLevel + 1, nextMap, result);
+            getPaths(start, end, list, finalLevel + 1, nextMap, res);
         }
 
-        return result;
+        return res;
     }
-    private void getPaths(String cur, String end, ArrayList<String> list, int level, Map<String, List<String>> nextMap, ArrayList<ArrayList<String>> result)
+    private void getPaths(String cur, String end, ArrayList<String> list, int level, Map<String, List<String>> nextMap, ArrayList<ArrayList<String>> res)
     {
         if (cur.equals(end))
         {
-            result.add(new ArrayList<String>(list));
+            res.add(new ArrayList<String>(list));
         }
         else if (level > 0)
         {
@@ -111,7 +111,7 @@ public class Solution
             for (String parent : parentsSet)
             {
                 list.add(parent);
-                getPaths(parent, end, list, level - 1, nextMap, result);
+                getPaths(parent, end, list, level - 1, nextMap, res);
                 list.remove(list.size() - 1);
             }
         }

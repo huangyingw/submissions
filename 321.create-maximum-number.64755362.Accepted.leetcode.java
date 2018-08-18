@@ -8,17 +8,17 @@ public class Solution
         {
             int[] res1 = get_max_sub_array(nums1, i);
             int[] res2 = get_max_sub_array(nums2, k - i);
-            int[] result = new int[k];
+            int[] res = new int[k];
             int pos1 = 0, pos2 = 0, tpos = 0;
 
             while (pos1 < res1.length || pos2 < res2.length)
             {
-                result[tpos++] = greater(res1, pos1, res2, pos2) ? res1[pos1++] : res2[pos2++];
+                res[tpos++] = greater(res1, pos1, res2, pos2) ? res1[pos1++] : res2[pos2++];
             }
 
-            if (!greater(ans, 0, result, 0))
+            if (!greater(ans, 0, res, 0))
             {
-                ans = result;
+                ans = res;
             }
         }
 
@@ -45,22 +45,22 @@ public class Solution
 
     public int[] get_max_sub_array(int[] nums, int k)
     {
-        int[] result = new int[k];
+        int[] res = new int[k];
         int len = 0;
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (len > 0 && len + nums.length - i > k && result[len - 1] < nums[i])
+            while (len > 0 && len + nums.length - i > k && res[len - 1] < nums[i])
             {
                 len--;
             }
 
             if (len < k)
             {
-                result[len++] = nums[i];
+                res[len++] = nums[i];
             }
         }
 
-        return result;
+        return res;
     }
 }

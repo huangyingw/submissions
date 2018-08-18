@@ -1,26 +1,26 @@
 public class Solution
 {
-    int result;
+    int res;
 
     public int totalNQueens(int n)
     {
-        result = 0;
+        res = 0;
 
         if (n <= 0)
         {
-            return result;
+            return res;
         }
 
         int[] loc = new int[n];
         dfs(loc, 0, n);
-        return result;
+        return res;
     }
 
     public void dfs(int[] loc, int cur, int n)
     {
         if (cur == n)
         {
-            result += 1;
+            res += 1;
             return;
         }
 

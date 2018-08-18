@@ -7,8 +7,8 @@ public class Solution
             return 0;
         }
 
-        // in this case, result[i] means the max length of parensis ended at i; if not, then result[i] = 0
-        int[] result = new int[s.length()];
+        // in this case, res[i] means the max length of parensis ended at i; if not, then res[i] = 0
+        int[] res = new int[s.length()];
         int open = 0, max = 0;
 
         for (int i = 0; i < s.length(); i++)
@@ -18,25 +18,25 @@ public class Solution
             if (c == '(')
             {
                 open++;
-                //result[i] = result[i-1];
+                //res[i] = res[i-1];
             }
             else
             {
                 if (open > 0)
                 {
-                    result[i] = result[i - 1] + 2;
+                    res[i] = res[i - 1] + 2;
 
                     // important lines here
-                    if (i >= result[i])
+                    if (i >= res[i])
                     {
-                        result[i] += result[i - result[i]];
+                        res[i] += res[i - res[i]];
                     }
 
                     open--;
                 }
             }
 
-            max = Math.max(max, result[i]);
+            max = Math.max(max, res[i]);
         }
 
         return max;

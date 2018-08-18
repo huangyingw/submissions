@@ -3,12 +3,12 @@ public class Solution
     public List<int[]> kSmallestPairs(final int[] nums1, final int[] nums2,
                                       int k)
     {
-        List<int[]> result = new ArrayList<>();
+        List<int[]> res = new ArrayList<>();
 
         if (nums1 == null || nums1.length == 0 || nums2 == null
                 || nums2.length == 0)
         {
-            return result;
+            return res;
         }
 
         class Pair
@@ -41,7 +41,7 @@ public class Solution
         {
             k--;
             Pair p = queue.poll();
-            result.add(new int[] { nums1[p.x], nums2[p.y] });
+            res.add(new int[] { nums1[p.x], nums2[p.y] });
 
             for (int i = 0; i < 2; i++)
             {
@@ -57,6 +57,6 @@ public class Solution
             }
         }
 
-        return result;
+        return res;
     }
 }

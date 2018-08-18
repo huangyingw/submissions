@@ -2,11 +2,11 @@ public class Solution
 {
     public List<String> summaryRanges(int[] nums)
     {
-        List<String> result = new ArrayList<String>();
+        List<String> res = new ArrayList<String>();
 
         if (nums == null || nums.length < 1)
         {
-            return result;
+            return res;
         }
 
         for (int start = 0, end = 0; end < nums.length; end++, start = end)
@@ -18,15 +18,15 @@ public class Solution
 
             if (start == end)
             {
-                result.add(Integer.toString(nums[start]));
+                res.add(Integer.toString(nums[start]));
             }
             else
             {
                 String str = nums[start] + "->" + nums[end];
-                result.add(str);
+                res.add(str);
             }
         }
 
-        return result;
+        return res;
     }
 }

@@ -3,7 +3,7 @@ public class Solution
     public ArrayList<Integer> spiralOrder(int[][] matrix)
     {
         int n = matrix.length;
-        ArrayList<Integer> result = new ArrayList<Integer>();
+        ArrayList<Integer> res = new ArrayList<Integer>();
         int k = 1;
         int top = 0, bottom = n - 1, left = 0, right = n - 1;
 
@@ -11,22 +11,22 @@ public class Solution
         {
             for (int j = left; j < right; j++)
             {
-                result.add(k++);
+                res.add(k++);
             }
 
             for (int i = top; i < bottom; i++)
             {
-                result.add(k++);
+                res.add(k++);
             }
 
             for (int j = right; j > left; j--)
             {
-                result.add(k++);
+                res.add(k++);
             }
 
             for (int i = bottom; i > top; i--)
             {
-                result.add(k++);
+                res.add(k++);
             }
 
             left++;
@@ -37,9 +37,9 @@ public class Solution
 
         if (n % 2 != 0)
         {
-            result.add(k++);
+            res.add(k++);
         }
 
-        return result;
+        return res;
     }
 }

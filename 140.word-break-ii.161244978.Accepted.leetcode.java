@@ -1,6 +1,6 @@
 public class Solution
 {
-    List<String> result = new ArrayList<String>();
+    List<String> res = new ArrayList<String>();
     List<List<Integer>>f = new ArrayList<>();
     int n;
 
@@ -8,7 +8,7 @@ public class Solution
     {
         if (p == n)
         {
-            result.add(now);
+            res.add(now);
             return;
         }
 
@@ -48,6 +48,6 @@ public class Solution
         }
 
         dfs(0, s, "");
-        return result;
+        return res;
     }
 }

@@ -26,13 +26,13 @@ public class Solution
             }
         }
 
-        int[] result = new int[numCourses];
+        int[] res = new int[numCourses];
         int count = 0;
 
         while (!queue.isEmpty())
         {
             int t = queue.pop();
-            result[count++] = t;
+            res[count++] = t;
 
             for (Integer a : adjacencyList.get(t))
             {
@@ -47,7 +47,7 @@ public class Solution
 
         if (count == numCourses)
         {
-            return result;
+            return res;
         }
 
         return new int[0];
