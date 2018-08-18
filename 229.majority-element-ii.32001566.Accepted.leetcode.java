@@ -49,18 +49,18 @@ public class Solution
             }
         }
 
-        List<Integer> res = new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<Integer>();
 
         if (count1 > nums.length / 3)
         {
-            res.add(num1);
+            result.add(num1);
         }
 
         if (count2 > nums.length / 3)
         {
-            res.add(num2);
+            result.add(num2);
         }
 
-        return res;
+        return result;
     }
 }

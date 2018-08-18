@@ -4,20 +4,20 @@ public class Solution
     {
         Stack<Integer> stk_val = new Stack<Integer>();
         Stack<Character> stk_op = new Stack<Character>();
-        int res = 0;
+        int result = 0;
 
         for (int i = 0; i <= s.length(); ++i)
         {
             if (i < s.length() && Character.isDigit(s.charAt(i)))
             {
-                res = 0;
+                result = 0;
 
                 while (i < s.length() && Character.isDigit(s.charAt(i)))
                 {
-                    res = res * 10 + s.charAt(i++) - '0';
+                    result = result * 10 + s.charAt(i++) - '0';
                 }
 
-                stk_val.push(res);
+                stk_val.push(result);
             }
 
             if (i == s.length() || s.charAt(i) == '+' || s.charAt(i) == '-'

@@ -7,17 +7,17 @@ public class Solution
             return null;
         }
 
-        int[] res = new int[nums.length];
+        int[] result = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++)
         {
             if (i == 0)
             {
-                res[i] = 1;
+                result[i] = 1;
             }
             else
             {
-                res[i] = res[i - 1] * nums[i - 1];
+                result[i] = result[i - 1] * nums[i - 1];
             }
         }
 
@@ -25,10 +25,10 @@ public class Solution
 
         for (int i = nums.length - 1; i >= 0; i--)
         {
-            res[i] = res[i] * prod;
+            result[i] = result[i] * prod;
             prod *= nums[i];
         }
 
-        return res;
+        return result;
     }
 }
