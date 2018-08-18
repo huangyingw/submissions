@@ -5,22 +5,22 @@ public class Solution
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(1);
         stack.push(1);
-        int res = 0;
+        int result = 0;
 
-        for (int i = 0; i < s.length(); i++)
+        for (int index = 0; index < s.length(); index++)
         {
-            char c = s.charAt(i);
+            char c = s.charAt(index);
 
             if (Character.isDigit(c))
             {
                 int num = c - '0';
 
-                while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1)))
+                while (index + 1 < s.length() && Character.isDigit(s.charAt(index + 1)))
                 {
-                    num = 10 * num + (s.charAt(i + 1) - '0');
+                    num = 10 * num + (s.charAt(index + 1) - '0');
                 }
 
-                res += stack.pop() * num;
+                result += stack.pop() * num;
             }
             else if (c == '+' || c == '(')
             {
@@ -36,6 +36,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }

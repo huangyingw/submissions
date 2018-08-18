@@ -8,7 +8,7 @@ public class Solution
         }
 
         boolean[][] palin = new boolean[s.length()][s.length()];
-        String res = "";
+        String result = "";
         int maxLen = 0;
 
         for (int i = s.length() - 1; i >= 0; i--)
@@ -22,12 +22,12 @@ public class Solution
                     if (maxLen < j - i + 1)
                     {
                         maxLen = j - i + 1;
-                        res = s.substring(i, j + 1);
+                        result = s.substring(i, j + 1);
                     }
                 }
             }
         }
 
-        return res;
+        return result;
     }
 }

@@ -3,11 +3,11 @@ public class Solution
     // [0,1,2,4,5,7], return ["0->2","4->5","7"].
     public List<String> summaryRanges(int[] nums)
     {
-        List<String> res = new ArrayList<>();
+        List<String> result = new ArrayList<>();
 
         if (nums == null || nums.length < 1)
         {
-            return  res;
+            return  result;
         }
 
         int s = 0, e = 0;
@@ -22,12 +22,12 @@ public class Solution
             {
                 if (s == e)
                 {
-                    res.add(Integer.toString(nums[s]));
+                    result.add(Integer.toString(nums[s]));
                 }
                 else
                 {
                     String str = nums[s] + "->" + nums[e];
-                    res.add(str);
+                    result.add(str);
                 }
 
                 ++e;
@@ -35,6 +35,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }

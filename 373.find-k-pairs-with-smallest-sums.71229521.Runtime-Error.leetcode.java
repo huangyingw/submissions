@@ -2,7 +2,7 @@ public class Solution
 {
     public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k)
     {
-        List<int[]> res = new ArrayList<int[]>();
+        List<int[]> result = new ArrayList<int[]>();
         boolean visit[][] = new boolean[nums1.length][nums2.length];
         Queue<int[]> heap = new PriorityQueue<int[]>(new Comparator<int[]>()
         {
@@ -14,10 +14,10 @@ public class Solution
         heap.add(new int[] { 0, 0 });
         visit[0][0] = true;
 
-        while (!heap.isEmpty() && res.size() < k)
+        while (!heap.isEmpty() && result.size() < k)
         {
             int d[] = heap.poll();
-            res.add(new int[] { nums1[d[0]], nums2[d[1]] });
+            result.add(new int[] { nums1[d[0]], nums2[d[1]] });
 
             if (d[1] + 1 < nums2.length && visit[d[0]][d[1] + 1] == false)
             {
@@ -32,6 +32,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }

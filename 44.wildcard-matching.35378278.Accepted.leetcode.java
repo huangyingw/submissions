@@ -12,8 +12,8 @@ public class Solution
             return false;
         }
 
-        boolean[] res = new boolean[s.length() + 1];
-        res[0] = true;
+        boolean[] result = new boolean[s.length() + 1];
+        result[0] = true;
 
         for (int j = 0; j < p.length(); j++)
         {
@@ -21,27 +21,27 @@ public class Solution
             {
                 for (int i = s.length() - 1; i >= 0; i--)
                 {
-                    res[i + 1] = res[i] && (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j));
+                    result[i + 1] = result[i] && (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j));
                 }
             }
             else
             {
                 int i = 0;
 
-                while (i <= s.length() && !res[i])
+                while (i <= s.length() && !result[i])
                 {
                     i++;
                 }
 
                 for (; i <= s.length(); i++)
                 {
-                    res[i] = true;
+                    result[i] = true;
                 }
             }
 
-            res[0] = res[0] && p.charAt(j) == '*';
+            result[0] = result[0] && p.charAt(j) == '*';
         }
 
-        return res[s.length()];
+        return result[s.length()];
     }
 }

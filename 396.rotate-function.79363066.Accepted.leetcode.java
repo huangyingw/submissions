@@ -17,9 +17,9 @@ public class Solution
 
         while (k < A.length)
         {
-            int res = pre + sum - A.length * A[A.length - k];
-            max = Math.max(max, res);
-            pre = res;
+            int result = pre + sum - A.length * A[A.length - k];
+            max = Math.max(max, result);
+            pre = result;
             k++;
         }
 

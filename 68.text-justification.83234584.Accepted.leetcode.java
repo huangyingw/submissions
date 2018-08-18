@@ -2,11 +2,11 @@ public class Solution
 {
     public ArrayList<String> fullJustify(String[] words, int L)
     {
-        ArrayList<String> res = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<String>();
 
         if (words == null || words.length == 0)
         {
-            return res;
+            return result;
         }
 
         int count = 0;
@@ -59,7 +59,7 @@ public class Solution
                     str.append(" ");
                 }
 
-                res.add(str.toString());
+                result.add(str.toString());
                 count = 0;
                 last = i; //下一个开始的单词
             }
@@ -85,7 +85,7 @@ public class Solution
             str.append(" ");
         }
 
-        res.add(str.toString());
-        return res;
+        result.add(str.toString());
+        return result;
     }
 }

@@ -2,12 +2,12 @@ public class Solution
 {
     public List<String> findWords(char[][] board, String[] words)
     {
-        List<String> res = new ArrayList<String>();
+        List<String> result = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0
                 || words == null || words.length == 0)
         {
-            return res;
+            return result;
         }
 
         boolean[][] visited = new boolean[board.length][board[0].length];
@@ -17,11 +17,11 @@ public class Solution
         {
             for (int j = 0; j < board[0].length; j++)
             {
-                dfs(board, i, j, "", visited, trie, res);
+                dfs(board, i, j, "", visited, trie, result);
             }
         }
 
-        return res;
+        return result;
     }
 
     private void dfs(char[][] board, int i, int j, String str, boolean[][] visited, Trie trie, List<String> result)

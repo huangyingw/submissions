@@ -22,8 +22,8 @@ public class Solution
         long num = numerator, den = denominator;
         num = Math.abs(num);
         den = Math.abs(den);
-        long res = num / den;
-        result += String.valueOf(res);
+        long result = num / den;
+        result += String.valueOf(result);
         long remainder = (num % den) * 10;
 
         if (remainder == 0)
@@ -46,8 +46,8 @@ public class Solution
             }
 
             map.put(remainder, result.length());
-            res = remainder / den;
-            result += String.valueOf(res);
+            result = remainder / den;
+            result += String.valueOf(result);
             remainder = (remainder % den) * 10;
         }
 

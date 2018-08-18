@@ -5,7 +5,7 @@ public class Solution
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(1);
         stack.push(1);
-        int res = 0;
+        int result = 0;
 
         for (int i = 0; i < s.length(); i++)
         {
@@ -34,6 +34,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }
