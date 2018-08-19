@@ -3,7 +3,6 @@ class MyStack
     Queue<Integer> queue1 = new LinkedList<Integer>();
     Queue<Integer> queue2 = new LinkedList<Integer>();
 
-    // Push element x onto stack.
     public void push(int x)
     {
         if (empty())
@@ -33,7 +32,6 @@ class MyStack
         }
     }
 
-    // Removes the element on top of the stack.
     public void pop()
     {
         if (queue1.size() > 0)
@@ -46,7 +44,6 @@ class MyStack
         }
     }
 
-    // Get the top element.
     public int top()
     {
         if (queue1.size() > 0)
@@ -61,7 +58,6 @@ class MyStack
         return 0;
     }
 
-    // Return whether the stack is empty.
     public boolean empty()
     {
         return queue1.isEmpty() & queue2.isEmpty();
