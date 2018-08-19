@@ -17,8 +17,7 @@ public class Solution
 
                 while (index + 1 < s.length() && Character.isDigit(s.charAt(index + 1)))
                 {
-                    int newNum = s.charAt(index + 1) - '0';
-                    num = 10 * num + newNum;
+                    num = 10 * num + s.charAt(index + 1) - '0';
                     index++;
                 }
 
