@@ -8,8 +8,7 @@ public class Solution
         for (int i = 0; i < 3; ++i)
         {
             num /= 1000;
-            result = num % 1000 > 0
-                  ? convertHundred(num % 1000) + " " + v[i] + " " + result : result;
+            result = num % 1000 > 0 ? convertHundred(num % 1000) + " " + v[i] + " " + result : result;
         }
 
         result = result.trim();
