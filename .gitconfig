@@ -12,3 +12,5 @@
     remote = github
 [merge]
     allow = true
+[vrun]
+    silent = false
