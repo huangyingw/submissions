@@ -98,7 +98,8 @@ public class Solution
 
         return result;
     }
-    private void getPaths(String cur, String end, ArrayList<String> list, int level, Map<String, List<String>> nextMap, ArrayList<ArrayList<String>> result)
+    private void getPaths(String cur, String end, ArrayList<String> list, int level, Map<String, List<String>> nextMap,
+                          ArrayList<ArrayList<String>> result)
     {
         if (cur.equals(end))
         {
