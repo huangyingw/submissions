@@ -2,7 +2,7 @@ public class Solution
 {
     public String decodeString(String s)
     {
-        String res = "";
+        String result = "";
         Stack<Integer> counts = new Stack<>();
         Stack<String> strs = new Stack<>();
         int i = 0;
@@ -23,8 +23,8 @@ public class Solution
             }
             else if (s.charAt(i) == '[')
             {
-                strs.push(res);
-                res = "";
+                strs.push(result);
+                result = "";
                 i++;
             }
             else if (s.charAt(i) == ']')
@@ -34,18 +34,18 @@ public class Solution
 
                 for (int j = 0; j < count; j++)
                 {
-                    str.append(res);
+                    str.append(result);
                 }
 
-                res = str.toString();
+                result = str.toString();
                 i++;
             }
             else
             {
-                res += s.charAt(i++);
+                result += s.charAt(i++);
             }
         }
 
-        return res;
+        return result;
     }
 }

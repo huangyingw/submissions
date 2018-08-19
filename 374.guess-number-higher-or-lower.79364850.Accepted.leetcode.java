@@ -12,13 +12,13 @@ public class Solution extends GuessGame
         while (L <= R)
         {
             int mid = L + ((R - L) >> 1);
-            int res = guess(mid);
+            int result = guess(mid);
 
-            if (res == 0)
+            if (result == 0)
             {
                 return mid;
             }
-            else if (res == 1)
+            else if (result == 1)
             {
                 L = mid + 1;
             }

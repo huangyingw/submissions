@@ -34,18 +34,18 @@ public class Solution
             }
         }
 
-        int[] res = new int[count];
+        int[] result = new int[count];
         count = 0;
 
         for (int key : map.keySet())
         {
             if (map.get(key) == max)
             {
-                res[count++] = key;
+                result[count++] = key;
             }
         }
 
-        return res;
+        return result;
     }
 
     public int treeSum(Map<Integer, Integer> map, TreeNode root)

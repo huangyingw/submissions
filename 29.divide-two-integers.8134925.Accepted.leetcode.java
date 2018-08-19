@@ -7,17 +7,17 @@ public class Solution
             return Integer.MAX_VALUE;
         }
 
-        int res = 0;
+        int result = 0;
 
         if (dividend == Integer.MIN_VALUE)
         {
-            res = 1;
+            result = 1;
             dividend += Math.abs(divisor);
         }
 
         if (divisor == Integer.MIN_VALUE)
         {
-            return res;
+            return result;
         }
 
         boolean isNeg = ((dividend ^ divisor) >>> 31 == 1) ? true : false;
@@ -36,13 +36,13 @@ public class Solution
             if (dividend >= divisor)
             {
                 dividend -= divisor;
-                res += 1 << digit;
+                result += 1 << digit;
             }
 
             divisor >>= 1;
             digit--;
         }
 
-        return isNeg ? -res : res;
+        return isNeg ? -result : result;
     }
 }

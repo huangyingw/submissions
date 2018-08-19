@@ -2,11 +2,11 @@ public class Solution
 {
     public List<List<Integer>> threeSum(int[] num)
     {
-        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
 
         if (num.length < 3)
         {
-            return res;
+            return result;
         }
 
         Arrays.sort(num);
@@ -40,13 +40,13 @@ public class Solution
                     temp.add(num[i]);
                     temp.add(num[j]);
                     temp.add(num[k]);
-                    res.add(temp);
+                    result.add(temp);
                     k--;
                     j++;
                 }
             }
         }
 
-        return res;
+        return result;
     }
 }

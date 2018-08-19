@@ -20,9 +20,9 @@ public class Solution
             }
         }
 
-        int[] res = new int[count];
+        int[] result = new int[count];
         count = 0;
-        return res;
+        return result;
     }
 
     public int treeSum(Map<Integer, Integer> map, TreeNode root)

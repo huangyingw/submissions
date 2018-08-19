@@ -2,7 +2,7 @@ public class Solution
 {
     public List<String> findRepeatedDnaSequences(String s)
     {
-        List<String> res = new LinkedList<String>();
+        List<String> result = new LinkedList<String>();
         HashMap<String, Integer> map = new HashMap<String, Integer>();
 
         for (int index = 10; index <= s.length(); index++)
@@ -15,7 +15,7 @@ public class Solution
                 // 如果是第一次遇到，则加入结果
                 if (map.get(substr) == 1)
                 {
-                    res.add(substr);
+                    result.add(substr);
                 }
 
                 // 标记为已经遇到过一次了
@@ -28,6 +28,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }

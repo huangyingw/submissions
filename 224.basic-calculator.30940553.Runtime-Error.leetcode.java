@@ -4,7 +4,7 @@ public class Solution
     {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
-        int res = 0;
+        int result = 0;
 
         for (int i = 0; i < s.length(); i++)
         {
@@ -21,7 +21,7 @@ public class Solution
                     j++;
                 }
 
-                res += stack.pop() * num;
+                result += stack.pop() * num;
                 i = j - 1;
             }
             else if (c == '+' || c == '(')
@@ -38,6 +38,6 @@ public class Solution
             }
         }
 
-        return res;
+        return result;
     }
 }
