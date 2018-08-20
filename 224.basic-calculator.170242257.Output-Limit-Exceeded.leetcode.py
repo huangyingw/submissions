@@ -20,4 +20,6 @@ class Solution(object):
             elif s[idx] == '-':
                 stack.append(-1 * stack[-1])
 
+            idx += 1
+
         return result

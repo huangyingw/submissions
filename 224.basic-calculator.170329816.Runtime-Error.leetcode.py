@@ -1,9 +1,8 @@
 class Solution(object):
     def calculate(self, s):
-        result = 0
+        result, idx = 0, 0
         stack = [1, 1]
 
-        idx = 0
         while idx < len(s):
             if s[idx].isdigit():
                 num = ord(s[idx]) - ord('0')
