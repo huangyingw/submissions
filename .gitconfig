@@ -13,4 +13,5 @@
 [merge]
     allow = true
 [vrun]
-    silent = false
+    silent = true
+    async = false
