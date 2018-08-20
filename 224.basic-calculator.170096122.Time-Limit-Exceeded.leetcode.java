@@ -7,21 +7,22 @@ public class Solution
         stack.push(1);
         int result = 0;
 
-        for (int i = 0; i < s.length(); i++)
+        for (int index = 0; index < s.length(); index++)
         {
-            char c = s.charAt(i);
+            char c = s.charAt(index);
 
             if (Character.isDigit(c))
             {
                 int num = c - '0';
 
-                while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1)))
+                while (index + 1 < s.length() && Character.isDigit(s.charAt(index + 1)))
                 {
-                    num = 10 * num + (s.charAt(++i) - '0');
+                    int newNum = s.charAt(index + 1) - '0';
+                    num = 10 * num + newNum;
+                    index++;
                 }
 
-                int stackPop = stack.pop();
-                result += stackPop * num;
+                result += stack.pop() * num;
             }
             else if (c == '+' || c == '(')
             {
@@ -33,7 +34,7 @@ public class Solution
             }
             else if (c == ')')
             {
-                stack.push(-1 * stack.peek());
+                stack.pop();
             }
         }
 
