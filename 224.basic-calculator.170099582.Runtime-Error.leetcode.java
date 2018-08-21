@@ -19,8 +19,7 @@ public class Solution
                     num = 10 * num + (s.charAt(++i) - '0');
                 }
 
-                int stackPop = stack.pop();
-                result += stackPop * num;
+                result += stack.pop() * num;
             }
             else if (c == '+' || c == '(')
             {
