@@ -20,8 +20,7 @@ public class Solution
                     num = 10 * num + (s.charAt(++i) - '0');
                 }
 
-                int stackPop = stack.pop();
-                result += stackPop * num;
+                result += stack.pop() * num;
             }
             else if (c == '+' || c == '(')
             {
@@ -33,7 +32,7 @@ public class Solution
             }
             else if (c == ')')
             {
-                stack.push(-1 * stack.peek());
+                stack.pop();
             }
         }
 
