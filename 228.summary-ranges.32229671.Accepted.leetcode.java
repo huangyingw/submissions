@@ -16,15 +16,7 @@ public class Solution
                 end++;
             }
 
-            if (start == end)
-            {
-                result.add(Integer.toString(nums[start]));
-            }
-            else
-            {
-                String str = nums[start] + "->" + nums[end];
-                result.add(str);
-            }
+            result.add(start == end ? Integer.toString(nums[start]) : nums[start] + "->" + nums[end]);
         }
 
         return result;
