@@ -2,7 +2,8 @@ public class Solution
 {
     public ListNode mergeKLists(ListNode[] lists)
     {
-        PriorityQueue<ListNode> heap = new PriorityQueue<ListNode>(10, new Comparator<ListNode>()
+        PriorityQueue<ListNode> heap =
+            new PriorityQueue<ListNode>(10, new Comparator<ListNode>()
         {
             public int compare(ListNode l1, ListNode l2)
             {
