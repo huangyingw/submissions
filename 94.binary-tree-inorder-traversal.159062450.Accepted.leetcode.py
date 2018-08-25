@@ -11,4 +11,5 @@ class Solution(object):
                 root = stack.pop()
                 result.append(root.val)
                 root = root.right
+
         return result
