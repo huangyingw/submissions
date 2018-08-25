@@ -11,7 +11,7 @@ public class Solution
 
     private void inorderTraversal(TreeNode root, int k)
     {
-        if (root == null)
+        if (root == null || count > k)
         {
             return;
         }
