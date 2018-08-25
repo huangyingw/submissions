@@ -5,7 +5,6 @@ public class Solution
 
     public int kthSmallest(TreeNode root, int k)
     {
-        count = 0;
         inorderTraversal(root, k);
         return result;
     }
