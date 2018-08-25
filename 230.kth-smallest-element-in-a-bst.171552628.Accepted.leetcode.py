@@ -1,5 +1,5 @@
 class Solution(object):
-    def inorderTraversal(self, root):
+    def kthSmallest(self, root, k):
         result = []
         stack = []
 
@@ -9,6 +9,11 @@ class Solution(object):
                 root = root.left
             else:
                 root = stack.pop()
-                result.append(root.val)
+                k -= 1
+
+                if k == 0:
+                    return root.val
+
                 root = root.right
+
         return result

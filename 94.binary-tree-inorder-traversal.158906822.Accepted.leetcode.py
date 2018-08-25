@@ -7,7 +7,6 @@ class Solution(object):
             dfs(root.left)
             result.append(root.val)
             dfs(root.right)
-
         result = []
         dfs(root)
         return result
