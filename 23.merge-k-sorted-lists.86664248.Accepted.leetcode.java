@@ -1,11 +1,3 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
 public class Solution
 {
     public ListNode mergeKLists(ListNode[] lists)
@@ -31,13 +23,13 @@ public class Solution
 
         while (!heap.isEmpty())
         {
-            ListNode node = heap.poll();
-            nav.next = node;
-            nav = nav.next;
+            ListNode top = heap.poll();
+            nav.next = top;
+            nav = top;
 
-            if (node.next != null)
+            if (top.next != null)
             {
-                heap.add(node.next);
+                heap.add(top.next);
             }
         }
 
