@@ -2,18 +2,18 @@ public class Solution
 {
     public String numberToWords(int num)
     {
-        String res = convertHundred(num % 1000);
+        String result = convertHundred(num % 1000);
         String[] v = { "Thousand", "Million", "Billion" };
 
         for (int i = 0; i < 3; ++i)
         {
             num /= 1000;
-            res = num % 1000 > 0
-                  ? convertHundred(num % 1000) + " " + v[i] + " " + res : res;
+            result = num % 1000 > 0
+                     ? convertHundred(num % 1000) + " " + v[i] + " " + result : result;
         }
 
-        res = res.trim();
-        return res.isEmpty() ? "Zero" : res;
+        result = result.trim();
+        return result.isEmpty() ? "Zero" : result;
     }
 
     String convertHundred(int num)
@@ -25,15 +25,15 @@ public class Solution
         String[] v2 = { "", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty",
                         "Seventy", "Eighty", "Ninety"
                       };
-        String res;
+        String result;
         int a = num / 100, b = num % 100, c = num % 10;
-        res = b < 20 ? v1[b] : v2[b / 10] + (c > 0 ? " " + v1[c] : "");
+        result = b < 20 ? v1[b] : v2[b / 10] + (c > 0 ? " " + v1[c] : "");
 
         if (a > 0)
         {
-            res = v1[a] + " Hundred" + (b > 0 ? " " + res : "");
+            result = v1[a] + " Hundred" + (b > 0 ? " " + result : "");
         }
 
-        return res;
+        return result;
     }
 }
