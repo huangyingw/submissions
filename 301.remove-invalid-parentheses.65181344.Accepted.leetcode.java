@@ -1,17 +1,17 @@
 public class Solution
 {
-    private List<String> res = new ArrayList<String>();
+    private List<String> result = new ArrayList<String>();
     private int max = 0;
     public List<String> removeInvalidParentheses(String s)
     {
         dfs(s, "", 0, 0);
 
-        if (res.size() == 0)
+        if (result.size() == 0)
         {
-            res.add("");
+            result.add("");
         }
 
-        return res;
+        return result;
     }
 
     private void dfs(String str, String subRes, int countLeft, int maxLeft)
@@ -25,9 +25,9 @@ public class Solution
                     max = maxLeft;
                 }
 
-                if (max == maxLeft && !res.contains(subRes))
+                if (max == maxLeft && !result.contains(subRes))
                 {
-                    res.add(subRes.toString());
+                    result.add(subRes.toString());
                 }
             }
 
