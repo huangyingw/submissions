@@ -5,13 +5,14 @@ public class Solution
 
     public int kthSmallest(TreeNode root, int k)
     {
+        count = 0;
         inorderTraversal(root, k);
         return result;
     }
 
     private void inorderTraversal(TreeNode root, int k)
     {
-        if (root == null || count > k)
+        if (root == null)
         {
             return;
         }
