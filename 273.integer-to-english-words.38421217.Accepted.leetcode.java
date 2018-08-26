@@ -9,7 +9,7 @@ public class Solution
         {
             num /= 1000;
             result = num % 1000 > 0
-                  ? convertHundred(num % 1000) + " " + v[i] + " " + result : result;
+                     ? convertHundred(num % 1000) + " " + v[i] + " " + result : result;
         }
 
         result = result.trim();
