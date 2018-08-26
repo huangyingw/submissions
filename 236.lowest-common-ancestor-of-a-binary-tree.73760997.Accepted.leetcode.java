@@ -10,7 +10,6 @@ public class Solution
         TreeNode left = lowestCommonAncestor(root.left, node1, node2);
         TreeNode right = lowestCommonAncestor(root.right, node1, node2);
 
-        // Conquer
         if (left != null && right != null)
         {
             return root;
