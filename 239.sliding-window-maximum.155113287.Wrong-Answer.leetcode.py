@@ -1,18 +1,18 @@
 class Solution(object):
     def maxSlidingWindow(self, nums, k):
-        deq = []
+        dequeue = []
         result = []
 
         for idx, val in enumerate(nums):
-            while deq and nums[deq[-1]] < val:
-                deq.pop()
+            while dequeue and nums[dequeue[-1]] < val:
+                dequeue.pop()
 
-            deq.append(idx)
+            dequeue.append(idx)
 
-            while deq and idx - deq[0] + 1 > k:
-                deq.pop(0)
+            while dequeue and idx - dequeue[0] + 1 > k:
+                dequeue.pop(0)
 
             if idx + 1 >= k:
-                result.append(deq[0])
+                result.append(dequeue[0])
 
         return result

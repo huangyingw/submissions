@@ -9,23 +9,23 @@ public class Solution
 
         k = Math.min(nums.length, k);
         int[] result = new int[nums.length - k + 1];
-        Deque<Integer> deq = new ArrayDeque<>();
+        Deque<Integer> dequeue = new ArrayDeque<>();
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (!deq.isEmpty() && nums[deq.getLast()] <= nums[i])
+            while (!dequeue.isEmpty() && nums[dequeue.getLast()] <= nums[i])
             {
-                deq.removeLast();
+                dequeue.removeLast();
             }
 
-            deq.addLast(i);
+            dequeue.addLast(i);
 
             if (i < k - 1)
             {
                 continue;
             }
 
-            result[i - (k - 1)] = nums[deq.getFirst()];
+            result[i - (k - 1)] = nums[dequeue.getFirst()];
         }
 
         return result;

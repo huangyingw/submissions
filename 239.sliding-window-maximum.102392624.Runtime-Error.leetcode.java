@@ -9,28 +9,28 @@ public class Solution
 
         winLen = Math.min(nums.length, winLen);
         int[] result = new int[nums.length - winLen + 1];
-        Deque<Integer> deq = new ArrayDeque<>();
+        Deque<Integer> dequeue = new ArrayDeque<>();
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (!deq.isEmpty() && nums[deq.getLast()] <= nums[i])
+            while (!dequeue.isEmpty() && nums[dequeue.getLast()] <= nums[i])
             {
-                deq.removeLast();
+                dequeue.removeLast();
             }
 
-            deq.addLast(nums[i]);
+            dequeue.addLast(nums[i]);
 
             if (i < winLen - 1)
             {
                 continue;
             }
 
-            while (!deq.isEmpty() && deq.getLast() - deq.getFirst() + 1 > winLen)
+            while (!dequeue.isEmpty() && dequeue.getLast() - dequeue.getFirst() + 1 > winLen)
             {
-                deq.removeFirst();
+                dequeue.removeFirst();
             }
 
-            result[i - (winLen - 1)] = deq.getFirst();
+            result[i - (winLen - 1)] = dequeue.getFirst();
         }
 
         return result;
