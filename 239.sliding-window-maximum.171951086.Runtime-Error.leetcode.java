@@ -13,19 +13,22 @@ public class Solution
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (!dequeue.isEmpty() && nums[dequeue.getLast()] <= nums[i])
+            while (nums[dequeue.getLast()] < nums[i])
             {
                 dequeue.removeLast();
             }
 
             dequeue.addLast(i);
 
-            if (i < k - 1)
+            while (dequeue.getLast() - dequeue.getFirst() + 1 > k)
             {
-                continue;
+                dequeue.removeFirst();
             }
 
-            result[i - (k - 1)] = nums[dequeue.getFirst()];
+            if (i >= k - 1)
+            {
+                result[i - (k - 1)] = nums[dequeue.getFirst()];
+            }
         }
 
         return result;

@@ -13,6 +13,6 @@ class Solution(object):
                 dequeue.pop(0)
 
             if idx + 1 >= k:
-                result.append(nums[dequeue[0]])
+                result.append(dequeue[0])
 
         return result

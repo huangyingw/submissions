@@ -20,6 +20,11 @@ public class Solution
 
             dequeue.addLast(i);
 
+            while (dequeue.getLast() - dequeue.getFirst() + 1 > k)
+            {
+                dequeue.removeFirst();
+            }
+
             if (i >= k - 1)
             {
                 result[i - (k - 1)] = nums[dequeue.getFirst()];

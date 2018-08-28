@@ -2,9 +2,9 @@ public class Solution
 {
     public int[] maxSlidingWindow(int[] nums, int k)
     {
-        if (nums == null || nums.length == 0)
+        if (nums == null)
         {
-            return nums;
+            return null;
         }
 
         k = Math.min(nums.length, k);
