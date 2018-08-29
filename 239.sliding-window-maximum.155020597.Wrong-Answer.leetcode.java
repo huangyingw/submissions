@@ -1,14 +1,14 @@
 public class Solution
 {
-    public int[] maxSlidingWindow(int[] nums, int k)
+    public int[] maxSlidingWindow(int[] nums, int winLen)
     {
         if (nums == null || nums.length == 0)
         {
             return nums;
         }
 
-        k = Math.min(nums.length, k);
-        int[] result = new int[nums.length - k + 1];
+        winLen = Math.min(nums.length, winLen);
+        int[] result = new int[nums.length - winLen + 1];
         Deque<Integer> dequeue = new ArrayDeque<>();
 
         for (int i = 0; i < nums.length; i++)
@@ -20,15 +20,17 @@ public class Solution
 
             dequeue.addLast(i);
 
-            while (!dequeue.isEmpty() && i - dequeue.getFirst() + 1 > k)
+            if (i < winLen - 1)
+            {
+                continue;
+            }
+
+            while (!dequeue.isEmpty() && dequeue.getLast() - dequeue.getFirst() + 1 > winLen)
             {
                 dequeue.removeFirst();
             }
 
-            if (i >= k - 1)
-            {
-                result[i - (k - 1)] = nums[dequeue.getFirst()];
-            }
+            result[i - (winLen - 1)] = dequeue.getFirst();
         }
 
         return result;

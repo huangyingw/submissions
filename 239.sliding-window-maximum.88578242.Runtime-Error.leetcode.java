@@ -13,13 +13,13 @@ public class Solution
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (dequeue.getLast() < nums[i])
+            while (!dequeue.isEmpty() && nums[dequeue.getLast()] < nums[i])
             {
                 dequeue.removeLast();
             }
-            
+
             dequeue.addLast(i);
-            
+
             while (dequeue.getLast() - dequeue.getFirst() + 1 > k)
             {
                 dequeue.removeFirst();

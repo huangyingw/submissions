@@ -9,25 +9,25 @@ public class Solution
 
         k = Math.min(nums.length, k);
         int[] result = new int[nums.length - k + 1];
-        Deque<Integer> dequeue = new ArrayDeque<>();
+        Deque<Integer> deq = new ArrayDeque<>();
 
         for (int i = 0; i < nums.length; i++)
         {
-            while (!dequeue.isEmpty() && nums[dequeue.getLast()] <= nums[i])
+            while (!deq.isEmpty() && deq.getLast() < nums[i])
             {
-                dequeue.removeLast();
+                deq.removeLast();
             }
 
-            dequeue.addLast(i);
+            deq.addLast(i);
 
-            while (!dequeue.isEmpty() && i - dequeue.getFirst() + 1 > k)
+            while (deq.getLast() - deq.getFirst() + 1 > k)
             {
-                dequeue.removeFirst();
+                deq.removeFirst();
             }
 
             if (i >= k - 1)
             {
-                result[i - (k - 1)] = nums[dequeue.getFirst()];
+                result[i - (k - 1)] = nums[deq.getFirst()];
             }
         }
 
