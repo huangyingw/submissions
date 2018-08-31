@@ -18,19 +18,19 @@ public class Solution
                 dequeue.removeLast();
             }
 
-            dequeue.addLast(nums[i]);
-
-            if (i < winLen - 1)
-            {
-                continue;
-            }
+            dequeue.addLast(i);
 
             while (!dequeue.isEmpty() && dequeue.getLast() - dequeue.getFirst() + 1 > winLen)
             {
                 dequeue.removeFirst();
             }
 
-            result[i - (winLen - 1)] = dequeue.getFirst();
+            if (i < winLen - 1)
+            {
+                continue;
+            }
+
+            result[i - (winLen - 1)] = nums[dequeue.getFirst()];
         }
 
         return result;
