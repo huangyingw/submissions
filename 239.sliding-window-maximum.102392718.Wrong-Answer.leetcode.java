@@ -30,7 +30,7 @@ public class Solution
                 dequeue.removeFirst();
             }
 
-            result[i - (winLen - 1)] = dequeue.getFirst();
+            result[i - (winLen - 1)] = nums[dequeue.getFirst()];
         }
 
         return result;

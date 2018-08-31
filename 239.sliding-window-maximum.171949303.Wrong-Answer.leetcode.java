@@ -4,7 +4,7 @@ public class Solution
     {
         if (nums == null || nums.length == 0)
         {
-            return nums;
+            return null;
         }
 
         k = Math.min(nums.length, k);
