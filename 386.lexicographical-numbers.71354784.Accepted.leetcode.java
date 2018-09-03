@@ -13,11 +13,11 @@ public class Solution
 
         ArrayList<Integer> result = new ArrayList<Integer>();
         char[] num = new char[c];
-        helper(num, 0, n, result);
+        dfs(num, 0, n, result);
         return result;
     }
 
-    public void helper(char[] num, int i, int max, ArrayList<Integer> result)
+    public void dfs(char[] num, int i, int max, ArrayList<Integer> result)
     {
         if (i == num.length)
         {
@@ -36,18 +36,18 @@ public class Solution
             for (char c = '1'; c <= '9'; c++)
             {
                 num[i] = c;
-                helper(num, i + 1, max, result);
+                dfs(num, i + 1, max, result);
             }
         }
         else
         {
             num[i] = 'a';
-            helper(num, num.length, max, result);
+            dfs(num, num.length, max, result);
 
             for (char c = '0'; c <= '9'; c++)
             {
                 num[i] = c;
-                helper(num, i + 1, max, result);
+                dfs(num, i + 1, max, result);
             }
         }
     }

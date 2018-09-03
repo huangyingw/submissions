@@ -19,9 +19,9 @@ public class Solution
 {
     public int depthSum(List<NestedInteger> nestedList)
     {
-        return helper(nestedList, 1);
+        return dfs(nestedList, 1);
     }
-    public int helper(List<NestedInteger> nestedList, int depth)
+    public int dfs(List<NestedInteger> nestedList, int depth)
     {
         if (nestedList == null || nestedList.size() == 0)
         {
@@ -38,7 +38,7 @@ public class Solution
             }
             else
             {
-                sum += helper((List<NestedInteger>) ni.getList(), depth + 1);
+                sum += dfs((List<NestedInteger>) ni.getList(), depth + 1);
             }
         }
 

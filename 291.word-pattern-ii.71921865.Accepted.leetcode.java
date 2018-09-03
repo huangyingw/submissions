@@ -14,10 +14,10 @@ public class Solution
 
         HashMap<Character, String> map = new HashMap<Character, String>();
         HashSet<String> set = new HashSet<String>();
-        return helper(pattern, str, 0, 0, map, set);
+        return dfs(pattern, str, 0, 0, map, set);
     }
 
-    public boolean helper(String pattern, String str, int i, int j, HashMap<Character, String> map, HashSet<String> set)
+    public boolean dfs(String pattern, String str, int i, int j, HashMap<Character, String> map, HashSet<String> set)
     {
         if (i == pattern.length() && j == str.length())
         {
@@ -40,7 +40,7 @@ public class Solution
                 map.put(c, sub);
                 set.add(sub);
 
-                if (helper(pattern, str, i + 1, k, map, set))
+                if (dfs(pattern, str, i + 1, k, map, set))
                 {
                     return true;
                 }
@@ -50,7 +50,7 @@ public class Solution
             }
             else if (map.containsKey(c) && map.get(c).equals(sub))
             {
-                if (helper(pattern, str, i + 1, k, map, set))
+                if (dfs(pattern, str, i + 1, k, map, set))
                 {
                     return true;
                 }
