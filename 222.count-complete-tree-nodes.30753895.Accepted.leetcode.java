@@ -14,13 +14,13 @@ public class Solution
         while (left != null)
         {
             left = left.left;
-            leftHeight++ ;
+            leftHeight++;
         }
 
         while (right != null)
         {
             right = right.right;
-            rightHeight++ ;
+            rightHeight++;
         }
 
         if (leftHeight == rightHeight)

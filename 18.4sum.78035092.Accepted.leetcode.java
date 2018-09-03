@@ -28,11 +28,11 @@ public class Solution
 
                     if (sum > target)
                     {
-                        l-- ;
+                        l--;
                     }
                     else if (sum < target)
                     {
-                        k++ ;
+                        k++;
                     }
                     else if (sum == target)
                     {
@@ -42,18 +42,18 @@ public class Solution
                         temp.add(num[k]);
                         temp.add(num[l]);
                         result.add(temp);
-                        k++ ;
-                        l-- ;
+                        k++;
+                        l--;
                     }
 
                     while (k < l && l + 1 < num.length && num[l] == num[l + 1])
                     {
-                        l-- ;
+                        l--;
                     } // avoid duplicate solutions
 
                     while (k < l && k - 1 > j && num[k] == num[k - 1])
                     {
-                        k++ ;
+                        k++;
                     } // avoid duplicate solutions
                 }
             }

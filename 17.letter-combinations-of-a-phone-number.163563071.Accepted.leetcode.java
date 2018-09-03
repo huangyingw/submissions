@@ -18,7 +18,7 @@ public class Solution
             int num = digits.charAt(i) - '0';
             int size = list.size();
 
-            for (int k = 0; k < size ; k++)
+            for (int k = 0; k < size; k++)
             {
                 String tmp = list.pop();
 

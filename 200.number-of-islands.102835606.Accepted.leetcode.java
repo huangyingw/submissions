@@ -21,7 +21,7 @@ public class Solution
                     continue;
                 }
 
-                result++ ;
+                result++;
                 dfs(grid, i, j);
             }
         }

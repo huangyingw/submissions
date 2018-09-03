@@ -19,11 +19,11 @@ public class Solution
 
                     if (sum > target)
                     {
-                        l-- ;
+                        l--;
                     }
                     else if (sum < target)
                     {
-                        k++ ;
+                        k++;
                     }
                     else if (sum == target)
                     {
@@ -39,8 +39,8 @@ public class Solution
                             result.add(temp);
                         }
 
-                        k++ ;
-                        l-- ;
+                        k++;
+                        l--;
                     }
                 }
             }

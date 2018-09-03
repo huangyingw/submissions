@@ -17,7 +17,7 @@ public class Solution
 
             if (str.charAt(j + 1) == str.charAt(i))
             {
-                j++ ;
+                j++;
             }
 
             next[i] = j;

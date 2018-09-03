@@ -19,11 +19,11 @@ public class Solution
 
             if (result == num[i])
             {
-                count++ ;
+                count++;
             }
             else
             {
-                count-- ;
+                count--;
             }
         }
 
