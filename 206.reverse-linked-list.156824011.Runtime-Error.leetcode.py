@@ -1,14 +1,14 @@
 class Solution(object):
     def reverseList(self, head):
-        def helper(head):
+        def dfs(head):
             if not head or not head.next:
                 return
 
             second = head.next
-            helper(second)
+            dfs(second)
             second.next = head
             return second
 
-        result = helper(head)
+        result = dfs(head)
         head.next = None
         return result
