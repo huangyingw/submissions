@@ -12,7 +12,7 @@ public class Solution
         }
     }
 
-    private ResultType helper(TreeNode root)
+    private ResultType dfs(TreeNode root)
     {
         if (root == null)
         {
@@ -20,8 +20,8 @@ public class Solution
         }
 
         // Divide
-        ResultType left = helper(root.left);
-        ResultType right = helper(root.right);
+        ResultType left = dfs(root.left);
+        ResultType right = dfs(root.right);
         // Conquer
         int singlePath = Math.max(left.singlePath, right.singlePath) + root.val;
         singlePath = Math.max(singlePath, 0);
@@ -32,7 +32,7 @@ public class Solution
 
     public int maxPathSum(TreeNode root)
     {
-        ResultType result = helper(root);
+        ResultType result = dfs(root);
         return result.maxPath;
     }
 }
