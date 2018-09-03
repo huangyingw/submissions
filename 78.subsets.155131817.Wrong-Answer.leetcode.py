@@ -4,15 +4,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        def helper(start):
+        def dfs(start):
             result.append(list(current))
             for index in range(start, len(nums)):
                 current.append(nums[start])
-                helper(index + 1)
+                dfs(index + 1)
                 current.pop()
 
         result = []
         current = []
         nums.sort()
-        helper(0)
+        dfs(0)
         return result

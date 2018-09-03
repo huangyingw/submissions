@@ -12,11 +12,11 @@ public class Solution
         }
 
         Arrays.sort(num);
-        helper(num, 0, target, new ArrayList<Integer>(), result);
+        dfs(num, 0, target, new ArrayList<Integer>(), result);
         return result;
     }
 
-    private void helper(int[] num, int start, int target,
+    private void dfs(int[] num, int start, int target,
                         ArrayList<Integer> item,
                         ArrayList<ArrayList<Integer>> result)
     {
@@ -39,7 +39,7 @@ public class Solution
             }
 
             item.add(num[i]);
-            helper(num, i + 1, target - num[i], item, result);
+            dfs(num, i + 1, target - num[i], item, result);
             item.remove(item.size() - 1);
         }
     }

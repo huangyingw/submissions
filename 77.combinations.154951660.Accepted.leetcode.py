@@ -37,14 +37,14 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        def helper(left, right, k):
+        def dfs(left, right, k):
             if k == 0:
                 result.append(list(current))
             for index in range(left, right + 1):
                 current.append(index)
-                helper(index + 1, right, k - 1)
+                dfs(index + 1, right, k - 1)
                 current.pop()
         current = []
         result = []
-        helper(1, n, k)
+        dfs(1, n, k)
         return result
