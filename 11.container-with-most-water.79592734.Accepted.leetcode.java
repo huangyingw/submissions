@@ -12,11 +12,11 @@ public class Solution
 
             if (height[start] < height[end])
             {
-                start++ ;
+                start++;
             }
             else
             {
-                end-- ;
+                end--;
             }
         }
 

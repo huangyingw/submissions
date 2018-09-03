@@ -10,7 +10,7 @@ public class Solution
         HashMap<Double, Integer> map = new HashMap<Double, Integer>();
         int max = 1;
 
-        for (int i = 0 ; i < points.length; i++)
+        for (int i = 0; i < points.length; i++)
         {
             // shared point changed, map should be cleared and server the new point
             map.clear();
