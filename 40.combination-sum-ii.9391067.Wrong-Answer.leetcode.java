@@ -17,8 +17,8 @@ public class Solution
     }
 
     private void dfs(int[] num, int start, int target,
-                        ArrayList<Integer> item,
-                        ArrayList<ArrayList<Integer>> result)
+                     ArrayList<Integer> item,
+                     ArrayList<ArrayList<Integer>> result)
     {
         if (target < 0 || start >= num.length)
         {
