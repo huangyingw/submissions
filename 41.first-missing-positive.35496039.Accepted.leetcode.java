@@ -4,7 +4,7 @@ public class Solution
     {
         int n = A.length;
 
-        for (int i = 0; i < n ;)
+        for (int i = 0; i < n;)
         {
             if (A[i] > 0 && A[i] <= n && A[i] - 1 != i && A[A[i] - 1] != A[i])
             {

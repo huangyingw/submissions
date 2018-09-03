@@ -24,6 +24,6 @@ public class Solution
             result = result * 10 + digit;
         }
 
-        return isNeg == true ? -result : result ;
+        return isNeg == true ? -result : result;
     }
 }
