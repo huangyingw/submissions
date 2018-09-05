@@ -19,8 +19,7 @@ public class Solution
             }
 
             List<Integer> part1Result = diffWaysToCompute(input.substring(0, i));
-            List<Integer> part2Result =
-                diffWaysToCompute(input.substring(i + 1, input.length()));
+            List<Integer> part2Result = diffWaysToCompute(input.substring(i + 1, input.length()));
 
             for (Integer m : part1Result)
             {
