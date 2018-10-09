@@ -4,38 +4,33 @@ public class Solution
     {
         List<Integer> result = new ArrayList<Integer>();
 
-        if (input == null || input.length() == 0)
-        {
-            return result;
-        }
-
         for (int i = 0; i < input.length(); i++)
         {
-            char c = input.charAt(i);
+            char ch = input.charAt(i);
 
-            if (c != '+' && c != '-' && c != '*')
+            if (ch == '+' || ch == '-' || ch == '*')
             {
-                continue;
-            }
+                List<Integer> left = diffWaysToCompute(input.substring(0, i));
+                List<Integer> right = diffWaysToCompute(input.substring(i + 1, input.length()));
 
-            List<Integer> part1Result = diffWaysToCompute(input.substring(0, i));
-            List<Integer> part2Result = diffWaysToCompute(input.substring(i + 1, input.length()));
-
-            for (Integer m : part1Result)
-            {
-                for (Integer n : part2Result)
+                for (int l : left)
                 {
-                    if (c == '+')
+                    for (int r : right)
                     {
-                        result.add(m + n);
-                    }
-                    else if (c == '-')
-                    {
-                        result.add(m - n);
-                    }
-                    else if (c == '*')
-                    {
-                        result.add(m * n);
+                        switch (ch)
+                        {
+                        case '+' :
+                            result.add(l + r);
+                            break;
+
+                        case '-' :
+                            result.add(l - r);
+                            break;
+
+                        case '*' :
+                            result.add(l * r);
+                            break;
+                        }
                     }
                 }
             }
@@ -43,7 +38,7 @@ public class Solution
 
         if (result.size() == 0)
         {
-            result.add(Integer.parseInt(input));
+            result.add(Integer.valueOf(input));
         }
 
         return result;
