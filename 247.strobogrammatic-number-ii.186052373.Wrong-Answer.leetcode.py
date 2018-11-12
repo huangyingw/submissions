@@ -9,7 +9,6 @@ class Solution(object):
         if n == 2:
             return ['11', '69', '88', '96']
 
-
         result = []
         previous = self.findStrobogrammatic(n - 2)
 
