@@ -14,13 +14,11 @@ public class Solution
                 return i1.start - i2.start;
             }
         });
-        // 用堆来管理房间的结束时间
         PriorityQueue<Integer> endTimes = new PriorityQueue<Integer>();
         endTimes.offer(intervals[0].end);
 
         for (int i = 1; i < intervals.length; i++)
         {
-            // 如果当前时间段的开始时间大于最早结束的时间，则可以更新这个最早的结束时间为当前时间段的结束时间，如果小于的话，就加入一个新的结束时间，表示新的房间
             if (intervals[i].start >= endTimes.peek())
             {
                 endTimes.poll();
@@ -29,7 +27,6 @@ public class Solution
             endTimes.offer(intervals[i].end);
         }
 
-        // 有多少结束时间就有多少房间
         return endTimes.size();
     }
 }
