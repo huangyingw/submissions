@@ -11,7 +11,6 @@ public class Solution
 
             while (left < right)
             {
-
                 if (nums[i] + nums[left] + nums[right] < target)
                 {
                     cnt += right - left;
