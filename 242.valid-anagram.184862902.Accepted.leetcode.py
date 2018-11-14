@@ -4,6 +4,7 @@ class Solution(object):
             return False
 
         charCount = {}
+
         for idx in range(len(s)):
             if s[idx] not in charCount:
                 charCount[s[idx]] = 0
