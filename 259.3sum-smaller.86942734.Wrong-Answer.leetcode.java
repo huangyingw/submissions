@@ -2,6 +2,7 @@ public class Solution
 {
     public int threeSumSmaller(int[] nums, int target)
     {
+        // 先将数组排序
         Arrays.sort(nums);
         int cnt = 0;
 

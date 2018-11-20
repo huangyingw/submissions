@@ -28,7 +28,7 @@ public class Solution
 
         for (int i = 1; i < intervals.length; i++)
         {
-            if (intervals[i].end > endTimes.peek())
+            if (intervals[i].start >= endTimes.peek())
             {
                 endTimes.poll();
             }

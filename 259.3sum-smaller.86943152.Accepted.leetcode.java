@@ -15,11 +15,11 @@ public class Solution
                 if (nums[i] + nums[left] + nums[right] < target)
                 {
                     cnt += right - left;
-                    continue;
+                    left++;
                 }
                 else
                 {
-                    right++;
+                    right--;
                 }
             }
         }
