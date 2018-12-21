@@ -24,10 +24,8 @@ public class Solution
             current.next = new ListNode(carry % 10);
             current = current.next;
             == == == =
-                System.out.printf("carry --> %s\n", carry);
-            current.next = new ListNode(carry % 10);
+                current.next = new ListNode(carry % 10);
             current = current.next;
-            System.out.printf("current --> %s\n", current.val);
             >>> >>> > Stashed changes
             carry /= 10;
         }

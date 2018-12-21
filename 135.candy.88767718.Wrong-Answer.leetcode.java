@@ -31,9 +31,8 @@ public class Solution
 
             <<< <<< < Updated upstream
             == == == =
-                System.out.println(i + " -->" + candies[i]);
-            >>> >>> > Stashed changes
-            count += candies[i];
+                >>> >>> > Stashed changes
+                count += candies[i];
         }
 
         count += candies[0];
