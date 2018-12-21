@@ -8,6 +8,7 @@ class Solution(object):
             head = temp
 << << << < Updated upstream
 << << << < Updated upstream
+<< << << < Updated upstream
     pre = head
 == == == =
     pre = head
@@ -16,6 +17,13 @@ class Solution(object):
     return pre
 == == == =
             pre = head
+
+        return pre
+>>>>>>> Stashed changes
+=======
+            print('head --> %s' % (head.val if head else 'null'))
+            pre = head
+            print('pre --> %s' % (pre.val if pre else 'null'))
 
         return pre
 >>>>>>> Stashed changes

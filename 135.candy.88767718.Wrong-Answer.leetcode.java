@@ -4,6 +4,7 @@ public class Solution
     {
         int n = ratings.length;
         <<< <<< < Updated upstream
+        <<< <<< < Updated upstream
         == == == =
             >>>>>>> Stashed changes
 
@@ -16,6 +17,15 @@ public class Solution
         == == == =
             >>>>>>> Stashed changes
             int[] candies = new int[n];
+        == == == =
+
+            if (n == 1)
+        {
+            return 1;
+        }
+
+        int[] candies = new int[n];
+        >>> >>> > Stashed changes
         Arrays.fill(candies, 1);
 
         for (int i = 1; i < n; i++)
@@ -27,7 +37,11 @@ public class Solution
         }
 
         <<< <<< < Updated upstream
+        <<< <<< < Updated upstream
         int count = candies[n - 1];
+        == == == =
+            int count = candies[n - 1];
+        >>> >>> > Stashed changes
         == == == =
             int count = candies[n - 1];
         >>> >>> > Stashed changes
@@ -39,6 +53,7 @@ public class Solution
                 candies[i] = candies[i + 1] + 1;
             }
 
+            <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             == == == =
@@ -54,4 +69,14 @@ public class Solution
     count += candies[0];
     return count;
 }
+== == == =
+
+    System.out.println(i + " -->" + candies[i]);
+count += candies[i];
+}
+
+count += candies[0];
+return count;
+}
+>>> >>> > Stashed changes
 }
