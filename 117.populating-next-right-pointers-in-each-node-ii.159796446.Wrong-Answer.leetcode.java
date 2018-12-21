@@ -12,8 +12,12 @@ public class Solution
                 if (root != null)
                 {
                     <<< <<< < Updated upstream
+                    <<< <<< < Updated upstream
                     == == == =
                         >>> >>> > Stashed changes
+                        == == == =
+                            System.out.printf("root --> %s\n", root.val);
+                    >>> >>> > Stashed changes
                 }
 
                 if (leftMost == null)
@@ -33,8 +37,12 @@ public class Solution
                     if (nav != null)
                     {
                         <<< <<< < Updated upstream
+                        <<< <<< < Updated upstream
                         == == == =
                             >>> >>> > Stashed changes
+                            == == == =
+                                System.out.printf("nav --> %s\n", nav.val);
+                        >>> >>> > Stashed changes
                     }
                 }
 
@@ -50,8 +58,12 @@ public class Solution
                     if (nav != null)
                     {
                         <<< <<< < Updated upstream
+                        <<< <<< < Updated upstream
                         == == == =
                             >>> >>> > Stashed changes
+                            == == == =
+                                System.out.printf("nav --> %s\n", nav.val);
+                        >>> >>> > Stashed changes
                     }
                 }
             }
@@ -61,6 +73,10 @@ public class Solution
     }
 }
 <<< <<< < Updated upstream
+<<< <<< < Updated upstream
 == == == =
 
     >>>>>>> Stashed changes
+    == == == =
+
+        >>>>>>> Stashed changes

@@ -12,6 +12,7 @@ public class Solution
         for (char c : charArray)
         {
             <<< <<< < Updated upstream
+            <<< <<< < Updated upstream
             if (map.containsKey(c))
                 == == == =
                     if(map.containsKey(c))
@@ -31,6 +32,22 @@ public class Solution
                             return false;
                         }
                 }
+
+            == == == =
+
+                if (map.containsKey(c))
+            {
+                stack.push(c);
+            }
+            else
+            {
+                if (stack.isEmpty() || map.get(stack.pop()) != c)
+                {
+                    return false;
+                }
+            }
+
+            >>> >>> > Stashed changes
         }
 
         return stack.isEmpty();

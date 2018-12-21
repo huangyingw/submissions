@@ -24,7 +24,12 @@ class MyStack(object):
 
     def top(self):
 << << << < Updated upstream
+<< << << < Updated upstream
 == == == =
+>>>>>> > Stashed changes
+== == == =
+        print('self.queue1 --> %s' % self.queue1)
+        print('self.queue2 --> %s' % self.queue2)
 >>>>>> > Stashed changes
         if self.queue1:
             return self.queue1[0]

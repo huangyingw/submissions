@@ -3,13 +3,19 @@ public class Solution
     public int candy(int[] ratings)
     {
         int n = ratings.length;
+        <<< <<< < Updated upstream
+        == == == =
+            >>>>>>> Stashed changes
 
-        if (n == 1)
+            if (n == 1)
         {
             return 1;
         }
 
-        int[] candies = new int[n];
+        <<< <<< < Updated upstream
+        == == == =
+            >>>>>>> Stashed changes
+            int[] candies = new int[n];
         Arrays.fill(candies, 1);
 
         for (int i = 1; i < n; i++)
@@ -20,7 +26,11 @@ public class Solution
             }
         }
 
+        <<< <<< < Updated upstream
         int count = candies[n - 1];
+        == == == =
+            int count = candies[n - 1];
+        >>> >>> > Stashed changes
 
         for (int i = n - 2; i > 0; i--)
         {
@@ -30,12 +40,19 @@ public class Solution
             }
 
             <<< <<< < Updated upstream
+            <<< <<< < Updated upstream
             == == == =
                 >>> >>> > Stashed changes
                 count += candies[i];
         }
 
-        count += candies[0];
-        return count;
+        == == == =
+            System.out.println(i + " -->" + candies[i]);
+        count += candies[i];
     }
+
+    >>> >>> > Stashed changes
+    count += candies[0];
+    return count;
+}
 }
