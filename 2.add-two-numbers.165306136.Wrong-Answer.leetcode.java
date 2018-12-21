@@ -23,6 +23,7 @@ public class Solution
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
+            <<< <<< < Updated upstream
             current.next = new ListNode(carry % 10);
             current = current.next;
             == == == =
@@ -37,12 +38,19 @@ public class Solution
                 current.next = new ListNode(carry % 10);
             current = current.next;
             >>> >>> > Stashed changes
+            == == == =
+                System.out.printf("carry --> %s\n", carry);
+            current.next = new ListNode(carry % 10);
+            current = current.next;
+            System.out.printf("current --> %s\n", current.val);
+            >>> >>> > Stashed changes
             carry /= 10;
         }
 
         return head.next;
     }
 }
+<<< <<< < Updated upstream
 <<< <<< < Updated upstream
 <<< <<< < Updated upstream
 <<< <<< < Updated upstream
@@ -55,3 +63,6 @@ public class Solution
         == == == =
 
             >>>>>>> Stashed changes
+            == == == =
+
+                >>>>>>> Stashed changes

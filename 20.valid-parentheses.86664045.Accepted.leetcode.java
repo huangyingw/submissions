@@ -14,6 +14,7 @@ public class Solution
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
+            <<< <<< < Updated upstream
             if (map.containsKey(c))
                 == == == =
                     if(map.containsKey(c))
@@ -60,6 +61,21 @@ public class Solution
             >>> >>> > Stashed changes
             == == == =
                 >>> >>> > Stashed changes
+                == == == =
+
+                    if (map.containsKey(c))
+            {
+                stack.push(c);
+            }
+            else
+            {
+                if (stack.isEmpty() || map.get(stack.pop()) != c)
+                {
+                    return false;
+                }
+            }
+
+            >>> >>> > Stashed changes
         }
 
         return stack.isEmpty();
