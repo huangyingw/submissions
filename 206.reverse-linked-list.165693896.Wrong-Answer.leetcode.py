@@ -21,9 +21,7 @@ class Solution(object):
         return pre
 >>>>>>> Stashed changes
 =======
-            print('head --> %s' % (head.val if head else 'null'))
             pre = head
-            print('pre --> %s' % (pre.val if pre else 'null'))
 
         return pre
 >>>>>>> Stashed changes
