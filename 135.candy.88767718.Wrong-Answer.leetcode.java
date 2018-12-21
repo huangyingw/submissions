@@ -47,8 +47,7 @@ public class Solution
         }
 
         == == == =
-            System.out.println(i + " -->" + candies[i]);
-        count += candies[i];
+            count += candies[i];
     }
 
     >>> >>> > Stashed changes

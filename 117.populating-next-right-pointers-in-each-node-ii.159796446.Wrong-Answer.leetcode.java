@@ -16,8 +16,7 @@ public class Solution
                     == == == =
                         >>> >>> > Stashed changes
                         == == == =
-                            System.out.printf("root --> %s\n", root.val);
-                    >>> >>> > Stashed changes
+                            >>> >>> > Stashed changes
                 }
 
                 if (leftMost == null)
@@ -41,8 +40,7 @@ public class Solution
                         == == == =
                             >>> >>> > Stashed changes
                             == == == =
-                                System.out.printf("nav --> %s\n", nav.val);
-                        >>> >>> > Stashed changes
+                                >>> >>> > Stashed changes
                     }
                 }
 
@@ -62,8 +60,7 @@ public class Solution
                         == == == =
                             >>> >>> > Stashed changes
                             == == == =
-                                System.out.printf("nav --> %s\n", nav.val);
-                        >>> >>> > Stashed changes
+                                >>> >>> > Stashed changes
                     }
                 }
             }
