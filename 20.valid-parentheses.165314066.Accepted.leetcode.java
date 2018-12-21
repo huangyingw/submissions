@@ -27,3 +27,7 @@ public class Solution
         return stack.isEmpty();
     }
 }
+<<< <<< < Updated upstream
+== == == =
+
+    >>>>>>> Stashed changes

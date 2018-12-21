@@ -11,17 +11,26 @@ public class Solution
 
         for (char c : charArray)
         {
+            <<< <<< < Updated upstream
             if (map.containsKey(c))
-            {
-                stack.push(c);
-            }
-            else
-            {
-                if (stack.isEmpty() || map.get(stack.pop()) != c)
+                == == == =
+                    if(map.containsKey(c))
+                        >>>>>>> Stashed changes
                 {
-                    return false;
+                    stack.push(c);
                 }
-            }
+                else
+                {
+                    <<< <<< < Updated upstream
+
+                    if (stack.isEmpty() || map.get(stack.pop()) != c)
+                        == == == =
+                            if (stack.isEmpty() || map.get(stack.pop()) != c)
+                                >>> >>> > Stashed changes
+                        {
+                            return false;
+                        }
+                }
         }
 
         return stack.isEmpty();

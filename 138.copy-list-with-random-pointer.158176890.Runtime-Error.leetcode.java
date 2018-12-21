@@ -51,3 +51,7 @@ public class Solution
         return splitList(head);
     }
 }
+<<< <<< < Updated upstream
+== == == =
+
+    >>>>>>> Stashed changes

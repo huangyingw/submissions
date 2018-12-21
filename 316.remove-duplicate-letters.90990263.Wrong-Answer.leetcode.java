@@ -1,45 +1,89 @@
+<<< <<< < Updated upstream
 public class Solution
 {
     public String removeDuplicateLetters(String s)
     {
         Map<Character, Integer> counts = new HashMap<Character, Integer>();
         char[] chs = s.toCharArray();
-
-        for (char c : s.toCharArray())
+        == == == =
+            public class Solution
         {
-            if (counts.get(c) == null)
+            public String removeDuplicateLetters(String s)
             {
-                counts.put(c, 0);
+                Map<Character, Integer> counts = new HashMap<Character, Integer>();
+                char[] chs = s.toCharArray();
+                >>> >>> > Stashed changes
+
+                for (char c : s.toCharArray())
+                {
+                    if (counts.get(c) == null)
+                    {
+                        counts.put(c, 0);
+                    }
+
+                    <<< <<< < Updated upstream
+                    counts.put(c, counts.get(c) + 1);
+                }
+
+                Stack<Character> stack = new Stack<Character>();
+
+                for (char c : chs)
+                {
+                    == == == =
+                        counts.put(c, counts.get(c) + 1);
+                }
+
+                Stack<Character> stack = new Stack<Character>();
+
+                for (char c : chs)
+                {
+                    System.out.println("c --> " + c);
+                    >>> >>> > Stashed changes
+
+                    if (stack.contains(c))
+                    {
+                        counts.put(c, counts.get(c) - 1);
+                        continue;
+                    }
+
+                    <<< <<< < Updated upstream
+
+                    while (!stack.isEmpty() && stack.peek() > c && counts.get(stack.peek()) > 1)
+                    {
+                        stack.pop();
+                    }
+
+                    stack.push(c);
+                }
+
+                StringBuilder sb = new StringBuilder();
+                == == == =
+
+                    while (!stack.isEmpty() && stack.peek() > c && counts.get(stack.peek()) > 1)
+                {
+                    System.out.println("count char --> " + counts.get(stack.peek()));
+                    System.out.println("pop char --> " + stack.peek());
+                    stack.pop();
+                }
+
+                System.out.println("push char --> " + c);
+                stack.push(c);
             }
 
-            counts.put(c, counts.get(c) + 1);
-        }
+            StringBuilder sb = new StringBuilder();
 
-        Stack<Character> stack = new Stack<Character>();
+            >>> >>> > Stashed changes
 
-        for (char c : chs)
-        {
-            if (stack.contains(c))
+            while (!stack.isEmpty())
             {
-                counts.put(c, counts.get(c) - 1);
-                continue;
+                sb.append(stack.pop());
             }
 
-            while (!stack.isEmpty() && stack.peek() > c && counts.get(stack.peek()) > 1)
-            {
-                stack.pop();
-            }
+            <<< <<< < Updated upstream
 
-            stack.push(c);
+            == == == =
+
+                >>>>>>> Stashed changes
+                return sb.reverse().toString();
         }
-
-        StringBuilder sb = new StringBuilder();
-
-        while (!stack.isEmpty())
-        {
-            sb.append(stack.pop());
-        }
-
-        return sb.reverse().toString();
     }
-}
