@@ -23,8 +23,6 @@ class MyStack(object):
             self.queue2.pop(0)
 
     def top(self):
-        print('self.queue1 --> %s' % self.queue1)
-        print('self.queue2 --> %s' % self.queue2)
         if self.queue1:
             return self.queue1[0]
         else:
