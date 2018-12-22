@@ -10,6 +10,7 @@ public class Solution
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
+        <<< <<< < Updated upstream
         == == == =
             >>>>>>> Stashed changes
 
@@ -22,6 +23,15 @@ public class Solution
         == == == =
             >>>>>>> Stashed changes
             int[] candies = new int[n];
+        == == == =
+
+            if (n == 1)
+        {
+            return 1;
+        }
+
+        int[] candies = new int[n];
+        >>> >>> > Stashed changes
         == == == =
 
             if (n == 1)
@@ -93,7 +103,11 @@ public class Solution
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
+        <<< <<< < Updated upstream
         int count = candies[n - 1];
+        == == == =
+            int count = candies[n - 1];
+        >>> >>> > Stashed changes
         == == == =
             int count = candies[n - 1];
         >>> >>> > Stashed changes
@@ -123,6 +137,7 @@ public class Solution
                 candies[i] = candies[i + 1] + 1;
             }
 
+            <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
@@ -192,6 +207,16 @@ return count;
 == == == =
 
     count += candies[i];
+}
+
+count += candies[0];
+return count;
+}
+>>> >>> > Stashed changes
+== == == =
+
+    System.out.println(i + " -->" + candies[i]);
+count += candies[i];
 }
 
 count += candies[0];
