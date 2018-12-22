@@ -191,8 +191,7 @@ return count;
 >>> >>> > Stashed changes
 == == == =
 
-    System.out.println(i + " -->" + candies[i]);
-count += candies[i];
+    count += candies[i];
 }
 
 count += candies[0];
