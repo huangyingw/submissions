@@ -9,6 +9,7 @@ public class Solution
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
         <<< <<< < Updated upstream
+        <<< <<< < Updated upstream
 
         if (root == null || root == node1 || root == node2)
         {
@@ -33,6 +34,32 @@ public class Solution
             return right;
         }
 
+        == == == =
+
+            if (root == null || root == node1 || root == node2)
+        {
+            return root;
+        }
+
+        TreeNode left = lowestCommonAncestor(root.left, node1, node2);
+        TreeNode right = lowestCommonAncestor(root.right, node1, node2);
+
+        if (left != null && right != null)
+        {
+            return root;
+        }
+
+        if (left != null)
+        {
+            return left;
+        }
+
+        if (right != null)
+        {
+            return right;
+        }
+
+        >>> >>> > Stashed changes
         == == == =
 
             if (root == null || root == node1 || root == node2)
