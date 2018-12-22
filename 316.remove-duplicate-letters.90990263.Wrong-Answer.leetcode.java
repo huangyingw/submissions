@@ -202,8 +202,6 @@ public class Solution
 
             for (char c : chs)
             {
-                System.out.println("c --> " + c);
-
                 if (stack.contains(c))
                 {
                     counts.put(c, counts.get(c) - 1);
@@ -212,12 +210,9 @@ public class Solution
 
                 while (!stack.isEmpty() && stack.peek() > c && counts.get(stack.peek()) > 1)
                 {
-                    System.out.println("count char --> " + counts.get(stack.peek()));
-                    System.out.println("pop char --> " + stack.peek());
                     stack.pop();
                 }
 
-                System.out.println("push char --> " + c);
                 stack.push(c);
             }
 
