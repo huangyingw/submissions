@@ -17,6 +17,7 @@ public class Solution
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
             <<< <<< < Updated upstream
+            <<< <<< < Updated upstream
             if (map.containsKey(c))
                 == == == =
                     if(map.containsKey(c))
@@ -92,18 +93,29 @@ public class Solution
                 == == == =
 
                     if (map.containsKey(c))
-            {
-                stack.push(c);
-            }
-            else
-            {
-                if (stack.isEmpty() || map.get(stack.pop()) != c)
+                        == == == =
+                            if (map.containsKey(c))
+                                >>> >>> > Stashed changes
                 {
-                    return false;
+                    stack.push(c);
                 }
-            }
+                else
+                {
+                    <<< <<< < Updated upstream
 
+                    if (stack.isEmpty() || map.get(stack.pop()) != c)
+                        == == == =
+                            if (stack.isEmpty() || map.get(stack.pop()) != c)
+                                >>> >>> > Stashed changes
+                        {
+                            return false;
+                        }
+                }
+
+            <<< <<< < Updated upstream
             >>> >>> > Stashed changes
+            == == == =
+                >>> >>> > Stashed changes
         }
 
         return stack.isEmpty();
