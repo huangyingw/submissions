@@ -15,39 +15,3 @@ public class Solution
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-<<< <<< < Updated upstream
-== == == =
-
-    >>>>>>> Stashed changes
-    == == == =
-
-        >>>>>>> Stashed changes
-        == == == =
-
-            >>>>>>> Stashed changes
-            == == == =
-
-                >>>>>>> Stashed changes
-                == == == =
-
-                    >>>>>>> Stashed changes
-                    == == == =
-
-                        >>>>>>> Stashed changes
-                        == == == =
-
-                            >>>>>>> Stashed changes
-                            == == == =
-
-                                >>>>>>> Stashed changes
-                                == == == =
-
-                                    >>>>>>> Stashed changes
