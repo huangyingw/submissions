@@ -8,8 +8,10 @@ class Solution(object):
                 if not visited[index]:
                     visited[index] = True
                     current.append(nums[index])
+                    print("current.append --> %s\n" % current)
                     dfs()
                     current.pop()
+                    print("current.append --> %s\n" % current)
                     visited[index] = False
 
         visited = [False for _ in range(len(nums))]

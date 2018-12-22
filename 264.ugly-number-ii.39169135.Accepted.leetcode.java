@@ -15,16 +15,19 @@ public class Solution
             if (min == factor[0])
             {
                 factor[0] = 2 * uglyNumber[++index[0]];
+                System.out.printf("factor[0] --> %s\n", factor[0]) ;
             }
 
             if (min == factor[1])
             {
                 factor[1] = 3 * uglyNumber[++index[1]];
+                System.out.printf("factor[1] --> %s\n", factor[1]) ;
             }
 
             if (min == factor[2])
             {
                 factor[2] = 5 * uglyNumber[++index[2]];
+                System.out.printf("factor[2] --> %s\n", factor[2]) ;
             }
         }
 

@@ -1,9 +1,5 @@
 class Solution(object):
     def minMeetingRooms(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
         class Point:
             def __init__(self, time, flag):
                 self.time = time
@@ -16,6 +12,8 @@ class Solution(object):
         count = 0
         result = 0
         for point in points:
+            print("point.time --> %s\n" % point.time)
+            print("point.flag --> %s\n" % point.flag)
             if point.flag == 'start':
                 count += 1
                 result = max(result, count)

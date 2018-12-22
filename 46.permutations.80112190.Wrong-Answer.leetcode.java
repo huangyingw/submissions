@@ -15,11 +15,19 @@ public class Solution
             return;
         }
 
-        for (int i = 0; i < num.length; i++)
+        for (int idx = 0; idx < num.length; idx++)
         {
-            current.add(num[i]);
+            if (current.contains(num[idx]))
+            {
+                continue;
+            }
+
+            System.out.printf("idx --> %s\n", idx);
+            current.add(num[idx]);
+            System.out.printf("current.add --> %s\n", current);
             dfs(num, current, result);
             current.remove(current.size() - 1);
+            System.out.printf("current.remove --> %s\n", current);
         }
     }
 }
