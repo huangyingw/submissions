@@ -12,8 +12,6 @@ class Solution(object):
         count = 0
         result = 0
         for point in points:
-            print("point.time --> %s\n" % point.time)
-            print("point.flag --> %s\n" % point.flag)
             if point.flag == 'start':
                 count += 1
                 result = max(result, count)

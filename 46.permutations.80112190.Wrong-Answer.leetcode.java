@@ -22,12 +22,9 @@ public class Solution
                 continue;
             }
 
-            System.out.printf("idx --> %s\n", idx);
             current.add(num[idx]);
-            System.out.printf("current.add --> %s\n", current);
             dfs(num, current, result);
             current.remove(current.size() - 1);
-            System.out.printf("current.remove --> %s\n", current);
         }
     }
 }
