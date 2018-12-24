@@ -15,14 +15,9 @@ public class Solution
             return;
         }
 
-        for (int idx = 0; idx < num.length; idx++)
+        for (int i = 0; i < num.length; i++)
         {
-            if (current.contains(num[idx]))
-            {
-                continue;
-            }
-
-            current.add(num[idx]);
+            current.add(num[i]);
             dfs(num, current, result);
             current.remove(current.size() - 1);
         }
