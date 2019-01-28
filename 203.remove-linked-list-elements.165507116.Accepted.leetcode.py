@@ -7,8 +7,8 @@ class Solution(object):
         while current.next:
             if current.next.val == val:
                 current.next = current.next.next
-                      current.next.val if current.next else 'null')
-                          else:
+                current.next.val if current.next else 'null')
+                    else:
 
-                          current=current.next
-                          return dummy.next
+                    current=current.next
+                    return dummy.next
