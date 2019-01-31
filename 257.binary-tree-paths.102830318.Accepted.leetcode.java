@@ -9,7 +9,7 @@ public class Solution
             return result;
         }
 
-        binaryTreePathsDFS(root, "", result);
+        binaryTreePathsDFS(root, "" + root.val, result);
         return result;
     }
 
@@ -26,7 +26,8 @@ public class Solution
             result.add(out);
         }
 
-        binaryTreePathsDFS(root.left, out + root.val + "->", result);
-        binaryTreePathsDFS(root.right, out + root.val + "->", result);
+        out += root.val + "->";
+        binaryTreePathsDFS(root.left, out, result);
+        binaryTreePathsDFS(root.right, out, result);
     }
 }

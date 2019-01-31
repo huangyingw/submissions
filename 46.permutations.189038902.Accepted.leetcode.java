@@ -9,11 +9,6 @@ public class Solution
 
     public void dfs(int[] num, List<Integer> current, List<List<Integer>> result)
     {
-        if (current.size() == num.length)
-        {
-            result.add(new ArrayList(current));
-        }
-
         for (int i = 0; i < num.length; i++)
         {
             if (current.contains(num[i]))

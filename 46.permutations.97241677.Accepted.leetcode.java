@@ -11,7 +11,8 @@ public class Solution
     {
         if (current.size() == num.length)
         {
-            result.add(new ArrayList<Integer>(current));
+            result.add(new ArrayList<Integer>());
+            return;
         }
 
         for (int i = 0; i < num.length; i++)

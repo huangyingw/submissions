@@ -22,10 +22,11 @@ public class Solution
 
         if (root.left == null && root.right == null)
         {
-            result.add(out + root.val);
+            out += root.val;
+            result.add(out);
         }
 
-        binaryTreePathsDFS(root.left, out  + root.val + "->", result);
-        binaryTreePathsDFS(root.right, out  + root.val + "->", result);
+        binaryTreePathsDFS(root.left, out + "->" + root.val, result);
+        binaryTreePathsDFS(root.right, out + "->" + root.val, result);
     }
 }

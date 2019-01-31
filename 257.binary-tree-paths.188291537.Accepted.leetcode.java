@@ -3,7 +3,13 @@ public class Solution
     public List<String> binaryTreePaths(TreeNode root)
     {
         List<String> result = new ArrayList<String>();
-        binaryTreePathsDFS(root, "", result);
+
+        if (root == null)
+        {
+            return result;
+        }
+
+        binaryTreePathsDFS(root, "" + root.val, result);
         return result;
     }
 
@@ -16,10 +22,11 @@ public class Solution
 
         if (root.left == null && root.right == null)
         {
-            result.add(out + root.val);
+            result.add(out);
         }
 
-        binaryTreePathsDFS(root.left, out  + root.val + "->", result);
-        binaryTreePathsDFS(root.right, out  + root.val + "->", result);
+        out = out + "->" + root.val;
+        binaryTreePathsDFS(root.left, out, result);
+        binaryTreePathsDFS(root.right, out, result);
     }
 }
