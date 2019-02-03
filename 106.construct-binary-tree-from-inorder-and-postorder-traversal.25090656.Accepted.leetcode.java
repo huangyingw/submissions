@@ -16,8 +16,6 @@ public class Solution
 
     public TreeNode buildTree(int[] inorder, int[] postorder)
     {
-        assert inorder != null && postorder != null
-        && inorder.length == postorder.length;
         Map<Integer, Integer> inorderNodes = new HashMap<Integer, Integer>();
 
         for (int i = 0; i < inorder.length; i++)
