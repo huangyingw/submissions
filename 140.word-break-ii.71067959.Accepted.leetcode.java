@@ -1,7 +1,6 @@
 public class Solution
 {
-    private ArrayList<String> dfs(String s, Set<String> dict,
-                                  Map<String, ArrayList<String>> solutions)
+    private ArrayList<String> dfs(String s, Set<String> dict, Map<String, ArrayList<String>> solutions)
     {
         ArrayList<String> solution = solutions.get(s);
 
