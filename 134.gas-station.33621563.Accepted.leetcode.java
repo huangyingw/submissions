@@ -2,7 +2,6 @@ public class Solution
 {
     int canCompleteCircuit(int[] gas, int[] cost)
     {
-        int[] diff = new int[gas.length];
         int leftGas = 0, sum = 0, startnode = 0;
 
         for (int i = 0; i < gas.length; ++i)
