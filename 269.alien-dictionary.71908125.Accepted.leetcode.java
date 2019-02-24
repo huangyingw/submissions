@@ -7,19 +7,19 @@ public class Solution
 
         for (int i = 0; i < words.length; i++)
         {
-            String curr = words[i];
+            String current = words[i];
 
-            for (int j = 0; j < curr.length(); j++)
+            for (int j = 0; j < current.length(); j++)
             {
-                if (!graph.containsKey(curr.charAt(j)))
+                if (!graph.containsKey(current.charAt(j)))
                 {
-                    graph.put(curr.charAt(j), new HashSet<Character>());
+                    graph.put(current.charAt(j), new HashSet<Character>());
                 }
             }
 
             if (i > 0)
             {
-                connectGraph(graph, words[i - 1], curr);
+                connectGraph(graph, words[i - 1], current);
             }
         }
 
@@ -42,19 +42,19 @@ public class Solution
         return sb.toString();
     }
 
-    private void connectGraph(Map<Character, Set<Character>> graph, String prev, String curr)
+    private void connectGraph(Map<Character, Set<Character>> graph, String prev, String current)
     {
-        if (prev == null || curr == null)
+        if (prev == null || current == null)
         {
             return;
         }
 
-        int len = Math.min(prev.length(), curr.length());
+        int len = Math.min(prev.length(), current.length());
 
         for (int i = 0; i < len; i++)
         {
             char p = prev.charAt(i);
-            char q = curr.charAt(i);
+            char q = current.charAt(i);
 
             if (p != q)
             {

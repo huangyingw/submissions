@@ -10,16 +10,16 @@ public class Solution
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         ListNode pre = dummy.next;
-        ListNode curr = null;
+        ListNode current = null;
 
         do
         {
-            curr = pre.next;
-            pre.next = curr.next;
-            curr.next = dummy.next;
-            dummy.next = curr;
+            current = pre.next;
+            pre.next = current.next;
+            current.next = dummy.next;
+            dummy.next = current;
         }
-        while (curr != null);
+        while (current != null);
 
         return dummy.next;
     }

@@ -14,23 +14,23 @@ public class Solution
 
         while (!stk.isEmpty())
         {
-            TreeNode curr = stk.pop();
+            TreeNode current = stk.pop();
 
             // 维护一个大小为k的队列
             // 队列不到k时直接加入
             if (klist.size() < k)
             {
-                klist.offer(curr.val);
+                klist.offer(current.val);
             }
             else
             {
                 // 队列到k时，判断下新的数是否更近，更近就加入队列并去掉队头
                 int first = klist.peek();
 
-                if (Math.abs(first - target) > Math.abs(curr.val - target))
+                if (Math.abs(first - target) > Math.abs(current.val - target))
                 {
                     klist.poll();
-                    klist.offer(curr.val);
+                    klist.offer(current.val);
                 }
                 else
                 {
@@ -40,14 +40,14 @@ public class Solution
             }
 
             // 中序遍历的代码
-            if (curr.right != null)
+            if (current.right != null)
             {
-                curr = curr.right;
+                current = current.right;
 
-                while (curr != null)
+                while (current != null)
                 {
-                    stk.push(curr);
-                    curr = curr.left;
+                    stk.push(current);
+                    current = current.left;
                 }
             }
         }

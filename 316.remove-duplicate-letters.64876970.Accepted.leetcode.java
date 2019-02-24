@@ -24,23 +24,23 @@ public class Solution
 
         while (!lastIndexMap.isEmpty())
         {
-            char curr = 'z' + 1;
+            char current = 'z' + 1;
             int index = 0;
 
             for (int i = start; i <= end; i++)
             {
                 char c = s.charAt(i);
 
-                if ((c < curr) && (lastIndexMap.containsKey(c)))
+                if ((c < current) && (lastIndexMap.containsKey(c)))
                 {
-                    curr = c;
+                    current = c;
                     index = i;
                 }
             }
 
             // append result
-            sb.append(curr);
-            lastIndexMap.remove(curr);
+            sb.append(current);
+            lastIndexMap.remove(current);
             // update the start and end
             start = index + 1;
             end = findSmallestIndex(lastIndexMap);
