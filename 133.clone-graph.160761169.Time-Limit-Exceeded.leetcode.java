@@ -15,8 +15,8 @@ public class Solution
 
         while (!queue.isEmpty())
         {
-            UndirectedGraphNode curr = queue.pop();
-            List<UndirectedGraphNode> currNeighbors = curr.neighbors;
+            UndirectedGraphNode current = queue.pop();
+            List<UndirectedGraphNode> currNeighbors = current.neighbors;
 
             for (UndirectedGraphNode aNeighbor : currNeighbors)
             {
@@ -27,7 +27,7 @@ public class Solution
                 }
 
                 queue.add(aNeighbor);
-                map.get(curr).neighbors.add(map.get(aNeighbor));
+                map.get(current).neighbors.add(map.get(aNeighbor));
             }
         }
 

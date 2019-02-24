@@ -5,14 +5,14 @@ public class Solution
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         ListNode pre = dummy.next;
-        ListNode curr = head;
+        ListNode current = head;
 
-        while (curr != null)
+        while (current != null)
         {
-            pre.next = curr.next;
-            curr.next = dummy.next;
-            dummy.next = curr;
-            curr = pre.next;
+            pre.next = current.next;
+            current.next = dummy.next;
+            dummy.next = current;
+            current = pre.next;
         }
 
         return dummy.next;

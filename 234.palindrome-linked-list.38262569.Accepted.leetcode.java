@@ -41,14 +41,14 @@ public class Solution
 
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode curr = head.next;
+        ListNode current = head.next;
 
-        while (curr != null)
+        while (current != null)
         {
-            ListNode nextNode = curr.next;
-            curr.next = dummy.next;
-            dummy.next = curr;
-            curr = nextNode;
+            ListNode nextNode = current.next;
+            current.next = dummy.next;
+            dummy.next = current;
+            current = nextNode;
         }
 
         head.next = null;

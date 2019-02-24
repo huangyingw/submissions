@@ -15,33 +15,33 @@ public class Solution
 
         while (!stack.isEmpty())
         {
-            TreeNode curr = stack.peek();
+            TreeNode current = stack.peek();
 
-            if (prev == null || prev.left == curr || prev.right == curr)
+            if (prev == null || prev.left == current || prev.right == current)
             {
-                if (curr.left != null)
+                if (current.left != null)
                 {
-                    stack.push(curr.left);
+                    stack.push(current.left);
                 }
-                else if (curr.right != null)
+                else if (current.right != null)
                 {
-                    stack.push(curr.right);
+                    stack.push(current.right);
                 }
             }
-            else if (curr.left == prev)
+            else if (current.left == prev)
             {
-                if (curr.right != null)
+                if (current.right != null)
                 {
-                    stack.push(curr.right);
+                    stack.push(current.right);
                 }
             }
             else
             {
-                postorder.add(curr.val);
+                postorder.add(current.val);
                 stack.pop();
             }
 
-            prev = curr;
+            prev = current;
         }
 
         return postorder;

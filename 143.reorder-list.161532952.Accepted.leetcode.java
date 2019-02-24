@@ -4,14 +4,14 @@ public class Solution
     {
         ListNode pre = null;
         ListNode temp = null;
-        ListNode curr = head;
+        ListNode current = head;
 
-        while (curr != null)
+        while (current != null)
         {
-            temp = curr.next;
-            curr.next = pre;
-            pre = curr;
-            curr = temp;
+            temp = current.next;
+            current.next = pre;
+            pre = current;
+            current = temp;
         }
 
         return pre;

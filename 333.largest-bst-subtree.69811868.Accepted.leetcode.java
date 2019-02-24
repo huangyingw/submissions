@@ -8,37 +8,37 @@ public class Solution
     }
     private Data largestBSTHelper(TreeNode root)
     {
-        Data curr = new Data();
+        Data current = new Data();
 
         if (root == null)
         {
-            curr.isBST = true;
-            curr.size = 0;
-            return curr;
+            current.isBST = true;
+            current.size = 0;
+            return current;
         }
 
         Data left = largestBSTHelper(root.left);
         Data right = largestBSTHelper(root.right);
-        curr.min = Math.min(root.val, Math.min(right.min, left.min));
-        curr.max = Math.max(root.val, Math.max(right.max, left.max));
+        current.min = Math.min(root.val, Math.min(right.min, left.min));
+        current.max = Math.max(root.val, Math.max(right.max, left.max));
 
         if (left.isBST && root.val > left.max && right.isBST
                 && root.val < right.min)
         {
-            curr.isBST = true;
-            curr.size = 1 + left.size + right.size;
+            current.isBST = true;
+            current.size = 1 + left.size + right.size;
 
-            if (curr.size > result)
+            if (current.size > result)
             {
-                result = curr.size;
+                result = current.size;
             }
         }
         else
         {
-            curr.size = 0;
+            current.size = 0;
         }
 
-        return curr;
+        return current;
     }
 }
 class Data

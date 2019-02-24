@@ -52,39 +52,39 @@ public class AllOne
         }
         else
         {
-            ValueNode curr = elements.get(key);
+            ValueNode current = elements.get(key);
 
-            if (curr.prev != null && curr.prev.value == curr.value + 1)
+            if (current.prev != null && current.prev.value == current.value + 1)
             {
-                curr.prev.keys.add(key);
-                elements.put(key, curr.prev);
+                current.prev.keys.add(key);
+                elements.put(key, current.prev);
             }
             else
             {
-                ValueNode prev = new ValueNode(curr.value + 1, key);
+                ValueNode prev = new ValueNode(current.value + 1, key);
 
-                if (curr.prev != null)
+                if (current.prev != null)
                 {
-                    ValueNode prevprev = curr.prev;
+                    ValueNode prevprev = current.prev;
                     prevprev.next = prev;
                     prev.prev = prevprev;
-                    // which means curr is head
+                    // which means current is head
                 }
                 else
                 {
                     head = prev;
                 }
 
-                curr.prev = prev;
-                prev.next = curr;
+                current.prev = prev;
+                prev.next = current;
                 elements.put(key, prev);
             }
 
-            curr.keys.remove(key);
+            current.keys.remove(key);
 
-            if (!checkEmpty(curr))
+            if (!checkEmpty(current))
             {
-                curr.updateOneKey(key);
+                current.updateOneKey(key);
             }
         }
     }
@@ -97,22 +97,22 @@ public class AllOne
     {
         if (elements.containsKey(key))
         {
-            ValueNode curr = elements.get(key);
+            ValueNode current = elements.get(key);
 
-            if (curr.next != null && curr.next.value == curr.value - 1)
+            if (current.next != null && current.next.value == current.value - 1)
             {
-                curr.next.keys.add(key);
-                elements.put(key, curr.next);
+                current.next.keys.add(key);
+                elements.put(key, current.next);
             }
             else
             {
-                if (curr.value > 1)
+                if (current.value > 1)
                 {
-                    ValueNode next = new ValueNode(curr.value - 1, key);
+                    ValueNode next = new ValueNode(current.value - 1, key);
 
-                    if (curr.next != null)
+                    if (current.next != null)
                     {
-                        ValueNode nextnext = curr.next;
+                        ValueNode nextnext = current.next;
                         next.next = nextnext;
                         nextnext.prev = next;
                     }
@@ -121,8 +121,8 @@ public class AllOne
                         tail = next;
                     }
 
-                    curr.next = next;
-                    next.prev = curr;
+                    current.next = next;
+                    next.prev = current;
                     elements.put(key, next);
                 }
                 else
@@ -131,11 +131,11 @@ public class AllOne
                 }
             }
 
-            curr.keys.remove(key);
+            current.keys.remove(key);
 
-            if (!checkEmpty(curr))
+            if (!checkEmpty(current))
             {
-                curr.updateOneKey(key);
+                current.updateOneKey(key);
             }
         }
     }

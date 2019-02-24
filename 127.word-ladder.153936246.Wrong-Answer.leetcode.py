@@ -5,9 +5,9 @@ class Solution:
         q.append((start, 1))
 
         while q:
-            curr = q.pop(0)
-            currword = curr[0]
-            currlen = curr[1]
+            current = q.pop(0)
+            currword = current[0]
+            currlen = current[1]
 
             if currword == end:
                 return currlen
