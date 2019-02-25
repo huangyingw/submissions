@@ -7,17 +7,17 @@ public class Solution
         dfs(1, n, k, result, cur);
         return result;
     }
-    public void dfs(int l, int r, int k, List<List<Integer>> res, List<Integer> cur)
+    public void dfs(int l, int r, int k, List<List<Integer>> result, List<Integer> cur)
     {
         if (k == 0)
         {
-            res.add(new ArrayList<Integer>(cur));
+            result.add(new ArrayList<Integer>(cur));
         }
 
         for (int i = l; i <= r - k + 1; i++)
         {
             cur.add(i);
-            dfs(i + 1, r, k - 1, res, cur);
+            dfs(i + 1, r, k - 1, result, cur);
             cur.remove(cur.size() - 1);
         }
     }
