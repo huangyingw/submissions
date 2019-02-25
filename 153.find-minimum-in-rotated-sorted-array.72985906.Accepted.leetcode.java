@@ -12,7 +12,7 @@ public class Solution
 
         while (left + 1 < right)
         {
-            int mid = left + (right - left) / 2;
+            int mid = (left + right) / 2;
 
             if (nums[mid] < nums[right])
             {
