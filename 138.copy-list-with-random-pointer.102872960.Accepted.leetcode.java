@@ -1,10 +1,10 @@
 public class Solution
 {
-    private void copyNext(RandomListNode head)
+    private void copyNext(Node head)
     {
         while (head != null)
         {
-            RandomListNode newHead = new RandomListNode(head.label);
+            Node newHead = new Node(head.val);
             newHead.next = head.next;
             newHead.random = head.random;
             head.next = newHead;
@@ -12,7 +12,7 @@ public class Solution
         }
     }
 
-    private void copyRandom(RandomListNode head)
+    private void copyRandom(Node head)
     {
         while (head != null)
         {
@@ -25,13 +25,13 @@ public class Solution
         }
     }
 
-    private RandomListNode splitList(RandomListNode head)
+    private Node splitList(Node head)
     {
-        RandomListNode newHead = head.next;
+        Node newHead = head.next;
 
         while (head != null && head.next != null)
         {
-            RandomListNode temp = head.next;
+            Node temp = head.next;
             head.next = temp.next;
             head = temp;
         }
@@ -39,7 +39,7 @@ public class Solution
         return newHead;
     }
 
-    public RandomListNode copyRandomList(RandomListNode head)
+    public Node copyRandomList(Node head)
     {
         if (head == null)
         {
