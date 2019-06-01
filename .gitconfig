@@ -15,3 +15,5 @@
 [vrun]
     silent = false
     show = true
+[leetcode]
+    submit = true
