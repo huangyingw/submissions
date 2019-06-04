@@ -1,7 +1,3 @@
-#
-# [101] Symmetric Tree
-
-
 class Solution(object):
     def isSymmetric(self, root):
         if not root:
