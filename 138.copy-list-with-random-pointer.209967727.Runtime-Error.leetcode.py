@@ -4,7 +4,7 @@ class Solution(object):
             return None
         p = head
         while p:
-            newP = Node(p.label)
+            newP = RandomListNode(p.label)
             newP.next = p.next
             newP.random = p.random
             p.next = newP
