@@ -1,6 +1,6 @@
 class Solution(object):
     def minDepth(self, root):
-        if root is None:
+        if not root:
             return 0
 
         queue = [root]
