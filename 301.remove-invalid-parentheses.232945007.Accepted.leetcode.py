@@ -28,4 +28,3 @@ class Solution(object):
                     queue.append(ns)
 
         return ans
-1
