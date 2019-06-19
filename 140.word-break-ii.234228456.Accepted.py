@@ -1,14 +1,8 @@
 class Solution(object):
-    # https://discuss.leetcode.com/topic/12997/11ms-c-solution-concise
     def __init__(self):
         self.solution = {}
 
     def wordBreak(self, s, wordDict):
-        """
-        :type s: str
-        :type wordDict: Set[str]
-        :rtype: List[str]
-        """
         try:
             return self.solution[s]
         except KeyError:
