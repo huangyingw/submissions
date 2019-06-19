@@ -1,17 +1,11 @@
 class Solution:
     def findSubstring(self, s, words):
-        """
-        :type s: str
-        :type words: List[str]
-        :rtype: List[int]
-        """
         if not s or not words or len(s) == 0 or len(words) == 0:
             return []
         d = {}
         for word in words:
             d[word] = d.get(word, 0) + 1
         result = []
-        # same length of word in words
         n, m = len(words), len(words[0])
         for i in range(min(m, len(s) - m * n + 1)):
             curr = {}
