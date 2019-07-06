@@ -1,13 +1,5 @@
-# Time: O(n)
-# Space: O(1)
-
-
 class Solution(object):
     def lengthOfLongestSubstringTwoDistinct(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
         start, end, counter, ret = 0, 0, 0, 0
         counts = {}
         while end < len(s):
