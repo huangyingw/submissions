@@ -13,7 +13,6 @@ class Solution(object):
                     board[i][j] = 3
                 if board[i][j] == 0 and lives == 3:
                     board[i][j] = 2
-
         for i in range(len(board)):
             for j in range(len(board[0])):
                 board[i][j] >>= 1

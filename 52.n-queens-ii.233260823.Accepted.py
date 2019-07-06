@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/n-queens-ii/
 # Follow up for N-Queens problem.
 # Now, instead outputting board configurations, return the total number of distinct solutions.
-
 # As for N-Queens except just count solutions instead of converting to boards.
 # Time - O(n!)
 # Space - O(n!)
@@ -24,7 +22,6 @@ class Solution(object):
                     if not self.conflict(partial, row):
                         new_partials.append(partial + [row])
             partials = new_partials
-
         return len(partials)
 
     def conflict(self, partial, new_row):

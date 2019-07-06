@@ -12,7 +12,6 @@ public class Solution
         addOperatorHelper(num, 0, target, 0, 0, "", result);
         return result;
     }
-
     private void addOperatorHelper(String num, int start, int target, long curSum,
                                    long preNum, String curResult, List<String> result)
     {

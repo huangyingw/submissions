@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-circular-deque/
 # Design your implementation of the circular double-ended queue (deque).
 # Your implementation should support following operations:
@@ -13,7 +12,6 @@ _project_ = 'leetcode'
 # getRear(): Gets the last item from Deque. If the deque is empty, return -1.
 # isEmpty(): Checks whether Deque is empty or not.
 # isFull(): Checks whether Deque is full or not.
-
 # Use a python list as a circular array. Adding an extra space allows distinction between sull and empty queues.
 # Deleted elements are not removed, pointers are just moved.
 # Time - O(n)
@@ -21,7 +19,6 @@ _project_ = 'leetcode'
 
 
 class MyCircularDeque(object):
-
     def __init__(self, k):
         """
         Initialize your data structure here. Set the size of the deque to be k.

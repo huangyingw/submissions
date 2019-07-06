@@ -7,7 +7,6 @@ public class Solution
         rec(root, max, maxWO);
         return max.get(root);
     }
-
     private void rec(TreeNode root, Map<TreeNode, Integer> max, Map<TreeNode, Integer> maxWO)
     {
         if (root == null)

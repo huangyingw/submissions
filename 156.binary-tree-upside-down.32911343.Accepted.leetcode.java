@@ -4,7 +4,6 @@ public class Solution
     {
         return dfs(root, null);
     }
-
     TreeNode dfs(TreeNode root, TreeNode parent)
     {
         if (root == null)

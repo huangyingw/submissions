@@ -1,15 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/binary-tree-preorder-traversal/
 # Given a binary tree, return the preorder traversal of its nodes' values.
-
 # Maintain a stack of nodes discovered and to be visited. Add right children to stack before left so left subtrees
 # are visited before right.
 # Alternatively, visit node, recurse left then recurse right.
 # Time - O(n)
 # Space - O(n)
-
 # Definition for a binary tree node.
 
 
@@ -28,10 +25,8 @@ class Solution(object):
         """
         if not root:
             return []
-
         preorder = []
         stack = [root]
-
         while stack:
             node = stack.pop()
             preorder.append(node.val)
@@ -39,7 +34,6 @@ class Solution(object):
                 stack.append(node.right)    # push right first so left is popped first
             if node.left:
                 stack.append(node.left)
-
         return preorder
 
 

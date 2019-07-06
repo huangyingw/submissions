@@ -4,10 +4,8 @@ class Solution(object):
         pre = dummy
         cur = head
         nextNode = None
-
         while cur:
             pre = dummy
-
             while pre.next and pre.next.val < cur.val:
                 pre = pre.next
             nextNode = cur.next

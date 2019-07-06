@@ -13,7 +13,6 @@ public class Solution
         node.right = sortedArrayToBST(num, mid + 1, right);
         return node;
     }
-
     public TreeNode sortedArrayToBST(int[] num)
     {
         return sortedArrayToBST(num, 0, num.length - 1);

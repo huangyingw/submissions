@@ -34,8 +34,6 @@ class Solution(object):
                 board[pos][j] = 'Q'
                 self.do_solveNQueens(res, board, num - 1)
                 board[pos][j] = '.'
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

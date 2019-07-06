@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/find-and-replace-in-string/
 # To some string S, we will perform some replacement operations that replace groups of letters with new ones
 # (not necessarily the same size).
@@ -14,7 +13,6 @@ _project_ = 'leetcode'
 # the original string S[2] = 'c', which doesn't match x[0] = 'e'.
 # All these operations occur simultaneously.  It's guaranteed that there won't be any overlap in replacement:
 # for example, S = "abc", indexes = [0, 1], sources = ["ab","bc"] is not a valid test case.
-
 # Convert to mutable list of chars. For each index, if substring string of length source is same as source string,
 # replace the first char with the target and remaining chars of source with empty strings.
 # Time - O(min(k, nm)) for n replacements of max length m, len(S) == k
@@ -31,12 +29,9 @@ class Solution(object):
         :rtype: str
         """
         replaced = [c for c in S]               # convert to list
-
         for i, src, tgt in zip(indexes, sources, targets):
-
             n = len(src)
             if S[i:i + n] == src:
                 replaced[i] = tgt
                 replaced[i + 1:i + n] = [""] * (n - 1)
-
         return "".join(replaced)

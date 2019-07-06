@@ -25,7 +25,6 @@ class Solution(object):
                 char_map[ord(s[left])] += 1
                 left += 1
         return res
-
     # def findAnagrams(self, s, p):
     #     if len(s) < len(p):
     #         return []
@@ -48,7 +47,6 @@ class Solution(object):
     #         if str(bit_map) == s_p:
     #             res.append(i - p_len + 1)
     #     return res
-
     # def findAnagrams(self, s, p):
     #     """
     #     :type s: str

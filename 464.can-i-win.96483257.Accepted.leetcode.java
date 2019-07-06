@@ -51,6 +51,4 @@ public class Solution
         hashMap.put(key, false);
         return false;
     }
-
-
 }

@@ -1,20 +1,17 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/insert-delete-getrandom-o1/
 # Design a data structure that supports all following operations in average O(1) time.
 # insert(val): Inserts an item val to the set if not already present.
 # remove(val): Removes an item val from the set if present.
 # getRandom: Returns a random element from current set of elements. Each element must have the same probability
 # of being returned.
-
 # Maintain a list of the vals as they are added and a mapping from each val to its index in the list.
 # Upon removal replace with last val in list (self if removing last val), update mapping for replacement val then
 # delete mapping for removed val.
 # Note that using a set and no list is also O(1) but pop() does not produce a random val and random.sample is slow.
 # Time - O(1)
 # Space - O(n)
-
 import random
 
 

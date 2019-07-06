@@ -20,7 +20,6 @@ class Solution(object):
     #         p = p.next
     #     p.next = None
     #     return dummyHead.next
-
     # def mergeKLists(self, lists):
     #     """
     #     :type lists: List[ListNode]
@@ -44,7 +43,6 @@ class Solution(object):
     #             last = t
     #     last.next = None
     #     return head.next
-
     def mergeKLists(self, lists):
         # recursive
         if lists is None:

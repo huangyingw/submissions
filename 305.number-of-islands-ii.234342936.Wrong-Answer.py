@@ -20,7 +20,6 @@ class Solution:
                 n_idx = n * x + y
                 if x < 0 or x >= m or y < 0 or y >= n or islands[n_idx] == -1:
                     continue
-
                 root_n = self.findRoot(islands, n_idx)
                 if root_n != root:
                     islands[root] = root_n

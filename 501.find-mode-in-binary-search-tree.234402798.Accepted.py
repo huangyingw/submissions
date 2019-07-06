@@ -5,7 +5,6 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
 # 1 insorder find
 
 

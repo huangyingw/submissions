@@ -24,7 +24,6 @@ class Solution:
             for l in b:
                 if l not in ccb or ccb[l] < cb[l]:
                     ccb[l] = cb[l]
-
         ans = []
         for a in A:
             flag = True

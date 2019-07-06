@@ -16,7 +16,6 @@ public class Solution
         dfs(num, 0, n, result);
         return result;
     }
-
     public void dfs(char[] num, int i, int max, ArrayList<Integer> result)
     {
         if (i == num.length)
@@ -51,7 +50,6 @@ public class Solution
             }
         }
     }
-
     private int convert(char[] arr)
     {
         int result = 0;

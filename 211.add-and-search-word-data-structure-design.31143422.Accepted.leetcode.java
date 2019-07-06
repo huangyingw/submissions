@@ -3,14 +3,12 @@ class TrieNode
     boolean isWord;
     char content;
     HashMap<Character, TrieNode> nexts;
-
     public TrieNode()
     {
         this.content = ' ';
         this.isWord = false;
         this.nexts = new HashMap<Character, TrieNode>();
     }
-
     public TrieNode(char content)
     {
         this.content = content;
@@ -18,16 +16,13 @@ class TrieNode
         nexts = new HashMap<Character, TrieNode>();
     }
 }
-
 public class WordDictionary
 {
     private TrieNode root;
-
     public WordDictionary()
     {
         root = new TrieNode();
     }
-
     public void addWord(String word)
     {
         TrieNode current = root;
@@ -48,7 +43,6 @@ public class WordDictionary
 
         current.isWord = true;
     }
-
     public boolean search(String word)
     {
         if (word == null || word.length() == 0)
@@ -59,7 +53,6 @@ public class WordDictionary
         TrieNode trieNode = root;
         return dfs(word, 0, trieNode);
     }
-
     private boolean dfs(String word, int index, TrieNode trieNode)
     {
         if (index == word.length() - 1)

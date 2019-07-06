@@ -10,7 +10,6 @@ class Solution(object):
     #     for i in range(2, n + 1):
     #         dp[i] = dp[i - 2] + dp[i- 1]
     #     return dp[n]
-
     def climbStairs(self, n):
         if n <= 1:
             return 1
@@ -18,7 +17,6 @@ class Solution(object):
         for i in range(2, n + 1):
             dp[1], dp[0] = dp[1] + dp[0], dp[1]
         return dp[1]
-
     # C = {1: 1, 2: 2}
     # def climbStairs(self, n):
     #     """

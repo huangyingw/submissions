@@ -5,7 +5,6 @@ class Solution(object):
     #     :rtype: int
     #     """
     #     return self.get_min(nums, 0, len(nums) - 1)
-
     # def get_min(self, nums, start, end):
     #     mid = (start + end) / 2
     #     if start == end:
@@ -26,7 +25,6 @@ class Solution(object):
     #     else:
     #         # cannot judge which direction is sorted
     #         return min(self.get_min(nums, start, mid), self.get_min(nums, mid, end))
-
     # def findMin(self, nums):
     #     start, end = 0, len(nums) - 1
     #     while start < end:
@@ -38,7 +36,6 @@ class Solution(object):
     #         else:
     #             end -= 1
     #     return nums[start]
-
     def findMin(self, nums):
         l, r = 0, len(nums) - 1
         while l < r and nums[l] >= nums[r]:

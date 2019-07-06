@@ -3,7 +3,6 @@ from collections import defaultdict
 
 class Solution(object):
     def longestArithSeqLength(self, A):
-
         dp = defaultdict(int)
         for index_i in range(len(A)):
             for index_j in range(index_i):

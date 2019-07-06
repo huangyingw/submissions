@@ -30,7 +30,6 @@ class Solution(object):
     #         else:
     #             right = mid - 1
     #     return left
-
     def threeSumSmaller(self, nums, target):
         """
         :type nums: List[int]

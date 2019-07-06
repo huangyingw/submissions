@@ -58,7 +58,6 @@ public class Solution
 
         return result;
     }
-
     private void appendSpace(StringBuffer sb, int count)
     {
         for (int i = 0; i < count; i++)

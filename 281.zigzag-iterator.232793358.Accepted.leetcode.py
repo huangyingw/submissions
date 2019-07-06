@@ -1,5 +1,4 @@
 class ZigzagIterator(object):
-
     def __init__(self, v1, v2):
         self.v1 = v1
         self.v2 = v2
@@ -27,7 +26,6 @@ class ZigzagIterator(object):
                 self.x += 1
             else:
                 self.x += 1
-
         self.pointer += 1
         return n
 

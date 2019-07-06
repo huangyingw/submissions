@@ -14,15 +14,12 @@ class Solution(object):
         """
         if not head or k == 0:
             return head
-
         slow = fast = head
         length = 1
-
         while k and fast.next:
             fast = fast.next
             length += 1
             k -= 1
-
         if k != 0:
             k = (k + length - 1) % length  # original k % length
             return self.rotateRight(head, k)

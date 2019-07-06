@@ -13,7 +13,7 @@ public class Solution
     {
         List<Integer> inOrder = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        
+
         while (!stack.isEmpty() || root != null)
         {
             if (root != null)
@@ -28,7 +28,7 @@ public class Solution
                 root = root.right;
             }
         }
-        
+
         return inOrder;
     }
 }

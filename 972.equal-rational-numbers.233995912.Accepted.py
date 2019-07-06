@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/equal-rational-numbers/
 # Given two strings S and T, each of which represents a non-negative rational number,
 # return True if and only if they represent the same number.
@@ -14,12 +13,10 @@ _project_ = 'leetcode'
 # The repeating portion of a decimal expansion is conventionally denoted within a pair of round brackets.  For example:
 # 1 / 6 = 0.16666666... = 0.1(6) = 0.1666(6) = 0.166(66)
 # Both 0.1(6) or 0.1666(6) or 0.166(66) are correct representations of 1 / 6.
-
 # Convert each string to a fraction. As a fraction, the repeating part is divided by nines.
 # For example 0.(52) is 52/99 and 0.1(52) is 1/10 + 52/990
 # Time - O(n + m), lengths of input strings
 # Space - O(n + m)
-
 from fractions import Fraction
 
 
@@ -31,17 +28,11 @@ class Solution:
         :rtype: bool
         """
         def to_numeric(s):
-
             if not ("(") in s:                      # no repeating part
                 return Fraction(s)
-
             non_repeat, repeat = s.split("(")
             repeat = repeat[:-1]                    # remove closing brace
-
             _, non_repeat_decimal = non_repeat.split(".")
-
             fract = Fraction(int(repeat), (10 ** len(repeat) - 1) * (10 ** len(non_repeat_decimal)))
-
             return Fraction(non_repeat) + fract
-
         return to_numeric(S) == to_numeric(T)

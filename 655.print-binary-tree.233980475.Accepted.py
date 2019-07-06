@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/print-binary-tree/
 # Print a binary tree in an m*n 2D string array following these rules:
 # The row number m should be equal to the height of the given binary tree.
@@ -14,7 +13,6 @@ _project_ = 'leetcode'
 # to leave space for both of them.
 # Each unused space should contain an empty string "".
 # Print the subtrees following the same rules.
-
 # Find the height and calculate the width as 2**height - 1. Create an empty list of lists to hold result. The preorder
 # traverse the tree, placing each value in the result and recursing to subtrees.
 # Time - O(2 ** (n + 1)), every node visited once but worst case time is to create result when height = n
@@ -26,15 +24,12 @@ class Solution(object):
     :type root: TreeNode
     :rtype: List[List[str]]
     """
-
     def height(node):
         if not node:
             return 0
         return 1 + max(height(node.left), height(node.right))
-
     rows = height(root)
     cols = 2 ** rows - 1
-
     result = [["" for _ in range(cols)] for _ in range(rows)]
 
     def place(node, r, c):
@@ -44,6 +39,5 @@ class Solution(object):
         shift = 2 ** (rows - r - 2)     # next column shift as a function of r
         place(node.left, r + 1, c - shift)
         place(node.right, r + 1, c + shift)
-
     place(root, 0, cols // 2)
     return result

@@ -71,7 +71,6 @@ public class Solution
         root.count = root.left.count + root.right.count;
         return root;
     }
-
     public static int query(segmentTreeNode root, int start, int end)
     {
         if (root == null)
@@ -99,7 +98,6 @@ public class Solution
             return query(root.left, start, mid) + query(root.right, mid + 1, end);
         }
     }
-
     public static void updateAdd(segmentTreeNode root, int val)
     {
         if (root == null || root.start > val || root.end < val)
@@ -126,7 +124,6 @@ public class Solution
 
         root.count = root.left.count + root.right.count;
     }
-
     public static void updateDel(segmentTreeNode root, int val)
     {
         if (root == null || root.start > val || root.end < val)

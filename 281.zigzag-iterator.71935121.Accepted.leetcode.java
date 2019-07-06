@@ -1,17 +1,14 @@
 public class ZigzagIterator
 {
-
     Iterator<Integer> it1;
     Iterator<Integer> it2;
     int turns;
-
     public ZigzagIterator(List<Integer> v1, List<Integer> v2)
     {
         this.it1 = v1.iterator();
         this.it2 = v2.iterator();
         turns = 0;
     }
-
     public int next()
     {
         // 如果没有下一个则返回0
@@ -37,7 +34,6 @@ public class ZigzagIterator
 
         return 0;
     }
-
     public boolean hasNext()
     {
         return it1.hasNext() || it2.hasNext();

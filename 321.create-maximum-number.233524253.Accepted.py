@@ -1,11 +1,9 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/create-maximum-number/
 # Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of
 # length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved.
 # Return an array of the k digits.
-
 # For each partition of i digits from nums1 and (i from 0 to k) and k-i digits from nums 2, find the max number from
 # each nums list using that many digits.  The overall max is the merge of 2 individual max numbers.  Merge by taking
 # the larger digit from the front, if equal look forward to the next position where the digits are different and take
@@ -45,9 +43,7 @@ class Solution(object):
     def merge(self, nums1, nums2):
         i, j = 0, 0
         merged = []
-
         while i < len(nums1) and j < len(nums2):
-
             if nums1[i] < nums2[j]:
                 use1 = False
             elif nums1[i] > nums2[j]:
@@ -64,12 +60,10 @@ class Solution(object):
                     use1 = False
                 else:
                     use1 = True
-
             if use1:
                 merged.append(nums1[i])
                 i += 1
             else:
                 merged.append(nums2[j])
                 j += 1
-
         return merged + nums1[i:] + nums2[j:]

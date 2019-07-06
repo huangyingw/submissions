@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/data-stream-as-disjoint-intervals/
 # Given a data stream input of non-negative integers a1, a2, ..., an, ..., summarize the numbers seen so far as a
 # list of disjoint intervals in order of interval starting value.
-
 # Create a wrapper class for interval that adds a parent attribute.  For each number map it to an IntervalNode which
 # may itself be mapped to further IntervalNodes in a tree.  Separately track all ultimate intervals in a set.
 # When a new value is added, check for integers above and below for their ultimate parent intervals.  Collapsing the
@@ -16,7 +14,6 @@ _project_ = 'leetcode'
 # Alternatively, use BST.
 # Time - O(log*n) to find parent,  O(n log n) to sort intervals
 # Space - O(n)
-
 # Definition for an interval.
 # class Interval(object):
 #     def __init__(self, s=0, e=0):
@@ -31,7 +28,6 @@ class IntervalNode(object):
 
 
 class SummaryRanges(object):
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -55,24 +51,19 @@ class SummaryRanges(object):
         """
         if val in self.parents:             # already seen val, ignore
             return
-
         lower = self.get_parent(val - 1)
         upper = self.get_parent(val + 1)
-
         if lower and upper:                 # update lower, remove upper
             lower.inner.end = upper.inner.end
             self.parents[val] = lower
             upper.parent = lower
             self.intervals.remove(upper.inner)
-
         elif lower:
             lower.inner.end += 1
             self.parents[val] = lower
-
         elif upper:
             upper.inner.start -= 1
             self.parents[val] = upper
-
         else:
             new_inner = Interval(val, val)
             self.parents[val] = IntervalNode(new_inner)

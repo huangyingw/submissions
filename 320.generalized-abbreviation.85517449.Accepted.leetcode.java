@@ -6,7 +6,6 @@ public class Solution
         dfs(0, word.toCharArray(), new StringBuffer(), 0, result);
         return result;
     }
-
     public void dfs(int pos, char[] word, StringBuffer sb, int count, List<String> result)
     {
         int len = word.length;

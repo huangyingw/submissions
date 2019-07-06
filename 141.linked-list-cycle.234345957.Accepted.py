@@ -20,8 +20,6 @@ class Solution(object):
             if slow == fast:
                 return True
         return False
-
-
 # class Solution(object):
 #     def hasCycle(self, head):
 #         """

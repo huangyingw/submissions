@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/dota2-senate/
 # In the world of Dota2, there are two parties: the Radiant and the Dire.
 # The Dota2 senate consists of senators coming from two parties. Now the senate wants to make a decision about a
@@ -15,12 +14,10 @@ _project_ = 'leetcode'
 # last until the end of voting. All the senators who have lost their rights will be skipped during the procedure.
 # Suppose every senator is smart enough and will play the best strategy for his own party, you need to predict which
 # party will finally announce the victory and make the change in the Dota2 game. The output should be Radiant or Dire.
-
 # Create a queue of senator for each part by index. Compare the indices of the first senator from each party. The first
 # will ban the rights of the second, so first is added to the back of the queue for this part and second is rejected.
 # Time - O(n), total number of senators since one senator is removed in each step.
 # Space - O(n)
-
 from collections import deque
 
 
@@ -37,7 +34,6 @@ class Solution(object):
                 d.append(i)
             else:
                 r.append(i)
-
         while d and r:
             d_senator = d.popleft()
             r_senator = r.popleft()
@@ -45,5 +41,4 @@ class Solution(object):
                 d.append(d_senator + n)
             else:
                 r.append(r_senator + n)
-
         return "Radiant" if r else "Dire"

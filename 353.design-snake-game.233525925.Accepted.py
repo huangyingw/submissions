@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-snake-game/
 # Design a Snake game that is played on a device with screen size = width x height.
 # The snake is initially positioned at the top left corner (0,0) with length = 1 unit.
@@ -8,7 +7,6 @@ _project_ = 'leetcode'
 # score both increase by 1.  Each food appears one by one on the screen. For example, the second food will not appear
 # until the first food was eaten by the snake.  When a food does appear on the screen, it is guaranteed that it will not
 # appear on a block occupied by the snake.
-
 # Dictionary maps one segment of snake body to the next.  Check for collision with wall or body apart from tail.
 # Score is len(snake) - 1.
 # Time - O(f) for constructor (nb food), O(1) to move()
@@ -16,7 +14,6 @@ _project_ = 'leetcode'
 
 
 class SnakeGame(object):
-
     def __init__(self, width, height, food):
         """
         Initialize your data structure here.
@@ -45,25 +42,20 @@ class SnakeGame(object):
         """
         # get new head position
         new_head = (self.head[0] + self.moves[direction][0], self.head[1] + self.moves[direction][1])
-
         # check collision with wall
         if new_head[0] < 0 or new_head[0] >= self.rows or new_head[1] < 0 or new_head[1] >= self.cols:
             return -1
         # check if hits body (apart from tail which will move or not be hit since eating food)
         if new_head in self.snake and new_head != self.tail:
             return -1
-
         # update head
         self.snake[self.head] = new_head
         self.head = new_head
-
         # move tail if not eaten food
         if len(self.snake) - 1 >= len(self.food) or new_head != self.food[len(self.snake) - 1]:
             old_tail = self.tail
             self.tail = self.snake[self.tail]
             del self.snake[old_tail]    # head has moved on fo safe even if length 1
-
         # extend length
         self.snake[self.head] = None
-
         return len(self.snake) - 1

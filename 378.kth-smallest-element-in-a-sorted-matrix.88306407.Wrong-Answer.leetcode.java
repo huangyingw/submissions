@@ -24,7 +24,6 @@ public class Solution
 
         return mid;
     }
-
     private int count(int[][] matrix, int target)
     {
         int m = matrix.length;

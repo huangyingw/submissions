@@ -1,6 +1,4 @@
 # down-top
-
-
 class Solution:
     def minimumTotal(self, triangle):
         """

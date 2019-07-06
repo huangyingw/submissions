@@ -15,7 +15,6 @@ class Solution(object):
     #             pos += 1
     #             count[index] -= 1
     #     return
-
     def sortColors(self, nums):
         # https://leetcode.com/discuss/85658/sharing-c-solution-with-good-explanation
         low, mid, high = 0, 0, len(nums) - 1

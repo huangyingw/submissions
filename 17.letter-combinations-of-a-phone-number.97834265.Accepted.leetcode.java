@@ -14,7 +14,6 @@ public class Solution
         dfs(digits, dic, 0, current, result);
         return result;
     }
-
     public void dfs(String digits, String[] dic, int deep, StringBuilder current, ArrayList<String> result)
     {
         if (deep == digits.length())

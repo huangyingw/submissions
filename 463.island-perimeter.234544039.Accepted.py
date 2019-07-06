@@ -32,6 +32,5 @@ class Solution:
                         l += grid[i + 1][j]
                     elif j < b - 1:
                         l += grid[i][j + 1]
-
         s = 4 * n - 2 * l
         return s

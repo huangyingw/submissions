@@ -42,7 +42,6 @@ class Solution(object):
             if height[index] > 0:
                 step += height[index]
         return res - step
-
     # def trap(self, height):
     #     ls = len(height)
     #     if ls == 0:
@@ -66,8 +65,6 @@ class Solution(object):
     #         if curr > height[i]:
     #             res += curr - height[i]
     #     return res
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

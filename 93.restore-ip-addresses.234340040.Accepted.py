@@ -1,6 +1,4 @@
 # time: O(3^4)
-
-
 class Solution:
     def restoreIpAddresses(self, s):
         """

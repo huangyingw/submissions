@@ -1,16 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/range-sum-query-immutable/
 # Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
-
 # Store cumulative sums.
 # Time - O(n) for __init__(), O(1) for sumRange()
 # Space - O(n)
 
 
 class NumArray(object):
-
     def __init__(self, nums):
         """
         :type nums: List[int]

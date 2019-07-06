@@ -22,7 +22,6 @@ public class Solution
             }
         }
     }
-
     private void swap(int[] a, int index, int blueIndex)
     {
         a[blueIndex] ^= a[index];

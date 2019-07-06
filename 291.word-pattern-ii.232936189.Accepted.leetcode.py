@@ -8,7 +8,6 @@ class Solution(object):
             return True
         elif len(pattern) == 0 or len(str) == 0:
             return False
-
         if len(pattern) == 1:
             if pattern in d:
                 if d[pattern] == str:
@@ -20,7 +19,6 @@ class Solution(object):
                     return False
                 else:
                     return True
-
         if pattern[0] in d:
             if str.find(d[pattern[0]]) != 0:
                 return False
@@ -41,5 +39,4 @@ class Solution(object):
                 if result:
                     return True
                 del used[cur]
-
         return False

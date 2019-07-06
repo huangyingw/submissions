@@ -1,20 +1,15 @@
 class WordDictionary(object):
-
     def __init__(self):
-
         # Initialize a collection to store words
         self.word_store = collections.defaultdict(list)
 
     def addWord(self, word):
-
         # Adds a word into word_store
         # Classified by how long is the word
         self.word_store[len(word)].append(word)
 
     def search(self, word):
-
         word_len = len(word)
-
         if '.' not in word:
             return word in self.word_store[len(word)]
         else:
@@ -26,5 +21,4 @@ class WordDictionary(object):
                         break
                     if alpha == (word_len - 1):
                         return True
-
             return False

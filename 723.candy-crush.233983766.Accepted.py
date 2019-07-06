@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/candy-crush/
 # This question is about implementing a basic elimination algorithm for Candy Crush.
 # Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent
@@ -15,7 +14,6 @@ _project_ = 'leetcode'
 # After the above steps, there may exist more candies that can be crushed. If so, you need to repeat the above steps.
 # If there does not exist more candies that can be crushed (ie. the board is stable), then return the current board.
 # You need to perform the above rules until the board becomes stable, then return the current board.
-
 # Iterate over board setting to_crush for rows or columns of 3 identical (but not empty) candies. If nothing found,
 # return board. For each column, create a new empty column and fill from bottom up with candies that are not crushed.
 # Time - O((mn)**2), mn per cycle with mn // 3 max cycles.
@@ -29,12 +27,9 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         rows, cols = len(board), len(board[0])
-
         while True:
-
             stable = True
             to_crush = [[False for _ in range(cols)] for _ in range(rows)]      # flag which cells to crush
-
             for c in range(cols):
                 for r in range(rows):
                     # check vertical
@@ -45,10 +40,8 @@ class Solution(object):
                     if c < cols - 2 and board[r][c] == board[r][c + 1] == board[r][c + 2] and board[r][c] != 0:
                         to_crush[r][c] = to_crush[r][c + 1] = to_crush[r][c + 2] = True
                         stable = False
-
             if stable:  # nothing to crush
                 return board
-
             for c in range(cols):
                 new_col = [0 for _ in range(rows)]
                 new_r = rows - 1

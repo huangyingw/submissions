@@ -4,7 +4,6 @@ class Solution
     {
         return kthSmallestDFS(root, k);
     }
-
     int kthSmallestDFS(TreeNode root, Integer k)
     {
         if (root == null)

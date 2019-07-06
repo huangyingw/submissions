@@ -8,7 +8,6 @@
 #        :type word: str
 #        :rtype int
 #        """
-
 from collections import defaultdict
 
 
@@ -19,7 +18,6 @@ class Solution:
         :type master: Master
         :rtype: None
         """
-
         def compPair(x, y):
             return sum(c1 == c2 for c1, c2 in zip(x, y))
 
@@ -29,7 +27,6 @@ class Solution:
                 for i, c in enumerate(word):
                     count[i][c] += 1
             return max(candidates, key=lambda x: sum(count[i][c] for i, c in enumerate(x)))
-
         candidates = wordlist[:]
         while candidates:
             word = mostOverlapWord()

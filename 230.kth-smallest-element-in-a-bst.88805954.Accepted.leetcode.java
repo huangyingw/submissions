@@ -26,7 +26,6 @@ class Solution
             return root.val;
         }
     }
-
     int findNodesSum(TreeNode root)
     {
         if (root == null)

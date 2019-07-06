@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/water-and-jug-problem/
 # You are given two jugs with capacities x and y litres. There is an infinite amount of water supply available.
 # You need to determine whether it is possible to measure exactly z litres using these two jugs.
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 #   Fill any of the jugs completely with water.
 #   Empty any of the jugs.
 #   Pour water from one jug into another till the other jug is completely full or the first jug itself is empty.
-
 # z must be a multiple of the greatest common divisor of x and y, and not more than the sum of x and y
 # Time - O(log n)
 # Space - O(1)
@@ -27,7 +25,6 @@ class Solution(object):
             while b != 0:
                 a, b = b, a % b
             return a
-
         if z == 0:
             return True
         g = gcd(x, y)

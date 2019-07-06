@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private HashMap<Integer, List<Integer>> searchNeighbors(String[] nodes)
     {
         HashMap<String, Integer> indices = new HashMap<String, Integer>(
@@ -55,7 +54,6 @@ public class Solution
 
         return neighbors;
     }
-
     public ArrayList<ArrayList<String>> findLadders(String start,
             String end, HashSet<String> dict)
     {

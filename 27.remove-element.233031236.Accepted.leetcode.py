@@ -21,7 +21,6 @@ class Solution(object):
     #             pos += 1
     #     # del nums[pos:]
     #     return pos
-
     def removeElement(self, nums, val):
         ls = len(nums)
         if ls == 0:
@@ -35,7 +34,6 @@ class Solution(object):
             else:
                 index += 1
         return ls - count
-
 if __name__ == '__main__':
     # begin
     s = Solution()

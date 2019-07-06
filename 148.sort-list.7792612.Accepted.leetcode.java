@@ -23,7 +23,6 @@ public class Solution
 
         return dummy.next;
     }
-
     public ListNode sortList(ListNode head)
     {
         if (head == null || head.next == null)

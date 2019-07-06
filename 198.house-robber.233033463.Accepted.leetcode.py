@@ -16,7 +16,6 @@ class Solution(object):
     #         else:
     #             dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
     #     return dp[ls - 1]
-
     # def rob(self, nums):
     #     if nums is None or len(nums) == 0:
     #         return 0
@@ -26,7 +25,6 @@ class Solution(object):
     #     for i in range(2, len(nums)):
     #         nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
     #     return nums[-1]
-
     def rob(self, nums):
         prevMax = currMax = 0
         for num in nums:

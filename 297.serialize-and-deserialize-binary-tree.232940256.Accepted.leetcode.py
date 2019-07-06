@@ -1,5 +1,4 @@
 class Codec:
-
     def serialize(self, root):
         if not root:
             return '[]'

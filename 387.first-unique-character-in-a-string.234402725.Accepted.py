@@ -29,12 +29,11 @@ class Solution:
         for i in res:
             ret = min(ret, s.index(i))
         return ret
-
     # 3
     # 使用find和rfind，利用双向链表的特性查找
     # 字符限制在有效的以内
-    def firstUniqChar(self, s):
 
+    def firstUniqChar(self, s):
         if not s:
             return -1
         L = len(s)

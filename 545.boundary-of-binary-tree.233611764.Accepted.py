@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/boundary-of-binary-tree/
 # Given a binary tree, return the values of its boundary in anti-clockwise direction starting from root. Boundary
 # includes left boundary, leaves, and right boundary in order without duplicate nodes.
@@ -10,7 +9,6 @@ _project_ = 'leetcode'
 # The left-most node is defined as a leaf node you could reach when you always firstly travel to the left subtree
 # if exists. If not, travel to the right subtree. Repeat until you reach a leaf node.
 # The right-most node is also defined by the same way with left and right exchanged.
-
 # Find left edge until leaf. Inorder traversal to append all leaves. Find right edge and reverse.
 # Time - O(n)
 # Space - O(n)
@@ -22,7 +20,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-
         def left_side(node):
             if not node or (not node.left and not node.right):
                 return
@@ -48,16 +45,12 @@ class Solution(object):
             if not node.left and not node.right:
                 boundary.append(node.val)
             inorder(node.right)
-
         if not root:
             return []
-
         boundary, right_edge = [root.val], []
-
         # ignore root
         left_side(root.left)
         inorder(root.left)
         inorder(root.right)
         right_side(root.right)
-
         return boundary + right_edge[::-1]

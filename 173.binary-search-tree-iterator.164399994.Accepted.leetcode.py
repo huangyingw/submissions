@@ -1,7 +1,6 @@
 class BSTIterator(object):
     def __init__(self, root):
         self.stack = []
-
         while root:
             self.stack.append(root)
             root = root.left
@@ -13,7 +12,6 @@ class BSTIterator(object):
         root = self.stack.pop()
         result = root.val
         root = root.right
-
         while root:
             self.stack.append(root)
             root = root.left

@@ -1,5 +1,4 @@
 class Solution(object):
-
     def canBreak(self, s, wordDict):
         can_make = [False] * (len(s) + 1)
         can_make[0] = True
@@ -17,12 +16,10 @@ class Solution(object):
         return [" ".join(result) for result in result_lists]
 
     def break_word(self, s, left, wordDict, memo):
-
         if left >= len(s):
             return [[]]
         if left in memo:
             return memo[left]
-
         results = []
         for i in range(left + 1, len(s) + 1):
             prefix = s[left:i]
@@ -30,5 +27,4 @@ class Solution(object):
             if suffix_breaks and prefix in wordDict:
                 for suffix_break in suffix_breaks:
                     results.append([prefix] + suffix_break)
-
         return results

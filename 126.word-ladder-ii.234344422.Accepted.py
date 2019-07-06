@@ -10,7 +10,6 @@ class Solution:
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
-
         def backtrack(path, word, result):
             path.append(word)
             if word == endWord:
@@ -19,7 +18,6 @@ class Solution:
                 for next_word in graph[word]:
                     backtrack(path, next_word, result)
             path.pop()
-
         wordList = set(wordList)
         if endWord not in wordList:
             return []
@@ -47,8 +45,6 @@ class Solution:
         result = []
         backtrack([], beginWord, result)
         return result
-
-
 # class Solution:
 #     def findLadders(self, beginWord, endWord, wordList):
 #         """

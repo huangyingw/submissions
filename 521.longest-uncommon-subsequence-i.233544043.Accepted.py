@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/longest-uncommon-subsequence-i/
 # Given a group of two strings, you need to find the longest uncommon subsequence of this group of two strings.
 # The longest uncommon subsequence is defined as the longest subsequence of one of these strings and this subsequence
@@ -10,7 +9,6 @@ _project_ = 'leetcode'
 # subsequence of any string.
 # The input will be two strings, and the output needs to be the length of the longest uncommon subsequence.
 # If the longest uncommon subsequence doesn't exist, return -1.
-
 # If the strings are identical then there is no uncommon subsequence. Else the longer string cannot be a subsequence of
 # the shorter. If strings are same length but not identical they are uncommon subsequences of each other.
 # Time - O(m + n)

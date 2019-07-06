@@ -20,5 +20,4 @@ class Solution:
                 prev.next = head
             prev = prev.next
             head = head.next
-
         return dummy.next

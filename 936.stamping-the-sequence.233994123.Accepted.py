@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/stamping-the-sequence/
 # You want to form a target string of lowercase letters.
 # At the beginning, your sequence is target.length '?' marks.  You also have a stamp of lowercase letters.
@@ -15,7 +14,6 @@ _project_ = 'leetcode'
 # corresponding to the moves "?????" -> "abc??" -> "ababc".
 # Also, if the sequence is possible to stamp, it is guaranteed it is possible to stamp within 10 * target.length moves.
 # Any answers specifying more than this number of moves will not be accepted.
-
 # From given indices i of target and j of stamp, recursively attempt to build a solution.
 # Base cases are too many stamps and having the reached end of the target.
 # If at the end of the stamp, we can have put an earlier stamp which now shows only its suffix (may be the whole stamp).
@@ -35,16 +33,12 @@ class Solution:
         memo = {}
 
         def helper(i, j, results):          # stamp from target[i] and stamp[j] given list of partial results
-
             if (i, j) in memo:
                 return memo[(i, j)]
-
             if len(results) > 10 * len(target):  # too many stamps
                 return []
-
             if i == len(target):            # end of target, check if end of stamp
                 return results if j == len(stamp) else []
-
             if j == len(stamp):             # end of stamp
                 for k in range(len(stamp)):
                     temp = helper(i, k, [i - k] + results)  # stamp before existing result so only suffix shows
@@ -53,18 +47,14 @@ class Solution:
                         break
                 else:
                     result = []
-
             elif target[i] != stamp[j]:     # cannot continue current stamp
                 result = []
-
             else:
                 temp = helper(i + 1, j + 1, results)    # continue current stamp
                 if temp:
                     result = temp
                 else:                       # start a new stamp
                     result = helper(i + 1, 0, results + [i + 1])
-
             memo[(i, j)] = result
             return result
-
         return helper(0, 0, [0])

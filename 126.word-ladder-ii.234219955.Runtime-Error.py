@@ -50,7 +50,6 @@ class Solution(object):
     #     is_found = bfs_level(set([beginWord]), set([endWord]), tree, True, wordlist)
     #     construct_paths(beginWord, endWord, tree, path, paths)
     #     return paths
-
     def findLadders(self, beginWord, endWord, wordlist):
         # do not use single dfs or bfs, because both of them
         # try to get result in single direction, which check lots
@@ -87,7 +86,6 @@ class Solution(object):
                         next_level.add(neigh)
                         hash_map[key] = hash_map.get(key, []) + [value]
                         wordlist.discard(neigh)
-
         if not is_connected:
             self.bfs(next_level, backward, wordlist, reverse, hash_map)
 
@@ -101,7 +99,5 @@ class Solution(object):
                 self.dfs(res, path + [word], word, end, hash_map)
         except KeyError:
             pass
-
-
 if __name__ == "__main__":
     s = Solution()

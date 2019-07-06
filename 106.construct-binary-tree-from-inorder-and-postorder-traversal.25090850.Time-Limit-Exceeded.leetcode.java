@@ -20,7 +20,6 @@ public class Solution
 
         return helper(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
     }
-
     public TreeNode helper(HashMap inMap, int[] inorder, int il, int ir, int[] postorder, int pl, int pr)
     {
         if (pr < 0)

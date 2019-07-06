@@ -16,7 +16,6 @@ class Solution(object):
                 # gate
                 if rooms[row][col] == 0:
                     q.append((row, col))
-
         while len(q) > 0:
             point = q.pop(0)
             row, col = point[0], point[1]

@@ -2,7 +2,6 @@ class MyQueue
 {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
-
     public void push(int x)
     {
         if (empty())
@@ -31,7 +30,6 @@ class MyQueue
             }
         }
     }
-
     public void pop()
     {
         if (stack1.size() > 0)
@@ -43,7 +41,6 @@ class MyQueue
             stack2.pop();
         }
     }
-
     public int peek()
     {
         if (stack1.size() > 0)
@@ -57,7 +54,6 @@ class MyQueue
 
         return 0;
     }
-
     public boolean empty()
     {
         return stack1.isEmpty() && stack2.isEmpty();

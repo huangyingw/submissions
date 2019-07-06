@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/push-dominoes/
 # There are N dominoes in a line, and we place each domino vertically upright.
 # In the beginning, we simultaneously push some of the dominoes either to the left or to the right.
@@ -12,7 +11,6 @@ _project_ = 'leetcode'
 # Given a string "S" representing the initial state. S[i] = 'L', if the i-th domino has been pushed to the left;
 # S[i] = 'R', if the i-th domino has been pushed to the right; S[i] = '.', if the i-th domino has not been pushed.
 # Return a string representing the final state.
-
 # Iterate over dominos from right to left, for each domino finding the closest "R" that reach this domino. Repeat for
 # closest "L" and iterating left to right. Then each domino that has not fallen falls according to whether an "R" or
 # "L" that can impact it is closer.
@@ -34,7 +32,6 @@ class Solution(object):
                 prev_R = i
             elif c == "L":                  # no "R" can reach this domino
                 prev_R = float("-inf")
-
         prev_L = float("inf")               # current index of previous "L"
         lefts = [0] * len(dominos)          # indices of previous "L" on the right of each domino
         for i in range(len(dominos) - 1, -1, -1):
@@ -43,7 +40,6 @@ class Solution(object):
                 prev_L = i
             elif dominos[i] == "R":         # no "L" can reach this domino
                 prev_L = float("inf")
-
         dominos = [c for c in dominos]
         for i in range(len(dominos)):
             if dominos[i] == ".":           # not fallen already
@@ -52,5 +48,4 @@ class Solution(object):
                     dominos[i] = "L"
                 elif diff > 0:
                     dominos[i] = "R"
-
         return "".join(dominos)

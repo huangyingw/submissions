@@ -1,5 +1,4 @@
 class ZigzagIterator(object):
-
     def __init__(self, v1, v2):
         self.l = []
         i = 0

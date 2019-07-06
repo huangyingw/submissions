@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public int strongPasswordChecker(String s)
     {
         int sLen = s.length();
@@ -112,5 +111,4 @@ public class Solution
 
         return rcount >= update ? rcount + rdcount : update + rdcount;
     }
-
 }

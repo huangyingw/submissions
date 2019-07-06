@@ -6,7 +6,6 @@ public class Solution
         Map<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
         return wordBreakHelper(s, dict, map);
     }
-
     public List<String> wordBreakHelper(String s, List<String> dict, Map<String, ArrayList<String>> memo)
     {
         if (memo.containsKey(s))

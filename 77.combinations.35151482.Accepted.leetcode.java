@@ -16,7 +16,6 @@ public class Solution
             current.remove(current.size() - 1);
         }
     }
-
     public List<List<Integer>> combine(int n, int k)
     {
         List<List<Integer>> result = new ArrayList<List<Integer>>();

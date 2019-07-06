@@ -1,12 +1,10 @@
 public class Twitter
 {
-
     private int postCount;
     private Map<Integer, Integer> tweetCountMap;
     private Map<Integer, List<Integer>> tweetIdMap;
     private Map<Integer, Integer> tweetOwnerMap;
     private Map<Integer, Set<Integer>> followeeMap;
-
     /** Initialize your data structure here. */
     public Twitter()
     {
@@ -15,7 +13,6 @@ public class Twitter
         tweetOwnerMap = new HashMap<Integer, Integer>();
         followeeMap = new HashMap<Integer, Set<Integer>>();
     }
-
     /** Compose a new tweet. */
     public void postTweet(int userId, int tweetId)
     {
@@ -23,7 +20,6 @@ public class Twitter
         tweetOwnerMap.put(tweetId, userId);
         getTweetIdList(userId).add(tweetId);
     }
-
     /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
     public List<Integer> getNewsFeed(int userId)
     {
@@ -68,13 +64,11 @@ public class Twitter
 
         return result;
     }
-
     /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
     public void follow(int followerId, int followeeId)
     {
         getFolloweeSet(followerId).add(followeeId);
     }
-
     /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
     public void unfollow(int followerId, int followeeId)
     {
@@ -83,7 +77,6 @@ public class Twitter
             getFolloweeSet(followerId).remove(followeeId);
         }
     }
-
     /** Get a non-empty followee set of an user. */
     private Set<Integer> getFolloweeSet(int userId)
     {
@@ -98,7 +91,6 @@ public class Twitter
 
         return followeeSet;
     }
-
     /** Get a non-empty tweet id list of an user. */
     private List<Integer> getTweetIdList(int userId)
     {
@@ -112,5 +104,4 @@ public class Twitter
 
         return tweetIdList;
     }
-
 }

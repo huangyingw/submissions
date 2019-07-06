@@ -24,7 +24,6 @@ class Solution:
     # 当n比较小的时候，能够更快结束循环
 
     def canPlaceFlowers(self, flowerbed, n):
-
         flowerbed.insert(0, 0)
         flowerbed.append(0)
         count = 0

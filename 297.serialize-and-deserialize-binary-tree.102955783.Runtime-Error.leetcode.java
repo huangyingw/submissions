@@ -6,7 +6,6 @@ public class Codec
         buildString(root, sb);
         return sb.toString();
     }
-
     private void buildString(TreeNode node, StringBuilder sb)
     {
         if (node == null)
@@ -20,13 +19,11 @@ public class Codec
             buildString(node.right, sb);
         }
     }
-
     public TreeNode deserialize(String data)
     {
         Deque<String> nodes = new LinkedList<>();
         return buildTree(nodes);
     }
-
     private TreeNode buildTree(Deque<String> nodes)
     {
         String val = nodes.remove();

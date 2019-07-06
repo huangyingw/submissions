@@ -3,7 +3,6 @@ class Solution(object):
         s = s.lower()
         start = 0
         end = len(s) - 1
-
         while start < end:
             if not s[start].isalnum():
                 start += 1

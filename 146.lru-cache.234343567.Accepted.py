@@ -57,8 +57,6 @@ class LRUCache(object):
         node.prev = prev
         node.next = self.tail
         self.tail.prev = node
-
-
 # from collections import OrderedDict
 #
 # class LRUCache:

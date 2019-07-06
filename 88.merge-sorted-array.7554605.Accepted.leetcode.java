@@ -15,5 +15,4 @@ public class Solution
             A[j] = B[j--];
         }
     }
-
 }

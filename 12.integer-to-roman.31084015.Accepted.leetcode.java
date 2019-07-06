@@ -1,10 +1,8 @@
 public class Solution
 {
-
     private final char[] symbols = new char[] { 'M', 'D', 'C', 'L', 'X',
             'V', 'I'
                                               };
-
     private String repeat(char c, int times)
     {
         String re = "";
@@ -16,7 +14,6 @@ public class Solution
 
         return re;
     }
-
     public String intToRoman(int num)
     {
         String roman = "";

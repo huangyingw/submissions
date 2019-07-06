@@ -9,7 +9,6 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         prevM = dummy
-
         for index in range(1, n + 1):
             if index < m:
                 prevM = prevM.next
@@ -20,7 +19,6 @@ class Solution(object):
                 temp = head.next
                 head.next = pre
                 pre = head
-
         prevM.next.next = temp
         prevM.next = pre
         return dummy.next

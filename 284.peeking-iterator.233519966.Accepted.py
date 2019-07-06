@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/peeking-iterator/
 # Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that
 # supports the peek() operation -- i.e. returns the element that will be returned by the next call to next().
-
 # Store the next iterator result and return it when peeking.
 # Time - O(1)
 # Space - O(1)

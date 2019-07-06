@@ -32,7 +32,6 @@ class Solution(object):
     #             count = 1
     #             prev = i
     #     return ret + str(count) + str(prev)
-
     # solution with tricks
     def countAndSay(self, n):
         """

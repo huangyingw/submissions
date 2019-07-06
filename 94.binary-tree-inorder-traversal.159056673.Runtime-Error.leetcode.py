@@ -2,7 +2,6 @@ class Solution(object):
     def inorderTraversal(self, root):
         result = []
         stack = [root]
-
         while stack:
             if root.left:
                 stack.append(root)

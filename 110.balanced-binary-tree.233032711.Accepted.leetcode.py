@@ -32,7 +32,6 @@ class Solution(object):
             return -1
         else:
             return max(ld, rd) + 1
-
     # https://discuss.leetcode.com/topic/7798/the-bottom-up-o-n-solution-would-be-better
     # def isBalanced(self, root):
     #     # Top-down recursion
@@ -41,7 +40,6 @@ class Solution(object):
     #     left = self.depth(root.left)
     #     right = self.depth(root.right)
     #     return abs(left - right) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right)
-
     # def depth(self, root):
     #     if root is None:
     #         return 0

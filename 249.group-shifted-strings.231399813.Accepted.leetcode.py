@@ -7,7 +7,6 @@ class Solution(object):
 
     def groupStrings(self, strings):
         r = collections.defaultdict(list)
-
         for s in strings:
             r[self.genKey(s)].append(s)
         return [sorted(l) for l in r.values()]

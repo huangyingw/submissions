@@ -20,7 +20,6 @@ class Solution:
         :rtype: List[List[int]]
         """
         i, j, n, res = 0, 0, len(S), []
-
         while j < n:
             while j < n and S[i] == S[j]:
                 j += 1

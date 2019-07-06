@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/jump-game/description/
-
-
 # 1 动态规划 由上至下
 # Time OUT
+
+
 class Solution:
     def canJump(self, nums):
         """
@@ -23,10 +23,10 @@ class Solution:
             memo[position] = -1
             return False
         return canJumpFromPosition(0, nums)
-
-
 # 2 动态规划 自底向上
 # Time Limit Exceeded
+
+
 class Solution2:
     def canJump(self, nums):
         memo = [0] * len(nums)
@@ -38,9 +38,9 @@ class Solution2:
                     memo[i] = 1
                     break
         return memo[0] == 1
-
-
 # 3 贪心算法
+
+
 class Solution3:
     def canJump(self, nums):
         lastPos = len(nums) - 1
@@ -48,7 +48,5 @@ class Solution3:
             if i + nums[i] >= lastPos:
                 lastPos = i
         return lastPos == 0
-
-
 if __name__ == '__main__':
     t = Solution3()

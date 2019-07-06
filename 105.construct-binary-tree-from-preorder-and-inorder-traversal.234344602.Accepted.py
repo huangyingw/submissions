@@ -4,7 +4,6 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-
 # time: O(nlogn)
 # space: O(n)
 
@@ -28,5 +27,4 @@ class Solution:
             root.left = helper(start, idx - 1)
             root.right = helper(idx + 1, end)
             return root
-
         return helper(0, len(inorder) - 1)

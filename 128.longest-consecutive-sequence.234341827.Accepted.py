@@ -11,7 +11,6 @@ class Solution:
             return 0
         nums = set(nums)
         roots = {num: num for num in nums}
-
         for num in nums:
             root = self.findRoot(num, roots)
             if num + 1 in nums:

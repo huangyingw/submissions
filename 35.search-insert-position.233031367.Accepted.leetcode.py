@@ -21,7 +21,6 @@ class Solution:
     #         # is not in nums
     #         return pos + 1
     #     return pos
-
     def searchInsert(self, nums, target):
         l, r = 0, len(nums) - 1
         while l < r:

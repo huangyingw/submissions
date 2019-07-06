@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public String rearrangeString(String str, int k)
     {
         StringBuilder rearranged = new StringBuilder();
@@ -54,5 +53,4 @@ public class Solution
         //easy to miss
         return rearranged.length() == str.length() ? rearranged.toString() : "";
     }
-
 }

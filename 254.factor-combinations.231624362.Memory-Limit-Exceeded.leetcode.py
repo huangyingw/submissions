@@ -8,7 +8,6 @@ class Solution(object):
         if n == 1:
             if len(item) > 1:
                 ret.append(list(item))
-
         for i in range(start, n + 1):
             if n % i == 0:
                 item.append(i)

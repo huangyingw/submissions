@@ -30,5 +30,4 @@ class Solution:
                     left = x
                 else:
                     return False
-
         return True

@@ -17,7 +17,6 @@ class Solution:
         if root.left and not root.left.left and not root.left.right:
             return root.left.val + self.sumOfLeftLeaves(root.right)
         return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
-
         # iterative
         # result = 0
         # if not root: return result

@@ -14,7 +14,6 @@ class Solution(object):
     #     for num in nums:
     #         if dic[num] == 1:
     #             return num
-
     # def singleNumber(self, nums):
     #     # set
     #     s = set()
@@ -24,7 +23,6 @@ class Solution(object):
     #         else:
     #             s.add(num)
     #     return s.pop()
-
     def singleNumber(self, nums):
         # xor
         res = 0

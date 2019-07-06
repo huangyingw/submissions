@@ -4,7 +4,6 @@ class Solution(object):
             return 0
         queue = [root]
         depth, rightMost = 1, root
-
         while queue:
             node = queue.pop(0)
             if node.left is None and node.right is None:

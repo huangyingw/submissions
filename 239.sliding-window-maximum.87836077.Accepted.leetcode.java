@@ -19,7 +19,7 @@ public class Solution
             }
 
             deq.addLast(i);
-            
+
             while (deq.getLast() - deq.getFirst() + 1 > k)
             {
                 deq.removeFirst();

@@ -7,11 +7,9 @@ class Solution:
         for row in board:
             if not self.isValidUnit(row):
                 return False
-
         for col in zip(*board):
             if not self.isValidUnit(col):
                 return False
-
         for i in [0, 3, 6]:
             for j in [0, 3, 6]:
                 square = [board[x][y] for x in range(i, i + 3) for y in range(j, j + 3)]

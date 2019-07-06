@@ -31,7 +31,6 @@ class Solution(object):
     #     else:
     #         median = 1.0 * (all_nums[(ls1 + ls2) / 2] + all_nums[(ls1 + ls2) / 2 - 1]) / 2
     #     return median
-
     def findMedianSortedArrays(self, nums1, nums2):
         # https://discuss.leetcode.com/topic/4996/share-my-o-log-min-m-n-solution-with-explanation
         # https://discuss.leetcode.com/topic/16797/very-concise-o-log-min-m-n-iterative-solution-with-detailed-explanation
@@ -52,8 +51,6 @@ class Solution(object):
                 r = mid2 - 1
             else:
                 return (max(L1, L2) + min(R1, R2)) / 2.0
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

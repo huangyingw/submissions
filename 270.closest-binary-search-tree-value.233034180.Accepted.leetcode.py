@@ -15,7 +15,6 @@ class Solution(object):
     #     """
     #     # brute force, Search all
     #     return self.closestValue_helper(root, target, 21474483647)
-
     # def closestValue_helper(self, root, target, curr_min):
     #     if root is None:
     #         return curr_min
@@ -27,7 +26,6 @@ class Solution(object):
     #         return left_min
     #     else:
     #         return right_min
-
     # def closestValue(self, root, target):
     #     # Iteratively compare root result with current kid's result (left or right)
     #     path = []
@@ -35,7 +33,6 @@ class Solution(object):
     #         path += root.val,
     #         root = root.left if target < root.val else root.right
     #     return min(path, key=lambda x: abs(target - x))
-
     def closestValue(self, root, target):
         # compare kids' result with root
         kid = root.left if target < root.val else root.right

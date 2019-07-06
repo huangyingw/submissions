@@ -6,7 +6,6 @@ class Solution(object):
     #     :rtype: int
     #     """
     #     return sorted(nums, reverse=True)[k - 1]
-
     # def findKthLargest(self, nums, k):
     #     # build min heap
     #     heapq.heapify(nums)
@@ -15,7 +14,6 @@ class Solution(object):
     #         heapq.heappop(nums)
     #     return nums[0]
     #     #return heapq.nlargest(k, nums)[-1]
-
     def findKthLargest(self, nums, k):
         # shuffle nums to avoid n*n
         random.shuffle(nums)

@@ -17,7 +17,6 @@ class Solution
             return kthSmallest(root.left, k);
         }
     }
-
     int findNodesSum(TreeNode root)
     {
         if (root == null)

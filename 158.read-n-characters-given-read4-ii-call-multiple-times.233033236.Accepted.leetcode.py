@@ -5,7 +5,6 @@
 
 
 class Solution(object):
-
     def __init__(self):
         self.buff = [''] * 4
         self.offset = 0

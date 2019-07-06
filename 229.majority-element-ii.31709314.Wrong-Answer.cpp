@@ -12,13 +12,11 @@ public:
         else
             return false;
     }
-
     vector<int> majorityElement(vector<int>& nums) {
         int n = nums.size();
         vector<int> result;
         if(n == 0)
             return result;
-
         int count1 = 0, count2 = 0;
         int num1, num2;
         for(int i = 0; i < n; ++i) {
@@ -37,7 +35,6 @@ public:
         }
         if(isMoreThanThird(num1, nums))
             result.push_back(num1);
-
         if(isMoreThanThird(num2, nums) && num1 != num2) 
             result.push_back(num2);
         return result;

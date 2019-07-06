@@ -26,7 +26,6 @@ class Solution(object):
     #     self.result.append(node.val)
     #     self.preorderTraversalHelper(node.left)
     #     self.preorderTraversalHelper(node.right)
-
     def preorderTraversal(self, root):
         # stack
         if root is None:

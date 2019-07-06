@@ -36,7 +36,6 @@ class Solution(object):
     #             prev.next = current
     #         prev = current
     #     return head
-
     def addTwoNumbers(self, l1, l2):
         carry = 0
         # dummy head

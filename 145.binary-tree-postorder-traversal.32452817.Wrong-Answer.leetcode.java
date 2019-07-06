@@ -6,7 +6,6 @@ public class Solution
         postorderTraversal(root, postOrder);
         return postOrder;
     }
-
     private void postorderTraversal(TreeNode root, ArrayList<Integer> postOrder)
     {
         if (root == null)

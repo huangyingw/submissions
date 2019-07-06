@@ -9,14 +9,11 @@ class Solution(object):
     def isUnivalSubtrees(self, root):
         if not root:
             return None
-
         left = self.countUnivalSubtrees(root.left)
         right = self.countUnivalSubtrees(root.right)
-
         if not left and not right:
             self.count += 1
             return root
-
         if left == right:
             self.count += 1
             return root

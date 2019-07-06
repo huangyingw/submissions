@@ -2,7 +2,6 @@ public class NumMatrix
 {
     private int[][] matrix;
     private int[][] sum;
-
     public NumMatrix(int[][] matrix)
     {
         this.matrix = matrix;
@@ -25,7 +24,6 @@ public class NumMatrix
             }
         }
     }
-
     public int sumRegion(int row1, int col1, int row2, int col2)
     {
         return sum[row2][col2] - sum[row2][col1 - 1] -

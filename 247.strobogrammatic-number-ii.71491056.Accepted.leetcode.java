@@ -2,7 +2,6 @@ public class Solution
 {
     private List<String> result = new ArrayList<String>();
     private Map<Character, Character> hashMap = new HashMap<>();
-
     public List<String> findStrobogrammatic(int n)
     {
         result.clear();
@@ -12,7 +11,6 @@ public class Solution
         findStrobogrammaticHelper(arr, 0, n - 1);
         return result;
     }
-
     private void findStrobogrammaticHelper(char[] arr, int lo, int hi)
     {
         if (lo > hi)
@@ -36,7 +34,6 @@ public class Solution
             }
         }
     }
-
     private void fillHashMap(Map<Character, Character> hashMap)
     {
         hashMap.put('0', '0');

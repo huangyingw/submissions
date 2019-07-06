@@ -7,7 +7,6 @@ class Solution(object):
         def dfs(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None
-
             root = TreeNode(preorder[preLeft])
             idx = map[preorder[preLeft]]
             root.left = dfs(preLeft + 1, preLeft +
@@ -15,5 +14,4 @@ class Solution(object):
             root.right = dfs(preRight - inRight + idx +
                              1, preRight, idx + 1, inRight)
             return root
-
         return dfs()

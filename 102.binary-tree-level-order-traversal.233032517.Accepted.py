@@ -26,7 +26,6 @@ class Solution(object):
     #     res[depth].append(root.val)
     #     self.get_level(res, root.left, depth + 1)
     #     self.get_level(res, root.right, depth + 1)
-
     def levelOrder(self, root):
         # https://leetcode.com/discuss/90680/9-lines-python-code
         if root is None:

@@ -16,7 +16,6 @@ public class Solution
         preorderTraversal(root, preorder);
         return preorder;
     }
-
     public void preorderTraversal(TreeNode root, List preorder)
     {
         if (root == null)

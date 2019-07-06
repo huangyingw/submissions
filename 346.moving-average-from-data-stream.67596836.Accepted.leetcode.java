@@ -3,7 +3,6 @@ public class MovingAverage
     Queue<Integer> queue;
     int n;
     int sum;
-
     /** Initialize your data structure here. */
     public MovingAverage(int size)
     {
@@ -11,7 +10,6 @@ public class MovingAverage
         n = size;
         sum = 0;
     }
-
     public double next(int val)
     {
         queue.offer(val);
@@ -32,7 +30,6 @@ public class MovingAverage
         return result;
     }
 }
-
 /**
  * Your MovingAverage object will be instantiated and called as such:
  * MovingAverage obj = new MovingAverage(size);

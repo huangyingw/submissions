@@ -24,7 +24,7 @@ public class Solution
             {
                 deq.removeFirst();
             }
-            
+
             if (i >= k - 1)
             {
                 result[i - (k - 1)] = nums[deq.getFirst()];

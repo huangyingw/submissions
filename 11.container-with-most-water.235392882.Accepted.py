@@ -3,7 +3,6 @@ class Solution:
     def maxArea(self, height):
         max_container = 0
         pos_left, pos_right = 0, len(height) - 1
-
         while(pos_left < pos_right):
             if(height[pos_left] > height[pos_right]):
                 max_container = max(max_container, (pos_right - pos_left) * height[pos_right])
@@ -12,7 +11,6 @@ class Solution:
                 max_container = max(max_container, (pos_right - pos_left) * height[pos_left])
                 pos_left += 1
         return max_container
-
     '''
     # O(n^2)
     def maxArea(self, height):
@@ -20,7 +18,6 @@ class Solution:
     length = len(height)
     current_left_height = 0
     current_right_height = 0
-
     for pos_left in range(0,length-1):
         if (current_left_height < height[pos_left]):
             current_left_height = height[pos_left]

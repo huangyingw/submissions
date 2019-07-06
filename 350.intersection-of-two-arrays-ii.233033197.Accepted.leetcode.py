@@ -1,9 +1,7 @@
 '''
 	Given two arrays, write a function to compute their intersection.
-
 	Example:
 	Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
-
 	Note:
 	Each element in the result should appear as many times as it shows in both arrays.
 	The result can be in any order.
@@ -21,10 +19,8 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-
         nums1.sort()
         nums2.sort()
-
         index_i, index_j = 0, 0
         result = []
         while index_i < len(nums1) and index_j < len(nums2):

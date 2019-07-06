@@ -20,7 +20,6 @@ class Solution(object):
     def buildTreeUtil(self, inorder, postorder, inOrderMap, pStart, pEnd, iStart, iEnd):
         if pStart > pEnd or iStart > iEnd:
             return None
-
         root = TreeNode(postorder[pEnd])
         rootIdx = inOrderMap[root.val]
         root.left = self.buildTreeUtil(inorder, postorder, inOrderMap, pStart, pStart + rootIdx - iStart - 1, iStart,

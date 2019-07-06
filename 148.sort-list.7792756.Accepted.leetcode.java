@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private ListNode merge(ListNode h1, ListNode h2)
     {
         ListNode dummy = new ListNode(-1);
@@ -24,7 +23,6 @@ public class Solution
 
         return dummy.next;
     }
-
     public ListNode sortList(ListNode head)
     {
         if (head == null || head.next == null)

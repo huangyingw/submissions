@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/tag-validator/
 # Given a string representing a code snippet, you need to implement a tag validator to parse the code and return
 # whether it is valid. A code snippet is valid if all the following rules hold:
-
 # 1) The code must be wrapped in a valid closed tag. Otherwise, the code is invalid.
 # 2) A closed tag (not necessarily valid) has exactly the following format : <TAG_NAME>TAG_CONTENT</TAG_NAME>.
 # Among them, <TAG_NAME> is the start tag, and </TAG_NAME> is the end tag. The TAG_NAME in start and end tags should
@@ -23,7 +21,6 @@ _project_ = 'leetcode'
 # 8) CDATA_CONTENT may contain any characters. The function of cdata is to forbid the validator to parse CDATA_CONTENT,
 # so even it has some characters that can be parsed as tag (no matter valid or invalid), you should treat it as
 # regular characters.
-
 # Iterate over input. status variable tracks whether we are in an opening or closing tag, or in cdata or in text.
 # Stack stores open tags.
 # Time - O(n)
@@ -40,10 +37,8 @@ class Solution(object):
         tag_stack = []
         upper = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")   # chars allowed in tags
         i = 0
-
         while i < len(code):
             c = code[i]
-
             if status == "text":
                 if c == "<":
                     if i + 1 < len(code) and code[i + 1] == "/":
@@ -61,7 +56,6 @@ class Solution(object):
                     return False
                 else:
                     i += 1
-
             elif status in ["opening", "closing"]:
                 if code[i] == ">":
                     tag = code[tag_start:i]
@@ -78,12 +72,10 @@ class Solution(object):
                 elif c not in upper:
                     return False
                 i += 1
-
             elif status == "cdata":
                 if i + 2 < len(code) and code[i:i + 3] == "]]>":
                     i += 3
                     status = "text"
                 else:
                     i += 1
-
         return status == "text" and not tag_stack

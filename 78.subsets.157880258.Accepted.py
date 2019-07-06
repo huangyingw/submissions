@@ -6,7 +6,6 @@ class Solution(object):
                 current.append(nums[index])
                 helper(index + 1)
                 current.pop()
-
         result = []
         current = []
         helper(0)

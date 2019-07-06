@@ -3,7 +3,6 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 # class Solution(object):
 #     def removeNthFromEnd(self, head, n):
 #         """
@@ -31,7 +30,6 @@ class Solution(object):
     #         index_pos = ls - n - 1
     #         index[index_pos].next = index[index_pos + 1].next
     #         return head
-
     def removeNthFromEnd(self, head, n):
         # https://leetcode.com/discuss/86721/o-n-solution-in-java
         if head is None:

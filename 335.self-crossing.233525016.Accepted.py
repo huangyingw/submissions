@@ -1,11 +1,9 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/self-crossing/
 # You are given an array x of n positive numbers. You start at point (0,0) and moves x[0] metres to the north,
 # then x[1] metres to the west, x[2] metres to the south, x[3] metres to the east and so on.
 # In other words, after each move your direction changes counter-clockwise.
-
 # There are 3 scenarios for a crossing (described from the perspective of the first move m0 being vertically up),
 # 1) After 4 moves. Down move m2 <= up move m0 and left move m3 >= right move m1.
 # 2) After 5 moves. Left move m1 == right move m3 and final up move m4 >= distance to start m2 - m0.
@@ -37,5 +35,4 @@ class Solution(object):
                 # final vertical move >= vertical distance to start but also <= down move
                 if x[i] >= x[i - 2] - x[i - 4] and x[i - 2] > x[i - 4] and x[i - 3] - x[i - 5] <= x[i - 1] <= x[i - 3]:
                     return True
-
         return False

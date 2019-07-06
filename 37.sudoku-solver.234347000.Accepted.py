@@ -34,7 +34,6 @@ class Solution:
         for i in bb[col]:
             if i == val:
                 return False
-
         r, c = row - row % 3, col - col % 3
         for i in range(r, r + 3):
             for j in range(c, c + 3):

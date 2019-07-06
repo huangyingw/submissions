@@ -1,9 +1,7 @@
 # https://leetcode.com/problems/permutations-ii/
 """
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-
 Example:
-
 Input: [1,1,2]
 Output:
 [
@@ -17,11 +15,9 @@ Output:
 class Solution1:
     def permuteUnique(nums):
         permutations = [[]]
-
         for head in nums:
             permutations = [rest[:i] + [head] + rest[i:] for rest in permutations for i in
                             range((rest + [head]).index(head) + 1)]
-
         return permutations
 
 

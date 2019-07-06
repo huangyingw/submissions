@@ -5,16 +5,13 @@ class Solution(object):
     def alienOrder(self, words):
         if not words:
             return ""
-
         if len(words) == 1:
             return "".join([s for s in Set(words[0])])
-
         # len(words) >=2
         adj_dict = self.build_graph(words)
         visit_dict = dict([(k, 0) for k in adj_dict.keys()])
         res = []
         self.valid = True
-
         for c in adj_dict.keys():
             self.topo_sort(c, visit_dict, adj_dict, res)
         return "".join([s for s in res]) if self.valid else ""
@@ -28,7 +25,6 @@ class Solution(object):
 
         def add_link(src, des):
             adj_dict[src][des] = None
-
         for i in xrange(len(words) - 1):
             w1 = words[i]
             w2 = words[i + 1]
@@ -46,7 +42,6 @@ class Solution(object):
                 add_node(w1[j])
             for j in xrange(start2, len(w2)):
                 add_node(w2[j])
-
         return adj_dict
 
     def topo_sort(self, c, visit_dict, adj_dict, res):
@@ -58,6 +53,5 @@ class Solution(object):
                     return
                 if not visit_dict[adj_c] and self.valid:
                     self.topo_sort(adj_c, visit_dict, adj_dict, res)
-
             visit_dict[c] = 2
             res.append(c)

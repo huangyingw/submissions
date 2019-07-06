@@ -41,7 +41,6 @@ class Solution(object):
     #     if plus == 1:
     #         res = '1' + res
     #     return res
-
     def addBinary(self, a, b):
         res = ''
         lsa, lsb = len(a), len(b)

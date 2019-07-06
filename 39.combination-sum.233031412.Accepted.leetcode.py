@@ -24,7 +24,6 @@ class Solution(object):
     #             else:
     #                 pass
     #     return res
-
     def combinationSum(self, candidates, target):
         candidates.sort()
         dp = [[] for _ in range(target + 1)]
@@ -40,7 +39,5 @@ class Solution(object):
                     temp.append(candidates[j])
                     dp[i].append(temp)
         return dp[target]
-
-
 if __name__ == '__main__':
     s = Solution()

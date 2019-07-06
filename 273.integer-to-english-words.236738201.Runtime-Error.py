@@ -2,7 +2,6 @@ class Solution(object):
     def numberToWords(self, num):
         result = self.convertHundred(num % 1000)
         v = ["Thousand", "Million", "Billion"]
-
         result = result.trim()
         return "Zero" if result.isEmpty() else result
 
@@ -17,8 +16,6 @@ class Solution(object):
         result = ''
         a, b, c = num / 100, num % 100, num % 10
         result = v1[b] if b < 20 else v2[b / 10] + (" " + v1[c] if c > 0 else "")
-
         if a > 0:
             result = v1[a] + " Hundred" + (" " + result if b > 0 else "")
-
         return result

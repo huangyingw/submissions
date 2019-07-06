@@ -10,18 +10,18 @@ public class Solution
         }
 
         int result = 0;
-        
+
         for (int num : nums)
         {
             int left = num - 1;
-            
+
             while (used.contains(left))
             {
                 used.remove(left--);
             }
-            
+
             int right = num + 1;
-            
+
             while (used.contains(right))
             {
                 used.remove(right++);

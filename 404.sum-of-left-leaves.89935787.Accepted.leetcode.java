@@ -13,7 +13,6 @@ public class Solution
     {
         return sumOfLeftLeaves(root, false);
     }
-
     public int sumOfLeftLeaves(TreeNode root, boolean isLeft)
     {
         if (root == null)

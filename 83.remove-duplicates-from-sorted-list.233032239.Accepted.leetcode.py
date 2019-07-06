@@ -25,7 +25,6 @@ class Solution(object):
     #             last = pos
     #         pos = pos.next
     #     return head.next
-
     def deleteDuplicates(self, head):
         if head is None:
             return None

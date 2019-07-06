@@ -17,7 +17,6 @@ class Solution(object):
     #             pos += 1
     #             last = t
     #     return pos
-
     # https://leetcode.com/articles/remove-duplicates-sorted-array/
     def removeDuplicates(self, nums):
         if len(nums) == 0:

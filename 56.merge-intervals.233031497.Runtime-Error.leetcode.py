@@ -29,7 +29,6 @@ class Solution(object):
             else:
                 pos += 1
         return intervals
-
 if __name__ == '__main__':
     # begin
     s = Solution()

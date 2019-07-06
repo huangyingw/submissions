@@ -14,7 +14,6 @@ class Solution(object):
     #             break
     #         res = min(res, self.smallestSubArray(nums, key, degree))
     #     return res
-
     # def smallestSubArray(self, nums, key, degree):
     #     start = nums.index(key)
     #     pos = start + 1
@@ -24,7 +23,6 @@ class Solution(object):
     #             degree -= 1
     #         pos += 1
     #     return pos - start
-
     def findShortestSubArray(self, nums):
         left, right, count = {}, {}, {}
         for i, x in enumerate(nums):
@@ -32,11 +30,9 @@ class Solution(object):
                 left[x] = i
             right[x] = i
             count[x] = count.get(x, 0) + 1
-
         ans = len(nums)
         degree = max(count.values())
         for x in count:
             if count[x] == degree:
                 ans = min(ans, right[x] - left[x] + 1)
-
         return ans

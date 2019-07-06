@@ -4,19 +4,16 @@ public class Solution
     {
         int x;
         int y;
-
         Pos(int x, int y)
         {
             this.x = x;
             this.y = y;
         }
     }
-
     private boolean isOutOfBound(int x, int y, int rows, int columns)
     {
         return x < 0 || y < 0 || x >= rows || y >= columns;
     }
-
     public void solve(char[][] board)
     {
         if (board.length == 0 || board[0].length == 0)

@@ -9,9 +9,7 @@ class Solution(object):
                 d[i] = 1
             else:
                 d[i] += 1
-
         already, candidate, single = False, "", ""
-
         for i in d:
             num = d[i] / 2
             for j in range(num):
@@ -22,16 +20,13 @@ class Solution(object):
                 else:
                     already = True
                     single += i
-
         if len(candidate) == 0 and len(single) != 0:
             self.results.append(single)
             return self.results
-
         for i in range(len(candidate)):
             if i > 0 and candidate[i] == candidate[i - 1]:
                 continue
             self.recursion(candidate[i], candidate[:i] + candidate[i + 1:], len(candidate), single)
-
         return self.results
 
     def recursion(self, left, candidate, l, single):

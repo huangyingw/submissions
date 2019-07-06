@@ -1,9 +1,7 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/rotate-array/
 # Rotate an array of n elements to the right by k steps.
-
 # Reverse entire array, then reverse left k elements and right n-k elements.
 # Alternatively, split after n-k elements and swap slices.
 # Time - O(n)

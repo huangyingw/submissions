@@ -11,7 +11,6 @@ public class Solution
         preorderTraversal(root.left, preorder);
         preorderTraversal(root.right, preorder);
     }
-
     public ArrayList<Integer> preorderTraversal(TreeNode root)
     {
         ArrayList<Integer> preorder = new ArrayList<Integer>();

@@ -2,7 +2,6 @@ class MyStack
 {
     Queue<Integer> queue1 = new LinkedList<Integer>();
     Queue<Integer> queue2 = new LinkedList<Integer>();
-
     public void push(int x)
     {
         if (empty())
@@ -31,7 +30,6 @@ class MyStack
             }
         }
     }
-
     public void pop()
     {
         if (queue1.size() > 0)
@@ -43,7 +41,6 @@ class MyStack
             queue2.poll();
         }
     }
-
     public int top()
     {
         if (queue1.size() > 0)
@@ -57,7 +54,6 @@ class MyStack
 
         return 0;
     }
-
     public boolean empty()
     {
         return queue1.isEmpty() & queue2.isEmpty();

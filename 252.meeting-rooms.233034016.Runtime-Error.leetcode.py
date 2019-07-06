@@ -28,7 +28,6 @@ class Solution(object):
     #         else:
     #             count -= 1
     #     return True
-
     def canAttendMeetings(self, intervals):
         intervals.sort(key=lambda x: x.start)
         ls = len(intervals)

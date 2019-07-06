@@ -12,7 +12,7 @@ public class Solution
     public int kthSmallest(TreeNode root, int k)
     {
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        
+
         while (!stack.empty() || root != null)
         {
             if (root != null)
@@ -23,12 +23,12 @@ public class Solution
             else
             {
                 root = stack.pop();
-                
+
                 if (--k == 0)
                 {
                     return root.val;
                 }
-                
+
                 root = root.right;
             }
         }

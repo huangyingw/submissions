@@ -17,5 +17,4 @@ class Solution:
                 nums_duplicate.append(num)
             else:
                 nums_unique.remove(num)
-
         return nums_duplicate

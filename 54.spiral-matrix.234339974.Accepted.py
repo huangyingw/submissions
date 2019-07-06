@@ -12,20 +12,15 @@ class Solution:
             for j in range(colMin, colMax + 1):
                 ret.append(matrix[rowMin][j])
             rowMin += 1
-
             for i in range(rowMin, rowMax + 1):
                 ret.append(matrix[i][colMax])
             colMax -= 1
-
             if rowMin > rowMax or colMax < colMin:
                 break
-
             for j in range(colMax, colMin - 1, -1):
                 ret.append(matrix[rowMax][j])
             rowMax -= 1
-
             for i in range(rowMax, rowMin - 1, -1):
                 ret.append(matrix[i][colMin])
             colMin += 1
-
         return ret

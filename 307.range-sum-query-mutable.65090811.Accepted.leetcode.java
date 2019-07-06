@@ -2,7 +2,6 @@ public class NumArray
 {
     int[] tree;
     int[] nums;
-
     public NumArray(int[] nums)
     {
         this.nums = nums;
@@ -23,7 +22,6 @@ public class NumArray
             tree[i] = sum;
         }
     }
-
     void update(int i, int val)
     {
         int diff = val - nums[i];
@@ -35,12 +33,10 @@ public class NumArray
             tree[i] += diff;
         }
     }
-
     public int sumRange(int i, int j)
     {
         return getSum(j) - getSum(i - 1);
     }
-
     public int getSum(int i)
     {
         int sum = 0;

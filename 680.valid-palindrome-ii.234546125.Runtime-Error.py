@@ -32,10 +32,8 @@ class Solution2:
             for i in range(len(s)):
                 if s[i] != a[i]:
                     break
-
             for j in i, len(s) - i - 1:
                 b = s[:j] + s[j + 1:]
                 if b == b[::-1]:
                     return True
-
         return False

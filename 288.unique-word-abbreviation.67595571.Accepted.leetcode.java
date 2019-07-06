@@ -2,7 +2,6 @@ public class ValidWordAbbr
 {
     private Set<String> uniqueDict;
     private Map<String, String> abbrDict;
-
     public ValidWordAbbr(String[] dictionary)
     {
         uniqueDict = new HashSet<>();
@@ -27,7 +26,6 @@ public class ValidWordAbbr
             }
         }
     }
-
     public boolean isUnique(String word)
     {
         if (word == null || word.length() == 0)
@@ -46,7 +44,6 @@ public class ValidWordAbbr
             return false;
         }
     }
-
     private String getAbbr(String word)
     {
         if (word == null || word.length() < 3)
@@ -60,10 +57,7 @@ public class ValidWordAbbr
         sb.append(word.charAt(word.length() - 1));
         return sb.toString();
     }
-
 }
-
-
 // Your ValidWordAbbr object will be instantiated and called as such:
 // ValidWordAbbr vwa = new ValidWordAbbr(dictionary);
 // vwa.isUnique("Word");

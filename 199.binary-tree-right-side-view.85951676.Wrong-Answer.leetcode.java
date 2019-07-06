@@ -11,7 +11,6 @@ public class Solution
         traversal(treeMap, root, 0);
         return new ArrayList<Integer>(treeMap.values());
     }
-
     public void traversal(Map<Integer, Integer> treeMap, TreeNode root, int level)
     {
         if (root == null)

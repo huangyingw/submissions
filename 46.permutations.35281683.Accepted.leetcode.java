@@ -8,7 +8,6 @@ public class Solution
         dfs(num, result, current, visited);
         return result;
     }
-
     public void dfs(int[] num, List<List<Integer>> result,
                     List<Integer> current, boolean[] visited)
     {

@@ -5,14 +5,12 @@ class Solution(object):
                 if len(current) == len(nums):
                     result.append(list(current))
                     return
-
                 if not visited[index]:
                     visited[index] = True
                     current.append(nums[index])
                     dfs()
                     current.pop()
                     visited[index] = False
-
         visited = [False] * len(nums)
         current = []
         result = []

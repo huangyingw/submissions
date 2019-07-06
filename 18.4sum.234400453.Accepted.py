@@ -29,7 +29,6 @@ class Solution:
                 for i in range(len(nums) - N + 1):
                     if i == 0 or nums[i - 1] != nums[i]:
                         findNsum(nums[i + 1:], target - nums[i], N - 1, cur + [nums[i]])
-
         res = []
         findNsum(sorted(nums), target, 4, [])
         return res

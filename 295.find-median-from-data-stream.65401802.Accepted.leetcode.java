@@ -1,9 +1,7 @@
 class MedianFinder
 {
-
     PriorityQueue<Integer> maxheap = new PriorityQueue<Integer>();
     PriorityQueue<Integer> minheap = new PriorityQueue<Integer>(Collections.reverseOrder());
-
     // Adds a number into the data structure.
     public void addNum(int num)
     {
@@ -15,7 +13,6 @@ class MedianFinder
             maxheap.offer(minheap.poll());
         }
     }
-
     // Returns the median of current data stream
     public double findMedian()
     {

@@ -24,7 +24,6 @@ class Solution(object):
             result = result * 10 + num
             pos += 1
         return sign * result
-
     # def myAtoi(self, s):
     #     #https://leetcode.com/discuss/83626/line-python-solution-eafp-instead-lbyl-easier-logic-beats-24%25
     #     try:
@@ -35,8 +34,6 @@ class Solution(object):
     #                 return -2 ** 31 if result < -2 ** 31 else 2 ** 31 - 1 if result > 2 ** 31 - 1 else result
     #     except:
     #         return 0
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

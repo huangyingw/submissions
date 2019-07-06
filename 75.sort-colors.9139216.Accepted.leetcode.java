@@ -31,7 +31,6 @@ public class Solution
             }
         }
     }
-
     private void swap(int[] a, int index, int blueIndex)
     {
         int temp = a[index];

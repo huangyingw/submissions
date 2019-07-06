@@ -11,7 +11,6 @@ class Solution(object):
         counter = defaultdict(list)
         for key, val in Counter(nums).items():
             counter[val].append(key)
-
         result = []
         for i in range(len(nums), 0, -1):
             result.extend(counter[i])

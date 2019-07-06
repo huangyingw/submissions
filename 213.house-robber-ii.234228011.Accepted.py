@@ -24,7 +24,6 @@ class Solution(object):
     #         else:
     #             dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
     #     return max(res, dp[ls - 1])
-
     def rob(self, nums):
         if len(nums) == 1:
             return nums[0]

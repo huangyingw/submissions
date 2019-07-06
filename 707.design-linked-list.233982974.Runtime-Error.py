@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-linked-list/
 # Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list.
 # A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and
@@ -15,14 +14,12 @@ _project_ = 'leetcode'
 #   If index equals to the length of linked list, the node will be appended to the end of linked list.
 #   If index is greater than the length, the node will not be inserted.
 #  deleteAtIndex(index) : Delete the index-th node in the linked list, if the index is valid.
-
 # Use a list. Alternatively define a Node class which allows addAtHead in O(1) time but O(n) get method.
 # Time - init O(1), get O(1), addAtHead O(n), addAtTail(1), addAtIndex(n), deleteAtIndex(n)
 # Space - O(n)
 
 
 class MyLinkedList(object):
-
     def __init__(self):
         """
         Initialize your data structure here.

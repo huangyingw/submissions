@@ -33,5 +33,4 @@ class Solution:
                     pt2 += 1
             except IndexError:
                 break
-
         return res

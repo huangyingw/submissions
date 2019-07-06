@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 # Design a data structure that supports all following operations in average O(1) time.
 # Note: Duplicate elements are allowed.
@@ -8,12 +7,10 @@ _project_ = 'leetcode'
 # remove(val): Removes an item val from the collection if present.
 # getRandom: Returns a random element from current collection of elements. The probability of each element being
 # returned is linearly related to the number of same value the collection contains.
-
 # Maintain a list of vals and a mapping from val to all indices in list with that val.  To remove, replace in list
 # with last val and update mapping of replacement.
 # Time - O(1)
 # Space - O(n)
-
 from collections import defaultdict
 import random
 
@@ -35,7 +32,6 @@ class RandomizedCollection(object):
         result = True
         if val in self.indices:
             result = False
-
         self.nums.append(val)
         self.indices[val].add(len(self.nums) - 1)
         return result
@@ -48,12 +44,9 @@ class RandomizedCollection(object):
         """
         if val not in self.indices:
             return False
-
         i = self.indices[val].pop()     # remove any index with this val
-
         if not self.indices[val]:       # delete val from mapping
             del self.indices[val]
-
         if i == len(self.nums) - 1:     # only need to remove from list
             self.nums.pop()
         else:

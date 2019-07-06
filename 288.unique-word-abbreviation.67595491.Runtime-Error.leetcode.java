@@ -1,7 +1,6 @@
 public class ValidWordAbbr
 {
     private Map<String, String> map = new HashMap<String, String>();
-
     public ValidWordAbbr(String[] dictionary)
     {
         for (int i = 0; i < dictionary.length; i++)
@@ -18,12 +17,10 @@ public class ValidWordAbbr
             }
         }
     }
-
     private String abbreviate(String str)
     {
         return str.charAt(0) + Integer.toString(str.length() - 2) + str.charAt(str.length() - 1);
     }
-
     public boolean isUnique(String word)
     {
         String x = abbreviate(word);
@@ -43,7 +40,6 @@ public class ValidWordAbbr
         return true;
     }
 }
-
 // Your ValidWordAbbr object will be instantiated and called as such:
 // ValidWordAbbr vwa = new ValidWordAbbr(dictionary);
 // vwa.isUnique("Word");

@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/generate-random-point-in-a-circle/
 # Given the radius and x-y positions of the center of a circle, write a function randPoint which generates a uniform
 # random point in the circle.
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 # radius and x-y position of the center of the circle is passed into the class constructor.
 # a point on the circumference of the circle is considered to be in the circle.
 # randPoint returns a size 2 array containing x-position and y-position of the random point, in that order.
-
 # Rejection sampling from the square containing the circle. Choos a random point inside the square with x and y
 # between -1 and 1. This has probability of pi / 4 of being in the circle of radius 1. Else repeat until random point
 # is in the circle.
@@ -17,12 +15,10 @@ _project_ = 'leetcode'
 # normalise the density of points, or else the probability decreases with radius.
 # Time - O(1) expected 4 / pi
 # Space - O(1)
-
 import random
 
 
 class Solution(object):
-
     def __init__(self, radius, x_center, y_center):
         """
         :type radius: float

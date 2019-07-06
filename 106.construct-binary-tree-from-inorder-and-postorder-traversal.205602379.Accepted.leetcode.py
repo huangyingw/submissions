@@ -6,7 +6,6 @@ class Solution(object):
     def dfs(self, inv_map, inorder, inLeft, inRight, postorder, poLeft, poRight):
         if inLeft > inRight or poLeft > poRight:
             return None
-
         mid = inv_map[postorder[poRight]]
         root = TreeNode(inorder[mid])
         root.left = self.dfs(inv_map, inorder, inLeft, mid - 1, postorder, poLeft, poLeft + mid - 1 - inLeft)

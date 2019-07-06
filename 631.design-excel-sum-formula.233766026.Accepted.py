@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-excel-sum-formula/
 # Your task is to design the basic function of Excel and implement the function of sum formula. Specifically, you need
 # to implement the following functions:
@@ -20,7 +19,6 @@ _project_ = 'leetcode'
 #      If the string represent a range of cells, then it has the following format : ColRow1:ColRow2. The range will
 #      always be a rectangle, and ColRow1 represent the position of the top-left cell, and ColRow2 represents the
 #      position of the bottom-right cell.
-
 # Convert excel cell format to indices. Cells store integer or list of sum ranges. To sum, recurse on each cell in
 # range until a value is found.
 # Time - O(m * n) for init, get and sum. O(1) for set.
@@ -68,21 +66,17 @@ class Excel(object):
         contents = self.excel[r][c]
         if isinstance(contents, int):  # base case of integer
             return contents
-
         total = 0
         for cells in contents:
             cell_range = cells.split(":")
             r1, c1 = self._indices(int(cell_range[0][1:]), cell_range[0][0])
-
             if len(cell_range) == 1:  # single cell
                 r2, c2 = r1, c1
             else:  # range
                 r2, c2 = self._indices(int(cell_range[1][1:]), cell_range[1][0])
-
             for row in range(r1, r2 + 1):
                 for col in range(c1, c2 + 1):
                     total += self.get_i(row, col)  # recurse, get_i with indices
-
         return total
 
     def sum(self, r, c, strs):

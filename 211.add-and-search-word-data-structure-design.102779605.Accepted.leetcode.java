@@ -3,14 +3,12 @@ class TrieNode
     boolean isWord;
     char content;
     HashMap<Character, TrieNode> nexts;
-
     public TrieNode()
     {
         this.content = ' ';
         this.isWord = false;
         this.nexts = new HashMap<Character, TrieNode>();
     }
-
     public TrieNode(char content)
     {
         this.content = content;
@@ -18,16 +16,13 @@ class TrieNode
         nexts = new HashMap<Character, TrieNode>();
     }
 }
-
 public class WordDictionary
 {
     private TrieNode root;
-
     public WordDictionary()
     {
         root = new TrieNode();
     }
-
     // Adds a word into the data structure.
     public void addWord(String word)
     {
@@ -49,7 +44,6 @@ public class WordDictionary
 
         current.isWord = true;
     }
-
     // Returns if the word is in the data structure. A word could
     // contain the dot character '.' to represent any one letter.
     public boolean search(String word)
@@ -62,7 +56,6 @@ public class WordDictionary
         TrieNode trieNode = root;
         return dfs(word, 0, trieNode);
     }
-
     private boolean dfs(String word, int index, TrieNode trieNode)
     {
         if (index == word.length() - 1)

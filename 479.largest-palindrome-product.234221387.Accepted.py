@@ -23,7 +23,6 @@ class Solution(object):
     #                 break
     #         firstHalf -= 1
     #     return palindrom % 1337
-
     def largestPalindrome(self, n):
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96305/Python-Solution-Using-Math-In-48ms
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96294/could-any-python-experts-share-their-codes-within-100ms

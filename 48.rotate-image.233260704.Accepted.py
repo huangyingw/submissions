@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/rotate-image/
 # You are given an n x n 2D matrix representing an image.
 # Rotate the image by 90 degrees (clockwise).
-
 # Number of layer to rotate is n//2.  For each item along the top side of each layer, save as temp and
 # move in the item from the next side, repeating until temp is put into the last side.
 # Alternatively - matrix[:] = list(map(list, zip(*matrix[::-1]))).  Reverse the order of row, unpack,
@@ -21,7 +19,6 @@ class Solution(object):
         """
         n = len(matrix)
         layers = n // 2
-
         for layer in range(layers):
             for i in range(layer, n - layer - 1):
                 temp = matrix[layer][i]

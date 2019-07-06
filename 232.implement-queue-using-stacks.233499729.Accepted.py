@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/implement-queue-using-stacks/
 # Implement the following operations of a queue using stacks.
 # push(x) -- Push element x to the back of queue.
@@ -8,7 +7,6 @@ _project_ = 'leetcode'
 # peek() -- Get the front element.
 # empty() -- Return whether the queue is empty.
 # You may assume that all operations are valid (e.g., no pop or peek operations will be called on an empty queue).
-
 # One stack contains the iteams as they are added. Another stack is used to reverse the order during the pop operation.
 # The top of the stack is recorded for O(1) peek.
 # Time - O(1) for init, push, peek and empty. O(n) for pop.
@@ -16,7 +14,6 @@ _project_ = 'leetcode'
 
 
 class MyQueue(object):
-
     def __init__(self):
         """
         Initialize your data structure here.

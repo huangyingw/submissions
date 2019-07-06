@@ -4,9 +4,9 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-
 # https://leetcode.com/problems/path-sum-iii/discuss/91892/Python-solution-with-detailed-explanation
+
+
 class Solution(object):
     # def find_paths(self, root, target):
     #     if root:
@@ -14,7 +14,6 @@ class Solution(object):
     #         + self.find_paths(root.left, target - root.val)
     #         + self.find_paths(root.right, target - root.val)
     #     return 0
-
     # def pathSum(self, root, sum):
     #     """
     #     :type root: TreeNode
@@ -26,7 +25,6 @@ class Solution(object):
     #         + self.pathSum(root.left, sum)
     #         + self.pathSum(root.right, sum)
     #     return 0
-
     def pathSumHelper(self, root, target, so_far, cache):
         if root:
             # complement == 1, root->curr path

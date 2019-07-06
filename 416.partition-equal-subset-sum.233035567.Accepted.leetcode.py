@@ -20,7 +20,6 @@ class Solution(object):
     #         for j in range(volumn, nums[i - 1] - 1, -1):
     #             dp[j] = dp[j] or dp[j - nums[i - 1]]
     #     return dp[volumn]
-
     def canPartition(self, nums):
         total_sum = sum(nums)
         if total_sum & 1:

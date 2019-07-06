@@ -10,7 +10,6 @@ class Solution(object):
     #             return index
     #         elif index < value:
     #             return -1
-
     def fixedPoint(self, A):
         l, h = 0, len(A) - 1
         while l <= h:

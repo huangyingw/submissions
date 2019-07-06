@@ -35,7 +35,6 @@ class Solution(object):
                 max_step = s
                 max_pos = i
         return temp_s[max_pos - max_step:max_pos + max_step + 1].translate(None, '#')
-
     # def longestPalindrome(self, s):
     #     # example in leetcode book
     #     max_left, max_right = 0, 0
@@ -55,7 +54,6 @@ class Solution(object):
     #         left -= 1
     #         right += 1
     #     return right - left - 1
-
     # def longestPalindrome(self, s):
     #     #Manacher algorithm
     #     #http://en.wikipedia.org/wiki/Longest_palindromic_substring
@@ -80,8 +78,6 @@ class Solution(object):
     #     # Find the maximum element in P.
     #     maxLen, centerIndex = max((n, i) for i, n in enumerate(P))
     #     return s[(centerIndex - maxLen)//2: (centerIndex + maxLen)//2]
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

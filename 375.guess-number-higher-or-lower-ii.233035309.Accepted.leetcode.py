@@ -19,7 +19,6 @@ class Solution(object):
     #         res = min(res, tmp)
     #     dp[begin][end] = res
     #     return res
-
     def getMoneyAmount(self, n):
         # bottom up dp
         # https://discuss.leetcode.com/topic/51353/simple-dp-solution-with-explanation/2

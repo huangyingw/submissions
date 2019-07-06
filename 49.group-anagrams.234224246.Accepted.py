@@ -24,7 +24,6 @@ class Solution(object):
     #         index = ord(ch) - ord('a')
     #         table[index] += 1
     #     return str(table)
-
     def groupAnagrams(self, strs):
         strs.sort()
         hash = {}

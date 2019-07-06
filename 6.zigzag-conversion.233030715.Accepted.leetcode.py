@@ -29,7 +29,6 @@ class Solution(object):
     #     for i in range(numRows):
     #         result += ''.join(temp_s[i])
     #     return result
-
     def convert(self, s, numRows):
         # https://leetcode.com/discuss/90908/easy-python-o-n-solution-94%25-with-explanations
         if numRows == 1:
@@ -43,8 +42,6 @@ class Solution(object):
                 floor = p - floor
             result[floor] += s[i]
         return "".join(result)
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

@@ -19,7 +19,6 @@ public class Solution
             }
         }
     }
-
     private void reverse(char[] s, int begin, int end)
     {
         for (; begin < end; begin++, end--)

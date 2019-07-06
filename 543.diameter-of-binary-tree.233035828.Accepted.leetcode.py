@@ -18,7 +18,6 @@ class Solution(object):
             R = depth(node.right)
             self.ans = max(self.ans, L + R + 1)
             return max(L, R) + 1
-
         depth(root)
         # number of nodes - 1 = length
         return self.ans - 1

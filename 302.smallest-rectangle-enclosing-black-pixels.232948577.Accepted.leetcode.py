@@ -2,7 +2,6 @@ class Solution(object):
     def minArea(self, image, x, y):
         if not image:
             return 0
-
         top = self.searchTop(image, 0, x)
         bottom = self.searchBottom(image, x, len(image) - 1)
         left = self.searchLeft(image, 0, y)

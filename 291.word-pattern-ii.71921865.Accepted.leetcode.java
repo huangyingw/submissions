@@ -16,7 +16,6 @@ public class Solution
         HashSet<String> set = new HashSet<String>();
         return dfs(pattern, str, 0, 0, map, set);
     }
-
     public boolean dfs(String pattern, String str, int i, int j, HashMap<Character, String> map, HashSet<String> set)
     {
         if (i == pattern.length() && j == str.length())

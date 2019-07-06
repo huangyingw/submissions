@@ -20,7 +20,6 @@ class Solution(object):
     #     root.left = self.sortedArrayToBST(nums[:mid])
     #     root.right = self.sortedArrayToBST(nums[mid + 1:])
     #     return root
-
     def sortedArrayToBST(self, nums):
         # Recursion with index
         return self.getHelper(nums, 0, len(nums) - 1)

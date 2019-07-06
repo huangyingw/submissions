@@ -3,7 +3,6 @@ public class Solution extends Reader4
     private char[] buffer = new char[4];
     private int oneRead = 0;
     private int offset = 0;
-
     public int read(char[] buf, int n)
     {
         boolean lessthan4 = false;

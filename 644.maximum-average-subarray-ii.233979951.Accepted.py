@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/maximum-average-subarray-ii/
 # Given an array consisting of n integers, find the contiguous subarray whose length is greater than or equal to k that
 # has the maximum average value. And you need to output the maximum average value.
-
 # If k is low (< 80) then calculate the cumulative sum array of nums and for each length find the average of all
 # subarrays. Any subarray longer than 2k can be divided into 2 subarrays of length at least k, at one of which has an
 # average at least as good as the whole subarray. Hence restrict to max length less than 2k.
@@ -23,7 +21,6 @@ class Solution(object):
         :rtype: float
         """
         n = len(nums)
-
         if k < 80:
             cumulative = [0]
             for num in nums:
@@ -35,13 +32,11 @@ class Solution(object):
             return result
 
         def has_average(x):
-
             subarray_sum = 0
             for i in range(k):
                 subarray_sum += nums[i] - x
             if subarray_sum >= 0:
                 return True
-
             prefix_sum, min_prefix = 0, 0
             for i in range(k, n):
                 subarray_sum += nums[i] - x
@@ -49,9 +44,7 @@ class Solution(object):
                 min_prefix = min(min_prefix, prefix_sum)
                 if subarray_sum - min_prefix >= 0:
                     return True
-
             return False
-
         left, right = min(nums), max(nums)
         while right - left > 1e-5:
             mid = (left + right) / 2.0
@@ -59,5 +52,4 @@ class Solution(object):
                 left = mid
             else:
                 right = mid
-
         return left

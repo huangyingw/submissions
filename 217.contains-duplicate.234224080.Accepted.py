@@ -6,7 +6,6 @@ class Solution(object):
         """
         # use set to check duplicate
         return len(nums) != len(set(nums))
-
     # def containsDuplicate(self, nums):
     #     nums.sort()
     #     for i in range(len(nums) - 1):

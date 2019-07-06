@@ -1,10 +1,8 @@
 public class AllOne
 {
-
     private ValueNode head;// largest
     private ValueNode tail;// smallest
     private Map<String, ValueNode> elements;
-
     /** Initialize your data structure here. */
     public AllOne()
     {
@@ -12,7 +10,6 @@ public class AllOne
         tail = null;
         this.elements = new HashMap<>();
     }
-
     /**
      * Inserts a new key <key> with value 1. Or increments an existing key by 1.
      */
@@ -88,7 +85,6 @@ public class AllOne
             }
         }
     }
-
     /**
      * Decrements an existing key by 1. If Key's value is 1, remove it from the
      * data structure.
@@ -139,19 +135,16 @@ public class AllOne
             }
         }
     }
-
     /** Returns one of the keys with maximal value. */
     public String getMaxKey()
     {
         return head != null ? head.oneKey : "";
     }
-
     /** Returns one of the keys with Minimal value. */
     public String getMinKey()
     {
         return tail != null ? tail.oneKey : "";
     }
-
     private boolean checkEmpty(ValueNode node)
     {
         if (node.keys.isEmpty())
@@ -180,7 +173,6 @@ public class AllOne
             return false;
         }
     }
-
     // Doubly linked list node
     private class ValueNode
     {
@@ -189,7 +181,6 @@ public class AllOne
         ValueNode prev;
         ValueNode next;
         String oneKey; // any key with the value
-
         public ValueNode(int value, String key)
         {
             this.value = value;
@@ -199,7 +190,6 @@ public class AllOne
             prev = null;
             next = null;
         }
-
         public void updateOneKey(String key)
         {
             if (oneKey.equals(key))

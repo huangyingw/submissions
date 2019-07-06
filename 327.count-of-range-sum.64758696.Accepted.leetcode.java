@@ -12,7 +12,6 @@ public class Solution
 
         return countWhileMergeSort(sums, 0, n + 1, lower, upper);
     }
-
     private int countWhileMergeSort(long[] sums, int start, int end, int lower, int upper)
     {
         if (end - start <= 1)

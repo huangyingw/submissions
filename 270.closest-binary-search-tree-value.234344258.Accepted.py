@@ -7,7 +7,6 @@
 
 
 class Solution:
-
     # Iterative
     def closestValue(self, root, target):
         """
@@ -20,8 +19,8 @@ class Solution:
             result = min((root.val, result), key=lambda x: abs(target - x))
             root = root.left if target < root.val else root.right
         return result
-
     # Recursive
+
     def closestValue(self, root, target):
         """
         :type root: TreeNode

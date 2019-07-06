@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public TreeNode sortedListToBST(ListNode head)
     {
         if (head == null)
@@ -11,7 +10,6 @@ public class Solution
         int len = getLength(head);
         return sortedListToBST(head, 0, len - 1);
     }
-
     public int getLength(ListNode head)
     {
         int len = 0;
@@ -25,7 +23,6 @@ public class Solution
 
         return len;
     }
-
     public TreeNode sortedListToBST(ListNode head, int start, int end)
     {
         if (start > end)

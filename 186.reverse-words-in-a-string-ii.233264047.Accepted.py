@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/reverse-words-in-a-string-ii/
 # Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
 # The input string does not contain leading or trailing spaces and the words are always separated by a single space.
-
 # Revese entire string then reverse each word individually.
 # Alternatively use built-in reverse() and reversed() functions.
 # Time - O(n)
@@ -15,9 +13,7 @@ class Solution:
     # @param s, a list of 1 length strings, e.g., s = ['h','e','l','l','o']
     # @return nothing
     def reverseWords(self, s):
-
         self.reverse(s, 0, len(s) - 1)
-
         s.append(' ')   # temporary space to signify end of last word
         start = 0
         for i in range(len(s)):

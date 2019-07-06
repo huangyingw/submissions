@@ -18,7 +18,6 @@ public class Solution
 
         return longestConsecutive(root, 0, root.val - 1);
     }
-
     public int longestConsecutive(TreeNode root, int len, int preVal)
     {
         if (root == null)

@@ -18,7 +18,6 @@ class Solution(object):
             if M[i][j] == 1 and visited[j] == 0:
                 visited[j] = 1
                 self.dfs(M, visited, j)
-
     # def findCircleNum(self, M):
     #     # BFS
     #     visited = [0] * len(M)
@@ -35,7 +34,6 @@ class Solution(object):
     #                         queue.append(j)
     #             count += 1
     #     return count
-
 #     def findCircleNum(self, M):
 #         # Union Find
 #         union = Union()
@@ -46,7 +44,6 @@ class Solution(object):
 #                 if M[i][j] == 1:
 #                     union.union(i, j)
 #         return union.count
-
 # class Union(object):
 #     """
 #     weighted quick union find
@@ -56,19 +53,15 @@ class Solution(object):
 #         self.id = {}
 #         self.sz = {}
 #         self.count = 0
-
 #     def count(self):
 #         return self.count
-
 #     def connected(self, p, q):
 #         return self.find(p) == self.find(q)
-
 #     def add(self, p):
 #         # init
 #         self.id[p] = p
 #         self.sz[p] = 1
 #         self.count += 1
-
 #     def find(self, p):
 #         """
 #         find root of p, and compress path
@@ -77,7 +70,6 @@ class Solution(object):
 #             self.id[p] = self.id[self.id[p]]
 #             p = self.id[p]
 #         return p
-
 #     def union(self, p, q):
 #         """
 #         connect p and q

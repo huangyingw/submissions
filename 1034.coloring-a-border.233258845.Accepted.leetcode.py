@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/coloring-a-border/
 # Given a 2-dimensional grid of integers, each value in the grid represents the color of
 # the grid square at that location.
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # (the first or last row or column).
 # Given a square at location (r0, c0) in the grid and a color, color the border of the connected component of
 # that square with the given color, and return the final grid.
-
 # Depth-first search helper function return True if a cell is part of the connected component.
 # If a cell is outside the grid or no the the colour of grid[r0][c0] return False.
 # Recurse in all 4 directions and if not all neighbours are connected then this cell is on the border.
@@ -43,6 +41,5 @@ class Solution(object):
             if not sum(dfs(r + dr, c + dc) for dr, dc in [[1, 0], [0, 1], [-1, 0], [0, -1]]) == 4:
                 grid[r][c] = color
             return True
-
         dfs(r0, c0)
         return grid

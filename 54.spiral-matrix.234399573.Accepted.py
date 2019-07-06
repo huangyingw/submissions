@@ -1,9 +1,7 @@
 # https://leetcode.com/problems/spiral-matrix/description/
 """
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
-
 Example 1:
-
 Input:
 [
  [ 1, 2, 3 ],
@@ -12,7 +10,6 @@ Input:
 ]
 Output: [1,2,3,6,9,8,7,4,5]
 Example 2:
-
 Input:
 [
   [1, 2, 3, 4],
@@ -63,7 +60,6 @@ class Solution:
                     yield r2, c
                 for r in range(r2, r1, -1):
                     yield r, c1
-
         if not matrix:
             return []
         ans = []

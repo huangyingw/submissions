@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private int sumNumbers(TreeNode root, int base)
     {
         if (root == null)
@@ -27,7 +26,6 @@ public class Solution
 
         return sum;
     }
-
     public int sumNumbers(TreeNode root)
     {
         return sumNumbers(root, root.val);

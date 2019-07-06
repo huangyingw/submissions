@@ -1,8 +1,6 @@
 """
 Problem Link: https://leetcode.com/problems/spiral-matrix/
-
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
-
 Example 1:
 Input:
 [
@@ -11,7 +9,6 @@ Input:
  [ 7, 8, 9 ]
 ]
 Output: [1,2,3,6,9,8,7,4,5]
-
 Example 2:
 Input:
 [

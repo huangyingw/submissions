@@ -16,5 +16,4 @@ class ValidWordAbbr(object):
         else:
             if word in self.d[key] and len(self.d[key]) == 1:
                 return True
-
         return False

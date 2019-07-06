@@ -2,17 +2,14 @@ public class BSTIterator
 {
     private Stack<TreeNode> stack = new Stack<>();
     private TreeNode top;
-
     public BSTIterator(TreeNode root)
     {
         top = root;
     }
-
     public boolean hasNext()
     {
         return !stack.isEmpty();
     }
-
     public int next()
     {
         while (top != null)

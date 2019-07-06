@@ -7,7 +7,6 @@ class Solution:
         connected = [[-1 for n in range(len(grid))] for n in range(len(grid[0]))]
         connected[0][0] = grid[0][0]
         pending = {'0_0': grid[0][0]}
-
         for n in range(len(grid) * len(grid[0])):
             site, height = min(pending.items(), key=lambda x: x[1])
             del pending[site]

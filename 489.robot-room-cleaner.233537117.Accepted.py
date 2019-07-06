@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/robot-room-cleaner/
 # Given a robot cleaner in a room modeled as a grid.
 # Each cell in the grid can be empty or blocked.
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # void turnLeft()
 # void turnRight()
 # void clean()
-
 # Depth-first search. Each state is a location and direction. Clean the location and add to visited set.
 # For each of the 4 neighbouring cells, if neighbour has not been visited and can be moved to, recurse to visit
 # neighbour, then move back to original cell and turn left.
@@ -28,12 +26,9 @@ class Solution:
         visited = set()
 
         def dfs(x, y, dx, dy):
-
             robot.clean()
             visited.add((x, y))
-
             for _ in range(4):
-
                 if ((x + dx, y + dy)) not in visited and robot.move():
                     dfs(x + dx, y + dy, dx, dy)
                     robot.turnLeft()        # revert to original position and direction
@@ -41,8 +36,6 @@ class Solution:
                     robot.move()
                     robot.turnLeft()
                     robot.turnLeft()
-
                 robot.turnLeft()
                 dx, dy = -dy, dx
-
         dfs(0, 0, 0, 1)

@@ -14,7 +14,6 @@ public class Solution
 
         return ans;
     }
-
     int quick_pow(int a, int b)
     {
         int ans = 1;

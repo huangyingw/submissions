@@ -3,21 +3,18 @@ class TrieNode
     char content;
     boolean isEnd;
     LinkedList<TrieNode> childNode;
-
     public TrieNode()
     {
         this.content = ' ';
         this.isEnd = false;
         this.childNode = new LinkedList<TrieNode>();
     }
-
     public TrieNode(char content)
     {
         this.content = content;
         this.isEnd = false;
         this.childNode = new LinkedList<TrieNode>();
     }
-
     public TrieNode subNode(char content)
     {
         if (childNode != null)
@@ -33,18 +30,14 @@ class TrieNode
 
         return null;
     }
-
 }
-
 public class Trie
 {
     private TrieNode root;
-
     public Trie()
     {
         root = new TrieNode();
     }
-
     // Inserts a word into the trie.
     public void insert(String word)
     {
@@ -71,7 +64,6 @@ public class Trie
 
         current.isEnd = true;
     }
-
     // Returns if the word is in the trie.
     public boolean search(String word)
     {
@@ -91,7 +83,6 @@ public class Trie
 
         return current.isEnd;
     }
-
     // Returns if there is any word in the trie
     // that starts with the given prefix.
     public boolean startsWith(String prefix)

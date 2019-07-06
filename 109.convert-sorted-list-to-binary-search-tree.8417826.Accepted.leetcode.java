@@ -1,7 +1,6 @@
 public class Solution
 {
     private ListNode current;
-
     public TreeNode sortedListToBST(ListNode head)
     {
         current = head;
@@ -15,7 +14,6 @@ public class Solution
 
         return dfs(0, size - 1);
     }
-
     public TreeNode dfs(int start, int end)
     {
         if (start > end)

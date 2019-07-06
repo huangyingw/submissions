@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/valid-number/
 # Validate if a given string is numeric.
 # Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
-
 # Test if integer or float or scientific.  Allow for first character signs.
 # Time - O(n)
 # Space - O(n)
@@ -27,7 +25,6 @@ class Solution(object):
             s = s[1:]
         if len(s) == 0:
             return False
-
         for c in s:
             if c not in self.digits:
                 return False
@@ -38,7 +35,6 @@ class Solution(object):
             dot = s.index('.')
             before = s[:dot]
             after = s[dot + 1:]
-
             if before and before[0] in '+-':
                 before = before[1:]
             if before and not self.is_int(before, False):
@@ -54,7 +50,6 @@ class Solution(object):
             e = s.index('e')
             before = s[:e]
             after = s[e + 1:]
-
             if not before or not after:
                 return False
             if not self.is_int(before, True) and not self.is_float(before):

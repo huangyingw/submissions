@@ -4,7 +4,6 @@ public class Solution
     {
         String word;
         int steps;
-
         public WordNode(String word, int steps)
         {
             this.word = word;
@@ -32,7 +31,7 @@ public class Solution
             for (int i = 0; i < arr.length; i++)
             {
                 char temp = arr[i];
-                
+
                 for (char c = 'a'; c <= 'z'; c++)
                 {
                     arr[i] = c;
@@ -43,7 +42,7 @@ public class Solution
                         queue.add(new WordNode(newWord, top.steps + 1));
                     }
                 }
-                
+
                 arr[i] = temp;
             }
         }

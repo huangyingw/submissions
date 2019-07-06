@@ -15,13 +15,10 @@ public class Solution
 
         return uf.count() == 1;
     }
-
     public class UnionFind
     {
-
         int[] ids;
         int cnt;
-
         public UnionFind(int size)
         {
             this.ids = new int[size];

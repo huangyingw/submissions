@@ -14,7 +14,6 @@ public class Solution
         int bot = binarySearch(image, x + 1, rowNum, left, right, false, false);
         return (right - left) * (bot - top);
     }
-
     private int binarySearch(char[][] image, int lo, int hi, int min, int max, boolean searchHorizontal, boolean searchLo)
     {
         while (lo < hi)

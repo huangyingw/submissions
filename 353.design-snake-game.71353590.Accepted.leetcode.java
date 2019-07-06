@@ -5,7 +5,6 @@ public class SnakeGame
     private int eat = 0;
     private LinkedList<Position> snake = new LinkedList<>();
     private int width, height;
-
     private boolean eat(int y, int x)
     {
         if (eat >= food.length)
@@ -25,7 +24,6 @@ public class SnakeGame
 
         return false;
     }
-
     /** Initialize your data structure here.
         @param width - screen width
         @param height - screen height
@@ -40,7 +38,6 @@ public class SnakeGame
         this.height = height;
         this.width = width;
     }
-
     /** Moves the snake.
         @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
         @return The game's score after the move. Return -1 if game over.

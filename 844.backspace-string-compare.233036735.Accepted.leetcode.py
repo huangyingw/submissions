@@ -20,19 +20,16 @@ class Solution(object):
             elif len(t_stack) != 0:
                 t_stack.pop(-1)
         return ''.join(s_stack) == ''.join(t_stack)
-
     # def backspaceCompare(self, S, T):
     #     # https://leetcode.com/problems/backspace-string-compare/discuss/135603/C%2B%2BJavaPython-O(N)-time-and-O(1)-space
     #     back = lambda res, c: res[:-1] if c == '#' else res + c
     #     return reduce(back, S, "") == reduce(back, T, "")
-
     # def backspaceCompare(self, S, T):
     #     def back(res, c):
     #         if c != '#': res.append(c)
     #         elif res: res.pop()
     #         return res
     #     return reduce(back, S, []) == reduce(back, T, [])
-
     # def backspaceCompare(self, S, T):
     #     i, j = len(S) - 1, len(T) - 1
     #     backS = backT = 0

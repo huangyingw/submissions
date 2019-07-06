@@ -6,7 +6,6 @@ public class Solution
         dfs(s, 0, new ArrayList<String>(), result);
         return result;
     }
-
     private void dfs(String str, int start, ArrayList<String> current, List<List<String>> result)
     {
         if (start == str.length())
@@ -27,7 +26,6 @@ public class Solution
             }
         }
     }
-
     private boolean isPalindrome(String str)
     {
         int left = 0;

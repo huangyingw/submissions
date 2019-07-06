@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public boolean isValid(String s)
     {
         char[] charArray = s.toCharArray();

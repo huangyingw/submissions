@@ -30,7 +30,6 @@ class Solution(object):
         """
         if not root:
             return None
-
         if p.val >= root.val:
             return self.inorderSuccessor(root.right, p)
         else:

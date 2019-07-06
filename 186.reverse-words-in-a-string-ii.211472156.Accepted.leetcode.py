@@ -9,11 +9,9 @@ class Solution(object):
                 end -= 1
         reverse(str, 0, len(str) - 1)
         begin, end = 0, 0
-
         while end <= len(str):
             if end == len(str) or str[end] == ' ':
                 reverse(str, begin, end - 1)
-
                 while end < len(str) and str[end] == ' ':
                     end += 1
                 begin = end

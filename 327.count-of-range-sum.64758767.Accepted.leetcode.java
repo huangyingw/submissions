@@ -16,7 +16,6 @@ public class Solution
             this.rightSize = 0;
         }
     }
-
     private TreeNode insert(TreeNode root, long val)
     {
         if (root == null)
@@ -40,7 +39,6 @@ public class Solution
 
         return root;
     }
-
     private int countSmaller(TreeNode root, long val)
     {
         if (root == null)
@@ -60,7 +58,6 @@ public class Solution
             return root.leftSize + root.count + countSmaller(root.right, val);
         }
     }
-
     private int countLarger(TreeNode root, long val)
     {
         if (root == null)
@@ -80,7 +77,6 @@ public class Solution
             return countLarger(root.left, val) + root.count + root.rightSize;
         }
     }
-
     private int rangeSize(TreeNode root, long lower, long upper)
     {
         int total = root.count + root.leftSize + root.rightSize;
@@ -88,7 +84,6 @@ public class Solution
         int larger = countLarger(root, upper);      // Exclude everything larger than upper
         return total - smaller - larger;
     }
-
     public int countRangeSum(int[] nums, int lower, int upper)
     {
         if (nums.length == 0)

@@ -15,5 +15,4 @@ class Solution(object):
     def check(self, s, wordDict):
         dp = [False for _ in range(len(s) + 1)]
         dp[0] = True
-
         return dp[len(s)]

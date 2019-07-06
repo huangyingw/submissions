@@ -3,7 +3,6 @@ public class Solution
     List<String> result = new ArrayList<String>();
     List<List<Integer>>f = new ArrayList<>();
     int n;
-
     void dfs(int p, String s, String now)
     {
         if (p == n)
@@ -22,7 +21,6 @@ public class Solution
             dfs(i, s, now + s.substring(p, i));
         }
     }
-
     public List<String> wordBreak(String s, List<String> dict)
     {
         n = s.length();

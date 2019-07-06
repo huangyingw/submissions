@@ -1,8 +1,6 @@
 public class Solution
 {
-
     private int max;
-
     public int findMax(TreeNode root)
     {
         if (root == null)
@@ -15,7 +13,6 @@ public class Solution
         max = Math.max(max, root.val + left + right);
         return root.val + Math.max(left, right);
     }
-
     public int maxPathSum(TreeNode root)
     {
         max = Integer.MIN_VALUE;

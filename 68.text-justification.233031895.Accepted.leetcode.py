@@ -47,7 +47,6 @@ class Solution(object):
                 text += curr[-1]
             res.append(text)
         return res
-
     # def fullJustify(self, words, maxWidth):
     #     i, N, result = 0, len(words), []
     #     while i < N:
@@ -67,6 +66,5 @@ class Solution(object):
     #             spaces = [' '] * positionNum + [' ' * (maxWidth - currWidth)]
     #         result.append(''.join([s for pair in zip(oneLine, spaces) for s in pair]))
     #     return result
-
 if __name__ == '__main__':
     s = Solution()

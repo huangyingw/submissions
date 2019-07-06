@@ -16,7 +16,6 @@ class Solution(object):
                 if words[i][j] != words[j][i]:
                     return False
         return True
-
     # def validWordSquare(self, words):
     #     # https://discuss.leetcode.com/topic/63423/1-liner-python/2
     #     # The map(None, ...) transposes the "matrix", filling missing spots with None

@@ -29,7 +29,6 @@ public class Solution
 
         return lca;
     }
-
     private boolean getPath(TreeNode root, TreeNode n, List<TreeNode> path)
     {
         if (root == null)

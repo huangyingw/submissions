@@ -11,7 +11,6 @@ public class Solution
 
         return result;
     }
-
     public int countEach(int num)
     {
         int result = 0;

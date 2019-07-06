@@ -6,7 +6,6 @@ public class Solution
         traverse(root, 1, ans, true);
         return ans;
     }
-
     public void traverse(TreeNode root, int level,
                          ArrayList<ArrayList<Integer>> result, Boolean left_to_right)
     {

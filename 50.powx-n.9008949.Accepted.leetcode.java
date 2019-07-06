@@ -18,7 +18,6 @@ public class Solution
             return v * v * x;
         }
     }
-
     public double pow(double x, int n)
     {
         if (n < 0)

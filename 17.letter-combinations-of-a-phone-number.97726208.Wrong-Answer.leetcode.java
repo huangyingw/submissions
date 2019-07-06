@@ -8,7 +8,6 @@ public class Solution
         dfs(digits, dic, current, result);
         return result;
     }
-
     public void dfs(String digits, String[] dic, StringBuilder current, ArrayList<String> result)
     {
         if (current.length() == digits.length())

@@ -16,8 +16,8 @@ class Solution:
         node.val = node.next.val
         node.next = node.next.next
     # 上面的代码可以通过，且beat100%
-
     # 实际上我认为题目应该是这样
+
     def deleteNode(self, head, node):
         """
         :type head: ListNode

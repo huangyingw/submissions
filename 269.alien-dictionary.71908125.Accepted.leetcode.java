@@ -41,7 +41,6 @@ public class Solution
 
         return sb.toString();
     }
-
     private void connectGraph(Map<Character, Set<Character>> graph, String prev, String current)
     {
         if (prev == null || current == null)
@@ -67,7 +66,6 @@ public class Solution
             }
         }
     }
-
     private boolean toplogicalSort(char vertexId, Map<Character, Set<Character>> graph, StringBuffer sb,
                                    Map<Character, Integer> visited)
     {

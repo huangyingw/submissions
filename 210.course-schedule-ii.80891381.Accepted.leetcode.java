@@ -36,7 +36,6 @@ public class Solution
 
         return res;
     }
-
     private void dfs(Stack<Integer> stack, List<List<Integer>> graph, int[] path, int course)
     {
         if (path[course] == 2 || impossible)
@@ -65,5 +64,4 @@ public class Solution
         stack.push(course);
         path[course] = 2;
     }
-
 }

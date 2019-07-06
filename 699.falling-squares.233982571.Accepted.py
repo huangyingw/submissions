@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/falling-squares/
 # On an infinite number line (x-axis), we drop given squares in the order they are given.
 # The i-th square dropped (positions[i] = (left, side_length)) is a square with the left-most point being
@@ -12,7 +11,6 @@ _project_ = 'leetcode'
 # prematurely.
 # Return a list ans of heights. Each height ans[i] represents the current highest height of any square we have
 # dropped, after dropping squares represented by positions[0], positions[1], ..., positions[i].
-
 # For each box, check for overlap with each box already dropped. If overlap update top of box as side length + top of
 # overlapping box.
 # Time - O(n**2)
@@ -27,16 +25,12 @@ class Solution(object):
         """
         box_heights = [positions[0][1]]  # top edge height of dropped boxes
         max_heights = [positions[0][1]]
-
         for left, side in positions[1:]:
             top = side  # default to on ground, top of box is side length
-
             for i in range(len(box_heights)):  # loop over each previously dropped box
                 left2, side2 = positions[i]
                 if left2 < left + side and left2 + side2 > left:  # horizontal overlap
                     top = max(top, box_heights[i] + side)  # on previous box
-
             box_heights.append(top)
             max_heights.append(max(top, max_heights[-1]))
-
         return max_heights

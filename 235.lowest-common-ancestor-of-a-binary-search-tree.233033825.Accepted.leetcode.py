@@ -39,7 +39,6 @@ class Solution(object):
     #             self.get_path(paths, node.left, paths[node])
     #         if node.right is not None:
     #             self.get_path(paths, node.right, paths[node])
-
     def lowestCommonAncestor(self, root, p, q):
         # use the BST to reduce the search space
         if p is None or q is None or root is None:

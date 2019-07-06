@@ -34,7 +34,6 @@ class Solution(object):
     #     if prefix[0] == '0':
     #         return False
     #     return True
-
     def restoreIpAddresses(self, s):
         ls = len(s)
         if ls == 0 or ls > 12:
@@ -62,7 +61,5 @@ class Solution(object):
         if int(add) <= 255:
             return True
         return False
-
-
 if __name__ == '__main__':
     s = Solution()

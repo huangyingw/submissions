@@ -3,12 +3,10 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         prev = dummy
-
         while prev:
             current = prev.next.next
             prev.next.next = current.next
             current.next = prev.next
             prev.next = current
             prev = prev.next.next
-
         return dummy.next

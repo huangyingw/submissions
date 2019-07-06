@@ -4,14 +4,12 @@ public class LFUCache
     final int capacity;
     Map<Integer, Integer> valueMap;
     Map<Integer, Node> nodeMap;
-
     public LFUCache(int capacity)
     {
         this.capacity = capacity;
         valueMap = new HashMap<>(this.capacity, 1f);
         nodeMap = new HashMap<>(this.capacity, 1f);
     }
-
     public int get(int key)
     {
         if (valueMap.containsKey(key))
@@ -21,7 +19,6 @@ public class LFUCache
 
         return valueMap.getOrDefault(key, -1);
     }
-
     private void increase(int key, int value)
     {
         Node node = nodeMap.get(key);
@@ -48,7 +45,6 @@ public class LFUCache
             remove(node);
         }
     }
-
     private void remove(Node node)
     {
         if (head == node)
@@ -65,7 +61,6 @@ public class LFUCache
             node.next.prev = node.prev;
         }
     }
-
     public void put(int key, int value)
     {
         if (0 == this.capacity)
@@ -88,7 +83,6 @@ public class LFUCache
             add(key);
         }
     }
-
     private void add(int key)
     {
         if (Objects.isNull(head))
@@ -106,7 +100,6 @@ public class LFUCache
 
         nodeMap.put(key, head);
     }
-
     private void remove()
     {
         if (Objects.isNull(head))
@@ -125,13 +118,11 @@ public class LFUCache
         nodeMap.remove(oldest);
         valueMap.remove(oldest);
     }
-
     class Node
     {
         public Node prev, next;
         public final int count;
         public LinkedHashSet<Integer> keys = new LinkedHashSet<>();
-
         public Node(Node prev, Node next, int count, int key)
         {
             this.prev = prev;
@@ -141,7 +132,6 @@ public class LFUCache
         }
     }
 }
-
 /**
  * Your LFUCache object will be instantiated and called as such:
  * LFUCache obj = new LFUCache(capacity);

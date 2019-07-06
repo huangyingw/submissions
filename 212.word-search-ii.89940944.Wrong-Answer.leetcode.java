@@ -34,7 +34,6 @@ public class Solution
 
         return res;
     }
-
     private void dfs(char[][] board, int i, int j, String str, boolean[][] visited, Trie trie, List<String> result)
     {
         if (i >= board.length || i < 0 || j >= board[0].length || j < 0)
@@ -61,11 +60,9 @@ public class Solution
         dfs(board, i, j + 1, newStr, visited, trie, result);
         dfs(board, i, j - 1, newStr, visited, trie, result);
     }
-
     class Trie
     {
         TrieNode root;
-
         public Trie(Set<String> strs)
         {
             root = new TrieNode();
@@ -75,7 +72,6 @@ public class Solution
                 insert(str);
             }
         }
-
         // gets the last node in the tree that matches the str, return null if not match
         public TrieNode startWith(String prefix)
         {
@@ -95,7 +91,6 @@ public class Solution
 
             return current;
         }
-
         public void insert(String word)
         {
             TrieNode current = root;
@@ -117,20 +112,17 @@ public class Solution
             current.isWord = true;
         }
     }
-
     class TrieNode
     {
         boolean isWord;
         char content;
         Map<Character, TrieNode> children;
-
         public TrieNode()
         {
             this.content = ' ';
             this.isWord = false;
             this.children = new HashMap<Character, TrieNode>();
         }
-
         public TrieNode(char content)
         {
             this.content = content;

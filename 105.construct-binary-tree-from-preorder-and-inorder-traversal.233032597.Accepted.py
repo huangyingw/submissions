@@ -38,7 +38,6 @@ class Solution(object):
     #             stack.append(temp)
     #             pp += 1
     #     return root
-
     def buildTree(self, preorder, inorder):
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}
@@ -54,7 +53,6 @@ class Solution(object):
         root.right = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1,
                                         iEnd)
         return root
-
     # def buildTree(self, preorder, inorder):
     # basic idea but memory not enough
     #     if preorder is None or len(preorder) == 0:

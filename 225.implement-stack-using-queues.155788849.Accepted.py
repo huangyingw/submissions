@@ -1,5 +1,4 @@
 class MyStack(object):
-
     def __init__(self):
         """
         Initialize your data structure here.

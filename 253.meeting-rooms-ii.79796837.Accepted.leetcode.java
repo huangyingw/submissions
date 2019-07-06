@@ -2,14 +2,12 @@ class Point
 {
     int time;
     int flag;
-
     Point(int t, int s)
     {
         this.time = t;
         this.flag = s;
     }
 }
-
 public class Solution
 {
     public int minMeetingRooms(Interval[] intervals)

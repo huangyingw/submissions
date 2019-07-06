@@ -25,7 +25,6 @@ public class Solution
         visited[i][j] = false;
         return re;
     }
-
     public boolean exist(char[][] board, String word)
     {
         boolean[][] visited = new boolean[board.length][board[0].length];

@@ -7,7 +7,6 @@ public class Solution
         reverse(nums, 0, k - 1);
         reverse(nums, k, nums.length - 1);
     }
-
     public void reverse(int[] nums, int left, int right)
     {
         for (; left < right; left++, right--)

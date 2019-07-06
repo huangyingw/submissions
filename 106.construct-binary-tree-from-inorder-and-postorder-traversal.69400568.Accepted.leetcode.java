@@ -8,7 +8,6 @@ public class Solution
         int postEnd = postorder.length - 1;
         return buildTree(inorder, inStart, inEnd, postorder, postStart, postEnd);
     }
-
     public TreeNode buildTree(int[] inorder, int inStart, int inEnd, int[] postorder, int postStart, int postEnd)
     {
         if (inStart > inEnd || postStart > postEnd)

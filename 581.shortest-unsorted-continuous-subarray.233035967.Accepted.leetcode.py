@@ -16,7 +16,6 @@ class Solution(object):
     #     if end >= start:
     #         return end - start + 1
     #     return 0
-
     def findUnsortedSubarray(self, nums):
         """
         :type nums: List[int]
@@ -36,7 +35,6 @@ class Solution(object):
         if r > l:
             return r - l + 1
         return 0
-
     # def findUnsortedSubarray(self, nums):
     #     smin = 2 ** 31 -1
     #     smax = -2 ** 31

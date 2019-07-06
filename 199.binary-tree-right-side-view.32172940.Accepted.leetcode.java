@@ -6,7 +6,6 @@ public class Solution
         dfs(result, root, 0);
         return result;
     }
-
     public  void dfs(List<Integer> result, TreeNode root, int cur)
     {
         if (root == null)

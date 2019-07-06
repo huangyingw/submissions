@@ -3,7 +3,6 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 # class Solution(object):
 #     def swapPairs(self, head):
 #         """
@@ -28,7 +27,6 @@ class Solution(object):
     #             last = nex
     #         current = nex
     #     return head
-
     def swapPairs(self, head):
         dummyHead = ListNode(-1)
         dummyHead.next = head

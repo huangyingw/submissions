@@ -11,7 +11,6 @@ class Solution(object):
         """
         if not height:
             return 0
-
         left, right = 0, len(height) - 1
         leftMax, rightMax = 0, 0
         result = 0
@@ -28,5 +27,4 @@ class Solution(object):
                 else:
                     result += (rightMax - height[right])
                 right -= 1
-
         return result

@@ -9,10 +9,10 @@ class Solution:
         for i in range(len(nums) + 1):
             if i not in nums:
                 return i
-
     # 2
     # 1中变式，使用set判断是否包含O(n)
     # 83.90%
+
     def missingNumber(self, nums):
         """
         :type nums: List[int]

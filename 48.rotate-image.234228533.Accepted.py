@@ -18,7 +18,6 @@ class Solution(object):
                 matrix[begin + k][end] = matrix[begin][begin + k]
                 matrix[begin][begin + k] = temp
         return
-
 if __name__ == '__main__':
     # begin
     s = Solution()

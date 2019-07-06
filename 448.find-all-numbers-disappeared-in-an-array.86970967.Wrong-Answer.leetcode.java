@@ -23,7 +23,6 @@ public class Solution
 
         return result;
     }
-
     public void swap(int[] nums, int i, int j)
     {
         int temp = nums[i];

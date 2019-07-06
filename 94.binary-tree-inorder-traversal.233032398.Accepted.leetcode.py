@@ -25,7 +25,6 @@ class Solution(object):
     #     res.append(curr.val)
     #     if curr.right is not None:
     #         self.do_inorderTraversal(res, curr.right)
-
     # def inorderTraversal(self, root):
     #     # iteratively, but break the tree
     #     res = []
@@ -58,7 +57,6 @@ class Solution(object):
     #             res.append(root.val)
     #             root = root.right
     #     return res
-
     def inorderTraversal(self, root):
         if root is None:
             return []

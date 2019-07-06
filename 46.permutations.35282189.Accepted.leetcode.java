@@ -6,7 +6,6 @@ public class Solution
         dfs(num, new boolean[num.length], new ArrayList<Integer>(), result);
         return result;
     }
-
     public void dfs(int[] num, boolean[] visited,
                     List<Integer> current, List<List<Integer>> result)
     {

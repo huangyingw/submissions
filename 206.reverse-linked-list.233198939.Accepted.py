@@ -1,12 +1,9 @@
 '''
 	Reverse a singly linked list.
-
 	Example:
-
 	Input: 1->2->3->4->5->NULL
 	Output: 5->4->3->2->1->NULL
 '''
-
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -22,7 +19,6 @@ class Solution(object):
         """
         if not head:
             return None
-
         prev, curr = None, head
         while curr:
             temp = curr.next

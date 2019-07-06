@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/available-captures-for-rook/
 # On an 8 x 8 chessboard, there is one white rook. There also may be empty squares, white bishops, and black pawns.
 # These are given as characters 'R', '.', 'B', and 'p' respectively.
@@ -10,7 +9,6 @@ _project_ = 'leetcode'
 # or captures an opposite colored pawn by moving to the same square it occupies.
 # Also, rooks cannot move into the same square as other friendly bishops.
 # Return the number of pawns the rook can capture in one move.
-
 # Find the coordinates of the rook. For each of the 4 directions, move until the edge of the board is reached, or a
 # bishop, or a pawn. If a pawn is found first, increment the count of pawns that can be captured.
 # Time - O(n**2) for board of size n
@@ -24,13 +22,11 @@ class Solution(object):
         :rtype: int
         """
         SIZE = 8
-
         for r in range(SIZE):
             for c in range(SIZE):
                 if board[r][c] == "R":
                     start_r, start_c = r, c
                     break
-
         pawns = 0
         for dr, dc in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
             row, col = start_r, start_c
@@ -44,5 +40,4 @@ class Solution(object):
                 if board[row][col] == "p":
                     pawns += 1
                     break
-
         return pawns

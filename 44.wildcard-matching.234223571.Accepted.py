@@ -26,7 +26,6 @@ class Solution(object):
     #     if p[p_index] == '?' or s[s_index] == p[p_index]:
     #         return self.dfs(s, p, s_index + 1, p_index + 1)
     #     return 1
-
     # def isMatch(self, s, p):
     #     #TODO
     #     # O(m * n) LTE
@@ -42,7 +41,6 @@ class Solution(object):
     #             elif p[j] == '*':
     #                 dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1]
     #     return dp[m][n]
-
     def isMatch(self, s, p):
         """
         :type s: str
@@ -69,8 +67,6 @@ class Solution(object):
         while p_index < p_len and p[p_index] == '*':
             p_index += 1
         return p_index == p_len
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

@@ -1,5 +1,4 @@
 class Codec:
-
     def serialize(self, root):
         def doit(node):
             if node:

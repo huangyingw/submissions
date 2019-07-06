@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/contiguous-array/
 """
 Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
-
 Example 1:
 Input: [0,1]
 Output: 2
@@ -20,11 +19,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-
         track, has = 0, {0: -1}
         length = len(nums)
         ress_max = 0
-
         for i in range(0, length):
             track += (1 if nums[i] == 1 else -1)
             if track not in has:

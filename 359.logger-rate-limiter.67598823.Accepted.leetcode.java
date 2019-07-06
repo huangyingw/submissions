@@ -3,7 +3,6 @@ public class Logger
     private List<String>[] buf = new List[10];
     private Set<String> set = new HashSet<>();
     private int from = 0;
-
     /** Initialize your data structure here. */
     public Logger()
     {
@@ -12,7 +11,6 @@ public class Logger
             buf[i] = new ArrayList<>();
         }
     }
-
     /** Returns true if the message should be printed in the given timestamp, otherwise returns false. The timestamp is in seconds granularity. */
     public boolean shouldPrintMessage(int timestamp, String message)
     {

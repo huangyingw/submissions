@@ -28,7 +28,6 @@ public class Solution
 
         return result;
     }
-
     public void dfs(char[][] grid, int i, int j)
     {
         if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0')

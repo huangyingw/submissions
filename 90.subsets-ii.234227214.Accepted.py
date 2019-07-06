@@ -24,7 +24,6 @@ class Solution(object):
     #         if (1 << i) & magic != 0:
     #             res.append(nums[i])
     #     return res
-
     def subsetsWithDup(self, nums):
         nums.sort()
         res = [[]]

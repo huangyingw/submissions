@@ -30,7 +30,6 @@ class Solution(object):
     #     result.append(node.val)
     #     result.extend(self.getOrder(node.right))
     #     return result
-
     def isValidBST(self, root):
         return self.isVaild_helper(root, -sys.maxint - 1, sys.maxint)
 

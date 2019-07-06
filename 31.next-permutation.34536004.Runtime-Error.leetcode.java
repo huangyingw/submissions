@@ -6,7 +6,6 @@ public class Solution
         num[i] = num[j];
         num[j] = temp;
     }
-
     private void reverse(int[] num, int begin, int end)
     {
         while (begin < end)
@@ -14,7 +13,6 @@ public class Solution
             swap(num, begin++, end--);
         }
     }
-
     public void nextPermutation(int[] num)
     {
         if (num.length <= 1)

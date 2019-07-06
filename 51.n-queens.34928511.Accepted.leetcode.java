@@ -6,7 +6,6 @@ public class Solution
         helper(n, 0, new int[n], res);
         return res;
     }
-
     private void helper(int n, int row, int[] columnForRow,
                         List<List<String>> res)
     {
@@ -47,7 +46,6 @@ public class Solution
             }
         }
     }
-
     private boolean check(int row, int[] columnForRow)
     {
         for (int i = 0; i < row; i++)

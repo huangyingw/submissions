@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/backspace-string-compare/
 # Given two strings S and T, return if they are equal when both are typed into empty text editors.
 # "#" means a backspace character.
-
 # Start at the ends of both strings. Step backwards to find the next non-deleted chars in both strings. Increment the
 # chars to be deleted when "#" is seen, else decrement the number of chars to be deleted.
 # Time - O(max(m, n))
@@ -26,18 +24,14 @@ class Solution(object):
                 delete = delete + 1 if string[i] == "#" else delete - 1
                 i -= 1
             return i
-
         while True:
-
             s_i = next_char(S, s_i)
             t_i = next_char(T, t_i)
-
             if s_i == -1 and t_i == -1:     # both strings ended
                 return True
             if s_i == -1 or t_i == -1:      # one string ended
                 return False
             if S[s_i] != T[t_i]:            # chars do not match
                 return False
-
             s_i -= 1                        # move to next chars
             t_i -= 1

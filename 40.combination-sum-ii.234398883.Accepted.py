@@ -13,7 +13,6 @@ class Solution:
         if not target:
             result.append(path)
             return
-
         for i in range(start, len(nums)):
             # Very important here! We don't use `i > 0` because we always want
             # to count the first element in this recursive step even if it is the same
@@ -21,12 +20,10 @@ class Solution:
             # after the first element.
             if i > start and nums[i] == nums[i - 1]:
                 continue
-
             # If the current element is bigger than the assigned target, there is
             # no need to keep searching, since all the numbers are positive
             if nums[i] > target:
                 break
-
             # We change the start to `i + 1` because one element only could
             # be used once
             self.combine_sum_2(nums, i + 1, path + [nums[i]],

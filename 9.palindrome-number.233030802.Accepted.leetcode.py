@@ -25,7 +25,6 @@ class Solution(object):
                 return False
             tmp = tmp // 10
         return True
-
     # def isPalindrome(self, x):
     #     #leetcode book
     #     if x < 0:
@@ -41,7 +40,6 @@ class Solution(object):
     #         x = (x % div) / 10
     #         div /= 100
     #     return True
-
     # def isPalindrome(self, x):
     #     # reverse number
     #     if x < 0:
@@ -56,8 +54,6 @@ class Solution(object):
     #         return True
     #     else:
     #         return False
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

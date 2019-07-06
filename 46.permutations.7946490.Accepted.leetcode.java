@@ -13,7 +13,6 @@ public class Solution
         permutation(null, suffix, result);
         return result;
     }
-
     public void permutation(List<Integer> prefix, List<Integer> suffix,
                             List<List<Integer>> result)
     {

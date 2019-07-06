@@ -1,11 +1,9 @@
 # class Logger(object):
-
 #     def __init__(self):
 #         """
 #         Initialize your data structure here.
 #         """
 #         self.timestamps = {}
-
 #     def shouldPrintMessage(self, timestamp, message):
 #         """
 #         Returns true if the message should be printed in the given timestamp, otherwise returns false.
@@ -19,13 +17,10 @@
 #             return False
 #         self.timestamps[message] = timestamp + 10
 #         return True
-
-
 import heapq
 
 
 class Logger(object):
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -53,8 +48,6 @@ class Logger(object):
         self.cache[message] = timestamp + 10
         heapq.heappush(self.heap, (timestamp + 10, message))
         return True
-
-
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()
 # param_1 = obj.shouldPrintMessage(timestamp,message)

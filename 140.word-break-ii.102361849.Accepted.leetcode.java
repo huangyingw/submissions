@@ -39,7 +39,6 @@ public class Solution
         dfs(dp, s.length(), result, current);
         return result;
     }
-
     public void dfs(List<String> dp[], int end, List<String> result, ArrayList<String> current)
     {
         if (end <= 0)

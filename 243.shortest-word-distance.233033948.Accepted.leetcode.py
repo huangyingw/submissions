@@ -20,7 +20,6 @@ class Solution(object):
     #         if curr_range < min_range:
     #             min_range = curr_range
     #     return min_range
-
     def shortestDistance(self, words, word1, word2):
         index1 = index2 = -1
         res = len(words)

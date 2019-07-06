@@ -11,7 +11,6 @@ class MinStack
             min.push(x);
         }
     }
-
     public void pop()
     {
         int temp = data.pop();
@@ -21,12 +20,10 @@ class MinStack
             min.pop();
         }
     }
-
     public int top()
     {
         return data.peek();
     }
-
     public int getMin()
     {
         return min.peek();

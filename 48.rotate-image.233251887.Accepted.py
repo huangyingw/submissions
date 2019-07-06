@@ -1,6 +1,5 @@
 '''
 	You are given an n x n 2D matrix representing an image.
-
 	Rotate the image by 90 degrees (clockwise).
 '''
 
@@ -16,7 +15,6 @@ class Solution(object):
             m = n / 2
         else:
             m = n / 2 + 1
-
         for i in range(n / 2):
             for j in range(m):
                 temp = matrix[i][j]

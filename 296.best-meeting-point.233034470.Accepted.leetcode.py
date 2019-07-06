@@ -16,13 +16,11 @@ class Solution(object):
     #     cols.sort()
     #     col = cols[len(cols) / 2]
     #     return self.minDistance1D(rows, row) + self.minDistance1D(cols, col)
-
     # def minDistance1D(self, points, origin):
     #     distance = 0
     #     for point in points:
     #         distance += abs(point - origin)
     #     return distance
-
     def minDistance1D(self, points):
         # two points
         distance = 0

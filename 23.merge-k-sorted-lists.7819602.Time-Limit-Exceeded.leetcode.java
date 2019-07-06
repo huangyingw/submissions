@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public ListNode mergeTwoLists(ListNode l1, ListNode l2)
     {
         ListNode p1 = l1;
@@ -27,7 +26,6 @@ public class Solution
         p.next = p1 != null ? p1 : p2;
         return fakeHead.next;
     }
-
     public ListNode mergeKLists(ArrayList<ListNode> lists)
     {
         if (lists.size() == 0)

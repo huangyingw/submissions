@@ -13,21 +13,17 @@ class Solution(object):
                 if count < 0:
                     return False
             return (count == 0)
-
         queue, result = [s], []
         visited = set()
         visited.add(s)
         level = False
-
         while queue:
             new_str = queue.pop(0)
             if isValid(new_str):
                 result.append(new_str)
                 level = True
-
             if level:
                 continue
-
             for index in range(len(new_str)):
                 if not (new_str[index] == "(" or new_str[index] == ")"):
                     continue

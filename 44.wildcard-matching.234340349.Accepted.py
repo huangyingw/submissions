@@ -17,7 +17,6 @@ class Solution(object):
                     curr.append(prev[j] and p[j] in [s[i], '?'])
             prev = curr
         return prev[-1]
-
         # dp = [[False]*(len(s) + 1) for _ in range(len(p) + 1)]
         # dp[0][0] = True
         # for i in range(1, len(p) + 1):

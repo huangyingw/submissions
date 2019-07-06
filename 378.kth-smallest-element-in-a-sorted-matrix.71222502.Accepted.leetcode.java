@@ -23,7 +23,6 @@ public class Solution
 
         return upper;
     }
-
     private int count(int[][] matrix, int target)
     {
         int m = matrix.length;

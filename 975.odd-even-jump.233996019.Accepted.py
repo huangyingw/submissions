@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/odd-even-jump/
 # You are given an integer array A.  From some starting index, you can make a series of jumps.
 # The (1st, 3rd, 5th, ...) jumps in the series are called odd numbered jumps, and the (2nd, 4th, 6th, ...) jumps in
@@ -15,7 +14,6 @@ _project_ = 'leetcode'
 # A starting index is good if, starting from that index, you can reach the end of the array (index A.length - 1) by
 # jumping some number of times (possibly 0 or more than once.)
 # Return the number of good starting indexes.
-
 # Create lists of the next smaller and the next larger element from each element of the array.
 # Lists are made by sorting the indices of A in ascending and descending order of the values. Indices are popped from
 # a stack when a next smaller or larger element is found.
@@ -41,19 +39,15 @@ class Solution:
                     result[stack.pop()] = i             # i is index of next larger or smaller element after stack top
                 stack.append(i)
             return result
-
         indices = sorted(range(n), key=lambda x: A[x])  # sort indices of A by increasing A[x]
         next_larger = next_list()
         indices.sort(key=lambda x: -A[x])               # sort indices of A by decreasing A[x]
         next_smaller = next_list()
-
         odd = [False] * (n - 1) + [True]                # default can reach the end only from last element
         even = [False] * (n - 1) + [True]
-
         for i in range(n - 2, -1, -1):                  # iterate form back to front
             if next_larger[i] is not None:
                 odd[i] = even[next_larger[i]]
             if next_smaller[i] is not None:
                 even[i] = odd[next_smaller[i]]
-
         return sum(odd)                                 # count of odd indices that can reach end

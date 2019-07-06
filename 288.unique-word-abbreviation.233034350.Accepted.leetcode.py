@@ -27,7 +27,6 @@ class ValidWordAbbr(object):
         if len(word) <= 2:
             return word
         return word[0] + str(len(word) - 2) + word[-1]
-
         # Your ValidWordAbbr object will be instantiated and called as such:
         # vwa = ValidWordAbbr(dictionary)
         # vwa.isUnique("word")

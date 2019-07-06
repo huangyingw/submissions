@@ -21,7 +21,6 @@ class Solution(object):
             nums1[pos] = nums2[p2]
             p2 -= 1
             pos -= 1
-
     # def merge(self, nums1, m, nums2, n):
     #     # using slicing
     #     i, j, k = m - 1, n - 1, m + n - 1

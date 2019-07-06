@@ -20,6 +20,5 @@ class Solution(object):
                 b += a < 0
                 a = max(a, 0)
             return a + b
-
         visited = set([s])
         return dfs(s)

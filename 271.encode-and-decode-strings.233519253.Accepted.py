@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/encode-and-decode-strings/
 # Design an algorithm to encode a list of strings to a string.
 # The encoded string is then sent over the network and is decoded back to the original list of strings.
-
 # Prepend each string with its lenght and a special char '*'.  To decode, find the first '*', text before this is the
 # length of the substring.  find() will always locate '*' after the length, never within a substring.
 # Alternatively, prepend each string by its length as a string, padding string length with zeros to be a fixed number

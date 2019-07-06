@@ -1,8 +1,6 @@
 '''
 	Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
-
 	Example 1:
-
 	Input:
 	[
 	 [ 1, 2, 3 ],
@@ -21,11 +19,9 @@ class Solution(object):
         """
         if not matrix:
             return []
-
         R, C = len(matrix), len(matrix[0])
         dr = [0, 1, 0, -1]
         dc = [1, 0, -1, 0]
-
         result = []
         seen = [[False] * C for _ in range(R)]
         row = 0
@@ -40,5 +36,4 @@ class Solution(object):
             else:
                 di = (di + 1) % 4
                 row, col = row + dr[di], col + dc[di]
-
         return result

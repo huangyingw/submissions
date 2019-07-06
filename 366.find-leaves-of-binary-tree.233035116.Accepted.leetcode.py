@@ -34,7 +34,6 @@ class Solution(object):
     #         for node in curr:
     #             check_set.remove(node)
     #     return res
-
     def findLeaves(self, root):
         res = []
         self.findLeaves_helper(root, res)

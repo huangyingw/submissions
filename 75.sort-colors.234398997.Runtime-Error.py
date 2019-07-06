@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/sort-colors/description/
 from collections import Counter
-
 # 1 直接sort
 
 
@@ -10,7 +9,6 @@ def sortColors1(self, nums):
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     nums.sort()
-
 # 2 利用字典，计算出0，1，2的个数
 
 
@@ -21,7 +19,6 @@ def sortColors(self, nums):
     """
     c = Counter(nums)
     nums[:] = [0] * c[0] + [1] * c[1] + [2] * c[2]
-
 # 3 使用堆heapq
 
 
@@ -45,12 +42,10 @@ def sortColors4(self, nums):
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-
     def swap(arr, i1, i2):
         temp = arr[i1]
         arr[i1] = arr[i2]
         arr[i2] = temp
-
     ptr0 = 0
     ptr1 = 0
     ptr2 = 0

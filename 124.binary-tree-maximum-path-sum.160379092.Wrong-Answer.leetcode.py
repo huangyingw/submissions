@@ -5,7 +5,6 @@ class Solution(object):
         def dfs(root):
             if not root:
                 return 0
-
             left = dfs(root.left)
             right = dfs(root.right)
             self.max_sum = max(self.max_sum, root.val + left + right)

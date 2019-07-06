@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/contain-virus/
 # A virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.
 # The world is modeled as a 2-D array of cells, where 0 represents uninfected cells, and 1 represents cells
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # block of infected cells) that threatens the most uninfected cells the following night. There will never be a tie.
 # Can you save the day? If so, what is the number of walls required? If not, and the world becomes fully infected,
 # return the number of walls used.
-
 # Iterate over grid, finding regions of virus with dfs. For each region find its empty neighbours and walls required
 # to contain it. Contain the region with most neighbours by setting grid cells to 2 and increment wall count.
 # Infect neighbours of of other regions. Repeat until no uninfected uncontained regions or no more infection possible.
@@ -32,7 +30,6 @@ class Solution(object):
             if (r, c) in visited:
                 return
             visited.add((r, c))
-
             for dr, dc in [[0, 1], [0, -1], [1, 0], [-1, 0]]:
                 r1, c1 = r + dr, c + dc
                 if r1 < 0 or r1 >= rows or c1 < 0 or c1 >= cols:
@@ -53,11 +50,9 @@ class Solution(object):
             grid[r][c] = 2
             for dr, dc in [[0, 1], [0, -1], [1, 0], [-1, 0]]:
                 contain_region(r + dr, c + dc)
-
         while True:
             regions = []
             visited = set()
-
             for r in range(rows):
                 for c in range(cols):
                     # for each viral region, find its neighbouring empty cells and walls required
@@ -65,15 +60,11 @@ class Solution(object):
                         nbors, walls = set(), [0]
                         get_nbors(r, c)
                         regions.append([(r, c), set(nbors), walls[0]])
-
             regions.sort(key=lambda x: -len(x[1]))        # sort by most neighbours
-
             if not regions or len(regions[0][1]) == 0:      # all contained or fully infected
                 return used_walls
-
             used_walls += regions[0][2]                     # contain first region
             contain_region(regions[0][0][0], regions[0][0][1])
-
             for _, expansion, _ in regions[1:]:             # infect neighbours of other regions
                 for r, c in expansion:
                     grid[r][c] = 1

@@ -12,7 +12,6 @@ class Solution:
             return 0
         elif target > nums[-1]:
             return len(nums)
-
         low = 0
         high = len(nums) - 1
         while low <= high:

@@ -39,7 +39,6 @@ public class Solution
 
         return maxLen;
     }
-
     private int findLvl(String s)
     {
         int count = 0;

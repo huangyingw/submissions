@@ -1,5 +1,4 @@
 class Solution(object):
-
     def __init__(self):
         self.count = 0
 
@@ -10,10 +9,8 @@ class Solution(object):
     def isUnivalSubtrees(self, root):
         if not root:
             return None
-
         left = self.countUnivalSubtrees(root.left)
         right = self.countUnivalSubtrees(root.right)
-
         if left == right:
             self.count += 1
             return root

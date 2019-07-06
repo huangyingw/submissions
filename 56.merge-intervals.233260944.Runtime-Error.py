@@ -1,13 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/merge-intervals/
 # Given a collection of intervals, merge all overlapping intervals.
-
 # Sort intervals by start points.  If interval starts before previous interval ends then merge, else add to result.
 # Time - O(n log n)
 # Space - O(1)
-
 # Definition for an interval.
 
 
@@ -25,7 +22,6 @@ class Solution(object):
         """
         intervals.sort(key=lambda x: x.start)
         merged = []
-
         for interval in intervals:
             if not merged or merged[-1].end < interval.start:
                 merged.append(interval)

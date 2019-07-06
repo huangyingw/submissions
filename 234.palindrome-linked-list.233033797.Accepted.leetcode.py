@@ -23,7 +23,6 @@ class Solution(object):
     #     isPal = self.check(node.next) and (self.curr_head.val == node.val)
     #     self.curr_head = self.curr_head.next
     #     return isPal
-
     def isPalindrome(self, head):
         # p2 is 2 times faster than p3
         # p1 and pre is used to reverse the first half of the list
@@ -43,7 +42,6 @@ class Solution(object):
             p1.next = pre
         if p2.next is None:
             p1 = p1.next
-
         while p3 is not None:
             if p1.val != p3.val:
                 return False

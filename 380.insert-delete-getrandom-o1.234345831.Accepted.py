@@ -41,7 +41,6 @@ class RandomizedSet:
         :rtype: int
         """
         return random.choice(self.nums)
-
         # Your RandomizedSet object will be instantiated and called as such:
         # obj = RandomizedSet()
         # param_1 = obj.insert(val)

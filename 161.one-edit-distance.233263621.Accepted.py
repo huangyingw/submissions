@@ -1,9 +1,7 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/one-edit-distance/
 # Given two strings s and t, determine if they are both one edit distance apart.
-
 # If same lengths find the one different char (replacement edit) and test all else are same.
 # If length diff of 1, find the extra char in longer and check all else is the same.
 # Time - O(n)
@@ -20,7 +18,6 @@ class Solution(object):
         diff = len(s) - len(t)
         if abs(diff) > 1:       # early break
             return False
-
         edit = False
         if diff == 0:           # one replacement
             for c_s, c_t in zip(s, t):
@@ -29,7 +26,6 @@ class Solution(object):
                         return False
                     edit = True
             return edit         # False if no replacement
-
         else:                   # abs(diff) == 1
             long, short = s, t
             if diff < 0:

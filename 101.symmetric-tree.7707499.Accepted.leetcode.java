@@ -49,5 +49,4 @@ public class Solution
 
         return lefts.isEmpty() && rights.isEmpty();
     }
-
 }

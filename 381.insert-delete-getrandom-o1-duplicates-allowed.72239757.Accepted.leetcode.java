@@ -3,7 +3,6 @@ public class RandomizedCollection
     HashMap<Integer, HashSet<Integer>> map1;
     HashMap<Integer, Integer> map2;
     Random r;
-
     /** Initialize your data structure here. */
     public RandomizedCollection()
     {
@@ -11,7 +10,6 @@ public class RandomizedCollection
         map2 = new HashMap<Integer, Integer>();
         r = new Random();
     }
-
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     public boolean insert(int val)
     {
@@ -32,7 +30,6 @@ public class RandomizedCollection
             return true;
         }
     }
-
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
     public boolean remove(int val)
     {
@@ -67,7 +64,6 @@ public class RandomizedCollection
 
         return false;
     }
-
     /** Get a random element from the collection. */
     public int getRandom()
     {

@@ -3,7 +3,6 @@ class Solution(object):
         def dfs(root):
             if not root:
                 return
-
             dfs(root.left)
             result.append(root.val)
             dfs(root.right)

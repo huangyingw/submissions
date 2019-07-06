@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public int atoi(String str)
     {
         int index = 0;

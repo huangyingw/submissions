@@ -28,7 +28,6 @@ class Solution(object):
             if board[height - 1][j] == "O":
                 leakWall.append((height - 1, j))
         return leakWall
-
     # def solve(self, board):
     #     # https://leetcode.com/problems/surrounded-regions/
     #     if not any(board): return

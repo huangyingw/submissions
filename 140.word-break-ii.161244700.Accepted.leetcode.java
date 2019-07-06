@@ -5,7 +5,6 @@ public class Solution
     char[] s;
     List<String> dict = null;
     int n;
-
     boolean dfs(int p, String now)
     {
         if (p == n)
@@ -40,7 +39,6 @@ public class Solution
         f[p] = success;
         return success;
     }
-
     public List<String> wordBreak(String ss, List<String> wordDict)
     {
         dict = wordDict;

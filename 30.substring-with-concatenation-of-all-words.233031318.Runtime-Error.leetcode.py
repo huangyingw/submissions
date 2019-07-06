@@ -31,15 +31,12 @@ class Solution(object):
                 # all word in target dict
                 res.append(start)
         return res
-
     # def findSubstring(self, s, words):
     #     # https://leetcode.com/discuss/87745/3-line-python-solution-sorted-hash-112ms
     #     wLen, wtLen, wSet, sortHash, sLen = len(words[0]), len(words[0]) * len(words), set(words), sorted(
     #         [hash(w) for w in words]), len(s)
     #     h = [hash(s[i:i + wLen]) if s[i:i + wLen] in wSet else None for i in xrange(sLen - wLen + 1)]
     #     return [i for i in xrange(sLen - wtLen + 1) if h[i] and sorted(h[i: i + wtLen: wLen]) == sortHash]
-
 if __name__ == '__main__':
     s = Solution()
-
     # [6,9,12]

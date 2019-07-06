@@ -1,11 +1,9 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/range-sum-query-mutable/
 # Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
 # The update(i, val) function modifies nums by updating the element at index i to val.
 # You may assume the number of calls to update and sumRange function is distributed evenly.
-
 # Break nums into bins, each of size approx n**0.5 and containing approx n**0.5 nums.  Calculate the sum of each bin.
 # To sumRange(), sum the bins from and including i to and excluding j, then add the sum of nums from the bin containing
 # j and subtract the nums before i from the bin containing i.  Update nums as well as bin_sums.
@@ -16,7 +14,6 @@ _project_ = 'leetcode'
 
 
 class NumArray(object):
-
     def __init__(self, nums):
         """
         :type nums: List[int]
@@ -24,7 +21,6 @@ class NumArray(object):
         self.width = int(len(nums)**0.5)    # width of each bin (apart from last)
         self.bin_sums = []                  # sum of each bin
         self.nums = nums
-
         for i, num in enumerate(nums):
             if i % self.width == 0:         # start a new bin
                 self.bin_sums.append(num)

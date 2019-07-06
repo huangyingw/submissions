@@ -14,7 +14,6 @@ public class Solution
 
         return dp[i][j];
     }
-
     public int maxCoins(int[] iNums)
     {
         int n = iNums.length;

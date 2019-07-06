@@ -14,7 +14,6 @@ class Solution(object):
         """
         if head is None or head.next is None:
             return head
-
         root, tail, head = head, head, head.next
         while head:
             if head.val != tail.val:
@@ -22,5 +21,4 @@ class Solution(object):
                 tail = tail.next
             head = head.next
         tail.next = None
-
         return root

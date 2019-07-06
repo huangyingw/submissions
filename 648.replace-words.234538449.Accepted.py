@@ -1,11 +1,8 @@
 # https://leetcode.com/problems/replace-words/description/
 """
 In English, we have a concept called root, which can be followed by some other words to form another longer word - let's call this word successor. For example, the root an, followed by other, which can form another word another.
-
 Now, given a dictionary consisting of many roots and a sentence. You need to replace all the successor in the sentence with the root forming it. If a successor has many roots can form it, replace it with the root with the shortest length.
-
 You need to output the sentence after the replacement.
-
 Example 1:
 Input: dict = ["cat", "bat", "rat"]
 sentence = "the cattle was rattled by the battery"
@@ -26,7 +23,6 @@ class Solution(object):
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()
         END = True
-
         for root in roots:
             reduce(dict.__getitem__, root, trie)[END] = root
 
@@ -37,13 +33,11 @@ class Solution(object):
                     break
                 cur = cur[letter]
             return cur.get(END, word)
-
         return " ".join(map(replace, sentence.split()))
 
 
 class Solution2:
     def replaceWords(self, dict, sentence):
-
         from collections import defaultdict
 
         def init_lookup(dict):
@@ -51,9 +45,7 @@ class Solution2:
             for word in dict:
                 lookup[word[0]].append(word)
             return lookup
-
         lookup = init_lookup(dict)
-
         new_sentence = []
         words = sentence.split()
         for word in words:
@@ -68,12 +60,10 @@ class Solution2:
 class Solution3:
     def replaceWords(self, dict, sentence):
         from collections import defaultdict
-
         root_dict = sorted(dict)
         roots = defaultdict(list)
         for d in root_dict:
             roots[d[0]].append(d)
-
         words = sentence.split()
         for i in range(len(words)):
             r = words[i]

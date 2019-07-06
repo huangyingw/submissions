@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private void add(int[] bit, int i, int val)
     {
         for (; i < bit.length; i += i & -i)
@@ -8,7 +7,6 @@ public class Solution
             bit[i] += val;
         }
     }
-
     private int query(int[] bit, int i)
     {
         int ans = 0;
@@ -20,7 +18,6 @@ public class Solution
 
         return ans;
     }
-
     public List<Integer> countSmaller(int[] nums)
     {
         int[] tmp = nums.clone();

@@ -2,7 +2,6 @@ public class NestedIterator implements Iterator<Integer>
 {
     Stack<Iterator<NestedInteger>> stack = new Stack<Iterator<NestedInteger>>();
     Integer current;
-
     public NestedIterator(List<NestedInteger> nestedList)
     {
         if (nestedList == null)
@@ -12,7 +11,6 @@ public class NestedIterator implements Iterator<Integer>
 
         stack.push(nestedList.iterator());
     }
-
     @Override
     public Integer next()
     {
@@ -20,7 +18,6 @@ public class NestedIterator implements Iterator<Integer>
         current = null;
         return result;
     }
-
     @Override
     public boolean hasNext()
     {

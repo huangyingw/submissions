@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-search-autocomplete-system/
 # Design a search autocomplete system for a search engine. Users may input a sentence (at least one word and end with
 # a special character '#'). For each character they type except '#', you need to return the top 3 historical hot
@@ -21,7 +20,6 @@ _project_ = 'leetcode'
 #   lower-case letters ('a' to 'z'), blank space (' ') or a special character ('#'). Also, the previously typed
 #   sentence should be recorded in your system. The output will be the top 3 historical hot sentences that have prefix
 #   the same as the part of sentence already typed.
-
 # Store sentences that have already been seen in a map (key = sentence, value = count).
 # When the first char of a new sentence is input, create a list of all previously seen sentences that match the first
 # char, sorted by decreasing count. Then for each subsequent char, all we need to do is filter the existing list,
@@ -29,7 +27,6 @@ _project_ = 'leetcode'
 # At the end of the input, simply increment the count.
 # Time - O(n) for constructor when n is number of sentences. O(n log n) to input first char then O(n).
 # Space - O(n)
-
 from collections import defaultdict
 
 
@@ -41,7 +38,6 @@ class AutocompleteSystem(object):
         """
         self.partial = []  # previously seen chars of current sentence
         self.matches = []  # matching sentences in decreasing frequency order
-
         self.counts = defaultdict(int)  # map from sentence to its frequency
         for sentence, count in zip(sentences, times):
             self.counts[sentence] = count
@@ -57,7 +53,6 @@ class AutocompleteSystem(object):
             self.partial = []  # reset partial and matches
             self.matches = []
             return []
-
         if not self.partial:  # first char of sentence
             self.matches = [(-count, sentence) for sentence, count in self.counts.items() if sentence[0] == c]
             self.matches.sort()
@@ -65,6 +60,5 @@ class AutocompleteSystem(object):
         else:
             i = len(self.partial)  # filter matches for c
             self.matches = [sentence for sentence in self.matches if len(sentence) > i and sentence[i] == c]
-
         self.partial.append(c)
         return self.matches[:3]

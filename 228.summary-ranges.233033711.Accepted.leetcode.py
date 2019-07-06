@@ -22,7 +22,6 @@ class Solution(object):
     #     else:
     #         res.append("%d->%d" % (start, prev))
     #     return res
-
     def summaryRanges(self, nums):
         res = []
         start, ls = 0, len(nums)

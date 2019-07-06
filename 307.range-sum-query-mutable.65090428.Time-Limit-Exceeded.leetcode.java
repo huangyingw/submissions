@@ -5,7 +5,6 @@ public class NumArray
         int start, end;
         int sum;
         SegmentTreeNode left, right;
-
         // Constructor
         public SegmentTreeNode(int start, int end)
         {
@@ -13,18 +12,14 @@ public class NumArray
             this.end = end;
             sum = 0;
         }
-
         public SegmentTreeNode(int start, int end, int sum)
         {
             this.start = start;
             this.end = end;
             this.sum = sum;
         }
-
     }
-
     private SegmentTreeNode root;
-
     public NumArray(int[] nums)
     {
         if (nums == null || nums.length == 0)
@@ -34,12 +29,10 @@ public class NumArray
 
         root = buildSegmentTree(nums, 0, nums.length - 1);
     }
-
     void update(int i, int val)
     {
         updateHelper(root, i, val);
     }
-
     private void updateHelper(SegmentTreeNode root, int i, int val)
     {
         if (root == null)
@@ -66,12 +59,10 @@ public class NumArray
 
         root.sum = root.left.sum + root.right.sum;
     }
-
     public int sumRange(int i, int j)
     {
         return sumRangeHelper(root, i, j);
     }
-
     private int sumRangeHelper(SegmentTreeNode root, int start, int end)
     {
         if (root == null || end < root.start || start > root.end ||
@@ -89,7 +80,6 @@ public class NumArray
         return sumRangeHelper(root.left, start, Math.min(end, mid)) +
                sumRangeHelper(root.right, Math.max(mid + 1, start), end);
     }
-
     private SegmentTreeNode buildSegmentTree(int[] nums, int start, int end)
     {
         if (nums == null || nums.length == 0 || start > end)

@@ -4,7 +4,6 @@ class Solution(object):
         stk2 = []
         self.inorder(root, False, target, stk1)
         self.inorder(root, True, target, stk2)
-
         res = []
         for _ in xrange(k):
             if not stk1:

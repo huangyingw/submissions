@@ -1,4 +1,3 @@
-
 class Solution(object):
     def toHex(self, num):
         """
@@ -21,11 +20,9 @@ class Solution(object):
             num = num >> 4
         # strip leading zeroes
         return ans.lstrip('0')
-
     # def toHex(self, num):
     #     def tohex(val, nbits):
     #         return hex((val + (1 << nbits)) % (1 << nbits))
     #     return tohex(num, 32)[2:]
-
     # def toHex(self, num, h=''):
     #     return (not num or h[7:]) and h or self.toHex(num / 16, '0123456789abcdef'[num % 16] + h)

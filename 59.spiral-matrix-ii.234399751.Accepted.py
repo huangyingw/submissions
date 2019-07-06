@@ -1,9 +1,7 @@
 # https://leetcode.com/problems/spiral-matrix-ii/description/
 """
 Given a positive integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
-
 Example:
-
 Input: 3
 Output:
 [
@@ -39,9 +37,9 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return seen
-
     # 2
     # 更清晰的一种写法
+
     def generateMatrix2(self, n):
         """
         :type n: int

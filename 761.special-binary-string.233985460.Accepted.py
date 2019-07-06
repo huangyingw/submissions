@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/special-binary-string/
 # Special binary strings are binary strings with the following two properties:
 # The number of 0's is equal to the number of 1's.
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 # swapping them. (Two strings are consecutive if the last character of the first string is exactly one index before the
 # first character of the second string.)
 # At the end of any number of moves, what is the lexicographically largest resulting string possible?
-
 # Create a list of all optimal special strings, sort in order of most starting 1s and join.
 # To create an optimal special string, iterate over S finding the point there the next balance of 1s minus 0s falls to
 # zero. Remove the leading 1 and trailing 0 and recurse on the middle part. Middle part is a special string because
@@ -26,17 +24,13 @@ class Solution(object):
         :rtype: str
         """
         specials = []
-
         if not S:
             return ""
-
         balance, start = 0, 0
         for i, c in enumerate(S):
-
             balance += 1 if c == "1" else -1
             if balance == 0:
                 specials.append("1" + self.makeLargestSpecial(S[start + 1:i]) + "0")
                 start = i + 1
-
         specials.sort(reverse=True)
         return "".join(specials)

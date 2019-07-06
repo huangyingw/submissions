@@ -4,7 +4,6 @@ public class Solution
     {
         return minDepth(root, false);
     }
-
     public int minDepth(TreeNode root, Boolean hasBrother)
     {
         if (root == null)

@@ -33,7 +33,6 @@ public class Solution
         dfs4(s, dict, path, ret, 0, D);
         return ret;
     }
-
     public static void dfs4(String s, List<String> dict, List<String> path, List<String> ret, int index, boolean canBreak[])
     {
         int len = s.length();

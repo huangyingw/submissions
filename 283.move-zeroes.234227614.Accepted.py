@@ -18,7 +18,6 @@ class Solution(object):
     #                     break
     #                 curr += 1
     #         pos += 1
-
     def moveZeroes(self, nums):
         # O(n)
         ls = len(nums)

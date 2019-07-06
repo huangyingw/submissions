@@ -23,7 +23,6 @@ class Solution(object):
     #     elif nums[mid] > nums[end]:
     #         # left side sorted
     #         return self.get_min(nums, mid, end)
-
     def findMin(self, nums):
         # A[l] > A[r]
         l, r = 0, len(nums) - 1

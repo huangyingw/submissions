@@ -17,7 +17,6 @@ class Solution(object):
     #             tempMax = max(tempMax, dp[t - 1][i] - prices[i])
     #             max_profit = max(dp[t][i], max_profit)
     #     return max_profit
-
     # https://discuss.leetcode.com/topic/50360/python-dp-and-non-dp-solution
     def maxProfit(self, prices):
         ls = len(prices)

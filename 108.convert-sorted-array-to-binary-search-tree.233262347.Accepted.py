@@ -1,13 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 # Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
-
 # Mid element is root, recursively form left and right subtrees.
 # Time - O(n)
 # Space - O(n)
-
 # Definition for a binary tree node.
 
 

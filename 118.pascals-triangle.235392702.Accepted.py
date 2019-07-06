@@ -1,9 +1,7 @@
 class Solution(object):
     def generate(self, numRows):
-
         if numRows == 0:
             return []
-
         Ans = []
         Ans.append([1])
         for i in range(1, numRows):
@@ -14,15 +12,12 @@ class Solution(object):
                 Ans[i].append(Ans[i - 1][a - 1] + Ans[i - 1][a])
                 a += 1
             Ans[i].append(1)
-
         return Ans
-
 # solution II
 
 
 class SolutionII(object):
     def generate(self, numRows):
-
         Ans = []
         for i in range(numRows):
             if i <= 1:

@@ -15,7 +15,6 @@ class Solution(object):
                 res.append(nums[i])
             check_value.append(nums[i])
         return res
-
     # def majorityElement(self, nums):
     #     # using dict
     #     count_hash = {}
@@ -29,7 +28,6 @@ class Solution(object):
     #         if v > len(nums) / 3:
     #             res.append(k)
     #     return res
-
     # def majorityElement(self, nums):
     #     """
     #     :type nums: List[int]

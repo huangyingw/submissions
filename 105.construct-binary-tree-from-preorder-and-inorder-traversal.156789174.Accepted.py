@@ -12,7 +12,6 @@ class Solution(object):
         def helper(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None
-
             root = TreeNode(preorder[preLeft])
             idx = map[preorder[preLeft]]
             root.left = helper(preLeft + 1, preLeft +
@@ -20,5 +19,4 @@ class Solution(object):
             root.right = helper(preRight - inRight + idx +
                                 1, preRight, idx + 1, inRight)
             return root
-
         return helper(0, len(preorder) - 1, 0, len(inorder) - 1)

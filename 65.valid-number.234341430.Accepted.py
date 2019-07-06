@@ -14,7 +14,6 @@ class Solution(object):
         except:
             return False
         return True
-
 """
 DFA
 """

@@ -1,18 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/shuffle-an-array/
 # Shuffle a set of numbers without duplicates.
-
 # Copy original array and swap each entry with entry in a random position.
 # Time - O(n)
 # Space - O(n)
-
 import random
 
 
 class Solution(object):
-
     def __init__(self, nums):
         """
         :type nums: List[int]

@@ -1,11 +1,9 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 # Given an integer matrix, find the length of the longest increasing path.
 # From each cell, you can either move to four directions: left, right, up or down.
 # You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).
-
 # For each starting cell, depth first search to explore all greater neighbours within the matrix.  Memoise results.
 # Time - O(m * n)
 # Space - O(m * n)
@@ -21,7 +19,6 @@ class Solution(object):
             return 0
         longest = 0
         memo = [[-1 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]
-
         for r in range(len(matrix)):
             for c in range(len(matrix[0])):
                 longest = max(longest, self.dfs(r, c, matrix, memo))

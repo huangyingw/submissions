@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-circular-queue/
 # Design your implementation of the circular queue. The circular queue is a linear data structure in which the
 # operations are performed based on FIFO (First In First Out) principle and the last position is connected back to
@@ -17,7 +16,6 @@ _project_ = 'leetcode'
 # deQueue(): Delete an element from the circular queue. Return true if the operation is successful.
 # isEmpty(): Checks whether the circular queue is empty or not.
 # isFull(): Checks whether the circular queue is full or not.
-
 # Use a python list as a circular array. Add an extra space, which allows us to distinguish between empty and full
 # queues.
 # Time - O(1)
@@ -25,7 +23,6 @@ _project_ = 'leetcode'
 
 
 class MyCircularQueue(object):
-
     def __init__(self, k):
         """
         Initialize your data structure here. Set the size of the queue to be k.

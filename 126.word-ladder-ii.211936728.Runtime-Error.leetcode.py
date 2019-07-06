@@ -8,7 +8,6 @@ class Solution(object):
             for w in preMap[word]:
                 buildPath(path, w)
             path.pop(0)
-
         length = len(beginWord)
         preMap = {}
         for word in wordlist:
@@ -16,7 +15,6 @@ class Solution(object):
         result = []
         cur_level = set()
         cur_level.add(beginWord)
-
         while True:
             pre_level = cur_level
             cur_level = set()

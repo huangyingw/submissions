@@ -18,7 +18,6 @@ public class Solution
 
         return Math.max(largestBSTSubtree(root.left), largestBSTSubtree(root.right));
     }
-
     private int size(TreeNode root)
     {
         if (root == null)
@@ -28,12 +27,10 @@ public class Solution
 
         return 1 + size(root.left) + size(root.right);
     }
-
     private boolean isBST(TreeNode root)
     {
         return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
-
     private boolean isBST(TreeNode root, int min, int max)
     {
         if (root == null)

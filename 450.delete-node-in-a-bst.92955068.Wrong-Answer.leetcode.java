@@ -43,7 +43,6 @@ public class Solution
 
         return dummy.right;
     }
-
     private TreeNode makenew(TreeNode node)
     {
         if (node.left == null || node.right == null)

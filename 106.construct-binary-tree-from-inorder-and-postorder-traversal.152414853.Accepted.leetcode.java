@@ -11,7 +11,6 @@ public class Solution
 
         return buildTree(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
     }
-
     public TreeNode buildTree(HashMap inMap, int[] inorder, int inLeft, int inRight, int[] postorder, int poLeft, int poRight)
     {
         if (inLeft > inRight)

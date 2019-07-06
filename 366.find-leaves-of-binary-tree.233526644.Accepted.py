@@ -1,14 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/find-leaves-of-binary-tree/
 # Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves,
 # repeat until the tree is empty.
-
 # Bottom-up preorder traversal to find height of each node (1 + max height of children).
 # Time - O(n)
 # Space - O(n)
-
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):

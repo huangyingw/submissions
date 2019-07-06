@@ -1,11 +1,9 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/two-sum-iii-data-structure-design/
 # Design and implement a TwoSum class. It should support the following operations: add and find.
 # add - Add the number to an internal data structure.
 # find - Find if there exists any pair of numbers which sum is equal to the value.
-
 # Use a dictionary to store each number and whether it has been added multiple times.  To find, for each num in
 # dictionary look for the difference between target value and that num, or for the num to be duplicated if it
 # is half of the target value.
@@ -14,7 +12,6 @@ _project_ = 'leetcode'
 
 
 class TwoSum(object):
-
     def __init__(self):
         """
         initialize your data structure here

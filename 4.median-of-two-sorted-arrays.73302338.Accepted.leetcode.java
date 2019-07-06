@@ -13,7 +13,6 @@ public class Solution
                    findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2 + 1)
                ) / 2.0;
     }
-
     public int findKth(int[] A, int A_start, int[] B, int B_start, int k)
     {
         if (A_start >= A.length)

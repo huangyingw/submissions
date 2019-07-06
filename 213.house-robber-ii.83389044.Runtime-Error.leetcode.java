@@ -14,7 +14,6 @@ public class Solution
 
         return Math.max(rob1(nums, 0, nums.length - 2), rob1(nums, 1, nums.length - 1));
     }
-
     public int rob1(int[] nums, int start, int end)
     {
         int[] dp = new int[end - start + 2];

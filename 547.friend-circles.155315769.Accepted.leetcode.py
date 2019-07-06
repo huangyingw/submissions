@@ -12,7 +12,6 @@ class Solution(object):
         def union_set(x, y):
             x_root, y_root = find_set(x), find_set(y)
             set[min(x_root, y_root)] = max(x_root, y_root)
-
         number = len(M)
         set = range(len(M))
         for i in range(len(M)):

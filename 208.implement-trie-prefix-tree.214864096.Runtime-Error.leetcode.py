@@ -12,11 +12,9 @@ class Trie(object):
         if self.search(word):
             return
         current = self.root
-
         for i in range(0, len(word)):
             c = word[i]
             node = current.nexts.get(c, None)
-
             if not node:
                 current.nexts[c] = self.TrieNode(c)
                 node = current.nexts.get(c, None)
@@ -25,10 +23,8 @@ class Trie(object):
 
     def search(self, word):
         current = self.root
-
         for i in range(0, len(word)):
             node = current.nexts.get(word[i], None)
-
             if not node:
                 return False
             current = node
@@ -36,10 +32,8 @@ class Trie(object):
 
     def startsWith(self, prefix):
         current = self.root
-
         for i in range(0, len(prefix)):
             node = current.nexts.get(prefix[i], None)
-
             if not node:
                 return False
             current = node

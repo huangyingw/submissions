@@ -4,7 +4,6 @@ public class Solution
     {
         return rec(head);
     }
-
     public ListNode rec(ListNode head)
     {
         if (head == null || head.next == null)

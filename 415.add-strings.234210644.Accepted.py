@@ -31,7 +31,6 @@ class Solution(object):
     #     if carry != 0:
     #         res.insert(0, str(carry))
     #     return ''.join(res)
-
     def addStrings(self, num1, num2):
         res = []
         pos1 = len(num1) - 1

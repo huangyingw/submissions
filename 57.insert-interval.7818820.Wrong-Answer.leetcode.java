@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public ArrayList<Interval> insert(ArrayList<Interval> intervals,
                                       Interval newInterval)
     {

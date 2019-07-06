@@ -15,7 +15,6 @@ class Solution(object):
     #                 count[i] += 1
     #         res.value |= ((count[i] % 3) << i)
     #     return res.value
-
     def singleNumber(self, nums):
         # bitmask
         # ones as a bitmask to represent the ith bit had appeared once.

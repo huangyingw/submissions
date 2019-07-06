@@ -10,7 +10,6 @@ public class Solution
         ListNode ret = recursive(head);
         return ret;
     }
-
     public ListNode recursive(ListNode head)
     {
         if (head == null)

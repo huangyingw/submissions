@@ -14,9 +14,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-
         sum = 0
-
         if root != None:
             if root.left != None:
                 if root.left.left == None and root.left.right == None:
@@ -25,5 +23,4 @@ class Solution(object):
                     sum += self.sumOfLeftLeaves(root.left)
             if root.right != None:
                 sum += self.sumOfLeftLeaves(root.right)
-
         return sum

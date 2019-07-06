@@ -31,24 +31,19 @@ class Solution(object):
                         curString += d[i]
                 arr.append(curString)
                 return
-
             if curLen < length:
                 if curLen == length - 1 and isOdd:
                     for i in ['0', '1', '8']:
                         dfs(arr, length, curLen + 1, curString + i, isOdd)
-
                 elif curLen == 0:
                     for i in elements[1:]:
                         dfs(arr, length, curLen + 1, curString + i, isOdd)
-
                 else:
                     for i in elements:
                         dfs(arr, length, curLen + 1, curString + i, isOdd)
-
         arr = []
         if n % 2 == 0:
             dfs(arr, n // 2, 0, "", False)
         else:
             dfs(arr, (n + 1) // 2, 0, "", True)
-
         return arr

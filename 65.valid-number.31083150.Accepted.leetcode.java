@@ -2,7 +2,6 @@ enum Status
 {
     INIT, SYMBOL, INT, DOT, FRAC, E, SYMBOL_E, INT_E
 }
-
 public class Solution
 {
     public boolean isNumber(String s)

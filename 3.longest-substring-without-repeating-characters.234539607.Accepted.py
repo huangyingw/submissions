@@ -33,5 +33,4 @@ class Solution(object):
             res = max(res, j - i + 1)
             myDict[s[j]] = j + 1
             j += 1
-
         return res

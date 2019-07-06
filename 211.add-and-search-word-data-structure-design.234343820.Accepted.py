@@ -31,7 +31,6 @@ class WordDictionary(object):
         if c != '.':
             return c in trie and self.dfs(word[1:], trie[c])
         return any(self.dfs(word[1:], kid) for kid in trie.values() if kid)
-
         # Your WordDictionary object will be instantiated and called as such:
         # obj = WordDictionary()
         # obj.addWord(word)

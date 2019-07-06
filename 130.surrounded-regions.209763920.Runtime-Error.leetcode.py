@@ -10,31 +10,24 @@ class Solution(object):
     def solve(self, board):
         if board.length == 0 or board[0].length == 0:
             return
-
         rows = board.length
         columns = board[0].length
         queue = []
-
         for i in range(0, rows):
             queue.add(self.Pos(i, 0))
             queue.add(self.Pos(i, columns - 1))
-
         for i in range(0, columns):
             queue.add(self.Pos(0, i))
             queue.add(self.Pos(rows - 1, i))
-
         while not queue.isEmpty():
             pos = queue.remove()
-
             if self.isOutOfBound(pos.x, pos.y, rows, columns) or board[pos.x][pos.y] != 'O':
                 continue
-
             board[pos.x][pos.y] = 'N'
             queue.add(self.Pos(pos.x - 1, pos.y))
             queue.add(self.Pos(pos.x + 1, pos.y))
             queue.add(self.Pos(pos.x, pos.y - 1))
             queue.add(self.Pos(pos.x, pos.y + 1))
-
         for i in range(0, rows):
             for j in range(0, columns):
                 if board[i][j] == 'O':

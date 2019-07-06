@@ -13,7 +13,6 @@ public class Solution
         node.right = buildTree(inorder, i + 1, postorder, b2 + i - b1, len - i + b1 - 1);
         return node;
     }
-
     public TreeNode buildTree(int[] inorder, int[] postorder)
     {
         Map<Integer, Integer> inorderNodes = new HashMap<Integer, Integer>();

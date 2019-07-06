@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public int lengthOfLongestSubstring(String s)
     {
         int[] prevPos = new int[Character.MAX_VALUE + 1];

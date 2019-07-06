@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/all-oone-data-structure/
 # Implement a data structure supporting the following operations:
 # Inc(Key) - Inserts a new key with value 1. Or increments existing key by 1. Key is guaranteed to be non-empty string.
@@ -8,7 +7,6 @@ _project_ = 'leetcode'
 # key does not exist, this function does nothing. Key is guaranteed to be a non-empty string.
 # GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string "".
 # GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string "".
-
 # Create doubly linked list of blocks. Each block contains all the keys for a given value. Blocks are in value order.
 # Also maintain a mapping from key to its block.
 # Time - O(1), all operations
@@ -57,16 +55,13 @@ class AllOne(object):
         else:
             current_block = self.mapping[key]
             current_block.keys.remove(key)
-
         if current_block.val + 1 != current_block.after.val:  # insert new block
             new_block = Block(current_block.val + 1)
             current_block.insert_after(new_block)
         else:
             new_block = current_block.after
-
         new_block.keys.add(key)  # update new_block
         self.mapping[key] = new_block  # ... and mapping of key to new_block
-
         if not current_block.keys and current_block.val != 0:  # delete current block if not seninel
             current_block.remove()
 
@@ -78,11 +73,9 @@ class AllOne(object):
         """
         if not key in self.mapping:
             return
-
         current_block = self.mapping[key]
         del self.mapping[key]  # could use self.mapping.pop(key)
         current_block.keys.remove(key)
-
         if current_block.val != 1:
             if current_block.val - 1 != current_block.before.val:  # insert new block
                 new_block = Block(current_block.val - 1)
@@ -91,7 +84,6 @@ class AllOne(object):
                 new_block = current_block.before
             new_block.keys.add(key)
             self.mapping[key] = new_block
-
         if not current_block.keys:  # delete current block
             current_block.remove()
 

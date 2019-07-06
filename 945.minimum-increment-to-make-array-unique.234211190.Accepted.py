@@ -29,7 +29,5 @@ class Solution(object):
             right += 1
             res += right - duplicate.pop(0)
         return res
-
-
 if __name__ == '__main__':
     s = Solution()

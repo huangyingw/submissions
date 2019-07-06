@@ -22,7 +22,6 @@ public class Solution
             }
         }
     }
-
     private void wallsAndGatesHelper(int row, int col, int distance, boolean[][] visited, int[][] rooms)
     {
         int rows = rooms.length;

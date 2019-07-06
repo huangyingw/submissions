@@ -13,7 +13,6 @@ class Solution
         dfs(result, row, n, 0);
         return result;
     }
-
     private void dfs(List<List<String>> result, int[] row, int n, int index)
     {
         if (index == n)
@@ -33,7 +32,6 @@ class Solution
             }
         }
     }
-
     private ArrayList<String> translateString(int[] row)
     {
         ArrayList<String> result = new ArrayList<>();
@@ -59,7 +57,6 @@ class Solution
 
         return result;
     }
-
     private boolean isValid(int[] row, int rowNum, int columnNum)
     {
         for (int i = 0; i < rowNum; i++)
@@ -77,5 +74,4 @@ class Solution
 
         return true;
     }
-
 }

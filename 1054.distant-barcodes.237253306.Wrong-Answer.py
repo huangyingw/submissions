@@ -9,8 +9,6 @@ class Solution(object):
             freq1, barcode1 = heapq.heappop(pq)
             freq2, barcode2 = heapq.heappop(pq)
             result.extend([barcode1, barcode2])
-
         if pq:
             result.append(pq[0][1])
-
         return result

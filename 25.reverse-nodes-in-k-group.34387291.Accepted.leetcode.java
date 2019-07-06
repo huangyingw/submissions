@@ -29,7 +29,6 @@ public class Solution
 
         return dummy.next;
     }
-
     public ListNode reverse(ListNode pre, ListNode next)
     {
         ListNode last = pre.next;

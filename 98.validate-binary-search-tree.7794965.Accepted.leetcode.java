@@ -11,7 +11,6 @@ public class Solution
                && isValidBST(root.left, lower, root.val)
                && isValidBST(root.right, root.val, upper);
     }
-
     public boolean isValidBST(TreeNode root)
     {
         return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);

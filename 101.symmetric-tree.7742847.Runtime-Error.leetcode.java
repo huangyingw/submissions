@@ -15,7 +15,6 @@ public class Solution
         return left.val == right.val && isSymmetric(left.left, right.right)
                && isSymmetric(left.right, right.left);
     }
-
     public boolean isSymmetric(TreeNode root)
     {
         return root == null ? true : isSymmetric(root.left, root.right);

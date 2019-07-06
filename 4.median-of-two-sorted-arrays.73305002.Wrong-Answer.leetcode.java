@@ -11,7 +11,6 @@ public class Solution
 
         return (findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2)) / 2;
     }
-
     // find kth number of two sorted array
     public int findKth(int[] A, int A_start,
                        int[] B, int B_start,

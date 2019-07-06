@@ -3,21 +3,18 @@ public class Solution
     int[] original;
     int[] shuffled;
     Random r;
-
     public Solution(int[] nums)
     {
         original = nums;
         shuffled = Arrays.copyOf(nums, nums.length);
         r = new Random();
     }
-
     /** Resets the array to its original configuration and return it. */
     public int[] reset()
     {
         shuffled = Arrays.copyOf(original, original.length);
         return shuffled;
     }
-
     /** Returns a random shuffling of the array. */
     public int[] shuffle()
     {

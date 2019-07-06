@@ -27,7 +27,5 @@ class Solution(object):
             except:
                 pass
         return "%dA%dB" % (bull, cow)
-
-
 if __name__ == "__main__":
     s = Solution()

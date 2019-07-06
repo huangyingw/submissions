@@ -13,13 +13,10 @@ class Solution(object):
         """
         if not head:
             return None
-
         slow, fast = head, head.next
-
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-
         head1, head2 = head, slow.next
         slow.next = None
         prev = None
@@ -30,7 +27,6 @@ class Solution(object):
             prev = curr
             curr = nex
         head2 = prev
-
         while head2:
             n1 = head1.next
             n2 = head2.next
@@ -38,5 +34,4 @@ class Solution(object):
             head1.next.next = n1
             head2 = n2
             head1 = head1.next.next
-
         head = head1

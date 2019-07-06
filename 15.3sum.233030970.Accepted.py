@@ -1,4 +1,3 @@
-
 class Solution(object):
     # def threeSum(self, nums):
     #     # skip duplicate
@@ -49,7 +48,6 @@ class Solution(object):
     #                     result.add((nums[i], target - nums[j], nums[j]))
     #             visited[nums[i]] = 1
     #     return list(result)
-
     def threeSum(self, nums):
         res = []
         nums.sort()

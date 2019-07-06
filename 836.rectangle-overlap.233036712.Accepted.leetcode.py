@@ -9,7 +9,6 @@ class Solution(object):
                     rec1[3] <= rec2[1] or  # bottom
                     rec1[0] >= rec2[2] or  # right
                     rec1[1] >= rec2[3])    # top
-
     # def isRectangleOverlap(self, rec1, rec2):
     #     def intersect(p_left, p_right, q_left, q_right):
     #         return min(p_right, q_right) > max(p_left, q_left)

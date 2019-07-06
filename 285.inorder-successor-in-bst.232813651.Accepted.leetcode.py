@@ -6,7 +6,6 @@ class Solution(object):
             inOrder(root.left)
             l.append(root)
             inOrder(root.right)
-
         l = []
         inOrder(root)
         for i in range(len(l)):

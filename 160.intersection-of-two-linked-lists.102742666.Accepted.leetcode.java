@@ -49,5 +49,4 @@ public class Solution
             pB = pB.next;
         }
     }
-
 }

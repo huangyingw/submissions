@@ -6,7 +6,6 @@ class Solution(object):
                 current.append(nums[index])
                 dfs(index + 1)
                 current.pop()
-
         result = []
         current = []
         dfs(0)

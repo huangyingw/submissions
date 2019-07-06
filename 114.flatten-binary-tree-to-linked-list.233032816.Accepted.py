@@ -31,7 +31,6 @@ class Solution(object):
     def appendNode(self, stack, node):
         if node:
             stack.append(node)
-
     # recursive
     # https://discuss.leetcode.com/topic/11444/my-short-post-order-traversal-java-solution-for-share/2
     # def __init__(self):

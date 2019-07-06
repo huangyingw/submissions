@@ -28,7 +28,6 @@ public class Solution
         int sum = getSum(nestedList, level);
         return sum;
     }
-
     private int getLv(List<NestedInteger> nestedList)
     {
         if (nestedList == null || nestedList.isEmpty())
@@ -58,7 +57,6 @@ public class Solution
 
         return (level > 0 || hasInt) ? level + 1 : 0;
     }
-
     private int getSum(List<NestedInteger> nestedList, int level)
     {
         if (level == 0 || nestedList == null || nestedList.isEmpty())

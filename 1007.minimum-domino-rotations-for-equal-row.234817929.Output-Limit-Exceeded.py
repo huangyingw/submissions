@@ -4,7 +4,6 @@ class Solution(object):
             return -1
         if len(A) == 0:
             return 0
-
         for possibility in set([A[0], B[0]]):
             top_rotation, bottom_rotation = 0, 0
             for a, b in zip(A, B):

@@ -23,7 +23,6 @@ public class Solution
 
         return dummy.next;
     }
-
     private ListNode[] split(ListNode head)
     {
         ListNode[] lists = new ListNode[2];
@@ -53,7 +52,6 @@ public class Solution
         slow.next = null;
         return lists;
     }
-
     private void merge(ListNode l1, ListNode l2)
     {
         while (l2 != null)
@@ -66,7 +64,6 @@ public class Solution
             l2 = temp;
         }
     }
-
     public void reorderList(ListNode head)
     {
         ListNode[] lists = split(head);

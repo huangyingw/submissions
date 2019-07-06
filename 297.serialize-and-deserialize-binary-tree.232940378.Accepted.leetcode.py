@@ -2,7 +2,6 @@ import json
 
 
 class Codec:
-
     def serialize(self, root):
         if not root:
             return 'null'

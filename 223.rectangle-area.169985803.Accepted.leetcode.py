@@ -5,8 +5,6 @@ class Solution(object):
         low = max(B, F)
         hight = min(H, D)
         sums = (C - A) * (D - B) + (G - E) * (H - F)
-
         if left > right or low > hight:
             return sums
-
         return sums - (right - left) * (hight - low)

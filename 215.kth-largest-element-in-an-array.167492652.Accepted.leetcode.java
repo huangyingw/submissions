@@ -4,7 +4,6 @@ public class Solution
     {
         return select(nums, k, 0, nums.length - 1);
     }
-
     int partition(int[] data, int left, int right)
     {
         int pivot = data[left];
@@ -35,7 +34,6 @@ public class Solution
         data[j] = pivot;
         return j;
     }
-
     private int select(int[] nums, int k, int left, int right)
     {
         int result = nums[left];

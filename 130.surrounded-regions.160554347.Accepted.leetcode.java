@@ -2,7 +2,6 @@ public class Solution
 {
     int[] unitArray;    //集合编号（隶属于哪一类）
     boolean[] edge; //是否被包围，每一类的edge都应该相同
-
     public void solve(char[][] board)
     {
         if (board.length < 3 || board[0].length < 3)
@@ -58,7 +57,6 @@ public class Solution
             }
         }
     }
-
     private void union_set(int x, int y)
     {
         int rootX = find_set(x);   //找到这一类的根
@@ -67,7 +65,6 @@ public class Solution
         unitArray[rootX] = rootY;
         this.edge[rootY] = edgeU;
     }
-
     private int find_set(int x)
     {
         if (unitArray[x] == x)

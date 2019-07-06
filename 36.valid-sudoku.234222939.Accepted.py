@@ -24,7 +24,6 @@ class Solution(object):
                     vset[j] |= index
                     bset[(i / 3) * 3 + j / 3] |= index
         return True
-
     # def isValidSudoku(self, board):
     #     if board is None:
     #         return True

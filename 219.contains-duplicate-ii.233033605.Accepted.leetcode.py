@@ -21,7 +21,6 @@ class Solution(object):
     #                     return True
     #                 pos += 1
     #     return False
-
     def containsNearbyDuplicate(self, nums, k):
         # check k interval
         check = set()

@@ -12,7 +12,6 @@ public class Solution
             palins = new ArrayList<>();
         }
     }
-
     public static void add(Trie root, String word, int pos)
     {
         for (int i = word.length() - 1; i >= 0; i--)
@@ -35,7 +34,6 @@ public class Solution
         root.pos = pos; // if it is xyxcba. Until now, the node should be at x.
         root.palins.add(pos);
     }
-
     public static void search(Trie root, String[] words, int i, List<List<Integer>> ans)
     {
         int len = words[i].length();
@@ -62,7 +60,6 @@ public class Solution
             }
         }
     }
-
     public static List<List<Integer>> palindromePairs(String[] words)
     {
         List<List<Integer>> ans = new ArrayList<>();
@@ -80,7 +77,6 @@ public class Solution
 
         return ans;
     }
-
     public static boolean isPalindrome(String str, int i, int j)
     {
         while (i < j)

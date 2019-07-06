@@ -7,11 +7,8 @@ class Solution(object):
                  '9': '6'
                  }
         newNum = ''
-
         for ch in num:
             if ch not in table:
                 return False
-
             newNum += table[ch]
-
         return num == newNum

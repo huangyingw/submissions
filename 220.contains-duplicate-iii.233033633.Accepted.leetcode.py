@@ -21,10 +21,8 @@ class Solution(object):
             for idx in xrange(bucketNum - offset, bucketNum + offset + 1):
                 if idx in buckets and abs(buckets[idx] - nums[i]) <= t:
                     return True
-
             buckets[bucketNum] = nums[i]
             if len(buckets) > k:
                 # Remove the bucket which is too far away. Beware of zero t.
                 del buckets[nums[i - k] / t if t else nums[i - k]]
-
         return False

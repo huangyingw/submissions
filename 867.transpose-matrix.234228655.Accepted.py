@@ -12,7 +12,6 @@ class Solution(object):
         return ans
         # Alternative Solution:
         # return zip(*A)
-
     # def transpose(self, A):
     #     res = []
     #     for i in range(len(A[0])):

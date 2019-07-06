@@ -8,7 +8,6 @@ class Solution(object):
     #     # Check min1*min2*max1 and max1*max2*max3
     #     return max(reduce(lambda x, y: x * y, nums[:2]) * nums[-1],
     #                reduce(lambda x, y: x * y, nums[-3:]))
-
     def maximumProduct(self, nums):
         min1 = min2 = float('inf')
         max1 = max2 = max3 = float('-inf')

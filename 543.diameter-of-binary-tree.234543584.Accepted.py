@@ -22,10 +22,8 @@ class Solution:
             """
             if root == None:
                 return 0
-
             left = maxDepth(root.left)
             right = maxDepth(root.right)
-
             self.maxD = max(self.maxD, left + right)
             return max(left, right) + 1
         self.maxD = 0

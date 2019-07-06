@@ -13,7 +13,6 @@ public class Solution
         node.right = buildTree(preorder, b1 + 1 + i - b2, inorderNodes, i + 1, len - i + b2 - 1);
         return node;
     }
-
     public TreeNode buildTree(int[] preorder, int[] inorder)
     {
         assert(preorder != null && inorder != null && preorder.length == inorder.length);

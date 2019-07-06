@@ -12,7 +12,6 @@ class Solution(object):
                 charMapping[s] += 1
             else:
                 charMapping[s] = 1
-
             if len(charMapping) <= K:
                 result = max(result, end - start + 1)
             else:
@@ -25,5 +24,4 @@ class Solution(object):
                         charMapping[character] -= 1
                     start += 1
         return result
-
 if __name__ == '__main__':

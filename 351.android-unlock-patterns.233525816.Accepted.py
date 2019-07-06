@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/android-unlock-patterns/
 # Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of
 # unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 # - If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must
 # have previously selected in the pattern. No jumps through non selected key is allowed.
 # - The order of keys used matters.
-
 # BFS.  For each of 3 starting positions (corner, middle edge, centre) extend all paths by all possible new digits.
 # An extension is possible if the new digit has not been used before and any required intervening digits have been
 # used.  Alternatively, DFS uses less memory.
@@ -33,14 +31,11 @@ class Solution(object):
             jumps[(end, start)] = skip
 
         def count_patterns(start):
-
             paths = [[{start}, start]]
             patterns = 1 if m == 1 else 0
             for length in range(2, n + 1):
-
                 new_paths = []
                 for visited, last in paths:
-
                     for extension in range(1, 10):
                         if extension in visited:    # cannot extend is already visited digit
                             continue
@@ -49,14 +44,10 @@ class Solution(object):
                         new_visited = set(visited)
                         new_visited.add(extension)
                         new_paths.append([new_visited, extension])
-
                 paths = new_paths
-
                 if length >= m:
                     patterns += len(paths)
-
             return patterns
-
         return 4 * count_patterns(1) + 4 * count_patterns(2) + count_patterns(5)    # symmetry
 
 

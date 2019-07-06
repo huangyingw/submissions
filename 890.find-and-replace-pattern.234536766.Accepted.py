@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/find-and-replace-pattern/description/
-
 # 这个题目与之前的 205#Isomorphic Strings.py 是同样的道理
 # 可以参照这个文档中的函数is_isomorohic
 

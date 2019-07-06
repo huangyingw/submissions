@@ -4,7 +4,6 @@ public class Solution
     {
         String word;
         int numSteps;
-
         public WordNode(String word, int numSteps)
         {
             this.word = word;

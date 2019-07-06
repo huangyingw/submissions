@@ -5,11 +5,8 @@ class Solution(object):
     def maxDepth(self, root):
         if not root:
             return 0
-
         left = self.maxDepth(root.left)
         right = self.maxDepth(root.right)
-
         if left == -1 or right == -1 or abs(left - right) > 1:
             return -1
-
         return max(left, right) + 1

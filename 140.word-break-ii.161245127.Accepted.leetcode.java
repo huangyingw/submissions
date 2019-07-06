@@ -40,7 +40,6 @@ public class Solution
             path.remove(path.size() - 1);
         }
     }
-
     public List<String> wordBreak(String s, List<String> wordDict)
     {
         ArrayList<String> result = new ArrayList<String>();

@@ -34,7 +34,6 @@ public class Solution
         solutions.put(s, solution);
         return solution;
     }
-
     public ArrayList<String> wordBreak(String s, Set<String> dict)
     {
         return searchWordBreak(s, dict,

@@ -10,11 +10,9 @@ class WordDictionary(object):
 
     def addWord(self, word):
         current = self.root
-
         for i in range(0, len(word)):
             c = word[i]
             node = current.nexts.get(c, None)
-
             if not node:
                 current.nexts[c] = self.TrieNode(c)
                 node = current.nexts[c]
@@ -24,7 +22,6 @@ class WordDictionary(object):
     def search(self, word):
         if not word:
             return False
-
         trieNode = self.root
         return self.dfs(word, 0, trieNode)
 
@@ -38,10 +35,8 @@ class WordDictionary(object):
             else:
                 endNode = trieNode.nexts.get(word[index])
                 return endNode and endNode.isWord
-
         if index >= len(word):
             return False
-
         if word[index] == '.':
             for _, node in enumerate(trieNode.nexts):
                 if self.dfs(word, index + 1, node):

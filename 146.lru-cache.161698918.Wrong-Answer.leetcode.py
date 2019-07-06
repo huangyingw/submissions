@@ -1,5 +1,4 @@
 class LRUCache(object):
-
     class Node():
         def __init__(self, key, val):
             self.key = key
@@ -13,7 +12,6 @@ class LRUCache(object):
         self.tail = self.Node(-1, -1)
         self.head.next = self.tail
         self.tail.pre = self.head
-
     key_to_node = {}
 
     def get(self, key):
@@ -32,7 +30,6 @@ class LRUCache(object):
             node = self.key_to_node[key]
             node.val = val
             return
-
         node = self.Node(key, val)
         self.key_to_node[key] = node
         self.moveToTail(node)

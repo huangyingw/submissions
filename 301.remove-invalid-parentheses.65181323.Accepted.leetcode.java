@@ -13,7 +13,6 @@ public class Solution
 
         return result;
     }
-
     private void dfs(String str, String subRes, int countLeft, int maxLeft)
     {
         if (str.length() == 0)

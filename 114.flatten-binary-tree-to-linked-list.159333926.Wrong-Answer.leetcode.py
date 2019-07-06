@@ -5,10 +5,8 @@ class Solution(object):
     def flatten(self, root):
         if not root:
             return
-
         if self.prev:
             self.prev.right = root
-
         savedRight = root.right
         root.right = root.left
         root.left = None

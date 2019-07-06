@@ -4,9 +4,9 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-
-
 # Space: O(1) with Morris Inorder traversal
+
+
 class Solution:
     def __init__(self):
         self.previous = TreeNode(float('-inf'))

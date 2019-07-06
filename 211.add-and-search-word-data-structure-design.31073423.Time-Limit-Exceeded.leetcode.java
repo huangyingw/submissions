@@ -7,19 +7,15 @@ public class WordDictionary
         boolean leaf;
         HashMap<Character, TrieNode> children =
             new HashMap<Character, TrieNode>();
-
         public TrieNode(char c)
         {
             this.c = c;
         }
-
         public TrieNode()
         {
         };
     }
-
     private TrieNode root = new TrieNode();
-
     public void addWord(String word)
     {
         Map<Character, TrieNode> children = root.children;
@@ -47,12 +43,10 @@ public class WordDictionary
             }
         }
     }
-
     public boolean search(String word)
     {
         return searchNode(word, root);
     }
-
     public boolean searchNode(String word, TrieNode tn)
     {
         if (tn == null)

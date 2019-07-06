@@ -17,7 +17,6 @@ class Solution(object):
     #         res += nums[i]
     #         rMaxSum = max(res, rMaxSum)
     #     return max(lMaxSum + nums[mid] + rMaxSum, max(leftAns, rightAns))
-
     # def maxSubArray(self, nums):
     #     """
     #     :type nums: List[int]
@@ -31,7 +30,6 @@ class Solution(object):
     #         start[i] = max(nums[i], nums[i] + start[i + 1])
     #         all[i] = max(start[i], all[i + 1])
     #     return all[0]
-
     # def maxSubArray(self, nums):
     #     ls = len(nums)
     #     start, all = nums[-1], nums[-1]
@@ -39,7 +37,6 @@ class Solution(object):
     #         start = max(nums[i], nums[i] + start)
     #         all = max(start, all)
     #     return all
-
     def maxSubArray(self, nums):
         maxEndingHere = maxSofFar = nums[0]
         for i in range(1, len(nums)):

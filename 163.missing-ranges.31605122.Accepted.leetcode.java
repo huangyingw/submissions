@@ -24,7 +24,6 @@ public class Solution
 
         return ranges;
     }
-
     private String getRange(int from, int to)
     {
         return (from == to) ? String.valueOf(from) : from + "->" + to;

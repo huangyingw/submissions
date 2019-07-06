@@ -1,6 +1,5 @@
 '''
 Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
-
 For example,
 MovingAverage m = new MovingAverage(3);
 m.next(1) = 1
@@ -19,12 +18,9 @@ class Solution(object):
         if len(self.queue) >= size:
             val = self.queue.pop(0)
             self.curr_sum -= val
-
         self.curr_sum += num
         self.queue.append(num)
         return float(self.curr_sum) / len(self.queue)
-
-
 solution = Solution()
 window_size = int(input())
 num = int(input())

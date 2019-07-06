@@ -29,7 +29,6 @@ class Solution(object):
     #                 next_step.append(node.right)
     #             last = node
     #         nodes = next_step
-
     def connect(self, root):
         # https://discuss.leetcode.com/topic/28580/java-solution-with-constant-space
         dummyHead = TreeLinkNode(-1)

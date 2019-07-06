@@ -7,7 +7,6 @@ class Solution:
         """
         nums.sort()
         ret = 0
-
         for i in range(len(nums)):
             l, r = i + 1, len(nums) - 1
             while l < r:

@@ -1,7 +1,6 @@
 public class NumMatrix
 {
     int[][] rowSums;
-
     public NumMatrix(int[][] matrix)
     {
         if (matrix.length == 0)
@@ -20,7 +19,6 @@ public class NumMatrix
             }
         }
     }
-
     public void update(int row, int col, int val)
     {
         // 求出新值与旧值的差
@@ -32,7 +30,6 @@ public class NumMatrix
             rowSums[row][j] += diff;
         }
     }
-
     public int sumRegion(int row1, int col1, int row2, int col2)
     {
         int result = 0;

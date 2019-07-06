@@ -49,7 +49,6 @@ class Solution(object):
     #     curr_head.next = node
     #     curr_head = node
     #     self.do_reverse(stack, curr_head)
-
     # def reverseList(self, head):
     #     # simple iteratively without extra space
     #     prev, curr = None, head
@@ -59,7 +58,6 @@ class Solution(object):
     #         prev = curr
     #         curr = next_temp
     #     return prev
-
     def reverseList(self, head):
         # recursion
         # simple recursively without extra space

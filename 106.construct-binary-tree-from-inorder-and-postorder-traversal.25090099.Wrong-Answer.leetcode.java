@@ -21,7 +21,6 @@ public class Solution
         TreeNode root = dfs(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
         return root;
     }
-
     public TreeNode dfs(HashMap inMap, int[] inorder, int il, int ir, int[] postorder, int pl, int pr)
     {
         if (pr < 0 || pl < pr)

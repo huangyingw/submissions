@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/stone-game/
 # Alex and Lee play a game with piles of stones.
 # There are an even number of piles arranged in a row, and each pile has a positive integer number of stones piles[i].
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 # Each turn, a player takes the entire pile of stones from either the beginning or the end of the row.
 # This continues until there are no more piles left, at which point the person with the most stones wins.
 # Assuming Alex and Lee play optimally, return True if and only if Alex wins the game.
-
 # Alex can initially take the first pile (an even index) or the last pile (an odd index). If Alex takes an even index
 # pile then Lee must take an odd index pile, and Alex can take an even index pile next. If Alex take an odd index pile
 # initially, Lee must take an even index pile and Alex can take an odd index pile next.

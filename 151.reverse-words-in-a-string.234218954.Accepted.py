@@ -11,7 +11,6 @@ class Solution(object):
     #     temp = [t for t in temp if len(t) > 0]
     #     temp = reversed(temp)
     #     return ' '.join(temp)
-
     def reverseWords(self, s):
         # remove tail space
         s = s.strip(' ')

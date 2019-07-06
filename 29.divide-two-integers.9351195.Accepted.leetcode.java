@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public int divide(int dividend, int divisor)
     {
         long a = Math.abs((long) dividend);

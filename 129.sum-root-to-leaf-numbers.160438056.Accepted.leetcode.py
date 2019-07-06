@@ -5,7 +5,6 @@ class Solution(object):
         def dfs(root, base):
             if not root:
                 return
-
             if not root.left and not root.right:
                 self.sum += root.val + base
                 return

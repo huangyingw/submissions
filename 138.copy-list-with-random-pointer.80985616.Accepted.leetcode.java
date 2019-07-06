@@ -11,7 +11,6 @@ public class Solution
             head = head.next.next;
         }
     }
-
     private void copyRandom(RandomListNode head)
     {
         while (head != null)
@@ -24,7 +23,6 @@ public class Solution
             head = head.next.next;
         }
     }
-
     private RandomListNode splitList(RandomListNode head)
     {
         RandomListNode newHead = head.next;
@@ -43,7 +41,6 @@ public class Solution
 
         return newHead;
     }
-
     public RandomListNode copyRandomList(RandomListNode head)
     {
         if (head == null)

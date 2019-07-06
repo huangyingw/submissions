@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-log-storage-system/
 # You are given several logs that each log contains a unique id and timestamp. Timestamp is a string that has the
 # following format: Year:Month:Day:Hour:Minute:Second, for example, 2017:01:01:23:59:59.
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 #    range from start to end. Start and end all have the same format as timestamp. However, granularity means the time
 #    level for consideration. For example, start = "2017:01:01:23:59:59", end = "2017:01:02:23:59:59",
 #    granularity = "Day", it means that we need to find the logs within the range from Jan. 1st 2017 to Jan. 2nd 2017.
-
 # Store ids and timestamps in list. Retrieve by matching timestamp prefix up to gra.
 # Time - O(1) for put, O(n) for retrieve.
 # Space - O(n)
@@ -43,15 +41,13 @@ class LogSystem(object):
         result = []
         pref = self.prefixes[gra]
         s_prefix, e_prefix = s[:pref], e[:pref]
-
         for id, timestamp in self.logs:
             if s_prefix <= timestamp[:pref] <= e_prefix:
                 result.append(id)
-
         return result
-
-
 # Alternative solution
+
+
 class LogNode(object):
     def __init__(self, nb_children):
         self.ids = set()
@@ -68,7 +64,6 @@ class LogSystem2(object):
         timelist = timestamp.split(":")
         timelist[0] = int(timelist[0]) - 2000
         node = self.root
-
         for t, period in zip(timelist, self.periods):
             if not node.children[int(t)]:
                 node.children[int(t)] = LogNode(self.nb_children[period])
@@ -79,10 +74,8 @@ class LogSystem2(object):
         s_list, e_list = s.split(":"), e.split(":")
         s_list[0], e_list[0] = int(s_list[0]) - 2000, int(e_list[0]) - 2000
         s_node, e_node = self.root, self.root
-
         later, earlier = set(), set()
         for i in range(len(s_list)):    # find all ids later or eqaul to start
-
             s_val = int(s_list[i])      # get time period value
             s_child = s_node.children[s_val]  # could be None
             for node in s_node.children[s_val + 1:]:    # all later nodes
@@ -94,11 +87,8 @@ class LogSystem2(object):
             if gra == self.periods[i]:  # add terminal node ids
                 later |= s_child.ids
                 break
-
             s_node = s_child
-
         for i in range(len(e_list)):    # find all ids earlier or eqaul to end
-
             e_val = int(e_list[i])
             e_child = e_node.children[e_val]  # could be None
             for node in e_node.children[:e_val]:
@@ -110,7 +100,5 @@ class LogSystem2(object):
             if gra == self.periods[i]:
                 earlier |= e_child.ids
                 break
-
             e_node = e_child
-
         return list(earlier & later)    # set intersection

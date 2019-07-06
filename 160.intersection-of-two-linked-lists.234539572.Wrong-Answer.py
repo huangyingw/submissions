@@ -44,12 +44,10 @@ class Solution(object):
             # 两链表同长
             p = headA
             q = headB
-
         while p != q:
             p = p.next
             q = q.next
         return p
-
         # 2 交叉法
         # AAA  BB
         # AAABB
@@ -61,5 +59,4 @@ class Solution(object):
         while pa != pb:
             pa = pa.next if pa is not None else headB
             pb = pb.next if pb is not None else headA
-
         return pa

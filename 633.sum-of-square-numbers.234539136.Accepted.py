@@ -29,14 +29,13 @@ class Solution:
             if is_square(c - a * a):
                 return True
         return False
-
     # 3
     # 使用部分数论的知识
     # https://www.maths.ed.ac.uk/~chris/NTh/Ch6_Sum2sq_Ch7_Fermat_descent.pdf
+
     def judgeSquareSum(self, c):
         if c % 4 == 3:
             return False
-
         i = 2
         s = 0
         while i * i <= c:
@@ -50,5 +49,4 @@ class Solution:
                 return False
         if c > 1 and c % 4 == 3:
             return False
-
         return True

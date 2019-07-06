@@ -24,7 +24,6 @@ public class Solution
         count = 0;
         return result;
     }
-
     public int treeSum(Map<Integer, Integer> map, TreeNode root)
     {
         if (root == null)

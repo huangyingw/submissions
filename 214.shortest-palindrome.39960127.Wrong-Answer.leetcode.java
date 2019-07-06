@@ -31,7 +31,6 @@ public class Solution
 
         return result;
     }
-
     private String scanFromCenter(String s, int l, int r)
     {
         int i = 1;

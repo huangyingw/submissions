@@ -18,7 +18,6 @@ public class Solution
 
         return upsideDownBinaryTreeHelper(root, null);
     }
-
     private TreeNode upsideDownBinaryTreeHelper(TreeNode root, TreeNode parent)
     {
         if (root == null)

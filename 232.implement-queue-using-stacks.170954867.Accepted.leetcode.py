@@ -1,16 +1,12 @@
 class MyQueue(object):
-
     def __init__(self):
         self.stack = []
 
     def push(self, x):
         buf = []
-
         while self.stack:
             buf.append(self.stack.pop(-1))
-
         self.stack.append(x)
-
         while buf:
             self.stack.append(buf.pop(-1))
 

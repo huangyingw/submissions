@@ -10,7 +10,6 @@ class Solution:
         l = len(prices)
         if 2 * l <= k:
             return self.quickSolve(prices)
-
         result = [[0] * (l + 1) for _ in range(k + 1)]
         for i in range(1, k + 1):
             buy = float('-inf')

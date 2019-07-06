@@ -54,7 +54,6 @@ public class Solution
 
         return stk_val.peek();
     }
-
     private Integer calc(int a, int b, char op)
     {
         if (op == '+')
@@ -74,7 +73,6 @@ public class Solution
             return a / b;
         }
     }
-
     private boolean isOK(char op1, char op2)
     {
         if (op1 == '*' || op1 == '/' || op2 == ')')

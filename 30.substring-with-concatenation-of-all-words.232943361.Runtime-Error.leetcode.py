@@ -4,7 +4,6 @@ class Solution:
         Dict = dict.fromkeys(L, 0)
         for word in L:
             Dict[word] = Dict[word] + 1
-
         totWord = len(L)
         wordLen = len(L[0])
         slen = len(S) - totWord * wordLen
@@ -18,8 +17,6 @@ class Solution:
                     if(cnt[cur] > Dict[cur]):
                         break
                     okNum = okNum + 1
-
             if(okNum == totWord):
                 ans.append(i)
-
         return ans

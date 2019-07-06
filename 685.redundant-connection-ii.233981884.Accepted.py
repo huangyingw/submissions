@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/redundant-connection-ii/
 # In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root) for which all
 # other nodes are descendants of this node, plus every node has exactly one parent, except for the root node which
@@ -12,7 +11,6 @@ _project_ = 'leetcode'
 # directed edge connecting nodes u and v, where u is a parent of child v.
 # Return an edge that can be removed so that the resulting graph is a rooted tree of N nodes.
 # If there are multiple answers, return the answer that occurs last in the given 2D-array.
-
 # Given a valid tree, a redundant connection is either A) to the root, causing all nodes to have one parent or B) not
 # to the root, causing some node to have 2 parents. If case B, find the node with 2 parents and the root. Remove one
 # of the incoming edges to the node with 2 parents and if the tree is valid, the removed edge is redundant else the
@@ -31,11 +29,9 @@ class Solution(object):
         n = len(edges)
         parents = [[] for _ in range(n + 1)]
         nbors = [set() for _ in range(n + 1)]
-
         for a, b in edges:                      # build parents and nbors lists
             parents[b].append(a)
             nbors[a].add(b)
-
         root = None
         for i, parent in enumerate(parents):    # check if some node has 2 parents
             if len(parent) == 2:
@@ -53,12 +49,10 @@ class Solution(object):
                 visited.add(node)
                 queue += nbors[node]
             return len(visited) == n
-
         if root:                                # case B, edge added to node that was not root
             p1, p2 = parents[two_parents]
             nbors[p2].discard(two_parents)      # discard second edge
             return [p2, two_parents] if valid(root) else [p1, two_parents]
-
         for i in range(len(edges) - 1, -1, -1):  # remove edges starting with last edge to be added
             n1, n2 = edges[i]
             nbors[n1].discard(n2)               # temporarily remove edge from n1 to n2

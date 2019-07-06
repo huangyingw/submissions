@@ -18,7 +18,6 @@ public class Solution
 
         return false;
     }
-
     private boolean valid(int start, String num, String first, String second)
     {
         if (start == num.length())

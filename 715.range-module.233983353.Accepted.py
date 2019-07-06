@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/range-module/
 # A Range Module is a module that tracks ranges of numbers. Your task is to design and implement the following
 # interfaces in an efficient manner.
@@ -11,12 +10,10 @@ _project_ = 'leetcode'
 #    currently being tracked.
 #  removeRange(int left, int right) Stops tracking every real number currently being tracked in the interval
 #    [left, right).
-
 # Maintain a list of points and whether all values from a point to the next are in a range. Binary search to find
 # the insertion point of a new range. Query by checking all points between left and right are in range.
 # Time - O(n) to add and remove, O(log n) to query
 # Space - O(n)
-
 import bisect
 
 
@@ -35,12 +32,10 @@ class RangeModule(object):
         if self.points[i] != left:  # if left does not exist in the list already
             self.points.insert(i, left)  # insert left to sorted list of points
             self.in_range.insert(i, self.in_range[i - 1])  # will be overwritten but required when inserting right
-
         j = bisect.bisect_left(self.points, right)
         if self.points[j] != right:
             self.points.insert(j, right)
             self.in_range.insert(j, self.in_range[j - 1])  # right is in_range if point before it was
-
         self.points[i:j] = [left]  # consolidate points i to (but excluding) j
         self.in_range[i:j] = [add]  # consolidate in_range
 

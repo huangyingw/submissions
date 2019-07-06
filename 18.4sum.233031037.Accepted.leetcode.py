@@ -35,7 +35,6 @@ class Solution(object):
                     else:
                         k -= 1
         return res.keys()
-
     # def fourSum(self, nums, target):
     #     # https://leetcode.com/discuss/89989/why-is-python-o-n-3-tle
     #     index_pairs = dict()
@@ -54,7 +53,6 @@ class Solution(object):
     #             else:
     #                 index_pairs[sum] = [(i,j)]
     #     return combos.keys()
-
 if __name__ == '__main__':
     # begin
     s = Solution()

@@ -37,7 +37,6 @@ class NumArray(object):
             result -= self.bit[i]
             i -= (i & -i)
         return result
-
         # Your NumArray object will be instantiated and called as such:
         # obj = NumArray(nums)
         # obj.update(i,val)

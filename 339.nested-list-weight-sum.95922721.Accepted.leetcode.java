@@ -21,7 +21,6 @@ public class Solution
     {
         return helper(nestedList, 1);
     }
-
     public int helper(List<NestedInteger> nestedList, int depth)
     {
         if (nestedList == null || nestedList.size() == 0)

@@ -22,7 +22,6 @@ class Solution(object):
     #         dic[n].random = dic[n.random]
     #         n = n.next
     #     return dic[head]
-
     # def copyRandomList(self, head):
     #     # hash O(n) and O(n)
     #     dic = {}
@@ -40,7 +39,6 @@ class Solution(object):
     #         p = p.next
     #         q = q.next
     #     return dummyHead.next
-
     def copyRandomList(self, head):
         # Modify original structure: Original->Copy->Original->Copy
         # node.next.random = node.random.next

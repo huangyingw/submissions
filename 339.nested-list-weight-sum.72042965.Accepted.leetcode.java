@@ -21,7 +21,6 @@ public class Solution
     {
         return dfs(nestedList, 1);
     }
-
     public int dfs(List<NestedInteger> nestedList, int depth)
     {
         if (nestedList == null || nestedList.size() == 0)

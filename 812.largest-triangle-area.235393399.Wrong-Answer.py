@@ -5,7 +5,6 @@ class Solution:
         :rtype: float
         """
 #         for triangle in itertools.combinations(points, 3):
-
         return max([self.area(triangle[0], triangle[1], triangle[2]) for triangle in itertools.combinations(points, 3)])
 
     def area(self, a, b, c):

@@ -13,7 +13,6 @@ public class Solution
 
         return true;
     }
-
     private boolean dfs(char[][] board, int pos)
     {
         while (pos < 81 && board[pos / 9][pos % 9] != '.')
@@ -44,7 +43,6 @@ public class Solution
 
         return false;
     }
-
     public void solveSudoku(char[][] board)
     {
         dfs(board, 0);

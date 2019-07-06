@@ -18,7 +18,6 @@ class Solution(object):
                     if not dfs(j):
                         return False
             return True
-
         for i in range(len(graph)):
             if i not in visited:
                 visited[i] = 0

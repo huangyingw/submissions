@@ -12,7 +12,6 @@ public class Solution
         dfs(root, sum);
         return sum.get(0);
     }
-
     public boolean dfs(TreeNode root, ArrayList<Integer> sum)
     {
         if (root == null)

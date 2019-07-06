@@ -3,14 +3,12 @@ class TrieNode
     char content;
     boolean isWord;
     Map<Character, TrieNode> nexts;
-
     public TrieNode()
     {
         this.content = ' ';
         this.isWord = false;
         this.nexts = new HashMap<Character, TrieNode>();
     }
-
     public TrieNode(char content)
     {
         this.content = content;
@@ -18,16 +16,13 @@ class TrieNode
         this.nexts = new HashMap<Character, TrieNode>();
     }
 }
-
 public class Trie
 {
     private TrieNode root;
-
     public Trie()
     {
         root = new TrieNode();
     }
-
     public void insert(String word)
     {
         if (search(word) == true)
@@ -53,7 +48,6 @@ public class Trie
 
         current.isWord = true;
     }
-
     public boolean search(String word)
     {
         TrieNode current = root;
@@ -72,7 +66,6 @@ public class Trie
 
         return current.isWord;
     }
-
     public boolean startsWith(String prefix)
     {
         TrieNode current = root;

@@ -19,7 +19,6 @@ class Solution(object):
         if root == None:
             return result
         stack = [root]
-
         while len(stack) != 0:
             cur = stack.pop()
             result.append(cur.val)

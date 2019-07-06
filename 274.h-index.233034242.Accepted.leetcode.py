@@ -12,14 +12,12 @@ class Solution(object):
     #     while h > 0 and citations[ls - h] < h:
     #             h -= 1
     #     return h
-
     # def hIndex(self, citations):
     #     citations.sort()
     #     i = 0
     #     while i < len(citations) and citations[len(citations) - 1 - i] > i:
     #         i += 1
     #     return i
-
     def hIndex(self, citations):
         # counting sort
         ls = len(citations)

@@ -12,7 +12,6 @@ public class Solution
         binaryTreePathsDFS(root, "", result);
         return result;
     }
-
     void binaryTreePathsDFS(TreeNode root, String out, List<String> result)
     {
         if (root == null)

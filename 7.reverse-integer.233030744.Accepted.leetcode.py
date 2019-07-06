@@ -1,6 +1,5 @@
 class Solution:
     # @return an integer
-
     # def reverse(self, x):
     #     max_int = 2147483647
     #     if x == 0:
@@ -24,7 +23,6 @@ class Solution:
     #         return result
     #     else:
     #         return -1 * result
-
     def reverse(self, x):
         # Note that in Python -1 / 10 = -1
         res, isPos = 0, 1

@@ -14,7 +14,6 @@ class Solution(object):
     #             if (A[i + ans] >= A[i]):
     #                 return ans
     #     return 0
-
     def maxWidthRamp(self, A):
         ans = 0
         m = float('inf')
@@ -23,7 +22,6 @@ class Solution(object):
             ans = max(ans, i - m)
             m = min(m, i)
         return ans
-
     # def maxWidthRamp(self, A):
     #     N = len(A)
     #     ans = 0
@@ -37,7 +35,5 @@ class Solution(object):
     #         else:
     #             candidates.append((A[i], i))
     #     return ans
-
-
 if __name__ == '__main__':
     s = Solution()

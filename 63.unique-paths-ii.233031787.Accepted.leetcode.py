@@ -27,7 +27,6 @@ class Solution(object):
     #                 l = dmap[i][j - 1]
     #             dmap[i][j] = l + u
     #     return dmap[m - 1][n - 1]
-
     def uniquePathsWithObstacles(self, obstacleGrid):
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         if m == 0:

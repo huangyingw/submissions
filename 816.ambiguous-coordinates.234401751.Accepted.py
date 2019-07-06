@@ -30,11 +30,9 @@ class Solution:
         for i in range(1, len(S)):
             left = self.point(S[:i])
             right = self.point(S[i:])
-
             for l in left:
                 for r in right:
                     res.append("(" + l + ", " + r + ')')
-
         return res
 
     def point(self, s):
@@ -44,5 +42,4 @@ class Solution:
             return [s]
         if s[0] == '0':
             return [s[0] + '.' + s[1:]]
-
         return [s[:i] + '.' + s[i:] for i in range(1, len(s))] + [s]

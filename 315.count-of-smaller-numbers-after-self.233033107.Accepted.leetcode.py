@@ -1,10 +1,7 @@
 '''
     You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
-
     Example:
-
     Given nums = [5, 2, 6, 1]
-
     To the right of 5 there are 2 smaller elements (2 and 1).
     To the right of 2 there is only 1 smaller element (1).
     To the right of 6 there is 1 smaller element (1).
@@ -29,12 +26,10 @@ class Solution(object):
         """
         if len(nums) == 0:
             return []
-
         node = TreeNode(nums[len(nums) - 1])
         result = [0]
         for index in range(len(nums) - 2, -1, -1):
             result.append(self.insertNode(node, nums[index]))
-
         return result[::-1]
 
     def insertNode(self, node, val):
@@ -54,5 +49,4 @@ class Solution(object):
                     break
                 else:
                     node = node.right
-
         return totalCount

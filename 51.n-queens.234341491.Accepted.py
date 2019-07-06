@@ -10,7 +10,6 @@ class Solution:
         :type n: int
         :rtype: List[List[str]]
         """
-
         def dfs(row):
             if row == n:
                 ret.append([''.join(r) for r in chessboard])
@@ -27,7 +26,6 @@ class Solution:
                     if chessboard[i][j] == 'Q' and (col == j or row - col == i - j or row + col == i + j):
                         return False
             return True
-
         chessboard = [['.'] * n for i in range(n)]
         ret = []
         dfs(0)

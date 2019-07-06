@@ -16,7 +16,6 @@ public class Solution
 
         return nav;
     }
-
     public ListNode mergeTwoLists(ListNode p1, ListNode p2)
     {
         ListNode dummy = new ListNode(0);

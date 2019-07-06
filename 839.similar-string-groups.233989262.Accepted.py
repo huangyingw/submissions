@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/similar-string-groups/
 # Two strings X and Y are similar if we can swap two letters (in different positions) of X, so that it equals Y.
 # For example, "tars" and "rats" are similar (swapping at positions 0 and 2), and "rats" and "arts" are similar,
@@ -10,7 +9,6 @@ _project_ = 'leetcode'
 # Formally, each group is such that a word is in the group if and only if it is similar to at least one other
 # word in the group.
 # We are given a list A of strings. Every string in A is an anagram of every other string in A. Count the groups.
-
 # For each word, depth-first search all similar words to visit all words in a group. 2 different approaches are taken
 # to find similar words depensing whether there are few long words or many short words.
 # If few long words, create a mapping from each word to the set of its similar words. Mapping is made by iterating over
@@ -18,7 +16,6 @@ _project_ = 'leetcode'
 # If many short words, find similar words by swapping all pairs of characters in a word.
 # Time - O(min(W N**2, N W**3)
 # Space - O(N W**3) since each word may have W**2 neighbours
-
 from collections import defaultdict
 
 
@@ -30,9 +27,7 @@ class Solution(object):
         """
         N, W = len(A), len(A[0])
         word_swap = defaultdict(set)
-
         if N < 2 * W:           # if few long words
-
             for i, w1 in enumerate(A):
                 for j in range(i + 1, len(A)):
                     w2 = A[j]
@@ -52,9 +47,7 @@ class Solution(object):
                         neighbour = a[:i] + a[j] + a[i + 1:j] + a[i] + a[j + 1:]
                         if neighbour in A_set:
                             neighbours.add(neighbour)
-
             return neighbours
-
         groups = 0
         visited = set()
 
@@ -63,11 +56,9 @@ class Solution(object):
             for nbor in get_neighbours(w):
                 if nbor not in visited:
                     dfs(nbor)
-
         for word in A:
             if word in visited:
                 continue
             groups += 1
             dfs(word)
-
         return groups

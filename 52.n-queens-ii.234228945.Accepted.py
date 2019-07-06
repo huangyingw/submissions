@@ -47,7 +47,6 @@ class Solution(object):
     #                 board[pos][j] = 'Q'
     #                 self.do_solveNQueens(res, board, num - 1)
     #                 board[pos][j] = '.'
-
     def __init__(self):
         self.count = 0
 
@@ -71,7 +70,6 @@ class Solution(object):
                 self.dfs(row + 1, n, (1 << index) | column,
                          (1 << (n - 1 + row - index)) | diag,
                          (1 << (row + index)) | antiDiag)
-
 if __name__ == '__main__':
     # begin
     s = Solution()

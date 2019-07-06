@@ -21,7 +21,6 @@ class Solution(object):
     #                 return False
     #             return True
     #     return False
-
     def isNumber(self, s):
         s = s.strip()
         ls, pos = len(s), 0

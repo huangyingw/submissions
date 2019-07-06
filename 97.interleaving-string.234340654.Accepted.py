@@ -18,7 +18,6 @@ class Solution:
         #     for j in range(1, n+1):
         #         dp[i][j] = (dp[i-1][j] and s1[i-1] == s3[i+j-1]) or (dp[i][j-1] and s2[j-1]==s3[i+j-1])
         # return dp[m][n]
-
         m, n = len(s1), len(s2)
         if len(s3) != m + n:
             return False

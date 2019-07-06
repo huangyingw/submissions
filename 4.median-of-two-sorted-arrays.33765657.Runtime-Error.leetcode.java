@@ -15,7 +15,6 @@ public class Solution
                     + findKth(A, B, (m + n) / 2 + 1, 0, m - 1, 0, n - 1)) * 0.5;
         }
     }
-
     public int findKth(int A[], int B[], int k,
                        int aStart, int aEnd, int bStart, int bEnd)
     {

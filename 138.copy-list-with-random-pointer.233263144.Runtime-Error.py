@@ -1,15 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 # A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 # Return a deep copy of the list.
-
 # Duplicate every node and insert copy in list after original node.  Link copied nodes to random pointers, which
 # follow random pointers of original nodes.  Separate out original and copied lists.
 # Time - O(n)
 # Space - O(1)
-
 # Definition for singly-linked list with a random pointer.
 
 
@@ -33,13 +30,11 @@ class Solution(object):
             node.next = copy
             copy.next = next
             node = next
-
         node = head
         while node:
             if node.random:
                 node.next.random = node.random.next
             node = node.next.next
-
         pseudo = prev = RandomListNode(0)
         node = head
         while node:
@@ -47,5 +42,4 @@ class Solution(object):
             node.next = node.next.next
             node = node.next
             prev = prev.next
-
         return pseudo.next

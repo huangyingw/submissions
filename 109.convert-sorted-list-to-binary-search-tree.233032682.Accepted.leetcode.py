@@ -3,7 +3,6 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -40,7 +39,6 @@ class Solution(object):
     #     current.left = self.sortList(start, mid - 1)
     #     current.right = self.sortList(mid + 1, end)
     #     return current
-
     # point in recursive function
     def __init__(self):
         self.node = None
@@ -69,14 +67,12 @@ class Solution(object):
         # right side and move
         root.right = self.inorderHelper(mid + 1, end)
         return root
-
     # two point
     # O(nlgn) and O(n)
     # def sortedListToBST(self, head):
     #     if head is None:
     #         return head
     #     return self.toBST(head, None)
-
     # def toBST(self, head, tail):
     #     fast = slow = head
     #     if head == tail:

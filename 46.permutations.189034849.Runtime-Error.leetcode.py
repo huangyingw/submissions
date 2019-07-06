@@ -4,7 +4,6 @@ class Solution(object):
             if len(current) == len(nums):
                 result.append(list(current))
                 return
-
             for index in range(len(nums)):
                 if not visited[index]:
                     visited[index] = True
@@ -12,7 +11,6 @@ class Solution(object):
                     dfs()
                     current.pop()
                     visited[index] = False
-
         nums.sort()
         visited = [False for _ in range(len(nums))]
         current = []

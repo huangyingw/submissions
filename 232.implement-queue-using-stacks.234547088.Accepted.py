@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/implement-queue-using-stacks/description/
 class MyQueue:
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -48,8 +47,6 @@ class MyQueue:
         if not self.stack2:
             while self.stack1:
                 self.stack2.append(self.stack1.pop())
-
-
 # Your MyQueue object will be instantiated and called as such:
 # obj = MyQueue()
 # obj.push(x)

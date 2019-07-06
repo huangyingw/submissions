@@ -12,25 +12,23 @@ class Solution(object):
                     words[i - 1][:len(words[i])] == words[i]:
                 return ""
             self.findEdges(words[i - 1], words[i], ancestors)
-
         # Output topological order by DFS.
         result = []
         visited = {}
         for node in nodes:
             if self.topSortDFS(node, node, ancestors, visited, result):
                 return ""
-
         return "".join(result)
-
     # Construct the graph.
+
     def findEdges(self, word1, word2, ancestors):
         min_len = min(len(word1), len(word2))
         for i in xrange(min_len):
             if word1[i] != word2[i]:
                 ancestors[word2[i]].append(word1[i])
                 break
-
     # Topological sort, return whether there is a cycle.
+
     def topSortDFS(self, root, node, ancestors, visited, result):
         if node not in visited:
             visited[node] = root

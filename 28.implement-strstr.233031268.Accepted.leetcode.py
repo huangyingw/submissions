@@ -21,7 +21,6 @@ class Solution(object):
     #         index += 1
     #         pos = 0
     #     return -1
-
     # def strStr(self, haystack, needle):
     #     lsh, lsn = len(haystack), len(needle)
     #     if lsn == 0:
@@ -34,7 +33,6 @@ class Solution(object):
     #                 return index
     #         index += 1
     #     return -1
-
     # KMP
     # https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
     def strStr(self, haystack, needle):

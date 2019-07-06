@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/walking-robot-simulation/
 # A robot on an infinite grid starts at point (0, 0) and faces north.
 # The robot can receive one of three possible types of commands:
@@ -12,7 +11,6 @@ _project_ = 'leetcode'
 # If the robot would try to move onto them, the robot stays on the previous grid square instead (but still
 # continues following the rest of the route.)
 # Return the square of the maximum Euclidean distance that the robot will be from the origin.
-
 # Track the postition and orientation of the robot. When moving forwards, check if the next position is an obstacle
 # and stop if so.
 # Time - O(n) total number of operations (since at most 9 steps forwards)
@@ -28,11 +26,9 @@ class Solution(object):
         """
         NORTH, EAST, SOUTH, WEST = 0, 1, 2, 3
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]     # change of position in each direction
-
         position, orientation = (0, 0), NORTH
         max_sqr_distance = 0
         obstacles = {tuple(obstacle) for obstacle in obstacles}  # convert to set for O(1) lookup
-
         for command in commands:
             if command == -2:
                 orientation = (orientation - 1) % 4         # turn left
@@ -46,5 +42,4 @@ class Solution(object):
                         break
                     position = next_position
                     max_sqr_distance = max(max_sqr_distance, position[0] ** 2 + position[1] ** 2)
-
         return max_sqr_distance

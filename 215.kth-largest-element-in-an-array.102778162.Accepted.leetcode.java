@@ -4,7 +4,6 @@ public class Solution
     {
         return select(nums, k, 0, nums.length - 1);
     }
-
     int partition(int[] data, int l, int r)
     {
         int left = l + 1;
@@ -33,7 +32,6 @@ public class Solution
         data[right] = pivot;
         return right;
     }
-
     private int select(int[] nums, int k, int left, int right)
     {
         while (left < right)

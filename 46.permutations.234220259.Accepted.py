@@ -8,7 +8,6 @@ class Solution:
     #     result = itertools.permutations(nums)
     #     result = [list(t) for t in result]
     #     return result
-
     def permute(self, nums):
         # DPS with swapping
         res = []
@@ -26,7 +25,6 @@ class Solution:
             # s(n) = 1 + s(n-1)
             self.get_permute(res, nums, index + 1)
             nums[i], nums[index] = nums[index], nums[i]
-
     # def permute(self, nums):
     #     # iterative solution
     #     res = [[]]

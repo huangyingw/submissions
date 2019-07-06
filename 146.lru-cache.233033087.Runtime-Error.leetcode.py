@@ -33,10 +33,8 @@ class LRUCache:
             self.queue.remove(key)
         elif len(self.queue) == self.capacity:
             del self.cache[self.queue.pop(-1)]
-
         self.cache[key] = value
         self.queue.insert(0, key)
-
     # def __init__(self, capacity):
     #     self.dic = collections.OrderedDict()
     #     self.remain = capacity

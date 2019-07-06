@@ -3,11 +3,9 @@ class Solution(object):
         groups = collections.defaultdict(list)
         for s in strings:  # Grouping.
             groups[self.hashStr(s)].append(s)
-
         result = []
         for key, val in groups.iteritems():
             result.append(sorted(val))
-
         return result
 
     def hashStr(self, s):

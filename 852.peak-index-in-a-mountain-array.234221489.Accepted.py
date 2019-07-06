@@ -8,7 +8,6 @@ class Solution(object):
     #     while A[i + 1] >= A[i]:
     #         i += 1
     #     return i
-
     def peakIndexInMountainArray(self, A):
         lo, hi = 0, len(A) - 1
         while lo < hi:

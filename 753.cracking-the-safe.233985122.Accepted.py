@@ -1,13 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/cracking-the-safe/
 # There is a box protected by a password. The password is n digits, where each letter can be one of the first
 # k digits 0, 1, ..., k-1.
 # You can keep inputting the password, the password will automatically be matched against the last n digits entered.
 # For example, assuming the password is "345", I can open it when I type "012345", but I enter a total of 6 digits.
 # Please return any string of minimum length that is guaranteed to open the box after the entire string is inputted.
-
 # Create a directed graph where each node is the last n-1 digits of the pattern used and each node has k outgoing edges
 # each labeled by a digit such that node + edge represents a pattern (i.e. a password attempt).
 # We need to find a Euler cycle that visits every edge of this graph.
@@ -27,7 +25,6 @@ class Solution(object):
     """
 
     def crackSafe(self, n, k):
-
         seen = set()
         digits = [str(i) for i in range(k)]
         result = []
@@ -39,6 +36,5 @@ class Solution(object):
                     seen.add(pattern)
                     dfs(pattern[1:])
                     result.append(x)
-
         dfs("0" * (n - 1))
         return "".join(result) + "0" * (n - 1)

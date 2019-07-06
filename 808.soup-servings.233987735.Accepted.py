@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/soup-servings/
 # There are two types of soup: type A and type B. Initially we have N ml of each type of soup.
 # There are four kinds of operations:
@@ -16,7 +15,6 @@ _project_ = 'leetcode'
 # Return the probability that soup A will be empty first, plus half the probability that A and B become empty at
 # the same time.
 # Answers within 10^-6 of the true value will be accepted as correct.
-
 # Convert the volume of soup to a number of portions. Given a number of portions of A and of B, recurse for each of the
 # 4 possible operations, sum the results and divide by 4 to get the probability of A being empty first.
 # Memoize results to avoid repetition. If N is large enough (4800 found experimentally) then the result is within
@@ -34,21 +32,17 @@ class Solution(object):
         memo = {}
 
         def helper(A, B):
-
             if A <= 0 and B <= 0:       # base case, both A and Bempty together
                 return 0.5
             if A <= 0:                  # base case, only A empty
                 return 1
             if B <= 0:                  # base case, only B empty
                 return 0
-
             if (A, B) in memo:
                 return memo[(A, B)]
-
             result = 0.25 * (helper(A - 4, B) + helper(A - 3, B - 1) + helper(A - 2, B - 2) + helper(A - 1, B - 3))
             memo[(A, B)] = result
             return result
-
         portions = math.ceil(N / float(25))
         if N > 4800:                    #
             return 1

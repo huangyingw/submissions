@@ -25,14 +25,11 @@ class Solution(object):
         l_res = self.longestConsecutive_helper(root.left, root.val, curr)
         r_res = self.longestConsecutive_helper(root.right, root.val, curr)
         return max(curr, l_res, r_res)
-
     # def __init__(self):
     #     self.max_length = 0
-
     # def longestConsecutive(self, root):
     #     self.longestConsecutive_helper(root)
     #     return self.max_length
-
     # def longestConsecutive_helper(self, root):
     #     """
     #     :type root: TreeNode

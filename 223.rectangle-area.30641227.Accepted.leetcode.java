@@ -14,7 +14,6 @@ public class Solution
         int[] Y = { B, D, F, H };
         return area - diff(X) * diff(Y);
     }
-
     private int diff(int[] X)
     {
         Arrays.sort(X);

@@ -18,10 +18,8 @@ class Solution(object):
                     if singletonCount > 1:
                         return ret
                 halfChars += [char] * (count / 2)
-
             ret = self.permute(list(halfChars))
             ret = map(lambda x: "".join(x + [mid] + x[::-1]), ret)
-
         return ret
 
     def permute(self, letters):
@@ -35,7 +33,6 @@ class Solution(object):
         if len(path) == len(letters):
             ret.append(path[:])
             return
-
         for i in xrange(len(letters)):
             if used[i] == True:
                 continue

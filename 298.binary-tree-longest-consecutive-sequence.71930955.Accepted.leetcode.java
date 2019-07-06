@@ -9,7 +9,6 @@ public class Solution
 
         return findLongest(root, 0, root.val - 1);
     }
-
     private int findLongest(TreeNode root, int length, int preVal)
     {
         if (root == null)

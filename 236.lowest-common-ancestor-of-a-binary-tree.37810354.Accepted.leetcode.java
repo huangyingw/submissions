@@ -22,7 +22,6 @@ public class Solution
 
         return pathp.get(i - 1);
     }
-
     private boolean getPath(TreeNode root, TreeNode n, List<TreeNode> path)
     {
         if (root == null)

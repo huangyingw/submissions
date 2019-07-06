@@ -23,7 +23,6 @@ class Solution(object):
     #         if count > max:
     #             return True
     #     return False
-
     # def hasCycle(self, head):
     #     # Hash or set
     #     dic = {}
@@ -36,17 +35,14 @@ class Solution(object):
     #             dic[pos] = pos
     #         pos = pos.next
     #     return False
-
     def hasCycle(self, head):
         # Two points
         try:
             fast = head.next.next
             slow = head.next
-
             while fast != slow:
                 fast = fast.next.next
                 slow = slow.next
-
             return True
         except:
             return False

@@ -6,7 +6,6 @@ public class Solution
         helper(nums, 0, result, new ArrayList<Integer>(), target);
         return result;
     }
-
     public void helper(int[] nums, int start, List<List<Integer>> result, List<Integer> current, int target)
     {
         if (target == 0)

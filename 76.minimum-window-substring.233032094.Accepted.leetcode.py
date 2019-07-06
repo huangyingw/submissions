@@ -119,7 +119,5 @@ class Solution(object):
             return s[min_begin: min_end + 1]
         else:
             return ''
-
-
 if __name__ == '__main__':
     s = Solution()

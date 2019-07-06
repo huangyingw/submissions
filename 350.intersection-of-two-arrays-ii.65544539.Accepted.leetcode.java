@@ -39,7 +39,6 @@ public class Solution
 
         return listToArray(result);
     }
-
     private int[] listToArray(List<Integer> list)
     {
         int[] result = new int[list.size()];

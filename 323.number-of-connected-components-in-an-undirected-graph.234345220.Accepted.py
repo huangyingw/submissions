@@ -10,7 +10,6 @@ class Solution:
         for edge in edges:
             left = self.findRoot(root, edge[0])
             right = self.findRoot(root, edge[1])
-
             if left != right:
                 root[left] = right
                 result -= 1

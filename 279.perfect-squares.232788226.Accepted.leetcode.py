@@ -13,7 +13,6 @@ class Solution(object):
         # val, step
         q.append((0, 0))
         visited.add(0)
-
         while q:
             val, step = q.popleft()
             for i in xrange(1, n + 1):
@@ -26,6 +25,5 @@ class Solution(object):
                     if tmp not in visited:
                         visited.add(tmp)
                         q.append((tmp, step + 1))
-
         # Should never reach here
         return -1

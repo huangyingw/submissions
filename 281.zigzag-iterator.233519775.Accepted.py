@@ -1,19 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/zigzag-iterator/
 # Given two 1d vectors, implement an iterator to return their elements alternately.
-
 # Maintain a queue of tuples (next vector, index in next vector) containing the next valid index and vector.  After
 # iterating, add vector to back of queue if any more items remain.
 # Time - O(k) (nb of vectors) to initialise vectors and q, O91) for next() and hasNext()
 # Space - O(n), total number of items in all vectors
-
 from collections import deque
 
 
 class ZigzagIterator(object):
-
     def __init__(self, v1, v2):
         """
         Initialize your data structure here.

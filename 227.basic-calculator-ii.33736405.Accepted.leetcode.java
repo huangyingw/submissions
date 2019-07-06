@@ -2,7 +2,6 @@ public class Solution
 {
     Stack<Integer> numStack = new Stack<Integer>();
     Stack<Character> opStack = new Stack<Character>();
-
     public int calculate(String s)
     {
         if (s == null || s.length() == 0)
@@ -47,7 +46,6 @@ public class Solution
 
         return numStack.pop();
     }
-
     private int cal(int left, int right, char op)
     {
         switch (op)
@@ -68,7 +66,6 @@ public class Solution
             return 0;
         }
     }
-
     private void pushNum(int num)
     {
         if (numStack.isEmpty())
@@ -91,7 +88,6 @@ public class Solution
             }
         }
     }
-
     private void pushOp(char op)
     {
         if (opStack.isEmpty() || op == '*' || op == '/')

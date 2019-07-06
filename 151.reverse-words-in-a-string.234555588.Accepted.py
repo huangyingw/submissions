@@ -1,11 +1,8 @@
 """
 Given an input string, reverse the string word by word.
-
 Example:  
-
 Input: "the sky is blue",
 Output: "blue is sky the".
-
 Note:
 A word is defined as a sequence of non-space characters.
 Input string may contain leading or trailing spaces. 

@@ -20,7 +20,6 @@ class Solution(object):
     #     root.left = right
     #     root.right = left
     #     return root
-
     def invertTree(self, root):
         # iteratively
         if root is None:

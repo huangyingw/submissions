@@ -1,6 +1,5 @@
 """
 Important: the 1st char cannot be *
-
 Time: O(mn)
 Space: O(m)
 """
@@ -16,7 +15,6 @@ class Solution(object):
         prev = [True]
         for j in range(len(p)):
             prev.append(p[j] == '*' and prev[j - 1])
-
         for i in range(len(s)):
             curr = [False]
             for j in range(len(p)):
@@ -26,7 +24,6 @@ class Solution(object):
                     curr.append(prev[j] and p[j] in (s[i], '.'))
             prev = curr
         return prev[-1]
-
         # dp = [[False]*(len(s) + 1) for _ in range(len(p) + 1)]
         # dp[0][0] = True
         # for i in range(1, len(p)+1):

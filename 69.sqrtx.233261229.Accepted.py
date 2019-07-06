@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/sqrtx/
 # Implement int sqrt(int x).
 # Compute and return the square root of x.
-
 # Newton method. Initial guess of x. Iteratively update guess to be average of previous guess and x // guess.
 # Since guess is too high, x // guess is too low.
 # Terminate when guess^2 <= x.

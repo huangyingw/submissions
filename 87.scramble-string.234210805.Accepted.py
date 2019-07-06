@@ -25,7 +25,6 @@ class Solution(object):
     #         if self.isScramble(s1[0:i], s2[ls - i:]) and self.isScramble(s1[i:], s2[:ls - i]):
     #             return True
     #     return False
-
     def isScramble(self, s1, s2, memo={}):
         # recursive with memo
         # Check with sorted is fundamental, otherwise TLE
@@ -47,7 +46,6 @@ class Solution(object):
                 return True
         memo[s1, s2] = False
         return False
-
     # def isScramble(self, s1, s2):
     #     # dp TLE
     #     if s1 == s2:

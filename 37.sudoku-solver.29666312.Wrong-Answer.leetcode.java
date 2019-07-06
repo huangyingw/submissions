@@ -16,7 +16,6 @@ public class Solution
 
         return true;
     }
-
     private boolean search(char[][] board, int pos)
     {
         int row = pos / 9;
@@ -53,7 +52,6 @@ public class Solution
         board[row][column] = '.';
         return false;
     }
-
     public void solveSudoku(char[][] board)
     {
         search(board, 0);

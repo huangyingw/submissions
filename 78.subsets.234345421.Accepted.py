@@ -9,7 +9,6 @@ class Solution:
             ret = [temp + [num] for temp in result]
             result.extend(ret)
         return result
-
         # result = []
         # for i in range(1 << len(nums)):
         #     tmp = []
@@ -18,8 +17,6 @@ class Solution:
         #             tmp.append(nums[j])
         #     result.append(tmp)
         # return result
-
-
 #     def subsets(self, nums):
 #         """
 #         :type nums: List[int]
@@ -28,7 +25,6 @@ class Solution:
 #         result = []
 #         self.dfs(nums, 0, [], result)
 #         return result
-
 #     def dfs(self, nums, index, path, result):
 #         result.append(path)
 #         for i in range(index, len(nums)):

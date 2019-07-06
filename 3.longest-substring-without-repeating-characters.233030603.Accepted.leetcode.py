@@ -22,7 +22,6 @@ class Solution(object):
     #                     if max_l == sls:
     #                         return sls
     #     return max_l
-
     # def lengthOfLongestSubstring(self, s):
     #     sls = len(set(s))
     #     ls = len(s)
@@ -41,7 +40,6 @@ class Solution(object):
     #                         return sls
     #                 break
     #     return max_l
-
     # def lengthOfLongestSubstring(self, s):
     #     exist = [False] * 256
     #     ls = len(s)
@@ -53,7 +51,6 @@ class Solution(object):
     #         exist[ord(s[j)] = True
     #         max_len = max(max_len, j - i + 1)
     #     return max_len
-
     def lengthOfLongestSubstring(self, s):
         # https://leetcode.com/articles/longest-substring-without-repeating-characters/
         charMap = {}

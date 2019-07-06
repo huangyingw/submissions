@@ -1,10 +1,8 @@
 class Vector2D(object):
-
     def __init__(self, vec2d):
         self.vec = vec2d
         self.row = 0
         self.col = 0
-
         while self.row != len(self.vec):
             if len(self.vec[self.row]) != 0:
                 self.col = 0

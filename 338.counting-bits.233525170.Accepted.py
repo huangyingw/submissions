@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/counting-bits/
 # Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's
 # in their binary representation and return them as an array.
-
 # Dynamic programming.  Number of set bits is 1 + the number of set bits in the number after removing the lowest
 # set bit.
 # Time - O(n)

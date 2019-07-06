@@ -20,6 +20,5 @@ class Solution(object):
             morsed = ""
             for c in word:
                 morsed += Morse_tab[ord(c) - ord('a')]
-
             ans_set.add(morsed)
         return len(ans_set)

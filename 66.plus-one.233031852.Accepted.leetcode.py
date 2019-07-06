@@ -18,7 +18,6 @@ class Solution(object):
     #     if curr > 0:
     #         digits.insert(0, curr)
     #     return digits
-
     def plusOne(self, digits):
         ls = len(digits)
         for index in reversed(range(ls)):

@@ -6,7 +6,6 @@ public class Solution
         dfs(re, 1, n, k, new ArrayList<Integer>());
         return re;
     }
-
     private void dfs(List<List<Integer>> result, int start, int target, int k, List<Integer> current)
     {
         if (target < 0 || k < 0)

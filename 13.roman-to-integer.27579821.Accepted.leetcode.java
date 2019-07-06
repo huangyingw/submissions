@@ -10,7 +10,6 @@ public class Solution
         symbols.put('V', 5);
         symbols.put('I', 1);
     }
-
     public int romanToInt(String s)
     {
         int num = 0;

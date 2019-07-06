@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/split-array-largest-sum/
 # Given an array which consists of non-negative integers and an integer m, you can split the array into m non-empty
 # continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays.
-
 # Binary search the range of possible smallest max subarray sums. If x is valid, search range x and below else search
 # above x.
 # Binary search must make progress each iteration. Since mid can equal left then next iteration brings right down to
@@ -21,18 +19,15 @@ class Solution(object):
         :rtype: int
         """
         left, right = max(nums), sum(nums)  # search range
-
         while left < right:  # if left == right then return
             mid = (left + right) // 2
             if self.can_split(nums, m, mid):  # recurse on LHS (smaller max subarray sums) including mid
                 right = mid     # mid < right so always make progress
             else:
                 left = mid + 1
-
         return left
 
     def can_split(self, nums, m, max_subarray):  # can nums be split into m subarrays each sum <= max_subarray ?
-
         subarray_sum = 0
         for num in nums:
             if num + subarray_sum > max_subarray:  # num makes sum too big
@@ -42,5 +37,4 @@ class Solution(object):
                 subarray_sum = num  # num in next subarray
             else:
                 subarray_sum += num
-
         return True

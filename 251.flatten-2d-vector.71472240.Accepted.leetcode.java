@@ -1,6 +1,5 @@
 public class Vector2D implements Iterator<Integer>
 {
-
     public Vector2D(List<List<Integer>> vec2d)
     {
         row = vec2d.iterator();
@@ -10,14 +9,12 @@ public class Vector2D implements Iterator<Integer>
             col = row.next().iterator();
         }
     }
-
     @Override
     public Integer next()
     {
         int lastValue = col.next();
         return lastValue;
     }
-
     @Override
     public boolean hasNext()
     {
@@ -45,11 +42,9 @@ public class Vector2D implements Iterator<Integer>
             return false;
         }
     }
-
     private Iterator<List<Integer>> row = null;
     private Iterator<Integer> col = null;
 }
-
 /**
  * Your Vector2D object will be instantiated and called as such:
  * Vector2D i = new Vector2D(vec2d);

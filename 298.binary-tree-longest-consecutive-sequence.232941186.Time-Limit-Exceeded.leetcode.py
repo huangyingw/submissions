@@ -25,7 +25,6 @@ class Solution(object):
                     s.append(root.right)
         if not root:
             return 0
-
         res = []
         dfs(root)
         return max(res)

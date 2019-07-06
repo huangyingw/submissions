@@ -6,7 +6,6 @@ public class Solution
         dfs(result, new int[n], 0, n);
         return result;
     }
-
     public void dfs(List<List<String>> result, int[] columnForRow, int curRow, int n)
     {
         if (curRow == n)
@@ -35,7 +34,6 @@ public class Solution
             }
         }
     }
-
     public boolean isValid(int[] columnForRow, int curRow, int col)
     {
         int leftTop = col;

@@ -7,7 +7,6 @@ class Line
         this.b = b;
         this.c = c;
     }
-
     public Line(int x1, int y1, int x2, int y2)
     {
         if (x1 == x2)
@@ -56,16 +55,13 @@ class Line
             }
         }
     }
-
     public String toString()
     {
         return Double.toString(a) + " " + Double.toString(b) + " " + Double.toString(c);
     }
 }
-
 public class Solution
 {
-
     public int maxPoints(Point[] points)
     {
         if (points.length < 2)

@@ -6,7 +6,6 @@ public class Solution
         backtrack(result, word, 0, "", 0);
         return result;
     }
-
     private void backtrack(List<String> result, String word, int pos, String cur, int count)
     {
         if (pos == word.length())

@@ -1,9 +1,7 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/flatten-2d-vector/
 # Implement an iterator to flatten a 2d vector.
-
 # Store pointer to the next valid sublist and item.  To initialise and after every iteration move pointers to the next
 # valid item or beyond final sublist.
 # Time - O(1) for hasNext.  init() and next() are O(m) where m is number of sublists
@@ -11,7 +9,6 @@ _project_ = 'leetcode'
 
 
 class Vector2D(object):
-
     def __init__(self, vec2d):
         """
         Initialize your data structure here.

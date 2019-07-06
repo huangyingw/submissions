@@ -11,7 +11,6 @@ class Solution(object):
     #             if not self.canWin(s[:i] + '--' + s[i + 2:]):
     #                 return True
     #     return False
-
     def canWin(self, s):
         if s is None or len(s) < 2:
             return False
@@ -29,11 +28,9 @@ class Solution(object):
                 if not res:
                     return True
         return False
-
     # def canWin(self, s):
     #     # backtracking with memo
     #     memo = {}
-
     #     def can(s):
     #         if s not in memo:
     #             memo[s] = any(s[i:i + 2] == '++' and not can(s[:i] + '-' + s[i + 2:])
@@ -48,7 +45,6 @@ class Solution(object):
     #             g += min(set(range(p)) - {a^b for a, b in zip(g, g[-2::-1])}),
     #         G ^= g[p]
     #     return G > 0
-
     # def canWin(self, s):
     #     currlen, maxlen = 0, 0
     #     board_ini_state = []
@@ -71,13 +67,11 @@ class Solution(object):
     #     for state in board_ini_state:
     #         g_final ^= g[state]
     #     return g_final != 0
-
     # def firstMissingNumber(lut):
     #     ls = len(lut)
     #     for i in range(ls):
     #         if i not in lut:
     #             return i
     #     return ls
-
 if __name__ == '__main__':
     s = Solution()

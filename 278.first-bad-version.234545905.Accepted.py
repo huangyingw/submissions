@@ -3,7 +3,6 @@
 # @param version, an integer
 # @return a bool
 # def isBadVersion(version):
-
 # 实际上，这是一个特殊的二分查询
 # 一个数的状态只有0,1两种情况，他们按照0,0,0,...,1,1,1,...的顺序排列
 # 我们要找到最第一个1。

@@ -8,7 +8,6 @@ class Solution(object):
     #             if len(word) > len(longest_word):
     #                 longest_word = word
     #     return longest_word
-
     # def longestWord(self, words):
     #     ans = ""
     #     wordset = set(words)
@@ -17,7 +16,6 @@ class Solution(object):
     #             if all(word[:k] in wordset for k in xrange(1, len(word))):
     #                 ans = word
     #     return ans
-
     def longestWord(self, words):
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()

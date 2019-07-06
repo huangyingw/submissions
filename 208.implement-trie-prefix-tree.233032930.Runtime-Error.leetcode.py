@@ -9,7 +9,6 @@ class TreeNode(object):
 
 
 class Trie(object):
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -54,8 +53,6 @@ class Trie(object):
                 return False
             node = node.children[char]
         return True
-
-
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
 # obj.insert(word)

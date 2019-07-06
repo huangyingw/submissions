@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-in-memory-file-system/
 # Design an in-memory file system to simulate the following functions:
 # ls: Given a path in string format. If it is a file path, return a list that only contains this file's name. If it is
@@ -12,7 +11,6 @@ _project_ = 'leetcode'
 # that file containing given content. If the file already exists, you need to append given content to original content.
 # This function has void return type.
 # readContentFromFile: Given a file path, return its content in string format.
-
 # Define a Folder as a mapping from names of files/folders to other Folders or None (for files). File system consists
 # of root folder and mapping from file names to their contents. Separate file mapping speeds content retrieval/update.
 # Time - O(1) for constructor. O(s + n + m log m) for ls where s = path number of chars, n = number of folders in
@@ -39,7 +37,6 @@ class FileSystem(object):
         path = path.split("/")
         if path[-1] in self.files:
             return [path[-1]]       # list of single file
-
         folder = self.root
         if path[-1] != "":          # path of "/" is split to ["", ""]
             for folder_string in path[1:]:
@@ -65,10 +62,8 @@ class FileSystem(object):
         """
         path = filePath.split("/")
         file_name = path[-1]
-
         if file_name in self.files:
             self.files[file_name] += content
-
         else:
             self.files[file_name] = content
             folder = self.root

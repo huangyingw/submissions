@@ -6,7 +6,6 @@ public class LRUCache
         Node next;
         int key;
         int value;
-
         public Node(int key, int value)
         {
             this.key = key;
@@ -15,19 +14,16 @@ public class LRUCache
             this.next = null;
         }
     }
-
     private int capacity;
     private HashMap<Integer, Node> hs = new HashMap<Integer, Node>();
     private Node head = new Node(-1, -1);
     private Node tail = new Node(-1, -1);
-
     public LRUCache(int capacity)
     {
         this.capacity = capacity;
         tail.prev = head;
         head.next = tail;
     }
-
     {
         Node node = head.next;
 
@@ -36,7 +32,6 @@ public class LRUCache
             node = node.next;
         }
     }
-
     public int get(int key)
     {
         if (!hs.containsKey(key))
@@ -50,7 +45,6 @@ public class LRUCache
         moveToTail(node);
         return node.value;
     }
-
     public void put(int key, int value)
     {
         if (get(key) != -1)
@@ -71,7 +65,6 @@ public class LRUCache
         hs.put(key, node);
         moveToTail(node);
     }
-
     private void moveToTail(Node current)
     {
         current.prev = tail.prev;

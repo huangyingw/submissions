@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/fruit-into-baskets/
 # In a row of trees, the i-th tree produces fruit with type tree[i].
 # You start at any tree of your choice, then repeatedly perform the following steps:
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # You have two baskets, and each basket can carry any quantity of fruit, but you want each basket to only carry
 # one type of fruit each.
 # What is the total amount of fruit you can collect with this procedure?
-
 # The problem is to find the longest contiguous subarray containing only 2 different elements.
 # For the 2 fruits in baskets, store the fruit and their first and last indices in the subarray.
 # For each new fruit there are 5 cases:
@@ -32,29 +30,21 @@ class Solution:
         """
         prev = [None, float("inf"), float("inf")]   # [fruit, first_i, last_i]
         other = [None, float("inf"), float("inf")]
-
         result = 1
-
         for i, fruit in enumerate(tree):
-
             if fruit == prev[0]:
                 prev[2] = i
                 result = max(result, i + 1 - min(prev[1], other[1]))
-
             elif fruit == other[0]:
                 other[2] = i
                 other, prev = prev, other
                 result = max(result, i + 1 - min(prev[1], other[1]))
-
             elif prev[0] is None:
                 prev = [fruit, i, i]
-
             elif other[0] is None:
                 other, prev = prev, [fruit, i, i]
                 result = max(result, i + 1 - other[1])
-
             else:
                 other = [prev[0], other[2] + 1, prev[2]]
                 prev = [fruit, i, i]
-
         return result

@@ -2,7 +2,6 @@ import json
 
 
 class Codec:
-
     def serialize(self, root):
         def tuplify(root):
             return root and (root.val, tuplify(root.left), tuplify(root.right))

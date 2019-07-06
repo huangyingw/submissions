@@ -24,5 +24,4 @@ class Solution:
             root.right = helper(idx + 1, end)
             root.left = helper(start, idx - 1)
             return root
-
         return helper(0, len(inorder) - 1)

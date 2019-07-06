@@ -14,12 +14,10 @@ public class Solution
 
         return uf.findCount();
     }
-
     public class unionFind
     {
         int[] ids;
         int count;
-
         public unionFind(int num)
         {
             ids = new int[num];
@@ -31,7 +29,6 @@ public class Solution
 
             this.count = num;
         }
-
         public int find(int i)
         {
             while (i != ids[i])
@@ -41,7 +38,6 @@ public class Solution
 
             return i;
         }
-
         public void union(int i1, int i2)
         {
             int id1 = find(i1);
@@ -55,12 +51,10 @@ public class Solution
             ids[id1] = id2;
             count--;
         }
-
         public boolean isConnected(int i1, int i2)
         {
             return find(i1) == find(i2);
         }
-
         public int findCount()
         {
             return count;

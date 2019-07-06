@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public void flatten(TreeNode root)
     {
         dfs(root, null);

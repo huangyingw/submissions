@@ -22,7 +22,6 @@ public class Solution
 
         return prev;
     }
-
     public ListNode plusOne(ListNode head)
     {
         if (head == null)

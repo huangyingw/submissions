@@ -1,8 +1,6 @@
 public class WordDistance
 {
-
     HashMap<String, List<Integer>> map = new HashMap<String, List<Integer>>();
-
     public WordDistance(String[] words)
     {
         for (int i = 0; i < words.length; i++)
@@ -17,7 +15,6 @@ public class WordDistance
             map.get(word).add(i);
         }
     }
-
     public int shortest(String word1, String word2)
     {
         List<Integer> idx1 = map.get(word1);

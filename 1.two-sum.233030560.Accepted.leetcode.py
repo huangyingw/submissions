@@ -11,7 +11,6 @@ class Solution(object):
     #         for j in range(i + 1, ls):
     #             if nums[i] + nums[j] == target:
     #                 return [i, j]
-
     # def twoSum(self, nums, target):
     #     # hash 1
     #     hash_nums = {}
@@ -33,7 +32,6 @@ class Solution(object):
     #                 return [index, candicate[0]]
     #         except KeyError:
     #             pass
-
     # def twoSum(self, nums, target):
     #     # hash 2
     #     hash_nums = {}
@@ -44,7 +42,6 @@ class Solution(object):
     #             return [hash_nums[another], index]
     #         except KeyError:
     #             hash_nums[num] = index
-
     def twoSum(self, nums, target):
         # two point
         nums_index = [(v, index) for index, v in enumerate(nums)]
@@ -58,8 +55,6 @@ class Solution(object):
                 begin += 1
             else:
                 end -= 1
-
-
 if __name__ == '__main__':
     # begin
     s = Solution()

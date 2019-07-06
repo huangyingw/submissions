@@ -12,7 +12,6 @@ public class Solution
         dfs(root, res);
         return res.get(0);
     }
-
     public TreeNode dfs(TreeNode root, ArrayList<TreeNode> res)
     {
         if (root.left == null)

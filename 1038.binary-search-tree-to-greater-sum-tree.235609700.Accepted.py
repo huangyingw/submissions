@@ -13,7 +13,6 @@ class Solution(object):
         self.ListNode = []
         self.dfs(root)
         SumNum = 0
-
         for node in self.ListNode:
             SumNum += node.val
             node.val = SumNum

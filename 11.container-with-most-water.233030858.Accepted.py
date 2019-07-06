@@ -19,7 +19,6 @@ class Solution(object):
     #             else:
     #                 left += 1
     #         return result
-
     def maxArea(self, height):
         # skip some choices
         ls = len(height)

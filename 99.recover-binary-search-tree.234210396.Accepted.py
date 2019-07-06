@@ -40,7 +40,6 @@ class Solution(object):
     #     # only two elements are swapped
     #     if first is not None and second is not None:
     #         first.val, second.val = second.val, first.val
-
     # https://discuss.leetcode.com/topic/3988/no-fancy-algorithm-just-simple-and-powerful-in-order-traversal/2
     def __init__(self):
         self.first = self.second = None

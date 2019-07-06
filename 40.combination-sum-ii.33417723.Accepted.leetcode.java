@@ -13,7 +13,6 @@ public class Solution
         helper(num, 0, target, new ArrayList<Integer>(), res);
         return res;
     }
-
     private void helper(int[] num, int start, int target,
                         ArrayList<Integer> current, List<List<Integer>> res)
     {

@@ -7,7 +7,6 @@ class Solution(object):
                 b += a < 0
                 a = max(a, 0)
             return a + b
-
         visited = set([s])
         ans = []
         queue = collections.deque([s])
@@ -27,5 +26,4 @@ class Solution(object):
                 if ns not in visited and calc(ns) < mi:
                     visited.add(ns)
                     queue.append(ns)
-
         return ans

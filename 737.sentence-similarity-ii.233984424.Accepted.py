@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/sentence-similarity-ii/
 # Given two sentences words1, words2 (each represented as an array of strings), and a list of similar word pairs pairs,
 # determine if two sentences are similar.
@@ -14,7 +13,6 @@ _project_ = 'leetcode'
 # pairs = [] are similar, even though there are no specified similar word pairs.
 # Finally, sentences can only be similar if they have the same number of words. So a sentence like words1 = ["great"]
 # can never be similar to words2 = ["doubleplus","good"].
-
 # Union-find. Create tree linking each word to its parent. Find parents of new words by moving up tree, collapsing
 # links from parent to grandparent. If either word is not in tree then make its parent the parent of the other word.
 # Time - O((n + p) log p ), len(words1) = n and len(pairs) = w2. p log p to create mapping + n log p to check.
@@ -36,11 +34,9 @@ class Solution(object):
                 mapping[word] = mapping[mapping[word]]      # collapse link from parent to grandparent
                 word = mapping[word]                        # move up
             return word
-
         if len(words1) != len(words2):                      # early return
             return False
         mapping = {}                                        # map word to its parent, which maybe itself
-
         for w1, w2 in pairs:
             p1, p2 = find(w1), find(w2)
             if p1:
@@ -53,14 +49,10 @@ class Solution(object):
                     mapping[w1] = p2                        # insert mapping for w2
                 else:
                     mapping[w1] = mapping[w2] = w1          # new pair separated from other mappings
-
         for w1, w2 in zip(words1, words2):
-
             if w1 == w2:
                 continue
-
             p1, p2 = find(w1), find(w2)
             if not p1 or not p2 or p1 != p2:                # no or different parents
                 return False
-
         return True

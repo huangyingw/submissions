@@ -37,7 +37,6 @@ class Solution(object):
     #         else:
     #             end = mid - 1
     #     return 1
-
     def searchMatrix(self, matrix, target):
         # binary search
         try:

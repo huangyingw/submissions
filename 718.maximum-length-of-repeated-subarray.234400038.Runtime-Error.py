@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
 """
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
-
 Example 1:
 Input:
 A: [1,2,3,2,1]
@@ -12,7 +11,6 @@ The repeated subarray with maximum length is [3, 2, 1].
 Note:
 1 <= len(A), len(B) <= 1000
 0 <= A[i], B[i] < 100
-
 """
 
 
@@ -41,7 +39,6 @@ class Solution:
                     for i in range(len(A) - length + 1)}
             return any(B[j:j + length] in seen
                        for j in range(len(B) - length + 1))
-
         A = ''.join(map(chr, A))
         B = ''.join(map(chr, B))
         lo, hi = 0, min(len(A), len(B)) + 1

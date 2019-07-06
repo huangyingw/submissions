@@ -5,7 +5,6 @@ class Solution(object):
         len1 = len(v1Arr)
         len2 = len(v2Arr)
         lenMax = max(len1, len2)
-
         for x in range(lenMax):
             v1Token = 0
             if x < len1:

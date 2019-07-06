@@ -3,7 +3,6 @@ class Solution(object):
         pre = None
         temp = None
         current = head
-
         while current:
             temp = current.next
             current.next = pre
@@ -14,16 +13,12 @@ class Solution(object):
     def split(self, head):
         lists = [None for _ in range(2)]
         lists[0] = head
-
         if not head or not head.next:
             return lists
-
         slow = head
         fast = head.next.next
-
         while fast:
             slow = slow.next
-
             if not fast.next:
                 break
             fast = fast.next.next
@@ -32,7 +27,6 @@ class Solution(object):
         return lists
 
     def merge(self, l1, l2):
-
         while l2:
             temp = l1.next
             l1.next = l2

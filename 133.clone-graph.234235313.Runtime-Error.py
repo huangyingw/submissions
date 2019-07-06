@@ -6,10 +6,8 @@
 
 
 class Solution(object):
-
     # def __init__(self):
     #     self.label_map = {}
-
     # def cloneGraph(self, node):
     #     """
     #     :type node: UndirectedGraphNode
@@ -26,7 +24,6 @@ class Solution(object):
     #         else:
     #             res.neighbors.append(self.label_map[ne.label])
     #     return res
-
     def cloneGraph(self, node):
         # BFS
         if node is None:

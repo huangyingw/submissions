@@ -1,6 +1,5 @@
 class Solution:
     def canJump(self, nums):
-
         # if it never get into 0, then it will always reach the last index
         for i in range(0, len(nums) - 1):
             # the step = 0
@@ -13,5 +12,4 @@ class Solution:
                     # YES
                     elif (nums[x] > (i - x)):
                         break
-
         return True

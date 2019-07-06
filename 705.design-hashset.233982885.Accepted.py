@@ -1,13 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/design-hashset/
 # Design a HashSet without using any built-in hash table libraries.
 # To be specific, your design should include these functions:
 # add(value): Insert a value into the HashSet.
 # contains(value) : Return whether the value exists in the HashSet or not.
 # remove(value): Remove a value in the HashSet. If the value does not exist in the HashSet, do nothing.
-
 # Use list of size 10000 since there are at most 10000 operations so we will not fill every element. There may be
 # collisions, which are handled by separate chaining. Use a simple modulo hash function.
 # Time - O(1) average case
@@ -15,7 +13,6 @@ _project_ = 'leetcode'
 
 
 class MyHashSet(object):
-
     def __init__(self):
         """
         Initialize your data structure here.

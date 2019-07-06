@@ -7,7 +7,6 @@ class Solution(object):
     #     """
     #     # sort
     #     return sorted(s) == sorted(t)
-
     def isAnagram(self, s, t):
         """
         :type s: str

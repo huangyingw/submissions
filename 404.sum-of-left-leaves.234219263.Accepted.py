@@ -18,7 +18,6 @@ class Solution(object):
     #         if root.left.left is None and root.left.right is None:
     #             return root.left.val + self.sumOfLeftLeaves(root.right)
     #     return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
-
     def sumOfLeftLeaves(self, root):
         stack = [root]
         res = 0

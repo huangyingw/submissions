@@ -7,8 +7,6 @@ class Solution(object):
                  '9': '6'
                  }
         newNum = ''
-
         for ch in num:
             newNum += table[ch]
-
         return num == newNum

@@ -7,21 +7,18 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
 public class Solution
 {
     class Node
     {
         TreeNode node;
         int column;
-
         Node(TreeNode node, int column)
         {
             this.node = node;
             this.column = column;
         }
     }
-
     public List<List<Integer>> verticalOrder(TreeNode root)
     {
         List<List<Integer>> results = new ArrayList<>();

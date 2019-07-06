@@ -5,21 +5,18 @@ public class WordDictionary
         char content;
         boolean isEnd;
         LinkedList<TrieNode> childNode;
-
         public TrieNode()
         {
             this.content = ' ';
             this.isEnd = false;
             this.childNode = new LinkedList<TrieNode>();
         }
-
         public TrieNode(char content)
         {
             this.content = content;
             this.isEnd = false;
             this.childNode = new LinkedList<TrieNode>();
         }
-
         public TrieNode subNode(char content)
         {
             if (childNode != null)
@@ -35,18 +32,14 @@ public class WordDictionary
 
             return null;
         }
-
     }
-
     public class Trie
     {
         private TrieNode root;
-
         public Trie()
         {
             root = new TrieNode();
         }
-
         // Inserts a word into the trie.
         public void insert(String word)
         {
@@ -68,7 +61,6 @@ public class WordDictionary
 
             current.isEnd = true;
         }
-
         // Returns if the word is in the trie.
         public boolean search(String word, TrieNode root)
         {
@@ -110,7 +102,6 @@ public class WordDictionary
                 return true;
             }
         }
-
         // Returns if there is any word in the trie
         // that starts with the given prefix.
         public boolean startsWith(String prefix)
@@ -132,14 +123,11 @@ public class WordDictionary
             return true;
         }
     }
-
     private Trie trie = new Trie();
-
     public void addWord(String word)
     {
         trie.insert(word);
     }
-
     public boolean search(String word)
     {
         return trie.search(word, trie.root);

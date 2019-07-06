@@ -21,7 +21,6 @@ class Solution(object):
     #         # handle 0 case!
     #         return 1 + min(ld, rd)
     #     return 1 + ld +rd
-
     def minDepth(self, root):
         # BFS
         if root is None:

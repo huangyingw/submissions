@@ -47,7 +47,6 @@ class Solution(object):
     #     if curr > 0:
     #         res = str(curr) + res
     #     return res
-
     def multiply(self, num1, num2):
         if num1 == '0' or num2 == '0':
             return '0'
@@ -72,7 +71,5 @@ class Solution(object):
             res = res + str(arr[pos])
             pos += 1
         return res
-
-
 if __name__ == '__main__':
     s = Solution()

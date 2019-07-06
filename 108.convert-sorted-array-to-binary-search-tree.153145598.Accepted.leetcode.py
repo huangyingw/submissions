@@ -3,7 +3,6 @@ class Solution(object):
         def sortedArrayToBST(nums, left, right):
             if left > right:
                 return None
-
             mid = (left + right) / 2
             root = TreeNode(nums[mid])
             root.left = sortedArrayToBST(nums, left, mid - 1)

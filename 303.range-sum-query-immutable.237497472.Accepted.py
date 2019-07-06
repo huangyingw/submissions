@@ -1,5 +1,4 @@
 class NumArray:
-
     def __init__(self, nums):
         self.presum = None
         if nums:

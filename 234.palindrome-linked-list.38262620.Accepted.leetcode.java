@@ -31,7 +31,6 @@ public class Solution
 
         return true;
     }
-
     public ListNode reverseList(ListNode head)
     {
         if (head == null || head.next == null)

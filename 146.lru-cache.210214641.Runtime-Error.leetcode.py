@@ -17,7 +17,6 @@ class LRUCache(object):
     def get(self, key):
         if key not in self.int_to_node:
             return -1
-
         node = self.int_to_node[key]
         node.prev.next = node.next
         node.next.prev = node.prev
@@ -28,12 +27,10 @@ class LRUCache(object):
         if self.get(key) != -1:
             self.int_to_node[key].value = value
             return
-
         if len(self.int_to_node) == self.capacity:
             self.int_to_node.remove(self.head.next.key)
             self.head.next = self.head.next.next
             self.head.next.prev = self.head
-
         insert = self.Node(key, value)
         self.int_to_node[key] = insert
         self.moveToTail(insert)

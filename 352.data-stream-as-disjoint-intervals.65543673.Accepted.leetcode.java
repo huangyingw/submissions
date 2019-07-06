@@ -1,10 +1,7 @@
 public class SummaryRanges
 {
-
     /** Initialize your data structure here. */
-
     private TreeSet<Interval> intervalSet;
-
     public SummaryRanges()
     {
         intervalSet = new TreeSet<Interval>(new Comparator<Interval>()
@@ -15,7 +12,6 @@ public class SummaryRanges
             }
         });
     }
-
     public void addNum(int val)
     {
         Interval valInterval = new Interval(val, val);
@@ -44,7 +40,6 @@ public class SummaryRanges
 
         intervalSet.add(valInterval);
     }
-
     public List<Interval> getIntervals()
     {
         return Arrays.asList(intervalSet.toArray(new Interval[0]));

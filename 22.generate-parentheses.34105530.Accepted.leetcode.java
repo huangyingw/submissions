@@ -11,7 +11,6 @@ public class Solution
         dfs(result, "", n, n);
         return result;
     }
-
     private void dfs(List<String> result, String s, int left, int right)
     {
         if (left > right || left < 0)

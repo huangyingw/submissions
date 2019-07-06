@@ -1,7 +1,6 @@
 public class Solution
 {
     int result;
-
     public int totalNQueens(int n)
     {
         result = 0;
@@ -15,7 +14,6 @@ public class Solution
         dfs(loc, 0, n);
         return result;
     }
-
     public void dfs(int[] loc, int cur, int n)
     {
         if (cur == n)
@@ -34,7 +32,6 @@ public class Solution
             }
         }
     }
-
     public boolean isValid(int[] loc, int cur)
     {
         for (int i = 0; i < cur; i++)

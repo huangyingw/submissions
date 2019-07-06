@@ -7,7 +7,6 @@ public class Solution
             line.append(' ');
         }
     }
-
     public ArrayList<String> fullJustify(String[] words, int L)
     {
         ArrayList<String> ans = new ArrayList<String>();

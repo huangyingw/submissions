@@ -1,5 +1,4 @@
 class MyStack(object):
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -23,7 +22,6 @@ class MyStack(object):
         Removes the element on top of the stack and returns that element.
         :rtype: int
         """
-
         if self.queue1:
             while len(self.queue1) > 1:
                 self.queue2.append(self.queue1.pop(0))

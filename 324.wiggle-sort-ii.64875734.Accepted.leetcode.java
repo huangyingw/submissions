@@ -11,7 +11,6 @@ public class Solution
         int median = findKthSmallest(nums, cntForMedian, 0, nums.length - 1);
         mapSortedArrayToWiggleInPlace(nums, median);
     }
-
     private void mapSortedArrayToWiggleInPlace(int[] nums, int median)
     {
         int i  = 1;
@@ -38,12 +37,10 @@ public class Solution
             }
         }
     }
-
     private int indexMap(int n, int i)
     {
         return (2 * i - 1) % (n | 1);
     }
-
     private int findKthSmallest(int [] nums, int k, int start, int end)
     {
         int len = nums.length;
@@ -92,7 +89,6 @@ public class Solution
             return findKthSmallest(nums, k, start, left - 1);
         }
     }
-
     private void swap(int []nums, int start, int end)
     {
         int temp = nums[start];

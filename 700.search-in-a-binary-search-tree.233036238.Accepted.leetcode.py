@@ -22,7 +22,6 @@ class Solution(object):
     #         return self.searchBST(root.left, val)
     #     else:
     #         return self.searchBST(root.right, val)
-
     def searchBST(self, root, val):
         while root:
             if root.val == val:

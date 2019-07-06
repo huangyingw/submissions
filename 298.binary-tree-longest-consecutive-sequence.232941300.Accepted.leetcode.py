@@ -12,10 +12,8 @@ class Solution(object):
                     dfs(root.right, curLen + 1)
                 else:
                     dfs(root.right, 1)
-
         if not root:
             return 0
-
         self.result = 0
         dfs(root, 1)
         return self.result

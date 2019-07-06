@@ -20,14 +20,12 @@ class Solution(object):
     #         if min_value < n and n < ans:
     #             ans = n
     #     return ans if ans < float('inf') else -1
-
     # def dfs(self, root, values):
     #     if not root:
     #         return
     #     values.add(root.val)
     #     self.dfs(root.left, values)
     #     self.dfs(root.right, values)
-
     def findSecondMinimumValue(self, root):
         if not root:
             return -1

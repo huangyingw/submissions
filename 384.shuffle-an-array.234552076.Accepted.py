@@ -1,8 +1,6 @@
 """
 Problem Link: https://leetcode.com/problems/shuffle-an-array/description/
-
 Shuffle a set of numbers without duplicates.
-
 Example:
 // Init an array with set 1, 2, and 3.
 int[] nums = {1,2,3};
@@ -18,7 +16,6 @@ import random
 
 
 class Solution(object):
-
     def __init__(self, nums):
         self.original = nums
         self.cur = list(nums)
@@ -32,7 +29,6 @@ class Solution(object):
             n = random.randint(0, i)
             self.cur[i], self.cur[n] = self.cur[n], self.cur[i]
         return self.cur
-
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)
 # param_1 = obj.reset()

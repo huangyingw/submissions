@@ -1,11 +1,8 @@
 # https://leetcode.com/problems/reach-a-number/
 """
 You are standing at position 0 on an infinite number line. There is a goal at position target.
-
 On each move, you can either go left or right. During the n-th move (starting from 1), you take n steps.
-
 Return the minimum number of steps required to reach the destination.
-
 Example 1:
 Input: target = 3
 Output: 2
@@ -33,5 +30,4 @@ class Solution(object):
         while target > 0:
             k += 1
             target -= k
-
         return k if target % 2 == 0 else k + 1 + k % 2

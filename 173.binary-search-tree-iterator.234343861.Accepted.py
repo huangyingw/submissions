@@ -32,7 +32,6 @@ class BSTIterator(object):
             self.stack.append(x)
             x = x.left
         return node.val
-
         # Your BSTIterator will be called like this:
         # i, v = BSTIterator(root), []
         # while i.hasNext(): v.append(i.next())

@@ -27,7 +27,6 @@ class NumMatrix(object):
     #     for i in range(row1, row2 + 1):
     #         sum += self.dp[i][col2 + 1] - self.dp[i][col1]
     #     return sum
-
     # caching smarter
     def __init__(self, matrix):
         """
@@ -54,7 +53,6 @@ class NumMatrix(object):
         """
         return self.dp[row2 + 1][col2 + 1] - self.dp[row1][col2 + 1] - \
             self.dp[row2 + 1][col1] + self.dp[row1][col1]
-
         # Your NumMatrix object will be instantiated and called as such:
         # numMatrix = NumMatrix(matrix)
         # numMatrix.sumRegion(0, 1, 2, 3)

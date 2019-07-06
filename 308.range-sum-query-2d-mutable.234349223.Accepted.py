@@ -54,7 +54,6 @@ class NumMatrix(object):
                 j -= (j & -j)
             i -= (i & -i)
         return result
-
         # Your NumMatrix object will be instantiated and called as such:
         # obj = NumMatrix(matrix)
         # obj.update(row,col,val)

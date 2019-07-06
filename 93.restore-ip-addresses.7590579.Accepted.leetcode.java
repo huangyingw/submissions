@@ -12,7 +12,6 @@ public class Solution
         addr += solution.get(3);
         return addr;
     }
-
     private void search(String s, int begin, ArrayList<Integer> solution,
                         ArrayList<String> solutions)
     {
@@ -51,7 +50,6 @@ public class Solution
             }
         }
     }
-
     public ArrayList<String> restoreIpAddresses(String s)
     {
         ArrayList<String> solutions = new ArrayList<String>();

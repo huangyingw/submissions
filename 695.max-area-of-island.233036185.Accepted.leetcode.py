@@ -28,7 +28,6 @@ class Solution(object):
                     stack.append((nr, nc))
                     grid[nr][nc] = 0
         return area
-
     # def bfs(self, grid, x, y):
     #     # BFS based on queue
     #     queue = [(x, y)]
@@ -50,7 +49,6 @@ class Solution(object):
     #             grid[i][j + 1] = 0
     #             queue.append((i, j + 1))
     #     return area
-
     # def maxAreaOfIsland(self, grid):
     #     # Recursive DFS
     #     seen = set()
@@ -61,7 +59,6 @@ class Solution(object):
     #         seen.add((r, c))
     #         return (1 + area(r+1, c) + area(r-1, c) +
     #                 area(r, c-1) + area(r, c+1))
-
     #     return max(area(r, c)
     #                for r in range(len(grid))
     #                for c in range(len(grid[0])))

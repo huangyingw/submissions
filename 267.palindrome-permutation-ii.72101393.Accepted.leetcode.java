@@ -64,7 +64,6 @@ public class Solution
 
         return result2;
     }
-
     private boolean isPalindromePermutation(String s, Map<Character, Integer> map)
     {
         int tolerance = 0;
@@ -106,7 +105,6 @@ public class Solution
             return false;
         }
     }
-
     private void permutation(char[] s, int start, List<String> result)
     {
         if (start >= s.length)
@@ -125,14 +123,12 @@ public class Solution
             }
         }
     }
-
     private void swap(char[] s, int i, int j)
     {
         char temp = s[i];
         s[i] = s[j];
         s[j] = temp;
     }
-
     private boolean containsDuplicate(char[] s, int start, int end)
     {
         for (int i = start; i < end; i++)

@@ -1,16 +1,12 @@
 '''
 	Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
-
 	A region is captured by flipping all 'O's into 'X's in that surrounded region.
-
 	Example:
-
 	X X X X
 	X O O X
 	X X O X
 	X O X X
 	After running your function, the board should be:
-
 	X X X X
 	X X X X
 	X X X X
@@ -31,14 +27,11 @@ class Solution(object):
                 self.merge(board, row, 0)
             if board[row][len(board[0]) - 1] == 'O':
                 self.merge(board, row, len(board[0]) - 1)
-
         for col in range(len(board[0])):
             if board[0][col] == 'O':
                 self.merge(board, 0, col)
-
             if board[len(board) - 1][col] == 'O':
                 self.merge(board, len(board) - 1, col)
-
         for row in range(len(board)):
             for col in range(len(board[0])):
                 if board[row][col] == 'O':
@@ -51,7 +44,6 @@ class Solution(object):
             return
         if board[row][col] != 'O':
             return
-
         board[row][col] = '#'
         self.merge(board, row + 1, col)
         self.merge(board, row, col - 1)

@@ -4,17 +4,16 @@ public class Solution
     {
         String[] dic = { " ", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
         ArrayList<String> result = new ArrayList<String>();
-        
+
         if (digits == null || digits.length() == 0)
         {
             return result;
         }
-        
+
         StringBuilder current = new StringBuilder();
         dfs(digits, dic, current, result);
         return result;
     }
-
     public void dfs(String digits, String[] dic, StringBuilder current, ArrayList<String> result)
     {
         if (current.length() == digits.length())

@@ -12,7 +12,6 @@ class Solution:
     #         return temp * temp
     #     else:
     #         return temp * temp * x
-
     def myPow(self, x, n):
         # https://leetcode.com/discuss/93413/iterative-log-n-solution-with-clear-explanation
         # 9 = 2^3 + 2^0 = 1001

@@ -29,7 +29,6 @@ class NumArray(object):
         res = 0
         i += self.ls
         j += self.ls
-
         while i <= j:
             if i % 2 == 1:
                 res += self.tree[i]

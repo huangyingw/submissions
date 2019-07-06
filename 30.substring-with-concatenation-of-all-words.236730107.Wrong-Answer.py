@@ -20,7 +20,6 @@ class Solution(object):
                 else:
                     cur_cnt.clear()
                     start = j + word_len
-
                 if(start + word_total == j):
                     ans.append(start)
         return ans

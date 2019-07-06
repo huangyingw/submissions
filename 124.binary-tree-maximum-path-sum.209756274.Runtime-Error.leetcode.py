@@ -9,7 +9,6 @@ class Solution(object):
     def findMax(self, root):
         if not root:
             return 0
-
         left = max(self.findMax(root.left), 0)
         right = max(self.findMax(root.right), 0)
         self.max = max(max, root.val + left + right)

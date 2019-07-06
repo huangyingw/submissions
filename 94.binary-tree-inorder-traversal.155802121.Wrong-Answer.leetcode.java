@@ -11,7 +11,6 @@ public class Solution
         inorderTraversal(root, result);
         return result;
     }
-
     public void inorderTraversal(TreeNode root, List<Integer> result)
     {
         if (root == null)

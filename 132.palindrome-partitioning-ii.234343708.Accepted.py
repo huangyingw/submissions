@@ -21,7 +21,6 @@ class Solution:
                 dp[end] = min(dp[end], newCut)
                 start -= 1
                 end += 1
-
             # even length
             start, end = mid - 1, mid
             while (start >= 0 and end < n and s[start] == s[end]):
@@ -29,5 +28,4 @@ class Solution:
                 dp[end] = min(dp[end], newCut)
                 start -= 1
                 end += 1
-
         return dp[n - 1]

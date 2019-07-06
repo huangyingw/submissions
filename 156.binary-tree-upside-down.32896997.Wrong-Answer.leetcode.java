@@ -1,7 +1,6 @@
 public class Solution
 {
     private TreeNode out = null;
-
     public TreeNode upsideDownBinaryTree(TreeNode root)
     {
         TreeNode dummy = new TreeNode(0);
@@ -10,7 +9,6 @@ public class Solution
         postorder(root);
         return dummy.right;
     }
-
     private void postorder(TreeNode root)
     {
         if (root == null)

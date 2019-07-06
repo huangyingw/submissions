@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/guess-the-word/
 # This problem is an interactive problem new to the LeetCode platform.
 # We are given a word list of unique words, each word is 6 letters long, and one word in this list is chosen as secret.
@@ -13,7 +12,6 @@ _project_ = 'leetcode'
 # Besides the example test case below, there will be 5 additional test cases, each with 100 words in the word list.
 # The letters of each word in those testcases were chosen independently at random from 'a' to 'z',
 # such that every word in the given word lists is unique.
-
 # Repeatedly choose a word to guess and eliminate all words that do not have the same number of matches as the
 # chosen word. Words are chosen so they have maximum overlap (same chars in same positions) with other words.
 # This reduces candidate list more than choosing a random word which may not overlap with any other words and so
@@ -37,16 +35,11 @@ class Solution(object):
             for word in candidates:
                 for i, c in enumerate(word):
                     counts[i][c] += 1                               # all words with same chars in same positions
-
             return max(candidates, key=lambda x: sum(counts[i][c] for i, c in enumerate(x)))
-
         candidates = wordlist[:]        # all remaining candidates, initially all words
         while candidates:
-
             s = most_overlap_word()     # guess the word that overlaps with most others
             matches = master.guess(s)
-
             if matches == 6:
                 return
-
             candidates = [w for w in candidates if pair_matches(s, w) == matches]   # filter words with same matches

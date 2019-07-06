@@ -6,7 +6,6 @@ public class Solution
         dfs(res, new int[n], 0, n);
         return res;
     }
-
     public void dfs(List<List<String>> res, int[] usedColumns, int curRow, int total)
     {
         if (curRow == total)
@@ -48,7 +47,6 @@ public class Solution
             usedColumns[curRow] = -1;
         }
     }
-
     private boolean isValidSolution(int curRow, int[] usedColumns)
     {
         for (int row = 0; row < curRow; row++)

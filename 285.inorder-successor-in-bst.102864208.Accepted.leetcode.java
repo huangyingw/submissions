@@ -11,7 +11,6 @@ public class Solution
 
         return nav;
     }
-
     TreeNode inorderSuccessor(TreeNode cur, TreeNode target)
     {
         if (target.right != null)

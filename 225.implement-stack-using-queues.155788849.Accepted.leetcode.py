@@ -1,5 +1,4 @@
 class MyStack(object):
-
     def __init__(self):
         self.queue1 = []
         self.queue2 = []
@@ -9,12 +8,10 @@ class MyStack(object):
             self.queue1.append(x)
         elif self.queue1:
             self.queue2.append(x)
-
             while self.queue1:
                 self.queue2.append(self.queue1.pop(0))
         else:
             self.queue1.append(x)
-
             while self.queue2:
                 self.queue1.append(self.queue2.pop(0))
 

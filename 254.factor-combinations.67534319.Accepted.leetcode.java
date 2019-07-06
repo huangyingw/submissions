@@ -6,7 +6,6 @@ public class Solution
         dfs(ret, new ArrayList<Integer> (), n, 2);
         return ret;
     }
-
     private void dfs(List<List<Integer>> ret, List<Integer> item, int n, int start)
     {
         if (n == 1)

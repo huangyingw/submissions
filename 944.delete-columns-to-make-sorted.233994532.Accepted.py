@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/delete-columns-to-make-sorted/
 # We are given an array A of N lowercase letter strings, all of the same length.
 # Now, we may choose any set of deletion indices, and for each string, we delete all the characters in those indices.
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # Suppose we chose a set of deletion indices D such that after deletions,
 # each remaining column in A is in non-decreasing sorted order.
 # Return the minimum possible value of D.length.
-
 # Rotate the array to iterate over columns. Check if each column is sorted.
 # Time - O(m n log n)
 # Space - O(mn)
@@ -24,10 +22,7 @@ class Solution:
         :rtype: int
         """
         deletions = 0
-
         for col in zip(*A):     # pass each string as a positional argument to zip
-
             if list(col) != sorted(col):
                 deletions += 1
-
         return deletions

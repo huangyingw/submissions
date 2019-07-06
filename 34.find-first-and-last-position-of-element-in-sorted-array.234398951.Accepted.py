@@ -16,7 +16,6 @@ class Solution:
     #         else:
     #             l = m + 1
     #     return l
-
     # 2
     def searchRange(self, nums, target):
         def binarySearchLeft(A, x):
@@ -38,9 +37,7 @@ class Solution:
                 else:
                     right = mid - 1
             return right
-
         left, right = binarySearchLeft(nums, target), binarySearchRight(nums, target)
         return [left, right] if left <= right else [-1, -1]
-
 if __name__ == '__main__':
     t = Solution()

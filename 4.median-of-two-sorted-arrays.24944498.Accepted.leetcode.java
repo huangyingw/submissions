@@ -37,7 +37,6 @@ public class Solution
             return A[i];
         }
     }
-
     public double findMedianSortedArrays(int A[], int B[])
     {
         return findMedianSortedArrays(A, Math.max(0, (A.length + B.length) / 2 - B.length), Math.min(A.length - 1, (A.length + B.length) / 2), B);

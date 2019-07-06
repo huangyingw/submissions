@@ -16,7 +16,6 @@ public class Solution
         root.right = sortedListToBST(mid + 1, end);
         return root;
     }
-
     public TreeNode sortedListToBST(ListNode head)
     {
         current = head;

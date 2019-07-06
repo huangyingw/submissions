@@ -1,7 +1,6 @@
 class Solution(object):
     # def letterCasePermutation(self, S):
     #     ans = [[]]
-
     #     for char in S:
     #         n = len(ans)
     #         if char.isalpha():
@@ -14,13 +13,10 @@ class Solution(object):
     #             # Normal append
     #             for i in xrange(n):
     #                 ans[i].append(char)
-
     #     return map("".join, ans)
-
     def letterCasePermutation(self, S):
         B = sum(letter.isalpha() for letter in S)
         ans = []
-
         for bits in xrange(1 << B):
             b = 0
             word = []
@@ -30,10 +26,8 @@ class Solution(object):
                         word.append(letter.lower())
                     else:
                         word.append(letter.upper())
-
                     b += 1
                 else:
                     word.append(letter)
-
             ans.append("".join(word))
         return ans

@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/parse-lisp-expression/
 # You are given a string expression representing a Lisp-like expression to return the integer value of.
 # The syntax for these expressions is given as follows.
@@ -21,7 +20,6 @@ _project_ = 'leetcode'
 # Finally, there is the concept of scope. When an expression of a variable name is evaluated, within the context of
 # that evaluation, the innermost scope (in terms of parentheses) is checked first for the value of that variable,
 # and then outer scopes are checked sequentially. It is guaranteed that every expression is legal.
-
 # Split the input by spaces. This gives a list of tokens, which may be operators, variables or integers. Brackets
 # may be present before or after a token.
 # Create a stack of dictionaries. The top of the stack is dictionary mapping variables to their values in the current
@@ -54,34 +52,27 @@ class Solution(object):
         scopes = [{}]                           # stack of dictionaries
 
         def helper(start):                      # returns (value of expression, next index to parse)
-
             if start >= len(tokens):            # base case
                 return 0, start
-
             operator = tokens[start]
             if operator[0] == "(":              # remove opening bracket if any
                 operator = operator[1:]
                 scopes.append(dict(scopes[-1]))  # move up a level of scope, including all previous variables
-
             closing_brackets = 0
             while operator[len(operator) - 1 - closing_brackets] == ")":    # remove and count closing brackets if any
                 closing_brackets += 1
             if closing_brackets > 0:
                 operator = operator[:-closing_brackets]
-
             if operator.isdigit() or operator[0] == "-" and operator[1:].isdigit():
                 result = int(operator), start + 1
-
             elif operator == "add":
                 left, next_i = helper(start + 1)
                 right, next_i = helper(next_i)
                 result = (left + right, next_i)
-
             elif operator == "mult":
                 left, next_i = helper(start + 1)
                 right, next_i = helper(next_i)
                 result = (left * right, next_i)
-
             elif operator == "let":
                 next_i = start + 1
                 while continue_let(next_i):
@@ -89,18 +80,14 @@ class Solution(object):
                     expression, next_i = helper(next_i + 1)
                     scopes[-1][variable] = expression
                 result = helper(next_i)
-
             else:                               # operator is variable
                 result = (scopes[-1][operator], start + 1)
-
             while closing_brackets > 0:         # remove old scopes
                 closing_brackets -= 1
                 scopes.pop()
-
             return result
-
         # Determines whether we should continue parsing pairs of var/expression for let operator
+
         def continue_let(i):                    # test for variable without closing bracket
             return "a" <= tokens[i][0] <= "z" and tokens[i][-1] != ")"
-
         return helper(0)[0]

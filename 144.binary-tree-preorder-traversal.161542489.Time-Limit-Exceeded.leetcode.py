@@ -2,7 +2,6 @@ class Solution(object):
     def preorderTraversal(self, root):
         result = []
         stack = [root]
-
         while stack:
             root = stack.pop()
             if root:
@@ -11,5 +10,4 @@ class Solution(object):
                 root = root.left
             else:
                 root = root.right
-
         return result

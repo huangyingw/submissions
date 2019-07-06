@@ -1,9 +1,7 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/excel-sheet-column-number/
 # Given a column title as appear in an Excel sheet, return its corresponding column number.
-
 # For each char, multiply previous result by 26 and add value of char
 # Time - O(n)
 # Space - O(n)

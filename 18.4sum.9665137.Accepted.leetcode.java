@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private ArrayList<Integer> list(int... ns)
     {
         ArrayList<Integer> l = new ArrayList<Integer>();
@@ -12,7 +11,6 @@ public class Solution
 
         return l;
     }
-
     private void twoSum(int[] num, int a, int b, int start, int target, ArrayList<ArrayList<Integer>> quadruplets)
     {
         int low = start;
@@ -48,7 +46,6 @@ public class Solution
             }
         }
     }
-
     public ArrayList<ArrayList<Integer>> fourSum(int[] num, int target)
     {
         ArrayList<ArrayList<Integer>> quadruplets = new ArrayList<ArrayList<Integer>>();

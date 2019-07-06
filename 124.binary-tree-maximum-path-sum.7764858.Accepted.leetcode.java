@@ -2,14 +2,12 @@ public class Solution
 {
     //store max value
     int max;
-
     public int maxPathSum(TreeNode root)
     {
         max = (root == null) ? 0 : root.val;
         findMax(root);
         return max;
     }
-
     public int findMax(TreeNode node)
     {
         if (node == null)

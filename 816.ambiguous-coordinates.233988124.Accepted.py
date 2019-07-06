@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/ambiguous-coordinates/
 # We had some 2-dimensional coordinates, like "(1, 3)" or "(2, 0.5)".
 # Then, we removed all commas, decimal points, and spaces, and ended up with the string S.
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # started with numbers like ".1".
 # The final answer list can be returned in any order.
 # Also note that all coordinates in the final answer have exactly one space between them (occurring after the comma.
-
 # Split the coordinates into two non-zero pieces where the comma will be inserted. For each piece, calculate a list of
 # all possible numbers with a digit.
 # If number has leading and trailing zeros zero it can only be zero.
@@ -29,9 +27,7 @@ class Solution(object):
         :type S: str
         :rtype: List[str]
         """
-
         def insert_decimal(s):  # return list of possible representations of a number
-
             if s == "0":        # special case of leading and trailing zero
                 return [s]
             if s[0] == "0" and s[-1] == "0":    # cannot have both leading and trailing zeros
@@ -40,16 +36,11 @@ class Solution(object):
                 return ["0." + s[1:]]
             if s[-1] == "0":    # cannot have any trailing zeros after decimal point
                 return [s]
-
             return [s[:i] + "." + s[i:] for i in range(1, len(s))] + [s]
-
         S = S[1:-1]             # remove brackets
         result = []
-
         for i in range(1, len(S)):  # insert comma after index i
-
             left = insert_decimal(S[:i])
             right = insert_decimal(S[i:])
             result += ["(" + ", ".join([l, r]) + ")" for l in left for r in right]
-
         return result

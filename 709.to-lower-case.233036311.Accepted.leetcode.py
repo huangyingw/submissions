@@ -12,6 +12,5 @@ class Solution(object):
             else:
                 res.append(c)
         return ''.join(res)
-
     # def toLowerCase(self, str):
     #     return str.lower()

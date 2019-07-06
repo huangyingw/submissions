@@ -1,7 +1,4 @@
-
-
 class Solution(object):
-
     def longestValidParentheses(self, s):
         # https://leetcode.com/discuss/87988/my-easy-o-n-java-solution-with-explanation
         ls = len(s)

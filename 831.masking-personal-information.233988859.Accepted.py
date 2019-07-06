@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/masking-personal-information/
 # We are given a personal information string S, which may represent either an email address or a phone number.
 # We would like to mask this personal information according to the following rules:
@@ -23,7 +22,6 @@ _project_ = 'leetcode'
 # Note that extraneous characters like "(", ")", " ", as well as extra dashes or plus signs not part of the above
 # formatting scheme should be removed.
 # Return the correct "mask" of the information provided.
-
 # If S contains "@" it is an email. Split email by "@", amend name to first and last letters.
 # If phone, retain all digits and split into country (maybe empty) and local.
 # Time - O(n)
@@ -39,7 +37,6 @@ class Solution(object):
         if "@" in S:
             name, address = S.lower().split("@")
             return name[0] + "*****" + name[-1] + "@" + address
-
         digits = [c for c in S if "0" <= c <= "9"]          # remove all non-digits
         country, local = digits[:-10], digits[-10:]         # split country and local numbers
         result = []

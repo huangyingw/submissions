@@ -13,9 +13,7 @@ class Solution(object):
                     if 0 <= k < len(board) and 0 <= l < len(board[0]):
                         if board[k][l] == 1:
                             count += 1
-
             return count - 1 if board[i][j] == 1 else count
-
         for i in range(len(board)):
             for j in range(len(board[0])):
                 count = around(i, j, board)
@@ -25,7 +23,6 @@ class Solution(object):
                 else:
                     if count == 3:
                         index.append([i, j, 1])
-
         while index:
             i, j, value = index.pop()
             board[i][j] = value

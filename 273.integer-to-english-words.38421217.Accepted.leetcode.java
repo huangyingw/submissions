@@ -15,7 +15,6 @@ public class Solution
         result = result.trim();
         return result.isEmpty() ? "Zero" : result;
     }
-
     String convertHundred(int num)
     {
         String[] v1 = { "", "One", "Two", "Three", "Four", "Five", "Six", "Seven",

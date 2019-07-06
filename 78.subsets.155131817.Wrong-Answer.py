@@ -10,7 +10,6 @@ class Solution(object):
                 current.append(nums[start])
                 helper(index + 1)
                 current.pop()
-
         result = []
         current = []
         nums.sort()

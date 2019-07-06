@@ -25,7 +25,6 @@ class Solution(object):
     #     self.postorderHelp(node.left, stack)
     #     self.postorderHelp(node.right, stack)
     #     stack.append(node.val)
-
     # def postorderTraversal(self, root):
     #     # Stack
     #     if root is None:
@@ -40,7 +39,6 @@ class Solution(object):
     #         if curr.right is not None:
     #             stack.append(curr.right)
     #     return res
-
     def postorderTraversal(self, root):
         if root is None:
             return []

@@ -10,7 +10,6 @@ public class Solution
         int[] result = dfs(root);
         return Math.max(result[0], result[1]);
     }
-
     public int[] dfs(TreeNode root)
     {
         if (root == null)

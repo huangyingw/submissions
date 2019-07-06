@@ -4,7 +4,6 @@ public class Solution
     {
         return divide(A, 0, A.length - 1);
     }
-
     public int divide(int A[], int low, int high)
     {
         if (low == high)

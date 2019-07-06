@@ -2,9 +2,7 @@ class Solution(object):
     def isSameTree(self, p, q):
         if not p and not q:
             return True
-
         stack = [(p, q)]
-
         while stack:
             node1, node2 = stack.pop()
             if node1 and node2 and node1.val == node2.val:
@@ -13,5 +11,4 @@ class Solution(object):
             else:
                 if not node1 == node2:
                     return False
-
         return True

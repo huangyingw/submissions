@@ -48,7 +48,6 @@ public class Solution
 
         return sb.toString();
     }
-
     private int findSmallestIndex(Map<Character, Integer> lastIndexMap)
     {
         int result = Integer.MAX_VALUE;

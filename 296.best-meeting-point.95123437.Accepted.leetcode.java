@@ -18,20 +18,20 @@ public class Solution
                 }
             }
         }
-        
+
         Collections.sort(cols);
         int sum = 0;
-        
+
         for (int i = 0; i < rows.size(); i++)
         {
             sum += Math.abs(rows.get(i) - rows.get(rows.size() / 2));
         }
-        
+
         for (int i = 0; i < cols.size(); i++)
         {
             sum += Math.abs(cols.get(i) - cols.get(cols.size() / 2));
         }
-        
+
         return sum;
     }
 }

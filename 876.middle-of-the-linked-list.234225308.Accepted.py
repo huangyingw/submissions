@@ -16,7 +16,6 @@ class Solution(object):
     #         res.append(head)
     #         head = head.next
     #     return res[len(res) / 2]
-
     def middleNode(self, head):
         # Fast point is 2 times faster than slow point
         fast = slow = head

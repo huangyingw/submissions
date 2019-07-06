@@ -33,7 +33,7 @@ public class Solution
         else
         {
             root = root.right;
-            
+
             while (root.left != null)
             {
                 root = root.left;

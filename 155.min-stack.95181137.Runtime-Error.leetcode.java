@@ -11,7 +11,6 @@ class MinStack
             min.push(x);
         }
     }
-
     public void pop()
     {
         if (data.empty())
@@ -26,12 +25,10 @@ class MinStack
             min.pop();
         }
     }
-
     public int top()
     {
         return data.peek();
     }
-
     public int getMin()
     {
         return min.peek();

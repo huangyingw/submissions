@@ -7,7 +7,6 @@ public class Solution
         dfs(num, 0, target, new ArrayList<Integer>(), result);
         return result;
     }
-
     private void dfs(int[] num, int start, int target, ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (target == 0)

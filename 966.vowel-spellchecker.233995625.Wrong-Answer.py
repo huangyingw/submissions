@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/vowel-spellchecker/
 # Given a wordlist, we want to implement a spellchecker that converts a query word into a correct word.
 #
@@ -24,13 +23,11 @@ _project_ = 'leetcode'
 # When the query matches a word up to vowel errors, you should return the first such match in the wordlist.
 # If the query has no matches in the wordlist, you should return the empty string.
 # Given some queries, return a list of words answer, where answer[i] is the correct word for query = queries[i].
-
 # Create a set of the words for O(1) lookup. Map the lower case of each word to the first such word.
 # Map the lower case with vowels replaced by underscore to the first such word.
 # Look up each word in the set and both mappings, returning the first hit.
 # Time - O(m + n)
 # Space - O(m + n)
-
 from re import sub
 
 
@@ -41,12 +38,9 @@ class Solution:
         :type queries: List[str]
         :rtype: List[str]
         """
-
         def replace_vowels(word):
             return sub('[aeiou]', '_', word)
-
         wordsset = set(wordlist)
-
         lower_words, vowel_words = {}, {}
         for word in wordlist:
             lower_words.setdefault(word.lower(), word)  # do not overwrite if key already exists
@@ -57,12 +51,10 @@ class Solution:
         def check(word):
             if word in wordsset:
                 return word
-
             low = word.lower()
             result = lower_words.get(low, "")       # return empty string if not found
             if result == "":
                 replaced = replace_vowels(low)
                 result = vowel_words.get(replaced, "")
             return result
-
         return [check(query) for query in queries]

@@ -2,7 +2,6 @@ class Solution(object):
     def hasCycle(self, head):
         if not head:
             return False
-
         slow, fast = head, head
         while fast and fast.next:
             slow = slow.next

@@ -6,7 +6,6 @@ public class Solution
         dfs(num, 0, new ArrayList<Integer>(), result);
         return result;
     }
-
     public void dfs(int[] num, int start, List<Integer> current, List<List<Integer>> result)
     {
         if (current.size() == num.length)

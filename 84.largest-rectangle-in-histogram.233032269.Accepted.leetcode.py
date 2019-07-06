@@ -22,7 +22,5 @@ class Solution(object):
             largest_rectangle = max(largest_rectangle, heights[stack[top]] * (ls - stack[top - 1] - 1))
             top -= 1
         return largest_rectangle
-
-
 if __name__ == "__main__":
     s = Solution()

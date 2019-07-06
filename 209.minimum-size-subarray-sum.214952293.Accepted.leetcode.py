@@ -4,7 +4,6 @@ class Solution(object):
         right = 0
         vsum = 0
         minLen = sys.maxint
-
         while right < len(nums) or vsum >= s:
             if vsum < s:
                 vsum += nums[right]

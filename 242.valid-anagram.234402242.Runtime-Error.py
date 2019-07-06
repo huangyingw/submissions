@@ -49,7 +49,6 @@ class Solution:
         t_d = Counter(t)
         if len(s_d.keys()) != len(t_d.keys()):
             return False
-
         for key in s_d:
             if s_d[key] != t_d[key]:
                 return False

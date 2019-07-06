@@ -11,14 +11,11 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-
         if not head:
             return None
-
         sortedList = head
         head = head.next
         sortedList.next = None
-
         while head:
             curr = head
             head = head.next

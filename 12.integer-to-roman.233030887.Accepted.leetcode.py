@@ -24,7 +24,6 @@ class Solution(object):
     #             current -= roman_dim[dim][0]
     #             roman_str += roman_dim[dim][1]
     #     return roman_str
-
     def intToRoman(self, num):
         values = [1000, 900, 500, 400,
                   100, 90, 50, 40,
@@ -42,7 +41,6 @@ class Solution(object):
                 num -= values[i]
             i += 1
         return roman
-
 if __name__ == '__main__':
     # begin
     s = Solution()

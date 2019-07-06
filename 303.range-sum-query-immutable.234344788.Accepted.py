@@ -1,5 +1,4 @@
 class NumArray(object):
-
     def __init__(self, nums):
         n = len(nums)
         self.sum = [0] * (n + 1)

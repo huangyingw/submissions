@@ -1,10 +1,7 @@
 '''
 In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino.  (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.)
-
 We may rotate the i-th domino, so that A[i] and B[i] swap values.
-
 Return the minimum number of rotations so that all the values in A are the same, or all the values in B are the same.
-
 If it cannot be done, return -1.
 Input: A = [2,1,2,4,2,2], B = [5,2,6,2,3,2]
 Output: 2
@@ -25,7 +22,6 @@ class Solution(object):
             return -1
         if len(A) == 0:
             return 0
-
         for possibility in set([A[0], B[0]]):
             top_rotation, bottom_rotation = 0, 0
             for a_num, b_num in zip(A, B):

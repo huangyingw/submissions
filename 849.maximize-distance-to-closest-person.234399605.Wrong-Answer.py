@@ -31,7 +31,6 @@ class Solution:
         while seats[end] == 0:
             end -= 1
         max_dist, dist = 0, 0
-
         for i in range(start, end + 1):
             if seats[i] == 1:
                 if dist > max_dist:

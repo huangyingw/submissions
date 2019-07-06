@@ -1,7 +1,6 @@
 public class TwoSum
 {
     private Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-
     public void add(int input)
     {
         if (!map.containsKey(input))
@@ -11,7 +10,6 @@ public class TwoSum
 
         map.put(input, map.get(input) + 1);
     }
-
     public boolean find(int val)
     {
         for (Map.Entry<Integer, Integer> ent : map.entrySet())

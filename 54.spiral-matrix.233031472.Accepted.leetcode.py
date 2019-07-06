@@ -21,7 +21,6 @@ class Solution(object):
             [matrix[j][c_start] for j in reversed(range(r_start + 1, r_end))]
         res = curr + self.get_spiralOrder(matrix, r_start + 1, r_end - 1, c_start + 1, c_end - 1)
         return res
-
     # def spiralOrder(self, matrix):
     #     res = []
     #     if not matrix:
@@ -38,7 +37,6 @@ class Solution(object):
     #         i += di
     #         j += dj
     #     return res
-
 if __name__ == '__main__':
     # begin
     s = Solution()

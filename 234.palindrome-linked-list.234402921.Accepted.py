@@ -16,7 +16,6 @@ class Solution:
         """
         # 常规方法：先将值存储起来，然后判断
         temp_list = []
-
         while head:
             temp_list.append(head.val)
             head = head.next
@@ -33,12 +32,10 @@ class Solution:
         :rtype: bool
         """
         fast = slow = head
-
         # 到达链表中间停止
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
-
         # 将后半段的链表反转
         node = None
         while slow:
@@ -46,12 +43,10 @@ class Solution:
             slow.next = node
             node = slow
             slow = nxt
-
         # 两个链表比较
         while node:
             if node.val != head.val:
                 return False
             node = node.next
             head = head.next
-
         return True

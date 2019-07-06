@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/min-stack/description/
 class MinStack(object):
-
     def __init__(self):
         """
         initialize your data structure here.
@@ -38,8 +37,6 @@ class MinStack(object):
         :rtype: int
         """
         return self.minstack[-1]
-
-
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
 # obj.push(x)

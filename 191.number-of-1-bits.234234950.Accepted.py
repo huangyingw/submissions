@@ -7,7 +7,6 @@ class Solution(object):
     #     # using bin
     #     s_n = bin(n)[2:]
     #     return s_n.count('1')
-
     def hammingWeight(self, n):
         """
         :type n: int

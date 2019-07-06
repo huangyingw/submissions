@@ -6,7 +6,6 @@ public class Solution
         head.next = null;
         return ret;
     }
-
     public ListNode recursive(ListNode head)
     {
         if (head == null || head.next == null)

@@ -1,6 +1,5 @@
 public class Solution
 {
-
     int canCompleteCircuit(int[] gas, int[] cost)
     {
         int[] diff = new int[gas.length];

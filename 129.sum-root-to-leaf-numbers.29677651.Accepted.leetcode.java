@@ -15,7 +15,6 @@ public class Solution
         return dfs(root.left, sum * 10 + root.val)
                + dfs(root.right, sum * 10 + root.val);
     }
-
     public int sumNumbers(TreeNode root)
     {
         return dfs(root, 0);

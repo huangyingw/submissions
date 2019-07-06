@@ -1,7 +1,6 @@
 public class Solution
 {
     int result;
-
     public int totalNQueens(int n)
     {
         result = 0;
@@ -15,7 +14,6 @@ public class Solution
         dfs(columnForRow, 0, n);
         return result;
     }
-
     public void dfs(int[] columnForRow, int row, int n)
     {
         if (row == n)
@@ -34,7 +32,6 @@ public class Solution
             }
         }
     }
-
     public boolean isValid(int[] columnForRow, int row)
     {
         for (int i = 0; i < row; i++)

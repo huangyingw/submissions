@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/moving-stones-until-consecutive/
 # Three stones are on a number line at positions a, b, and c.
 # Each turn, you pick up a stone at an endpoint (ie., either the lowest or highest position stone),
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # The game ends when you cannot make any more moves, ie. the stones are in consecutive positions.
 # When the game ends, what is the minimum and maximum number of moves that you could have made?
 # Return the answer as an length 2 array: answer = [minimum_moves, maximum_moves]
-
 # Sort the stones and calculate the length of the 2 gaps between stones.
 # If either gap is 1 then the minimum moves if 1 since a stone can fill the gap. Else move each outer stone next to
 # the middle stone if there is a gap.

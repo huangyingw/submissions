@@ -17,7 +17,6 @@ class Solution(object):
                 stack[-1].right = node
             stack.append(node)
         return stack[0]
-
 # SolutionII-recursive
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -36,5 +35,4 @@ class SolutionII(object):
         node = TreeNode(nums[root])
         node.left = self.constructMaximumBinaryTree(nums[:root])
         node.right = self.constructMaximumBinaryTree(nums[root + 1:])
-
         return node

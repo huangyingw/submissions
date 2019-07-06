@@ -1,6 +1,5 @@
 # class Solution(object):
 #     def isValid(self, s):
-
 #
 
 
@@ -41,7 +40,6 @@ class Solution:
             return True
         else:
             return False
-
     # def isValid(self, s):
     #     # python replace
     #     n = len(s)

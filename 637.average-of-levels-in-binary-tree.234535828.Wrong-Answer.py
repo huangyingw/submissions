@@ -26,7 +26,6 @@ class Solution:
                     lis2.append(each.left)
                 if each.right:
                     lis2.append(each.right)
-
             res.append(level_sum / len(lis))
             lis = lis2
         return res

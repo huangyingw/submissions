@@ -1,9 +1,7 @@
 class Solution(object):
     def fullJustify(self, words, maxWidth):
-
         current_string = ""
         Ans_list, current_list = [], []
-
         for word in words:
             if len(current_string) + len(word) + len(current_list) > maxWidth:
                 if len(current_list) == 1:
@@ -21,7 +19,5 @@ class Solution(object):
             # add new word
             current_list.append(word)
             current_string += word
-
         Ans_list.append(' '.join(current_list) + ' ' * (maxWidth - len(current_string) - len(current_list) + 1))
-
         return Ans_list

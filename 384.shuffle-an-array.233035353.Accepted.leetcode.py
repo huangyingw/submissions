@@ -29,7 +29,6 @@ class Solution(object):
             # swap i and pos
             self.curr[i], self.curr[pos] = self.curr[pos], self.curr[i]
         return self.curr
-
         # Your Solution object will be instantiated and called as such:
         # obj = Solution(nums)
         # param_1 = obj.reset()

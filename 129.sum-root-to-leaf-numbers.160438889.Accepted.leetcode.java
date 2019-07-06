@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private int dfs(TreeNode root, int base)
     {
         if (root.left == null && root.right == null)
@@ -22,7 +21,6 @@ public class Solution
 
         return sum;
     }
-
     public int sumNumbers(TreeNode root)
     {
         if (root == null)

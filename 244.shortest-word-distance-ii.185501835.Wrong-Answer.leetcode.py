@@ -1,8 +1,6 @@
 class WordDistance(object):
-
     def __init__(self, words):
         self.w_to_idx = {}
-
         for idx, val in enumerate(words):
             self.w_to_idx.setdefault(val, []).append(idx)
 

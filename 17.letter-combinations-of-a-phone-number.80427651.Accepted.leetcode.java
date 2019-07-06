@@ -24,7 +24,6 @@ public class Solution
         dfs(map, digits, sb, result);
         return result;
     }
-
     private void dfs(Map<Character, char[]> map, String digits, StringBuilder sb, ArrayList<String> result)
     {
         if (sb.length() == digits.length())

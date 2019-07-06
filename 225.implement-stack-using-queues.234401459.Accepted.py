@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/implement-stack-using-queues/description/
 class MyStack:
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -35,18 +34,16 @@ class MyStack:
         :rtype: bool
         """
         return not len(self.stack1)
-
-
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
 # obj.push(x)
 # param_2 = obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.empty()
-
-
 # 也可是使用deque双向队列
 # from collections import deque
+
+
 def __init__(self):
     """
     Initialize your data structure here.

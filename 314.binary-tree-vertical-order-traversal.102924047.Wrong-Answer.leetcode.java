@@ -4,14 +4,12 @@ public class Solution
     {
         TreeNode treeNode;
         int column;
-
         TreeColumnNode(TreeNode treeNode, int column)
         {
             this.treeNode = treeNode;
             this.column = column;
         }
     }
-
     public List<List<Integer>> verticalOrder(TreeNode root)
     {
         List<List<Integer>> results = new ArrayList<>();

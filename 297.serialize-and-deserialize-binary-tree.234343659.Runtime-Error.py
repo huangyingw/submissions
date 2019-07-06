@@ -9,11 +9,9 @@ class TreeNode(object):
 class Codec:
     def serialize(self, root):
         """Encodes a tree to a single string.
-
         :type root: TreeNode
         :rtype: str
         """
-
         def preorder(node):
             if node:
                 vals.append(str(node.val))
@@ -21,18 +19,15 @@ class Codec:
                 preorder(node.right)
             else:
                 vals.append('#')
-
         vals = []
         preorder(root)
         return " ".join(vals)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
-
         :type data: str
         :rtype: TreeNode
         """
-
         def preorder():
             val = next(vals)
             if val == '#':
@@ -41,10 +36,8 @@ class Codec:
             node.left = preorder()
             node.right = preorder()
             return node
-
         vals = iter(data.split())
         return preorder()
-
         # Your Codec object will be instantiated and called as such:
         # codec = Codec()
         # codec.deserialize(codec.serialize(root))

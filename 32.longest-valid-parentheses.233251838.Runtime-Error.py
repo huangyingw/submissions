@@ -5,7 +5,6 @@ class Solution(object):
         :rtype: int
         """
         stack, result = [-1], 0
-
         for index in range(len(s)):
             if s[index] == '(':
                 stack.append(index)

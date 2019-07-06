@@ -11,7 +11,6 @@ public class Solution
 
         return r;
     }
-
     public String getPermutation(int n, int k)
     {
         k--; // 0 based

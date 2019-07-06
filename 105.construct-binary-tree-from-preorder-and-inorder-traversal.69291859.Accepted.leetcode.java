@@ -17,7 +17,6 @@ public class Solution
         int inEnd = inorder.length - 1;
         return construct(preorder, preStart, preEnd, inorder, inStart, inEnd);
     }
-
     public TreeNode construct(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd)
     {
         if (preStart > preEnd || inStart > inEnd)

@@ -3,12 +3,10 @@ class Solution(object):
         def dfs(head):
             if not head or not head.next:
                 return
-
             second = head.next
             ret = dfs(second)
             second.next = head
             return ret
-
         result = dfs(head)
         head.next = None
         return result

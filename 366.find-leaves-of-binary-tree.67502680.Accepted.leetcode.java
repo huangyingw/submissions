@@ -6,7 +6,6 @@ public class Solution
         dfs(list, root);
         return list;
     }
-
 //calculate the index of this root passed in and put it in that index, at last return where this root was put
     private int dfs(List<List<Integer>> list, TreeNode root)
     {

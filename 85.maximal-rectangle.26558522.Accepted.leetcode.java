@@ -22,7 +22,6 @@ public class Solution
 
         return maxArea;
     }
-
     public int maximalRectangle(char[][] matrix)
     {
         if (matrix.length == 0 || matrix[0].length == 0)

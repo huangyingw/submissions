@@ -14,7 +14,6 @@ class Solution:
     #         if ratings[i-1] > ratings[i]:
     #             res[i-1] = max(res[i] + 1, res[i-1])
     #     return sum(res)
-
     # time: O(n)
     # space: O(1)
     def candy(self, ratings):

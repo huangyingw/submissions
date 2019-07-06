@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/shopping-offers/
 # In LeetCode Store, there are some kinds of items to sell. Each item has a price.
 # However, there are some special offers, and a special offer consists of one or more different kinds of items with
@@ -11,7 +10,6 @@ _project_ = 'leetcode'
 # Each special offer is represented in the form of an array, the last number represents the price you need to pay
 # for this special offer, other numbers represents how many specific items you could get if you buy this offer.
 # You could use any of special offers as many times as you want.
-
 # Given a list of needs, find the cost of buying all items without special offers. Then for each special offer, if it
 # does not involve more than needed of each item, use that offer and recurse.
 # Space - O(n**m) where n is nb items and m is max nb of each item (nb tuples in memo)
@@ -27,17 +25,14 @@ class Solution(object):
         :rtype: int
         """
         def helper():
-
             needs_tuple = tuple(needs)
             if needs_tuple in memo:
                 return memo[needs_tuple]
-
             min_cost = 0
             for cost, need in zip(price, needs):
                 min_cost += need * cost
             if min_cost == 0:       # base case
                 return 0
-
             for offer in special:
                 for i, need in enumerate(needs):
                     if offer[i] > need:
@@ -48,9 +43,7 @@ class Solution(object):
                     min_cost = min(min_cost, offer[-1] + helper())
                     for i, need in enumerate(needs):
                         needs[i] += offer[i]
-
             memo[needs_tuple] = min_cost
             return min_cost
-
         memo = {}
         return helper()

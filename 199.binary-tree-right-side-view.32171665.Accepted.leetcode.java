@@ -12,7 +12,6 @@ public class Solution
         dfs(res, root, 0);
         return res;
     }
-
     public  void dfs(List<Integer> res, TreeNode root, int cur)
     {
         if (res.size() <= cur) // it's ok to add

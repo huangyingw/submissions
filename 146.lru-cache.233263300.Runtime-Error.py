@@ -1,12 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/lru-cache/
 # Design and implement a data structure for Least Recently Used cache. It should support the following operations:
 # get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
 # set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity,
 # it should invalidate the least recently used item before inserting a new item.
-
 # Dictionary stores keys with values of nodes.  Nodes form double linked list containing key, value pairs. DLL is in
 # order of use with least recent at head and most recent at tail.
 # Time - O(1) to set and get
@@ -47,7 +45,6 @@ class DLL:
 
 
 class LRUCache(object):
-
     def __init__(self, capacity):
         """
         :type capacity: int
@@ -77,11 +74,9 @@ class LRUCache(object):
             node.val = value
             self.queue.update(node)
             return
-
         node = Node(key, value)         # else new key
         self.mapping[key] = node
         self.queue.insert(node)
-
         if self.capacity == 0:          # cache is full, eject oldest
             removed_key = self.queue.remove_at_head()
             del self.mapping[removed_key]

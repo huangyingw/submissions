@@ -8,7 +8,6 @@ public class Solution
         helper(num, result, element, visited);
         return result;
     }
-
     public void helper(int[] num, ArrayList<ArrayList<Integer>> result,
                        ArrayList<Integer> element, boolean[] visited)
     {

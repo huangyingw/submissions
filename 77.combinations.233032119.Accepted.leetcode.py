@@ -18,7 +18,6 @@ class Solution(object):
     #         self.get_combine(res, candidates,
     #                          prefix + [candidates[index]],
     #                          k - 1, index + 1)
-
     def combine(self, n, k):
         res = []
         self.get_combine(res, [], n, k, 1)
@@ -35,7 +34,5 @@ class Solution(object):
             prefix.pop()
             self.get_combine(res, prefix,
                              n, k, start + 1)
-
-
 if __name__ == "__main__":
     s = Solution()

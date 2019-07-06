@@ -29,7 +29,6 @@ public class Solution
 
         return global[k];
     }
-
     public int maxProfit2(int[] prices)
     {
         int maxProfit = 0;

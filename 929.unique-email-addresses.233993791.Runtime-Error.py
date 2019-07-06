@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/unique-email-addresses/
 # Every email consists of a local name and a domain name, separated by the @ sign.
 # For example, in alice@leetcode.com, alice is the local name, and leetcode.com is the domain name.
@@ -15,7 +14,6 @@ _project_ = 'leetcode'
 # It is possible to use both of these rules at the same time.
 # Given a list of emails, we send one email to each address in the list.
 # How many different addresses actually receive mails?
-
 # Split by "@" then discard any part of the local name afte the "+" and remove all ".".
 # Time - O(n)
 # Space - O(n)
@@ -28,17 +26,11 @@ class Solution:
         :rtype: int
         """
         unique = set()
-
         for email in emails:
-
             local, domain = email.split("@")
-
             plus = local.index("+")
             if plus != -1:
                 local = local[:plus]
-
             local = local.replace(".", "")
-
             unique.add(local + domain)
-
         return len(unique)

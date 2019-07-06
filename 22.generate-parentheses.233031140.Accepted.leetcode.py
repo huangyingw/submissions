@@ -18,7 +18,6 @@ class Solution(object):
                 if curr[index] == ')':
                     res.append(curr[:index] + '(' + curr[index:])
         return list(set(res))
-
     # def generateParenthesis(self, n):
     #     def generate(leftnum, rightnum, s, result):
     #         if leftnum == 0 and rightnum == 0:

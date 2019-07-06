@@ -4,7 +4,6 @@ public class Solution
     {
         return findMin(num, 0, num.length - 1);
     }
-
     public int findMin(int[] num, int left, int right)
     {
         if (left == right)

@@ -1,10 +1,8 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/word-break-ii/
 # Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word.
 # Return all such possible sentences.
-
 # Test if word can be broken as per problem 139.  For all prefixes of s in the dictionary, recurse on the suffix.
 # Time - O(n**3 * 2**(n-1))
 # Space - O(n * 2**(n-1)), 2**(n-1) possible partitions of string of length n (every combination of gaps between words)
@@ -12,7 +10,6 @@ _project_ = 'leetcode'
 
 
 class Solution(object):
-
     def canBreak(self, s, wordDict):
         can_make = [False] * (len(s) + 1)         # can_make[i] is True if can make prefix of length i
         can_make[0] = True
@@ -35,12 +32,10 @@ class Solution(object):
         return [" ".join(result) for result in result_lists]    # convert back to strings
 
     def break_word(self, s, left, wordDict, memo):      # break from s[left] onwards
-
         if left >= len(s):      # base case
             return [[]]
         if left in memo:
             return memo[left]
-
         results = []
         for i in range(left + 1, len(s) + 1):       # try all possible prefixes
             prefix = s[left:i]
@@ -48,6 +43,5 @@ class Solution(object):
             if suffix_breaks and prefix in wordDict:
                 for suffix_break in suffix_breaks:
                     results.append([prefix] + suffix_break)
-
         memo[left] = results[:]
         return results

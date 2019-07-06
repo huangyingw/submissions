@@ -2,7 +2,6 @@ class MyQueue
 {
     Stack<Integer> stack = new Stack<Integer>();
     Stack<Integer> buffer = new Stack<Integer>();
-
     public void push(int x)
     {
         if (empty())
@@ -24,17 +23,14 @@ class MyQueue
             }
         }
     }
-
     public void pop()
     {
         stack.pop();
     }
-
     public int peek()
     {
         return stack.peek();
     }
-
     public boolean empty()
     {
         return stack.isEmpty();

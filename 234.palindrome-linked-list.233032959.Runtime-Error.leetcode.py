@@ -19,10 +19,8 @@ class Solution(object):
             slow = slow.next
             temp.next = rev
             rev = temp
-
         if fast:
             slow = slow.next
-
         while rev and rev.val == slow.val:
             rev = rev.next
             slow = slow.next

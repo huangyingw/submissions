@@ -1,6 +1,5 @@
 public class Solution
 {
-
     private ArrayList<TreeNode> generateTrees(int start, int end)
     {
         ArrayList<TreeNode> ans = new ArrayList<TreeNode>();
@@ -27,7 +26,6 @@ public class Solution
 
         return ans;
     }
-
     public ArrayList<TreeNode> generateTrees(int n)
     {
         return generateTrees(1, n);

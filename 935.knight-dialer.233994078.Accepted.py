@@ -1,6 +1,5 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-
 # https://leetcode.com/problems/knight-dialer/
 # A chess knight can move 2 squares horizontal/vertical and one square vertical/horizontal.
 # This time, we place our chess knight on any numbered key of a phone pad (indicated above),
@@ -9,7 +8,6 @@ _project_ = 'leetcode'
 # it presses the number of that key, pressing N digits total.
 # How many distinct numbers can you dial in this manner?
 # Since the answer may be large, output the answer modulo 10^9 + 7.
-
 # Create a mapping of which digits can be reached from each digit.
 # Store the count of distinct numbers ending with each digit.
 # For each move, add the count of solutions ending with each digit to the count of solutions ending with each
@@ -34,16 +32,11 @@ class Solution:
                      [2, 6],
                      [1, 3],
                      [2, 4]]
-
         counts = [1] * 10           # one distinct number ending with each digit
         for _ in range(N - 1):
-
             new_counts = [0] * 10
-
             for digit, count in enumerate(counts):
                 for next_digit in can_reach[digit]:
                     new_counts[next_digit] += count
-
             counts = new_counts
-
         return sum(counts) % (10 ** 9 + 7)

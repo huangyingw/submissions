@@ -17,7 +17,6 @@ public class Solution
         search(root.left, level + 1, ans);
         search(root.right, level + 1, ans);
     }
-
     public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root)
     {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();

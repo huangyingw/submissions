@@ -1,7 +1,6 @@
 class Solution(object):
     def evalRPN(self, tokens):
         stack = []
-
         for token in tokens:
             if token.equals("+"):
                 num2 = stack.pop()

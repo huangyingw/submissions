@@ -32,7 +32,6 @@ public class Solution
         solutions.put(s, solution);
         return solution;
     }
-
     public List<String> wordBreak(String s, Set<String> dict)
     {
         return dfs(s, dict, new HashMap<String, ArrayList<String>>());

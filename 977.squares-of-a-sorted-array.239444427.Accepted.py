@@ -6,7 +6,6 @@ class Solution(object):
     #     """
     #     # Directly sort
     #     return sorted(x * x for x in A)
-
     def sortedSquares(self, A):
         pos = 0
         while pos < len(A) and A[pos] < 0:

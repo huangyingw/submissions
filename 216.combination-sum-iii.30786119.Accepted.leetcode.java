@@ -7,7 +7,6 @@ public class Solution
         dfs(re, 1, 0, k, n, tmp);
         return re;
     }
-
     private void dfs(List<List<Integer>> re, int cur, int sum, int k, int n,
                      List<Integer> tmp)
     {

@@ -14,7 +14,6 @@ public class Solution
 
         return len;
     }
-
     public boolean isMatch(String s, String p)
     {
         if (s.length() < minLength(p))

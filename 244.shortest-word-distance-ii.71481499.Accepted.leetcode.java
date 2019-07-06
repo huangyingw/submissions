@@ -1,8 +1,6 @@
 public class WordDistance
 {
-
     HashMap<String, List<Integer>> map = new HashMap<String, List<Integer>>();
-
     public WordDistance(String[] words)
     {
         // 统计每个单词出现的下标存入哈希表中
@@ -19,7 +17,6 @@ public class WordDistance
             map.put(words[i], cnt);
         }
     }
-
     public int shortest(String word1, String word2)
     {
         List<Integer> idx1 = map.get(word1);

@@ -23,7 +23,6 @@ class Solution(object):
     #                         return False
     #         check[i] = True
     #     return True
-
     def isIsomorphic(self, s, t):
         if len(s) != len(t):
             return False

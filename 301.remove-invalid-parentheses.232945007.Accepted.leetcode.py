@@ -7,7 +7,6 @@ class Solution(object):
                 if a < 0:
                     return False
             return a == 0
-
         visited = set([s])
         ans = []
         queue = collections.deque([s])
@@ -26,5 +25,4 @@ class Solution(object):
                 if ns not in visited:
                     visited.add(ns)
                     queue.append(ns)
-
         return ans

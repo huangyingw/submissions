@@ -11,7 +11,6 @@ public class Solution
         helper(result, new StringBuilder(), n, n);
         return result;
     }
-
     private void helper(List<String> result, StringBuilder sb, int left, int right)
     {
         if (right < left || left < 0)

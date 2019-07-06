@@ -15,5 +15,4 @@ class Solution(object):
         for i in xrange(1, len(s) + 1):
             for j in xrange(1, len(t) + 1):
                 dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1] * (s[i - 1] == t[j - 1])
-
         return dp[-1][-1]

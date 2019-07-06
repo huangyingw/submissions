@@ -27,10 +27,8 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-
         if len(set(nums)) == len(nums):
             return False
-
         l = len(nums)
         for i in range(l):
             j = 1

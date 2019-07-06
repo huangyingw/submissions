@@ -25,7 +25,6 @@ class Solution(object):
     #         dmap[t].next = dmap[i].next
     #         dmap[i].next = dmap[t]
     #     dmap[ls / 2].next = None
-
     def reorderList(self, head):
         # Two points
         if head is None or head.next is None:

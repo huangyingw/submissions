@@ -3,13 +3,11 @@ class Solution:
     def sortArrayByParityII(self, A):
         odd_list = []
         even_list = []
-
         for i in A:
             if i % 2 == 1:
                 odd_list.append(i)
             else:
                 even_list.append(i)
-
         result = [None] * (len(odd_list) + len(even_list))
         result[::2] = even_list
         result[1::2] = odd_list

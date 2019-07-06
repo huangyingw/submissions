@@ -5,12 +5,10 @@ class Solution(object):
                 if len(current) == len(nums):
                     result.append(list(current))
                     return
-
                 if nums[index] not in current:
                     current.append(nums[index])
                     dfs()
                     current.pop()
-
         current = []
         result = []
         dfs()

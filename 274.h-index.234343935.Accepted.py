@@ -10,7 +10,6 @@ class Solution:
         #     if citations[i] >= n - i:
         #         return n - i
         # return 0
-
         n = len(citations)
         counts = [0] * (n + 1)
         for i in range(n):

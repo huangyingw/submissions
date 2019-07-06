@@ -1,6 +1,5 @@
 '''
 	Given a string s, partition s such that every substring of the partition is a palindrome.
-
 	Return all possible palindrome partitioning of s.
 '''
 
@@ -22,6 +21,5 @@ class Solution(object):
                 for j in range(i, len(s)):
                     if valid(s[i:j + 1]):
                         partitionRec(curr + [s[i:j + 1]], s, j + 1)
-
         partitionRec([], s, 0)
         return result

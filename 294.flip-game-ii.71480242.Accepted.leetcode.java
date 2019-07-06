@@ -10,7 +10,6 @@ public class Solution
         char[] arr = s.toCharArray();
         return canWinHelper(arr);
     }
-
     private boolean canWinHelper(char[] arr)
     {
         int i = 0;

@@ -1,6 +1,5 @@
 public class Solution
 {
-
     public ArrayList<Integer> preorderTraversal(TreeNode root)
     {
         ArrayList<Integer> list = new ArrayList<Integer>();

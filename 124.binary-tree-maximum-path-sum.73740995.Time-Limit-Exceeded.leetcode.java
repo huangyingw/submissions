@@ -11,7 +11,6 @@ public class Solution
             this.maxPath = maxPath;
         }
     }
-
     private ResultType dfs(TreeNode root)
     {
         if (root == null)
@@ -29,7 +28,6 @@ public class Solution
         maxPath = Math.max(maxPath, left.singlePath + right.singlePath + root.val);
         return new ResultType(singlePath, maxPath);
     }
-
     public int maxPathSum(TreeNode root)
     {
         ResultType result = dfs(root);

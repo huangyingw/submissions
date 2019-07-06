@@ -33,7 +33,6 @@ public class Solution
         solutions.put(s, solution);
         return solution;
     }
-
     public List<String> wordBreak(String s, Set<String> dict)
     {
         return searchWordBreak(s, dict, new HashMap<String, ArrayList<String>>());

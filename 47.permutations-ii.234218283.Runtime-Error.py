@@ -28,7 +28,6 @@ class Solution(object):
     #             temp = prefix[:]
     #             temp.append(rest[i])
     #             self.getPermute(temp, rest[:i] + rest[i + 1:])
-
     def permuteUnique(self, num):
         res = []
         if len(num) == 0:

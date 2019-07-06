@@ -15,7 +15,6 @@ class Solution(object):
     #             start += 1
     #         res = max(res, i - start + 1)
     #     return res
-
     # https://leetcode.com/problems/fruit-into-baskets/solution/
     # def totalFruit(self, tree):
     #     blocks = [(k, len(list(v)))
@@ -27,7 +26,6 @@ class Solution(object):
     #         # weight : the total number of trees represented
     #         #          by blocks under consideration
     #         types, weight = set(), 0
-
     #         # For each block from i and going forward,
     #         for j in xrange(i, len(blocks)):
     #             # Add each block to consideration
@@ -42,7 +40,6 @@ class Solution(object):
     #         else:
     #             break
     #     return ans
-
     def totalFruit(self, tree):
         ans = i = 0
         count = collections.Counter()

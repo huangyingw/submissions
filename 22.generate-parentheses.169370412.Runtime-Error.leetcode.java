@@ -6,7 +6,6 @@ public class Solution
         dfs(result, new StringBuilder(), n, n);
         return result;
     }
-
     private void dfs(List<String> result, StringBuilder sb, int left, int right)
     {
         if (left > right || right < 0)
