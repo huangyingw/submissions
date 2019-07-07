@@ -1,20 +1,5 @@
-# https://leetcode.com/problems/symmetric-tree/description/
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-
 class Solution(object):
     def isSymmetric(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
-        # 方法一：分层读取，使用队列
-        # 方法二：递归
         return self.isMirror(root, root)
 
     def isMirror(self, node1, node2):
