@@ -1,11 +1,5 @@
-# https://leetcode.com/problems/valid-palindrome/description/
 class Solution:
     def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        # 实际上是判断一个一个字符串的英文字母字串是否是回文
         processedString = []
         for c in s:
             if c.isalnum():
