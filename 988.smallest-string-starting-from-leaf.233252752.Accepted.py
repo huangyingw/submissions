@@ -1,7 +1,4 @@
-'''
-Given the root of a binary tree, each node has a value from 0 to 25 representing the letters 'a' to 'z': a value of 0 represents 'a', a value of 1 represents 'b', and so on.
-Find the lexicographically smallest string that starts at a leaf of this tree and ends at the root.
-'''
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
