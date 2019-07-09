@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/reshape-the-matrix/description/
+
 class Solution(object):
-        # 1 常规
+
     def matrixReshape(self, nums, r, c):
         """
         :type nums: List[List[int]]
@@ -13,8 +13,8 @@ class Solution(object):
         else:
             items = [y for x in nums for y in x]
             return [items[x * c: ((x + 1) * c)] for x in range(r)]
-    # 2
-    # 巧妙运用各种函数
+
+
 
     def matrixReshape(self, nums, r, c):
         flat = sum(nums, [])

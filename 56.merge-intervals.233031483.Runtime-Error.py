@@ -9,11 +9,11 @@
 	Output: [[1,5]]
 	Explanation: Intervals [1,4] and [4,5] are considerred overlapping.
 '''
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+
+
+
+
+
 
 
 class compare(object):
@@ -33,7 +33,7 @@ class Solution(object):
         :rtype: List[Interval]
         """
         intervals = sorted(intervals, key=compare)
-        # intervals.sort(key=lambda x: x.start)
+
         merged = []
         for interval in intervals:
             if not merged or merged[-1].end < interval.start:
@@ -41,5 +41,3 @@ class Solution(object):
             else:
                 merged[-1].end = max(merged[-1].end, interval.end)
         return merged
-# Time: O(N*log(N))
-# Space: O(1)
