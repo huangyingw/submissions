@@ -1,10 +1,10 @@
-# Definition for a binary tree node.
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-# Space: O(1) with Morris Inorder traversal
+
 
 
 class Solution:
@@ -32,7 +32,7 @@ class Solution:
                 while prev.right and prev.right != curr:
                     prev = prev.right
                 if prev.right == curr:
-                    prev.right = None  # restore the tree
+                    prev.right = None
                     self.findMistake(curr)
                     curr = curr.right
                 else:

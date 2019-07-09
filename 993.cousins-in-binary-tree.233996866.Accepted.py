@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/cousins-in-binary-tree/
-# In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1.
-# Two nodes of a binary tree are cousins if they have the same depth, but have different parents.
-# We are given the root of a binary tree with unique values, and the values x and y of two different nodes in the tree.
-# Return true if and only if the nodes corresponding to the values x and y are cousins.
-# Create mapping of value to node and node to parent. If both x and y are mapped to nodes, check if they have the same
-# parent. If only one of x and y is mapped to a node, they are not at the same depth so are not cousins.
-# Add the children of each node to the mapping.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -20,7 +20,7 @@ class Solution(object):
         :type y: int
         :rtype: bool
         """
-        val_to_node = {root.val: root}  # value to nodes at current depth
+        val_to_node = {root.val: root}
         node_to_parent = {root: None}
         while True:
             x_node = val_to_node.get(x, None)

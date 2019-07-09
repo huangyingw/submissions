@@ -18,12 +18,12 @@ Input: root = [5,2,4,null,1], val = 3
 Output: [5,2,4,null,1,null,3]
 Explanation: A = [2,1,5,4], B = [2,1,5,4,3]
 '''
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
