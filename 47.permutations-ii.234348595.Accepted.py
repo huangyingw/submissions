@@ -1,6 +1,4 @@
-'''
-Time complexity: O(N*N!)
-'''
+
 from collections import defaultdict
 
 
