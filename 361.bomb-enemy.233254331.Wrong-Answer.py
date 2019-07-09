@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def maxKilledEnemies(self, grid):
         if not grid or len(grid) == 0 or len(grid[0]) == 0:

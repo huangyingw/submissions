@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def validUtf8(self, data):
         """

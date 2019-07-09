@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def wordsTyping(self, sentences, rows, cols):
         """"

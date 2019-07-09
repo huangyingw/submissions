@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def maxSumAfterPartitioning(self, A, K):
         """

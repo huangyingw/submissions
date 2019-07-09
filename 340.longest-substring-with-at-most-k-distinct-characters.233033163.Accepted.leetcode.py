@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, S, K):
         charMapping, start = {}, 0

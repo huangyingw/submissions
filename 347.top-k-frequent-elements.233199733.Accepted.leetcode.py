@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def topKFrequent(self, nums, k):
         """

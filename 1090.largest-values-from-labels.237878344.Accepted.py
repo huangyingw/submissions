@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def largestValsFromLabels(self, values, labels, num_wanted, use_limit):
         """

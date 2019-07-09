@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
         """

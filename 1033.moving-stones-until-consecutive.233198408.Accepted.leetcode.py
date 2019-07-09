@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def numMovesStones(self, a, b, c):
         """

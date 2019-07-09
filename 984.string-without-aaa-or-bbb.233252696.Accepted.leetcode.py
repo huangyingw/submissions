@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def strWithout3a3b(self, A, B):
         """

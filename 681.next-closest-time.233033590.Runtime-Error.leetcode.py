@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def nextClosestTime(self, time):
         current_time = 60 * int(time[:2]) + int(time[3:])

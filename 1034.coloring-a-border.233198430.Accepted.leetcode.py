@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def colorBorder(self, grid, r0, c0, color):
         """

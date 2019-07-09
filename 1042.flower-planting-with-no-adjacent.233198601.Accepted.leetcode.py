@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def gardenNoAdj(self, N, paths):
         """

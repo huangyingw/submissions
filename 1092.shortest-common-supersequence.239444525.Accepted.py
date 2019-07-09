@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def shortestCommonSupersequence(self, str1, str2):
         """

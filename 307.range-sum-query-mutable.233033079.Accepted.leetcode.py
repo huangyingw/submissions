@@ -1,6 +1,3 @@
-
-
-
 class Node(object):
     def __init__(self, val, start, end):
         self.sum = val

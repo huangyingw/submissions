@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def fourSum(self, nums, target):
         """

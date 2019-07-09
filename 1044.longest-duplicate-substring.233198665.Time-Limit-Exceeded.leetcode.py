@@ -1,6 +1,3 @@
-
-
-
 class Suffix(object):
     def __init__(self):
         self.index = 0

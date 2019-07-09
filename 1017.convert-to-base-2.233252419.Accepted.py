@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def baseNeg2(self, N):
         """

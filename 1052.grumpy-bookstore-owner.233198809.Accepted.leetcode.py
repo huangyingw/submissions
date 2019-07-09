@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def maxSatisfied(self, customers, grumpy, X):
         """

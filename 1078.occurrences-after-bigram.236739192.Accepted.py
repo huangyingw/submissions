@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def findOcurrences(self, text, first, second):
         """

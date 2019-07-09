@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def prevPermOpt1(self, A):
         """

@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def shortestDistance(self, grid):
         if not grid:

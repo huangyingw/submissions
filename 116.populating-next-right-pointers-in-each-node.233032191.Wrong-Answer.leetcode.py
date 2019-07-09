@@ -1,4 +1,3 @@
-
 # Definition for binary tree with next pointer.
 # class TreeLinkNode:
 #     def __init__(self, x):

@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def findNumberOfLIS(self, nums):
         length = [1] * len(nums)

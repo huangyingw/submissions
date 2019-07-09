@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def shortestPathBinaryMatrix(self, grid):
         """

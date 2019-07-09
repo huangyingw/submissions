@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def intersect(self, nums1, nums2):
         """

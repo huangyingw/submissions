@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def queryString(self, S, N):
         """

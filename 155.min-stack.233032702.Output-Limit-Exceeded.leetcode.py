@@ -1,6 +1,3 @@
-
-
-
 class MinStack(object):
     def __init__(self):
         """

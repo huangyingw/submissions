@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def camelMatch(self, queries, pattern):
         """

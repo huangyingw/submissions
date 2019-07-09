@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def kthSmallest(self, matrix, k):
         """

@@ -1,6 +1,3 @@
-
-
-
 class TreeNode(object):
     self.word = False
     self.children = {}

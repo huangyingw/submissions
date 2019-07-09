@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def evalRPN(self, tokens):
         """

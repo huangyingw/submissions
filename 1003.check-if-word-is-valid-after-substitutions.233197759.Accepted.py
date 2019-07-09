@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def isValid(self, S):
         """

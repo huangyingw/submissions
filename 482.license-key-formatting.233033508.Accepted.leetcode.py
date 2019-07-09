@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
         """

@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def allCellsDistOrder(self, R, C, r0, c0):
         """

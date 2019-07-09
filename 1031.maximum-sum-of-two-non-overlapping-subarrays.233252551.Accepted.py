@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def maxSumTwoNoOverlap(self, A, L, M):
         """

@@ -1,6 +1,3 @@
-
-
-
 class TwoSum(object):
     def __init__(self):
         """
