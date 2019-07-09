@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
-# 与twoSum一致，只是将角标加一。
+
+
 
 
 class Solution:

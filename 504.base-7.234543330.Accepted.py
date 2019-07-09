@@ -1,7 +1,7 @@
-# https://leetcode.com/problems/base-7/description/
+
 class Solution:
-    # 1 常规方法
-    # 需要区分正负数与零
+
+
     def convertToBase7(self, num):
         """
         :type num: int

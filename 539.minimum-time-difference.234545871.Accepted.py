@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/minimum-time-difference/description/
-# 24*60 = 1440 种情况
+
+
 
 
 class Solution:

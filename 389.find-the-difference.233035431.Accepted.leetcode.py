@@ -10,8 +10,3 @@ class Solution(object):
             res += ord(t[i])
             res -= ord(s[i])
         return chr(res)
-    # def findTheDifference(self, s, t):
-    #     res = 0
-    #     for c in s + t:
-    #         res ^= ord(c)
-    #     return chr(res)

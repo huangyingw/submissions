@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/contains-duplicate/description/
+
 class Solution(object):
-    # 1 常规方法 使用字典记录，利用字典查找O(1)
+
     def containsDuplicate(self, nums):
         """
         :type nums: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
             else:
                 mapping[i] = 1
         return False
-    # 2 巧妙地方法 利用set方法
+
 
     def containsDuplicate(self, nums):
         """
@@ -23,7 +23,7 @@ class Solution(object):
         if(len(set(nums)) == len(nums)):
             return False
         return True
-    # 3 先sort，然后比较相邻是否相同，不推荐
+
 
     def containsDuplicate(self, nums):
         """

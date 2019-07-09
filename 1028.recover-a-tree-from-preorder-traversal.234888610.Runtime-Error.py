@@ -15,8 +15,8 @@ Example 2:
 	   	   1
 	     /   \
        2	  5
-     /	     /    
-   3	    6	   
+     /	     /
+   3	    6
  /         /
 4		  7
 Input: "1-2--3---4-5--6---7"
@@ -25,7 +25,7 @@ Example 3:
 Input: "1-401--349---90--88"
 Output: [1,401,null,349,88,90]
 Note:
-The number of nodes in the original tree is between 1 and 1000. 
+The number of nodes in the original tree is between 1 and 1000.
 Each node will have a value between 1 and 10^9.
 '''
 
@@ -38,10 +38,10 @@ class Solution(object):
         """
         from collections import defaultdict
         dp = defaultdict(int)
-        # print dp
+
         for index_i in range(len(A)):
             for index_j in range(index_i):
                 diff = A[index_i] - A[index_j]
                 dp[(index_i, diff)] = max(dp[(index_i, diff)], dp[(index_j, diff)] + 1)
-                # print dp
+
         return max(dp.itervalues()) + 1

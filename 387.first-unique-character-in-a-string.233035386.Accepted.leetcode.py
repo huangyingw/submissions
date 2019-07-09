@@ -11,5 +11,3 @@ class Solution(object):
             if count_map[c] == 1:
                 return i
         return -1
-    # def firstUniqChar(self, s):
-    #     min([s.find(c) for c in string.ascii_lowercase if s.count(c)==1] or [-1])

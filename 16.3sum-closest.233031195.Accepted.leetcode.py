@@ -23,5 +23,3 @@ class Solution(object):
                 else:
                     right -= 1
         return result
-# Space: O(1)
-# Time: O(N^2)

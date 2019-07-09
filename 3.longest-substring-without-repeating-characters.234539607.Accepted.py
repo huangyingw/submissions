@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # method 1: using set
+
         """
         res = 0
         i = 0
@@ -21,7 +21,7 @@ class Solution(object):
                 i += 1
         return res
         """
-        # method 2: using dict
+
         res = 0
         i = 0
         j = 0

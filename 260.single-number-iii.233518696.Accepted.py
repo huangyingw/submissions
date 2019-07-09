@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/single-number-iii/
-# Given an array of numbers nums, in which exactly two elements appear only once and all the other elements
-# appear exactly twice. Find the two elements that appear only once.
-# Xor all the numbers to create the xor of the 2 singles.  If a bit is set in this xor, it is set in one of the
-# singles and not the other.  Find the first bit that is set, then find the xor of all nums with that bit set
-# and the xor of all nums without that bit set.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

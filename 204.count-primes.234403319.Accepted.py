@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/count-primes/description/
+
 class Solution:
-    # 1 常规方法，数字较大会memory溢出
+
     def countPrimes(self, n):
         """
         :type n: int
@@ -18,9 +18,9 @@ class Solution:
             if isPrime(i):
                 count += 1
         return count
-    # 2
-    # 使用0,1的数组来表示是否是质数。
-    #
+
+
+
 
     def countPrimes(self, n):
         """

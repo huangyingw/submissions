@@ -1,8 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+
+
+
+
+
 
 
 class Solution(object):
@@ -12,7 +12,7 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        # add a extra head for removing head
+
         prehead = ListNode(-1)
         prehead.next = head
         last, pos = prehead, head

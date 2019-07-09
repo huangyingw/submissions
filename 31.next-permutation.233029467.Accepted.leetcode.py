@@ -6,14 +6,14 @@ class Solution(object):
         pair = []
         for i in range(ls):
             for j in range(i + 1, ls):
-                # append ascending order pair
+
                 if nums[i] < nums[j]:
                     pair.append([i, j])
         pos = 0
         if len(pair) > 0:
             self.swap(nums, pair[-1][0], pair[-1][1])
             pos = pair[-1][0] + 1
-        # sort from pos
+
         for i in range(pos, ls):
             for j in range(i + 1, ls):
                 if nums[i] > nums[j]:

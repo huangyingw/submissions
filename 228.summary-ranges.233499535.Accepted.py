@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/summary-ranges/
-# Given a sorted integer array without duplicates, return the summary of its ranges.
-# For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
-# Create a list of pair [start, end] for each range.  Extend previous range if new num is previous + 1, else
-# start a new range.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
 
 
 class Solution(object):

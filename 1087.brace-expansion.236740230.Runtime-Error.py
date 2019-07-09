@@ -32,7 +32,7 @@ class Solution(object):
                     stack2 = []
                 else:
                     stack.append(char)
-                # print stack
+
         stack.sort()
         stack.sort(key=len)
         return stack

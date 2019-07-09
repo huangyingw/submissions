@@ -10,7 +10,7 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 Example 2:
 Input: [-1,-100,3,99] and k = 2
 Output: [3,99,-1,-100]
-Explanation: 
+Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 Note:
@@ -26,7 +26,7 @@ class Solution(object):
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        # nums[:k],nums[k:]=nums[len(nums)-k:],nums[:len(nums)-k]
+
         k = k % len(nums)
         count = start = 0
         while count < len(nums):

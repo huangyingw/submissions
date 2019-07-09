@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/pascals-triangle-ii/description/
+
 class Solution:
     def getRow(self, rowIndex):
         """

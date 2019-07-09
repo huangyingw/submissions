@@ -36,7 +36,7 @@ class Solution(object):
             for col in range(len(board[0])):
                 if board[row][col] == 'O':
                     board[row][col] = 'X'
-                elif board[row][col] == '#':
+                elif board[row][col] == '
                     board[row][col] = 'O'
 
     def merge(self, board, row, col):
@@ -44,7 +44,7 @@ class Solution(object):
             return
         if board[row][col] != 'O':
             return
-        board[row][col] = '#'
+        board[row][col] = '
         self.merge(board, row + 1, col)
         self.merge(board, row, col - 1)
         self.merge(board, row, col + 1)

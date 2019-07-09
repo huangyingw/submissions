@@ -6,7 +6,7 @@ class Codec:
                 doit(node.left)
                 doit(node.right)
             else:
-                vals.append('#')
+                vals.append('
         vals = []
         doit(root)
         return ' '.join(vals)
@@ -14,7 +14,7 @@ class Codec:
     def deserialize(self, data):
         def doit():
             val = next(vals)
-            if val == '#':
+            if val == '
                 return None
             node = TreeNode(int(val))
             node.left = doit()

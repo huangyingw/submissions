@@ -1,11 +1,11 @@
-# https://leetcode.com/problems/find-mode-in-binary-search-tree/description/
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-# 1 insorder find
+
+
+
+
+
+
+
+
 
 
 class Solution:
@@ -39,7 +39,7 @@ class Solution:
             self.inorder(root.left)
             self.calc_freq(root.val)
             self.inorder(root.right)
-# 2 using stack to store the value inoder
+
 
 
 class Solution(object):
@@ -52,9 +52,9 @@ class Solution(object):
                 stack.append(cur)
                 cur = cur.left
             cur = stack.pop()
-            if not pre or cur.val == pre.val:  # same as previous value, increase frequence by 1
+            if not pre or cur.val == pre.val:
                 cur_count += 1
-            else:                              # different value from pre, update modes and reset current frequency
+            else:
                 if cur_count > max_count:
                     max_count = cur_count
                     modes = [pre.val]
@@ -63,7 +63,7 @@ class Solution(object):
                 cur_count = 1
             pre = cur
             cur = cur.right
-        if cur_count > max_count:  # handle last value
+        if cur_count > max_count:
             return [pre.val]
         elif cur_count == max_count:
             modes.append(pre.val)

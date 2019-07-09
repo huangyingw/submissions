@@ -1,5 +1,5 @@
 class Solution:
-    # 1
+
     def strStr(self, haystack, needle):
         """
         :type haystack: str
@@ -10,7 +10,7 @@ class Solution:
             if haystack[i:i + len(needle)] == needle:
                 return i
         return -1
-    # 2
+
 
     def strStr(self, haystack, needle):
         """

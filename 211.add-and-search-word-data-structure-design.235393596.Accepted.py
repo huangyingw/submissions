@@ -23,7 +23,7 @@ class WordDictionary(object):
         first = word[0]
         if first == ".":
             for key in node.children:
-                # return true if any was true
+
                 if self.helper(word[1:], node.children[key]):
                     return True
         else:

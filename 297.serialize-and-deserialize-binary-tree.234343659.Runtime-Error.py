@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,7 +18,7 @@ class Codec:
                 preorder(node.left)
                 preorder(node.right)
             else:
-                vals.append('#')
+                vals.append('
         vals = []
         preorder(root)
         return " ".join(vals)
@@ -30,7 +30,7 @@ class Codec:
         """
         def preorder():
             val = next(vals)
-            if val == '#':
+            if val == '
                 return None
             node = TreeNode(int(val))
             node.left = preorder()
@@ -38,6 +38,3 @@ class Codec:
             return node
         vals = iter(data.split())
         return preorder()
-        # Your Codec object will be instantiated and called as such:
-        # codec = Codec()
-        # codec.deserialize(codec.serialize(root))

@@ -14,10 +14,10 @@ class Solution(object):
                     break
                 for k in range(len(dp[i - candidates[j]])):
                     temp = dp[i - candidates[j]][k][:]
-                    # check if this number is used
+
                     if len(temp) > 0 and temp[-1] >= j:
                         continue
-                    # store index
+
                     temp.append(j)
                     dp[i].append(temp)
         res = []

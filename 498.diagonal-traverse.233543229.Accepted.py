@@ -1,17 +1,17 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/diagonal-traverse/
-# Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown
-# below. Input:
-# [
-#  [ 1, 2, 3 ],
-#  [ 4, 5, 6 ],
-#  [ 7, 8, 9 ]
-# ]
-# Output:  [1,2,4,7,5,3,6,8,9]
-# Boolan up_right determines direction of travel. Reverse when reach an edge.
-# Time - O(mn)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -29,9 +29,9 @@ class Solution(object):
         while len(diagonal) < rows * cols:
             diagonal.append(matrix[r][c])
             if up_right:
-                if c == cols - 1:   # right edge, move down 1 row
+                if c == cols - 1:
                     r += 1
-                    up_right = False    # top edge, move across 1 column
+                    up_right = False
                 elif r == 0:
                     c += 1
                     up_right = False
@@ -39,10 +39,10 @@ class Solution(object):
                     r -= 1
                     c += 1
             else:
-                if r == rows - 1:   # bottom edge, move across 1 column
+                if r == rows - 1:
                     c += 1
                     up_right = True
-                elif c == 0:        # left edge, move down 1 row
+                elif c == 0:
                     r += 1
                     up_right = True
                 else:

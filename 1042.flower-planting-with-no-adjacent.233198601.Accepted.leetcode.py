@@ -9,7 +9,7 @@ class Solution(object):
         result = [0 for _ in range(N)]
         if not paths:
             return [plant[index % 4] for index in range(N)]
-        # print result
+
         change = {}
         update = []
         for path in paths:

@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/implement-trie-prefix-tree/
-# Implement a trie with insert, search, and startsWith methods.
-# You may assume that all inputs are consist of lowercase letters a-z
-# Node stores dictionary mapping letters to child nodes.  Array would use fixed space regardless of actual nb children.
-# Note that node does not explicitly store letter.
-# Time - O(n) to create where n is total length of all words, O(k) to search where k is length of word.
-# Space - O(n)
+
+
+
+
+
+
+
 
 
 class TrieNode(object):
@@ -14,14 +14,14 @@ class TrieNode(object):
         """
         Initialize your data structure here.
         """
-        self.children = {}      # mapping from letter to child TrieNodes
-        self.terminal = False   # flag indicates whole word
+        self.children = {}
+        self.terminal = False
 
 
 class Trie(object):
     def __init__(self):
         self.root = TrieNode()
-        self.root.terminal = True   # empty string is a whole word
+        self.root.terminal = True
 
     def insert(self, word):
         """
@@ -31,10 +31,10 @@ class Trie(object):
         """
         node = self.root
         for c in word:
-            if c not in node.children:  # create a node if it does not exist
+            if c not in node.children:
                 node.children[c] = TrieNode()
             node = node.children[c]
-        node.terminal = True            # set to True at end of word
+        node.terminal = True
 
     def search(self, word):
         """
@@ -48,7 +48,7 @@ class Trie(object):
                 node = node.children[c]
             else:
                 return False
-        return node.terminal            # only True if terminal
+        return node.terminal
 
     def startsWith(self, prefix):
         """

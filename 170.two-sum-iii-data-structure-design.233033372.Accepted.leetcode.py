@@ -13,10 +13,10 @@ class TwoSum(object):
         """
         self.internal.append(number)
         if number in self.dic:
-            # more than once
+
             self.dic[number] = True
             return
-        # once
+
         self.dic[number] = False
 
     def find(self, value):
@@ -31,7 +31,3 @@ class TwoSum(object):
                     continue
                 return True
         return False
-# Your TwoSum object will be instantiated and called as such:
-# twoSum = TwoSum()
-# twoSum.add(number)
-# twoSum.find(value)

@@ -25,5 +25,3 @@ class Solution(object):
             num = new_num
             count_iter += 1
         return new_num
-# Space: O(1)
-# Time: O(N*k) k= length of string

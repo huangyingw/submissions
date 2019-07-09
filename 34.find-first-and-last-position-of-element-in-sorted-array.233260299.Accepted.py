@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/search-for-a-range
-# Given a sorted array of integers, find the starting and ending position of a given target value.
-# Your algorithm's runtime complexity must be in the order of O(log n).
-# If the target is not found in the array, return [-1, -1].
-# Search for target +/- 0.5 (not integer so not found) and return the index above this.
-# If same index is returned for + and - 0.5 then target not found.
-# Binary search could be implemented iteratively or use the bisect module.
-# Time - O(log n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

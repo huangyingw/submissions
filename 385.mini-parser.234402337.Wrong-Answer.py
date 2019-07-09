@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/mini-parser/
+
 """
 Given a nested list of integers represented as a string, implement a parser to deserialize it.
 Each element is either an integer, or a list -- whose elements may also be integers or other lists.
@@ -18,10 +18,10 @@ Return a NestedInteger object containing a nested list with 2 elements:
     ii. A nested list with one element:
          a. An integer containing value 789.
 """
-# """
-# This is the interface that allows for creating nested lists.
-# You should not implement it, or speculate about its implementation
-# """
+
+
+
+
 
 
 class NestedInteger:

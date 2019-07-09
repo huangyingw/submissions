@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/binary-tree-right-side-view/
-# Given a binary tree, imagine yourself standing on the right side of it,
-# return the values of the nodes you can see ordered from top to bottom.
-# BFS layer by layer.  Add to result last value found in a layer.
-# Alternatively, recursively pre-order traverse tracking depth and updating result for each node.
-# Time - O(n)
-# Space - O(n)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):
@@ -48,9 +48,9 @@ class Solution2(object):
     def recursive(self, node, depth, right_side):
         if not node:
             return
-        if depth >= len(right_side):        # update right_side with this node
+        if depth >= len(right_side):
             right_side.append(node.val)
         else:
             right_side[depth] = node.val
-        self.recursive(node.left, depth + 1, right_side)  # recurse left before right
+        self.recursive(node.left, depth + 1, right_side)
         self.recursive(node.right, depth + 1, right_side)

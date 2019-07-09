@@ -1,22 +1,22 @@
-# https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+
 class Solution:
-    # 1
-    # def searchRange(self, nums, target):
-    #     """
-    #     :type nums: List[int]
-    #     :type target: int
-    #     :rtype: List[int]
-    #     """
-    #     l = 0
-    #     r = len(nums)
-    #     while l<r:
-    #         m = l + (r - l)//2
-    #         if target <= nums[m]:
-    #             r = m
-    #         else:
-    #             l = m + 1
-    #     return l
-    # 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def searchRange(self, nums, target):
         def binarySearchLeft(A, x):
             left, right = 0, len(A) - 1

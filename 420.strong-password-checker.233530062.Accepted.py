@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/strong-password-checker/
-# A password is considered strong if below conditions are all met:
-# It has at least 6 characters and at most 20 characters.
-# It must contain at least one lowercase letter, at least one uppercase letter, and at least one digit.
-# It must NOT contain three repeating characters in a row.
-# Write a function that takes a string s as input, and return the MINIMUM change required to make s a strong password.
-# If s is already strong, return 0.
-# Insertion, deletion or replace of any one character are all considered as one change.
-# For difficult case of length > 20. Use required deletions to reduce the number of substitutions required.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -20,8 +20,8 @@ class Solution(object):
         :rtype: int
         """
         upper, lower, digit = False, False, False
-        subs, i = 0, 0  # nb subs to remove sequences, index counter
-        singles, doubles = 0, 0  # nb single and double deletions
+        subs, i = 0, 0
+        singles, doubles = 0, 0
         while i < len(s):
             if s[i].isdigit():
                 digit = True
@@ -29,9 +29,9 @@ class Solution(object):
                 upper = True
             if s[i].islower():
                 lower = True
-            if i >= 2 and s[i] == s[i - 1] == s[i - 2]:  # sequence of 3
+            if i >= 2 and s[i] == s[i - 1] == s[i - 2]:
                 seq = 2
-                while i < len(s) and s[i] == s[i - 1]:  # find length of sequence
+                while i < len(s) and s[i] == s[i - 1]:
                     seq += 1
                     i += 1
                 subs += seq // 3

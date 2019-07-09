@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/first-unique-character-in-a-string/description/
+
 class Solution:
-    # 1 最先想到的一种解法，但是TLE（Time Limit Exceeded）
+
     def firstUniqChar(self, s):
         """
         :type s: str
@@ -10,9 +10,9 @@ class Solution:
             if s.count(s[i]) == 1:
                 return i
         return -1
-    # 2
-    # 改进，先将count为1的字符保存下来
-    # 然后使用index找到标号最前的
+
+
+
 
     def firstUniqChar(self, s):
         """
@@ -29,9 +29,9 @@ class Solution:
         for i in res:
             ret = min(ret, s.index(i))
         return ret
-    # 3
-    # 使用find和rfind，利用双向链表的特性查找
-    # 字符限制在有效的以内
+
+
+
 
     def firstUniqChar(self, s):
         if not s:

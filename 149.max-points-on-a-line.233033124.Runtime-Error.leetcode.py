@@ -1,8 +1,8 @@
-# Definition for a point.
-# class Point(object):
-#     def __init__(self, a=0, b=0):
-#         self.x = a
-#         self.y = b
+
+
+
+
+
 
 
 class Solution(object):
@@ -11,7 +11,7 @@ class Solution(object):
         :type points: List[Point]
         :rtype: int
         """
-        # map all possible angle
+
         if points is None or len(points) == 0:
             return 0
         ls = len(points)

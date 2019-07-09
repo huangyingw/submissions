@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+
 class Solution:
     def maxProfit(self, prices):
         """
@@ -7,8 +7,8 @@ class Solution:
         """
         if not prices:
             return 0
-        # forward traversal, profits record the max profit
-        # by the ith day, this is the first transaction
+
+
         profits = []
         max_profit = 0
         current_min = prices[0]
@@ -16,8 +16,8 @@ class Solution:
             current_min = min(current_min, price)
             max_profit = max(max_profit, price - current_min)
             profits.append(max_profit)
-        # backward traversal, max_profit records the max profit
-        # after the ith day, this is the second transaction
+
+
         total_max = 0
         max_profit = 0
         current_max = prices[-1]

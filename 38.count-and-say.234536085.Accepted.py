@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/count-and-say/description/
+
 class Solution(object):
     def countAndSay(self, n):
         """

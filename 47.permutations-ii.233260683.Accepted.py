@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/permutations-ii/
-# Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-# Count occurences of each unique number.  Recursively append each number if still has a positive count.
-# Time - O(n^2 * n!), as 046_Permutations if all numbers are unique
-# Space - O(n * n!)
+
+
+
+
+
 from collections import Counter
 
 

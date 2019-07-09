@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/strobogrammatic-number-ii/
-# A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
-# Find all strobogrammatic numbers that are of length = n.
-# Base case of single strobogrammatic digits for odd n, empty string for even n.
-# Create numbers of length i by adding pairs of strobogrammatic digits before and after all numbers of length i-2.
-# Remove results with leading zero unless single digit.
-# Time - O(5**(n//2)), each number of length n-2 is wrapped by 5 pairs to produce numbers of length n
-# Space - O(5**(n//2))
+
+
+
+
+
+
+
+
 import time
 
 

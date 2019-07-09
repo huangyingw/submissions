@@ -1,8 +1,8 @@
-# https://leetcode.com/problems/group-anagrams/description/
+
 class Solution:
-    # 1
-    # 用(2,0,1,1,..)的26位元组来表示映射
-    # defaultdict()可以存储list
+
+
+
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]

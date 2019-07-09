@@ -1,9 +1,9 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -15,7 +15,7 @@ class Solution(object):
         if root is None:
             return 0
         res = 0
-        # bfs with queue
+
         queue = [(root, root.val)]
         while len(queue) > 0:
             curr, curr_value = queue.pop(0)

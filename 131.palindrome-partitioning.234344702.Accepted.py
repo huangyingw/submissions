@@ -1,4 +1,4 @@
-# time: O(2^(n-1))
+
 class Solution:
     def partition(self, s):
         """

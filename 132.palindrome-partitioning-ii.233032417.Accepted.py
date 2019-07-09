@@ -36,5 +36,3 @@ class Solution(object):
                     if P[j + 1][index] and (cuts[index] > 1 + cuts[j]):
                         cuts[index] = 1 + cuts[j]
         return cuts[len(s) - 1]
-# Time: O(N^2)
-# Space: O(N^2)

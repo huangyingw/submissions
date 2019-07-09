@@ -1,7 +1,7 @@
-# https://leetcode.com/problems/keyboard-row/description/
+
 class Solution:
-    # 1
-    # 利用集合方法issubset()
+
+
     def findWords(self, words):
         """
         :type words: List[str]

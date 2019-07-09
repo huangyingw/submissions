@@ -38,8 +38,8 @@ class Solution(object):
                 index_i += 1
             length += 1
         return result
-# Space: O(N^2)
-# Time: O(N^2)
+
+
 
 
 class Solution(object):

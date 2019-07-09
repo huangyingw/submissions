@@ -6,7 +6,7 @@ struct TreeLinkNode {
   TreeLinkNode *right;
   TreeLinkNode *next;
 }
-Populate each next pointer to point to its next right node. If there is no next right node, 
+Populate each next pointer to point to its next right node. If there is no next right node,
 the next pointer should be set to NULL.
 Initially, all next pointers are set to NULL.
 Note:
@@ -27,18 +27,18 @@ After calling your function, the tree should look like:
  / \  / \
 4->5->6->7 -> NULL
 """
-# Definition for binary tree with next pointer.
-# class TreeLinkNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-#         self.next = None
+
+
+
+
+
+
+
 
 
 class Solution:
-    # @param root, a tree link node
-    # @return nothing
+
+
     def connect(self, root):
         current = [root] if root else []
         while current:

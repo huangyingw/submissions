@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/meeting-rooms-ii/
-# Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei),
-# find the minimum number of conference rooms required.
-# Use a heap to store the end times of meetings that have not finished.  For each new meeting in start time order,
-# push it onto heap, pop all meetings that have already ended and update max_rooms being used.
-# Alternatively, use heap to store the end times of all meetings that need their own rooms.  If a new meeting does
-# not overlap with the earliest ending existing meeting then replace existing with new meeting. New meet will overlap
-# with all others on heap.
-# Time - O(n log n)
-# Space - O(n)
-# Definition for an interval.
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Interval(object):
@@ -27,11 +27,11 @@ class Solution(object):
         :rtype: int
         """
         max_rooms = 0
-        rooms = []                              # heap of end times of overlapping meetings
-        intervals.sort(key=lambda x: x.start)  # sort by start time
+        rooms = []
+        intervals.sort(key=lambda x: x.start)
         for interval in intervals:
             heapq.heappush(rooms, interval.end)
-            while rooms[0] <= interval.start:   # pop all meetings that have ended before this meeting starts
+            while rooms[0] <= interval.start:
                 heapq.heappop(rooms)
             max_rooms = max(max_rooms, len(rooms))
         return max_rooms
@@ -42,8 +42,8 @@ class Solution2(object):
         overlaps = []
         intervals.sort(key=lambda x: x.start)
         for interval in intervals:
-            if overlaps and interval.start >= overlaps[0]:  # starts after earliest end time so replace
+            if overlaps and interval.start >= overlaps[0]:
                 heapq.heapreplace(overlaps, interval.end)
-            else:                                           # overlaps so push to heap
+            else:
                 heapq.heappush(overlaps, interval.end)
         return len(overlaps)

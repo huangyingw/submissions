@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/reverse-linked-list/
-# Reverse a singly linked list.
-# Iterative resvers.  Alternatively, use recursion.
-# Time - O(n)
-# Space - O(1)
-# Definition for singly-linked list.
+
+
+
+
+
+
 
 
 class ListNode(object):

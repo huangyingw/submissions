@@ -17,7 +17,7 @@ class Codec:
     def decode(self, shortUrl):
         """Decodes a shortened URL to its original URL."""
         return self.code2url[shortUrl[-5:]]
-# solution by counter
+
 
 
 class Codec_counter:
@@ -37,7 +37,7 @@ class Codec_counter:
     def decode(self, shortUrl):
         """Decodes a shortened URL to its original URL."""
         return self.code2url[shortUrl.split('/')[-1]]
-# solution by uuid3
+
 import uuid
 
 
@@ -54,12 +54,12 @@ class Codec_uuid3:
     def decode(self, shortUrl):
         """Decodes a shortened URL to its original URL."""
         return self.code2url[shortUrl.split('/')[-1]]
-# solution by uuid4
+
 import uuid
 
 
 class Codec_uuid4:
-    #alphabet = string.ascii_letters + '0123456789'
+
     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
     def __init__(self):

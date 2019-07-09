@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/count-univalue-subtrees/
-# Given a binary tree, count the number of uni-value subtrees.
-# A Uni-value subtree means all nodes of the subtree have the same value.
-# Bottom-up count univariate subtrees in left and right subtrees than add 1 if both subtrees are univariate with the
-# same value as the root.
-# Alternatively define a function to test if the subtree rooted at that node is univariate (which explores the subtree)
-# and preorder (or inorder/postorder) traverse the tree to test all nodes.  O(n**2) time but runs faster on the
-# leetcode test cases.
-# Time - O(n)
-# Space - O(1)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):
@@ -29,7 +29,7 @@ class Solution(object):
         self.univariates = 0
         self.is_univariate(root)
         return self.univariates
-    # returns True if tree from root is univariate and increments count for all univariate subtrees
+
 
     def is_univariate(self, root):
         if not root:

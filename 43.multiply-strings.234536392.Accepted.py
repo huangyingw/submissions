@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/multiply-strings/
+
 """
 Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
 Example 1:
@@ -30,10 +30,10 @@ class Solution:
             carry = 0
             for j in range(len(num2) - 1, -1, -1):
                 tmp = int(num1[i]) * int(num2[j]) + carry
-                # take care of the order of the next two lines
+
                 carry = (res[i + j + 1] + tmp) // 10
                 res[i + j + 1] = (res[i + j + 1] + tmp) % 10
-                # or simply: carry, res[i+j+1] = divmod((res[i+j+1] + tmp), 10)
+
             res[i] += carry
         res = "".join(map(str, res))
         return '0' if not res.lstrip("0") else res.lstrip("0")

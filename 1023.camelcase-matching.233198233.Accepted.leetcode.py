@@ -13,7 +13,7 @@ class Solution(object):
             flag = True
             if len(patterns) == len(splitter):
                 for index in range(len(patterns)):
-                    # print patterns[index], splitter[index]
+
                     p_i, s_i = 1, 1
                     if patterns[index][0] == splitter[index][0]:
                         while p_i < len(patterns[index]) and s_i < len(splitter[index]):

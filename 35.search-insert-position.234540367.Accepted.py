@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/search-insert-position/description/
+
 class Solution:
     def searchInsert(self, nums, target):
         """

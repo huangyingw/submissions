@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: List[List[str]]
         """
-        # recusive
+
         if n == 0:
             return 0
         res = []
@@ -35,5 +35,5 @@ class Solution(object):
                 self.do_solveNQueens(res, board, num - 1)
                 board[pos][j] = '.'
 if __name__ == '__main__':
-    # begin
+
     s = Solution()

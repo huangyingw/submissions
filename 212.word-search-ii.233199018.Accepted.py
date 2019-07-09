@@ -23,7 +23,7 @@ class Trie(object):
 class Solution(object):
     def helper(self, x, y, board, trie_node, result):
         if trie_node.value:
-            result.add(trie_node.value)  # Look for other soln even if a soln is found. soln could a prefix of another soln.
+            result.add(trie_node.value)
         for x1, y1 in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
             if 0 <= x1 < len(board) and 0 <= y1 < len(board[0]) and board[x1][y1] != -1 and trie_node.links[ord(board[x1][y1]) - ord('a')]:
                 ch, board[x1][y1] = board[x1][y1], -1

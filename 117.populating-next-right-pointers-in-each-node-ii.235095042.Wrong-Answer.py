@@ -21,18 +21,18 @@
 	 / \    \
 	4-> 5 -> 7 -> NULL
 '''
-# Definition for binary tree with next pointer.
-# class TreeLinkNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-#         self.next = None
+
+
+
+
+
+
+
 
 
 class Solution:
-    # @param root, a tree link node
-    # @return nothing
+
+
     def connect(self, root):
         if root == None:
             return
@@ -48,18 +48,18 @@ class Solution:
                     queue.append(front.right)
             elif queue:
                 queue.append(None)
-# Definition for binary tree with next pointer.
-# class TreeLinkNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-#         self.next = None
+
+
+
+
+
+
+
 
 
 class Solution:
-    # @param root, a tree link node
-    # @return nothing
+
+
     def connect(self, root):
         if not root:
             return None

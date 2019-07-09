@@ -6,7 +6,7 @@ Return the maximum number of customers that can be satisfied throughout the day.
 Example 1:
 Input: customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], X = 3
 Output: 16
-Explanation: The bookstore owner keeps themselves not grumpy for the last 3 minutes. 
+Explanation: The bookstore owner keeps themselves not grumpy for the last 3 minutes.
 The maximum number of customers that can be satisfied = 1 + 1 + 1 + 1 + 7 + 5 = 16.
 Note:
 1 <= X <= customers.length == grumpy.length <= 20000
@@ -33,11 +33,11 @@ class Solution(object):
             else:
                 prefix_sum[index + 1] += customer
             index += 1
-        # print prefix_sum
+
         curr_max = result + prefix_sum[X]
-        # print curr_max
+
         for index in range(X + 1, len(prefix_sum)):
             temp_max = result + prefix_sum[index] - prefix_sum[index - X]
-            # print temp_max
+
             curr_max = max(curr_max, temp_max)
         return curr_max

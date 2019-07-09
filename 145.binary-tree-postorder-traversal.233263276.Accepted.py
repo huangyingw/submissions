@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/binary-tree-postorder-traversal/
-# Given a binary tree, return the postorder traversal of its nodes' values.
-# Maintain a stack of nodes discovered and to be visited. Nodes are added to front of result (or the end of a list
-# which is reversed before returning result).
-# Add left children to stack before right so right subtrees are visited before left.
-# Alternatively, recurse left, recurse right then visit node.
-# Time - O(n)
-# Space - O(n)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):
@@ -27,7 +27,7 @@ class Solution(object):
         """
         if not root:
             return []
-        result = deque()        # deque instead of list so we can append at front
+        result = deque()
         stack = [root]
         while stack:
             node = stack.pop()

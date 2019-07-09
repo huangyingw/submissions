@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/binary-watch/description/
+
 class Solution:
     def readBinaryWatch(self, num):
         """

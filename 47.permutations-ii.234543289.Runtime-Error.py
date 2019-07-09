@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/permutations-ii/
+
 """
 Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 Example:
@@ -30,6 +30,6 @@ class Solution2:
                 for i in range(len(l) + 1):
                     new_ans.append(l[:i] + [n] + l[i:])
                     if i < len(l) and l[i] == n:
-                        break  # handles duplication
+                        break
             ans = new_ans
         return ans

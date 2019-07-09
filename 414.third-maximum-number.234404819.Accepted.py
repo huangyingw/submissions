@@ -1,8 +1,8 @@
-# https://leetcode.com/problems/third-maximum-number/description/
+
 class Solution(object):
-    # 1
-    # 先转化为set
-    # 转化为list排序
+
+
+
     def thirdMax(self, nums):
         """
         :type nums: List[int]
@@ -10,7 +10,7 @@ class Solution(object):
         """
         a = set(nums)
         return sorted(list(a))[-3 if len(a) >= 3 else -1]
-    # 2
+
 
     def thirdMax(self, nums):
         if len(nums) < 3:

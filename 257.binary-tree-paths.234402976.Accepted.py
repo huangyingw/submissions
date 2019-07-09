@@ -1,14 +1,14 @@
-# https://leetcode.com/problems/binary-tree-paths/description/
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
+
 
 
 class Solution:
-    # 1 递归
+
     def binaryTreePaths(self, root):
         """
         :type root: TreeNode
@@ -25,7 +25,7 @@ class Solution:
         if root:
             searchBT(root, "", ans)
         return ans
-    # 2 使用栈来存储value，然后使用join函数来链接各个value
+
 
     def binaryTreePaths(self, r):
         """

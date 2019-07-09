@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
+
 """
 Note:
 	Each element in the result should appear as many times as it shows in both arrays.

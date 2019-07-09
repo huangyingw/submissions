@@ -13,7 +13,7 @@ class Solution(object):
                     N -= num
                     move += 1
                     break
-        # print move
+
         if move % 2:
             return True
         return False

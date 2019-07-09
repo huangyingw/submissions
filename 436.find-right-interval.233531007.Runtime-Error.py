@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/find-right-interval/
-# Given a set of intervals, for each of the interval i, check if there exists an interval j whose start point is
-# bigger than or equal to the end point of the interval i, which can be called that j is on the "right" of i.
-# For any interval i, you need to store the minimum interval j's index, which means that the interval j has the
-# minimum start point to build the "right" relationship for interval i. If the interval j doesn't exist, store -1 for
-# the interval i. Finally, you need output the stored value of each interval as an array.
-# Sort tuples of intervals and original indices. For each interval, binary search for start point that is not less than
-# end point.
-# Time - O(n log n)
-# Space - O(n)
-# Definition for an interval.
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Interval(object):
@@ -27,9 +27,9 @@ class Solution(object):
         """
         intervals = [[intervals[i], i] for i in range(len(intervals))]
         intervals.sort(key=lambda x: x[0].start)
-        result = [-1] * len(intervals)      # default to no right interval
+        result = [-1] * len(intervals)
         for interval, i in intervals:
-            left, right = 0, len(intervals)  # right = len(intervals) indicates no right interval
+            left, right = 0, len(intervals)
             while left < right:
                 mid = (left + right) // 2
                 if intervals[mid][0].start < interval.end:

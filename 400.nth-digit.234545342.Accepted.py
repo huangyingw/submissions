@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/nth-digit/description/
+
 """
 1位数  9*1
 2位数  90*2

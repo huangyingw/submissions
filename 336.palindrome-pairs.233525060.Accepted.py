@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/palindrome-pairs/
-# Given a list of unique words, find all pairs of distinct indices (i, j) in the given list, so that the concatenation
-# of the two words, i.e. words[i] + words[j] is a palindrome.
-# Build a mapping from each word to its index in words.  Partition each word at ever possible point.  If left is a
-# palindrome and reverse right is a word (but not the word itself), then add rev_right + word to the result.
-# Repeat for right being a palindrome and rev_left a word.  Remove duplicates from words and their reverses by
-# requiring left not to be empty.
-# Time - O(n * k**2) where k is the max length of a word
-# Space - O(n * k)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

@@ -1,9 +1,9 @@
-# https://leetcode.com/problems/longest-palindrome/description/
+
 class Solution:
-    # 1 使用字典来计数
-    # 长度为一个奇数加上偶数个字母
-    # 字母个数为奇数的可以使用偶数个字母
-    # 只需要判断是否有一个奇数，那么最后就加一即可
+
+
+
+
     def longestPalindrome(self, s):
         """
         :type s: str
@@ -26,7 +26,7 @@ class Solution:
         if flag == 1:
             return res + 1
         return res
-    # 2 同样使用一个list保存
+
 
     def longestPalindrome(self, s):
         """

@@ -1,9 +1,9 @@
-# https://leetcode.com/problems/add-digits/description/
-# Could you do it without any loop/recursion in O(1) runtime?
+
+
 
 
 class Solution:
-    # 1 常规方法
+
     def addDigits(self, num):
         """
         :type num: int
@@ -20,7 +20,7 @@ class Solution:
             else:
                 num = result
         return result
-    # 2 使用python特性map three line
+
 
     def addDigits(self, num):
         """
@@ -30,7 +30,7 @@ class Solution:
         while num >= 10:
             num = sum(map(int, str(num)))
         return num
-    # 3 使用数论的技巧
+
 
     def addDigits(self, num):
         """

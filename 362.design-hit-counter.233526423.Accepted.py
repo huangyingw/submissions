@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/design-hit-counter/
-# Design a hit counter which counts the number of hits received in the past 5 minutes.
-# Each function accepts a timestamp parameter (in seconds granularity) and you may assume that calls are being made to
-# the system in chronological order (ie, the timestamp is monotonically increasing). The earliest timestamp starts at 1.
-# Store each hit in a deque.  For getHits() remove all hits longer than or equal to 300 seconds ago.
-# Alternatively, to reduce memory use and increase performance of getHits() store the count along with timestamp so
-# multiple hits at same timestamp are grouped.
-# Time - O(1) for init and hit(), O(n) for getHits(), number of hits since previous getHits
-# Space - O(n)
+
+
+
+
+
+
+
+
+
 from collections import deque
 
 

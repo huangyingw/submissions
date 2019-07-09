@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/jump-game/description/
-# 1 动态规划 由上至下
-# Time OUT
+
+
+
 
 
 class Solution:
@@ -23,8 +23,8 @@ class Solution:
             memo[position] = -1
             return False
         return canJumpFromPosition(0, nums)
-# 2 动态规划 自底向上
-# Time Limit Exceeded
+
+
 
 
 class Solution2:
@@ -38,7 +38,7 @@ class Solution2:
                     memo[i] = 1
                     break
         return memo[0] == 1
-# 3 贪心算法
+
 
 
 class Solution3:

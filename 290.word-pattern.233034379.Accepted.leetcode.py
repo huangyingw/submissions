@@ -7,7 +7,7 @@ class Solution(object):
         """
         if pattern is None or str is None:
             return True
-        # double map
+
         words_to_pattern = {}
         pattern_to_words = {}
         word_list = str.split(' ')

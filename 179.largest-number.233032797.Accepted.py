@@ -1,6 +1,6 @@
 class Solution:
-    # @param {integer[]} nums
-    # @return {string}
+
+
     def largestNumber(self, nums):
         nums = [str(num) for num in nums]
         nums.sort(cmp=lambda x, y: cmp(y + x, x + y))

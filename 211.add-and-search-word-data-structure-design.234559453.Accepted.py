@@ -33,7 +33,3 @@ class WordDictionary(object):
             if word not in self.dictionary[len(word)]:
                 return False
         return True
-# Your WordDictionary object will be instantiated and called as such:
-# obj = WordDictionary()
-# obj.addWord(word)
-# param_2 = obj.search(word)

@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/pascals-triangle/description/
+
 class Solution:
-    # 1
+
     def generate(self, numRows):
         """
         :type numRows: int
@@ -23,7 +23,7 @@ class Solution:
             res.append(tempList)
             currentRow += 1
         return res
-    # 2
+
 
     def generate(self, numRows):
         """

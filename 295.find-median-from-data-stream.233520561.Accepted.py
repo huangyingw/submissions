@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/find-median-from-data-stream/
-# Design a data structure that supports the following two operations:
-#   void addNum(int num) - Add a integer number from the data stream to the data structure.
-#   double findMedian() - Return the median of all elements so far.
-# If the size of the list is even, median is the mean of the two middle values.
-# Partition the numbers into 2 heaps containing half the numbers below (or equal to) median and half the numbers above
-# (or equal to) median.  If the count of numners is odd, spare number is added to lower heap.  New numbers are
-# added to lower heap if less than or equal to its max value, else to higher heap.  Then heaps are rebalanced to
-# maintain the lower being at most 1 greater than higher.
-# Time - O(log n) to addNum(), O(1) to findMedian()
-# Space - O(n)
+
+
+
+
+
+
+
+
+
+
+
 import heapq
 
 
@@ -19,8 +19,8 @@ class MedianFinder:
         """
         Initialize your data structure here.
         """
-        self.lower = []     # lower half of numbers, and the extra num if count is odd
-        self.higher = []    # higher half of numbers
+        self.lower = []
+        self.higher = []
 
     def addNum(self, num):
         """
@@ -28,13 +28,13 @@ class MedianFinder:
         :type num: int
         :rtype: void
         """
-        if not self.lower or num <= -self.lower[0]:     # push onto appropriate heap
+        if not self.lower or num <= -self.lower[0]:
             heapq.heappush(self.lower, -num)
         else:
             heapq.heappush(self.higher, num)
-        if len(self.higher) > len(self.lower):          # rebalance if more than half on higher heap
+        if len(self.higher) > len(self.lower):
             heapq.heappush(self.lower, -heapq.heappop(self.higher))
-        elif len(self.lower) > 1 + len(self.higher):    # or more than half+1 on lower
+        elif len(self.lower) > 1 + len(self.higher):
             heapq.heappush(self.higher, -heapq.heappop(self.lower))
 
     def findMedian(self):

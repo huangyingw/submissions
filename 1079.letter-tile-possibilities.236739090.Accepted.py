@@ -22,7 +22,7 @@ class Solution(object):
                             flag = False
                     if flag:
                         new.add(new_seq)
-            # print new
+
             unique.update(new)
             total_len += 1
         return len(unique)

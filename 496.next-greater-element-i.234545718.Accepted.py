@@ -1,9 +1,9 @@
-# https://leetcode.com/problems/next-greater-element-i/description/
+
 class Solution:
-    # 1 常规
-    # 用一个nums2_next数组来保存nums2中的next_great值
-    # 然后遍历nums1来获取对应的next_great值
-    # O（n*n）
+
+
+
+
     def nextGreaterElement(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -21,8 +21,8 @@ class Solution:
         for k in nums1:
             res.append(nums2_next[nums2.index(k)])
         return res
-    # 2
-    # 使用栈开保存，避免多次重复计算
+
+
 
     def nextGreaterElement2(self, nums1, nums2):
         """

@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        # https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/discuss/92956/Java-accepted-simple-solution
+
         res = []
         if nums:
             n = len(nums)

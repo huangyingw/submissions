@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/next-permutation/description/
+
 class Solution:
     def nextPermutation(self, nums):
         """
@@ -12,7 +12,7 @@ class Solution:
             j = i
             while j < len(nums) and nums[j] > nums[i - 1]:
                 j += 1
-            # swap the min-max number
+
             nums[i - 1], nums[j - 1] = nums[j - 1], nums[i - 1]
         m = i
         n = len(nums) - 1

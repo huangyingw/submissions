@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/longest-repeating-substring/
-# Given a string S, find out the length of the longest repeating substring(s).
-# Return 0 if no repeating substring exists.
-# Binary search the range of possible lengths of repeated substring.
-# Helper function checks all substrings of a given length.
-# Alternatively, for a pair of strings of the same length we can check if there is a repeated substring starting and
-# ending at the same indices in O(n) time. Compare S against itself with an offset for all possible offsets.
-# Time - O(n**2 log n)
-# Space - O(n**2)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -27,7 +27,7 @@ class Solution(object):
             return False
         n = len(S)
         low, high = 0, n
-        while low <= high:              # until low > high
+        while low <= high:
             mid = (low + high) // 2
             if helper(mid):
                 low = mid + 1
@@ -40,7 +40,7 @@ class Solution2(object):
     def longestRepeatingSubstring(self, S):
         n = len(S)
         result = 0
-        for offset in range(1, n):      # compare S[:-i] to S[i:]
+        for offset in range(1, n):
             if result >= n - offset:
                 break
             sequence = 0

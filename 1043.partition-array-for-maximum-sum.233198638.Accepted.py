@@ -28,6 +28,6 @@ class Solution(object):
                 if index_j >= 0 and index_j < len(A):
                     maxi = max(maxi, A[index_j])
                     dp[index_i + 1] = max(dp[index_i + 1], maxi * (index_i - index_j + 1) + dp[index_j])
-            # print index_i, maxi
-            # print dp
+
+
         return dp[-1]

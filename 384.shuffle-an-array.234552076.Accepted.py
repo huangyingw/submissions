@@ -29,7 +29,3 @@ class Solution(object):
             n = random.randint(0, i)
             self.cur[i], self.cur[n] = self.cur[n], self.cur[i]
         return self.cur
-# Your Solution object will be instantiated and called as such:
-# obj = Solution(nums)
-# param_1 = obj.reset()
-# param_2 = obj.shuffle()

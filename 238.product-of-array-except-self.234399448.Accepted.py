@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/product-of-array-except-self/description/
+
 """
 Given an array nums of n integers where n > 1,
 return an array output such that output[i] is equal to
@@ -15,11 +15,11 @@ from functools import reduce
 
 
 class Solution:
-    # 1
-    # # with division
-    # 用所有数的积来进行计算
-    # 当nums中有0时，会出现问题。
-    # 可以处理
+
+
+
+
+
     def productExceptSelf(self, nums):
         """
         :type nums: List[int]
@@ -37,7 +37,7 @@ class Solution:
                 nums[i] = 1
                 ret[i] = reduce(mutifly, nums)
             return ret
-    # 2
+
 
     def productExceptSelf2(self, nums):
         p = 1

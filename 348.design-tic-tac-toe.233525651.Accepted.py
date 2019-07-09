@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/design-tic-tac-toe/
-# Design a Tic-tac-toe game that is played between two players on a n x n grid.
-# A move is guaranteed to be valid and is placed on an empty block.
-# Once a winning condition is reached, no more moves is allowed.
-# A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.
-# Arrays store the sums of each row and column, integers store the sums of the diagonals.  Convert player to +/-1 and
-# increment sum of row, col and potentially diagonals.  Check if any of row, col or diagonal has absolute sum of n.
-# Time - O(n) for constructor and to O(1) for move()
-# Space - O(n)
+
+
+
+
+
+
+
+
+
 
 
 class TicTacToe(object):
@@ -36,7 +36,7 @@ class TicTacToe(object):
         :rtype: int
         """
         n = len(self.rows)
-        score = (2 * player) - 3    # convert player to -1 or +1
+        score = (2 * player) - 3
         self.rows[row] += score
         self.cols[col] += score
         if abs(self.rows[row]) == n or abs(self.cols[col]) == n:

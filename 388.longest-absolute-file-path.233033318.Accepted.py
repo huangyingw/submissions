@@ -34,7 +34,7 @@ class Solution(object):
         if not input:
             return 0
         directories = input.split('\n')
-        stack = [[-1, 0]]  # \t level, total dir length
+        stack = [[-1, 0]]
         result = 0
         for direct in directories:
             n_tabs = direct.count('\t')

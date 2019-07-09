@@ -1,8 +1,8 @@
-# https://leetcode.com/problems/container-with-most-water/description/
+
 class Solution:
-    # 1
-    # 暴力法
-    # Time Limit Exceeded
+
+
+
     def maxArea(self, height):
         ret = 0
         for i in range(len(height) - 1):

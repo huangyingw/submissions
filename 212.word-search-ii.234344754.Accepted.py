@@ -12,7 +12,7 @@ class Solution(object):
             curr = root
             for c in word:
                 curr = curr.setdefault(c, {})
-            curr['#'] = '#'
+            curr['
         self.visited = [[False] * len(board[0]) for _ in range(len(board))]
         self.result = set()
         for i in range(len(board)):
@@ -21,7 +21,7 @@ class Solution(object):
         return list(self.result)
 
     def dfs(self, board, x, y, trie, s):
-        if '#' in trie:
+        if '
             self.result.add(s)
         if x < 0 or x >= len(board) or y < 0 or y >= len(board[0]):
             return

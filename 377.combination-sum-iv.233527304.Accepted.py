@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/combination-sum-iv/
-# Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that
-# add up to a positive integer target.
-# Top-down nb ways to make k for any num in nums is 1 if num == k, 0 if num > k, recurse if num < k.
-# Alternatively, bottom up dynamic programming.
-# Time - O(k) where k = target
-# Space - O(k * n) where n = len(nums)
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -36,7 +36,7 @@ class Solution(object):
 
 class Solution2(object):
     def combinationSum4(self, nums, target):
-        combos = [0] * (target + 1)  # combos[i] is nb ways wo make i
+        combos = [0] * (target + 1)
         combos[0] = 1
         for i in range(1, target + 1):
             for num in nums:

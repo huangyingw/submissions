@@ -12,5 +12,3 @@ class Solution(object):
             else:
                 right -= 1
         return maxArea
-# Space : O(1)
-# Time: O(N)

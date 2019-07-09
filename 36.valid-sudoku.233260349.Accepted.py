@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/valid-sudoku/
-# Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
-# The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
-# Create a set of digits seen in each row, column and box.  False if any duplicates.
-# Time - O(n^2) for board of side n
-# Space - O(n)
+
+
+
+
+
+
 
 
 class Solution(object):

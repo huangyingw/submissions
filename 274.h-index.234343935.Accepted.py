@@ -4,12 +4,12 @@ class Solution:
         :type citations: List[int]
         :rtype: int
         """
-        # citations.sort()
-        # n = len(citations)
-        # for i in range(n):
-        #     if citations[i] >= n - i:
-        #         return n - i
-        # return 0
+
+
+
+
+
+
         n = len(citations)
         counts = [0] * (n + 1)
         for i in range(n):
