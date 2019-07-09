@@ -1,14 +1,14 @@
-# https://leetcode.com/problems/same-tree/description/
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
+
 
 
 class Solution:
-    # 1 递归
+
     def isSameTree(self, p, q):
         """
         :type p: TreeNode
@@ -23,8 +23,8 @@ class Solution:
             return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
         else:
             return False
-    # 2 非递归 通过堆栈
-    # 直接将树转化为队列，有可能会出现序列一致但是树不同的情况
+
+
 
     def isSameTree(self, p, q):
         """

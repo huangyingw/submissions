@@ -10,5 +10,5 @@ class Solution(object):
                 counts[c] = min(counts[c], word_count[c])
         result = []
         for char, count in counts.items():
-            result += [char] * count        # append count copies of each char
+            result += [char] * count
         return result
