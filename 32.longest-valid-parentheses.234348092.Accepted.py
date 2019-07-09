@@ -1,7 +1,4 @@
-'''
-time: O(n)
-space: O(n)
-'''
+
 
 
 class Solution:

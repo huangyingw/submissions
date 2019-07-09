@@ -1,6 +1,4 @@
-'''
-Time: O(log mn)
-'''
+
 
 
 class Solution:

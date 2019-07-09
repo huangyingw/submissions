@@ -20,7 +20,7 @@ class Solution(object):
         """
         digit_freq = [0] * 10
         letter_freq = Counter(s)
-        #(letter to be counted, words already counted with this letter, digit)
+        # (letter to be counted, words already counted with this letter, digit)
         words = [("z", [], 0), ("w", [], 2), ("u", [], 4), ("x", [], 6), ("g", [], 8),
                  ("o", [0, 2, 4], 1), ("r", [0, 4], 3), ("f", [4], 5), ("v", [5], 7), ("i", [5, 6, 8], 9)]
         for letter, other_digits, digit in words:

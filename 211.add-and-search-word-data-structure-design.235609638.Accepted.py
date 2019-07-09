@@ -16,7 +16,7 @@ class WordDictionary(object):
             for item in self.word_store[word_len]:
                 # Comparison character one by one
                 for alpha in range(0, word_len):
-                    #print alpha
+                    # print alpha
                     if word[alpha] != "." and word[alpha] != item[alpha]:
                         break
                     if alpha == (word_len - 1):

@@ -1,7 +1,4 @@
-'''
-Time: O(n^n)
-Space: O(n^2)
-'''
+
 
 
 class Solution:

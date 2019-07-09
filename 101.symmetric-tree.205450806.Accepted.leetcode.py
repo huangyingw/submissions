@@ -13,8 +13,8 @@ class Solution(object):
                 return False
             if lroot.val != rroot.val:
                 return False
-            lqueue.append(lroot.left)
-            lqueue.append(lroot.right)
-            rqueue.append(rroot.right)
-            rqueue.append(rroot.left)
+            lqueue += [lroot.left]
+            lqueue += [lroot.right]
+            rqueue += [rroot.right]
+            rqueue += [rroot.left]
         return lroot == rroot

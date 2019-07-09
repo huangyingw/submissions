@@ -1,6 +1,4 @@
-'''
-O(n^min(k, n-k))
-'''
+
 
 
 class Solution:
