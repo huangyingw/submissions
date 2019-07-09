@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/maximum-distance-in-arrays/
-# Given m arrays, and each array is sorted in ascending order. Now you can pick up two integers from two different
-# arrays (each array picks one) and calculate the distance. We define the distance between two integers a and b to be
-# their absolute difference |a-b|. Your task is to find the maximum distance.
-# For each array, update the max_dist using either the maximum from this array and the previous minimum from other
-# arrays, or the minimum from this array and the previous maximum from other arrays. Then update the maximum and
-# minimum. Only uses the fist and last integer from each array.
-# Time - O(n) number of arrays
-# Space - O(1)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

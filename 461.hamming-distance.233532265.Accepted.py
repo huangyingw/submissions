@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/hamming-distance/
-# The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-# Given two integers x and y, calculate the Hamming distance.
-# Iterate over the bits of z and y together. If least significant bits are different, increment result. Right shift
-# to move to next bit until both integers are zero.
-# Time - O(log n)
-# Space - O(1)
+
+
+
+
+
+
+
 
 
 class Solution(object):

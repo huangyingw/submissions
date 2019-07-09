@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/subsets/
-# Given a set of distinct integers, nums, return all possible subsets.
-# The solution set must not contain duplicate subsets.
-# Each bit of binary number form 0 to 2**n - 1 represents whether or not an entry in nums is in that set.
-# Alternatively, copy partial subsets both with and without each item.
-# Time - O(n * 2**n), 2**n subsets each of length n.
-# Space - O(n * 2**n)
+
+
+
+
+
+
+
 
 
 class Solution(object):

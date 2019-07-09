@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/permutations/
-# Given a collection of distinct numbers, return all possible permutations.
-# For each number, insert it at all possible places in all existing permutations.
-# Alternatively recursively swap every index with every greater index (and itself).
-# Time - O(n^2 * n!).  n! results, each of with has n elements added, each addition taking O(n) time for list slicing
-# Space - O(n *n!)
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -35,9 +35,9 @@ class Solution2(object):
     def permute_helper(self, nums, index):
         permutations = []
         if index >= len(nums):
-            permutations.append(nums[:])        # make a new copy to freeze nums
+            permutations.append(nums[:])
         for i in range(index, len(nums)):
-            nums[i], nums[index] = nums[index], nums[i]     # swap with all indices >= index
+            nums[i], nums[index] = nums[index], nums[i]
             permutations += self.permute_helper(nums, index + 1)
-            nums[i], nums[index] = nums[index], nums[i]     # swap back
+            nums[i], nums[index] = nums[index], nums[i]
         return permutations

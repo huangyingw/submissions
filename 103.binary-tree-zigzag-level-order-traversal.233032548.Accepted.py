@@ -1,9 +1,9 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -12,7 +12,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        # level order
+
         if root is None:
             return []
         q = [[root]]
@@ -25,7 +25,7 @@ class Solution(object):
                     record.append(node.right)
             if record:
                 q.append(record)
-        # zigzag order
+
         res = []
         for index, level in enumerate(q):
             temp = [x.val for x in level]

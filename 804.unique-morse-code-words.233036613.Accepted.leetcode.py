@@ -7,7 +7,7 @@ Morse_tab = [".-", "-...", "-.-.",
 
 
 class Solution(object):
-    # https://leetcode.com/problems/unique-morse-code-words/solution/
+
     def uniqueMorseRepresentations(self, words):
         """
         :type words: List[str]

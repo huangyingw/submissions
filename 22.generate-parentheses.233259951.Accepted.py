@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/generate-parentheses/
-# Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-# Recursively add an opening left bracket if any remain, and a closing right bracket if more left brackets have been used.
-# Time - O(2^n), each recursion can generate 2 recursive calls althougn in practive this is an upper bound
-# Space - O(2^n)
+
+
+
+
+
 
 
 class Solution(object):
@@ -16,7 +16,7 @@ class Solution(object):
         result = []
         self.generate([], n, n, result)
         return result
-    # Generates all parentheses given a starting prefix and remaining left and right brackets.
+
 
     def generate(self, prefix, left, right, result):
         if left == 0 and right == 0:

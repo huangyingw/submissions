@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-# Given preorder and inorder traversal of a tree, construct the binary tree.
-# You may assume that duplicates do not exist in the tree.
-# Build until we reach stop value, initially None. Take first preorder as root then recurse left until inorder is
-# root value. Then discard inorder and recurse right until final stop.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
 from collections import deque
-# Definition for a binary tree node.
+
 
 
 class TreeNode(object):
@@ -30,10 +30,10 @@ class Solution(object):
                 return None
             root_val = preorder.pop()
             root = TreeNode(root_val)
-            root.left = build(root_val)     # build left subtree until inorder reaches root_val
-            inorder.pop()                   # then discard root_val
-            root.right = build(stop)        # build right subtree until inorder reaches original stop
+            root.left = build(root_val)
+            inorder.pop()
+            root.right = build(stop)
             return root
-        preorder.reverse()      # reverse so we can pop in O(1) time
+        preorder.reverse()
         inorder.reverse()
         return build(None)

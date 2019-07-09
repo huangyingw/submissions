@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-palindrome-ii/description/
+
 class Solution1:
     def validPalindrome(self, s):
         l = 0

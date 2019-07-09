@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/merge-sorted-array/description/
+
 class Solution:
-    # 1 normal function
+
     def merge(self, nums1, m, nums2, n):
         """
         :type nums1: List[int]
@@ -9,7 +9,7 @@ class Solution:
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-        # use 2 point in nums1 and nums2
+
         point1 = m - 1
         point2 = n - 1
         insert_point = m + n - 1
@@ -26,7 +26,7 @@ class Solution:
             nums1[insert_point] = nums2.pop()
             point2 -= 1
             insert_point -= 1
-    # 2 two line function
+
 
     def merge(self, nums1, m, nums2, n):
         """
@@ -36,10 +36,10 @@ class Solution:
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-        # use 2 point in nums1 and nums2
+
         nums1[m:] = nums2[:n]
         nums1.sort()
-    # 3
+
 
     def merge(self, nums1, m, nums2, n):
         while m > 0 and n > 0:

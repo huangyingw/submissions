@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
-# Follow up for problem "Populating Next Right Pointers in Each Node".
-# What if the given tree could be any binary tree? Would your previous solution still work?
-# Breadth first search by level. Only append non-null nodes to level list.
-# Time - O(n)
-# Space - O(n)
-# Definition for binary tree with next pointer.
+
+
+
+
+
+
+
 
 
 class TreeLinkNode(object):

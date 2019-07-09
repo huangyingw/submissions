@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/degree-of-an-array/description/
+
 class Solution(object):
     def findShortestSubArray(self, nums):
         left, right, count = {}, {}, {}

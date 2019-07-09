@@ -7,7 +7,7 @@ class Solution:
         if not board or not board[0]:
             return
         m, n = len(board), len(board[0])
-        # check borders first
+
         for i in range(m):
             self.check(i, 0, board, m, n)
             if n > 0:

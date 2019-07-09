@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # Two Points
+
         begin, end = 0, len(numbers) - 1
         while begin < end:
             curr = numbers[begin] + numbers[end]

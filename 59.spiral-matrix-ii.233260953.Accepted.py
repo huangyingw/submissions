@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/spiral-matrix-ii/
-# Given an integer n, generate a square matrix filled with elements from 1 to n**2 in spiral order.
-# Change direction clockwise when edge of matrix or non-zero cell is reached.
-# Time - O(n**2)
-# Space - O(n**2)
+
+
+
+
+
 
 
 class Solution(object):

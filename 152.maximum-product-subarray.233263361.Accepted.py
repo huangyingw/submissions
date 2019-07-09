@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/maximum-product-subarray/
-# Find the contiguous subarray within an array (containing at least one number) which has the largest product.
-# Calculate the most positive and most negative subarray products ending at each element.
-# Either the element alone or multiplied by previous most positive or most negative.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
 
 
 class Solution(object):

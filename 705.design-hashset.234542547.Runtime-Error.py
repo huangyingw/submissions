@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/design-hashset/description/
+
 """
 Design a HashSet without using any built-in hash table libraries.
 To be specific, your design should include these functions:
@@ -20,7 +20,7 @@ All values will be in the range of [0, 1000000].
 The number of operations will be in the range of [1, 10000].
 Please do not use the built-in HashSet library.
 """
-# 使用FALSE数组构造
+
 
 
 class MyHashSet1:
@@ -51,7 +51,7 @@ class MyHashSet1:
         :rtype: bool
         """
         return self.arr[key]
-# 使用
+
 
 
 class MyHashSet2:
@@ -101,8 +101,3 @@ class MyHashSet2:
             if k == key:
                 return True
         return False
-# Your MyHashSet object will be instantiated and called as such:
-# obj = MyHashSet()
-# obj.add(key)
-# obj.remove(key)
-# param_3 = obj.contains(key)

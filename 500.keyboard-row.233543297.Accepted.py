@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/keyboard-row/
-# Given a List of words, return the words that can be typed using letters of alphabet on only one row of a keyboard.
-# Map each of the 26 keys to its row. Iterate over word, setting the row of the first char and checking that the rows
-# of all other characters are the same as the first.
-# Time - O(n) total number of characters in words.
-# Space - O(1) excluding result.
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -23,9 +23,9 @@ class Solution(object):
         for word in words:
             row = -1
             for c in word:
-                if row == -1:                       # set the row of first char
+                if row == -1:
                     row = keyboard[c.lower()]
-                elif keyboard[c.lower()] != row:    # compare to previous rows
+                elif keyboard[c.lower()] != row:
                     break
             else:
                 result.append(word)

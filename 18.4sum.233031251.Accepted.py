@@ -43,5 +43,3 @@ class Solution(object):
                         fourlist.sort()
                         result.add(tuple(fourlist))
         return list(result)
-# Space : O(N)
-# Time: O(N^3)

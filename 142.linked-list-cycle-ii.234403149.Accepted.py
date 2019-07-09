@@ -1,8 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+
+
+
+
+
 
 
 class Solution(object):
@@ -11,7 +11,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        # 使用两个指针（快慢）进行
+
         if not head or not head.next:
             return None
         q1 = head
@@ -21,7 +21,7 @@ class Solution(object):
                 return None
             q1 = q1.next
             q2 = q2.next.next
-        # 确定有环，从头指针与q1 q2相遇的地方分别遍历
+
         res = head
         q1 = q1.next
         while res != q1:

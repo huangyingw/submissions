@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/sort-list/
-# Sort a linked list in O(n log n) time using constant space complexity.
-# Base case is empty list or single node. Else recursively split list in half, sort halves and merge.
-# Time - O(n log n)
-# Space - O(n)
-# Definition for singly-linked list.
+
+
+
+
+
+
 
 
 class ListNode(object):
@@ -40,5 +40,5 @@ class Solution(object):
                 merged.next = two
                 two = two.next
             merged = merged.next
-        merged.next = one or two    # add remaining list
+        merged.next = one or two
         return dummy.next

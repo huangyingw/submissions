@@ -7,7 +7,7 @@ class Solution(object):
         totalsum = sum(nums)
         leftsum = 0
         for i, v in enumerate(nums):
-            # leftsum == rightsum
+
             if leftsum == totalsum - leftsum - v:
                 return i
             leftsum += v

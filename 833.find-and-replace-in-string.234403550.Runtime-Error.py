@@ -1,8 +1,8 @@
-# https://leetcode.com/problems/find-and-replace-in-string/description/
+
 class Solution(object):
-    # 1
-    # 反序很关键，可以从右往左遍历使用index
-    # 利用zip函数
+
+
+
     def findReplaceString(self, S, indexes, sources, targets):
         """
         :type S: str

@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/kth-smallest-element-in-a-bst/
-# Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
-# Iterative inorder traversal.
-# Alternatively, recursive inorder traversal tracking remaining count with instance variable.
-# Time - O(n)
-# Space - O(n)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
 
 
 class TreeNode(object):
@@ -40,7 +40,7 @@ class Solution(object):
 
 class Solution2(object):
     def kthSmallest(self, root, k):
-        self.k = k              # instance variables
+        self.k = k
         self.result = None
         self.helper(root)
         return self.result

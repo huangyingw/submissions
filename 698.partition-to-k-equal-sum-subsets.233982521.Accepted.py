@@ -1,35 +1,35 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
-# Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k
-# non-empty subsets whose sums are all equal.
-# Sort in decreasing order. Find some nums that sum to target, flagging each num in used. If a num is used then only
-# search smaller nums since any larger would have been used already.
-# Alternatively, add each number to each bucket with capacity and recurse, backtracking if a solution is not found.
-# Time - O(k * 2**n) for k buckets, each number is or is not used in each
-# Space - O(k * 2**n)
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
     def canPartitionKSubsets(self, nums, k):
         total = sum(nums)
         if total % k != 0:
-            return False        # nums are not divisible equally
+            return False
         target = total // k
         used = [False] * len(nums)
         nums.sort(reverse=True)
-        if nums[0] > target:    # largest num too big
+        if nums[0] > target:
             return False
 
         def dfs(subsets, last, partial):
-            if subsets == 1:    # base case, can always create one subset
+            if subsets == 1:
                 return True
-            if partial == target:   # start a new subset
+            if partial == target:
                 return dfs(subsets - 1, 0, 0)
-            for i in range(last, len(nums)):    # from last num onwards
+            for i in range(last, len(nums)):
                 if not used[i] and partial + nums[i] <= target:
                     used[i] = True
-                    if dfs(subsets, i + 1, partial + nums[i]):  # only search smaller nums
+                    if dfs(subsets, i + 1, partial + nums[i]):
                         return True
                     used[i] = False
             return False
@@ -45,7 +45,7 @@ class Solution2(object):
             return False
         partition = [0 for _ in range(k)]
 
-        def helper(i):                          # test whether nums[i] can be added to some partition
+        def helper(i):
             if i == len(nums):
                 return True
             for j in range(len(partition)):
@@ -54,7 +54,7 @@ class Solution2(object):
                     if helper(i + 1):
                         return True
                     partition[j] -= nums[i]
-                if partition[j] == 0:           # do not try other empty buckets
+                if partition[j] == 0:
                     break
             return False
         return helper(0)

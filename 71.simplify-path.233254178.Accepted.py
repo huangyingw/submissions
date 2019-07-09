@@ -31,5 +31,3 @@ class Solution(object):
             else:
                 result += stack[index]
         return result
-# Time: O(N)
-# Space: O(N)

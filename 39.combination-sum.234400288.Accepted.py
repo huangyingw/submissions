@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/combination-sum/description/
+
 class Solution:
     def combinationSum(self, candidates, target):
         """
@@ -11,7 +11,7 @@ class Solution:
 
         def dfs(target, index, path):
             if target < 0:
-                return  # backtracking
+                return
             if target == 0:
                 res.append(path)
                 return

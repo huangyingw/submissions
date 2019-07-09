@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/buddy-strings/description/
+
 class Solution:
-    # 1
+
     def buddyStrings(self, A, B):
         """
         :type A: str
@@ -17,10 +17,10 @@ class Solution:
                 count += 1
             if count > 2:
                 return False
-        # if count==2:
-        #     return True
-        # else:
-        #     if len(set(A))<len(A):
-        #         return True
-        # return False
+
+
+
+
+
+
         return sum == 0 and count == 2 or (count == 0 and len(set(A)) < len(A))

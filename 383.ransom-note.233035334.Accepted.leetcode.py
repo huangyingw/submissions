@@ -13,5 +13,3 @@ class Solution(object):
             if letter_map[letter] < 0:
                 return False
         return True
-    # def canConstruct(self, ransomNote, magazine):
-    #     return not collections.Counter(ransomNote) - collections.Counter(magazine)

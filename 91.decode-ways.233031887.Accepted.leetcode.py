@@ -27,5 +27,3 @@ class Solution(object):
             if val >= 10 and val <= 26:
                 dp[index] += dp[index - 2]
         return dp[len(s) - 1]
-# Time: O(N)
-# Space: O(N)

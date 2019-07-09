@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/positions-of-large-groups/description/
+
 class Solution:
     def largeGroupPositions(self, S):
         """
@@ -6,7 +6,7 @@ class Solution:
         :rtype: List[List[int]]
         """
         ans = []
-        i = 0  # The start of each group
+        i = 0
         for j in range(len(S)):
             if j == len(S) - 1 or S[j] != S[j + 1]:
                 if j - i + 1 >= 3:

@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/paint-house/
-# There are a row of n houses, each house can be painted with one of the three colors: red, blue or green.
-# The cost of painting each house with a certain color is different. You have to paint all the houses such that no
-# two adjacent houses have the same color.
-# The cost of painting each house with a certain color is represented by a n x 3 cost matrix.
-# Find the minimum cost to paint all houses. All costs are positive integers.
-# Min cost of painting a house any colour is the cost of painting that house that colour + min of painting the previous
-# house a different colour.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reorder-log-files/description/
+
 class Solution:
     def reorderLogFiles(self, logs):
         """

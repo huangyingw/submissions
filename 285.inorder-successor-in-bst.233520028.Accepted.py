@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/inorder-successor-in-bst/
-# Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
-# If the given node has no in-order successor in the tree, return None.
-# Iterate through tree, whenever we go left update the successor.
-# Alternatively recursively explore right subtree if target value >= node value since successor must then be on right.
-# If target value < node value and successor is not in left subtree then node is the successor.
-# Time - O(n), height of tree so log n if balanced
-# Space - O(1)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):

@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/perfect-rectangle/
-# Given N axis-aligned rectangles where N > 0, determine if they together form an exact cover of a rectangular region.
-# Each rectangle is represented as a bottom-left point and a top-right point.
-# Total area of all rectangles must equal covered region area.  Corners of region must be counted once, other corners
-# match either 2 or 4 rectangles.
-# Time - O(n), number of rectangles
-# Space - O(n)
+
+
+
+
+
+
+
 from collections import defaultdict
 
 
@@ -16,10 +16,10 @@ class Solution(object):
         :type rectangles: List[List[int]]
         :rtype: bool
         """
-        min_r, min_c = float("inf"), float("inf")       # find extent of all rectangles
+        min_r, min_c = float("inf"), float("inf")
         max_r, max_c = float("-inf"), float("-inf")
-        area = 0                                        # sum of areas of all rectangles
-        corners = defaultdict(int)                      # count of number of corner by (r, c)
+        area = 0
+        corners = defaultdict(int)
         for r1, c1, r2, c2 in rectangles:
             area += (r2 - r1) * (c2 - c1)
             min_r = min(min_r, r1)

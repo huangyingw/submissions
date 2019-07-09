@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/max-area-of-island/description/
+
 class Solution:
     def maxAreaOfIsland(self, grid):
         max_size = 0

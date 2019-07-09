@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sort-characters-by-frequency/description/
+
 """
 Given a string, sort it in decreasing order based on the frequency of characters.
 Example 1:
@@ -30,13 +30,13 @@ from collections import Counter
 
 
 class Solution:
-    # 1
-    # 先用Counter，再用sort
+
+
     def frequencySort1(self, s):
         mapping = sorted(((idx, v) for idx, v in Counter(s).items()), key=lambda item: item[1], reverse=True)
         return "".join([idx * v for (idx, v) in mapping])
-    # 2
-    # 使用Counter中内置的most_common方法，找到最常见的键值对并按照顺序
+
+
 
     def frequencySort2(self, s):
         c = Counter(s).most_common(len(s))

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/
+
 class Solution:
     def sortedArrayToBST(self, nums):
         """

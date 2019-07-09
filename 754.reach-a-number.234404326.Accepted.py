@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reach-a-number/
+
 """
 You are standing at position 0 on an infinite number line. There is a goal at position target.
 On each move, you can either go left or right. During the n-th move (starting from 1), you take n steps.
@@ -19,8 +19,8 @@ On the third move we step from -1 to 2.
 Note:
 target will be a non-zero integer in the range [-10^9, 10^9].
 """
-# 这个题需要找规律
-# 先通过k*(k+1)/2找到最小的k,然后根据k与差然后计算k
+
+
 
 
 class Solution(object):

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/encode-and-decode-tinyurl/description/
+
 """
 Note: This is a companion problem to the System Design problem: Design TinyURL.
 TinyURL is a URL shortening service where you enter a URL such as
@@ -29,6 +29,3 @@ class Codec:
         """
         v = shortUrl[20:len(shortUrl)]
         return (self.hash[int(v)])
-# Your Codec object will be instantiated and called as such:
-# codec = Codec()
-# codec.decode(codec.encode(url))

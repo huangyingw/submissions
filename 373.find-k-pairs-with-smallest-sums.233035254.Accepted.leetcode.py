@@ -6,7 +6,7 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        # https://discuss.leetcode.com/topic/50450/slow-1-liner-to-fast-solutions
+
         queue = []
 
         def push(i, j):

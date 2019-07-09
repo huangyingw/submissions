@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
-        # return [s[:i] + "--" + s[i+2:] for i in range(len(s) - 1) if s[i] == s[i + 1] == "+"]
+
         res = []
         if s is None or len(s) == 0:
             return res

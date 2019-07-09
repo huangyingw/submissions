@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description/
+
 class Solution:
-    # 1
+
     def findUnsortedSubarray(self, nums):
         """
         :type nums: List[int]
@@ -17,9 +17,9 @@ class Solution:
             if nums[n - 1 - i] != cmin:
                 l = n - 1 - i
         return r - l + 1
-    #
-    #  thank @lee215
-    # 比较与排序好的数组，使用zip然比较
+
+
+
 
     def findUnsortedSubarray(self, nums):
         is_same = [a == b for a, b in zip(nums, sorted(nums))]

@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/numbers-with-same-consecutive-differences/
-# Return all non-negative integers of length N such that the absolute difference between every two consecutive
-# digits is K.
-# Note that every number in the answer must not have leading zeros except for the number 0 itself.
-# For example, 01 has one leading zero and is invalid, but 0 is valid.
-# You may return the answer in any order.
-# Starting from each of the digits apart from zero, repeatedly add and subtract K to the last_digit of each number to
-# build up the results to N digits.
-# Time - O(2**n)
-# Space - O(2**n)
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

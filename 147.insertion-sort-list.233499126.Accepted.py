@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/insertion-sort-list/
-# Sort a linked list using insertion sort.
-# Maintain a sorted part of the list.  For each next node, find its correct location by iterating along sorted section.
-# Time - O(n**2)
-# Space - O(1)
-# Definition for singly-linked list.
+
+
+
+
+
+
 
 
 class ListNode(object):
@@ -20,17 +20,17 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        sorted_tail = dummy = ListNode(float('-inf'))   # sorted_tail is last node of sorted section
+        sorted_tail = dummy = ListNode(float('-inf'))
         dummy.next = head
         while sorted_tail.next:
             node = sorted_tail.next
-            if node.val >= sorted_tail.val:             # node already in correct place
+            if node.val >= sorted_tail.val:
                 sorted_tail = sorted_tail.next
                 continue
-            sorted_tail.next = sorted_tail.next.next    # cut out node
+            sorted_tail.next = sorted_tail.next.next
             insertion = dummy
             while insertion.next.val <= node.val:
                 insertion = insertion.next
-            node.next = insertion.next                  # put node after insertion
+            node.next = insertion.next
             insertion.next = node
         return dummy.next

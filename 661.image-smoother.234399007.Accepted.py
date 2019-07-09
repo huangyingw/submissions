@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/image-smoother/description/
+
 class Solution:
     def imageSmoother(self, M):
         """

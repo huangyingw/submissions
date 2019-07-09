@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/add-two-numbers-ii/
-# You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes
-# first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-# You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-# Iterate over lists to calculate the integers they represent and sum them. Build resulting list from the least
-# significant digit by repeatedly dividing by 10.
-# Time - O(m + n)
-# Space - O(max(m, n))
-# Definition for singly-linked list.
+
+
+
+
+
+
+
+
+
 
 
 class ListNode(object):
@@ -34,12 +34,12 @@ class Solution(object):
             num2 = num2 * 10 + node.val
             node = node.next
         total = num1 + num2
-        if total == 0:              # return single node with zero
+        if total == 0:
             return ListNode(0)
         result = None
         while total:
             total, digit = divmod(total, 10)
             new_node = ListNode(digit)
-            new_node.next = result  # make digit start of result
+            new_node.next = result
             result = new_node
         return result

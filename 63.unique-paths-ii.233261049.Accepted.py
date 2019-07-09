@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/unique-paths-ii/
-# Follow up for "Unique Paths":
-# Now consider if some obstacles are added to the grids. How many unique paths would there be?
-# An obstacle and empty space is marked as 1 and 0 respectively in the grid.
-# Dynamic programming.  Nb paths is 0 if obstacle, else paths from above + paths from left.
-# Time - O(m * n)
-# Space - O(n)
+
+
+
+
+
+
+
 
 
 class Solution(object):

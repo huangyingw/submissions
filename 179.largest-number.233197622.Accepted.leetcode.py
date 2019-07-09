@@ -6,12 +6,12 @@
 	Example 2:
 	Input: [3,30,34,5,9]
 	Output: "9534330"
-# '''
+
 
 
 class Solution:
-    # @param {integer[]} nums
-    # @return {string}
+
+
     def largestNumber(self, nums):
         nums = [str(num) for num in nums]
         nums.sort(cmp=lambda x, y: cmp(y + x, x + y))

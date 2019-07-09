@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/daily-temperatures/description/
+
 """
 Given a list of daily temperatures T, return a list such that,
 for each day in the input, tells you how many days you would have to wait until a warmer temperature.

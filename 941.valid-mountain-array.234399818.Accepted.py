@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-mountain-array/description/
+
 class Solution:
     def validMountainArray(self, A):
         """

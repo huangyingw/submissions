@@ -1,12 +1,12 @@
-# https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/
+
 """
-# Definition for a Node.
+
 class Node(object):
     def __init__(self, val, children):
         self.val = val
         self.children = children
 """
-# 1 使用stack的非递归方法
+
 
 
 class Solution(object):
@@ -24,7 +24,7 @@ class Solution(object):
             result.append(cur.val)
             stack.extend(reversed(cur.children))
         return result
-# 2 递归法
+
 
 
 class Solution(object):

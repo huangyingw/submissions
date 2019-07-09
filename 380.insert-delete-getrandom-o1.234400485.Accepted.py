@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/insert-delete-getrandom-o1/
+
 """
 Design a data structure that supports all following operations in average O(1) time.
 insert(val): Inserts an item val to the set if not already present.
@@ -22,11 +22,11 @@ randomSet.insert(2);
 // Since 2 is the only number in the set, getRandom always return 2.
 randomSet.getRandom();
 """
-# 84ms
-# 使用一个list和一个dict来记录
-# dict 中的键值对为key(数字)与value(list中对应的index)
-# insert函数：在list末尾添加，dict添加键值对
-# remove函数：将要删除的数与最后一个替换，然后执行删除操作
+
+
+
+
+
 
 
 class RandomizedSet:
@@ -68,8 +68,3 @@ class RandomizedSet:
         :rtype: int
         """
         return random.choice(self.nums)
-# Your RandomizedSet object will be instantiated and called as such:
-# obj = RandomizedSet()
-# param_1 = obj.insert(val)
-# param_2 = obj.remove(val)
-# param_3 = obj.getRandom()

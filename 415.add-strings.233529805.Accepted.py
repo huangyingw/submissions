@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/add-strings/
-# Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
-# Reverse the numbers so we start iterating over the least significant digit. Pad the shorter number with leading zeros.
-# Add each pair of digits plus carry, mod 10 to update the carry. Append the final carry then reverse the result.
-# Time - O(max(m, n)) where m and n are the lengths of the input strings
-# Space - O(max(m, n))
+
+
+
+
+
+
 
 
 class Solution(object):

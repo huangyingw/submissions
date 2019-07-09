@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/implement-magic-dictionary/description/
+
 """
 Implement a magic directory with buildDict, and search methods.
 For the method buildDict, you'll be given a list of non-repetitive words to build a dictionary.
@@ -43,7 +43,3 @@ class MagicDictionary2:
         return any(self.count[nei] > 1 or
                    self.count[nei] == 1 and word not in self.words
                    for nei in self._genneighbors(word))
-# Your MagicDictionary object will be instantiated and called as such:
-# obj = MagicDictionary()
-# obj.buildDict(dict)
-# param_2 = obj.search(word)

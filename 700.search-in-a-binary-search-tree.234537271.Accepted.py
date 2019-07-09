@@ -1,11 +1,11 @@
-# https://leetcode.com/problems/search-in-a-binary-search-tree/
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-# 1 递归法
+
+
+
+
+
+
+
+
 
 
 class Solution:
@@ -23,7 +23,7 @@ class Solution:
             return self.searchBST(root.left, val)
         else:
             return self.searchBST(root.right, val)
-# 2 非递归法
+
 
 
 class Solution:

@@ -5,5 +5,5 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        # set
+
         return list(set(nums1) & set(nums2))

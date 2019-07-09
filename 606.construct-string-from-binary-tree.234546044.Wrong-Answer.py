@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/construct-string-from-binary-tree/description/
+
 class Solution:
     def tree2str(self, t):
         """

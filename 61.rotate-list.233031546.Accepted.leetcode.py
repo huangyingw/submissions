@@ -1,8 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+
+
+
+
+
 
 
 class Solution(object):
@@ -21,7 +21,7 @@ class Solution(object):
             length += 1
             k -= 1
         if k != 0:
-            k = (k + length - 1) % length  # original k % length
+            k = (k + length - 1) % length
             return self.rotateRight(head, k)
         else:
             while fast.next:

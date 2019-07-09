@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/set-matrix-zeroes/
-# Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
-# Record whether first row and forst col contains zero.  Then use first for and first col to flag whether body of
-# matrix contains a zero in that row or col.
-# Time - O(m * n)
-# Space - O(1)
+
+
+
+
+
+
 
 
 class Solution(object):

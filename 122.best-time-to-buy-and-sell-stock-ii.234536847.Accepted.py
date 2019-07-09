@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+
 class Solution:
-    # 1 峰值 谷值相减法
+
     def maxProfit(self, prices):
         """
         :type prices: List[int]
@@ -20,7 +20,7 @@ class Solution:
             peak = prices[i]
             maxProfit += peak - valley
         return maxProfit
-    # 2 直接增加
+
 
     def maxProfit(self, prices):
         """

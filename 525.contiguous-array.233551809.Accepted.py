@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/contiguous-array/
-# Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
-# Store in dictionary net balance of 1s and 0s for every prefix array. Search for same net balance.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
 
 
 class Solution(object):
@@ -14,8 +14,8 @@ class Solution(object):
         :rtype: int
         """
         max_len = 0
-        balance = 0         # net 1s - 0s
-        balances = {0: -1}  # key is balance, value is index
+        balance = 0
+        balances = {0: -1}
         for i, num in enumerate(nums):
             if num == 1:
                 balance += 1

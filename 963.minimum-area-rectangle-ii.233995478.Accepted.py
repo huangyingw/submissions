@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/minimum-area-rectangle-ii/
-# Given a set of points in the xy-plane, determine the minimum area of any rectangle formed from these points,
-# with sides not necessarily parallel to the x and y axes.
-# If there isn't any rectangle, return 0.
-# Convert points to complex numbers for easier vector operations.
-# Sort points so directions of vectors are aligned (else opposite directions are double counted).
-# Map each vector between a pair to a list of mid-points of that vector.
-# For each vector, if the vector between any pair of mid-points is perpendicular to the vector then a rectangle can
-# be formed.
-# Time - O(n**2)
-# Space - O(n**2)
+
+
+
+
+
+
+
+
+
+
+
 from collections import defaultdict
 from itertools import combinations
 

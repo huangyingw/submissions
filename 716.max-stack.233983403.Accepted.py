@@ -1,17 +1,17 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/max-stack/
-# Design a max stack that supports push, pop, top, peekMax and popMax.
-#  push(x) -- Push element x onto stack.
-#  pop() -- Remove the element on top of the stack and return it.
-#  top() -- Get the element on the top.
-#  peekMax() -- Retrieve the maximum element in the stack.
-#  popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements,
-#    only remove the top-most one.
-# Stack contains tuples of (element, max element in stack). To popMax, pop until an element equal to max is seen. Then
-# push back all elements before max in reverse order.
-# Time - O(1) for all operations apart from O(n) for popMax
-# Space - O(n)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class MaxStack(object):
@@ -19,7 +19,7 @@ class MaxStack(object):
         """
         initialize your data structure here.
         """
-        self.stack = [(float("-inf"), float("-inf"))]  # pairs of (num, max_num)
+        self.stack = [(float("-inf"), float("-inf"))]
 
     def push(self, x):
         """

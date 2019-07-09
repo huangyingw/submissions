@@ -6,7 +6,7 @@ class Solution(object):
         :type positions: List[List[int]]
         :rtype: List[int]
         """
-        # quick union find with weights
+
         ans = []
         islands = Union()
         for p in map(tuple, positions):
@@ -25,7 +25,7 @@ class Union(object):
     """
 
     def __init__(self):
-        # use dic to reduce index operations
+
         self.id = {}
         self.sz = {}
         self.count = 0

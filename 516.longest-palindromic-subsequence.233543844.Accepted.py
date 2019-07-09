@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/longest-palindromic-subsequence/
-# Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length
-# of s is 1000.
-# Dynamic progrmming. Iterate over lengths. If end chars of substring of s of length l starting at index i are same,
-# max length is 2 + max length without end chars. Else take max of leaving off one end char.
-# Time - O(n**2)
-# Space - O(n)
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -16,10 +16,10 @@ class Solution(object):
         :rtype: int
         """
         n = len(s)
-        if s == s[::-1]:    # early return for palindromes
+        if s == s[::-1]:
             return n
-        subsequence_2 = [0 for _ in range(n)]   # subsequences of length - 2 for each starting index
-        subsequence_1 = [1 for _ in range(n)]   # subsequences of length - 1 for each starting index
+        subsequence_2 = [0 for _ in range(n)]
+        subsequence_1 = [1 for _ in range(n)]
         for length in range(2, n + 1):
             subsequence = []
             for i in range(0, n - length + 1):

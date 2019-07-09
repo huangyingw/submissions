@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/
+
 class Solution:
-        # 1
+
     def findRestaurant(self, list1, list2):
         """
         :type list1: List[str]
@@ -20,7 +20,7 @@ class Solution:
             if i[0] == sum_index:
                 ret.append(list1[i[1]])
         return ret
-    # 2
+
 
     def findRestaurant(self, list1, list2):
         d = {}

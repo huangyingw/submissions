@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/greatest-common-divisor-of-strings/
-# For strings S and T, we say "T divides S" if and only if S = T + ... + T  (T concatenated with itself 1 or more times)
-# Return the largest string X such that X divides str1 and X divides str2.
-# Find the GCD of the lengths of the strings.
-# Check whether both strings consist of repeated prefix of GCD length.
-# Time - O(m + n)
-# Space - O(1)
+
+
+
+
+
+
+
 
 
 class Solution(object):

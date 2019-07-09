@@ -1,13 +1,13 @@
-# https://leetcode.com/problems/valid-anagram/description/
+
 class Solution:
-    # 1 使用count beat 98%
+
     def isAnagram(self, s, t):
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        # 判断含字母的个数是否一致
+
         if len(set(s)) != len(set(t)):
             return False
         alpha = set(s)
@@ -15,7 +15,7 @@ class Solution:
             if s.count(i) != t.count(i):
                 return False
         return True
-    # 2 使用字典
+
 
     def isAnagram(self, s, t):
         """
@@ -36,7 +36,7 @@ class Solution:
             else:
                 dic2[j] = 1
         return dic1 == dic2
-    # 3 使用 from collections import Counter 不推荐
+
     from collections import Counter
 
     def isAnagram(self, s, t):

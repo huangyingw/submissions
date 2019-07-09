@@ -1,10 +1,10 @@
-# https://leetcode.com/problems/masking-personal-information/description/
+
 """
 We are given a personal information string S, which may represent either an email address or a phone number.
 We would like to mask this personal information according to the following rules:
 1. Email address:
 We define a name to be a string of length ≥ 2 consisting of only lowercase letters a-z or uppercase letters A-Z.
-An email address starts with a name, followed by the symbol '@', followed by a name, followed by the dot '.' and followed by a name. 
+An email address starts with a name, followed by the symbol '@', followed by a name, followed by the dot '.' and followed by a name.
 All email addresses are guaranteed to be valid and in the format of "name1@name2.name3".
 To mask an email, all names must be converted to lowercase and all letters between the first and last letter of the first name must be replaced by 5 asterisks '*'.
 2. Phone number:

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/increasing-order-search-tree/
+
 """
 Given a tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only 1 right child.
 Example 1:
@@ -32,7 +32,7 @@ Note:
 The number of nodes in the given tree will be between 1 and 100.
 Each node will have a unique integer value from 0 to 1000.
 """
-# Definition for a binary tree node.
+
 
 
 class TreeNode:
@@ -40,7 +40,7 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-# 1 递归
+
 
 
 class Solution1:

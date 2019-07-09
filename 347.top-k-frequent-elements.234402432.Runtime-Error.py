@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/top-k-frequent-elements/description/
+
 """
 Given a non-empty array of integers, return the k most frequent elements.
 Example 1:
@@ -15,8 +15,8 @@ from collections import Counter
 
 
 class Solution:
-    # 1
-    # one line
+
+
     def topKFrequent1(self, nums, k):
         """
         :type nums: List[int]
@@ -24,10 +24,10 @@ class Solution:
         :rtype: List[int]
         """
         return [v for v, c in Counter(nums).most_common(k)]
-        # mapping = Counter(nums).most_common(k)
-        # return [v for v,c in mapping]
-    # 2
-    # 使用堆heapq
+
+
+
+
 
     def topKFrequent2(self, nums, k):
         """

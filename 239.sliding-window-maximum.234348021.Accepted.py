@@ -11,7 +11,7 @@ class Solution:
         q = deque()
         ret = []
         for i, num in enumerate(nums):
-            # ensure the 1st element in queue is the largest
+
             while q and nums[q[-1]] < num:
                 q.pop()
             q.append(i)

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/univalued-binary-tree/
+
 """
 A binary tree is univalued if every node in the tree has the same value.
 Return true if and only if the given tree is univalued.
@@ -9,12 +9,12 @@ Example 2:
 Input: [2,2,2,5,2]
 Output: false
 """
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution:

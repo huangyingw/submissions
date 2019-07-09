@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/search-a-2d-matrix/
-# Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
-# Integers in each row are sorted from left to right.
-# The first integer of each row is greater than the last integer of the previous row.
-# Treat the 2-d matrix as a 1-d list of length rows * cols. Binary search indices from 0 to rows * cols - 1.
-# Time - O(log m + log n)
-# Space - O(1)
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -22,7 +22,7 @@ class Solution(object):
         low, high = 0, rows * cols - 1
         while high >= low:
             mid = (high + low) // 2
-            value = matrix[mid // cols][mid % cols]     # convert mid to a row and column
+            value = matrix[mid // cols][mid % cols]
             if target == value:
                 return True
             if target > value:

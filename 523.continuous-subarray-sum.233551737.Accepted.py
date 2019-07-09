@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/continuous-subarray-sum/
-# Given a list of non-negative numbers and a target integer k, write a function to check if the array has a continuous
-# subarray of size at least 2 that sums up to the multiple of k, that is, sums up to n*k where n is also an integer.
-# Subarray is difference between prefix sums a and b. a - b = nk. (a - b) % k = 0 hence a%k - b%k = 0.
-# Store prefix sums % k in dictionary.
-# prefix sums % k is zero.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -17,14 +17,14 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        prefix_sum, prefix_sums = 0, {0: -1}  # key is prefix sum mod k, value is index in nums
+        prefix_sum, prefix_sums = 0, {0: -1}
         for i, n in enumerate(nums):
             prefix_sum += n
-            if k != 0:  # if k == 0 then look for prefix sum difference of zero
+            if k != 0:
                 prefix_sum = prefix_sum % k
             if prefix_sum in prefix_sums:
-                if i - prefix_sums[prefix_sum] > 1:     # check length >= 2
+                if i - prefix_sums[prefix_sum] > 1:
                     return True
             else:
-                prefix_sums[prefix_sum] = i  # do not overwrite if key present already
+                prefix_sums[prefix_sum] = i
         return False

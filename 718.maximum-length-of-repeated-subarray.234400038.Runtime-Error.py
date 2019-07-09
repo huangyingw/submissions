@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
+
 """
 Given two integer arrays A and B, return the maximum length of an subarray that appears in both arrays.
 Example 1:

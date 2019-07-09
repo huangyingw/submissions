@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/partition-list/
-# Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
-# You should preserve the original relative order of the nodes in each of the two partitions.
-# Create new pseudo heads for lists of nodes lesser and greater than x.
-# Time - O(n)
-# Space - O(1)
-# Definition for singly-linked list.
+
+
+
+
+
+
+
 
 
 class ListNode(object):
@@ -29,10 +29,10 @@ class Solution(object):
             if node.val < x:
                 lesser.next = node
                 lesser = node
-            else:                       # node.val >= x
+            else:
                 greater.next = node
                 greater = node
             node = node.next
-        greater.next = None                 # if last node not greater then break link to last node
-        lesser.next = greater_head.next     # join lists
+        greater.next = None
+        lesser.next = greater_head.next
         return lesser_head.next

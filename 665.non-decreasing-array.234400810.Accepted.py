@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/non-decreasing-array/description/
+
 class Solution:
     def checkPossibility(self, nums):
         """

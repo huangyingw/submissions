@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/maximum-average-subarray-ii/
-# Given an array consisting of n integers, find the contiguous subarray whose length is greater than or equal to k that
-# has the maximum average value. And you need to output the maximum average value.
-# If k is low (< 80) then calculate the cumulative sum array of nums and for each length find the average of all
-# subarrays. Any subarray longer than 2k can be divided into 2 subarrays of length at least k, at one of which has an
-# average at least as good as the whole subarray. Hence restrict to max length less than 2k.
-# For larger k, binary search the space of averages. has_average(x) determines whether there is some subarray of
-# length at least k with an average of at least x. Subtract x from all elements of nums, then for all prefixes of
-# length at least k, find the minimum sum prefix that still allows subarray to be length k.
-# Time - O(n log r) where r is range between max an min values of array. O(nk) for small k.
-# Space - O(n) fro small k, O(1) for binary search.
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

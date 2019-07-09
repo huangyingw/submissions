@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/house-robber/description/
+
 class Solution:
-    # 1 使用一个数组保存，动态规划
+
     def rob(self, nums):
         """
         :type nums: List[int]
@@ -13,14 +13,14 @@ class Solution:
         for i in range(1, len(nums)):
             memo[i + 1] = max(memo[i], memo[i - 1] + nums[i])
         return memo[len(nums)]
-    # 2 将方法1中的数组简化为两个变量保存
+
 
     def rob(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        # rob(i) = Math.max( rob(i - 2) + currentHouseValue, rob(i - 1) )
+
         if not nums:
             return 0
         pre1 = 0

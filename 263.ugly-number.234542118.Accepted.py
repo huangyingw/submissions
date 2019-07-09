@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/ugly-number/description/
+
 class Solution:
     def isUgly(self, num):
         """

@@ -23,5 +23,5 @@ class Solution(object):
                 for value in values:
                     new_result.append(currElement + value)
             result = new_result
-            # result = [prefix+value for prefix in result for value in values]
+
         return result

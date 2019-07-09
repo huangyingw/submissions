@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/
-# Given a binary tree, find the length of the longest consecutive sequence path.  The path refers to any sequence
-# of nodes from some starting node to any node in the tree along the parent-child connections. The longest consecutive
-# path must be from parent to child (cannot be the reverse).
-# Preorder traversal.  If a node is 1 + previous value then increment sequence length, else start a new sequence.
-# Time - O(n)
-# Space - O(1)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):

@@ -1,10 +1,10 @@
-# https://leetcode.com/problems/ambiguous-coordinates/description/
+
 class Solution(object):
-    # 1
-    # 策略
-    # 第一步：先加逗号，将数分成两部分
-    # 第二步：对每部分加点号
-    # 第三步：剔除不满足的情况
+
+
+
+
+
     def ambiguousCoordinates(self, S):
         S = S[1:-1]
 

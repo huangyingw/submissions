@@ -1,6 +1,6 @@
 class Solution(object):
     def rob(self, root):
-        # res[0] means skip curr, res[1] means get curr
+
         res = self.rob_helper(root)
         return max(res[0], res[1])
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/split-array-into-fibonacci-sequence/
+
 """
 Given a string S of digits, such as S = "123456579", we can split it into a Fibonacci-like sequence [123, 456, 579].
 Formally, a Fibonacci-like sequence is a list F of non-negative integers such that:

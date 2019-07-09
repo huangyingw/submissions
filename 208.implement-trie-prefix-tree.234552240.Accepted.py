@@ -6,7 +6,7 @@ trie.insert("apple");
 trie.search("apple");   // returns true
 trie.search("app");     // returns false
 trie.startsWith("app"); // returns true
-trie.insert("app");   
+trie.insert("app");
 trie.search("app");     // returns true
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
@@ -63,8 +63,3 @@ class Trie:
             else:
                 return False
         return True
-# Your Trie object will be instantiated and called as such:
-# obj = Trie()
-# obj.insert(word)
-# param_2 = obj.search(word)
-# param_3 = obj.startsWith(prefix)

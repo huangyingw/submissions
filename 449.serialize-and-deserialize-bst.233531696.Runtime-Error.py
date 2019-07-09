@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/serialize-and-deserialize-bst/
-# Design an algorithm to serialize and deserialize a binary search tree. There is no restriction on how your
-# serialization/deserialization algorithm should work. You just need to ensure that a binary search tree can be
-# serialized to a string and this string can be deserialized to the original tree structure.
-# Serialize by preorder traversal. String of values joined by spaces, no None markers.
-# Deserialze from deque. If first value is in range, use value as root and recurse left and right subtrees with ranges
-# less than and more than value respectively.
-# Time - O(n)
-# Space - O(n)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):
@@ -42,8 +42,8 @@ def deserialize(self, data):
     :type data: str
     :rtype: TreeNode
     """
-    preorder = deque(int(val) for val in data.split())  # convert to integers
-    # if first preorder is between low and high, create tree of all vals in that range with first preorder as root
+    preorder = deque(int(val) for val in data.split())
+
 
     def deserial(low, high):
         if preorder and low < preorder[0] < high:

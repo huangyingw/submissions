@@ -17,9 +17,9 @@ class Solution(object):
                 if matrix[i][j] == 0:
                     r.append(i)
                     c.append(j)
-        # row with zero
+
         r = set(r)
-        # column with zero
+
         c = set(c)
         for i in r:
             for j in range(n):

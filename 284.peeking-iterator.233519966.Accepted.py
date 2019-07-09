@@ -6,12 +6,12 @@ class PeekingIterator(object):
             self.front = self.it.next()
 
     def peek(self):
-        return self.front   # None if not iterator.hasNext()
+        return self.front
 
     def next(self):
         temp = self.front
         self.front = None
-        if self.it.hasNext():   # replace front
+        if self.it.hasNext():
             self.front = self.it.next()
         return temp
 

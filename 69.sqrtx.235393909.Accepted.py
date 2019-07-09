@@ -4,7 +4,7 @@ class Solution:
         low = 1
         if x == 0:
             return 0
-        # digit-by-digit calculation
+
         while high - low > 1:
             mid = (low + high) // 2
             if mid**2 > x:

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/expressive-words/description/
+
 class Solution:
     def expressiveWords(self, S, words):
         """

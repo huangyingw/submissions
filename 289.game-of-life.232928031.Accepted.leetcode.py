@@ -18,7 +18,7 @@ class Solution(object):
                 for n in range(N):
                     board[m][n] = board_next[m][n]
 
-    def liveOrDead(self, board, i, j):  # return 0-nothing,1-live,2-dead
+    def liveOrDead(self, board, i, j):
         ds = [(1, 1), (1, -1), (1, 0), (-1, 1), (-1, 0), (-1, -1), (0, 1), (0, -1)]
         live_count = 0
         M, N = len(board), len(board[0])

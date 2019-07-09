@@ -10,10 +10,10 @@ class Solution(object):
             if pos:
                 if pos == '..':
                     try:
-                        # up one level
+
                         result.pop()
                     except:
-                        # arrive top level
+
                         result = []
                 elif pos != '.':
                     result.append(pos)

@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/rectangle-overlap/
-# A rectangle is represented as a list [x1, y1, x2, y2], where (x1, y1) are the coordinates of its bottom-left corner,
-# and (x2, y2) are the coordinates of its top-right corner.
-# Two rectangles overlap if the area of their intersection is positive.
-# To be clear, two rectangles that only touch at the corner or edges do not overlap.
-# Given two (axis-aligned) rectangles, return whether they overlap.
-# Find overlap distance in x direction as the overlap of 2 line segments. If positive, check overlap in y direction.
-# Time - O(1)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

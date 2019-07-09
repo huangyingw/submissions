@@ -1,11 +1,11 @@
-# https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-# 1 使用栈
+
+
+
+
+
+
+
+
 
 
 class Solution:
@@ -31,7 +31,7 @@ class Solution:
         for i in range(1, len(queue)):
             res = min(res, queue[i] - queue[i - 1])
         return res
-# 2 使用递归
+
 
 
 class Solution2:
@@ -40,7 +40,7 @@ class Solution2:
         :type root: TreeNode
         :rtype: int
         """
-        # This is basically simplified by doing inorder Traversal, and then calculate min abs differece is easily done.
+
         iot_list = []
 
         def InOrderTraversal(node):

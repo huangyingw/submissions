@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/image-smoother/
-# Given a 2D integer matrix M representing the gray scale of an image, you need to design a smoother to make the gray
-# scale of each cell becomes the average gray scale (rounding down) of all the 8 surrounding cells and itself.
-# If a cell has less than 8 surrounding cells, then use as many as you can.
-# Iterate over M. For each cell, count and sum the neighbours (including self).
-# Time - O(mn)
-# Space - O(mn)
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -26,5 +26,5 @@ class Solution(object):
                             continue
                         total += M[r + dr][c + dc]
                         nbors += 1
-                smoothed[r][c] = total // nbors         # round down
+                smoothed[r][c] = total // nbors
         return smoothed

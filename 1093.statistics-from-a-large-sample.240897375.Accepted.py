@@ -1,18 +1,18 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/statistics-from-a-large-sample/
-# We sampled integers between 0 and 255, and stored the results in an array count:
-# count[k] is the number of integers we sampled equal to k.
-# Return the minimum, maximum, mean, median, and mode of the sample respectively, as an array of floating point numbers.
-# The mode is guaranteed to be unique.
-# Recall that the median of a sample is:
-# The middle element, if the elements of the sample were sorted and the number of elements is odd;
-# The average of the middle two elements, if the elements of the sample were sorted and the number of elements is even.
-# Iterate along count, updating the count of samples_seen.
-# Find the index or indices of the median element(s).
-# If 2 median elements, find their sum.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

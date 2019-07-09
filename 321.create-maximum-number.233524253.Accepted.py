@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/create-maximum-number/
-# Given two arrays of length m and n with digits 0-9 representing two numbers. Create the maximum number of
-# length k <= m + n from digits of the two. The relative order of the digits from the same array must be preserved.
-# Return an array of the k digits.
-# For each partition of i digits from nums1 and (i from 0 to k) and k-i digits from nums 2, find the max number from
-# each nums list using that many digits.  The overall max is the merge of 2 individual max numbers.  Merge by taking
-# the larger digit from the front, if equal look forward to the next position where the digits are different and take
-# the larger.  Single num largest uses a stack, popping all smaller digits provided there are enough remaining and
-# and adding whenever the stack has capacity.
-# Time - O(k * n**3), k*n to check each partition and convert to int, n**2 to merge (n to max_single() irrelevant)
-# Space - O(n)
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -33,7 +33,7 @@ class Solution(object):
     def max_single(self, nums, k):
         stack, n = [], len(nums)
         for i, num in enumerate(nums):
-            # stack not empty and num is more than top of stack and stack + remaining nums are more than k
+
             while stack and num > stack[-1] and (len(stack) + (n - i) > k):
                 stack.pop()
             if len(stack) < k:
@@ -48,7 +48,7 @@ class Solution(object):
                 use1 = False
             elif nums1[i] > nums2[j]:
                 use1 = True
-            else:       # nums1[i] == nums2[j]
+            else:
                 shift = 1
                 while i + shift < len(nums1) and j + shift < len(nums2) and nums1[i + shift] == nums2[j + shift]:
                     shift += 1

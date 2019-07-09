@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/subarray-product-less-than-k/
-# product of all the elements in the subarray is less than k.
-# Maintain a window with product <= k. For each num, add to window product. While window contains some nums and
-# product is too large, remove from window start. Increment result by window length since each subarray ending at end
-# is valid. If start > end then product == 1.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -17,12 +17,12 @@ class Solution(object):
         :rtype: int
         """
         subarrays = 0
-        start = 0           # index of window start
-        product = 1         # current product
+        start = 0
+        product = 1
         for end, num in enumerate(nums):
             product *= num
-            while product >= k and start <= end:    # remove from window if product too large and window non-zero
+            while product >= k and start <= end:
                 product //= nums[start]
                 start += 1
-            subarrays += end - start + 1            # if start = end + 1 then nothing added
+            subarrays += end - start + 1
         return subarrays

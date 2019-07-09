@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/palindromic-substrings/
-# Given a string, your task is to count how many palindromic substrings in this string. The substrings with different
-# start indexes or end indexes are counted as different substrings even they consist of same characters.
-# For each char or neighbouring pair of chars, extend outwards as long as left and right match.
-# Time - O(n**2)
-# Space - O(1)
+
+
+
+
+
+
 
 
 class Solution(object):

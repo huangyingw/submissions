@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/trapping-rain-water-ii/
-# Given an m x n matrix of positive integers representing the height of each unit cell in a 2D elevation map,
-# compute the volume of water it is able to trap after raining.
-# Simulate raising the water level from the outside of the map. Add to a heap all cells on the outer perimeter.
-# Pop the lowest cell and for each neighbour not previously visited, add water to the height of the original cell
-# and add neighbour to the heap.
-# Time - O(mn log mn)
-# Space - O(mn)
+
+
+
+
+
+
+
+
 import heapq
 
 

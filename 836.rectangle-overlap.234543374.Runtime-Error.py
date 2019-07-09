@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/rectangle-overlap/
+
 """
 A rectangle is represented as a list [x1, y1, x2, y2], where (x1, y1) are the coordinates of its bottom-left corner, and (x2, y2) are the coordinates of its top-right corner.
 Two rectangles overlap if the area of their intersection is positive.  To be clear, two rectangles that only touch at the corner or edges do not overlap.
@@ -22,7 +22,7 @@ class Solution1:
         :type rec2: List[int]
         :rtype: bool
         """
-        # return True only when [Re1x1,Re1x2] [Re2x1,Re2x2]  overlap and [Re1y1,Re1y2]  [Re2y1,Re2y2]
+
         if (rec1[0] <= rec2[0] < rec1[2] or rec2[0] <= rec1[0] < rec2[2]) and (rec1[1] <= rec2[1] < rec1[3] or rec2[1] <= rec1[1] < rec2[3]):
             return True
         return False

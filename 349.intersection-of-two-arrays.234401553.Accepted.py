@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/intersection-of-two-arrays/description/
+
 class Solution:
-    # 1 使用set集合以及函数intersection
+
     def intersection(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -8,9 +8,9 @@ class Solution:
         :rtype: List[int]
         """
         return list(set(nums1).intersection(set(nums2)))
-        # list(set(nums1)&set(nums2)) 同样可以
-    # 2 常规方法
-    # 先排序，然后遍历
+
+
+
 
     def intersection(self, nums1, nums2):
         """

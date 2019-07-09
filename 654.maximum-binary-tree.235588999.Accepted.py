@@ -1,9 +1,9 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -17,13 +17,13 @@ class Solution(object):
                 stack[-1].right = node
             stack.append(node)
         return stack[0]
-# SolutionII-recursive
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
+
 
 
 class SolutionII(object):

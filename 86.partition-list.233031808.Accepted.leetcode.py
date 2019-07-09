@@ -1,8 +1,8 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+
+
+
+
+
 
 
 class Solution(object):
@@ -31,5 +31,3 @@ class Solution(object):
         else:
             leftPtr.next = right.next
             return left.next
-# Time: O(N)
-# Space: O(N)

@@ -1,9 +1,9 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Codec:
@@ -18,7 +18,7 @@ class Codec:
                 preorder(root.left)
                 preorder(root.right)
             else:
-                seralizeTree.append('#,')
+                seralizeTree.append('
         seralizeTree = []
         preorder(root)
         return ''.join(seralizeTree)
@@ -30,7 +30,7 @@ class Codec:
         """
         def buildTree(preorder):
             value = preorder.pop(0)
-            if value == '#':
+            if value == '
                 return None
             node = TreeNode(int(value))
             node.left = buildTree(preorder)
@@ -38,6 +38,3 @@ class Codec:
             return node
         preorder = data.split(',')[:-1]
         return buildTree(preorder)
-# Your Codec object will be instantiated and called as such:
-# codec = Codec()
-# codec.deserialize(codec.serialize(root))

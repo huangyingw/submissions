@@ -6,12 +6,12 @@ Return true if and only if the two given trees with head nodes root1 and root2 a
 Note:
 Both of the given trees will have between 1 and 100 nodes.
 """
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):

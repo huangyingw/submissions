@@ -19,7 +19,7 @@ class Solution(object):
             return
         if grid[row][col] != '1':
             return
-        grid[row][col] = '#'
+        grid[row][col] = '
         self.merge(grid, row + 1, col)
         self.merge(grid, row - 1, col)
         self.merge(grid, row, col + 1)

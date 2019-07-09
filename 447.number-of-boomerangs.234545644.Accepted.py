@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/number-of-boomerangs/description/
+
 class Solution(object):
     def numberOfBoomerangs(self, points):
         """

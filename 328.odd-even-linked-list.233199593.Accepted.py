@@ -5,11 +5,11 @@
 	Given 1->2->3->4->5->NULL,
 	return 1->3->5->2->4->NULL.
 '''
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+
+
+
+
+
 
 
 class Solution(object):

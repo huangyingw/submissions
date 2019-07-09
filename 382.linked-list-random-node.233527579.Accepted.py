@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/linked-list-random-node/
-# Given a singly linked list, return a random node's value from the linked list. Each node must have the same
-# probability of being chosen.
-# Count length and move along a random number of nodes.  Alternatively if getRandom() is called many times, store
-# vals in a list and choose a random index (O(n) space and O(1) getRandom).
-# Alternatively, reservoir sampling.  Choose first item, for each subsequent ith item, replace chosen with ith with
-# probability 1/(1+i).  Slow due to multiple random samples.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
 import random
 
 

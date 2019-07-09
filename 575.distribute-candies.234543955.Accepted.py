@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/distribute-candies/description/
+
 class Solution:
     def distributeCandies(self, candies):
         """

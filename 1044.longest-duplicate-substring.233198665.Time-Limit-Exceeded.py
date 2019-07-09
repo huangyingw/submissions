@@ -91,5 +91,5 @@ class Solution(object):
                 start = suffix_array[index]
         if end == 0:
             return ""
-        # print start, end
+
         return S[start:start + end]

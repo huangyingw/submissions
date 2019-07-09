@@ -8,7 +8,7 @@ class Solution:
         def convert(string):
             stack = []
             for s in string:
-                if s == '#':
+                if s == '
                     if stack:
                         stack.pop()
                 else:

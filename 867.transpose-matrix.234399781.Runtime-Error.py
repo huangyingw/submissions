@@ -1,8 +1,8 @@
-# https://leetcode.com/problems/transpose-matrix/description/
+
 class Solution:
-    # 1
-    # 常规法
-    # O(mn)
+
+
+
     def transpose(self, A):
         """
         :type A: List[List[int]]
@@ -15,8 +15,8 @@ class Solution:
                 temp.append(A[r][c])
             trans.append(temp)
         return trans
-    # 2
-    # 提前构造矩阵，利用变化式 a[i][j] = b[j][i]
+
+
 
     def transpose(self, A):
         M, N = len(A), len(A[0])

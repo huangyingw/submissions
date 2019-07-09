@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/squares-of-a-sorted-array/
+
 """
 Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
 Example 1:
@@ -12,7 +12,7 @@ Note:
 -10000 <= A[i] <= 10000
 A is sorted in non-decreasing order.
 """
-# one line
+
 
 
 class Solution:
@@ -22,15 +22,15 @@ class Solution:
         :rtype: List[int]
         """
         return [a ** 2 for a in sorted(A, key=lambda a: abs(a))]
-# 不用内部排序sort的话：
-# 可以先找到临界点，把正数和负数的绝对值使用合并排序后再遍历一遍
-# 时间复杂度 O(n)+O(logn)
+
+
+
 
 
 class Solution(object):
     def sortedSquares(self, A):
         N = len(A)
-        # i, j: negative, positive parts
+
         j = 0
         while j < N and A[j] < 0:
             j += 1

@@ -13,7 +13,7 @@ class Solution(object):
                 a += 1
             Ans[i].append(1)
         return Ans
-# solution II
+
 
 
 class SolutionII(object):

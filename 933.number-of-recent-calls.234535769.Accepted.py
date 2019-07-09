@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/number-of-recent-calls/
+
 """
 Write a class RecentCounter to count recent requests.
 It has only one method: ping(int t), where t represents some time in milliseconds.
@@ -24,6 +24,3 @@ class RecentCounter(object):
         while self.q[0] < t - 3000:
             self.q.popleft()
         return len(self.q)
-# Your RecentCounter object will be instantiated and called as such:
-# obj = RecentCounter()
-# param_1 = obj.ping(t)

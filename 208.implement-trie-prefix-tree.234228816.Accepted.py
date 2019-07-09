@@ -1,5 +1,5 @@
 class TrieNode(object):
-    # https://leetcode.com/articles/implement-trie-prefix-tree/#trie-node-structure
+
     def __init__(self):
         """
         Initialize your data structure here.
@@ -66,7 +66,3 @@ class Trie(object):
         """
         node = self.searchPrefix(prefix)
         return node is not None
-        # Your Trie object will be instantiated and called as such:
-        # trie = Trie()
-        # trie.insert("somestring")
-        # trie.search("key")

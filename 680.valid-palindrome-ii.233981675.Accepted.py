@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/valid-palindrome-ii/
-# Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
-# Iterate over s from front and back. If chars do not match, check if the remainder after deleting either of the
-# unmatched chars is a palindrome.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
 
 
 class Solution(object):

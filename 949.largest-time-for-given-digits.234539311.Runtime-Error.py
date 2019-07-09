@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/largest-time-for-given-digits/
+
 """
 Given an array of 4 digits, return the largest 24 hour time that can be made.
 The smallest 24 hour time is 00:00, and the largest is 23:59.  Starting from 00:00, a time is larger if more time has elapsed since midnight.
@@ -13,9 +13,9 @@ Note:
 A.length == 4
 0 <= A[i] <= 9
 """
-# 第一个数字0,1,2  当第一个数字为2时，第二个只能为0,1,2,3
-# 第三个数字为0,1,2,3,4,5
-# 暴力法
+
+
+
 import itertools
 
 
@@ -29,7 +29,7 @@ class Solution2:
             if 0 <= hours < 24 and 0 <= mins < 60 and time > ans:
                 ans = time
         return "{:02}:{:02}".format(*divmod(ans, 60)) if ans >= 0 else ""
-# one line
+
 
 
 class Solution3:

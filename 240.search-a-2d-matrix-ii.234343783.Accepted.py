@@ -1,4 +1,4 @@
-# time complexity: O(m+n)
+
 class Solution:
     def searchMatrix(self, matrix, target):
         """

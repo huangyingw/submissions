@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/number-of-corner-rectangles/
-# Given a grid where each entry is only 0 or 1, find the number of corner rectangles.
-# A corner rectangle is 4 distinct 1s on the grid that form an axis-aligned rectangle.
-# Note that only the corners need to have the value 1. Also, all four 1s used must be distinct.
-# For each row, find the set of column indices that are 1 in the grid. Then for each pair of rows, find the common
-# columns and caclulate the numbe of rectangles as each uniqie pair.
-# Time - O(m**2 n)
-# Space - O(mn)
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

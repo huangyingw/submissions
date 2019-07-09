@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/24-game/
-# You have 4 cards each containing a number from 1 to 9. You need to judge whether they could operated
-# through *, /, +, -, (, ) to get the value of 24.
-# For any input list, iterate through every pair of numbers and combine them in all 6 possible ways. There are 6 ways
-# because addition and multiplication are commutative but subtraction and division are not. Form a new shorter list
-# from the result of the operation oin the pair and remaining unused numbers from the original list and recurse.
-# The base case is a list with one element. Numerical precision implies this may not be exactly 24 but the minimum
-# number that can eb formed is 1 / (9 * 9 * 9) and sets a bound on the tolerance.
-# Time - O(1) since here are a finite number of combinations.
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

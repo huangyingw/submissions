@@ -10,7 +10,3 @@ class Solution:
             return self.addBinary(a[:-1], b[:-1]) + "0"
         else:
             return self.addBinary(a[:-1], b[:-1]) + "1"
-    # second way
-    # return bin(eval('0b'+a) + eval('0b'+b))[2:]
-    # third way
-    # return ( bin(int(a,2)+int(b,2) ) )[2:]

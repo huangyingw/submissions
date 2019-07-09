@@ -9,11 +9,11 @@
 	Output: [[1,2],[3,10],[12,16]]
 	Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 '''
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+
+
+
+
+
 
 
 class Solution(object):

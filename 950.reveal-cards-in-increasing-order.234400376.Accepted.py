@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reveal-cards-in-increasing-order/description/
+
 """
 n a deck of cards, every card has a unique integer.  You can order the deck in any order you want.
 Initially, all the cards start face down (unrevealed) in one deck.

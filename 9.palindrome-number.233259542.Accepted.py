@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/palindrome-number/
-# Determine whether an integer is a palindrome. Do this without extra space.
-# Check equivalence of first and last characters, moving inwards.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
 
 
 class Solution(object):

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/count-binary-substrings/description/
+
 class Solution:
     def countBinarySubstrings(self, s):
         """

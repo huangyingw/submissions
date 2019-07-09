@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/decode-ways/
+
 """
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 'A' -> 1
@@ -27,18 +27,18 @@ class Solution:
             return 0
         care, dont = 0, 1
         for i in range(1, len(s)):
-            p, c = s[i - 1], s[i]  # p for previous, c for current
-            if c == "0":  # "must" consider "pc" together
+            p, c = s[i - 1], s[i]
+            if c == "0":
                 if not (p == "1" or p == "2"):
                     return 0
                 else:
                     care, dont = dont, 0
-            elif p == "0":  # "must" consider "c" alone
+            elif p == "0":
                 care, dont = 0, care
             else:
-                if 11 <= int(p + c) <= 26:  # we "can" consider "pc" together
+                if 11 <= int(p + c) <= 26:
                     care, dont = dont, dont + care
-                else:  # we "cant" consider "pc" together
+                else:
                     care, dont = 0, dont + care
         return dont + care
 

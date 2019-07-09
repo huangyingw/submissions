@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/index-pairs-of-a-string/
-# Given a text string and words (a list of strings), return all index pairs [i, j]
-# so that the substring text[i]...text[j] is in the list of words.
-# Repeatedly find each word in text until it is not found.
-# Start each find from the character after the previous find.
-# Time - O(mn log mn) for m words in text of length n
-# Space - O(mn)
+
+
+
+
+
+
+
 
 
 class Solution(object):

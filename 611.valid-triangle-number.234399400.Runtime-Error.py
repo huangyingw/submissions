@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-triangle-number/description/
+
 """
 Given an array consists of non-negative integers,
 your task is to count the number of triplets
@@ -15,8 +15,8 @@ Note:
 The length of the given array won't exceed 1000.
 The integers in the given array are in the range of [0, 1000].
 """
-# 1
-# 先找出组合
+
+
 from itertools import combinations
 
 
@@ -32,8 +32,8 @@ class Solution1:
                 return 1
             return 0
         return sum([is_triangle(*com) for com in combinations(nums, 3)])
-# 2
-# 先排序再计算
+
+
 
 
 class Solution2:

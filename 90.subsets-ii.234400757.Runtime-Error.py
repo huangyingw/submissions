@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/subsets-ii/description/
+
 """
 Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
 Note: The solution set must not contain duplicate subsets.
@@ -15,7 +15,7 @@ Output:
 ]
 """
 """
-这题与78#Subsets的唯一区别是input可以有重复的数字
+这题与78
 """
 
 
@@ -51,8 +51,8 @@ class Solution2:
         while queue:
             subset, start_index = queue.pop(0)
             results.append(subset)
-            for i in range(start_index, len(nums)):  # search for neighbors
-                if i != start_index and nums[i - 1] == nums[i]:  # work as `visited`
+            for i in range(start_index, len(nums)):
+                if i != start_index and nums[i - 1] == nums[i]:
                     continue
                 queue.append((subset + [nums[i]], i + 1))
 if __name__ == '__main__':

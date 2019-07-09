@@ -1,5 +1,5 @@
 class Solution:
-    # @return an integer
+
     def lengthOfLongestSubstring(self, s):
         longest, start, visited = 0, 0, [False for _ in xrange(256)]
         for i, char in enumerate(s):

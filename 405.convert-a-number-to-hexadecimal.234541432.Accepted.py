@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/convert-a-number-to-hexadecimal/discuss/183560/Python-20ms-beats-99.16
+
 class Solution(object):
-    # 常规方法
+
     def toHex(self, num):
         """
         :type num: int
@@ -33,7 +33,7 @@ class Solution(object):
                 res = d[num % 16] + res
                 num //= 16
             return res
-    # 递归方法
+
 
     def toHex(self, num):
         """

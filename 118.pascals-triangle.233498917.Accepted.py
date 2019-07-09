@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/pascals-triangle/
-# Given numRows, generate the first numRows of Pascal's triangle.
-# Next row is sum of consecutive pairs of items from previous row.
-# Time - O(n**2)
-# Space - O(n**2)
+
+
+
+
+
 
 
 class Solution(object):

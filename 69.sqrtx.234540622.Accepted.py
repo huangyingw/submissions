@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/sqrtx/description/
+
 class Solution:
-        # 1 标准版
+
     def mySqrt(self, x):
         """
         :type x: int
@@ -17,7 +17,7 @@ class Solution:
             else:
                 low = mid + 1
         return high
-    # 2 精确版
+
 
     def mySqrt(self, x):
         """

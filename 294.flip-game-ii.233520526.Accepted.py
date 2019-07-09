@@ -1,15 +1,15 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/flip-game-ii/
-# You are playing the following Flip Game with your friend: Given a string that contains only these two characters:
-# + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can
-# no longer make a move and therefore the other person will be the winner.
-# Write a function to determine if the starting player can guarantee a win.
-# Find every '++' in s and if there is no winning strategy for opponent after converting it to '--' then this is a
-# winning strategy.
-# Time - O(n * n!), if string contains only '+' then n - 1 choices for first pair to replace, (n - 1)(n - 3)
-# for second pair .. each replacement takes O(n)
-# Space - O(n * n!)
+
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):

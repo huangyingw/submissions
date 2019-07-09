@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/k-diff-pairs-in-an-array/
-# Given an array of integers and an integer k, you need to find the number of unique k-diff pairs in the array.
-# Here a k-diff pair is defined as an integer pair (i, j), where i and j are both numbers in the array and their
-# absolute difference is k.
-# Count the frequency of each num. If k is zero, count the duplicated nums. Else for each num, add to the result count
-# if num + k is in nums.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
+
 from collections import Counter
 
 

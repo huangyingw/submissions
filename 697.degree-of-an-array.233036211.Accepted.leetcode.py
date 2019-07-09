@@ -1,28 +1,28 @@
 class Solution(object):
-    # def findShortestSubArray(self, nums):
-    #     """
-    #     :type nums: List[int]
-    #     :rtype: int
-    #     """
-    #     res = len(nums)
-    #     counter = collections.Counter()
-    #     for num in nums:
-    #         counter[num] += 1
-    #     degree = max(counter.values())
-    #     for key, kdegree in counter.most_common():
-    #         if degree != kdegree:
-    #             break
-    #         res = min(res, self.smallestSubArray(nums, key, degree))
-    #     return res
-    # def smallestSubArray(self, nums, key, degree):
-    #     start = nums.index(key)
-    #     pos = start + 1
-    #     degree -= 1
-    #     while pos < len(nums) and degree != 0:
-    #         if nums[pos] == key:
-    #             degree -= 1
-    #         pos += 1
-    #     return pos - start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def findShortestSubArray(self, nums):
         left, right, count = {}, {}, {}
         for i, x in enumerate(nums):

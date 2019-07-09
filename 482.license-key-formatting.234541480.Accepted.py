@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/license-key-formatting/description/
+
 class Solution:
-    # 理解题目意思很重要
+
     def licenseKeyFormatting(self, S, K):
         S = S.upper()
         listS = S.split("-")

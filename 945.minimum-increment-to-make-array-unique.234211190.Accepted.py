@@ -18,7 +18,7 @@ class Solution(object):
             else:
                 num_set.add(v)
         holes = holes - len(num_set)
-        # find a hole for these numbers
+
         for hole in range(left + 1, right):
             if holes == 0 or len(duplicate) == 0:
                 break

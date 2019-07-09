@@ -1,8 +1,8 @@
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+
+
+
+
+
 
 
 class Solution(object):
@@ -17,11 +17,11 @@ class Solution(object):
         intervals.sort(key=lambda x: x.start)
         pos = 0
         while pos < len(intervals):
-            # left of pos
+
             if newInterval.end < intervals[pos].start:
                 intervals.insert(pos, newInterval)
                 return intervals
-            # overlap with pos
+
             if self.check_overlap(intervals[pos], newInterval):
                 temp = intervals.pop(pos)
                 newInterval = self.merge_intervals(temp, newInterval)

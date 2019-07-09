@@ -16,12 +16,12 @@ Clarification: The above format is the same as how LeetCode serializes a binary 
 so please be creative and come up with different approaches yourself.
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
 """
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Codec:
@@ -55,6 +55,3 @@ class Codec:
             root.right = deserializeHeper(l)
             return root
         return deserializeHeper(data.split(','))
-# Your Codec object will be instantiated and called as such:
-# codec = Codec()
-# codec.deserialize(codec.serialize(root))

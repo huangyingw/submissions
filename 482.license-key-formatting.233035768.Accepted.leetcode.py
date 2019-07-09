@@ -5,7 +5,7 @@ class Solution(object):
         :type K: int
         :rtype: str
         """
-        # https://leetcode.com/problems/license-key-formatting/discuss/96497/Python-solution
+
         S = S.upper().replace('-', '')
         ls = len(S)
         if ls % K == 0:

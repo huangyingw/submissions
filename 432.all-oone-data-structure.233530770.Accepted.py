@@ -1,16 +1,16 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/all-oone-data-structure/
-# Implement a data structure supporting the following operations:
-# Inc(Key) - Inserts a new key with value 1. Or increments existing key by 1. Key is guaranteed to be non-empty string.
-# Dec(Key) - If Key's value is 1, remove it from the data structure. Otherwise decrements an existing key by 1. If the
-# key does not exist, this function does nothing. Key is guaranteed to be a non-empty string.
-# GetMaxKey() - Returns one of the keys with maximal value. If no element exists, return an empty string "".
-# GetMinKey() - Returns one of the keys with minimal value. If no element exists, return an empty string "".
-# Create doubly linked list of blocks. Each block contains all the keys for a given value. Blocks are in value order.
-# Also maintain a mapping from key to its block.
-# Time - O(1), all operations
-# Space - O(n)
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Block(object):
@@ -38,11 +38,11 @@ class AllOne(object):
         """
         Initialize your data structure here.
         """
-        self.begin = Block()  # sentinel
-        self.end = Block()  # sentinel
+        self.begin = Block()
+        self.end = Block()
         self.begin.after = self.end
         self.end.before = self.begin
-        self.mapping = {}  # key to block
+        self.mapping = {}
 
     def inc(self, key):
         """
@@ -50,19 +50,19 @@ class AllOne(object):
         :type key: str
         :rtype: void
         """
-        if not key in self.mapping:  # find current block and remove key
+        if not key in self.mapping:
             current_block = self.begin
         else:
             current_block = self.mapping[key]
             current_block.keys.remove(key)
-        if current_block.val + 1 != current_block.after.val:  # insert new block
+        if current_block.val + 1 != current_block.after.val:
             new_block = Block(current_block.val + 1)
             current_block.insert_after(new_block)
         else:
             new_block = current_block.after
-        new_block.keys.add(key)  # update new_block
-        self.mapping[key] = new_block  # ... and mapping of key to new_block
-        if not current_block.keys and current_block.val != 0:  # delete current block if not seninel
+        new_block.keys.add(key)
+        self.mapping[key] = new_block
+        if not current_block.keys and current_block.val != 0:
             current_block.remove()
 
     def dec(self, key):
@@ -74,17 +74,17 @@ class AllOne(object):
         if not key in self.mapping:
             return
         current_block = self.mapping[key]
-        del self.mapping[key]  # could use self.mapping.pop(key)
+        del self.mapping[key]
         current_block.keys.remove(key)
         if current_block.val != 1:
-            if current_block.val - 1 != current_block.before.val:  # insert new block
+            if current_block.val - 1 != current_block.before.val:
                 new_block = Block(current_block.val - 1)
                 current_block.before.insert_after(new_block)
             else:
                 new_block = current_block.before
             new_block.keys.add(key)
             self.mapping[key] = new_block
-        if not current_block.keys:  # delete current block
+        if not current_block.keys:
             current_block.remove()
 
     def getMaxKey(self):
@@ -94,7 +94,7 @@ class AllOne(object):
         """
         if self.end.before.val == 0:
             return ""
-        key = self.end.before.keys.pop()  # pop and add back to get arbitrary (but not random) element
+        key = self.end.before.keys.pop()
         self.end.before.keys.add(key)
         return key
 

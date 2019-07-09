@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/range-addition-ii/description/
+
 class Solution:
-    # 1
+
     def maxCount1(self, m, n, ops):
         """
         :type m: int
@@ -13,7 +13,7 @@ class Solution:
             a = min(i[0], a)
             b = min(i[1], b)
         return a * b
-    # 2
+
 
     def maxCount2(self, m, n, ops):
         if not ops:

@@ -1,6 +1,6 @@
-# time and space complexity: O(mn)
+
 class Solution:
-    # dfs
+
     def numIslands(self, grid):
         """
         :type grid: List[List[str]]
@@ -13,7 +13,7 @@ class Solution:
                 return 1
             return 0
         return sum(sink(i, j) for i in range(len(grid)) for j in range(len(grid[i])))
-    # union find
+
 
     def numIslands(self, grid):
         """

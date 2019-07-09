@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/word-subsets/description/
+
 class Solution:
     def wordSubsets(self, A, B):
         uni = collections.Counter()

@@ -7,7 +7,7 @@ class Solution(object):
         MAX, MIN = 2147483647, -2147483648
         if str == "":
             return 0
-        str = str.strip()  # remove white space
+        str = str.strip()
         base, sign, index = 0, 1, 0
         if str[index] == '-' or str[index] == '+':
             sign = -1 if str[index] == '-' else 1

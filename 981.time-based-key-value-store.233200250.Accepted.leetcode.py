@@ -35,7 +35,3 @@ class TimeMap(object):
             if index - 1 == len(t_values) or index == 0:
                 return ''
             return self.key_map[key][index - 1]
-# Your TimeMap object will be instantiated and called as such:
-# obj = TimeMap()
-# obj.set(key,value,timestamp)
-# param_2 = obj.get(key,timestamp)

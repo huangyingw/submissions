@@ -1,21 +1,21 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/design-circular-deque/
-# Design your implementation of the circular double-ended queue (deque).
-# Your implementation should support following operations:
-# MyCircularDeque(k): Constructor, set the size of the deque to be k.
-# insertFront(): Adds an item at the front of Deque. Return true if the operation is successful.
-# insertLast(): Adds an item at the rear of Deque. Return true if the operation is successful.
-# deleteFront(): Deletes an item from the front of Deque. Return true if the operation is successful.
-# deleteLast(): Deletes an item from the rear of Deque. Return true if the operation is successful.
-# getFront(): Gets the front item from the Deque. If the deque is empty, return -1.
-# getRear(): Gets the last item from Deque. If the deque is empty, return -1.
-# isEmpty(): Checks whether Deque is empty or not.
-# isFull(): Checks whether Deque is full or not.
-# Use a python list as a circular array. Adding an extra space allows distinction between sull and empty queues.
-# Deleted elements are not removed, pointers are just moved.
-# Time - O(n)
-# Space - O(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class MyCircularDeque(object):

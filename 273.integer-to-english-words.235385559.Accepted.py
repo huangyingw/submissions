@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/integer-to-english-words/
-# Convert a non-negative integer to its english words representation.
-# Given input is guaranteed to be less than 2**31 - 1.
-# Build the words from left to right in blocks of 3 digits.
-# Time - O(log n)
-# Space - O(log n)
+
+
+
+
+
+
 from collections import deque
 
 
@@ -29,7 +29,7 @@ class Solution(object):
         if num == 0:
             return "Zero"
         while num:
-            num, section = divmod(num, 1000)        # section is the block of 3 digits
+            num, section = divmod(num, 1000)
             hundreds, tens = divmod(section, 100)
             if section and digits > 0:
                 english.appendleft(digits_to_word[digits])

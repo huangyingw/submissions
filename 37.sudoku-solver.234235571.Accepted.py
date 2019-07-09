@@ -4,7 +4,7 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        # https://leetcode.com/discuss/84831/java-backtracking-stack-20ms
+
         empty = []
         for i in range(9):
             for j in range(9):

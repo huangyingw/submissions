@@ -1,9 +1,9 @@
-# class Solution(object):
-#     def letterCombinations(self, digits):
-#         """
-#         :type digits: str
-#         :rtype: List[str]
-#         """
+
+
+
+
+
+
 dmap = {'2': 'abc',
         '3': 'def',
         '4': 'ghi',
@@ -18,7 +18,7 @@ dmap = {'2': 'abc',
 
 class Solution(object):
     def letterCombinations(self, digits):
-        # DFS
+
         result = []
         ls = len(digits)
         if ls == 0:

@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/making-a-large-island/
-# In a 2D grid of 0s and 1s, we change at most one 0 to a 1.
-# After, what is the size of the largest island? (An island is a 4-directionally connected group of 1s).
-# For each cell of the grid, find the area of its island and the set of cells neighbouring the island with depth-first
-# search. Map each neighbour cell to a list of areas of neighbouring islands. Find the cell with the largest sum of
-# neighbouring islands.
-# Time - O(mn)
-# Space - O(mn)
+
+
+
+
+
+
+
+
 from collections import defaultdict
 
 
@@ -21,16 +21,16 @@ class Solution(object):
         nbors = ((0, 1), (1, 0), (-1, 0), (0, -1))
 
         def island(r, c):
-            if r < 0 or r >= rows or c < 0 or c >= cols:    # outside grid
+            if r < 0 or r >= rows or c < 0 or c >= cols:
                 return 0
-            if grid[r][c] == 2:                             # already explored
+            if grid[r][c] == 2:
                 return 0
-            if grid[r][c] == 0:                             # neighbour
+            if grid[r][c] == 0:
                 edge.add((r, c))
                 return 0
-            grid[r][c] = 2                                  # set to visited
+            grid[r][c] = 2
             return 1 + sum(island(r + dr, c + dc) for dr, dc in nbors)
-        cell_to_areas = defaultdict(int)                    # map each neighbour cell to list of areas of islands
+        cell_to_areas = defaultdict(int)
         for r in range(rows):
             for c in range(cols):
                 edge = set()
@@ -38,6 +38,6 @@ class Solution(object):
                 if area != 0:
                     for cell in edge:
                         cell_to_areas[cell] += area
-        if not cell_to_areas:                               # grid empty or full
+        if not cell_to_areas:
             return 1 if grid[0][0] == 0 else rows * cols
         return 1 + max(areas for areas in cell_to_areas.values())

@@ -1,24 +1,24 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/data-stream-as-disjoint-intervals/
-# Given a data stream input of non-negative integers a1, a2, ..., an, ..., summarize the numbers seen so far as a
-# list of disjoint intervals in order of interval starting value.
-# Create a wrapper class for interval that adds a parent attribute.  For each number map it to an IntervalNode which
-# may itself be mapped to further IntervalNodes in a tree.  Separately track all ultimate intervals in a set.
-# When a new value is added, check for integers above and below for their ultimate parent intervals.  Collapsing the
-# tree in a union-find structure.  If only one is found, update that interval with the new value.
-# If both are found, update the lower interval to merge them, remove the upper interval and update the parent of the
-# upper IntervalNode to the lower IntervalNode.
-# Alternatively store intervals as an sorted list with O(n) to insert then sort then O(1) to getIntervals().
-# Alternatively store vals as an unsorted list then sort the list and merge to form intervals in getIntervals().
-# Alternatively, use BST.
-# Time - O(log*n) to find parent,  O(n log n) to sort intervals
-# Space - O(n)
-# Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class IntervalNode(object):
@@ -32,8 +32,8 @@ class SummaryRanges(object):
         """
         Initialize your data structure here.
         """
-        self.parents = {}           # mapping from val to its IntervalNode
-        self.intervals = set()      # all intervals that have not been joined
+        self.parents = {}
+        self.intervals = set()
 
     def get_parent(self, v):
         if v not in self.parents:
@@ -49,11 +49,11 @@ class SummaryRanges(object):
         :type val: int
         :rtype: void
         """
-        if val in self.parents:             # already seen val, ignore
+        if val in self.parents:
             return
         lower = self.get_parent(val - 1)
         upper = self.get_parent(val + 1)
-        if lower and upper:                 # update lower, remove upper
+        if lower and upper:
             lower.inner.end = upper.inner.end
             self.parents[val] = lower
             upper.parent = lower

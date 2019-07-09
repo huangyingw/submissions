@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/spiral-matrix-ii/description/
+
 """
 Given a positive integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
 Example:
@@ -13,8 +13,8 @@ Output:
 
 
 class Solution:
-    # 1
-    # 对应54#Spiral Matrix的逆运算
+
+
     def generateMatrix(self, n):
         """
         :type n: int
@@ -37,8 +37,8 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return seen
-    # 2
-    # 更清晰的一种写法
+
+
 
     def generateMatrix2(self, n):
         """

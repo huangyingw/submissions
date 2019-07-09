@@ -1,17 +1,17 @@
 class Solution(object):
-    # def sortedSquares(self, A):
-    #     """
-    #     :type A: List[int]
-    #     :rtype: List[int]
-    #     """
-    #     # Directly sort
-    #     return sorted(x * x for x in A)
+
+
+
+
+
+
+
     def sortedSquares(self, A):
         pos = 0
         while pos < len(A) and A[pos] < 0:
             pos += 1
-        # pos point to first positve
-        # npos point to larget negative
+
+
         npos = pos - 1
         res = []
         while pos < len(A) and npos >= 0:

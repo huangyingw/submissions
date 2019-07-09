@@ -1,18 +1,18 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/the-maze-iii/
-# There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up (u),
-# down (d), left (l) or right (r), but it won't stop rolling until hitting a wall. When the ball stops, it could choose
-# the next direction. There is also a hole in this maze. The ball will drop into the hole if it rolls on to the hole.
-# Given the ball position, the hole position and the maze, find out how the ball could drop into the hole by moving
-# the shortest distance. The distance is defined by the number of empty spaces traveled by the ball from the start
-# position (excluded) to the hole (included). Output the moving directions by using 'u', 'd', 'l' and 'r'. Since there
-# could be several different shortest ways, you should output the lexicographically smallest way.
-# If the ball cannot reach the hole, output "impossible".
-# Deque stores positions and previous direction. If can move in same direction, add to back of deque. If cannot, try
-# to move in perpendicular directions by adding to front of deque.
-# Time - O(mn)
-# Space - O(mn)
+
+
+
+
+
+
+
+
+
+
+
+
+
 from collections import deque
 
 
@@ -35,8 +35,8 @@ class Solution(object):
             return dirn in {"d", "u"}
 
         def perpendicular(dirn):
-            return ["r", "l"] if vertical(dirn) else ["u", "d"]     # reverse lexicographical order
-        visited = set()  # stores tuples (r, c, dirn)
+            return ["r", "l"] if vertical(dirn) else ["u", "d"]
+        visited = set()
         queue = deque()
         dirns = {"d": (1, 0), "u": (-1, 0), "r": (0, 1), "l": (0, -1)}
         for dirn in "dlru":
@@ -50,12 +50,12 @@ class Solution(object):
             nm = maze_cell(r + dr, c + dc)
             if nm == -1:
                 return "".join(moves)
-            # move in same direction as previous if possible
+
             elif nm == 0:
-                queue.append((r + dr, c + dc, moves))   # add to back of queue
-            # else move in a perpendicular direction if possible and not at start
+                queue.append((r + dr, c + dc, moves))
+
             elif [r, c] != ball:
                 trial_dirns = perpendicular(moves[-1])
                 for trial_dirn in trial_dirns:
-                    queue.appendleft((r, c, moves + [trial_dirn]))  # add to front of queue
+                    queue.appendleft((r, c, moves + [trial_dirn]))
         return "impossible"

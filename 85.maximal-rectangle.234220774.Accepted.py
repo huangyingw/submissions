@@ -4,7 +4,7 @@ class Solution(object):
         :type matrix: List[List[str]]
         :rtype: int
         """
-        # https://discuss.leetcode.com/topic/6650/share-my-dp-solution/2
+
         if matrix is None or len(matrix) == 0:
             return 0
         ls_row, ls_col = len(matrix), len(matrix[0])

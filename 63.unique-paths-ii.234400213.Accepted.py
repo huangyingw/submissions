@@ -1,4 +1,4 @@
-# https://leetcode.com/submissions/detail/193955775/
+
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid):
         """

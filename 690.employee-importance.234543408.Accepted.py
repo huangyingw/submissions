@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/employee-importance/description/
+
 """
 You are given a data structure of employee information, which includes the employee's unique id,
 his importance value and his direct subordinates' id.
@@ -15,17 +15,17 @@ Note:
 One employee has at most one direct leader and may have several subordinates.
 The maximum number of employees won't exceed 2000.
 """
-# Employee info
+
 
 
 class Employee:
     def __init__(self, id, importance, subordinates):
-        # It's the unique id of each node.
-        # unique id of this employee
+
+
         self.id = id
-        # the importance value of this employee
+
         self.importance = importance
-        # the id of direct subordinates
+
         self.subordinates = subordinates
 
 

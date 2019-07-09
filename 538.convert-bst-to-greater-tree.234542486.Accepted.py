@@ -1,11 +1,11 @@
-# https://leetcode.com/problems/convert-bst-to-greater-tree/description/
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-# 1 使用递归
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -24,7 +24,7 @@ class Solution(object):
                 visit(root.left)
         visit(root)
         return root
-# 2 非递归
+
 
 
 class Solution(object):

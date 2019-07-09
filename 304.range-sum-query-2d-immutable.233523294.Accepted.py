@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/range-sum-query-2d-immutable/
-# Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner
-# (row1, col1) and lower right corner (row2, col2) where row1 ≤ row2 and col1 ≤ col2.
-# You may assume that the matrix does not change.  There are many calls to sumRegion function.
-# Store cumulative sums to each cell as cell value + cumulative sum to previous row + cumulative sum to previous col -
-# cumulative sum to previous row and col.
-# Time - O(m * n) to initialise, O(1) for sumRegion()
-# Space - O(1)
+
+
+
+
+
+
+
+
 
 
 class NumMatrix(object):

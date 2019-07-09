@@ -40,8 +40,8 @@ class Solution(object):
             if r < 0 or c < 0 or r >= m or c >= n or grid[r][c] != grid[r0][c0] or (r, c) in visited:
                 return
             visited.append((r, c))
-            # check if the current row, col index is edge of the matrix
-            # if not then check adjacent cells doesnt have same value as grid[r0][c0] then add in border
+
+
             if (r == 0 or c == 0 or r == m - 1 or c == n - 1 or
                 (r + 1 < m and grid[r + 1][c] != grid[r0][c0]) or
                 (r - 1 >= 0 and grid[r - 1][c] != grid[r0][c0]) or

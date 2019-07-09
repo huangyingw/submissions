@@ -1,5 +1,5 @@
-# https://leetcode.com/problems/delete-operation-for-two-strings/description/
-# 1 Runtime Error
+
+
 
 
 class Solution:
@@ -13,8 +13,8 @@ class Solution:
             return 1 + self.lcs(s1, s2, m - 1, n - 1)
         else:
             return max(self.lcs(s1, s2, m, n - 1), self.lcs(s1, s2, m - 1, n))
-# 2
-# add memory
+
+
 
 
 class Solution:
@@ -31,7 +31,7 @@ class Solution:
             return memo[m][n]
         memo = [[0 for i in range(len(word2) + 1)] for j in range(len(word1) + 1)]
         return len(word1) + len(word2) - 2 * lcs(word1, word2, len(word1), len(word2), memo)
-# 3 dict moemo
+
 
 
 class Solution:
@@ -49,7 +49,7 @@ class Solution:
                 memo[i, j] = ans
             return memo[i, j]
         return dp(0, 0)
-# 4 无递归
+
 
 
 class Solution:
@@ -64,7 +64,7 @@ class Solution:
                     d[i][j] = max(d[i - 1][j], d[i][j - 1])
         len_lcs = d[L1 - 1][L2 - 1]
         return L1 + L2 - 2 * len_lcs
-# 5
+
 
 
 class Solution:

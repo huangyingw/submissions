@@ -1,5 +1,5 @@
 class MyHashMap(object):
-    # https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
+
     def __init__(self):
         """
         Initialize your data structure here.
@@ -54,14 +54,14 @@ class MyHashMap(object):
 
 
 def find(bucket, key):
-    # find prev node of this key
+
     node = bucket
     prev = None
     while node is not None and node.key != key:
         prev = node
         node = node.next
     return prev
-# Basic node in hash map
+
 
 
 class ListNode():
@@ -69,8 +69,3 @@ class ListNode():
         self.key = key
         self.val = val
         self.next = None
-# Your MyHashMap object will be instantiated and called as such:
-# obj = MyHashMap()
-# obj.put(key,value)
-# param_2 = obj.get(key)
-# obj.remove(key)

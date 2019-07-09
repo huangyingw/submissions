@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sort-array-by-parity-ii/description/
+
 class Solution:
     def sortArrayByParityII(self, A):
         odd_list = []

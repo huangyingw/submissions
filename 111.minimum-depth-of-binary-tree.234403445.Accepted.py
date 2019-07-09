@@ -1,13 +1,13 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
-    # 1 递归，特别需要注意，在计算叶子节点时与maxDepth的区别
+
     def minDepth(self, root):
         """
         :type root: TreeNode
@@ -20,7 +20,7 @@ class Solution(object):
         elif not root.right:
             return self.minDepth(root.left) + 1
         return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
-        # DFS
+
 
         def minDepth1(self, root):
             if not root:
@@ -29,7 +29,7 @@ class Solution(object):
                 return max(self.minDepth(root.left), self.minDepth(root.right)) + 1
             else:
                 return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
-        # BFS
+
 
         def minDepth(self, root):
             if not root:

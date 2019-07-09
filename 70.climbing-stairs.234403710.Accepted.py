@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/climbing-stairs/description/
+
 class Solution:
-    # 1
+
     def climbStairs(self, n):
         """
         :type n: int
@@ -17,4 +17,3 @@ class Solution:
             temp = a + b
             a, b = b, temp
         return temp
-    # 2 使用递归，可能会溢出

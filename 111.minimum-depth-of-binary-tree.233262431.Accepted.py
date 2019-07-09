@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/minimum-depth-of-binary-tree/
-# Given a binary tree, find its minimum depth.
-# The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-# If either subtrees is not present, return 1 + minDepth of existing subtree.  If both (or neither) subtrees, return
-# 1 + min of subtree minDepths
-# Time - O(n)
-# Space - O(n)
-# Definition for a binary tree node.
+
+
+
+
+
+
+
+
 
 
 class TreeNode(object):

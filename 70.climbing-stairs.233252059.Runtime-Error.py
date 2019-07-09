@@ -11,5 +11,3 @@ class Solution(object):
         for index in range(2, n):
             dp[index] = dp[index - 1] + dp[index - 2]
         return dp[n - 1]
-# Time: O(N)
-# Space: O(N)

@@ -22,5 +22,3 @@ class Solution(object):
                 return True
         except Exception as e:
             return False
-# Time: O(1)
-# Space: O(1)

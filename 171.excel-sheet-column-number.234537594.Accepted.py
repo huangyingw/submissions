@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/excel-sheet-column-number/description/
+
 class Solution:
-    # 1 常规法
+
     def titleToNumber(self, s):
         """
         :type s: str
@@ -13,8 +13,8 @@ class Solution:
             res += (alpha.index(i) + 1) * base
             base *= 26
         return res
-    # 2 一行Python法
-    # 利用reduce函数与lambda
+
+
 
     def titleToNumber(self, s):
         """

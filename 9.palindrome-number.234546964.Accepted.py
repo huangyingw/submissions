@@ -1,5 +1,5 @@
 class Solution:
-        # function1
+
     def isPalindrome(self, x):
         """
         :type x: int
@@ -17,7 +17,7 @@ class Solution:
         if left - right >= 0:
             return True
         return False
-    # function2
+
 
     def isPalindrome(self, x):
         return str(x) == str(x)[::-1]

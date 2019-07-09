@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/maximal-rectangle/
-# Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
-# For each row build a 'histogram' of the number of 1s above and including each column.  Then proceed as for problem 084
-# and pop a column off the stack whenever its 2 boundaries are lower.
-# Time - O(m*n)
-# Space - O(n)
+
+
+
+
+
+
 
 
 class Solution(object):

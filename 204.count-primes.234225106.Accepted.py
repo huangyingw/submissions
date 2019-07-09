@@ -4,7 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity
+
         isPrime = [True] * n
         for i in xrange(2, n):
             if i * i >= n:

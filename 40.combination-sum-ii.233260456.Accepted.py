@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/combination-sum-ii/
-# Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
-# Each number in C may only be used once in the combination.
-# All numbers (including target) will be positive integers.
-# The solution set must not contain duplicate combinations.
-# Count the frequency of each number in candidates.  For each number subtract all possible numbers of copies up to
-# the count and without exceeding target and recurse for the next number.  Alternative iterative version below.
-# Time - O((f+1)^n) where f is the max frequency of any number and n is the number of distinct numbers
+
+
+
+
+
+
+
+
 from collections import Counter
 
 
@@ -33,7 +33,7 @@ class Solution(object):
             if i * freq[next][0] > target:
                 break
             self.combos(freq, next + 1, target - i * freq[next][0], partial + [freq[next][0]] * i, results)
-# Iterative version of same procedure.
+
 
 
 class Solution_Iterative(object):

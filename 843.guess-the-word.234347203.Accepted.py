@@ -1,13 +1,13 @@
-# """
-# This is Master's API interface.
-# You should not implement it, or speculate about its implementation
-# """
-# class Master:
-#    def guess(self, word):
-#        """
-#        :type word: str
-#        :rtype int
-#        """
+
+
+
+
+
+
+
+
+
+
 from collections import defaultdict
 
 

@@ -20,5 +20,3 @@ class Solution(object):
                 else:
                     dp[row][col] = (dp[row][col - 1] and s2[col - 1] == s3[row + col - 1]) or (dp[row - 1][col] and s1[row - 1] == s3[row + col - 1])
         return dp[len(s1)][len(s2)]
-# Time: O(m*n)
-# Space: O(m*n)

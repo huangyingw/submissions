@@ -1,7 +1,7 @@
-# https://leetcode.com/submissions/detail/185625748/
+
 class Solution:
-    # 1
-    # 使用left保存当前长度
+
+
     def compress(self, chars):
         """
         :type chars: List[str]

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/goat-latin/description/
+
 class Solution:
     def toGoatLatin(self, S):
         """

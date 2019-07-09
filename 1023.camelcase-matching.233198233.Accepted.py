@@ -4,20 +4,20 @@ Given a list of queries, and a pattern, return an answer list of booleans, where
 Example 1:
 Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FB"
 Output: [true,false,true,true,false]
-Explanation: 
+Explanation:
 "FooBar" can be generated like this "F" + "oo" + "B" + "ar".
 "FootBall" can be generated like this "F" + "oot" + "B" + "all".
 "FrameBuffer" can be generated like this "F" + "rame" + "B" + "uffer".
 Example 2:
 Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBa"
 Output: [true,false,true,false,false]
-Explanation: 
+Explanation:
 "FooBar" can be generated like this "Fo" + "o" + "Ba" + "r".
 "FootBall" can be generated like this "Fo" + "ot" + "Ba" + "ll".
 Example 3:
 Input: queries = ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], pattern = "FoBaT"
 Output: [false,true,false,false,false]
-Explanation: 
+Explanation:
 "FooBarTest" can be generated like this "Fo" + "o" + "Ba" + "r" + "T" + "est".
 Note:
 1. 1 <= queries.length <= 100
@@ -42,7 +42,7 @@ class Solution(object):
             flag = True
             if len(patterns) == len(splitter):
                 for index in range(len(patterns)):
-                    # print patterns[index], splitter[index]
+
                     p_i, s_i = 1, 1
                     if patterns[index][0] == splitter[index][0]:
                         while p_i < len(patterns[index]) and s_i < len(splitter[index]):

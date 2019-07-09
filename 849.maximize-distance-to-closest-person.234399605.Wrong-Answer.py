@@ -1,10 +1,10 @@
-# https://leetcode.com/problems/maximize-distance-to-closest-person/description/
+
 class Solution:
-    # 1
-    # [1,0,0,0,1] output:2
-    # [0,0,0,1] outpu:#
-    # [0,0,0,1,0,0] output:3
-    # 找连续的0
+
+
+
+
+
     def maxDistToClosest(self, seats):
         """
         :type seats: List[int]
@@ -22,7 +22,7 @@ class Solution:
         tail_dis = cur_dis
         max_dis = ((max_dis + 1) // 2, head_dis, tail_dist)
         return max_dis
-    # 2
+
 
     def maxDistToClosest(self, seats):
         start, end = 0, len(seats) - 1

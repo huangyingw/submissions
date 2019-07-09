@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/design-hashmap/description/
+
 """
 Design a HashMap without using any built-in hash table libraries.
 To be specific, your design should include these functions:
@@ -53,8 +53,3 @@ class MyHashMap1(object):
         :rtype: void
         """
         self.table[key] = -1
-# Your MyHashMap object will be instantiated and called as such:
-# obj = MyHashMap()
-# obj.put(key,value)
-# param_2 = obj.get(key)
-# obj.remove(key)

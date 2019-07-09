@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/game-of-life/
+
 class Solution(object):
     def gameOfLife(self, board):
         """

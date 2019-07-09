@@ -1,13 +1,13 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/word-pattern/
-# Given a pattern and a string str, find if str follows the same pattern.
-# Here follow means a full match, so that there is a bijection between a letter in pattern and a non-empty word in str.
-# You may assume pattern contains only lowercase letters and str contains lowercase letters separated by a single space.
-# Iterate over pairs of pattern chars and words, creating 2 mappings from pattern char to word and word to pattern
-# char. If a word or pattern char has been mapped differently already then return False.
-# Time - O(m + n)
-# Space - O(m + n)
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -18,7 +18,7 @@ class Solution(object):
         :rtype: bool
         """
         str = str.split()
-        if len(str) != len(pattern):        # early return if lengths do not match
+        if len(str) != len(pattern):
             return False
         p_to_s, s_to_p = {}, {}
         for w, c in zip(str, pattern):

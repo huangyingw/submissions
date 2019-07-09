@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reverse-integer/description/
+
 class Solution:
     def reverse(self, x):
         """

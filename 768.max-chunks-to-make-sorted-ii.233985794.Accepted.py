@@ -1,14 +1,14 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
-# Given an array arr of integers (not necessarily distinct), we split the array into some number of "chunks"
-# (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
-# What is the most number of chunks we could have made?
-# Iterate from right to left, finding the minimum value to the right of each number. Then iterate from left to right
-# tracking the maximum number in each partition. If the maximum is smaller or the same as all numbers to the right,
-# the partition can be sorted and the whole list will be sorted.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -17,7 +17,7 @@ class Solution(object):
         :type arr: List[int]
         :rtype: int
         """
-        min_right = [float("inf") for _ in range(len(arr))]     # min_right[-1] == float("inf")
+        min_right = [float("inf") for _ in range(len(arr))]
         for i in range(len(arr) - 2, -1, -1):
             min_right[i] = min(min_right[i + 1], arr[i + 1])
         partitions = 0

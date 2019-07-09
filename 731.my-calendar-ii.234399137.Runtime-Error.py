@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/my-calendar-ii/description/
+
 """
 Implement a MyCalendarTwo class to store your events.
 A new event can be added if adding the event will not cause a triple booking.
@@ -48,8 +48,8 @@ import bisect
 
 class MyCalendarTwo2:
     def __init__(self):
-        # self.calendar = []
-        # self.overlaps = []
+
+
         self.cal = [0]
         self.bookings = [0]
 

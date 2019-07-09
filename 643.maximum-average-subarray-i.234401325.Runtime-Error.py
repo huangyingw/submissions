@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximum-average-subarray-i/description/
+
 class Solution:
     def findMaxAverage1(self, nums, k):
         """

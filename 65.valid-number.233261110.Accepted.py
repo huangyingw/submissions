@@ -1,11 +1,11 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/valid-number/
-# Validate if a given string is numeric.
-# Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
-# Test if integer or float or scientific.  Allow for first character signs.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
+
 
 
 class Solution(object):

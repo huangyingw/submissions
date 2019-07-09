@@ -11,7 +11,7 @@ Example 1:
 	4	  7	 13
 Input: [8,3,10,1,6,null,14,null,null,4,7,13]
 Output: 7
-Explanation: 
+Explanation:
 We have various ancestor-node differences, some of which are given below :
 |8 - 3| = 5
 |3 - 7| = 4
@@ -22,12 +22,12 @@ Note:
 The number of nodes in the tree is between 2 and 5000.
 Each node will have value between 0 and 100000.
 '''
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+
+
+
+
+
 
 
 class Solution(object):
@@ -46,7 +46,7 @@ class Solution(object):
             m_val = min(left_t, right_t)
             max_val = max(lmax_t, rmax_t)
             res = max(res, max(abs(root.val - m_val), abs(root.val - max_val)))
-            # print res
+
             return min(m_val, root.val), max(max_val, root.val), res
         x, x2, res = utility_fun(root, -2147483648)
         return abs(res)

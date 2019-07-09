@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/powerful-integers/
+
 """
 Given two non-negative integers x and y, an integer is powerful if it is equal to x^i + y^j for some integers i >= 0 and j >= 0.
 Return a list of all powerful integers that have value less than or equal to bound.
@@ -33,7 +33,7 @@ class Solution:
         :rtype: List[int]
         """
         ans = set()
-        # 2**18 > bound
+
         for i in range(20):
             for j in range(20):
                 v = x ** i + y ** j

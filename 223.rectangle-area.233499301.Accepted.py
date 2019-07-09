@@ -1,12 +1,12 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/rectangle-area/
-# Find the total area covered by two rectilinear rectangles in a 2D plane.
-# Each rectangle is defined by its bottom left corner (A, B) or (E, F) and top right corner (C, D) or (G, H).
-# Calculate the left and right edges of horizontal overlap. Take the difference to get the x_overlap and similar for
-# y_overlap. Subtract the overlap area from the sum of the areas of the two rectangles.
-# Time - O(1)
-# Space - O(1)
+
+
+
+
+
+
+
 
 
 class Solution(object):

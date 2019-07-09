@@ -17,8 +17,8 @@ class Solution(object):
             elif nums[pos] < target:
                 min = pos + 1
             else:
-                # when nums[pos] == target
-                # find the min and max
+
+
                 for i in range(min, max + 1):
                     if nums[i] == target:
                         if min < i and nums[min] != nums[i]:

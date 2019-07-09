@@ -6,7 +6,7 @@ class PeekingIterator(object):
             self.front = self.it.next()
 
     def peek(self):
-        return self.front   # None if not iterator.hasNext()
+        return self.front
 
     def next(self):
         temp = self.front

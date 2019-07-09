@@ -8,7 +8,7 @@
 	1 is read off as "one 1" or 11.
 	11 is read off as "two 1s" or 21.
 	21 is read off as "one 2, then one 1" or 1211.
-	Given an integer n, generate the nth term of the count-and-say sequence. 
+	Given an integer n, generate the nth term of the count-and-say sequence.
 '''
 
 
@@ -39,5 +39,3 @@ class Solution(object):
             num = new_num
             count_iter += 1
         return new_num
-# Space: O(1)
-# Time: O(N*k) k= length of string

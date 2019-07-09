@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/add-strings/description/
+
 class Solution:
     def addStrings(self, num1, num2):
         """

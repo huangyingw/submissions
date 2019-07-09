@@ -5,7 +5,7 @@ class Solution(object):
         :type banned: List[str]
         :rtype: str
         """
-        # https://leetcode.com/problems/most-common-word/discuss/193268/python-one-liner
+
         banned = set(banned)
         count = collections.Counter(word for word in re.split('[ !?\',;.]',
                                                               paragraph.lower()) if word)

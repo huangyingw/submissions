@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/
+
 class Solution:
-        # 1 使用heapq
+
     def dominantIndex(self, nums):
         """
         :type nums: List[int]
@@ -11,7 +11,7 @@ class Solution:
             return 0
         max1, max2 = heapq.nlargest(2, nums)
         return -1 if max1 / 2 < max2 else nums.index(max1)
-    # 2 空间换时间
+
 
     def dominantIndex(self, nums):
         """

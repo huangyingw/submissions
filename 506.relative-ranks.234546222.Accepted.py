@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/relative-ranks/description/
+
 class Solution:
     def findRelativeRanks(self, nums):
         """

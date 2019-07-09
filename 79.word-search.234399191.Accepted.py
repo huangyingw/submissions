@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/word-search/description/
+
 """
 Given a 2D board and a word, find if the word exists in the grid.
 The word can be constructed from letters of sequentially adjacent cell,
@@ -14,8 +14,8 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
-# 1
-# DFS
+
+
 
 
 class Solution1:
@@ -27,16 +27,16 @@ class Solution1:
                 if self.dfs(board, i, j, word):
                     return True
         return False
-    # check whether can find word, start at (i,j) position
+
 
     def dfs(self, board, i, j, word):
-        if len(word) == 0:  # all the characters are checked
+        if len(word) == 0:
             return True
         if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]) or word[0] != board[i][j]:
             return False
-        tmp = board[i][j]  # first character is found, check the remaining part
-        board[i][j] = "#"  # avoid visit agian
-        # check whether can find "word" along one direction
+        tmp = board[i][j]
+        board[i][j] = "
+
         res = self.dfs(board, i + 1, j, word[1:]) or self.dfs(board, i - 1, j, word[1:]) \
             or self.dfs(board, i, j + 1, word[1:]) or self.dfs(board, i, j - 1, word[1:])
         board[i][j] = tmp
@@ -74,17 +74,17 @@ class Solution:
         if len(word) == position:
             return True
         m, n = len(board), len(board[0])
-        old, board[i][j] = board[i][j], '#'
-        if i > 0 and board[i - 1][j] != '#' and board[i - 1][j] == word[position] and \
+        old, board[i][j] = board[i][j], '
+        if i > 0 and board[i - 1][j] != '
                 self.deepDive(board, i - 1, j, word, position + 1):
             return True
-        if i + 1 < m and board[i + 1][j] != '#' and board[i + 1][j] == word[position] and \
+        if i + 1 < m and board[i + 1][j] != '
                 self.deepDive(board, i + 1, j, word, position + 1):
             return True
-        if j > 0 and board[i][j - 1] != '#' and board[i][j - 1] == word[position] and \
+        if j > 0 and board[i][j - 1] != '
                 self.deepDive(board, i, j - 1, word, position + 1):
             return True
-        if j + 1 < n and board[i][j + 1] != '#' and board[i][j + 1] == word[position] and \
+        if j + 1 < n and board[i][j + 1] != '
                 self.deepDive(board, i, j + 1, word, position + 1):
             return True
         board[i][j] = old

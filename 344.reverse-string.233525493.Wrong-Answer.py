@@ -1,10 +1,10 @@
 _author_ = 'jake'
 _project_ = 'leetcode'
-# https://leetcode.com/problems/reverse-string/
-# Write a function that takes a string as input and returns the string reversed.
-# Reverse with slice operator.
-# Time - O(n)
-# Space - O(n)
+
+
+
+
+
 
 
 class Solution(object):

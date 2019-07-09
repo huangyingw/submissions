@@ -8,4 +8,3 @@ class Solution(object):
                 """
                 row[i], row[~i] = row[~i] ^ 1, row[i] ^ 1
         return A
-        # return [[1 ^ i for i in row[::-1]] for row in A]
