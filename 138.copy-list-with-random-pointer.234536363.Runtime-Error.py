@@ -1,38 +1,17 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def copyRandomList(self, head):
-
         if not head:
             return head
-
         ptr = head
         while ptr:
-
             new_node = RandomListNode(ptr.label)
-
-
-
             new_node.next = ptr.next
             ptr.next = new_node
             ptr = new_node.next
         ptr = head
-
-
-
         while ptr:
             ptr.next.random = ptr.random.next if ptr.random else None
             ptr = ptr.next.next
-
-
         ptr_old_list = head
         ptr_new_list = head.next
         head_old = head.next

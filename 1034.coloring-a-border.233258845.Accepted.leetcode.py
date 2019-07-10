@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def colorBorder(self, grid, r0, c0, color):
-
         original = grid[r0][c0]
         rows, cols = len(grid), len(grid[0])
         connected = set()

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def convert(self, s, numRows):
-
         if numRows == 1:
             return s
         zigzag = [[] for _ in range(numRows)]

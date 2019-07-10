@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def findDuplicates(self, nums):
-
         result = []
         for i in range(len(nums)):
             num = abs(nums[i])

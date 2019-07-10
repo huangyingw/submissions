@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def rotateRight(self, head, k):
-
         if not head or k == 0:
             return head
         slow = fast = head

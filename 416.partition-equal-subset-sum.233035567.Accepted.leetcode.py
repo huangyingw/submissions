@@ -1,30 +1,8 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def canPartition(self, nums):
         total_sum = sum(nums)
         if total_sum & 1:
             return False
-
         target = total_sum >> 1
         dp = [0] * (target + 1)
         dp[0] = 1

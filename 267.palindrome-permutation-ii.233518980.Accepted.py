@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def generatePalindromes(self, s):
-
         char_counts = Counter(s)
         odd_char = ""
         for char, count in char_counts.items():

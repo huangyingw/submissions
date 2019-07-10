@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canCross(self, stones):
-
         jumps = {}
         for stone in stones:
             jumps[stone] = set()

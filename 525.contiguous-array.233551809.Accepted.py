@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def findMaxLength(self, nums):
-
         max_len = 0
         balance = 0
         balances = {0: -1}

@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def uniqueLetterString(self, S):
-
         unique = 0
         indices = [[-1] for _ in range(26)]
         for i, c in enumerate(S):

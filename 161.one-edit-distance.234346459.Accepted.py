@@ -3,7 +3,6 @@ from collections import Counter
 
 class Solution:
     def isOneEditDistance(self, s, t):
-
         if len(s) > len(t):
             return self.isOneEditDistance(t, s)
         m, n = len(s), len(t)

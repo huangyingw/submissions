@@ -1,23 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findItinerary(self, tickets):
-
         tickets.sort(reverse=True)
         flights = defaultdict(list)
         for start, end in tickets:
@@ -34,7 +19,6 @@ class Solution(object):
 
 class Solution2(object):
     def findItinerary(self, tickets):
-
         flights = defaultdict(list)
         tickets.sort(reverse=True)
         for start, end in tickets:

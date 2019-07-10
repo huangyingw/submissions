@@ -1,9 +1,3 @@
-
-
-
-
-
-
 class Solution(object):
     def reachNumber(self, target):
         target = abs(target)

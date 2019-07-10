@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numberOfPatterns(self, m, n):
-
         skips = [(1, 7, 4), (1, 9, 5), (1, 3, 2), (2, 8, 5),
                  (3, 7, 5), (3, 9, 6), (4, 6, 5), (7, 9, 8)]
         jumps = {}
@@ -47,6 +30,5 @@ class Solution(object):
 
 class Solution2(object):
     def numberOfPatterns(self, m, n):
-
         patterns = [0, 9, 56, 320, 1624, 7152, 26016, 72912, 140704, 140704]
         return sum(patterns[m:n + 1])

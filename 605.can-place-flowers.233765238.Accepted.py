@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canPlaceFlowers(self, flowerbed, n):
-
         flowerbed.append(0)
         i = 0
         while n > 0 and i < len(flowerbed) - 1:

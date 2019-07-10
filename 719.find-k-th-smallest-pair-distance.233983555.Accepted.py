@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def smallestDistancePair(self, nums, k):
-
         def k_pair_distances(diff):
             count, j = 0, 0
             for i, num in enumerate(nums):

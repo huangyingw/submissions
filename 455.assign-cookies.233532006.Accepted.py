@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findContentChildren(self, g, s):
-
         content = 0
         child = 0
         g.sort()

@@ -1,22 +1,5 @@
 class Solution:
-
-
-
-
-
-
-
-
-
-
-
-
-
     def myPow(self, x, n):
-
-
-
-
         if n == 0:
             return 1
         res, curr = 1, abs(n)

@@ -1,7 +1,5 @@
-
 class Solution:
     def validMountainArray(self, A):
-
         i, j, n = 0, len(A) - 1, len(A)
         while i + 1 < n and A[i] < A[i + 1]:
             i += 1
@@ -10,7 +8,6 @@ class Solution:
         return 0 < i == j < n - 1
 
     def validMountainArray(self, A):
-
         if len(A) < 3:
             return False
         if A[0] >= A[1]:

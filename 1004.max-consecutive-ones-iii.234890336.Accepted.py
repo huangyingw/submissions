@@ -22,7 +22,6 @@ A[i] is 0 or 1
 
 class Solution(object):
     def longestOnes(self, A, K):
-
         start_index = 0
         for end_index in range(0, len(A)):
             K -= 1 - A[end_index]

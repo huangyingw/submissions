@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxCoins(self, nums):
-
         n = len(nums)
         nums = [1] + nums + [1]
         max_coins = [[0 for _ in range(n + 2)] for _ in range(n + 1)]

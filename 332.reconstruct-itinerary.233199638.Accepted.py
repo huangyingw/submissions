@@ -13,7 +13,6 @@ from collections import defaultdict
 
 class Solution(object):
     def findItinerary(self, tickets):
-
         n = len(tickets)
         trips = defaultdict(list)
         for x in tickets:

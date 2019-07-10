@@ -1,46 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def __init__(self):
         self.first = self.second = None
         self.pre = TreeNode(-sys.maxint - 1)

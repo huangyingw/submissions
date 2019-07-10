@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def isLongPressedName(self, name, typed):
         i = 0

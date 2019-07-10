@@ -1,37 +1,7 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def levelOrderBottom(self, root):
         if root is None:
             return []
-
         stack = [[root]]
         res = []
         while len(stack) > 0:

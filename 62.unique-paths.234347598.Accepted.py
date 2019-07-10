@@ -1,17 +1,5 @@
 class Solution:
     def uniquePaths(self, m, n):
-
-
-
-
-
-
-
-
-
-
-
-
         if m > n:
             return self.uniquePaths(n, m)
         curr = [1] * m

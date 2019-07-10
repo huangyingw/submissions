@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution:
     def averageOfLevels(self, root):
-
         if not root:
             return []
         res = []

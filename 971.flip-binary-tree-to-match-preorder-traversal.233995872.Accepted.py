@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def flipMatchVoyage(self, root, voyage):
-
         flipped = []
         self.i = 0
 

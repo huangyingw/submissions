@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextLargerNodes(self, head):
-
         result = []
         stack = []
         node = head

@@ -1,50 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def mergeKLists(self, lists):
-
         if lists is None:
             return None
         elif len(lists) == 0:

@@ -4,7 +4,6 @@ import string
 
 class Solution:
     def findLadders(self, beginWord, endWord, wordList):
-
         def backtrack(path, word, result):
             path.append(word)
             if word == endWord:

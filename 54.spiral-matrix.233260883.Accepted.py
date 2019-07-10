@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def spiralOrder(self, matrix):
-
         if not matrix or not matrix[0]:
             return []
         spiral = []
@@ -20,7 +12,6 @@ class Solution(object):
             col += d_col
             spiral.append(matrix[row][col])
             leg_count += 1
-
             if (d_col != 0 and leg_count == row_leg) or (d_row != 0 and leg_count == col_leg):
                 if d_col != 0:
                     row_leg -= 1

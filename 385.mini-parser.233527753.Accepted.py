@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def deserialize(self, s):
-
         return self.helper(eval(s))
 
     def helper(self, s_eval):

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution:
     def isUnivalTree(self, root):
-
         value = root.val
 
         def helper(node):

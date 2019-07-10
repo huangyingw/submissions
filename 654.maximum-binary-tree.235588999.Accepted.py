@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
         stack = []
@@ -17,13 +9,6 @@ class Solution(object):
                 stack[-1].right = node
             stack.append(node)
         return stack[0]
-
-
-
-
-
-
-
 
 
 class SolutionII(object):

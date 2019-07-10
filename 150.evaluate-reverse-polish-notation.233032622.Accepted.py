@@ -17,7 +17,6 @@
 
 class Solution(object):
     def evalRPN(self, tokens):
-
         if not tokens:
             return 0
         stack = []

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution:
     def maxPathSum(self, root):
-
         self.res = root.val
         self.dfs(root)
         return self.res

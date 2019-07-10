@@ -1,5 +1,3 @@
-
-
 class Solution:
     def nextGreatestLetter(self, letters, target):
         if ord(target) >= ord(letters[-1]):

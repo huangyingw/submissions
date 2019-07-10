@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def getMinimumDifference(self, root):
-
         stack = [root]
         queue = []
         while stack and stack[0]:
@@ -30,11 +19,8 @@ class Solution:
         return res
 
 
-
 class Solution2:
     def getMinimumDifference(self, root):
-
-
         iot_list = []
 
         def InOrderTraversal(node):

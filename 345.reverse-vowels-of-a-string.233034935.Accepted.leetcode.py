@@ -1,6 +1,5 @@
 class Solution(object):
     def reverseVowels(self, s):
-
         str_index = []
         vowel = []
         res = []

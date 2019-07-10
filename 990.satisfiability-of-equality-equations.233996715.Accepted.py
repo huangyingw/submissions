@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def equationsPossible(self, equations):
-
         graph = [[] for _ in range(26)]
         not_equal = []
         for eqn in equations:

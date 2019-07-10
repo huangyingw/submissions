@@ -1,25 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 from collections import defaultdict
 
 
 class Solution(object):
     def minStickers(self, stickers, target):
-
         target_set, remaining_target = set(target), set(target)
         char_to_word = defaultdict(set)
         for sticker in stickers:

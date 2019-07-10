@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def maximalRectangle(self, matrix):
-
         if not matrix or not matrix[0]:
             return 0
         rows = len(matrix)

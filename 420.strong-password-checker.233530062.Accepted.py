@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def strongPasswordChecker(self, s):
-
         upper, lower, digit = False, False, False
         subs, i = 0, 0
         singles, doubles = 0, 0

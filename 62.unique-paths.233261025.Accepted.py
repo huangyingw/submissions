@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def uniquePaths(self, m, n):
-
         if m == 0 or n == 0:
             return 0
         row_paths = [1 for _ in range(n)]

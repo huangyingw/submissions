@@ -1,29 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def combinationSum(self, candidates, target):
         candidates.sort()
         dp = [[] for _ in range(target + 1)]

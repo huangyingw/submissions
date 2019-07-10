@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countDigitOne(self, n):
-
         if n <= 0:
             return 0
         ones = 0

@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def shortestToChar(self, s, c):
-
         prev = float('-inf')
         ans = []
         for i in range(len(s)):

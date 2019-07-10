@@ -1,6 +1,5 @@
 class Solution:
     def countSubstrings(self, s):
-
         result = 0
         for i in range(len(s)):
             result += self.getCount(s, i, i)

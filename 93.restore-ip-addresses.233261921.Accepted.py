@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def restoreIpAddresses(self, s):
-
         nb_sections = 4
         if 3 * nb_sections < len(s) < nb_sections:
             return []

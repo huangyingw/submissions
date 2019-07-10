@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def searchRange(self, nums, target):
-
         leftIndex = self.binarySearch(nums, target, True)
         if leftIndex == len(nums) or nums[leftIndex] != target:
             return [-1, -1]

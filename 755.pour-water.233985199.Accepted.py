@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pourWater(self, heights, V, K):
-
         heights = [float("inf")] + heights + [float("inf")]
         K += 1
         while V > 0:

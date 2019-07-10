@@ -1,24 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def smallestEquivalentString(self, A, B, S):
-
         equivalents = defaultdict(set)
         for a, b in zip(A, B):
             equivalents[a].add(b)

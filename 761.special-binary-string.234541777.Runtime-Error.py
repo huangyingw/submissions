@@ -1,5 +1,3 @@
-
-
 def makeLargestSpecial(self, S):
     count = i = 0
     res = []

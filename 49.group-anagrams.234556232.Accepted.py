@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def groupAnagrams(self, strs):
         ans = collections.defaultdict(list)

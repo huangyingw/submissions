@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def hasAlternatingBits(self, n):
         bits = bin(n)

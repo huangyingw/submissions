@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution:
     def minAreaRect(self, points):
-
         rows, cols = set(), set()
         for r, c in points:
             rows.add(r)

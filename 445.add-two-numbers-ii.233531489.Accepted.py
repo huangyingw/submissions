@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
-
         num1, num2 = 0, 0
         node = l1
         while node:

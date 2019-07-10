@@ -7,7 +7,6 @@ How many possible unique paths are there?
 
 class Solution(object):
     def uniquePaths(self, m, n):
-
         dp = [[0 for _ in range(n)] for _ in range(m)]
         for index in range(m):
             dp[index][0] = 1

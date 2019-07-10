@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minMutation(self, start, end, bank):
-
         chars = set("ACGT")
         bank = set(bank)
         if end not in bank:

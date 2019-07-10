@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def largeGroupPositions(self, S):
-
         result = []
         start = 0
         for i, c in enumerate(S):

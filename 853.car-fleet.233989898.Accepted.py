@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def carFleet(self, target, position, speed):
-
         fleets = 0
         previous = -1
         cars = zip(position, speed)

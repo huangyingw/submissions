@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shipWithinDays(self, weights, D):
-
         def can_ship(capacity):
             days = D
             load = 0

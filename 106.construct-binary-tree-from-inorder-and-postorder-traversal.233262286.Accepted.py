@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def buildTree(self, inorder, postorder):
-
         if not inorder:
             return None
         inorder_index = inorder.index(postorder.pop())

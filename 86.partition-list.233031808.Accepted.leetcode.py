@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def partition(self, head, x):
-
         if not head or not head.next:
             return head
         left, right = ListNode(0), ListNode(0)

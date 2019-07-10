@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canMeasureWater(self, x, y, z):
-
         def gcd(a, b):
             while b != 0:
                 a, b = b, a % b

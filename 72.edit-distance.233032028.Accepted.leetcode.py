@@ -1,26 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def minDistance(self, word1, word2):
         ls_1, ls_2 = len(word1), len(word2)
         dp = range(ls_1 + 1)

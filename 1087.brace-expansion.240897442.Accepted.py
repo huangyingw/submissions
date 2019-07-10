@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def expand(self, S):
-
         group_start = 0
         groups = []
         while group_start < len(S):

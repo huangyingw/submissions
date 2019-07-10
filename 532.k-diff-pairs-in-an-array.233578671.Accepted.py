@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def findPairs(self, nums, k):
-
         if k < 0:
             return 0
         freq = Counter(nums)

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def nextPermutation(self, nums):
-
         i = len(nums) - 2
         while i >= 0 and nums[i] >= nums[i + 1]:
             i -= 1

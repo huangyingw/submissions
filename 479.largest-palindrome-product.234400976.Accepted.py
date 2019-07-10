@@ -1,10 +1,5 @@
-
 class Solution:
-
-
-
     def largestPalindrome(self, n):
-
         if n == 1:
             return 9
         if n == 2:

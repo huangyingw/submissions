@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def wordSquares(self, words):
-
         prefixes = defaultdict(list)
         for word in words:
             for i in range(1, len(word)):

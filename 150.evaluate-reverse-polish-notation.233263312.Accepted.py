@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def evalRPN(self, tokens):
-
         ops = {'+', '-', '/', '*'}
         stack = []
         for token in tokens:

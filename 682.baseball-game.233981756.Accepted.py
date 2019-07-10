@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def calPoints(self, ops):
-
         points = []
         for op in ops:
             if op == "+":

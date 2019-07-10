@@ -8,7 +8,6 @@
 
 class Solution(object):
     def simplifyPath(self, path):
-
         result = "/"
         stack = []
         index = 0

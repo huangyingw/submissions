@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def rightSideView(self, root):
-
         if not root:
             return []
         right_view = []

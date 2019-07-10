@@ -1,6 +1,5 @@
 class Solution:
     def myAtoi(self, str):
-
         str = str.strip()
         number = ""
         for x in str:

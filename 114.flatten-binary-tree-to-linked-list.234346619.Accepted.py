@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def flatten(self, root):
-
         while root:
             if not root.right:
                 root.left, root.right = root.right, root.left

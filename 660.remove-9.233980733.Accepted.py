@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def newInteger(self, n):
-
         result = []
         while n:
             result.append(str(n % 9))

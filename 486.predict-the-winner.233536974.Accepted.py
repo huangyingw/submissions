@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def PredictTheWinner(self, nums):
-
         def helper(left, right):
             if right < left:
                 return 0

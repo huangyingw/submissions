@@ -1,11 +1,7 @@
 class Solution(object):
     def largestRectangleArea(self, heights):
-
-
         largest_rectangle = 0
         ls = len(heights)
-
-
         stack = [-1]
         top, pos = 0, 0
         for pos in range(ls):

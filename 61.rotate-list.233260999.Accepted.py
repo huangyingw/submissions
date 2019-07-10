@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def rotateRight(self, head, k):
-
         if not head:
             return
         count = 1

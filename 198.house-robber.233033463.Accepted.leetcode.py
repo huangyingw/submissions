@@ -1,30 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def rob(self, nums):
         prevMax = currMax = 0
         for num in nums:

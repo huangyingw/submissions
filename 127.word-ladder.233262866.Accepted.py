@@ -1,23 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
-
         length = 1
         visited = set()
         if endWord not in wordList:

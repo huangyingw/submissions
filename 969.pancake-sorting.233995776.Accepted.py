@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def pancakeSort(self, A):
-
         flips = []
         for unsorted in range(len(A), 0, -1):
             i = A.index(unsorted)

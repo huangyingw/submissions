@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def rob(self, nums):
-
         if len(nums) < 2:
             return sum(nums)
         loot, prev = 0, 0

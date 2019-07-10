@@ -1,6 +1,5 @@
 class Solution(object):
     def nthUglyNumber(self, n):
-
         if n <= 5:
             return n
         dp = [0] * (n + 1)
@@ -19,8 +18,6 @@ class Solution(object):
                 l3 += 1
             print l1, l2, l3
             dp[i] = min(dp[l1] * 2, dp[l2] * 3, dp[l3] * 5)
-
         return dp[n]
 if __name__ == '__main__':
-
     s = Solution()

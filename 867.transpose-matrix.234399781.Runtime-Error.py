@@ -1,10 +1,5 @@
-
 class Solution:
-
-
-
     def transpose(self, A):
-
         trans = []
         for c in range(len(A[0])):
             temp = []
@@ -12,8 +7,6 @@ class Solution:
                 temp.append(A[r][c])
             trans.append(temp)
         return trans
-
-
 
     def transpose(self, A):
         M, N = len(A), len(A[0])

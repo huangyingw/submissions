@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def trimBST(self, root, L, R):
-
         if not root:
             return None
         if root.val > R:

@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def generateTrees(self, n):
-
         if n <= 0:
             return []
         return self.generate(1, n)

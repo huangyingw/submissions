@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def fractionToDecimal(self, numerator, denominator):
-
         if denominator == 0:
             return None
         decimal = []

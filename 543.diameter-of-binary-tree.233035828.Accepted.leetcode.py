@@ -1,13 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
     def diameterOfBinaryTree(self, root):
         self.ans = 1
 
@@ -19,5 +10,4 @@ class Solution(object):
             self.ans = max(self.ans, L + R + 1)
             return max(L, R) + 1
         depth(root)
-
         return self.ans - 1

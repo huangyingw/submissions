@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def combinationSum3(self, k, n):
-
         results = []
         self.cs3([], n, results, k)
         return results

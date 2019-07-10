@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
@@ -21,7 +6,6 @@ class Interval(object):
 
 class Solution(object):
     def intervalIntersection(self, A, B):
-
         result = []
         i, j = 0, 0
         while i < len(A) and j < len(B):

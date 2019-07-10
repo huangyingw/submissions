@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def diStringMatch(self, S):
-
         length = len(S)
         ans = []
         left = 0

@@ -1,10 +1,5 @@
-
 class Solution(object):
-
-
-
     def findReplaceString(self, S, indexes, sources, targets):
-
         listOfS = list(S)
         distance = 0
         for index, source, target in sorted(zip(indexes, sources, targets), reverse=True):

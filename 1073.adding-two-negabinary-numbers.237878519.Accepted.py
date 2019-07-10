@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def addNegabinary(self, arr1, arr2):
-
         carry, next_carry = 0, 0
         result = []
         while arr1 or arr2 or carry or next_carry:

@@ -1,6 +1,5 @@
 class Solution(object):
     def searchRange(self, nums, target):
-
         length = len(nums)
         if length == 0:
             return [-1, -1]
@@ -13,8 +12,6 @@ class Solution(object):
             elif nums[pos] < target:
                 min = pos + 1
             else:
-
-
                 for i in range(min, max + 1):
                     if nums[i] == target:
                         if min < i and nums[min] != nums[i]:

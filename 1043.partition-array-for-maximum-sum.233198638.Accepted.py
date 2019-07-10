@@ -13,7 +13,6 @@ Note:
 
 class Solution(object):
     def maxSumAfterPartitioning(self, A, K):
-
         if not A:
             return 0
         N = len(A)
@@ -24,6 +23,4 @@ class Solution(object):
                 if index_j >= 0 and index_j < len(A):
                     maxi = max(maxi, A[index_j])
                     dp[index_i + 1] = max(dp[index_i + 1], maxi * (index_i - index_j + 1) + dp[index_j])
-
-
         return dp[-1]

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def preorder(self, root):
-
         if not root:
             return []
         stack = [root]

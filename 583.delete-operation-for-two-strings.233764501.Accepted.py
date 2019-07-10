@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minDistance(self, word1, word2):
-
         def LCS(s, t):
             prev_dp = [0 for _ in range(len(word2) + 1)]
             for i in range(1, len(word1) + 1):

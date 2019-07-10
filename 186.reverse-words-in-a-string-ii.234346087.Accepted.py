@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def reverseWords(self, str):
-
         self.reverse(str, 0, len(str) - 1)
         start, end = 0, -1
         for i in range(len(str)):

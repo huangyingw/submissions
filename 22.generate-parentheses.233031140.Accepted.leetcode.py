@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def generateParenthesis(self, n):
         if n == 1:

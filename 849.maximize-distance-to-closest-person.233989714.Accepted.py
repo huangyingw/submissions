@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxDistToClosest(self, seats):
-
         empty_seats = []
         max_distance = 0
         last_seat = float("-inf")

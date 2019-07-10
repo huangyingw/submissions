@@ -1,11 +1,5 @@
-
-
-
-
 class Solution:
-
     def findDuplicate1(self, nums):
-
         num_set = set()
         for num in nums:
             if num in num_set:
@@ -14,7 +8,6 @@ class Solution:
                 num_set.add(num)
 
     def findDuplicate2(self, nums):
-
         slow = fast = temp = 0
         while True:
             slow = nums[slow]

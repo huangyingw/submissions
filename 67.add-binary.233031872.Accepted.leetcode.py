@@ -1,51 +1,8 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def addBinary(self, a, b):
         res = ''
         lsa, lsb = len(a), len(b)
         pos, plus, curr = -1, 0, 0
-
         while (lsa + pos) >= 0 or (lsb + pos) >= 0:
             if (lsa + pos) >= 0:
                 curr += int(a[pos])

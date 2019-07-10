@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def findLHS(self, nums):
-
         freq = Counter(nums)
         max_harmonious = 0
         for num, count in freq.items():

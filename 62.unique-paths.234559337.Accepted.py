@@ -1,6 +1,5 @@
 class Solution(object):
     def uniquePaths(self, m, n):
-
         maxValue = m if m > n else n
         minValue = m + n - maxValue
         numerator = m + n

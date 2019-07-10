@@ -13,15 +13,8 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def binaryTreePaths(self, root):
-
         if not root:
             return []
         paths = []

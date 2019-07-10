@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def maskPII(self, S):
         at = S.find('@')

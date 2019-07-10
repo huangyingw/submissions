@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def checkRecord(self, s):
-
         L = A = 0
         for c in s:
             if c == 'L':

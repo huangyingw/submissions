@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def partitionLabels(self, S):
-
         last = {c: i for i, c in enumerate(S)}
         result = []
         start, end = 0, 0

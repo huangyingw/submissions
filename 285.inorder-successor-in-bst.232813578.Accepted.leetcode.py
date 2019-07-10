@@ -2,8 +2,6 @@ class Solution(object):
     def inorderSuccessor(self, root, p):
         succ = None
         while root:
-
-
             if p.val < root.val:
                 succ = root
                 root = root.left

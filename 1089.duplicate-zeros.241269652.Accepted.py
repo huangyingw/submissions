@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def duplicateZeros(self, arr):
-
         length = 0
         for i, num in enumerate(arr):
             length += 2 if num == 0 else 1

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumSubseqWidths(self, A):
-
         result = 0
         n = len(A)
         A.sort()

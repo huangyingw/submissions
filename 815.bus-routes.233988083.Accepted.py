@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def numBusesToDestination(self, routes, S, T):
-
         routes = [set(route) for route in routes]
         stop_to_routes = defaultdict(set)
         for route, stops in enumerate(routes):

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def flipgame(self, fronts, backs):
-
         duplicates = {f for f, b in zip(fronts, backs) if f == b}
         result = float("inf")
         for f, b in zip(fronts, backs):

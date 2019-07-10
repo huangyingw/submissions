@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def rangeSumBST(self, root, L, R):
-
         def helper(node):
             if not node:
                 return 0

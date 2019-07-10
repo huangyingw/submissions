@@ -7,14 +7,8 @@
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def oddEvenList(self, head):
-
         if not head:
             return None
         odd, even = head, head.next

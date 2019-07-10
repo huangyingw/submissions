@@ -1,28 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def minDepth(self, root):
-
         if root is None:
             return 0
         queue = [root]
@@ -36,7 +13,6 @@ class Solution(object):
             if node.right is not None:
                 queue.append(node.right)
             if node == rightMost:
-
                 depth += 1
                 if node.right is not None:
                     rightMost = node.right

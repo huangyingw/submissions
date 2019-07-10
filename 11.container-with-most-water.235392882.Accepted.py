@@ -1,5 +1,4 @@
 class Solution:
-
     def maxArea(self, height):
         max_container = 0
         pos_left, pos_right = 0, len(height) - 1

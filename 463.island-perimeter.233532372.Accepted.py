@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def islandPerimeter(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         for row in grid:
             row.append(0)

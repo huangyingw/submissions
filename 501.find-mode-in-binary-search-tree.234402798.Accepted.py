@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def findMode(self, root):
-
         self.mode = set()
         self.max_freq = 0
         self.cur_freq = 0
@@ -36,7 +25,6 @@ class Solution:
             self.inorder(root.left)
             self.calc_freq(root.val)
             self.inorder(root.right)
-
 
 
 class Solution(object):

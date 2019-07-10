@@ -1,6 +1,5 @@
 class Solution(object):
     def baseNeg2(self, N):
-
         if N == 0:
             digits = ['0']
         else:

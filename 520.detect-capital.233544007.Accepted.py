@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def detectCapitalUse(self, word):
-
         if len(word) <= 1:
             return True
         first = word[0] <= "Z"

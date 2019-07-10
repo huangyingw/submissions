@@ -3,7 +3,6 @@ from collections import defaultdict
 
 class Solution:
     def accountsMerge(self, accounts):
-
         owners, roots = {}, {}
         for account in accounts:
             for i in range(1, len(account)):

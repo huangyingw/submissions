@@ -1,7 +1,5 @@
 class Solution(object):
     def maximalRectangle(self, matrix):
-
-
         if matrix is None or len(matrix) == 0:
             return 0
         ls_row, ls_col = len(matrix), len(matrix[0])

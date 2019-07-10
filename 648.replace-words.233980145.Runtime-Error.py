@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def replaceWords(self, dict, sentence):
-
         result = []
         root = {}
         for word in dict:

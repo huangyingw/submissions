@@ -1,6 +1,5 @@
 class Solution:
     def constructMaximumBinaryTree(self, nums):
-
         stack = []
         for num in nums:
             curr = TreeNode(num)

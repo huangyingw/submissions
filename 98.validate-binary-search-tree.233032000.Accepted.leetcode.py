@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValidBST(self, root):
-
         if not root:
             return True
         stack, result = [], []

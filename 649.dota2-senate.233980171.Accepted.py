@@ -1,27 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def predictPartyVictory(self, senate):
-
         n = len(senate)
         d, r = deque(), deque()
         for i, c in enumerate(senate):

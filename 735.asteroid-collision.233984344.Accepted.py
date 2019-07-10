@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def asteroidCollision(self, asteroids):
-
         stack = []
         for asteroid in asteroids:
             while stack and stack[-1] > 0 > asteroid:

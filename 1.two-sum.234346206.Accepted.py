@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def twoSum(self, nums, target):
-
         record = {}
         for i in range(len(nums)):
             if nums[i] in record:

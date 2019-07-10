@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class TrieNode(object):
     def __init__(self):
-
         self.children = {}
         self.terminal = False
 
@@ -20,7 +10,6 @@ class Trie(object):
         self.root.terminal = True
 
     def insert(self, word):
-
         node = self.root
         for c in word:
             if c not in node.children:
@@ -29,7 +18,6 @@ class Trie(object):
         node.terminal = True
 
     def search(self, word):
-
         node = self.root
         for c in word:
             if c in node.children:
@@ -39,7 +27,6 @@ class Trie(object):
         return node.terminal
 
     def startsWith(self, prefix):
-
         node = self.root
         for c in prefix:
             if c in node.children:

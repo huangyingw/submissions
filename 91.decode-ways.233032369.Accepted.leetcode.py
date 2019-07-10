@@ -1,6 +1,5 @@
 class Solution(object):
     def numDecodings(self, s):
-
         ls = len(s)
         if ls == 0:
             return 0
@@ -10,12 +9,10 @@ class Solution(object):
                 if index == 1:
                     dp[index] = 1
                 else:
-
                     dp[index] += dp[index - 2]
             if int(s[index]) != 0:
                 if index == 0:
                     dp[index] = 1
                 else:
-
                     dp[index] += dp[index - 1]
         return dp[ls - 1]

@@ -1,23 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 import bisect
 
 
 class TopVotedCandidate:
     def __init__(self, persons, times):
-
         self.times = times
         self.leader = []
         counts = defaultdict(int)
@@ -32,7 +18,6 @@ class TopVotedCandidate:
             self.leader.append(leaders[-1])
 
     def q(self, t):
-
         i = bisect.bisect_left(self.times, t)
         if i == len(self.times) or self.times[i] > t:
             return self.leader[i - 1]

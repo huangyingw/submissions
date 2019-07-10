@@ -1,27 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def floodFill(self, image, sr, sc, newColor):
-
         r_ls, c_ls = len(image), len(image[0])
         color = image[sr][sc]
         if color == newColor:

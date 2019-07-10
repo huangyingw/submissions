@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestWordDistance(self, words, word1, word2):
-
         last1, last2 = -1, -1
         same = word1 == word2
         distance = len(words)

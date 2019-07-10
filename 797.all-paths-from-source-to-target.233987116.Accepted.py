@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def allPathsSourceTarget(self, graph):
-
         paths, results = [[0]], []
         while paths:
             new_paths = []

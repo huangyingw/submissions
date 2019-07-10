@@ -1,6 +1,3 @@
-
-
-
 class Solution:
     def trailingZeroes(self, n):
         count = 0

@@ -1,10 +1,5 @@
-
 class Solution:
-
-
-
     def groupAnagrams(self, strs):
-
         ans = collections.defaultdict()
         for s in strs:
             ans[tuple(sorted(s))].append(s)

@@ -1,7 +1,5 @@
-
 class Solution:
     def expressiveWords(self, S, words):
-
         return sum(self.check(S, W) for W in words)
 
     def check(self, S, W):

@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def binaryGap(self, N):
-
         temp = bin(N)
         if temp.count('1') <= 1:
             return 0
@@ -13,7 +8,6 @@ class Solution:
 
 class Solution:
     def binaryGap(self, N):
-
         max = 0
         str = bin(N)[2:]
         lst = []
@@ -30,7 +24,6 @@ class Solution:
 
 class Solution:
     def binaryGap(self, N):
-
         n = str(bin(N))
         count = 0
         last = n.index('1')

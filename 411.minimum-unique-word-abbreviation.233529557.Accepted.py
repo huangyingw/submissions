@@ -1,20 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
     def minAbbreviation(self, target, dictionary):
         def abbr(target, num):
             word, count = [], 0

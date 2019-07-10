@@ -1,6 +1,5 @@
 class Solution(object):
     def gameOfLife(self, board):
-
         index = []
 
         def around(i, j, board):

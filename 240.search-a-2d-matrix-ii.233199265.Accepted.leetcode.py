@@ -1,6 +1,5 @@
 class Solution(object):
     def searchMatrix(self, matrix, target):
-
         if not matrix:
             return False
         left, right = 0, len(matrix[0]) - 1

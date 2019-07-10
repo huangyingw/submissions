@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def selfDividingNumbers(self, left, right):
-
         def is_self_dividing(num):
             copy = num
             while copy > 0:

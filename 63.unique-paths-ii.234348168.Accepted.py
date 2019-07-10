@@ -1,6 +1,5 @@
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid):
-
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         curr = [1] * m
         if obstacleGrid[0][0] == 1:

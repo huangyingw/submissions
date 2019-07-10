@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def profitableSchemes(self, G, P, group, profit):
-
         MOD = 10 ** 9 + 7
         schemes = [[0] * (G + 1) for _ in range(P + 1)]
         schemes[0][0] = 1

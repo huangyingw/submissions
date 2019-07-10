@@ -1,6 +1,5 @@
 class Solution(object):
     def convert(self, s, numRows):
-
         if numRows == 1:
             return s
         result = ["" for _ in range(numRows)]

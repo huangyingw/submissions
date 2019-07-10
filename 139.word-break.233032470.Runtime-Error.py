@@ -12,7 +12,6 @@
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
-
         dp = [False for _ in range(len(s) + 1)]
         dp[0] = True
         for index in range(len(s)):

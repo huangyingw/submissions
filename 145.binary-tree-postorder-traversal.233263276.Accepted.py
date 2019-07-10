@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -19,7 +8,6 @@ from collections import deque
 
 class Solution(object):
     def postorderTraversal(self, root):
-
         if not root:
             return []
         result = deque()

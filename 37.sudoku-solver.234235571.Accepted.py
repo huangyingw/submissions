@@ -1,7 +1,5 @@
 class Solution(object):
     def solveSudoku(self, board):
-
-
         empty = []
         for i in range(9):
             for j in range(9):

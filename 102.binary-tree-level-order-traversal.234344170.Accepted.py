@@ -1,4 +1,3 @@
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -8,7 +7,6 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
-
         if not root:
             return []
         result = []

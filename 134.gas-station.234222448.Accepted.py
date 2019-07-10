@@ -1,7 +1,5 @@
 class Solution(object):
     def canCompleteCircuit(self, gas, cost):
-
-
         ls = len(gas)
         begin, end = 0, ls - 1
         curr = gas[end] - cost[end]

@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def averageOfLevels(self, root):
-
         nodes = [root]
         result = []
         while True:

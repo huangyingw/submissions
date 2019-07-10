@@ -1,5 +1,3 @@
-
-
 class Solution1:
     def exist(self, board, word):
         if not board:
@@ -17,7 +15,6 @@ class Solution1:
             return False
         tmp = board[i][j]
         board[i][j] = "
-
         res = self.dfs(board, i + 1, j, word[1:]) or self.dfs(board, i - 1, j, word[1:]) \
             or self.dfs(board, i, j + 1, word[1:]) or self.dfs(board, i, j - 1, word[1:])
         board[i][j] = tmp
@@ -27,7 +24,6 @@ from collections import Counter
 
 class Solution:
     def exist(self, board, word):
-
         if not board or not board[0] or not word:
             return False
         if not self.checkContent(board, word):

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def makesquare(self, nums):
-
         def dfs(index):
             if index == len(nums):
                 return True

@@ -1,21 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def sortArrayByParityII(self, A):
         odd = 1
         for i in xrange(0, len(A), 2):

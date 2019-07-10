@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestRepeatingSubstring(self, S):
-
         def helper(guess):
             seen = set()
             for i in range(n - guess + 1):

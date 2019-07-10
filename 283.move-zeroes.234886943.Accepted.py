@@ -11,7 +11,6 @@
 
 class Solution(object):
     def moveZeroes(self, nums):
-
         zeroIndex = 0
         for index in range(len(nums)):
             if nums[index] != 0:

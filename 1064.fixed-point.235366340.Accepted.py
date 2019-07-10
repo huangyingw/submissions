@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def fixedPoint(self, A):
-
         left, right = 0, len(A) - 1
         while left <= right:
             mid = (left + right) // 2

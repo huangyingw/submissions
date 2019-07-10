@@ -1,6 +1,5 @@
 class Solution(object):
     def combinationSum(self, candidates, target):
-
         result = []
 
         def recursive(candidates, target, currList, index):

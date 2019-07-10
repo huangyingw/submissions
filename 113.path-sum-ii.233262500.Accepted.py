@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -16,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def pathSum(self, root, sum):
-
         paths = []
         self.preorder(root, sum, [], paths)
         return paths

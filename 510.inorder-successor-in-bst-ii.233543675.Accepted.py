@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def inorderSuccessor(self, node):
-
         if node.right:
             node = node.right
             while node.left:

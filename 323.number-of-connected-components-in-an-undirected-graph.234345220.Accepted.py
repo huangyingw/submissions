@@ -1,6 +1,5 @@
 class Solution:
     def countComponents(self, n, edges):
-
         root = [i for i in range(n)]
         result = n
         for edge in edges:

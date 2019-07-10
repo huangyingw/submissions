@@ -8,11 +8,6 @@
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def reverseKGroup(self, head, k):
         if head:

@@ -1,6 +1,5 @@
 class Solution(object):
     def setZeroes(self, matrix):
-
         if not matrix:
             return
         m = len(matrix)
@@ -14,9 +13,7 @@ class Solution(object):
                 if matrix[i][j] == 0:
                     r.append(i)
                     c.append(j)
-
         r = set(r)
-
         c = set(c)
         for i in r:
             for j in range(n):

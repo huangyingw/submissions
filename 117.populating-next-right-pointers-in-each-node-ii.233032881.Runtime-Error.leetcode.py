@@ -1,36 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def connect(self, root):
-
         dummyHead = TreeLinkNode(-1)
         pre = dummyHead
         while root is not None:

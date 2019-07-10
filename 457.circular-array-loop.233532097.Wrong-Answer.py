@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def circularArrayLoop(self, nums):
-
         n = len(nums)
         for i, num in enumerate(nums):
             pos = num > 0

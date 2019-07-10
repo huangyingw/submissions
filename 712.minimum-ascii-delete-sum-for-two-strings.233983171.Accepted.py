@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minimumDeleteSum(self, s1, s2):
-
         dp = [0]
         for c in s2:
             dp.append(dp[-1] + ord(c))

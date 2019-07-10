@@ -1,4 +1,3 @@
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -8,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def mergeTrees(self, t1, t2):
-
         if t1 and t2:
             t = TreeNode(t1.val + t2.val)
             t.left = self.mergeTrees(t1.left, t2.left)

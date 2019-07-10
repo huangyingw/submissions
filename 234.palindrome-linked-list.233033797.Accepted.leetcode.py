@@ -1,35 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def isPalindrome(self, head):
-
-
-
-
-
-
         if head is None:
             return True
         p1, p2 = head, head

@@ -1,23 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution:
     def numMusicPlaylists(self, N, L, K):
-
         used_count = {0: 1}
         for song in range(L):
             new_used_count = defaultdict(int)

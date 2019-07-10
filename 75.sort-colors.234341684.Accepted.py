@@ -1,6 +1,5 @@
 class Solution:
     def sortColors(self, nums):
-
         i, j = 0, 0
         for k in range(len(nums)):
             v = nums[k]

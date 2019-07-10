@@ -1,6 +1,5 @@
 class Solution(object):
     def lengthLongestPath(self, input):
-
         if input is None or len(input) == 0:
             return 0
         lines = input.split('\n')

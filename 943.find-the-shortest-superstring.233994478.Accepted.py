@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def shortestSuperstring(self, A):
-
         N = len(A)
         overlaps = [[0] * N for _ in range(N)]
         for i, x in enumerate(A):

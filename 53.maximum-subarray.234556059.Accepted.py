@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def maxSubArray(self, nums):
         if len(nums) == 0:

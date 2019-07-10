@@ -1,6 +1,3 @@
-
-
-
 class Solution:
     def binarysearch(self, nums, target):
         first = 0

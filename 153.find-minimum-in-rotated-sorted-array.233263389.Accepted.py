@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMin(self, nums):
-
         left = 0
         right = len(nums) - 1
         while left < right:
@@ -21,6 +10,4 @@ class Solution(object):
                 left = mid + 1
             else:
                 right = mid
-
-
         return nums[left]

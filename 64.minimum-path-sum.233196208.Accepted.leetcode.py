@@ -1,6 +1,5 @@
 class Solution(object):
     def minPathSum(self, grid):
-
         if not grid:
             return 0
         row, col = len(grid), len(grid[0])

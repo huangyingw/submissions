@@ -1,11 +1,7 @@
-
 class Solution:
     def maxProfit(self, prices):
-
         if not prices:
             return 0
-
-
         profits = []
         max_profit = 0
         current_min = prices[0]
@@ -13,8 +9,6 @@ class Solution:
             current_min = min(current_min, price)
             max_profit = max(max_profit, price - current_min)
             profits.append(max_profit)
-
-
         total_max = 0
         max_profit = 0
         current_max = prices[-1]

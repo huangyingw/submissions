@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countBattleships(self, board):
-
         if not board or not board[0]:
             return 0
         rows, cols = len(board), len(board[0])

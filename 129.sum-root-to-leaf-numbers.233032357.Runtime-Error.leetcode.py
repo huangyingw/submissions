@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumNumbers(self, root):
-
         if not root:
             return 0
 

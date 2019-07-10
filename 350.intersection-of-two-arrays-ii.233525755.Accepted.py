@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def intersect(self, nums1, nums2):
-
         freq1 = Counter(nums1)
         result = []
         for i, num in enumerate(nums2):

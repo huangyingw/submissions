@@ -1,15 +1,5 @@
-
-
-
 class Solution(object):
-
-
-
-
-
-
     def findDuplicate(self, nums):
-
         tortoise = nums[0]
         hare = nums[0]
         while True:

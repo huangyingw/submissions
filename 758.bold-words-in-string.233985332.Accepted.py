@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def boldWords(self, words, S):
-
         S = "
         bold = [False for _ in range(len(S))]
         for word in words:

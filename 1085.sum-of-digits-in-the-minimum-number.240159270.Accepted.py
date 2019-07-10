@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumOfDigits(self, A):
-
         minimum = min(A)
         digit_sum = 0
         while minimum:

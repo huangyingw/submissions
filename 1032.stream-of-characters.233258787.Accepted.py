@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class StreamChecker(object):
     def __init__(self, words):
-
         self.root = {}
         for word in words:
             node = self.root
@@ -26,16 +8,14 @@ class StreamChecker(object):
                     node[c] = {}
                 node = node[c]
             node["
-        self.queries = []
-
-    def query(self, letter):
-
-        self.queries.append(letter)
-        node = self.root
-        for c in reversed(self.queries):
-            if c not in node:
-                return False
-            node = node[c]
-            if "
-                return True
-        return False
+                 self.queries = []
+                 def query(self, letter):
+                 self.queries.append(letter)
+                 node = self.root
+                 for c in reversed(self.queries):
+                 if c not in node:
+                 return False
+                 node = node[c]
+                 if "
+                 return True
+                 return False

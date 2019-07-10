@@ -1,6 +1,5 @@
 class Solution:
     def multiply(self, A, B):
-
         if not A or not B:
             return None
         m, n, l = len(A), len(A[0]), len(B[0])

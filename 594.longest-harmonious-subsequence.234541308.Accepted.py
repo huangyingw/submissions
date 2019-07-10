@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def findLHS(self, nums):
-
         from collections import Counter
         res = 0
         mapping = Counter(nums)

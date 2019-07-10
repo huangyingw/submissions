@@ -1,21 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestPalindrome(self, s):
-
         longest = ""
-
-
-
         centres = [len(s) - 1]
         for diff in range(1, len(s)):
             centres.append(centres[0] + diff)
@@ -30,7 +15,6 @@ class Solution(object):
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1
-
             if right - left - 1 > len(longest):
                 longest = s[left + 1:right]
         return longest

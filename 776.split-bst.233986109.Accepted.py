@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def splitBST(self, root, V):
-
         def splitter(node):
             if not node:
                 return [None, None]

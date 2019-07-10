@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def minPathSum(self, grid):
         m = len(grid)

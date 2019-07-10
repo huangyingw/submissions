@@ -1,9 +1,5 @@
 class Solution(object):
     def getSum(self, a, b):
-
-
-
-
         import ctypes
         sum = 0
         carry = ctypes.c_int32(b)

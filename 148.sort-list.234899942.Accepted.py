@@ -6,14 +6,8 @@
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def sortList(self, head):
-
         if not head or not head.next:
             return head
         slow, fast = head, head.next

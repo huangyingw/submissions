@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 import gc
-
 
 
 class ListNode(object):
@@ -21,7 +9,6 @@ class ListNode(object):
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
-
         if not headA or not headB:
             return None
         savedA, savedB = headA, headB
@@ -34,7 +21,6 @@ class Solution(object):
 
 class Solution2(object):
     def getIntersectionNode(self, headA, headB):
-
         if not headA or not headB:
             return None
         savedA, savedB = headA, headB

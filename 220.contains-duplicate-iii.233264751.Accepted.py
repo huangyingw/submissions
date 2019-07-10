@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def containsNearbyAlmostDuplicate(self, nums, k, t):
-
         if k <= 0 or t < 0:
             return False
         buckets = {}

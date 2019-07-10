@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def gcdOfStrings(self, str1, str2):
-
         a, b = len(str1), len(str2)
         if a < b:
             a, b = b, a

@@ -6,7 +6,6 @@
 
 class Solution(object):
     def rotate(self, matrix):
-
         n = len(matrix)
         if n % 2 == 0:
             m = n / 2

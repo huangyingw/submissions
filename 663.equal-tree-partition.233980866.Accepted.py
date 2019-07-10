@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def checkEqualTree(self, root):
-
         def make_sum(node):
             if not node:
                 return 0

@@ -1,6 +1,3 @@
-
-
-
 class Node:
     def __init__(self, data=None):
         self.val = data
@@ -9,13 +6,11 @@ class Node:
 
 class MyLinkedList(object):
     def __init__(self):
-
         self.head = None
         self.tail = None
         self.length = 0
 
     def get(self, index):
-
         if index >= self.length or index < 0:
             return -1
         cur = self.head
@@ -24,7 +19,6 @@ class MyLinkedList(object):
         return cur.val
 
     def addAtHead(self, val):
-
         temp = Node(val)
         if not self.head:
             self.head = temp
@@ -35,7 +29,6 @@ class MyLinkedList(object):
         self.length += 1
 
     def addAtTail(self, val):
-
         temp = Node(val)
         if not self.tail:
             self.tail = temp
@@ -46,7 +39,6 @@ class MyLinkedList(object):
         self.length += 1
 
     def addAtIndex(self, index, val):
-
         if index > self.length or index < 0:
             return
         if index == 0:
@@ -85,7 +77,6 @@ class MyLinkedList(object):
         self.length -= 1
 
     def deleteAtIndex(self, index):
-
         if index >= self.length:
             return
         if index == 0:

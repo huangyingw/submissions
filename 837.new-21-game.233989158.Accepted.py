@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def new21Game(self, N, K, W):
-
         if K == 0 or N >= K + W:
             return 1
         probability = [0] * (N + 1)

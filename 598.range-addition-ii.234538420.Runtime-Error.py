@@ -1,14 +1,10 @@
-
 class Solution:
-
     def maxCount1(self, m, n, ops):
-
         a, b = m, n
         for i in ops:
             a = min(i[0], a)
             b = min(i[1], b)
         return a * b
-
 
     def maxCount2(self, m, n, ops):
         if not ops:

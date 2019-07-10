@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def construct(self, grid):
-
         def helper(r, c, side):
             if side == 1:
                 return Node(bool(grid[r][c]), True, None, None, None, None)

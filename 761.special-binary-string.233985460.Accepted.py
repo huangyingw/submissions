@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def makeLargestSpecial(self, S):
-
         specials = []
         if not S:
             return ""

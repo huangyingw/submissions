@@ -1,6 +1,5 @@
 class Solution:
     def maxDistToClosest(self, seats):
-
         gap = [1]
         n = 0
         add = 2

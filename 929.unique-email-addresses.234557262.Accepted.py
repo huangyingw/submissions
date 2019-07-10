@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def numUniqueEmails(self, emails):
-
         res = set()
         for email in emails:
             temp = []

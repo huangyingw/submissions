@@ -1,4 +1,3 @@
-
 class Solution:
     def sortArrayByParityII(self, A):
         odd_list = []

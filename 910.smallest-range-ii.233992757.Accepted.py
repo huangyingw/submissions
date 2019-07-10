@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def smallestRangeII(self, A, K):
-
         A = sorted(A)
         result = A[-1] - A[0]
         left_min = A[0] + K

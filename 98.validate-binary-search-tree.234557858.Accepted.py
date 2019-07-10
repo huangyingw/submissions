@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValidBST(self, root, minn=float('-inf'), maxx=float('inf')):
-
         if not root:
             return True
         if root.val <= minn or root.val >= maxx:

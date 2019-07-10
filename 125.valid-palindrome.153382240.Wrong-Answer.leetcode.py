@@ -1,40 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isPalindrome(self, s):
-
         s = s.lower()
         start = 0
         end = len(s) - 1

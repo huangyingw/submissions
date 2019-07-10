@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValidSudoku(self, board):
-
         size = 9
         digits = {str(i) for i in range(1, 10)}
         rows = [set() for _ in range(size)]

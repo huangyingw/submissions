@@ -1,32 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class LogSystem(object):
     def __init__(self):
         self.prefixes = {"Year": 4, "Month": 7, "Day": 10, "Hour": 13, "Minute": 16, "Second": 19}
         self.logs = []
 
     def put(self, id, timestamp):
-
         self.logs.append((id, timestamp))
 
     def retrieve(self, s, e, gra):
-
         result = []
         pref = self.prefixes[gra]
         s_prefix, e_prefix = s[:pref], e[:pref]
@@ -34,7 +14,6 @@ class LogSystem(object):
             if s_prefix <= timestamp[:pref] <= e_prefix:
                 result.append(id)
         return result
-
 
 
 class LogNode(object):

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 class Solution(object):
     def __init__(self):
         self.buf4_pointer = 0
@@ -11,7 +5,6 @@ class Solution(object):
         self.buf4 = [''] * 4
 
     def read(self, buf, n):
-
         i = 0
         while i < n:
             if self.buf4_pointer == 0:

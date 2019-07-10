@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def maxTurbulenceSize(self, A):
-
         if len(A) == 1:
             return 1
         result = 0

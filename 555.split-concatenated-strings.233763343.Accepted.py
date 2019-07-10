@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def splitLoopedString(self, strs):
-
         result = None
         best = [max(s, s[::-1]) for s in strs]
         for i, s in enumerate(strs):

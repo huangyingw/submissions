@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def widthOfBinaryTree(self, root):
-
         if not root:
             return 0
         max_width = 1

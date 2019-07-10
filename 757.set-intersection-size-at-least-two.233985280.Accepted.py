@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def intersectionSizeTwo(self, intervals):
-
         intervals.sort(key=lambda x: x[1])
         intersection = []
         for start, end in intervals:
@@ -22,5 +8,4 @@ class Solution(object):
                 intersection.append(end)
             elif start > intersection[-2]:
                 intersection.append(end)
-
         return len(intersection)

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def projectionArea(self, grid):
-
         n = len(grid)
         row_heights, col_heights = [0] * n, [0] * n
         base_area = 0

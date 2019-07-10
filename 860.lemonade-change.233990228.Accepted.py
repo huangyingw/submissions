@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lemonadeChange(self, bills):
-
         fives, tens = 0, 0
         for bill in bills:
             if bill == 5:

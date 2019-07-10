@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def dailyTemperatures1(self, T):
         nxt = [float('inf')] * 102
@@ -14,7 +10,6 @@ class Solution:
         return ans
 
     def dailyTemperatures2(self, T):
-
         ret = [0] * len(T)
         stack = []
         for i in range(len(T) - 1, -1, -1):

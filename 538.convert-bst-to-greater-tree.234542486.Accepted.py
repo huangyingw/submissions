@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def convertBST(self, root):
-
         self.val = 0
 
         def visit(root):
@@ -23,10 +12,8 @@ class Solution(object):
         return root
 
 
-
 class Solution(object):
     def convertBST(self, root):
-
         if not root:
             return None
         stack = [root]

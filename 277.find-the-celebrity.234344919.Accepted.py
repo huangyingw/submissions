@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def findCelebrity(self, n):
-
         candidate = 0
         for i in range(n):
             if knows(candidate, i):

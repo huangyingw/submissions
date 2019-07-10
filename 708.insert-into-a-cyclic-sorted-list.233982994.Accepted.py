@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def insert(self, head, insertVal):
-
         if not head:
             new_node = Node(insertVal, None)
             new_node.next = new_node

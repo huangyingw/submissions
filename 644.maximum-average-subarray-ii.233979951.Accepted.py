@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMaxAverage(self, nums, k):
-
         n = len(nums)
         if k < 80:
             cumulative = [0]

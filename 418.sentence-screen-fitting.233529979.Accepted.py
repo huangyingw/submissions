@@ -1,20 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def wordsTyping(self, sentence, rows, cols):
-
         sentence_len = sum(len(w) for w in sentence) + len(sentence)
-
         line_fits = []
         for start_word_index in range(len(sentence)):
             row_length, sentences = 0, 0

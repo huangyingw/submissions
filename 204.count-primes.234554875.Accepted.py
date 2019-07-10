@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def countPrimes(self, n):
-
         if n < 2:
             return 0
         prime = [1] * (n)
@@ -11,5 +7,4 @@ class Solution(object):
         for i in range(2, int(n**0.5) + 1):
             if prime[i] == 1:
                 prime[i * i:n:i] = [0] * int((n - i * i - 1) / i + 1)
-
         return sum(prime)

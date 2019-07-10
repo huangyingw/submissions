@@ -1,7 +1,5 @@
-
 class Solution:
     def searchInsert(self, nums, target):
-
         if not nums:
             return 0
         if target < nums[0]:

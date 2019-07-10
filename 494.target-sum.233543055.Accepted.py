@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findTargetSumWays(self, nums, S):
-
         sums = defaultdict(int)
         sums[0] = 1
         running = nums[:]

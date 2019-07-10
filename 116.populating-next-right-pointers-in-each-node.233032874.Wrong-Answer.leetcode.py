@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def connect(self, root):
-
         if root is None:
             return
         nodes = [root]

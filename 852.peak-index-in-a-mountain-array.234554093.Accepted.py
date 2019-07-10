@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def peakIndexInMountainArray(self, A):
         first = 0

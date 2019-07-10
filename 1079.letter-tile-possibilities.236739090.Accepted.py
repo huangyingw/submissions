@@ -1,6 +1,5 @@
 class Solution(object):
     def numTilePossibilities(self, tiles):
-
         if not tiles:
             return 0
         import collections
@@ -19,7 +18,6 @@ class Solution(object):
                             flag = False
                     if flag:
                         new.add(new_seq)
-
             unique.update(new)
             total_len += 1
         return len(unique)

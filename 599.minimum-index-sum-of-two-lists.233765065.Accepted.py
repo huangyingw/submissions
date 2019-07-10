@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findRestaurant(self, list1, list2):
-
         if len(list1) > len(list2):
             list1, list2 = list2, list1
         dict1 = {rest: i for i, rest in enumerate(list1)}

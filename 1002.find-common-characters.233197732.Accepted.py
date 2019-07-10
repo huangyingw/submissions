@@ -1,6 +1,5 @@
 class Solution(object):
     def commonChars(self, A):
-
         char_map = {}
         for char in A[0]:
             if char in char_map:

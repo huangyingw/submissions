@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numSubarrayProductLessThanK(self, nums, k):
-
         subarrays = 0
         start = 0
         product = 1

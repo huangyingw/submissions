@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def loudAndRich(self, richer, quiet):
-
         n = len(quiet)
         richer_than = [set() for _ in range(n)]
         for a, b in richer:

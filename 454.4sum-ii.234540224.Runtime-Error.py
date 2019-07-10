@@ -1,10 +1,5 @@
-
-
-
-
 class Solution1:
     def fourSumCount(self, A, B, C, D):
-
         cnts = 0
         dd = {}
         aa = {}
@@ -31,7 +26,6 @@ class Solution1:
 
 class Solution2:
     def fourSumCount(self, A, B, C, D):
-
         from collections import Counter
         AB = Counter(a + b for a in A for b in B)
         return sum(AB[-c - d] for c in C for d in D)

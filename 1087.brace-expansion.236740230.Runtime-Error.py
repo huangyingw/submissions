@@ -1,6 +1,5 @@
 class Solution(object):
     def permute(self, S):
-
         if not S:
             return []
         if '{' not in S:
@@ -29,7 +28,6 @@ class Solution(object):
                     stack2 = []
                 else:
                     stack.append(char)
-
         stack.sort()
         stack.sort(key=len)
         return stack

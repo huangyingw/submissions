@@ -1,6 +1,5 @@
 class Solution(object):
     def backspaceCompare(self, S, T):
-
         if S == T:
             return True
         s_stack = []

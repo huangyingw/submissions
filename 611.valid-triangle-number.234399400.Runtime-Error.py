@@ -1,13 +1,8 @@
-
-
-
-
 from itertools import combinations
 
 
 class Solution1:
     def triangleNumber(self, nums):
-
         def is_triangle(*args):
             a, b, c = args
             if a + b > c > 0 and a + c > b > 0 and b + c > a > 0:
@@ -16,11 +11,8 @@ class Solution1:
         return sum([is_triangle(*com) for com in combinations(nums, 3)])
 
 
-
-
 class Solution2:
     def triangleNumber(self, nums):
-
         nums.sort()
         count = 0
         for i in range(2, len(nums)):

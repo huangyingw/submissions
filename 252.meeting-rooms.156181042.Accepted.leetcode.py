@@ -1,6 +1,5 @@
 class Solution(object):
     def canAttendMeetings(self, intervals):
-
         if not intervals:
             return True
         intervals.sort(key=lambda val: val.start)

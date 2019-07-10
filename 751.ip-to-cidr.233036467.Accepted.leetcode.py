@@ -10,11 +10,9 @@ class Solution(object):
                         for i in (24, 16, 8, 0))
 
     def ipToCIDR(self, ip, n):
-
         start = self.ipToInt(ip)
         ans = []
         while n:
-
             mask = max(33 - (start & -start).bit_length(),
                        33 - n.bit_length())
             ans.append(self.intToIP(start) + '/' + str(mask))

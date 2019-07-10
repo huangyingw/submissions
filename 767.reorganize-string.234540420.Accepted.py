@@ -1,9 +1,4 @@
-
 class Solution:
-
-
-
-
     def reorganizeString(self, S):
         a = sorted(sorted(S), key=S.count)
         h = len(a) / 2

@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class LFUCache(object):
     def __init__(self, capacity):
-
         self.capacity = capacity
         self.time = 0
         self.map = {}
@@ -24,7 +11,6 @@ class LFUCache(object):
         self.update = set()
 
     def get(self, key):
-
         self.time += 1
         if key in self.map:
             freq, _ = self.freq_time[key]
@@ -34,19 +20,16 @@ class LFUCache(object):
         return -1
 
     def put(self, key, value):
-
         if self.capacity <= 0:
             return
         self.time += 1
         if not key in self.map:
             if len(self.map) >= self.capacity:
                 while self.priority_queue and self.priority_queue[0][2] in self.update:
-
                     _, _, k = heapq.heappop(self.priority_queue)
                     f, t = self.freq_time[k]
                     heapq.heappush(self.priority_queue, (f, t, k))
                     self.update.remove(k)
-
                 _, _, k = heapq.heappop(self.priority_queue)
                 self.map.pop(k)
                 self.freq_time.pop(k)

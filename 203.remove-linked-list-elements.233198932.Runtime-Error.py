@@ -1,6 +1,5 @@
 class Solution(object):
     def countPrimes(self, n):
-
         if n < 2:
             return 0
         A = [0] * (n + 1)

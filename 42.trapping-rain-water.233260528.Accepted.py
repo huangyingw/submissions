@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def trap(self, height):
         highest_right = [0] * len(height)

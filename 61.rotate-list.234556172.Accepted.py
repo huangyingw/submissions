@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def rotateRight(self, head, k):
-
         if not head:
             return
         l = self.length(head)

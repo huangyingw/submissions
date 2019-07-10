@@ -1,9 +1,5 @@
-
-
 class Solution(object):
-
     def longestWord1(self, words):
-
         seen, res = set(""), ""
         buckets = defaultdict(list)
         min_len, max_len = float('inf'), float('-inf')
@@ -20,7 +16,6 @@ class Solution(object):
         return res
 
     def longestWord2(self, words):
-
         max_len = 0
         ans = ""
         words.sort(key=lambda x: len(x))

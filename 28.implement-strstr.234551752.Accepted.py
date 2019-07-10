@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def strStr(self, haystack, needle):
-
         if needle == ""or needle == haystack:
             return 0
         l = len(needle)

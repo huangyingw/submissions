@@ -1,8 +1,5 @@
-
-
 class Solution:
     def shortestToChar(self, S, C):
-
         n = len(S)
         ans = [0 if i == C else n for i in S]
         for i in range(n - 1):

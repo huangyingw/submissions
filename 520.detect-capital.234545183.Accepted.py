@@ -1,7 +1,5 @@
-
 class Solution:
     def detectCapitalUse(self, word):
-
         if len(word) == 1:
             return True
         if word.islower() or word.isupper():

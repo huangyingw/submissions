@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution:
     def hasPathSum(self, root, sum):
-
         if not root:
             return False
         if not root.left and not root.right and root.val == sum:

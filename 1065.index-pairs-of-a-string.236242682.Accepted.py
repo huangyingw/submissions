@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def indexPairs(self, text, words):
-
         result = []
         for word in words:
             i = -1

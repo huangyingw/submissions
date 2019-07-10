@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minmaxGasDist(self, stations, K):
-
         distances = [s1 - s2 for s1, s2 in zip(stations[1:], stations)]
         distances.sort(reverse=True)
 

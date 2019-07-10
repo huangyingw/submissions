@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findAnagrams(self, s, p):
-
         n = len(p)
         freq = defaultdict(int)
         result = []

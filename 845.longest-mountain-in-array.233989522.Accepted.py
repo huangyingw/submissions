@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestMountain(self, A):
-
         valley, peak = 0, 0
         prev = 0
         longest = 0

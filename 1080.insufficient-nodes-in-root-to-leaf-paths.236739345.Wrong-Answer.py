@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def sufficientSubset(self, root, limit):
-
         def reduce_tree(root, limit, curr_sum):
             if not root:
                 return None

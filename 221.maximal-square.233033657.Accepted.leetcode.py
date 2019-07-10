@@ -1,47 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def maximalSquare(self, matrix):
-
-
         if matrix is None or len(matrix) == 0:
             return 0
         rows, cols, res, prev = len(matrix), len(matrix[0]), 0, 0

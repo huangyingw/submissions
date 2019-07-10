@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def sortedSquares(self, A):
-
         l = len(A)
         j = 0
         while j < l and A[j] < 0:

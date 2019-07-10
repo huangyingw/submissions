@@ -1,11 +1,5 @@
-
-
-
-
-
 class Solution:
     def canJump(self, nums):
-
         memo = [0] * len(nums)
         memo[-1] = 1
 
@@ -22,8 +16,6 @@ class Solution:
         return canJumpFromPosition(0, nums)
 
 
-
-
 class Solution2:
     def canJump(self, nums):
         memo = [0] * len(nums)
@@ -35,7 +27,6 @@ class Solution2:
                     memo[i] = 1
                     break
         return memo[0] == 1
-
 
 
 class Solution3:

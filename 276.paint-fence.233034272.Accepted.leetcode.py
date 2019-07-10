@@ -1,23 +1,9 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
     def numWays(self, n, k):
         if n == 0:
             return 0
         elif n == 1:
             return k
-
-
-
-
         dp = [0] * 2
         dp[0] = k
         dp[1] = k * k

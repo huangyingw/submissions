@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 import bisect
 
 
 class Solution(object):
     def maxSumSubmatrix(self, matrix, k):
-
         if not matrix or not matrix[0]:
             return 0
         rows, cols = len(matrix), len(matrix[0])

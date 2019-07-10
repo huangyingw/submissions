@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def regionsBySlashes(self, grid):
-
         n = len(grid)
         UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
         parents = {}

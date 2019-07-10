@@ -1,6 +1,5 @@
 class Solution_ComplexNumber(object):
     def judgeCircle(self, moves):
-
         walk = {'U': 1, 'D': -1, 'L': 1j, 'R': -1j}
         return sum(walk[move] for move in moves) == 0
 

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canVisitAllRooms(self, rooms):
-
         visited = set()
 
         def dfs(room):

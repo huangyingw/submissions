@@ -1,12 +1,4 @@
 class Solution:
-
-
-
-
-
-
-
-
     def longestPalindrome(self, s):
         ans = 0
         char_map = {}

@@ -10,7 +10,6 @@
 
 class Solution(object):
     def minCut(self, s):
-
         if not s:
             return 0
         P = [[False for _ in range(len(s))] for _ in range(len(s))]

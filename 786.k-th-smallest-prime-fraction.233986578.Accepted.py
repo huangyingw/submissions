@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def kthSmallestPrimeFraction(self, A, K):
-
         def count_smaller_fractions(x):
             count, denominator, largest = 0, 1, [0, 1]
             for numerator in range(len(A) - 1):

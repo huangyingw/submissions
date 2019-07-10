@@ -1,18 +1,9 @@
-
-
-
-
-
-
-
-
 import heapq
 from collections import Counter
 
 
 class Solution(object):
     def reorganizeString(self, S):
-
         freq = Counter(S)
         if any(count > (len(S) + 1) // 2 for count in freq.values()):
             return ""

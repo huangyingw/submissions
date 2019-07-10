@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def minFlipsMonoIncr(self, S):
-
         n = len(S)
         cnt0 = S.count('0')
         cnt1 = 0

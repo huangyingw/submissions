@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def search(self, nums, target):
-
         start = 0
         end = len(nums) - 1
         while start <= end:

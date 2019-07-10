@@ -1,29 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def soupServings(self, N):
-
         memo = {}
 
         def helper(A, B):

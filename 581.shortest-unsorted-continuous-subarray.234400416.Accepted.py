@@ -1,8 +1,5 @@
-
 class Solution:
-
     def findUnsortedSubarray(self, nums):
-
         n = len(nums)
         cmax, cmin = -float('inf'), float('inf')
         l, r = 0, -1
@@ -14,9 +11,6 @@ class Solution:
             if nums[n - 1 - i] != cmin:
                 l = n - 1 - i
         return r - l + 1
-
-
-
 
     def findUnsortedSubarray(self, nums):
         is_same = [a == b for a, b in zip(nums, sorted(nums))]

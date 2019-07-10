@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minDistance(self, height, width, tree, squirrel, nuts):
-
         if not nuts:
             return 0
         nuts_to_tree = 0

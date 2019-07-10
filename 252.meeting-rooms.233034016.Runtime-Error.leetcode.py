@@ -1,33 +1,4 @@
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def canAttendMeetings(self, intervals):
         intervals.sort(key=lambda x: x.start)
         ls = len(intervals)

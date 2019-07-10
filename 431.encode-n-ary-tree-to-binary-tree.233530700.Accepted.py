@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Codec:
     def encode(self, root):
-
         if not root:
             return None
         binary = TreeNode(root.val)
@@ -27,7 +13,6 @@ class Codec:
         return binary
 
     def decode(self, data):
-
         if not data:
             return None
         nary = Node(data.val, [])

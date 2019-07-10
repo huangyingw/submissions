@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def convertToTitle(self, n):
         col = []

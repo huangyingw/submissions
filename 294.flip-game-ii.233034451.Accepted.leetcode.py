@@ -1,16 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
     def canWin(self, s):
         if s is None or len(s) < 2:
             return False
@@ -28,50 +16,5 @@ class Solution(object):
                 if not res:
                     return True
         return False
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     s = Solution()

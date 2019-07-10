@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class UndirectedGraphNode(object):
     def __init__(self, x):
         self.label = x
@@ -15,7 +6,6 @@ class UndirectedGraphNode(object):
 
 class Solution(object):
     def cloneGraph(self, node):
-
         if not node:
             return
         cloned_start = UndirectedGraphNode(node.label)

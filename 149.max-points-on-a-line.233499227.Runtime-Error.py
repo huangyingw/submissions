@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Point(object):
     def __init__(self, a=0, b=0):
         self.x = a
@@ -19,7 +7,6 @@ from collections import defaultdict
 
 class Solution(object):
     def maxPoints(self, points):
-
         if len(points) <= 2:
             return len(points)
         overall_max = 2

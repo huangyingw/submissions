@@ -1,8 +1,5 @@
-
 class Solution:
-
     def generate(self, numRows):
-
         if numRows == 0:
             return []
         if numRows == 1:
@@ -21,9 +18,7 @@ class Solution:
             currentRow += 1
         return res
 
-
     def generate(self, numRows):
-
         triag = [[0]]
         row = []
         for rsize in range(1, numRows + 1):

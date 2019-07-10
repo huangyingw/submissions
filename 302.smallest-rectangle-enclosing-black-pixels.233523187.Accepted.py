@@ -1,27 +1,10 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minArea(self, image, x, y):
-
         if not image or not image[0] or image[x][y] != '1':
             return 0
-
         top_edge = self.find_edge(0, x, True, True, image)
-
         bottom_edge = self.find_edge(x + 1, len(image), True, False, image)
-
         left_edge = self.find_edge(0, y, False, True, image)
-
         right_edge = self.find_edge(y + 1, len(image[0]), False, False, image)
         return (right_edge - left_edge) * (bottom_edge - top_edge)
 

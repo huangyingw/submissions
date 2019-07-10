@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class TreeLinkNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,7 +8,6 @@ class TreeLinkNode(object):
 
 class Solution(object):
     def connect(self, root):
-
         if not root:
             return
         level = [root]

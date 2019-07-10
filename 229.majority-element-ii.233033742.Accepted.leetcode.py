@@ -1,6 +1,5 @@
 class Solution(object):
     def majorityElement(self, nums):
-
         ls = len(nums)
         res = []
         check_value = []

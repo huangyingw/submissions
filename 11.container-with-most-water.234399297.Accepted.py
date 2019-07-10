@@ -1,8 +1,4 @@
-
 class Solution:
-
-
-
     def maxArea(self, height):
         ret = 0
         for i in range(len(height) - 1):

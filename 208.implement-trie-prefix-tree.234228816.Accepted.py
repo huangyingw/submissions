@@ -1,7 +1,5 @@
 class TrieNode(object):
-
     def __init__(self):
-
         self.links = [None] * 26
         self.isEnd = False
 
@@ -23,7 +21,6 @@ class Trie(object):
         self.root = TrieNode()
 
     def insert(self, word):
-
         node = self.root
         for i in range(len(word)):
             ch = word[i]
@@ -43,11 +40,9 @@ class Trie(object):
         return node
 
     def search(self, word):
-
         node = self.searchPrefix(word)
         return node is not None and node.isEnd
 
     def startsWith(self, prefix):
-
         node = self.searchPrefix(prefix)
         return node is not None

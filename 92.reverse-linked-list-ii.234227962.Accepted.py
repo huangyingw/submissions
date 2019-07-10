@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def reverseBetween(self, head, m, n):
-
         if m == n:
             return head
         split_node, prev, curr = None, None, head

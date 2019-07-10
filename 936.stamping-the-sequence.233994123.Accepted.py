@@ -1,29 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def movesToStamp(self, stamp, target):
-
         memo = {}
 
         def helper(i, j, results):

@@ -11,7 +11,6 @@ Output: [4,9,9,49,121]
 
 class Solution(object):
     def sortedSquares(self, A):
-
         N = len(A)
         j = 0
         while j < N and A[j] < 0:

@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def kthSmallest(self, root, k):
-
         stack = []
         while True:
             while root:

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def wiggleMaxLength(self, nums):
-
         if not nums:
             return 0
         max_length = 1

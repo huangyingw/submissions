@@ -1,27 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
     def invertTree(self, root):
-
         if root is None:
             return None
         queue = [root]

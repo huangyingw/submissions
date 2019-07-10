@@ -1,6 +1,5 @@
 class Solution(object):
     def isBipartite(self, graph):
-
         if not graph:
             return False
         visited = {}

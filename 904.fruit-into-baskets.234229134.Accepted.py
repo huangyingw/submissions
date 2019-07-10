@@ -1,45 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def totalFruit(self, tree):
         ans = i = 0
         count = collections.Counter()

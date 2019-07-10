@@ -1,21 +1,11 @@
-
-
-
-
-
 class Solution:
     def sortedSquares(self, A):
-
         return [a ** 2 for a in sorted(A, key=lambda a: abs(a))]
-
-
-
 
 
 class Solution(object):
     def sortedSquares(self, A):
         N = len(A)
-
         j = 0
         while j < N and A[j] < 0:
             j += 1

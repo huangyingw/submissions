@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validIPAddress(self, IP):
-
         ip_list = IP.split(".")
         if len(ip_list) == 4:
             for group in ip_list:

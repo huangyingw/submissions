@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def zigzagLevelOrder(self, root):
-
         if not root:
             return []
         traversal = []

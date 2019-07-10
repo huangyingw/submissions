@@ -1,7 +1,5 @@
-
 class Solution:
     def restoreIpAddresses(self, s):
-
         res = []
         self.dfs(res, s, 0, '', 0)
         return res

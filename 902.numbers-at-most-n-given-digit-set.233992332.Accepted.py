@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def atMostNGivenDigitSet(self, D, N):
-
         S = str(N)
         K = len(S)
         dp = [0] * K + [1]

@@ -1,6 +1,5 @@
 class Solution(object):
     def maxSumTwoNoOverlap(self, A, L, M):
-
         cumm_sum = [0]
         for index in range(len(A)):
             cumm_sum.append(cumm_sum[index] + A[index])

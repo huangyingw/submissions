@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sampleStats(self, count):
-
         minimum = None
         sample_count = sum(count)
         sum_samples, samples_seen = 0, 0

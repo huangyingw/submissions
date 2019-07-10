@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumRootToLeaf(self, root):
-
         def helper(node, running):
             if not node:
                 return 0

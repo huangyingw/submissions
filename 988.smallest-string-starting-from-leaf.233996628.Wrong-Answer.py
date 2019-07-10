@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def smallestFromLeaf(self, root):
-
         def helper(node):
             if not node:
                 return ""

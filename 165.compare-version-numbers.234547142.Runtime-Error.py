@@ -1,8 +1,5 @@
-
-
 class Solution:
     def compareVersion(self, version1, version2):
-
         v1 = [int(v) for v in version1.split('.')]
         v2 = [int(v) for v in version2.split('.')]
         for i in range(max(len(v1), len(v2))):
@@ -17,7 +14,6 @@ class Solution:
 
 class Solution:
     def compareVersion(self, version1, version2):
-
         if version1 == version2:
             return 0
         v1 = list(map(int, version1.split(".")))

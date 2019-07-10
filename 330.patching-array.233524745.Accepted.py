@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minPatches(self, nums, n):
-
         next_missing = 1
         patches = 0
         i = 0

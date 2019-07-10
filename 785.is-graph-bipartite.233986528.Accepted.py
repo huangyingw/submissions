@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isBipartite(self, graph):
-
         n = len(graph)
         colours = [None] * n
         for i in range(len(graph)):

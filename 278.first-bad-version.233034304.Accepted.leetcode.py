@@ -1,12 +1,5 @@
-
-
-
-
-
-
 class Solution(object):
     def firstBadVersion(self, n):
-
         left, right = 1, n
         while left < right:
             mid = (right + left) / 2

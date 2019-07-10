@@ -1,40 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def strStr(self, haystack, needle):
         lsh, lsn = len(haystack), len(needle)
         if lsn == 0:

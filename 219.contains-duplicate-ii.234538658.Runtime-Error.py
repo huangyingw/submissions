@@ -1,8 +1,5 @@
-
 class Solution(object):
-
     def containsDuplicate(self, nums):
-
         mapping = dict()
         for i in nums:
             if i in mapping:
@@ -11,16 +8,12 @@ class Solution(object):
                 mapping[i] = 1
         return False
 
-
     def containsDuplicate(self, nums):
-
         if(len(set(nums)) == len(nums)):
             return False
         return True
 
-
     def containsDuplicate(self, nums):
-
         nums.sort()
         for i in range(1, len(nums)):
             if nums[i] == nums[i - 1]:

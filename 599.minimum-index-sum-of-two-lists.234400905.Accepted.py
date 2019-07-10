@@ -1,8 +1,5 @@
-
 class Solution:
-
     def findRestaurant(self, list1, list2):
-
         common = set(list1) & set(list2)
         index_sum = 0
         res = []
@@ -16,7 +13,6 @@ class Solution:
             if i[0] == sum_index:
                 ret.append(list1[i[1]])
         return ret
-
 
     def findRestaurant(self, list1, list2):
         d = {}

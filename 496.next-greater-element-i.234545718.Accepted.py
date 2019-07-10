@@ -1,11 +1,5 @@
-
 class Solution:
-
-
-
-
     def nextGreaterElement(self, nums1, nums2):
-
         l2 = len(nums2)
         nums2_next = [-1] * l2
         for i in range(l2 - 1):
@@ -18,10 +12,7 @@ class Solution:
             res.append(nums2_next[nums2.index(k)])
         return res
 
-
-
     def nextGreaterElement2(self, nums1, nums2):
-
         if not nums1 or not nums2:
             return []
         nextGreat = {}

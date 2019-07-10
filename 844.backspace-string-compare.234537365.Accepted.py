@@ -1,6 +1,5 @@
 class Solution:
     def backspaceCompare(self, S, T):
-
         def convert(string):
             stack = []
             for s in string:

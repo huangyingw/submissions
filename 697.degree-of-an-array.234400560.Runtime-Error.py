@@ -1,4 +1,3 @@
-
 class Solution(object):
     def findShortestSubArray(self, nums):
         left, right, count = {}, {}, {}

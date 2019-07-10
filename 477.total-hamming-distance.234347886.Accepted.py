@@ -1,6 +1,5 @@
 class Solution:
     def totalHammingDistance(self, nums):
-
         bits = [[0, 0] for _ in range(32)]
         for x in nums:
             for i in range(32):

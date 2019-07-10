@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxDepth(self, root):
-
         if not root:
             return 0
         if not root.children:

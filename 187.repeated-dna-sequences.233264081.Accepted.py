@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findRepeatedDnaSequences(self, s):
-
         substrings, repeated = set(), set()
         TARGET = 10
         for i in range(len(s) - TARGET + 1):

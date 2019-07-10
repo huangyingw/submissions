@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def countOfAtoms(self, formula):
         def parse():

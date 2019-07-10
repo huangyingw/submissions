@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution:
-
     def isSameTree(self, p, q):
-
         if not p and not q:
             return True
         if not p or not q:
@@ -20,10 +9,7 @@ class Solution:
         else:
             return False
 
-
-
     def isSameTree(self, p, q):
-
         def traverse(root):
             queue = [root]
             res = []

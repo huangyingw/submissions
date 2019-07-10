@@ -1,6 +1,5 @@
 class Solution(object):
     def isValidSudoku(self, board):
-
         import collections
         dict_row, dict_col, dict_cell = collections.defaultdict(set), collections.defaultdict(set), collections.defaultdict(set)
         for row_index in range(1, 4):

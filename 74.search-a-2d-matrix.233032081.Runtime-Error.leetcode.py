@@ -1,44 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def searchMatrix(self, matrix, target):
-
         try:
             ls_row, ls_col = len(matrix), len(matrix[0])
         except:

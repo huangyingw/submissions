@@ -13,7 +13,6 @@
 
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-
         graph = [[] for _ in range(numCourses)]
         visited = [False for _ in range(numCourses)]
         stack = [False for _ in range(numCourses)]

@@ -1,22 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import bisect
 import random
 
 
 class Solution(object):
     def __init__(self, rects):
-
         self.cumul_area = [0]
         self.x_dimensions = [0]
         self.rects = rects
@@ -26,7 +13,6 @@ class Solution(object):
             self.cumul_area.append(self.cumul_area[-1] + x_dim * y_dim)
 
     def pick(self):
-
         n = random.randint(1, self.cumul_area[-1])
         i = bisect.bisect_left(self.cumul_area, n)
         n -= (self.cumul_area[i - 1] + 1)

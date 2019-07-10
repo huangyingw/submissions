@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isSameTree(self, p, q):
-
         if p == q:
             return True
         try:

@@ -1,6 +1,5 @@
 class Solution:
     def removeDuplicates(self, nums):
-
         if not nums:
             return 0
         idx = 0

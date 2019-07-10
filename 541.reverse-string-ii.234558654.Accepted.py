@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def reverseStr(self, s, k):
-
         res = []
         n = len(s)
         revFlag = 1

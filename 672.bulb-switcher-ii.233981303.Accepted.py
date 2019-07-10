@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def flipLights(self, n, m):
-
         if n == 0:
             return 0
         if m == 0:

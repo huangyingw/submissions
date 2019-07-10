@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def toGoatLatin(self, S):
-
         S = S.split()
         vowels = {"a", "e", "i", "o", "u"}
         for i, word in enumerate(S):

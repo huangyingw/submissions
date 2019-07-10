@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def findLUSlength(self, strs):
-
         def is_subsequence(s, t):
             i, j = 0, 0
             while i < len(s) and j < len(t):

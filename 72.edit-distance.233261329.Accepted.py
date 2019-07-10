@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minDistance(self, word1, word2):
-
         def edit_distance(i, j):
             if i < 0 or j < 0:
                 return i + 1 + j + 1

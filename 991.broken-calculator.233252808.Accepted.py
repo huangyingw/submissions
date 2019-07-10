@@ -1,6 +1,5 @@
 class Solution(object):
     def brokenCalc(self, X, Y):
-
         if X == Y:
             return 0
         if X > Y:

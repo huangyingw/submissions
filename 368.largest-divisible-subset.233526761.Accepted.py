@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def largestDivisibleSubset(self, nums):
-
         max_to_set = {-1: set()}
         nums.sort()
         for num in nums:

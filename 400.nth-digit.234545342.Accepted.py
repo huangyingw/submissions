@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def findNthDigit(self, n):
-
         bit = 1
         base = 9
         while n > bit * base:

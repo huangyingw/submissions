@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from functools import lru_cache
 
 
 class Solution(object):
     def minScoreTriangulation(self, A):
-
         @lru_cache(None)
         def helper(i, j):
             if j - i <= 1:

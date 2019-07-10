@@ -1,5 +1,3 @@
-
-
 class Solution:
     def simplifyPath(self, path):
         stack = []

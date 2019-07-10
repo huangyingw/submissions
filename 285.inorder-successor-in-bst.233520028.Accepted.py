@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def inorderSuccessor(self, root, p):
-
         succ = None
         while root:
             if p.val >= root.val:

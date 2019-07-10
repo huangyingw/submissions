@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def insertIntoBST(self, root, val):
-
         node = TreeNode(val)
         cur = root
         if not root:

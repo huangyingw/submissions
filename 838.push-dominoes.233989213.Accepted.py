@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pushDominoes(self, dominos):
-
         prev_R = float("-inf")
         rights = []
         for i, c in enumerate(dominos):

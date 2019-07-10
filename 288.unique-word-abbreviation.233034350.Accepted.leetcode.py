@@ -1,6 +1,5 @@
 class ValidWordAbbr(object):
     def __init__(self, dictionary):
-
         self.dictionary = set(dictionary)
         self.abb_dic = {}
         for s in self.dictionary:
@@ -11,7 +10,6 @@ class ValidWordAbbr(object):
                 self.abb_dic[curr] = True
 
     def isUnique(self, word):
-
         abb = self.getAbb(word)
         hasAbbr = self.abb_dic.get(abb, None)
         return hasAbbr == None or (hasAbbr and word in self.dictionary)

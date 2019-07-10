@@ -4,7 +4,6 @@ from collections import Counter
 
 class Solution:
     def rearrangeString(self, s, k):
-
         if k == 0:
             return s
         l = [(-count, c) for c, count in Counter(s).items()]

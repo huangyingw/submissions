@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findCircleNum(self, M):
-
         n = len(M)
         group = [i for i in range(n)]
 
@@ -35,7 +17,6 @@ class Solution(object):
 
 class Solution2(object):
     def findCircleNum(self, M):
-
         def dfs(i):
             for j in range(len(M)):
                 if M[i][j] == 1:

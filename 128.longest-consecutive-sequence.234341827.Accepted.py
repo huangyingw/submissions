@@ -3,7 +3,6 @@ from collections import defaultdict
 
 class Solution:
     def longestConsecutive(self, nums):
-
         if not nums:
             return 0
         nums = set(nums)

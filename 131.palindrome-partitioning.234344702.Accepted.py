@@ -1,7 +1,5 @@
-
 class Solution:
     def partition(self, s):
-
         res = []
         self.dfs(res, [], s)
         return res

@@ -1,6 +1,5 @@
 class Solution(object):
     def intersect(self, nums1, nums2):
-
         nums1.sort()
         nums2.sort()
         res = []

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def closestValue(self, root, target):
-
         closest = root.val
         while root:
             if root.val == target:

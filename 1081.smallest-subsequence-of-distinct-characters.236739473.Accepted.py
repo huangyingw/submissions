@@ -1,6 +1,5 @@
 class Solution(object):
     def smallestSubsequence(self, text):
-
         if not text:
             return ''
         import collections

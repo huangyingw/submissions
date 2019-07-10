@@ -3,11 +3,9 @@ import random
 
 class RandomizedSet:
     def __init__(self):
-
         self.nums, self.pos = [], {}
 
     def insert(self, val):
-
         if val not in self.pos:
             self.nums.append(val)
             self.pos[val] = len(self.nums) - 1
@@ -15,7 +13,6 @@ class RandomizedSet:
         return False
 
     def remove(self, val):
-
         if val in self.pos:
             idx, v = self.pos[val], self.nums[-1]
             self.nums[idx], self.nums[-1] = self.nums[-1], self.nums[idx]
@@ -26,5 +23,4 @@ class RandomizedSet:
         return False
 
     def getRandom(self):
-
         return random.choice(self.nums)

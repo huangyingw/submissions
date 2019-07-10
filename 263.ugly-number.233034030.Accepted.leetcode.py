@@ -1,22 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def isUgly(self, num):
         if num <= 0:
             return False

@@ -1,6 +1,5 @@
 class Solution(object):
     def addToArrayForm(self, A, K):
-
         arr_k = []
         while K > 0:
             digit = K % 10

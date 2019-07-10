@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def palindromePairs(self, words):
-
         palindromes = []
         word_to_index = {}
         for i, word in enumerate(words):

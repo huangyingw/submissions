@@ -1,6 +1,5 @@
 class Solution(object):
     def reverseWords(self, s):
-
         ls, pos = len(s), 0
         if s is None or ls == 0:
             return

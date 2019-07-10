@@ -1,4 +1,3 @@
-
 class Solution1:
     def validPalindrome(self, s):
         l = 0
@@ -21,7 +20,6 @@ class Solution1:
 
 class Solution2:
     def validPalindrome(self, s):
-
         a = s[::-1]
         if a == s:
             return True

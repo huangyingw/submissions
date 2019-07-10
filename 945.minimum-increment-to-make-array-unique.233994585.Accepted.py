@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution:
     def minIncrementForUnique(self, A):
-
         increments = 0
         last_used = -1
         for num in sorted(A):

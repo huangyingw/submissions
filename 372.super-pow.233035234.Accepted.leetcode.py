@@ -3,9 +3,6 @@ class Solution(object):
         self.base = 1337
 
     def superPow(self, a, b):
-
-
-
         if b is None or len(b) == 0:
             return 1
         last_digit = b.pop()

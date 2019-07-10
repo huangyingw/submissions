@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution:
     def insert(self, intervals, newInterval):
-
         res = []
         i = 0
         while i < len(intervals) and intervals[i].end < newInterval.start:

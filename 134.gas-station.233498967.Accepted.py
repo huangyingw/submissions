@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canCompleteCircuit(self, gas, cost):
-
         start, tank, total = 0, 0, 0
         for station in range(len(gas)):
             balance = gas[station] - cost[station]

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def findMin(self, nums):
-
         if len(nums) == 1:
             return nums[0]
         if nums[0] < nums[-1]:

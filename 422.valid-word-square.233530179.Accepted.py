@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validWordSquare(self, words):
-
         if len(words) != len(words[0]):
             return False
         n = len(words[0])

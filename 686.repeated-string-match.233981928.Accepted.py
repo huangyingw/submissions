@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def repeatedStringMatch(self, A, B):
-
         if set(B) - set(A):
             return -1
         div, mod = divmod(len(B), len(A))

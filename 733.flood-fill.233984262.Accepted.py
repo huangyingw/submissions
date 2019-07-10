@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def floodFill(self, image, sr, sc, newColor):
-
         rows, cols = len(image), len(image[0])
         startColor = image[sr][sc]
         if startColor == newColor:

@@ -1,21 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 from itertools import combinations
 
 
 class Solution(object):
     def minAreaFreeRect(self, points):
-
         min_area = float("inf")
         points = [complex(*p) for p in sorted(points)]
         line_to_mid = defaultdict(list)

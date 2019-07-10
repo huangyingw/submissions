@@ -3,7 +3,6 @@ import collections
 
 class Solution(object):
     def findAnagrams(self, s, p):
-
         pCount = collections.Counter(p)
         window = collections.Counter(s[:len(p)])
         res = []

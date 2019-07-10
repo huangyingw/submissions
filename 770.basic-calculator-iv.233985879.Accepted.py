@@ -1,34 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 import re
 
 
 class Solution(object):
     def basicCalculatorIV(self, expression, evalvars, evalints):
-
         class CounterMul(Counter):
             def __add__(self, other):
                 self.update(other)
@@ -52,11 +27,7 @@ class Solution(object):
             if token.isalpha():
                 return CounterMul({(token,): 1})
             return CounterMul({(): int(token)})
-
         counter = eval(re.sub('(\w+)', r'make_counter("\1")', expression))
-
-
-
         sorted_terms = sorted(counter, key=lambda x: (-len(x), x))
         result = []
         for term in sorted_terms:

@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def mostCommonWord(self, paragraph, banned):
-
         banned = set(banned)
         punct = {"!", "?", ",", ".", ";", "'"}
         counter = defaultdict(int)

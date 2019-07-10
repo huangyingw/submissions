@@ -23,16 +23,7 @@
 '''
 
 
-
-
-
-
-
-
-
 class Solution:
-
-
     def connect(self, root):
         def recursive(node):
             if node is None:

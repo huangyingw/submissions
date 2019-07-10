@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def removeInvalidParentheses(self, s):
-
         if not s:
             return [""]
         result = []

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def checkPossibility(self, nums):
-
         modified = False
         for i, num in enumerate(nums[1:], 1):
             if num < nums[i - 1]:

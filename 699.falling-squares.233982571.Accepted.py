@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def fallingSquares(self, positions):
-
         box_heights = [positions[0][1]]
         max_heights = [positions[0][1]]
         for left, side in positions[1:]:

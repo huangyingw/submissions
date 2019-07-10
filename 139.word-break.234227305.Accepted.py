@@ -1,6 +1,5 @@
 class Solution(object):
     def wordBreak(self, s, wordDict):
-
         queue = [0]
         ls = len(s)
         lenList = [l for l in set(map(len, wordDict))]

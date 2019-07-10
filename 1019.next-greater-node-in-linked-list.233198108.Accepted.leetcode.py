@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def nextLargerNodes(self, head):
-
         result = []
         while head:
             result.append(head.val)

@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def findShortestWay(self, maze, ball, hole):
-
         def maze_cell(r, c):
             if [r, c] == hole:
                 return -1
@@ -43,10 +29,8 @@ class Solution(object):
             nm = maze_cell(r + dr, c + dc)
             if nm == -1:
                 return "".join(moves)
-
             elif nm == 0:
                 queue.append((r + dr, c + dc, moves))
-
             elif [r, c] != ball:
                 trial_dirns = perpendicular(moves[-1])
                 for trial_dirn in trial_dirns:

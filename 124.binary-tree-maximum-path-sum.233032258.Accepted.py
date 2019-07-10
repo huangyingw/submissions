@@ -18,15 +18,8 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def maxPathSum(self, root):
-
         self.result = float('-inf')
         self.dfs(root)
         return self.result

@@ -1,10 +1,5 @@
-
-
-
-
 class Codec:
     def encode(self, longUrl):
-
         self.hash = {}
         if longUrl not in self.hash:
             idx = hash(longUrl)
@@ -13,6 +8,5 @@ class Codec:
         return (final_string)
 
     def decode(self, shortUrl):
-
         v = shortUrl[20:len(shortUrl)]
         return (self.hash[int(v)])

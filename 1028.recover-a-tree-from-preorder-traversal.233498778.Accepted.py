@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def recoverFromPreorder(self, S):
-
         self.i = 0
 
         def helper(required_depth):

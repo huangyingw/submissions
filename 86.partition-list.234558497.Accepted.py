@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def partition(self, head, x):
-
         headLess, headGreater = ListNode(0), ListNode(0)
         cur1, cur2 = headLess, headGreater
         while head:

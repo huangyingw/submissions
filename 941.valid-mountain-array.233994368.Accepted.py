@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def validMountainArray(self, A):
-
         n = len(A)
         left, right = 0, n - 1
         while left + 1 < n - 1 and A[left + 1] > A[left]:

@@ -1,8 +1,5 @@
-
 class Solution:
     def hasGroupsSizeX(self, deck):
-
-
         from collections import Counter
         from functools import reduce
 

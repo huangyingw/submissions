@@ -1,26 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from fractions import Fraction
 
 
 class Solution:
     def isRationalEqual(self, S, T):
-
         def to_numeric(s):
             if not ("(") in s:
                 return Fraction(s)

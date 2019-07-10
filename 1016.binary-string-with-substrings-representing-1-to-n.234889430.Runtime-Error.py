@@ -14,7 +14,6 @@ Note:
 
 class Solution(object):
     def queryString(self, S, N):
-
         for num in range(1, N + 1):
             binary_str = ''
             while (num != 0):

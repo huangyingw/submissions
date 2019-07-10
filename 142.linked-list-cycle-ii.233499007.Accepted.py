@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -16,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def detectCycle(self, head):
-
         fast, slow = head, head
         while fast and fast.next:
             fast = fast.next.next

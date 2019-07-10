@@ -1,20 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def networkDelayTime(self, times, N, K):
-
         graph = collections.defaultdict(list)
         for u, v, w in times:
             graph[u].append((v, w))

@@ -1,6 +1,5 @@
 class Solution(object):
     def validateStackSequences(self, pushed, popped):
-
         in_stack = []
         pos = 0
         while pos != len(pushed):

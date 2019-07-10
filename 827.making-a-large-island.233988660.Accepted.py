@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def largestIsland(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         nbors = ((0, 1), (1, 0), (-1, 0), (0, -1))
 

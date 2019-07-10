@@ -1,6 +1,5 @@
 class Solution(object):
     def climbStairs(self, n):
-
         if n == 0:
             return 0
         dp = [0] * n

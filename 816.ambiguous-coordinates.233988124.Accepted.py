@@ -1,27 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def ambiguousCoordinates(self, S):
-
         def insert_decimal(s):
             if s == "0":
                 return [s]

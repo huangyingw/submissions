@@ -1,8 +1,3 @@
-
-
-
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -10,10 +5,8 @@ class TreeNode:
         self.right = None
 
 
-
 class Solution1:
     def increasingBST(self, root):
-
         def inorder(node, ans):
             if not node:
                 return
@@ -31,7 +24,6 @@ class Solution1:
 
 class Solution2:
     def increasingBST(self, root, tail=None):
-
         if not root:
             return tail
         res = self.increasingBST(root.left, root)

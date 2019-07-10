@@ -1,26 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findRedundantDirectedConnection(self, edges):
-
         n = len(edges)
         parents = [[] for _ in range(n + 1)]
         nbors = [set() for _ in range(n + 1)]

@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def majorityElement(self, nums):
         c, ans = 0, 0

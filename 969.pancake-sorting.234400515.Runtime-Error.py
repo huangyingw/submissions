@@ -1,7 +1,3 @@
-
-
-
-
 class Solution(object):
     def pancakeSort1(self, A):
         ans = []

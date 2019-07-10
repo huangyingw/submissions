@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxCount(self, m, n, ops):
-
         max_r, max_c = m, n
         for r, c in ops:
             max_r = min(max_r, r)

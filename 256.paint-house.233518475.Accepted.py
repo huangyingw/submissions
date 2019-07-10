@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minCost(self, costs):
-
         if not costs:
             return 0
         for i in range(1, len(costs)):

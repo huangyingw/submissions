@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def intersect(self, quadTree1, quadTree2):
-
         if quadTree1.isLeaf:
             return quadTree1 if quadTree1.val else quadTree2
         if quadTree2.isLeaf:
@@ -31,5 +13,4 @@ class Solution(object):
         leaves = [child.isLeaf for child in children]
         if all(leaves) and (sum(values) == 0 or sum(values) == 4):
             return Node(topLeft.val, True, None, None, None, None)
-
         return Node(False, False, topLeft, topRight, bottomLeft, bottomRight)

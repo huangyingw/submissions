@@ -1,6 +1,5 @@
 class Solution(object):
     def subdomainVisits(self, cpdomains):
-
         domain_count = {}
         for cpdomain in cpdomains:
             count, domain = cpdomain.split(' ')

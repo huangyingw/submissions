@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def possibleBipartition(self, N, dislikes):
-
         dislike = defaultdict(set)
         for a, b in dislikes:
             dislike[a].add(b)

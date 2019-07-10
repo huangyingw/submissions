@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def oddEvenList(self, head):
-
         even_head = even = ListNode(None)
         odd_head = odd = ListNode(None)
         while head:

@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
-
-
     def reverseBits(self, n):
         binary = bin(n)
         binary = binary[2:]
@@ -19,8 +7,6 @@ class Solution:
 
 
 class Solution2:
-
-
     def reverseBits(self, n):
         reversed, bit = 0, 31
         while n != 0:

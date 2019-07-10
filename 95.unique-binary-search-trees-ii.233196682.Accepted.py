@@ -20,15 +20,8 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def generateTrees(self, n):
-
         if n == 0:
             return []
 

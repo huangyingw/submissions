@@ -1,7 +1,5 @@
-
 class Solution:
     def findLengthOfLCIS(self, nums):
-
         if len(nums) < 1:
             return 0
         temp = 1

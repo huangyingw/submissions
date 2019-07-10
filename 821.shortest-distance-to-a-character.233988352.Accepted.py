@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestToChar(self, S, C):
-
         shortest = []
         prev_C = float("-inf")
         for i, c in enumerate(S):

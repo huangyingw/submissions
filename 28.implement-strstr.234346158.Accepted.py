@@ -1,6 +1,5 @@
 class Solution:
     def strStr(self, haystack, needle):
-
         if not needle or len(needle) == 0:
             return 0
         m, n = len(haystack), len(needle)

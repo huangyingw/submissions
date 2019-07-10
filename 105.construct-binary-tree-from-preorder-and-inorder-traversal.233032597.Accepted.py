@@ -1,43 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def buildTree(self, preorder, inorder):
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}

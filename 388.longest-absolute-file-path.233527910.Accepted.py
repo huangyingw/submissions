@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lengthLongestPath(self, input):
-
         longest = 0
         depths = [0]
         for line in input.splitlines():

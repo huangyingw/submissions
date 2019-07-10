@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canJump(self, nums):
-
         stack = [0]
         max_reach = -1
         while stack:

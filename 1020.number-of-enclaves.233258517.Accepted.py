@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numEnclaves(self, A):
-
         rows, cols = len(A), len(A[0])
         result = 0
         self.edge = False

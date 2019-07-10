@@ -1,18 +1,11 @@
 class Solution(object):
     def longestPalindrome(self, s):
-
-
-
-
         ls = len(s)
         if ls <= 1 or len(set(s)) == 1:
             return s
-
         temp_s = '
-
         tls = len(temp_s)
         seed = range(1, tls - 1)
-
         len_table = [0] * tls
         for step in range(1, tls / 2 + 1):
             final = []
@@ -32,49 +25,5 @@ class Solution(object):
                 max_step = s
                 max_pos = i
         return temp_s[max_pos - max_step:max_pos + max_step + 1].translate(None, '
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-
-    s = Solution()
+                                                                           if __name__ == '__main__':
+                                                                           s=Solution()

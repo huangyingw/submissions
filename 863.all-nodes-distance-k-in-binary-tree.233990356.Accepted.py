@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def distanceK(self, root, target, K):
-
         results = []
 
         def nodes_at_distance(node, distance):

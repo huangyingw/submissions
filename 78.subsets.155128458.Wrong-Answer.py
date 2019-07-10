@@ -1,6 +1,5 @@
 class Solution(object):
     def subsets(self, nums):
-
         def helper(start):
             for index in range(start, len(nums)):
                 current.append(nums[start])

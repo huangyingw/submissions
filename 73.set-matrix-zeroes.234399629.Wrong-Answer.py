@@ -1,15 +1,5 @@
-
-
-
-
 class Solution:
-
-
-
-
-
     def setZeroes(self, matrix):
-
         point_set = set()
         rows = len(matrix)
         columns = len(matrix[0])
@@ -28,22 +18,17 @@ class Solution:
             matrix[r][c] = 0
 
     def setZeroes2(self, matrix):
-
         m, n, firstRowHasZero = len(matrix), len(matrix[0]), not all(matrix[0])
-
         for i in range(1, m):
             for j in range(n):
                 if matrix[i][j] == 0:
                     matrix[0][j] = matrix[i][0] = 0
-
         for i in range(1, m):
             for j in range(n - 1, -1, -1):
                 if matrix[i][0] == 0 or matrix[0][j] == 0:
                     matrix[i][j] = 0
-
         if firstRowHasZero:
             matrix[0] = [0] * n
-
 
     def setZeroes3(self, matrix):
         if not matrix or not matrix[0]:

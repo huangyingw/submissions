@@ -1,26 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def threeEqualParts(self, A):
-
         one_count = sum(A)
         if one_count == 0:
             return [0, 2]

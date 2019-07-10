@@ -1,6 +1,5 @@
 class Solution(object):
     def evalRPN(self, tokens):
-
         stack = []
         for t in tokens:
             try:

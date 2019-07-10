@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def encode(self, s, memo={}):
-
         if s in memo:
             return memo[s]
         encodings = [s]

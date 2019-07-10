@@ -1,8 +1,5 @@
-
-
 class Solution:
     def calPoints(self, ops):
-
         ans = []
         for i in ops:
             if i == 'C':

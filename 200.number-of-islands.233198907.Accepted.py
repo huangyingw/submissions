@@ -1,6 +1,5 @@
 class Solution(object):
     def numIslands(self, grid):
-
         if not grid:
             return 0
         count = 0

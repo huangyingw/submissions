@@ -1,9 +1,3 @@
-
-
-
-
-
-
 class Solution(object):
     def __init__(self):
         self.buff = [''] * 4
@@ -11,7 +5,6 @@ class Solution(object):
         self.bufsize = 0
 
     def read(self, buf, n):
-
         pos, eof = 0, False
         while not eof and pos < n:
             if self.bufsize == 0:

@@ -1,8 +1,5 @@
-
-
 class Solution:
     def decodeString(self, s):
-
         stack = []
         num = 0
         curString = ''

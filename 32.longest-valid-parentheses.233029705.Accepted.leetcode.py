@@ -1,6 +1,5 @@
 class Solution(object):
     def longestValidParentheses(self, s):
-
         ls = len(s)
         stack = []
         data = [0] * ls

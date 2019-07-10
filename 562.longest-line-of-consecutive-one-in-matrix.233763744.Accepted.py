@@ -1,21 +1,9 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestLine(self, M):
-
         if not M or not M[0]:
             return 0
         rows, cols = len(M), len(M[0])
         max_len = 0
-
-
         previous_dp = [[0 for _ in range(4)] for c in range(cols)]
         for r in range(rows):
             row_dp = []

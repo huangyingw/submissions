@@ -1,6 +1,5 @@
 class Solution:
     def numIslands2(self, m, n, positions):
-
         if m <= 0 or n <= 0:
             return []
         islands = [-1] * (n * m)

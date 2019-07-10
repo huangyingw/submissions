@@ -1,8 +1,5 @@
-
 class Solution:
-
     def isPerfectSquare(self, num):
-
         low = 1
         high = num
         while low <= high:
@@ -14,7 +11,6 @@ class Solution:
             else:
                 high = mid - 1
         return False
-
 
     def isPerfectSqure(self, num):
         i = 1

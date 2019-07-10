@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
-
-
         if nums is None or len(nums) == 0:
             return None
         max_index, max_value = 0, 0

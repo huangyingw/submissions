@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxAncestorDiff(self, root):
-
         def helper(node, min_val, max_val):
             if not node:
                 return max_val - min_val

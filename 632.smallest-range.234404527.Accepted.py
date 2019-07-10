@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def smallestRange(self, A):
         import functools
@@ -23,7 +19,6 @@ import heapq
 
 class Solution:
     def smallestRange(self, nums):
-
         queue = [(list_num[0], i, 0) for i, list_num in enumerate(nums)]
         heapq.heapify(queue)
         result = [float("-inf"), float("inf")]

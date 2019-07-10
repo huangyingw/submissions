@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def solve(self, board):
-
         if not board or not board[0]:
             return
         rows, cols = len(board), len(board[0])

@@ -7,7 +7,6 @@ class Solution:
         return (n)
 
     def isPalindrome(self, x):
-
         if x < 0:
             return (False)
         else:

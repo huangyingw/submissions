@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
-
         m -= 1
         n -= 1
         l = m + n + 1

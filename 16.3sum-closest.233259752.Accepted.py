@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def threeSumClosest(self, nums, target):
-
         nums.sort()
         closest = float('inf')
         for i in range(len(nums) - 2):

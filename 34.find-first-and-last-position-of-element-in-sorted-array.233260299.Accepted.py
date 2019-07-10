@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def searchRange(self, nums, target):
-
         def binary(target, left, right):
             if left > right:
                 return left

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shiftingLetters(self, S, shifts):
-
         s = [ord(c) - ord("a") for c in S]
         cumulative_shift = 0
         for i in range(len(s) - 1, -1, -1):

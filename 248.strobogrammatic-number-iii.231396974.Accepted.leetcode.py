@@ -20,7 +20,6 @@ class Solution(object):
     def findStrobogrammatic(self, n):
         def dfs(arr, length, curLen, curString, isOdd):
             elements = ['0', '1', '6', '8', '9']
-
             if curLen == length:
                 d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
                 if isOdd:

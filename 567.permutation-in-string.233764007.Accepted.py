@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def checkInclusion(self, s1, s2):
-
         n1 = len(s1)
         freq = [0] * 26
         for c in s1:

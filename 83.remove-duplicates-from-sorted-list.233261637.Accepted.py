@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -14,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def deleteDuplicates(self, head):
-
         node = head
         while node and node.next:
             if node.val == node.next.val:

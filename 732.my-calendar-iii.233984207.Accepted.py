@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 import bisect
 
 
@@ -20,7 +7,6 @@ class MyCalendarThree(object):
         self.max_booking = 0
 
     def book(self, start, end):
-
         i = bisect.bisect_left(self.bookings, [start, -1])
         if self.bookings[i][0] != start:
             count = self.bookings[i - 1][1]

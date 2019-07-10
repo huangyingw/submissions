@@ -1,8 +1,5 @@
-
 class Solution:
-
     def convertToTitle(self, n):
-
         alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         res = ""
         while n > 0:
@@ -12,10 +9,7 @@ class Solution:
             res = ''.join((tempString, res))
         return res
 
-
-
     def convertToTitle(self, n):
-
         res = ''
         dist = ord('A')
         while n > 0:

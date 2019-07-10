@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,11 +7,9 @@ class TreeNode(object):
 
 class Solution(object):
     def largestBSTSubtree(self, root):
-
         self.largest = 0
 
         def is_bst(node):
-
             if not node:
                 return float("-inf"), float("inf"), 0
             left_bst = is_bst(node.left)

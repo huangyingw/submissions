@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def flatten(self, head):
-
         node = head
         while node:
             if node.child:

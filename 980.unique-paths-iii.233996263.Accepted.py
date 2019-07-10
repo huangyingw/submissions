@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def uniquePathsIII(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         unvisited = set()
         for r in range(rows):

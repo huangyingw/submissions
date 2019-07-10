@@ -1,22 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validTree(self, n, edges):
-
         class Solution(object):
             def validTree(self, n, edges):
-
                 def dfs(node):
                     nbors = adjacency.pop(node, [])
                     for nbor in nbors:
@@ -33,7 +18,6 @@ class Solution(object):
 
 class Solution2(object):
     def validTree(self, n, edges):
-
         def find(node):
             if parents[node] == -1:
                 return node

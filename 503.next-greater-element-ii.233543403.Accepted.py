@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextGreaterElements(self, nums):
-
         stack = []
         next_greater = [-1] * len(nums)
         for i in range(2 * len(nums)):

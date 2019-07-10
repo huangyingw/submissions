@@ -1,21 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nthSuperUglyNumber(self, n, primes):
-
         super_ugly = [1]
-
         indices = [0 for _ in range(len(primes))]
         candidates = primes[:]
         while len(super_ugly) < n:

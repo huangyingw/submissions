@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def moveZeroes(self, nums):
         pos = 0

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def smallestFromLeaf(self, root):
-
         self.result = "~"
 
         def dfs(node, A):

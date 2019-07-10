@@ -1,14 +1,11 @@
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, s, k):
-
         count = [0] * 256
         i, numDistinct, maxLen = 0, 0, 0
         for j in range(len(s)):
-
             if count[ord(s[j])] == 0:
                 numDistinct += 1
             count[ord(s[j])] += 1
-
             while numDistinct > k:
                 count[ord(s[i])] -= 1
                 if count[ord(s[i])] == 0:

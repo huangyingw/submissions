@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def largestComponentSize(self, A):
-
         def prime_factors(x):
             factors = set()
             while x % 2 == 0:

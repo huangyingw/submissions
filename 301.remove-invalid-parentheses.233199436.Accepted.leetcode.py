@@ -15,7 +15,6 @@
 
 class Solution(object):
     def removeInvalidParentheses(self, s):
-
         if not s:
             return [""]
 

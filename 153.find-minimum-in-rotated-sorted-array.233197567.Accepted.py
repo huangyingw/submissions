@@ -14,7 +14,6 @@ Output: 0
 
 class Solution(object):
     def findMin(self, nums):
-
         if not nums:
             return 0
         if len(nums) == 1:

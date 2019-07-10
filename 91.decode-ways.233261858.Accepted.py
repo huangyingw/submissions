@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numDecodings(self, s):
-
         if not s:
             return 0
         nb_ways = [0] * (len(s) + 1)

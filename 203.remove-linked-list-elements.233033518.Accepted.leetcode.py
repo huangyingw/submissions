@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def removeElements(self, head, val):
-
-
         prehead = ListNode(-1)
         prehead.next = head
         last, pos = prehead, head

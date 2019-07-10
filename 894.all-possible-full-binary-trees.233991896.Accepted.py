@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def allPossibleFBT(self, N):
-
         memo = {}
 
         def helper(n):

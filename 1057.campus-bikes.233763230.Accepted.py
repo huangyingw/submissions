@@ -1,28 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Solution(object):
     def assignBikes(self, workers, bikes):
-
         distances = []
         for i, (x, y) in enumerate(workers):
             distances.append([])

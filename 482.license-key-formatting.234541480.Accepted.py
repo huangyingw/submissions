@@ -1,6 +1,4 @@
-
 class Solution:
-
     def licenseKeyFormatting(self, S, K):
         S = S.upper()
         listS = S.split("-")

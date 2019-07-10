@@ -11,7 +11,6 @@
 
 class Solution(object):
     def isInterleave(self, s1, s2, s3):
-
         if len(s3) != len(s1) + len(s2):
             return False
         dp = [[False for _ in range(len(s2) + 1)] for _ in range(len(s1) + 1)]

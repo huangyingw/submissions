@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def minFallingPathSum(self, A):
-
         n = len(A)
         row_minima = [0] * n
         for r in range(n - 1, -1, -1):

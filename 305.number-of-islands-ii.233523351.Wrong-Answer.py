@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numIslands2(self, m, n, positions):
-
         island_count = [0]
         parent = {}
         for r, c in positions:

@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def partition(self, head, x):
-
         lesser_head = lesser = ListNode(None)
         greater_head = greater = ListNode(None)
         node = head

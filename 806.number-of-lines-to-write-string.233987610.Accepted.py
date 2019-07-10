@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numberOfLines(self, widths, S):
-
         line, width = 0, 100
         for c in S:
             c_length = widths[ord(c) - ord("a")]

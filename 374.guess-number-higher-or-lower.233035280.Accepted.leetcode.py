@@ -1,13 +1,5 @@
-
-
-
-
-
-
 class Solution(object):
     def guessNumber(self, n):
-
-
         begin, end = 1, n
         while begin <= end:
             mid = (begin + end) / 2

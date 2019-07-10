@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def hasPath(self, maze, start, destination):
-
         queue = [start]
         dirns = ((1, 0), (-1, 0), (0, 1), (0, -1))
         visited = set()

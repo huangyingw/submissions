@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def splitArraySameAverage(self, A):
-
         def n_sum_target(n, tgt, j):
             if (n, tgt, j) in invalid:
                 return False

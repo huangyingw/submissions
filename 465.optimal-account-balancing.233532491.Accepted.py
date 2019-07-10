@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def minTransfers(self, transactions):
-
         balances = defaultdict(int)
         for lender, receiver, amount in transactions:
             balances[lender] += amount

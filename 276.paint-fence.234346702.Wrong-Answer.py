@@ -1,6 +1,5 @@
 class Solution:
     def numWays(self, n, k):
-
         if n == 1:
             return k
         if n == 2:

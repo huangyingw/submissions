@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def leadsToDestination(self, n, edges, source, destination):
-
         visited = set()
         edge_dict = defaultdict(set)
         for start, end in edges:

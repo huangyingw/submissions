@@ -1,6 +1,5 @@
 class Solution:
     def uniquePaths(self, m, n):
-
         ans = 1
         m -= 1
         n -= 1

@@ -1,6 +1,5 @@
 class Solution(object):
     def subsetsWithDup(self, nums):
-
         result = [[]]
         for num in nums:
             for index in range(len(result)):

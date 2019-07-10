@@ -63,7 +63,6 @@ def lcp_w_suffix_str(array, s):
 
 class Solution(object):
     def longestDupSubstring(self, S):
-
         suffix_array = create_suffix_array(S)
         lcp_array = lcp_w_suffix_str(suffix_array, S)
         start, end = 0, 0
@@ -73,5 +72,4 @@ class Solution(object):
                 start = suffix_array[index]
         if end == 0:
             return ""
-
         return S[start:start + end]

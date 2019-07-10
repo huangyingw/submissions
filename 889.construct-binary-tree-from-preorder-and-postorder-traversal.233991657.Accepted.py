@@ -1,19 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def constructFromPrePost(self, pre, post):
-
         def helper(pre_start, pre_end, post_start, post_end):
-
             if pre_start == pre_end:
                 return None
             root = TreeNode(pre[pre_start])

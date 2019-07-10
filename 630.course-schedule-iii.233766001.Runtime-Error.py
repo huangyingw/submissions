@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Solution(object):
     def scheduleCourse(self, courses):
-
         total_length = 0
         taken_courses = []
         courses.sort(key=lambda c: c[1])

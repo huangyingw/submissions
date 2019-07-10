@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sortTransformedArray(self, nums, a, b, c):
-
         def transform(x):
             return a * x * x + b * x + c
         transformed = [transform(num) for num in nums]

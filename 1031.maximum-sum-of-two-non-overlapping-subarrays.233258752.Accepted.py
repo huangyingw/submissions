@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxSumTwoNoOverlap(self, A, L, M):
-
         L_sum, M_sum = sum(A[M:L + M]), sum(A[L:L + M])
         L_before_M_sum, M_before_L_sum = sum(A[:L]), sum(A[:M])
         L_before_M_best, M_before_L_best = L_before_M_sum, M_before_L_sum

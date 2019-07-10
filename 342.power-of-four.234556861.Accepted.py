@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def isPowerOfFour(self, num):
         bin_num = bin(num)[2:]

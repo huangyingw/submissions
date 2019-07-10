@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def partition(self, head, x):
-
         if head is None:
             return None
         less = lesshead = None

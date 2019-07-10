@@ -1,40 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def closestValue(self, root, target):
-
         kid = root.left if target < root.val else root.right
         if not kid:
             return root.val

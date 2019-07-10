@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def updateBoard(self, board, click):
-
         r, c = click
         rows, cols = len(board), len(board[0])
         for row in range(rows):

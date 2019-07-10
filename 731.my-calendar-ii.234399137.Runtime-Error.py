@@ -1,7 +1,3 @@
-
-
-
-
 class MyCalendarTwo1:
     def __init__(self):
         self.calendar = []
@@ -21,8 +17,6 @@ import bisect
 
 class MyCalendarTwo2:
     def __init__(self):
-
-
         self.cal = [0]
         self.bookings = [0]
 

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canWin(self, s):
-
         def helper(s):
             if s in memo:
                 return memo[s]

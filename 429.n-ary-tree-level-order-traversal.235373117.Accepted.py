@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def levelOrder(self, root):
-
         if not root:
             return []
         result = []

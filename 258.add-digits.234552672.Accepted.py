@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def addDigits(self, num):
         if num < 10:

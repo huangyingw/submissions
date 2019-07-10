@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Solution(object):
     def swimInWater(self, grid):
-
         N = len(grid)
         shifts = ((0, 1), (0, -1), (1, 0), (-1, 0))
         frontier = [(grid[0][0], 0, 0)]

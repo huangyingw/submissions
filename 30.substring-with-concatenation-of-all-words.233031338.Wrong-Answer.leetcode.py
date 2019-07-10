@@ -1,6 +1,5 @@
 class Solution(object):
     def findSubstring(self, s, words):
-
         if not str or not words:
             return []
         counts = {}

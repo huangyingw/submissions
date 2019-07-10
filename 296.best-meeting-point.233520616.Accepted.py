@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minTotalDistance(self, grid):
-
         rows, cols = [], []
         for r in range(len(grid)):
             for c in range(len(grid[0])):

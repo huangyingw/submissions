@@ -1,7 +1,5 @@
-
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid):
-
         n = len(obstacleGrid)
         m = len(obstacleGrid[0])
         dp = [[0] * m for i in range(n)]

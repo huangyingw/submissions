@@ -1,15 +1,8 @@
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, s, k):
-
         start, longest = 0, 0
         last_seen = defaultdict(int)
         for end, c in enumerate(s):

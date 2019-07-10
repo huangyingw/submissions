@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def pathSum(self, root, sum):
-
         paths = defaultdict(int)
         paths[0] = 1
 

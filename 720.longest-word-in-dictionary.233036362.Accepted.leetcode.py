@@ -1,21 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def longestWord(self, words):
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()

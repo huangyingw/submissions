@@ -1,19 +1,11 @@
-
-
-
-
-
 class Solution1:
     def combinationSum3(self, k, n):
-
         from itertools import combinations
         return [com for com in combinations(range(1, 10), k) if sum(com) == n]
 
 
-
 class Solution2:
     def combinationSum3(self, k, n):
-
         res = []
         re = []
 

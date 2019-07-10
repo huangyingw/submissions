@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findRadius(self, houses, heaters):
-
         heaters.sort()
         houses.sort()
         heaters = [float("-inf")] + heaters + [float("inf")]

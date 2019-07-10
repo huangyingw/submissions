@@ -1,14 +1,8 @@
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def canPermutePalindrome(self, s):
-
         freq = Counter(s)
         odd = False
         for letter, count in freq.items():

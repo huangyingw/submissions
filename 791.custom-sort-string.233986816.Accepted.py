@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def customSortString(self, S, T):
-
         result = []
         t_count = Counter(T)
         for c in S:

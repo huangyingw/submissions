@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     ELEMENTS = 4
 
     def fourSum(self, nums, target):
-
         results = []
         self.n_sum(sorted(nums), target, [], self.ELEMENTS, results)
         return results

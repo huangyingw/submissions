@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def bagOfTokensScore(self, tokens, P):
-
         points, power = 0, P
         left, right = 0, len(tokens) - 1
         tokens.sort()

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canPartition(self, nums):
-
         sum_nums = sum(nums)
         if sum_nums % 2 == 1:
             return False

@@ -27,7 +27,6 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 
 class Solution(object):
     def lengthLongestPath(self, input):
-
         if not input:
             return 0
         directories = input.split('\n')

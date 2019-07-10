@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def removeStones(self, stones):
-
         parents = {}
 
         def find(x):

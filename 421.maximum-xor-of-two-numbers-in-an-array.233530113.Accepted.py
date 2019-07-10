@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMaximumXOR(self, nums):
-
         mask = 0
         max_xor = 0
         for bit in range(31, -1, -1):

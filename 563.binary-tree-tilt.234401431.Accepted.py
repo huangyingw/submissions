@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findTilt(self, root):
         self.ans = 0

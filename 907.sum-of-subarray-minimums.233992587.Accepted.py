@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def sumSubarrayMins(self, A):
-
         A = [float("-inf")] + A + [float("-inf")]
         result = 0
         stack = []

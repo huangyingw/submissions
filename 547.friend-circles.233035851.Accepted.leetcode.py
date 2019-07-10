@@ -1,7 +1,5 @@
 class Solution(object):
     def findCircleNum(self, M):
-
-
         visited = [0] * len(M)
         count = 0
         for i in range(len(M)):

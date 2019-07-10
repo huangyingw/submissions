@@ -1,4 +1,3 @@
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -8,7 +7,6 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, inorder, postorder):
-
         inorderDict = {num: i for i, num in enumerate(inorder)}
 
         def helper(start, end):

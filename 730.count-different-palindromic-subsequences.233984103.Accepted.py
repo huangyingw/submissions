@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countPalindromicSubsequences(self, S):
-
         NUM_LETTERS, MOD = 4, 10 ** 9 + 7
         S = [ord(c) - ord("a") for c in S]
         memo = {}

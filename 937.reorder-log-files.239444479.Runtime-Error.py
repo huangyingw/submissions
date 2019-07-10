@@ -1,14 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
     def reorderLogFiles(self, logs):
         letter_logs = []
         digit_logs = []

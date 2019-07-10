@@ -1,6 +1,5 @@
 class Solution(object):
     def firstMissingPositive(self, nums):
-
         index_i = 0
         for index_j in range(len(nums)):
             if nums[index_j] <= 0:

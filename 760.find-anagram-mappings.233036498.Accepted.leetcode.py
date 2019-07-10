@@ -1,6 +1,5 @@
 class Solution(object):
     def anagramMappings(self, A, B):
-
         val_index = {}
         ans = []
         for i, n in enumerate(B):

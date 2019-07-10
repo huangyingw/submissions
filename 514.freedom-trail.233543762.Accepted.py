@@ -1,29 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findRotateSteps(self, ring, key):
-
         def dist(i, j):
             return min(abs(i - j), len(ring) - abs(i - j))
         char_to_ring = defaultdict(list)

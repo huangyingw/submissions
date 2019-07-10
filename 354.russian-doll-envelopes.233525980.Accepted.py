@@ -1,28 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxEnvelopes(self, envelopes):
-
-
         envelopes.sort(key=lambda x: (x[0], -x[1]))
-
         nested = []
-
-
-
 
         def bin_search(target):
             left, right = 0, len(nested) - 1

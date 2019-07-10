@@ -14,7 +14,6 @@
 
 class Solution(object):
     def increasingTriplet(self, nums):
-
         first, second = float('inf'), float('inf')
         for val in nums:
             if val <= first:

@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def eventualSafeNodes(self, graph):
-
         outgoing = [set(nbors) for nbors in graph]
         incoming = [[] for _ in range(len(graph))]
         for node, nbors in enumerate(graph):

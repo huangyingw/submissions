@@ -2,59 +2,7 @@ import string
 
 
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def findLadders(self, beginWord, endWord, wordlist):
-
-
-
-
         wordlist.discard(beginWord)
         wordlist.discard(endWord)
         hash_map, res = {}, []

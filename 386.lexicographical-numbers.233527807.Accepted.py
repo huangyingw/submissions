@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lexicalOrder(self, n):
-
         lexical = [1]
         while len(lexical) < n:
             num = lexical[-1] * 10

@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def findMinStep(self, board, hand):
-
         def remove_sequences(board):
             start, end = 0, 0
             while end < len(board):

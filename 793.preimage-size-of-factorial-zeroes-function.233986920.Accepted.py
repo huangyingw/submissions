@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def preimageSizeFZF(self, K):
-
         def factorial_zeros(n):
             factor = 5
             result = 0

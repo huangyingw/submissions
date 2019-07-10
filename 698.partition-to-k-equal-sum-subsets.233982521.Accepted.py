@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canPartitionKSubsets(self, nums, k):
         total = sum(nums)

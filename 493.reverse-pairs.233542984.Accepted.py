@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def reversePairs(self, nums):
-
         self.pairs = 0
 
         def mergesort(nums):
@@ -25,7 +16,6 @@ class Solution(object):
                 while j < len(right) and num > 2 * right[j]:
                     j += 1
                 self.pairs += j
-
             merged = []
             i, j = 0, 0
             while i < len(left) and j < len(right):

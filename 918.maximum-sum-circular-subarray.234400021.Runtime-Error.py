@@ -1,7 +1,3 @@
-
-
-
-
 def maxSubarraySumCircular(self, A):
     total, maxSum, curMax, minSum, curMin = 0, -float('inf'), 0, float('inf'), 0
     for a in A:

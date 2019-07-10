@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def boundaryOfBinaryTree(self, root):
-
         def left_side(node):
             if not node or (not node.left and not node.right):
                 return
@@ -43,7 +28,6 @@ class Solution(object):
         if not root:
             return []
         boundary, right_edge = [root.val], []
-
         left_side(root.left)
         inorder(root.left)
         inorder(root.right)

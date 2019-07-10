@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def superpalindromesInRange(self, L, R):
-
         L_sqrt = int(int(L) ** 0.5)
         R_sqrt = int((int(R) + 1) ** 0.5)
         digits = [str(i) for i in range(10)]

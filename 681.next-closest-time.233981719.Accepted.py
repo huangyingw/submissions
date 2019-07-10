@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextClosestTime(self, time):
-
         result = [c for c in time]
         digits = set(int(c) for c in time[:2] + time[3:])
         min_digit = min(digits)

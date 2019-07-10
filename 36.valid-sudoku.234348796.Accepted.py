@@ -1,6 +1,5 @@
 class Solution:
     def isValidSudoku(self, board):
-
         for row in board:
             if not self.isValidUnit(row):
                 return False

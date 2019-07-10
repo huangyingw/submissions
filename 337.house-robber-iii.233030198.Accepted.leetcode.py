@@ -1,6 +1,5 @@
 class Solution(object):
     def rob(self, root):
-
         res = self.rob_helper(root)
         return max(res[0], res[1])
 

@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def compress(self, chars):
-
         n = len(chars)
         if n == 0:
             return 0

@@ -1,6 +1,5 @@
 class Solution(object):
     def minIncrementForUnique(self, A):
-
         if A is None or len(A) == 0:
             return 0
         res = 0
@@ -15,7 +14,6 @@ class Solution(object):
             else:
                 num_set.add(v)
         holes = holes - len(num_set)
-
         for hole in range(left + 1, right):
             if holes == 0 or len(duplicate) == 0:
                 break

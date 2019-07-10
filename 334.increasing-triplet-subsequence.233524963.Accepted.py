@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def increasingTriplet(self, nums):
-
         smallest, next_smallest = float("inf"), float("inf")
         for num in nums:
             smallest = min(smallest, num)

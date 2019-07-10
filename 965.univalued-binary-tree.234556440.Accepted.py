@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isUnivalTree(self, root):
-
         if not root:
             return True
         q = [root]

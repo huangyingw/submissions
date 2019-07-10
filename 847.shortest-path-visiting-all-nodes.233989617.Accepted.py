@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestPathLength(self, graph):
-
         if len(graph) == 0 or len(graph[0]) == 0:
             return 0
         n = len(graph)

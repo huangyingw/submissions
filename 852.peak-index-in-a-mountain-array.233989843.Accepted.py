@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def peakIndexInMountainArray(self, nums):
-
         left, right = 1, len(nums) - 2
         while left < right:
             mid = (left + right) // 2

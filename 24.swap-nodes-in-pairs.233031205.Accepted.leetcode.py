@@ -1,32 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def swapPairs(self, head):
         dummyHead = ListNode(-1)
         dummyHead.next = head

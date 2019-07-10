@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def generate(self, numRows):
-
         if numRows == 1:
             return [[1]]
         res = []

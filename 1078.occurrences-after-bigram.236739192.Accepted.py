@@ -1,6 +1,5 @@
 class Solution(object):
     def findOcurrences(self, text, first, second):
-
         result = []
         if not text:
             return []

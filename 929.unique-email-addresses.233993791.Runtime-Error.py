@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def numUniqueEmails(self, emails):
-
         unique = set()
         for email in emails:
             local, domain = email.split("@")

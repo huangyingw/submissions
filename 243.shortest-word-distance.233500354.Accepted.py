@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestDistance(self, words, word1, word2):
-
         shortest = len(words)
         i_1, i_2 = float("-inf"), float("-inf")
         for i, word in enumerate(words):

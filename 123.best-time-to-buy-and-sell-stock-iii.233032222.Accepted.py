@@ -12,7 +12,6 @@
 
 class Solution(object):
     def maxProfit(self, prices):
-
         if len(prices) < 2:
             return 0
         dp = [[0 for _ in range(len(prices))] for _ in range(3)]

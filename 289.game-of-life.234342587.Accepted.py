@@ -1,6 +1,5 @@
 class Solution(object):
     def gameOfLife(self, board):
-
         if not board or len(board) == 0 or len(board[0]) == 0:
             return
         for i in range(len(board)):

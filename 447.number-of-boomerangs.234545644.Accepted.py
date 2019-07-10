@@ -1,7 +1,5 @@
-
 class Solution(object):
     def numberOfBoomerangs(self, points):
-
         res = 0
         for p in points:
             cmap = {}

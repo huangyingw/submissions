@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def isHappy(self, n):
         while n > 6:

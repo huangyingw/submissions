@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def minAddToMakeValid(self, S):
-
         additions = 0
         net_open = 0
         for c in S:

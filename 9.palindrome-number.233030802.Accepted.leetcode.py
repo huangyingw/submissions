@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isPalindrome(self, x):
         if x < 0:
@@ -20,40 +12,9 @@ class Solution(object):
             right = tmp % 10
             left = tmp / (10 ** (ls - 2 * i - 1))
             left = left % 10
-
             if left != right:
                 return False
             tmp = tmp // 10
         return True
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-
     s = Solution()

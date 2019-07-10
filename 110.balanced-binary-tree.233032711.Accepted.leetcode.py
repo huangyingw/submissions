@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isBalanced(self, root):
-
-
         if root is None:
             return True
         if self.getDepth(root) < 0:

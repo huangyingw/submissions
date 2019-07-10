@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def bestRotation(self, A):
-
         n = len(A)
         rotations = [0 for _ in range(n)]
         for i, num in enumerate(A):

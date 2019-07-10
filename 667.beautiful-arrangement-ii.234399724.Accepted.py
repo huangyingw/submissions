@@ -1,7 +1,3 @@
-
-
-
-
 class Solution(object):
     def constructArray(self, n, k):
         ans = list(range(1, n - k))

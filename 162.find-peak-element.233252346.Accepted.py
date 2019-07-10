@@ -1,6 +1,5 @@
 class Solution(object):
     def findPeakElement(self, nums):
-
         left, right = 0, len(nums) - 1
         while left < right:
             mid = (left + right) / 2
@@ -13,7 +12,6 @@ class Solution(object):
 
 class Solution(object):
     def findPeakElement(self, nums):
-
         left = [False] * len(nums)
         right = [False] * len(nums)
         left[0], right[len(nums) - 1] = True, True

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numRabbits(self, answers):
-
         colours = {}
         rabbits = 0
         for rabbit in answers:

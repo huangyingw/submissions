@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def addOneRow(self, root, v, d):
-
         if not root:
             return None
         if d == 1:

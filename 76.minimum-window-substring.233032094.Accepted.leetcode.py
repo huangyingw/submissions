@@ -1,91 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def minWindow(self, s, t):
-
         ls_s, ls_t = len(s), len(t)
         need_to_find = [0] * 256
         has_found = [0] * 256
@@ -114,7 +28,6 @@ class Solution(object):
                     min_begin = begin
                     min_end = end
                     min_window = window_ls
-
         if count == ls_t:
             return s[min_begin: min_end + 1]
         else:

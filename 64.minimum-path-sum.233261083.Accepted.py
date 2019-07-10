@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minPathSum(self, grid):
-
         m = len(grid)
         n = len(grid[0])
         min_path = [float('inf') for _ in range(n + 1)]

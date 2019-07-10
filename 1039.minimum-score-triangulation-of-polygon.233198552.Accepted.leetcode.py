@@ -1,6 +1,5 @@
 class Solution(object):
     def minScoreTriangulation(self, A):
-
         n = len(A)
         dp = [[0] * n for _ in range(n)]
         for length in range(n):

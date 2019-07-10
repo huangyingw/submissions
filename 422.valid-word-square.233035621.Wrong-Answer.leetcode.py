@@ -1,6 +1,5 @@
 class Solution(object):
     def validWordSquare(self, words):
-
         if words is None or len(words) == 0:
             return True
         ls = len(words)

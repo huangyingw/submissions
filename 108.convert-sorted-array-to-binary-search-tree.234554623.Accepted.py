@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sortedArrayToBST(self, nums):
-
         if not nums:
             return None
         mid = (len(nums) - 1) // 2

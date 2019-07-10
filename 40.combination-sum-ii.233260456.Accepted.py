@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def combinationSum2(self, candidates, target):
-
         results = []
         freq = list(Counter(candidates).items())
         self.combos(freq, 0, target, [], results)
@@ -27,7 +18,6 @@ class Solution(object):
             if i * freq[next][0] > target:
                 break
             self.combos(freq, next + 1, target - i * freq[next][0], partial + [freq[next][0]] * i, results)
-
 
 
 class Solution_Iterative(object):

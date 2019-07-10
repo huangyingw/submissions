@@ -1,6 +1,5 @@
 class Solution(object):
     def trap(self, height):
-
         if not height:
             return 0
         left, right = 0, len(height) - 1

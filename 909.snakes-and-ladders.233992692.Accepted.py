@@ -1,28 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def snakesAndLadders(self, board):
-
         linear = [-1]
         reverse = False
         for row in board[::-1]:

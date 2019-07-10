@@ -1,29 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def clumsy(self, N):
-
         if N <= 2:
             return N
         if N <= 4:

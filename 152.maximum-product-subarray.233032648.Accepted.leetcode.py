@@ -1,6 +1,5 @@
 class Solution(object):
     def maxProduct(self, nums):
-
         if not nums:
             return 0
         max_so_far, min_so_far, result = nums[0], nums[0], nums[0]

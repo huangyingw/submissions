@@ -1,6 +1,5 @@
 class Solution(object):
     def reverseStr(self, s, k):
-
         if len(s) <= k:
             return s[::-1]
         elif len(s) <= 2 * k:

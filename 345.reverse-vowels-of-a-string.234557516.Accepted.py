@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def reverseVowels(self, s):
         vowels = set(list('aeiouAEIOU'))

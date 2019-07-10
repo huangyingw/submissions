@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxDistance(self, arrays):
-
         low, high = arrays[0][0], arrays[0][-1]
         max_dist = 0
         for array in arrays[1:]:

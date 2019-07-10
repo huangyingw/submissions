@@ -1,9 +1,5 @@
-
-
 class Solution:
-
     def subdomainVisits(self, cpdomains):
-
         dom_count = {}
         for domin in cpdomains:
             count, domin_s = domin.split()

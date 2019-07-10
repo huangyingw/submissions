@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def surfaceArea(self, grid):
-
         n = len(grid)
         area = 0
         for row in range(n):

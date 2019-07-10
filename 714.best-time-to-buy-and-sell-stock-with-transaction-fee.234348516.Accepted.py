@@ -1,6 +1,5 @@
 class Solution:
     def maxProfit(self, prices, fee):
-
         if not prices or len(prices) == 0:
             return 0
         buy, sell = float('-inf'), 0

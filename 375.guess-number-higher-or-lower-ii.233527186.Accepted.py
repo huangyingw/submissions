@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def getMoneyAmount(self, n):
-
-
-
-
         min_money = [[0 for _ in range(n)], [i for i in range(1, n)]]
         for range_length in range(3, n + 1):
             min_money.append([])

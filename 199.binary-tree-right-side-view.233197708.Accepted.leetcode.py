@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def rightSideView(self, root):
-
         if not root:
             return []
         stack, node_depth = [(root, 0)], {}

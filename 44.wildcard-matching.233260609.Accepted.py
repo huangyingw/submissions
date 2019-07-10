@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isMatch(self, s, p):
         i, j = 0, 0
         star = -1
         while i < len(s):
-
             if j >= len(p) or (p[j] not in {'*', '?'} and p[j] != s[i]):
                 if star == -1:
                     return False

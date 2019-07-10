@@ -1,4 +1,3 @@
-
 class Solution(object):
     def firstUniqChar(self, s):
         res = len(s)

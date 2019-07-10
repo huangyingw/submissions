@@ -1,6 +1,5 @@
 class Solution(object):
     def removeDuplicates(self, S):
-
         stack = []
         if not S:
             return ""

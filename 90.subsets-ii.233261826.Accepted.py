@@ -1,16 +1,8 @@
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def subsetsWithDup(self, nums):
-
         num_count = Counter(nums)
         results = [[]]
         for num in num_count:

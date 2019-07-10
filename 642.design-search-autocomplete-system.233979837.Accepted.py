@@ -1,36 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class AutocompleteSystem(object):
     def __init__(self, sentences, times):
-
         self.partial = []
         self.matches = []
         self.counts = defaultdict(int)
@@ -38,7 +10,6 @@ class AutocompleteSystem(object):
             self.counts[sentence] = count
 
     def input(self, c):
-
         if c == "
             sentence = "".join(self.partial)
             self.counts[sentence] += 1

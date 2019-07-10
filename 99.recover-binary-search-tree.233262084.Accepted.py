@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def recoverTree(self, root):
-
         self.swapped1 = None
         self.swapped2 = None
         self.prev = TreeNode(float('-inf'))

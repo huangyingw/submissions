@@ -1,6 +1,5 @@
 class Solution(object):
     def lengthLongestPath(self, input):
-
         if not input:
             return 0
         directories = input.split('\n')

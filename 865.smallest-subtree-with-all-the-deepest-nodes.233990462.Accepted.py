@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import namedtuple
 
 
 class Solution(object):
     def subtreeWithAllDeepest(self, root):
-
         Result = namedtuple("Result", ["node", "depth"])
 
         def helper(node):

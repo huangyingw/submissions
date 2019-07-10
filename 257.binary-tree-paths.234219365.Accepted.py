@@ -1,14 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution:
-
-
     def binaryTreePaths(self, root):
         if root is None:
             return []

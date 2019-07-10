@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def isLongPressedName(self, name, typed):
-
         typed_i, name_i = 0, 0
         while name_i < len(name):
             c, c_count = name[name_i], 1

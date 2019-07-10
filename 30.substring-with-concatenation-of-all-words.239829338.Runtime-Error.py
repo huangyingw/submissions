@@ -3,7 +3,6 @@ class Solution(object):
         ls = len(s)
         word_ls = len(words[0])
         target_dict = {}
-
         for word in words:
             try:
                 target_dict[word] += 1
@@ -16,13 +15,10 @@ class Solution(object):
                 curr = s[pos:pos + word_ls]
                 try:
                     curr_dict[curr] -= 1
-
                     if curr_dict[curr] < 0:
                         break
                 except KeyError:
-
                     break
             else:
-
                 res.append(start)
         return res

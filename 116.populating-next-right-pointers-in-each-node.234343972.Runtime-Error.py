@@ -1,15 +1,4 @@
-
-
-
-
-
-
-
-
-
 class Solution:
-
-
     def connect(self, root):
         node = dummy = TreeLinkNode(0)
         while root:

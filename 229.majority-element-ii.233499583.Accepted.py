@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def majorityElement(self, nums):
-
         cand1, count1 = None, 0
         cand2, count2 = None, 0
         for num in nums:
@@ -29,5 +16,4 @@ class Solution(object):
             else:
                 count1 -= 1
                 count2 -= 1
-
         return [n for n in (cand1, cand2) if nums.count(n) > len(nums) // 3]

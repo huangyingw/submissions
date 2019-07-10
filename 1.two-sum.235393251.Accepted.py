@@ -1,6 +1,5 @@
 class Solution:
     def twoSum(self, nums, target):
-
         n = 0
         while(n != len(nums)):
             z = target - nums[n]

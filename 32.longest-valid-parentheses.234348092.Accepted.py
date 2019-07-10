@@ -1,6 +1,5 @@
 class Solution:
     def longestValidParentheses(self, s):
-
         if not s or len(s) == 0:
             return 0
         stack, result = [], 0

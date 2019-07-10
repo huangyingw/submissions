@@ -1,6 +1,5 @@
 class Solution:
     def maxProfit(self, k, prices):
-
         if not prices or len(prices) < 2 or k == 0:
             return 0
         l = len(prices)

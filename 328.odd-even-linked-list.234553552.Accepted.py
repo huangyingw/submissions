@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def oddEvenList(self, head):
-
         if not head:
             return
         odd = head

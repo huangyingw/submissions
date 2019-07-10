@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def getImportance(self, employees, id):
         DictE = {employee.id: employee for employee in employees}

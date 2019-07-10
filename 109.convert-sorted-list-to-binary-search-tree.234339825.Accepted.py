@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def sortedListToBST(self, head):
-
         return self.dfs(head, None)
 
     def dfs(self, head, tail):

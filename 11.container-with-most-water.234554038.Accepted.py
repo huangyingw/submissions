@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def maxArea(self, height):
-
         maxarea, l, r = 0, 0, len(height) - 1
         while l < r:
             maxarea = max(maxarea, min(height[l], height[r]) * (r - l))

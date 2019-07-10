@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findLonelyPixel(self, picture):
-
         pixels = 0
         rows, cols = len(picture), len(picture[0])
         col_counts = [0 for _ in range(cols)]

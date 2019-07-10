@@ -1,6 +1,5 @@
 class Solution:
     def maxIncreaseKeepingSkyline(self, grid):
-
         skyline_Top = []
         skyline_Left = []
         RowLen = len(grid)

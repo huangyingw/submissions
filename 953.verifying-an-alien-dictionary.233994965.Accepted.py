@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isAlienSorted(self, words, order):
-
         indices = {c: i for i, c in enumerate(order)}
         prev = []
         for word in words:

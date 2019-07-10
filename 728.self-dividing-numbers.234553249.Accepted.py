@@ -1,6 +1,3 @@
-
-
-
 class Solution:
     def selfDividingNumbers(self, left, right):
         numbers = []

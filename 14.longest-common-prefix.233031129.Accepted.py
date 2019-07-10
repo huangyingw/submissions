@@ -15,7 +15,6 @@ All given inputs are in lowercase letters a-z.
 
 class Solution(object):
     def longestCommonPrefix(self, strs):
-
         def prefix(strs, index):
             check_prefix = strs[0][:index]
             for index in range(1, len(strs)):

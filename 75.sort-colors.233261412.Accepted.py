@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sortColors(self, nums):
-
         next_red, next_white = 0, 0
         for i in range(len(nums)):
             colour = nums[i]

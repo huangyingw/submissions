@@ -1,6 +1,5 @@
 class Solution:
     def validTree(self, n, edges):
-
         roots = [i for i in range(n)]
         count = n
         for edge in edges:

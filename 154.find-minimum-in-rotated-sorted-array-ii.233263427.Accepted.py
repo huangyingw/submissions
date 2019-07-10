@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def findMin(self, nums):
-
         left, right = 0, len(nums) - 1
         while left < right:
             if nums[left] < nums[right]:

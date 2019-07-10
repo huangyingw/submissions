@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minCameraCover(self, root):
-
         covered = {None}
 
         def helper(node, parent):

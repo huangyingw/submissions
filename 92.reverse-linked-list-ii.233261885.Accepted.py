@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def reverseBetween(self, head, m, n):
-
         pseudo = ListNode(None)
         pseudo.next = head
         node = pseudo

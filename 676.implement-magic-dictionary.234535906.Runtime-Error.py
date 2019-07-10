@@ -1,5 +1,3 @@
-
-
 class MagicDictionary1:
     def __init__(self):
         self.buckets = collections.defaultdict(list)

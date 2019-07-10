@@ -1,6 +1,5 @@
 class Solution(object):
     def findCircleNum(self, M):
-
         def find_set(x):
             if set[x] != x:
                 set[x] = find_set(set[x])

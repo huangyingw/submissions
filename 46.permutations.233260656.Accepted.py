@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def permute(self, nums):
-
         permutations = [[]]
         for num in nums:
             new_permutations = []
@@ -21,7 +12,6 @@ class Solution(object):
 
 class Solution2(object):
     def permute(self, nums):
-
         return self.permute_helper(nums, 0)
 
     def permute_helper(self, nums, index):

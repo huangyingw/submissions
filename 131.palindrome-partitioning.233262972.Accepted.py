@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def partition(self, s):
-
         partitons = []
         self.find_partitions(s, [], partitons)
         return partitons

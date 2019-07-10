@@ -1,9 +1,5 @@
-
 class Solution:
     def rotate(self, nums, k):
-
-
-
         if not nums:
             return
         n = len(nums)

@@ -1,38 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class NestedIterator(object):
     def __init__(self, nestedList):
-
         self.flat = []
 
         def flatten(nested):
@@ -45,9 +12,7 @@ class NestedIterator(object):
         self.flat = self.flat[::-1]
 
     def next(self):
-
         return self.flat.pop()
 
     def hasNext(self):
-
         return bool(self.flat)

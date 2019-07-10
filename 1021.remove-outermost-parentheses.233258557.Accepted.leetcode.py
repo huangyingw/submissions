@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeOuterParentheses(self, S):
-
         result = []
         balance = 0
         for c in S:

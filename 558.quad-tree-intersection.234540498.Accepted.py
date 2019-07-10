@@ -1,4 +1,3 @@
-
 class Solution:
     def intersect(self, q1, q2):
         if q1.isLeaf:

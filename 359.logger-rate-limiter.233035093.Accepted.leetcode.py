@@ -1,33 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Logger(object):
     def __init__(self):
-
         self.heap = []
         self.cache = {}
 
     def shouldPrintMessage(self, timestamp, message):
-
         while len(self.heap):
             if self.heap[0][0] <= timestamp:
                 temp = heapq.heappop(self.heap)

@@ -1,26 +1,13 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 import random
 
 
 class RandomizedCollection(object):
     def __init__(self):
-
         self.nums = []
         self.indices = defaultdict(set)
 
     def insert(self, val):
-
         result = True
         if val in self.indices:
             result = False
@@ -29,7 +16,6 @@ class RandomizedCollection(object):
         return result
 
     def remove(self, val):
-
         if val not in self.indices:
             return False
         i = self.indices[val].pop()
@@ -46,5 +32,4 @@ class RandomizedCollection(object):
         return True
 
     def getRandom(self):
-
         return self.nums[random.randint(0, len(self.nums) - 1)]

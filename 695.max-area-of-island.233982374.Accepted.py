@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxAreaOfIsland(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         max_area = 0

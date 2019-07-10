@@ -1,7 +1,5 @@
-
 class Solution:
     def toGoatLatin(self, S):
-
         postfix = "maa"
         new_list = []
         for word in S.split():

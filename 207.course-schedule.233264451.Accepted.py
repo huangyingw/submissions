@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
-
         nb_prerequisites = defaultdict(int)
         prereq_list = defaultdict(list)
         for after, before in prerequisites:

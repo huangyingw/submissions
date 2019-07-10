@@ -1,11 +1,9 @@
 class Solution:
     def countAndSay(self, n):
-
         if n == 1:
             return '1'
         x = '1'
         while n > 1:
-
             x = self.count(x)
             n -= 1
         return x
@@ -18,7 +16,6 @@ class Solution:
         while i < len(m) - 1:
             j += 1
             if m[j] != m[i]:
-
                 res += [j - i, m[i]]
                 i = j
         return ''.join(str(s) for s in res)

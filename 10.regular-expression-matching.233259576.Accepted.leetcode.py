@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isMatch(self, s, p):
-
         matched = [[False for _ in range(len(p) + 1)] for _ in range(len(s) + 1)]
         matched[0][0] = True
         for i in range(len(s) + 1):

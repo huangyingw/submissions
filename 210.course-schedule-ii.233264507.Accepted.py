@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-
         order = []
         nb_prerequisites = defaultdict(int)
         prereq_list = defaultdict(list)

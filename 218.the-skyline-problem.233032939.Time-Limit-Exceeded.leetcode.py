@@ -21,7 +21,6 @@ class f(object):
 
 class Solution(object):
     def getSkyline(self, buildings):
-
         if len(buildings) == 0:
             return []
         building_list = []

@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution:
     def findSecretWord(self, wordlist, master):
-
         def compPair(x, y):
             return sum(c1 == c2 for c1, c2 in zip(x, y))
 

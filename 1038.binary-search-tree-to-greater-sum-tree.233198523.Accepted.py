@@ -14,15 +14,8 @@ The given tree is a binary search tree.
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def bstToGst(self, root):
-
         self.curr_sum = 0
 
         def greaterSum(root):

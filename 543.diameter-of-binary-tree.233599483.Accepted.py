@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def diameterOfBinaryTree(self, root):
-
         if not root:
             return 0
         self.diameter = 0

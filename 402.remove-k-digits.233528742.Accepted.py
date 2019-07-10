@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeKdigits(self, num, k):
-
         result = []
         for c in num:
             while k and result and result[-1] > c:

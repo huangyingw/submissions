@@ -11,11 +11,6 @@
 '''
 
 
-
-
-
-
-
 class compare(object):
     def __init__(self, interval):
         self.interval = interval
@@ -28,9 +23,7 @@ class compare(object):
 
 class Solution(object):
     def merge(self, intervals):
-
         intervals = sorted(intervals, key=compare)
-
         merged = []
         for interval in intervals:
             if not merged or merged[-1].end < interval.start:

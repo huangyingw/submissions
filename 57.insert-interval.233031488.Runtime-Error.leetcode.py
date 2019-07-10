@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def insert(self, intervals, newInterval):
-
         result = []
         for interval in intervals:
             if newInterval.start > interval.end:

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestDistance(self, maze, start, destination):
-
         rows, cols = len(maze), len(maze[0])
         distance = 0
         visited = set()

@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def getImportance(self, employees, id):
-
         importance, subordinates = {}, {}
         for employee in employees:
             importance[employee.id] = employee.importance

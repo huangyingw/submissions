@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -14,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def reverseList(self, head):
-
         reversed = None
         while head:
             next = head.next

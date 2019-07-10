@@ -1,7 +1,5 @@
 class Solution(object):
     def countPrimes(self, n):
-
-
         isPrime = [True] * n
         for i in xrange(2, n):
             if i * i >= n:

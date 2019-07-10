@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def baseNeg2(self, N):
-
         if N == 0:
             return "0"
         result = []

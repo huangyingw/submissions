@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def combinationSum(self, candidates, target):
-
         result = []
         self.helper(candidates, 0, target, [], result)
         return result

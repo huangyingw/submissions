@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -21,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def rob(self, root):
-
         return max(self.helper(root))
 
     def helper(self, node):

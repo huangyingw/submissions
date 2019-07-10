@@ -1,6 +1,5 @@
 class Solution:
     def reverseBetween(self, head, m, n):
-
         if not head:
             return None
         dummy = ListNode(0)

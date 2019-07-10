@@ -1,7 +1,5 @@
-
 class Solution(object):
     def gameOfLife(self, board):
-
         def count(x, y):
             res = 0
             for r in range(x - 1, x + 2):

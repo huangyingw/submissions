@@ -1,7 +1,5 @@
-
 class Solution:
     def findContentChildren(self, g, s):
-
         g.sort()
         s.sort()
         i = j = 0

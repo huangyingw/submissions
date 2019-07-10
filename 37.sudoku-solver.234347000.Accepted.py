@@ -1,6 +1,5 @@
 class Solution:
     def solveSudoku(self, board):
-
         self.solve(board)
 
     def findEmpty(self, board):

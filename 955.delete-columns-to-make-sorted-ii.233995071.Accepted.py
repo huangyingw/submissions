@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minDeletionSize(self, A):
-
         rows, cols = len(A), len(A[0])
         cols_deleted = 0
         rows_to_check = {row for row in range(1, rows)}

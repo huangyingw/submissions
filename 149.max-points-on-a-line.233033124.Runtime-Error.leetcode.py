@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def maxPoints(self, points):
-
-
         if points is None or len(points) == 0:
             return 0
         ls = len(points)

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minSteps(self, n):
-
         steps = 0
         divisor = 2
         while n > 1:

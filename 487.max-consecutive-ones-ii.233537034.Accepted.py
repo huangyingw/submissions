@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
-
         max_consecutive = 0
         i = 0
         while i < len(nums) and nums[i] == 0:

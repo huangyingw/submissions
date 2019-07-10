@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def leastBricks(self, wall):
-
         edges = defaultdict(int)
         for row in wall:
             edge = 0

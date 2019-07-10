@@ -1,6 +1,5 @@
 class Solution(object):
     def myAtoi(self, str):
-
         MAX, MIN = 2147483647, -2147483648
         if str == "":
             return 0

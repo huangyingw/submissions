@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countAndSay(self, n):
-
         sequence = [1]
         for _ in range(n - 1):
             next = []

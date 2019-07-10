@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isOneEditDistance(self, s, t):
-
         diff = len(s) - len(t)
         if abs(diff) > 1:
             return False

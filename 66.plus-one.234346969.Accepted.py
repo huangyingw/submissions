@@ -1,6 +1,5 @@
 class Solution:
     def plusOne(self, digits):
-
         for i in range(len(digits)):
             digits[~i] += 1
             if digits[~i] < 10:

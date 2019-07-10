@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def upsideDownBinaryTree(self, root):
-
         if not root or not root.left:
             return root
         new_root = self.upsideDownBinaryTree(root.left)

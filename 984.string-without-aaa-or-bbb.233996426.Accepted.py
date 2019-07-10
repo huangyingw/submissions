@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def strWithout3a3b(self, a, b):
-
         result = []
         diff = a - b
         if diff > 0:

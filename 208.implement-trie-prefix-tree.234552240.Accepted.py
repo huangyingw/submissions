@@ -1,11 +1,8 @@
-
 class Trie:
     def __init__(self):
-
         self.dic = {}
 
     def insert(self, word):
-
         cur = self.dic
         for c in word:
             if c not in cur:
@@ -14,7 +11,6 @@ class Trie:
         cur['end'] = {}
 
     def search(self, word):
-
         cur = self.dic
         for c in word:
             if c in cur:
@@ -26,7 +22,6 @@ class Trie:
         return False
 
     def startsWith(self, prefix):
-
         cur = self.dic
         for c in prefix:
             if c in cur:

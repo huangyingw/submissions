@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def reverseOnlyLetters(self, S):
-
         temp = list(S)
         left = 0
         right = len(temp) - 1

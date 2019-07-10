@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def isPalindrome(self, head):
-
         rev = None
         slow, fast = head, head.next
         while fast and fast.next:

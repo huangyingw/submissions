@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestPalindrome(self, s):
-
         max_length = 0
         letters = set()
         for c in s:

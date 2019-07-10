@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
-
         def helper(i, j):
             if i > j:
                 return None

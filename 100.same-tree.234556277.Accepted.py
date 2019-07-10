@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isSameTree(self, p, q):
         if p == None and q == None:

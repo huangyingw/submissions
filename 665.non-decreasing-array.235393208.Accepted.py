@@ -1,6 +1,5 @@
 class Solution:
     def checkPossibility(self, nums):
-
         mistake = 0
         x = nums[0]
         nums.append(max(nums))

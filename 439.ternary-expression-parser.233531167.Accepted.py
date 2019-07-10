@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def parseTernary(self, expression):
-
         stack = []
         for c in expression[::-1]:
             if stack and stack[-1] == "?":

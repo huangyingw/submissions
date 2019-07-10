@@ -1,4 +1,3 @@
-
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -7,7 +6,6 @@ class ListNode:
 
 class Solution:
     def reverseKGroup(self, head, k):
-
         dummy = jump = ListNode(0)
         dummy.next = head
         l, r = head, head

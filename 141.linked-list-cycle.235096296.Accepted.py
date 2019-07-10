@@ -5,14 +5,8 @@
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def hasCycle(self, head):
-
         if not head:
             return False
         slow, fast = head, head

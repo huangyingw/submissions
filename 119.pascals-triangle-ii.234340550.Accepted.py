@@ -1,15 +1,4 @@
 class Solution:
-
-
-
-
-
-
-
-
-
-
-
     def getRow(self, rowIndex):
         result = [1]
         for _ in range(rowIndex):

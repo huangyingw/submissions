@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def candy(self, ratings):
-
         left = [1 for _ in range(len(ratings))]
         right = [1 for _ in range(len(ratings))]
         for i in range(1, len(ratings)):

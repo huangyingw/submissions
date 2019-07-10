@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def validateStackSequences(self, pushed, popped):
-
         stack = []
         i = 0
         for num in pushed:

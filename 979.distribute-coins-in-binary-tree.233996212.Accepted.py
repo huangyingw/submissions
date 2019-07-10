@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def distributeCoins(self, root):
-
         def helper(node, parent):
             if not node:
                 return 0

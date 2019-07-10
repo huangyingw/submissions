@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isBalanced(self, root):
         def check(root):

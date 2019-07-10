@@ -1,6 +1,5 @@
 class Solution(object):
     def sumOfDigits(self, A):
-
         if not A:
             return 0
         mini = min(A)

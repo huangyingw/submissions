@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isPalindrome(self, head):
-
         n = self.length(head)
         if n <= 1:
             return True

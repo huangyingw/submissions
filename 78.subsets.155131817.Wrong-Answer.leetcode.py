@@ -1,6 +1,5 @@
 class Solution(object):
     def subsets(self, nums):
-
         def dfs(start):
             result.append(list(current))
             for index in range(start, len(nums)):

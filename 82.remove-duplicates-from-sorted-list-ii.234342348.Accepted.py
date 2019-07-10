@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution:
     def deleteDuplicates(self, head):
-
         dummy = prev = ListNode(0)
         dummy.next = head
         while head and head.next:

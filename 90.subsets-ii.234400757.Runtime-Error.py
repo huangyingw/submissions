@@ -1,11 +1,5 @@
-
-
-
-
-
 class Solution1:
     def subsetsWithDup(self, nums):
-
         from itertools import combinations
         res = set()
         n = len(nums)
@@ -18,7 +12,6 @@ class Solution1:
 
 class Solution2:
     def subsetsWithDup(self, nums):
-
         results = []
         nums.sort()
         self.bfs(nums, results)

@@ -1,9 +1,5 @@
-
 class Solution:
-
     def isAnagram(self, s, t):
-
-
         if len(set(s)) != len(set(t)):
             return False
         alpha = set(s)
@@ -12,9 +8,7 @@ class Solution:
                 return False
         return True
 
-
     def isAnagram(self, s, t):
-
         dic1 = {}
         dic2 = {}
         for i in s:
@@ -28,11 +22,9 @@ class Solution:
             else:
                 dic2[j] = 1
         return dic1 == dic2
-
     from collections import Counter
 
     def isAnagram(self, s, t):
-
         s_d = Counter(s)
         t_d = Counter(t)
         if len(s_d.keys()) != len(t_d.keys()):

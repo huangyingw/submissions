@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def brokenCalc(self, X, Y):
-
         operations = 0
         while Y > X:
             operations += 1

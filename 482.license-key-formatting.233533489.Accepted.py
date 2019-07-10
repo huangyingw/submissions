@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
-
         key = S.replace("-", "").upper()
         formatted = []
         i = len(key) - K

@@ -1,6 +1,5 @@
 class Solution(object):
     def longestIncreasingPath(self, matrix):
-
         result = 0
         dp = [[0 for col in range(len(matrix[0]))] for row in range(len(matrix))]
         for row in range(len(matrix)):

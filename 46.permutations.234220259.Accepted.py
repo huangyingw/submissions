@@ -1,15 +1,5 @@
 class Solution:
-
-
-
-
-
-
-
-
-
     def permute(self, nums):
-
         res = []
         if len(nums) == 0:
             return res
@@ -22,6 +12,5 @@ class Solution:
             return
         for i in range(index, len(nums)):
             nums[i], nums[index] = nums[index], nums[i]
-
             self.get_permute(res, nums, index + 1)
             nums[i], nums[index] = nums[index], nums[i]

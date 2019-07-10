@@ -1,8 +1,3 @@
-
-
-
-
-
 class Solution:
     def uniquePaths(self, m, n):
         aux = [[1 for x in range(n)] for x in range(m)]

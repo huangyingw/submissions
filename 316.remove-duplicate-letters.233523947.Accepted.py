@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeDuplicateLetters(self, s):
-
         s_set = sorted(set(s))
         for c in s_set:
             suffix = s[s.index(c):]

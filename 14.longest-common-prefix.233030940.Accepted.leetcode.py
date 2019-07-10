@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestCommonPrefix(self, strs):
         ls = len(strs)
@@ -32,9 +24,5 @@ class Solution(object):
                 break
             pos += 1
         return prefix
-
-
-
 if __name__ == '__main__':
-
     s = Solution()

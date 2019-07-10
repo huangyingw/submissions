@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numDistinctIslands2(self, grid):
-
         if not grid or not grid[0]:
             return 0
         rows, cols = len(grid), len(grid[0])

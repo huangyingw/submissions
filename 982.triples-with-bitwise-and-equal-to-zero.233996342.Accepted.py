@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution:
     def countTriplets(self, A):
-
         pairs = defaultdict(int)
         for num1 in A:
             for num2 in A:

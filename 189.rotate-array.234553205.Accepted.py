@@ -1,10 +1,5 @@
-
-
-
 class Solution(object):
     def rotate(self, nums, k):
-
-
         k = k % len(nums)
         count = start = 0
         while count < len(nums):

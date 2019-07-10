@@ -1,6 +1,5 @@
 class Solution(object):
     def bitwiseComplement(self, N):
-
         if N == 0:
             return 1
         import math

@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -22,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def splitListToParts(self, root, k):
-
         node, count = root, 0
         while node:
             count += 1

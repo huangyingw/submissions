@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def searchBST(self, root, val):
-
         if not root:
             return None
         if root.val == val:
@@ -21,10 +10,8 @@ class Solution:
             return self.searchBST(root.right, val)
 
 
-
 class Solution:
     def searchBST(self, root, val):
-
         stack = [root]
         while stack:
             root = stack.pop()

@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def sumOfDistancesInTree(self, N, edges):
-
         neighbours = defaultdict(set)
         for a, b in edges:
             neighbours[a].add(b)

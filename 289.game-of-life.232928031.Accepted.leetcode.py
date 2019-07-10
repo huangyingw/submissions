@@ -1,6 +1,5 @@
 class Solution(object):
     def gameOfLife(self, board):
-
         if board and board[0]:
             M, N = len(board), len(board[0])
             board_next = copy.deepcopy(board)

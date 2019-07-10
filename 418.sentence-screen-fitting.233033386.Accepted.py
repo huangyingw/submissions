@@ -42,7 +42,6 @@ The character '-' signifies an empty space on the screen.
 
 class Solution(object):
     def wordsTyping(self, sentences, rows, cols):
-
         sentence = '-'.join(sentences)
         sentence += '-'
         index_in_sentence = 0

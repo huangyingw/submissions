@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -14,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def removeElements(self, head, val):
-
         dummy = prev = ListNode(None)
         dummy.next = head
         while head:

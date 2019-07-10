@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class RandomListNode(object):
     def __init__(self, x):
         self.label = x
@@ -17,7 +7,6 @@ class RandomListNode(object):
 
 class Solution(object):
     def copyRandomList(self, head):
-
         node = head
         while node:
             next = node.next

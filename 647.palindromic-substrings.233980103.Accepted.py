@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def countSubstrings(self, s):
-
         count = 0
         for i in range(2 * len(s) + 1):
             left = right = i // 2

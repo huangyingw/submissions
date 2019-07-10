@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def calculate(self, s):
-
         stack = []
         num = 0
         op = '+'

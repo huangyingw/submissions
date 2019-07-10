@@ -1,6 +1,5 @@
 class Solution(object):
     def indexPairs(self, text, words):
-
         if not words:
             return []
         result = []
@@ -8,6 +7,5 @@ class Solution(object):
             starting = [index for index in range(len(text)) if text.startswith(word, index)]
             for start in starting:
                 result.append([start, start + len(word) - 1])
-
         result.sort()
         return result

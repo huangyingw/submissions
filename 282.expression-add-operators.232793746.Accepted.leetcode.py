@@ -5,24 +5,19 @@ class Solution(object):
 
         def solve(num, target, mulExpr='', mulVal=1):
             ans = []
-
             if isLeadingZeros(num):
                 pass
             elif int(num) * mulVal == target:
                 ans += num + mulExpr,
             for x in range(len(num) - 1):
                 lnum, rnum = num[:x + 1], num[x + 1:]
-
                 if isLeadingZeros(rnum):
                     continue
                 right, rightVal = rnum + mulExpr, int(rnum) * mulVal
-
                 for left in solve(lnum, target - rightVal):
                     ans += left + '+' + right,
-
                 for left in solve(lnum, target + rightVal):
                     ans += left + '-' + right,
-
                 for left in solve(lnum, target, '*' + right, rightVal):
                     ans += left,
             return ans

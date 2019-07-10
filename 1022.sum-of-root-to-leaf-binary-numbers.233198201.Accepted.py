@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumRootToLeaf(self, root):
-
         def traversal(root, paths, pathlen, allpaths):
             if not root:
                 return

@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def generate(self, numRows):
-
         if numRows == 0:
             return []
         pascal = [[1]]

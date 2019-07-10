@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findTarget(self, root, k):
-
         visited = set()
 
         def traverse(node):

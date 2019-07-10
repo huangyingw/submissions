@@ -1,7 +1,5 @@
 class Solution(object):
     def productExceptSelf(self, nums):
-
-
         totalProduct = reduce((lambda total, num: total * num), nums)
         if totalProduct:
             return map((lambda num: totalProduct / num), nums)

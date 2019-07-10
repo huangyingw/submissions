@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findKthNumber(self, m, n, k):
-
         if m > n:
             m, n = n, m
 

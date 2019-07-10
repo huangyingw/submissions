@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxProduct(self, words):
-
         codes = []
         for word in words:
             codes.append(sum(1 << (ord(c) - ord('a')) for c in set(word)))

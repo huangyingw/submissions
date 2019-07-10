@@ -1,28 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def containsNearbyDuplicate(self, nums, k):
-
         check = set()
         for i in range(len(nums)):
             if i > k:

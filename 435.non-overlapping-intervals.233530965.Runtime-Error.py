@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
@@ -18,7 +6,6 @@ class Interval(object):
 
 class Solution(object):
     def eraseOverlapIntervals(self, intervals):
-
         erase = 0
         if not intervals:
             return 0

@@ -1,23 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def maxProfit(self, prices):
         ls = len(prices)
         if ls == 0:

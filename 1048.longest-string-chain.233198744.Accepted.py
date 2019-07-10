@@ -16,7 +16,6 @@ words[i] only consists of English lowercase letters.
 
 class Solution(object):
     def longestStrChain(self, words):
-
         if not words:
             return 0
         words.sort(key=len)

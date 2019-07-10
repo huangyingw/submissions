@@ -1,6 +1,5 @@
 class Solution(object):
     def groupStrings(self, strings):
-
         dic = {}
         for s in strings:
             key = self.hashCode(s)

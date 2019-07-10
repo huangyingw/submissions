@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validUtf8(self, data):
-
         i = 0
         while i < len(data):
             byte = data[i]

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def guessNumber(self, n):
-
         low, high = 1, n
         while True:
             mid = (low + high) // 2

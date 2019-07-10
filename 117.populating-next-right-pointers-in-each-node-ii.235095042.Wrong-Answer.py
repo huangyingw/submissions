@@ -23,16 +23,7 @@
 '''
 
 
-
-
-
-
-
-
-
 class Solution:
-
-
     def connect(self, root):
         if root == None:
             return
@@ -50,16 +41,7 @@ class Solution:
                 queue.append(None)
 
 
-
-
-
-
-
-
-
 class Solution:
-
-
     def connect(self, root):
         if not root:
             return None

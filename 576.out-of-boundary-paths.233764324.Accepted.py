@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findPaths(self, m, n, N, i, j):
-
         paths = 0
         dp = [[0 for _ in range(n)] for _ in range(m)]
         dp[i][j] = 1

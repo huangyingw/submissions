@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
     def isSubtree(self, s, t):
-
         s_res = self.preorder(s, True)
         t_res = self.preorder(t, True)
         return t_res in s_res

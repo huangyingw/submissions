@@ -4,15 +4,8 @@ Return the root node of a binary search tree that matches the given preorder tra
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def bstFromPreorder(self, preorder):
-
         root = TreeNode(preorder[0])
         stack = [root]
         for index in range(1, len(preorder)):

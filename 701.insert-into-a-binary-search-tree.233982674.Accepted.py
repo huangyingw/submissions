@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def insertIntoBST(self, root, val):
-
         new_node = TreeNode(val)
         if not root:
             return new_node

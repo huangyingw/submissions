@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def reverseKGroup(self, head, k):
-
         if k < 2:
             return head
         node = head
@@ -18,8 +7,6 @@ class Solution(object):
             if not node:
                 return head
             node = node.next
-
-
         prev = self.reverseKGroup(node, k)
         for _ in range(k):
             temp = head.next

@@ -1,12 +1,9 @@
 class MyHashMap(object):
-
     def __init__(self):
-
         self.size = 10000
         self.nodes = [None] * self.size
 
     def put(self, key, value):
-
         index = hash(key) % self.size
         if self.nodes[index] is None:
             self.nodes[index] = ListNode(-1, -1)
@@ -17,7 +14,6 @@ class MyHashMap(object):
             prev.next.val = value
 
     def get(self, key):
-
         index = hash(key) % self.size
         if self.nodes[index] is None:
             return -1
@@ -28,7 +24,6 @@ class MyHashMap(object):
             return prev.next.val
 
     def remove(self, key):
-
         index = hash(key) % self.size
         if self.nodes[index] is None:
             return
@@ -39,14 +34,12 @@ class MyHashMap(object):
 
 
 def find(bucket, key):
-
     node = bucket
     prev = None
     while node is not None and node.key != key:
         prev = node
         node = node.next
     return prev
-
 
 
 class ListNode():

@@ -1,4 +1,3 @@
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -8,7 +7,6 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p, q):
-
         if not p or not q:
             return p == q
         if p.val != q.val:

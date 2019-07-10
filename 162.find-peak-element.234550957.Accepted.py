@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def findPeakElement(self, nums):
         first, last = 0, len(nums) - 1

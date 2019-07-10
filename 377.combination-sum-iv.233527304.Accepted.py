@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def combinationSum4(self, nums, target):
-
         memo = {}
         self.helper(nums, target, memo)
         return memo[target]

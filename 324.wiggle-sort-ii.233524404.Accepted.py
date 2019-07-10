@@ -1,24 +1,10 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def wiggleSort(self, nums):
-
         nums.sort()
         median = nums[len(nums) // 2]
 
-
         def mapping(i):
             return (i * 2 + 1) % (len(nums) | 1)
-
-
         left, i, right = 0, 0, len(nums) - 1
         while i <= right:
             if nums[mapping(i)] > median:

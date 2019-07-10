@@ -1,30 +1,4 @@
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def deleteDuplicates(self, head):
         if head is None:
             return None

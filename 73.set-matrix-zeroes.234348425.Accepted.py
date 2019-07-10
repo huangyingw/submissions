@@ -1,6 +1,5 @@
 class Solution:
     def setZeroes(self, matrix):
-
         m = len(matrix)
         if m == 0:
             return

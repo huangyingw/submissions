@@ -1,22 +1,4 @@
-
 class Solution:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def searchRange(self, nums, target):
         def binarySearchLeft(A, x):
             left, right = 0, len(A) - 1

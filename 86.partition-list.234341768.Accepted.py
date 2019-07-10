@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution:
     def partition(self, head, x):
-
         dummy1 = prev = ListNode(0)
         dummy2 = after = ListNode(0)
         while head:

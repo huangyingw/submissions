@@ -1,6 +1,5 @@
 class Solution(object):
     def thirdMax(self, nums):
-
         import Queue
         pq = Queue.PriorityQueue(4)
         check = set()

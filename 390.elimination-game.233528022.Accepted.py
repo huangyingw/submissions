@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lastRemaining(self, n):
-
         head = 1
         l_to_r = True
         step = 1

@@ -1,11 +1,5 @@
-
-
-
-
-
 class Solution(object):
     def postorder(self, root):
-
         if root is None:
             return []
         stack = []
@@ -18,10 +12,8 @@ class Solution(object):
             res.append(curr.val)
 
 
-
 class Solution(object):
     def postorder(self, root):
-
         if root == None:
             return []
         lst = [root.val]

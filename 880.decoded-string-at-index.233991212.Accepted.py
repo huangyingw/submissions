@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def decodeAtIndex(self, S, K):
-
         length = 0
         for index, c in enumerate(S):
             if "0" <= c <= "9":

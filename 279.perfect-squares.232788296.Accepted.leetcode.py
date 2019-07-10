@@ -3,11 +3,8 @@ import sys
 
 class Solution(object):
     def numSquares(self, n):
-
-
         if n < 0:
             return -1
-
         if n == 0:
             return 1
         dp = [sys.maxint] * (n + 1)

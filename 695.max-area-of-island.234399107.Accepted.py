@@ -1,4 +1,3 @@
-
 class Solution:
     def maxAreaOfIsland(self, grid):
         max_size = 0

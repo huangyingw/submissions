@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def reverseList(self, head):
-
         if not head:
             return None
         prev, curr = None, head

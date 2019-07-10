@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minSubArrayLen(self, s, nums):
-
         subarray_sum, min_length, start = 0, len(nums) + 1, 0
         for i in range(len(nums)):
             subarray_sum += nums[i]

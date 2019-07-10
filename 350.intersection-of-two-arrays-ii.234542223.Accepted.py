@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def intersect(self, nums1, nums2):
-
         res = []
         nums1.sort()
         nums2.sort()

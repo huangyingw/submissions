@@ -1,14 +1,8 @@
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def findBottomLeftValue(self, root):
-
         queue = deque([root])
         while queue:
             node = queue.popleft()

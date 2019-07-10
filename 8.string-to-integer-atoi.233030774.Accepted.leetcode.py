@@ -1,6 +1,5 @@
 class Solution(object):
     def myAtoi(self, str):
-
         sign = 1
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0
@@ -21,16 +20,5 @@ class Solution(object):
             result = result * 10 + num
             pos += 1
         return sign * result
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-
     s = Solution()

@@ -1,27 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def getMoneyAmount(self, n):
-
-
         dp = [[0] * (n + 1) for _ in range(n + 1)]
         for j in range(2, n + 1):
             for i in range(j - 1, 0, -1):

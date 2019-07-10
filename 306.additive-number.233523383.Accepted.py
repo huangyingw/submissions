@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isAdditiveNumber(self, num):
-
         n = len(num)
         if n < 3:
             return False

@@ -1,38 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def combine(self, n, k):
-
         def dfs(left, right, k):
             if k == 0:
                 result.append(list(current))

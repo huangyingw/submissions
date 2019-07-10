@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isSubsequence(self, s, t):
-
         if not s:
             return True
         i = 0

@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def minKBitFlips(self, A, K):
-
         flips = 0
         flip_i = deque()
         for i in range(len(A)):

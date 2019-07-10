@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumNumbers(self, root):
-
         if root is None:
             return 0
         res = 0
-
         queue = [(root, root.val)]
         while len(queue) > 0:
             curr, curr_value = queue.pop(0)

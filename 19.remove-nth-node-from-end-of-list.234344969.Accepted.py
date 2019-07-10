@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution:
     def removeNthFromEnd(self, head, n):
-
         dummy = ListNode(0)
         dummy.next = head
         fast, slow = dummy, dummy

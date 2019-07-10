@@ -1,26 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import random
 
 
 class RandomizedSet(object):
     def __init__(self):
-
         self.mapping = {}
         self.items = []
 
     def insert(self, val):
-
         if val not in self.mapping:
             self.items.append(val)
             self.mapping[val] = len(self.items) - 1
@@ -28,7 +14,6 @@ class RandomizedSet(object):
         return False
 
     def remove(self, val):
-
         if val not in self.mapping:
             return False
         index = self.mapping[val]
@@ -39,6 +24,4 @@ class RandomizedSet(object):
         return True
 
     def getRandom(self):
-
-
         return self.items[random.randint(0, len(self.items) - 1)]

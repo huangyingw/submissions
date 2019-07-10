@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findNthDigit(self, n):
-
         length = 1
         digits = 9
         while n > digits:

@@ -1,14 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
     def isPerfectSquare(self, num):
         low, high = 1, num
         while low <= high:

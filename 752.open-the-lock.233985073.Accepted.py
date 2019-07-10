@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def openLock(self, deadends, target):
-
         queue, target = {"0000"}, {target}
         visited = set()
         deadends = set(deadends)

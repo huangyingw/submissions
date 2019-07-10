@@ -1,6 +1,4 @@
-
 class Solution(object):
-
     def sumOfLeftLeaves(self, root):
         if not root:
             return 0
@@ -8,9 +6,7 @@ class Solution(object):
             return root.left.val + self.sumOfLeftLeaves(root.right)
         return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
 
-
     def sumOfLeftLeaves(self, root):
-
         sum = 0
         if root != None:
             if root.left != None:

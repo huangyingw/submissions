@@ -1,8 +1,5 @@
-
 class Solution:
-
     def countPrimes(self, n):
-
         def isPrime(num):
             for i in range(2, int(num**0.5) + 1):
                 if num % i == 0:
@@ -16,11 +13,7 @@ class Solution:
                 count += 1
         return count
 
-
-
-
     def countPrimes(self, n):
-
         if n < 2:
             return 0
         s = [1] * n

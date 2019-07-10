@@ -1,6 +1,5 @@
 class Solution(object):
     def generatePalindromes(self, s):
-
         dic = {}
         half = []
         res = []
@@ -14,7 +13,6 @@ class Solution(object):
                 odd += 1
         if odd > 1:
             return []
-
         seed = []
         mid = ''
         for c in dic:
@@ -22,7 +20,6 @@ class Solution(object):
                 mid = c
             seed.extend([c] * (dic[c] / 2))
         self.permute(half, seed, 0)
-
         for r in half:
             res.append(''.join(r) + mid + ''.join(reversed(r)))
         return res

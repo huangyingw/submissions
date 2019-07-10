@@ -1,7 +1,5 @@
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
-
-
         S = S.upper().replace('-', '')
         ls = len(S)
         if ls % K == 0:

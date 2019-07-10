@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextGreaterElement(self, findNums, nums):
-
         result = [-1 for _ in range(len(findNums))]
         find_to_i = {}
         for i, num in enumerate(findNums):

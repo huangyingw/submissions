@@ -1,6 +1,5 @@
 class Solution:
     def solveNQueens(self, n):
-
         def dfs(row):
             if row == n:
                 ret.append([''.join(r) for r in chessboard])

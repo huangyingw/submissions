@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxSumAfterPartitioning(self, A, K):
-
         results = [0]
         for i in range(len(A)):
             subarray_max, max_result = 0, 0

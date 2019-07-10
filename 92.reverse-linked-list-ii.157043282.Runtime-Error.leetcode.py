@@ -1,6 +1,5 @@
 class Solution(object):
     def reverseBetween(self, head, m, n):
-
         dummy = ListNode(-1)
         dummy.next = head
         prevM = dummy

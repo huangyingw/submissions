@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findTheDifference(self, s, t):
-
         counts = [0 for _ in range(26)]
         for c in s:
             counts[ord(c) - ord("a")] += 1

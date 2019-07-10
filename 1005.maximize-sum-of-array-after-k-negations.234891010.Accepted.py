@@ -22,7 +22,6 @@ Note:
 
 class Solution(object):
     def largestSumAfterKNegations(self, A, K):
-
         A.sort()
         index = 0
         while K > 0:

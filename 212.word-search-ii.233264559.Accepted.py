@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class Node:
     def __init__(self):
         self.children = {}
@@ -17,7 +6,6 @@ class Node:
 
 class Solution(object):
     def findWords(self, board, words):
-
         root = Node()
         for word in words:
             node = root

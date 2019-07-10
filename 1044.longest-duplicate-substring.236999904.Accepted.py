@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestDupSubstring(self, S):
-
         MOD = 2 ** 63 - 1
         MULTIPLIER = 26
         s = [ord(c) - ord("a") for c in S]

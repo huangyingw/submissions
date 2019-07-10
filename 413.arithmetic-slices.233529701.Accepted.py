@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
-
         n = len(A)
         if n < 3:
             return 0

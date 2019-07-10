@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def isUnivalTree(self, root):
-
         vals = []
 
         def dfs(node):

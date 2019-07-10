@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def setZeroes(self, matrix):
-
         row = len(matrix)
         col = len(matrix[0])
         is_col = False

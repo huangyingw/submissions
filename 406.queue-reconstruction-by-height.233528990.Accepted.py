@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def reconstructQueue(self, people):
-
         queue = []
         height_groups = defaultdict(list)
         for height, in_front in people:

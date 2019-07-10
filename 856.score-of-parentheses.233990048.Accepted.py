@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def scoreOfParentheses(self, S):
-
         stack = []
         for s in S:
             if s == "(":

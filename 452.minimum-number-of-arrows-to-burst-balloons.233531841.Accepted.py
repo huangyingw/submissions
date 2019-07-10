@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMinArrowShots(self, points):
-
         arrows, last_arrow = 0, float("-inf")
         points.sort(key=lambda x: x[1])
         for start, end in points:

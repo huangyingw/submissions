@@ -22,7 +22,6 @@ All rows have the same size.
 
 class Solution(object):
     def numEnclaves(self, A):
-
         result = 0
         queue = []
         for row in range(len(A)):

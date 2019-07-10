@@ -1,5 +1,4 @@
 class Solution:
-
     def divide(self, dividend, divisor):
         if (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0):
             if abs(dividend) < abs(divisor):

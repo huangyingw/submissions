@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def orangesRotting(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         fresh, rotten = set(), set()
         for r in range(rows):

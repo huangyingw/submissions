@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def diffWaysToCompute(self, input):
-
         start = 0
         parsed = []
         for i in range(len(input)):

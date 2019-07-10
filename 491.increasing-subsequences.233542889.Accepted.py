@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def findSubsequences(self, nums):
-
         subsequences = set()
         for num in nums:
             new_subsequences = set()

@@ -1,18 +1,8 @@
-
-
-
-
 class Solution:
-
-
-
     def uncommonFromSentences1(self, A, B):
-
         from collections import Counter
         mapping = Counter(A.split() + B.split())
         return [m[0] for m in mapping.items() if m[1] == 1]
-
-
 
     def uncommonFromSentences2(self, A, B):
         count = {}

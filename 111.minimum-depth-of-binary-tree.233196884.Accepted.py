@@ -13,12 +13,6 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def minDepth(self, root):
         if not root:

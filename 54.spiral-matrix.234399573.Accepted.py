@@ -1,12 +1,5 @@
-
-
-
-
 class Solution:
-
-
     def spiralOrder(self, matrix):
-
         if not matrix:
             return []
         R, C = len(matrix), len(matrix[0])
@@ -25,8 +18,6 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return ans
-
-
 
     def spiralOrder2(self, matrix):
         def spiral_coords(r1, c1, r2, c2):

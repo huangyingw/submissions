@@ -1,23 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
     def crackSafe(self, n, k):
         seen = set()
         digits = [str(i) for i in range(k)]

@@ -1,6 +1,5 @@
 class Solution:
     def isSubtree(self, s, t):
-
         if not s:
             return s is t
         if self.isEqual(s, t):

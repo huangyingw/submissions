@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def consecutiveNumbersSum(self, N):
-
         k = 1
         temp = N - ((k + 1) * k) // 2
         result = 0

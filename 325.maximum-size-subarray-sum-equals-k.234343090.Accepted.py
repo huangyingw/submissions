@@ -1,6 +1,5 @@
 class Solution:
     def maxSubArrayLen(self, nums, k):
-
         sum, ret = 0, 0
         map = {}
         for i in range(len(nums)):

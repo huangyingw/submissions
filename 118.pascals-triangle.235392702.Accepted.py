@@ -15,7 +15,6 @@ class Solution(object):
         return Ans
 
 
-
 class SolutionII(object):
     def generate(self, numRows):
         Ans = []

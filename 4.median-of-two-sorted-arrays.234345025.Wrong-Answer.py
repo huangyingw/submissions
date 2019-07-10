@@ -1,6 +1,5 @@
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
-
         m, n = len(nums1), len(nums2)
         if m > n:
             return self.findMedianSortedArrays(nums2, nums1)

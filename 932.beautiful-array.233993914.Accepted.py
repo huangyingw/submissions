@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def beautifulArray(self, N):
-
         if N == 1:
             return [1]
         evens = self.beautifulArray(N // 2)

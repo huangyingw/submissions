@@ -1,23 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def removeDuplicates(self, nums):
         if len(nums) == 0:
             return 0

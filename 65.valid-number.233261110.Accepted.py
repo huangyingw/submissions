@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isNumber(self, s):
         self.digits = {str(i) for i in range(10)}

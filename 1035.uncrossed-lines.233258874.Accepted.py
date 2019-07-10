@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxUncrossedLines(self, A, B):
-
         if len(A) < len(B):
             A, B = B, A
         max_uncrossed = [0] * (len(B) + 1)

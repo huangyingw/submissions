@@ -1,5 +1,3 @@
-
-
 class Solution:
     def checkValidString(self, s):
         cmin = cmax = 0

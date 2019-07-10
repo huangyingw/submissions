@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pacificAtlantic(self, matrix):
-
         if not matrix or not matrix[0]:
             return []
         rows, cols = len(matrix), len(matrix[0])

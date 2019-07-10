@@ -1,22 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 import bisect
 
 
 class Solution(object):
     def shortestWay(self, source, target):
-
         char_indices = defaultdict(list)
         for i, c in enumerate(source):
             char_indices[c].append(i)

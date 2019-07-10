@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -16,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def swapPairs(self, head):
-
         prev = dummy = ListNode(None)
         while head and head.next:
             next_head = head.next.next

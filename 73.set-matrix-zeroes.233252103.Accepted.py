@@ -1,6 +1,5 @@
 class Solution(object):
     def setZeroes(self, matrix):
-
         col0 = 1
         for row in range(len(matrix)):
             if matrix[row][0] == 0:

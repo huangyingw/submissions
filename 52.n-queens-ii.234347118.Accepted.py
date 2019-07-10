@@ -1,6 +1,5 @@
 class Solution:
     def totalNQueens(self, n):
-
         self.ret = 0
         self.dfs([-1] * n, 0)
         return self.ret

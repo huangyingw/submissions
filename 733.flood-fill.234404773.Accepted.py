@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def floodFill(self, image, sr, sc, newColor):
         R, C = len(image), len(image[0])

@@ -1,6 +1,3 @@
-
-
-
 class Solution:
     def maximumProduct(self, nums):
         a, b = heapq.nlargest(3, nums), heapq.nsmallest(2, nums)

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def mirrorReflection(self, p, q):
-
         k = 1
         while (k * q) % p != 0:
             k += 1

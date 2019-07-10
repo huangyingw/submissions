@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minCostII(self, costs):
-
         if not costs or not costs[0]:
             return 0
         for i in range(1, len(costs)):

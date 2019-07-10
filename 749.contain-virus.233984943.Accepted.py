@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def containVirus(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         used_walls = 0
 
@@ -50,7 +32,6 @@ class Solution(object):
             visited = set()
             for r in range(rows):
                 for c in range(cols):
-
                     if (r, c) not in visited and grid[r][c] == 1:
                         nbors, walls = set(), [0]
                         get_nbors(r, c)

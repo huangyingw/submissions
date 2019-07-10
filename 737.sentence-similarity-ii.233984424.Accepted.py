@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def areSentencesSimilarTwo(self, words1, words2, pairs):
-
         def find(word):
             if word not in mapping:
                 return None

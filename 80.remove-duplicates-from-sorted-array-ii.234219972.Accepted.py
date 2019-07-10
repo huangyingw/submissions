@@ -1,6 +1,5 @@
 class Solution:
     def removeDuplicates(self, nums):
-
         if nums is None:
             return 0
         length = len(nums)

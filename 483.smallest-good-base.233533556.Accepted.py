@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 import math
 
 
 class Solution(object):
     def smallestGoodBase(self, n):
-
         n = int(n)
         for max_power in range(int(math.log(n, 2)), 1, -1):
             base = int(n ** max_power ** -1)

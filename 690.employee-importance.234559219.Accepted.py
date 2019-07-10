@@ -1,11 +1,6 @@
-
-
-
 class Solution(object):
     def getImportance(self, employees, id):
-
         totalImportanceValue = 0
-
         sub_ids = [id]
         idToEmployeesIndex = {}
         for i in range(len(employees)):

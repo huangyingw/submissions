@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
-
         len1, len2 = self.getLength(l1), self.getLength(l2)
         if len1 > len2:
             l2 = self.addLeadingZeroes(len1 - len2, l2)

@@ -1,7 +1,5 @@
 class Solution(object):
     def numIslands2(self, m, n, positions):
-
-
         ans = []
         islands = Union()
         for p in map(tuple, positions):
@@ -15,10 +13,7 @@ class Solution(object):
 
 
 class Union(object):
-
-
     def __init__(self):
-
         self.id = {}
         self.sz = {}
         self.count = 0

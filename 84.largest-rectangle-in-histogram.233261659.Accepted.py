@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def largestRectangleArea(self, heights):
-
         max_area = 0
         heights = [0] + heights + [0]
         stack = [0]

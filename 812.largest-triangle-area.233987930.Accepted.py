@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def largestTriangleArea(self, points):
-
         n = len(points)
         largest = 0
         for i in range(n - 2):

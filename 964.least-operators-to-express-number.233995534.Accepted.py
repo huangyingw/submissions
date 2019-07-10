@@ -1,27 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def leastOpsExpressTarget(self, x, target):
-
         pos = neg = powers = 0
         while target:
             target, remainder = divmod(target, x)

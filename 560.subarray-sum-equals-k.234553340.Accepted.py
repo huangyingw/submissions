@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def subarraySum(self, nums, k):
-
         count, summ, d = 0, 0, {0: 1}
         for n in nums:
             summ += n

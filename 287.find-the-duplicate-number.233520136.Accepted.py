@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findDuplicate(self, nums):
-
         slow = nums[0]
         fast = nums[slow]
         while fast != slow:

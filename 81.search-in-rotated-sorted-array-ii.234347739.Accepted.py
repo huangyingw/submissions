@@ -1,6 +1,5 @@
 class Solution:
     def search(self, nums, target):
-
         if not nums:
             return False
         l, r = 0, len(nums) - 1

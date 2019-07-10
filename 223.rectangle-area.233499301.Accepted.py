@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def computeArea(self, A, B, C, D, E, F, G, H):
-
         x_lhs = max(A, E)
         x_rhs = min(C, G)
         x_overlap = max(x_rhs - x_lhs, 0)

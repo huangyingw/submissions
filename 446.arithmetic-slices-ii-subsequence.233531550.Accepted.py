@@ -1,26 +1,10 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
-
         count = 0
         subsequences = []
-
         for i in range(len(A)):
             subsequences.append(defaultdict(int))
             for j in range(i):

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def spiralOrder(self, matrix):
-
         if matrix == []:
             return []
         top = left = 0

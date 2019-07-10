@@ -1,23 +1,13 @@
-
-
-
-
-
-
-
 class Solution(object):
     def insert(self, intervals, newInterval):
-
         if intervals is None or len(intervals) == 0:
             return [newInterval]
         intervals.sort(key=lambda x: x.start)
         pos = 0
         while pos < len(intervals):
-
             if newInterval.end < intervals[pos].start:
                 intervals.insert(pos, newInterval)
                 return intervals
-
             if self.check_overlap(intervals[pos], newInterval):
                 temp = intervals.pop(pos)
                 newInterval = self.merge_intervals(temp, newInterval)

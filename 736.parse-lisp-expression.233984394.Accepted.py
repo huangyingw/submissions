@@ -1,48 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def evaluate(self, expression):
-
         tokens = expression.split(" ")
         scopes = [{}]
 
@@ -81,7 +38,6 @@ class Solution(object):
                 closing_brackets -= 1
                 scopes.pop()
             return result
-
 
         def continue_let(i):
             return "a" <= tokens[i][0] <= "z" and tokens[i][-1] != ")"

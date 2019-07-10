@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def intersect(self, nums1, nums2):
-
         dic = {}
         for a in nums1:
             dic[a] = dic.get(a, 0) + 1

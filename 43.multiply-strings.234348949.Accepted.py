@@ -1,6 +1,5 @@
 class Solution:
     def multiply(self, num1, num2):
-
         result = [0] * (len(num1) + len(num2))
         tail = len(result) - 1
         for n1 in reversed(num1):

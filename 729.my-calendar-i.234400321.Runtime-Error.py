@@ -1,7 +1,3 @@
-
-
-
-
 class MyCalendar1(object):
     def __init__(self):
         self.calendar = []
@@ -20,7 +16,6 @@ class MyCalendar2:
         self.eventList = [(0, 0), (float('inf'), float('inf'))]
 
     def book(self, start, end):
-
         p = bisect(self.eventList, (start, end))
         if self.eventList[p - 1][1] > start:
             return False

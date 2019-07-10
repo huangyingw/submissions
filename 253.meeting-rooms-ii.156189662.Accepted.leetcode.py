@@ -1,6 +1,5 @@
 class Solution(object):
     def minMeetingRooms(self, intervals):
-
         class Point:
             def __init__(self, time, flag):
                 self.time = time

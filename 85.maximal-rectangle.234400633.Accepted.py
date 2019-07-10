@@ -1,6 +1,5 @@
 class Solution:
     def maximalRectangle(self, matrix):
-
         if not matrix or not matrix[0]:
             return 0
         n = len(matrix[0])

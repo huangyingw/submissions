@@ -1,6 +1,5 @@
 class Solution(object):
     def convert(self, s, numRows):
-
         if len(s) <= numRows or numRows == 1:
             return s
         result = [''] * numRows

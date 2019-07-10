@@ -1,6 +1,5 @@
 class Solution(object):
     def generate(self, numRows):
-
         triangle = []
         for row in range(numRows):
             new_row = [0 for _ in range(row + 1)]

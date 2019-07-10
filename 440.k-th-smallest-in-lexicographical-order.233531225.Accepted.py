@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findKthNumber(self, n, k):
-
         kth = 1
         k -= 1
         while k > 0:

@@ -18,14 +18,8 @@ The given list has length in the range [0, 10000].
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def nextLargerNodes(self, head):
-
         result = []
         while head:
             result.append(head.val)

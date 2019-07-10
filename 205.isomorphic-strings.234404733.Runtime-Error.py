@@ -1,4 +1,3 @@
-
 def isIsomorphic1(self, s, t):
     d1, d2 = {}, {}
     for i, val in enumerate(s):

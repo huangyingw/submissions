@@ -1,8 +1,3 @@
-
-
-
-
-
 class Solution(object):
     def trimBST(self, root, L, R):
         def trim(node):

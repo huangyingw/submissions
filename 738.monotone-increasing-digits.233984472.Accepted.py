@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def monotoneIncreasingDigits(self, N):
-
         s = [int(c) for c in str(N)]
         i = 0
         while i + 1 < len(s):

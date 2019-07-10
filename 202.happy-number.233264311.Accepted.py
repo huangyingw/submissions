@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isHappy(self, n):
-
         if n == 1:
             return True, 1
         slow = sum([int(c) * int(c) for c in str(n)])
@@ -27,7 +13,6 @@ class Solution(object):
 
 class Solution2(object):
     def isHappy(self, n):
-
         while True:
             if n == 1:
                 return True

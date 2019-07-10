@@ -1,26 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def isNumber(self, s):
         s = s.strip()
         ls, pos = len(s), 0

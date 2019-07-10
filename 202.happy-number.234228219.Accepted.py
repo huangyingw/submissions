@@ -1,7 +1,5 @@
 class Solution(object):
     def isHappy(self, n):
-
-
         seen_numbers = set()
         while n > 1 and n not in seen_numbers:
             seen_numbers.add(n)

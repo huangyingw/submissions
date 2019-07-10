@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def reverseOnlyLetters(self, S):
-
         S = list(S)
         low, high = 0, len(S) - 1
         while low < high:

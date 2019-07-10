@@ -1,26 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Solution:
     def minRefuelStops(self, target, startFuel, stations):
-
         stops = 0
         fuel = startFuel
         past_fuels = []

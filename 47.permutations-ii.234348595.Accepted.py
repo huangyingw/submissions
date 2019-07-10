@@ -3,7 +3,6 @@ from collections import defaultdict
 
 class Solution:
     def permuteUnique(self, nums):
-
         nums.sort()
         ret = []
         used = defaultdict(lambda: False)

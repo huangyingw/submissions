@@ -1,8 +1,5 @@
-
 class Solution(object):
-
     def toHex(self, num):
-
         d = {0: '0',
              1: '1',
              2: '2',
@@ -31,9 +28,7 @@ class Solution(object):
                 num //= 16
             return res
 
-
     def toHex(self, num):
-
         if num == 0:
             return "0"
         if num < 0:

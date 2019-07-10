@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def matrixReshape(self, nums, r, c):
-
         rows, cols = len(nums), len(nums[0])
         if rows * cols != r * c:
             return nums

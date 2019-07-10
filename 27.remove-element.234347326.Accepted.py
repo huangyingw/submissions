@@ -1,6 +1,5 @@
 class Solution:
     def removeElement(self, nums, val):
-
         n = len(nums)
         i = 0
         while i < n:

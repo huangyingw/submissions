@@ -1,6 +1,5 @@
 class Solution:
     def minSubArrayLen(self, s, nums):
-
         l, r = 0, 0
         ret, sum = float('inf'), 0
         while r < len(nums):

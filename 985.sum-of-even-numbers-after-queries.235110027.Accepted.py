@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sumEvenAfterQueries(self, A, queries):
-
         sum_even = sum(x for x in A if x % 2 == 0)
         result = []
         for val, i in queries:

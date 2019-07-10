@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -23,7 +10,6 @@ class Solution(object):
         self.i = 0
 
     def str2tree(self, s):
-
         def next_num():
             num, neg = 0, False
             if s[self.i] == "-":

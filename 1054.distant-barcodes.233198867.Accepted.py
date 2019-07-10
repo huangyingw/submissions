@@ -15,12 +15,10 @@ Note:
 
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
-
         import heapq
         di = collections.Counter(barcodes)
         pq = [(-value, key) for key, value in di.items()]
         heapq.heapify(pq)
-
         result = []
         while len(pq) >= 2:
             freq1, barcode1 = heapq.heappop(pq)

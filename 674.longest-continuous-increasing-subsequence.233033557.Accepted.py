@@ -15,7 +15,6 @@ Note: Length of the array will not exceed 10,000.
 
 class Solution(object):
     def findLengthOfLCIS(self, nums):
-
         if not nums:
             return 0
         start, result = 0, 1

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def powerfulIntegers(self, x, y, bound):
-
         result = set()
 
         def make_power_list(val):

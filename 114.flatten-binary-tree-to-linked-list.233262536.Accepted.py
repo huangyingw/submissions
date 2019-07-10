@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -21,7 +10,6 @@ class Solution(object):
         self.prev = None
 
     def flatten(self, root):
-
         if not root:
             return None
         self.prev = root

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def primePalindrome(self, N):
-
         def is_prime(x):
             if x < 2 or x % 2 == 0:
                 return x == 2

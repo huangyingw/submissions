@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findReplaceString(self, S, indexes, sources, targets):
-
         replaced = [c for c in S]
         for i, src, tgt in zip(indexes, sources, targets):
             n = len(src)

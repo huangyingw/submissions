@@ -1,4 +1,3 @@
-
 class Solution:
     def wordSubsets(self, A, B):
         uni = collections.Counter()

@@ -1,7 +1,3 @@
-
-
-
-
 class Solution1:
     def permuteUnique(nums):
         permutations = [[]]

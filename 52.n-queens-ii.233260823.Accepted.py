@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def totalNQueens(self, n):
-
         partials = [[]]
         for col in range(n):
             new_partials = []

@@ -13,7 +13,6 @@
 
 class Solution(object):
     def numSquares(self, n):
-
         mapping = {}
         squares = [num * num for num in range(1, int(pow(n, 0.5)) + 1)]
         for square in squares:

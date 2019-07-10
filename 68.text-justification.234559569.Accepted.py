@@ -13,10 +13,8 @@ class Solution(object):
                     current_string += " " * (split_space)
                     current_string += (" " * (split_space)).join(current_list[begin_space + 1:])
                     Ans_list.append(current_string)
-
                 current_string = ""
                 del current_list[:]
-
             current_list.append(word)
             current_string += word
         Ans_list.append(' '.join(current_list) + ' ' * (maxWidth - len(current_string) - len(current_list) + 1))

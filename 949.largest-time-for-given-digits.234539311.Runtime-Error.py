@@ -1,8 +1,3 @@
-
-
-
-
-
 import itertools
 
 
@@ -16,7 +11,6 @@ class Solution2:
             if 0 <= hours < 24 and 0 <= mins < 60 and time > ans:
                 ans = time
         return "{:02}:{:02}".format(*divmod(ans, 60)) if ans >= 0 else ""
-
 
 
 class Solution3:

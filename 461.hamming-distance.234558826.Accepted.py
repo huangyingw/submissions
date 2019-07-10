@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def hammingDistance(self, x, y):
         hD = 0

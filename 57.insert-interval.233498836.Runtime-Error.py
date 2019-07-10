@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
@@ -17,7 +6,6 @@ class Interval(object):
 
 class Solution(object):
     def insert(self, intervals, newInterval):
-
         left, right = 0, len(intervals) - 1
         while left < len(intervals) and intervals[left].end < newInterval.start:
             left += 1

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
     def upsideDownBinaryTree(self, root):
-
-
         node, parent, parentRight = root, None, None
         while node is not None:
             left = node.left

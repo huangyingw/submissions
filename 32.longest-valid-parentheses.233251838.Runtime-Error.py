@@ -1,6 +1,5 @@
 class Solution(object):
     def longestValidParentheses(self, s):
-
         stack, result = [-1], 0
         for index in range(len(s)):
             if s[index] == '(':

@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findOcurrences(self, text, first, second):
-
         result = []
         s = text.split()
         for i in range(2, len(s)):

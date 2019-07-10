@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxSubArrayLen(self, nums, k):
-
         cumul, max_length = 0, 0
         first_index = {}
         for i, num in enumerate(nums):

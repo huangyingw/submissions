@@ -1,8 +1,5 @@
-
 class Solution:
-
     def mySqrt(self, x):
-
         low = 0
         high = x
         while low <= high:
@@ -15,9 +12,7 @@ class Solution:
                 low = mid + 1
         return high
 
-
     def mySqrt(self, x):
-
         if x == 0:
             return 0
         low = 1

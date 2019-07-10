@@ -1,6 +1,5 @@
 class Solution(object):
     def shortestPathBinaryMatrix(self, grid):
-
         if not grid:
             return -1
         rows, cols = len(grid), len(grid[0])

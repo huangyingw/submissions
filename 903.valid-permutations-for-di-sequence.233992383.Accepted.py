@@ -1,23 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def numPermsDISequence(self, S):
-
         dp = [1] * (len(S) + 1)
-
         for move in S:
             if move == "D":
                 dp = dp[1:]

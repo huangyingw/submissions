@@ -1,32 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxVacationDays(self, flights, days):
-
         cities = len(flights)
         weeks = len(days[0])
         if not cities or not weeks:

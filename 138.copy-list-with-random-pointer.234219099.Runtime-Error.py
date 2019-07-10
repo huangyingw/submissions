@@ -1,48 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def copyRandomList(self, head):
-
-
-
         p = head
         while p is not None:
             next = p.next

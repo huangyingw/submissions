@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -19,7 +7,6 @@ from collections import deque
 
 
 def serialize(self, root):
-
     serial_list = []
 
     def serial(node):
@@ -33,9 +20,7 @@ def serialize(self, root):
 
 
 def deserialize(self, data):
-
     preorder = deque(int(val) for val in data.split())
-
 
     def deserial(low, high):
         if preorder and low < preorder[0] < high:

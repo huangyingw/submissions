@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMinDifference(self, timePoints):
-
         minutes = []
         for time in timePoints:
             hrs, mins = time.split(":")

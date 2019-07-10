@@ -1,6 +1,5 @@
 class Solution(object):
     def numJewelsInStones(self, J, S):
-
         if len(J) == 0 or len(S) == 0:
             return 0
         j_set = set(J)

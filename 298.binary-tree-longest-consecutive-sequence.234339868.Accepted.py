@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution:
     def longestConsecutive(self, root):
-
         if not root:
             return 0
         result = 0

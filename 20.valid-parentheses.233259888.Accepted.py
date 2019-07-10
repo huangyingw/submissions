@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValid(self, s):
-
         stack = []
         match = {'(': ')', '[': ']', '{': '}'}
         for c in s:

@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def bstFromPreorder(self, preorder):
-
         self.i = 0
 
         def helper(max_value=float("inf")):

@@ -13,7 +13,6 @@ Explanation: Use double operation and then decrement operation {2 -> 4 -> 3}.
 
 class Solution(object):
     def brokenCalc(self, X, Y):
-
         if X == Y:
             return 0
         if X > Y:

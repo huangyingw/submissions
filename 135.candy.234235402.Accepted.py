@@ -1,7 +1,5 @@
 class Solution(object):
     def candy(self, ratings):
-
-
         if ratings is None or len(ratings) == 0:
             return 0
         ls = len(ratings)

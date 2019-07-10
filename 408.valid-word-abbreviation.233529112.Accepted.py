@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validWordAbbreviation(self, word, abbr):
-
         i, j = 0, 0
         while j < len(abbr):
             if abbr[j] < "a":

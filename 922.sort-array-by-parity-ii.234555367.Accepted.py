@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def sortArrayByParityII(self, A):
-
         index = 0
         for i in range(1, len(A), 2):
             if A[i] % 2 == 0 and index < len(A):

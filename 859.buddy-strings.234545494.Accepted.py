@@ -1,8 +1,5 @@
-
 class Solution:
-
     def buddyStrings(self, A, B):
-
         if set(A) != set(B):
             return False
         count = 0
@@ -13,10 +10,4 @@ class Solution:
                 count += 1
             if count > 2:
                 return False
-
-
-
-
-
-
         return sum == 0 and count == 2 or (count == 0 and len(set(A)) < len(A))

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def arrayNesting(self, nums):
-
         visited = set()
         longest = 0
         for i, num in enumerate(nums):

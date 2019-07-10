@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def rand10(self):
-
         units = rand7() - 1
         sevens = rand7() - 1
         num = 7 * sevens + units

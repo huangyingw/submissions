@@ -1,6 +1,5 @@
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
-
         p1, p2 = m - 1, n - 1
         pos = m + n - 1
         while p1 >= 0 and p2 >= 0:

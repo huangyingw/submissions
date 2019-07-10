@@ -1,6 +1,3 @@
-
-
-
 class Solution(object):
     def rob(self, nums):
         l = len(nums)

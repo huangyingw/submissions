@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def spiralMatrixIII(self, R, C, r0, c0):
-
         moves = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         r, c = r0, c0
         direction = 0

@@ -1,9 +1,5 @@
-
 class Solution:
-
-
     def compress(self, chars):
-
         left = i = 0
         while i < len(chars):
             char, length = chars[i], 1

@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution:
     def subarraysDivByK(self, A, K):
-
         result = 0
         running_sum = 0
         prefix_sums = defaultdict(int)

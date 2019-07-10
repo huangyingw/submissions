@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def addBinary(self, a, b):
-
         result = []
         carry = 0
         i = len(a) - 1

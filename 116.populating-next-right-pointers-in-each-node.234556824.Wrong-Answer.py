@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
-
-
     def connect(self, root):
         current = [root] if root else []
         while current:

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def isMatch(self, s, p):
-
         prev = [True]
         for j in range(len(p)):
             prev.append(p[j] == '*' and prev[j - 1])

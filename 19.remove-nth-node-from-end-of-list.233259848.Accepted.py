@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeNthFromEnd(self, head, n):
-
         first, second = head, head
         for i in range(n):
             first = first.next

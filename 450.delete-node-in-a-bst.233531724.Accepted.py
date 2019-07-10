@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -17,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def deleteNode(self, root, key):
-
         if not root:
             return None
         if key > root.val:

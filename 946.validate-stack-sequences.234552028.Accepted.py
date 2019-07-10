@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def validateStackSequences(self, pushed, popped):
-
         idx = 0
         stack = []
         l = len(popped)

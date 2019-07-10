@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMode(self, root):
-
         self.prev = float("inf")
         self.count = 0
         self.mode_count = 0

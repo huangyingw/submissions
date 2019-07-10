@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def findLength1(self, A, B):
-
         memo = [[0] * (len(B) + 1) for _ in range(len(A) + 1)]
         for i in range(len(A) - 1, -1, -1):
             for j in range(len(B) - 1, -1, -1):
@@ -13,7 +8,6 @@ class Solution:
         return max(max(row) for row in memo)
 
     def findLength2(self, A, B):
-
         def check(length):
             seen = {A[i:i + length]
                     for i in range(len(A) - length + 1)}

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeElements(self, head, val):
-
         if not head:
             return None
         while head != None and head.val == val:

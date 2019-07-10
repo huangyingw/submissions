@@ -1,10 +1,8 @@
-
 from collections import Counter
 
 
 class Solution(object):
     def findAnagrams(self, s, p):
-
         res = []
         pCounter = Counter(p)
         sCounter = Counter(s[:len(p) - 1])

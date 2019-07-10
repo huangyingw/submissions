@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextGreatestLetter(self, letters, target):
-
         left, right = 0, len(letters)
         while left < right:
             mid = (left + right) // 2

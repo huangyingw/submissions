@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestPalindromeSubseq(self, s):
-
         n = len(s)
         if s == s[::-1]:
             return n

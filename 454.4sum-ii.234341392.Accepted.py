@@ -3,7 +3,6 @@ from collections import defaultdict
 
 class Solution:
     def fourSumCount(self, A, B, C, D):
-
         ret = 0
         record = defaultdict(lambda: 0)
         for i in range(len(A)):

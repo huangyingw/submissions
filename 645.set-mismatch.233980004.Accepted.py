@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findErrorNums(self, nums):
-
         for num in nums:
             if nums[abs(num) - 1] < 0:
                 duplicate = abs(num)

@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findAllConcatenatedWordsInADict(self, words):
-
         def is_concat(word):
             if not word or word in word_set:
                 return True

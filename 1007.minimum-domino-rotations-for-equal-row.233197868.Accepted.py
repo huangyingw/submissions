@@ -13,7 +13,6 @@ If we rotate the second and fourth dominoes, we can make every value in the top 
 
 class Solution(object):
     def minDominoRotations(self, A, B):
-
         if len(A) != len(B):
             return -1
         if len(A) == 0:

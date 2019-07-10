@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def calculate(self, s):
-
         operators = {"+", "-", "*", "/"}
 
         def parse(i):

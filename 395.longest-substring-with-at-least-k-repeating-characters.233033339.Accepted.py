@@ -17,7 +17,6 @@
 
 class Solution(object):
     def longestSubstring(self, s, k):
-
         dict = {}
         for c in s:
             if c not in dict:

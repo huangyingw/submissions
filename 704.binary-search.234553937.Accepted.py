@@ -1,6 +1,3 @@
-
-
-
 class Solution:
     def search(self, nums, target):
         start, end = 0, len(nums) - 1

@@ -1,6 +1,5 @@
 class Solution(object):
     def highFive(self, items):
-
         if not items:
             return []
         score_map = {}

@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def movesToChessboard(self, board):
-
         n = len(board)
         rows = {tuple(row) for row in board}
         cols = set(zip(*board))

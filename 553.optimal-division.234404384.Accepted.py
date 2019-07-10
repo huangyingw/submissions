@@ -1,14 +1,5 @@
-
 class Solution:
-
-
-
-
-
-
-
     def optimalDivision(self, nums):
-
         if len(nums) == 1:
             return str(nums[0])
         elif len(nums) == 2:

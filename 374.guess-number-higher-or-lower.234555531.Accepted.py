@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 class Solution(object):
     def guessNumber(self, n):
         start, end = 1, n

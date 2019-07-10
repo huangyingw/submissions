@@ -1,7 +1,5 @@
-
 class Solution:
     def getRow(self, rowIndex):
-
         if rowIndex == 0:
             return [1]
         c = Solution.getRow(self, rowIndex - 1)

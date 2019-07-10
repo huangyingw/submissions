@@ -1,6 +1,5 @@
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
-
         letter_map = {}
         for letter in magazine:
             letter_map[letter] = letter_map.get(letter, 0) + 1

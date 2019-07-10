@@ -1,7 +1,5 @@
-
 class Solution(object):
     def countAndSay(self, n):
-
         if n == 1:
             return "1"
         if n == 2:

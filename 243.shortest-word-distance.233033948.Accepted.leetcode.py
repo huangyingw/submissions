@@ -1,25 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def shortestDistance(self, words, word1, word2):
         index1 = index2 = -1
         res = len(words)

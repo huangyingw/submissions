@@ -1,24 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findDuplicate(self, paths):
-
         content_to_path = defaultdict(list)
         for path in paths:
             path_list = path.split(" ")

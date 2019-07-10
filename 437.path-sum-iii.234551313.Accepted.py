@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pathSum(self, root, sum):
-
         self.result = 0
         self.helper(root, sum, 0, {0: 1})
         return self.result

@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def buildTree(self, inorder, postorder):
-
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}
         return self.buildTreeUtil(inorder, postorder, inOrderMap, 0, n - 1, 0, n - 1)

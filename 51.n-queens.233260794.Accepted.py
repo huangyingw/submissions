@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def solveNQueens(self, n):
-
         partials = [[]]
         for col in range(n):
             new_partials = []

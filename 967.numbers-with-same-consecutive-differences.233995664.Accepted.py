@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numsSameConsecDiff(self, N, K):
-
         partials = [i for i in range(1, 10)]
         for _ in range(N - 1):
             new_partials = []

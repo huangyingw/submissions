@@ -1,39 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def restoreIpAddresses(self, s):
         ls = len(s)
         if ls == 0 or ls > 12:

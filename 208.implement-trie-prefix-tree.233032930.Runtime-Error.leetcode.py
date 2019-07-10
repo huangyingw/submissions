@@ -5,11 +5,9 @@ class TreeNode(object):
 
 class Trie(object):
     def __init__(self):
-
         self.root = TreeNode()
 
     def insert(self, word):
-
         node = self.root
         for char in word:
             if char not in node.children:
@@ -18,7 +16,6 @@ class Trie(object):
         node.word = True
 
     def search(self, word):
-
         node = self.root
         for char in word:
             if char not in node.children:
@@ -27,7 +24,6 @@ class Trie(object):
         return node.word
 
     def startsWith(self, prefix):
-
         node = self.root
         for char in prefix:
             if char not in node.children:

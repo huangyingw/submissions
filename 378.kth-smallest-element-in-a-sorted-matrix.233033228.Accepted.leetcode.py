@@ -1,6 +1,5 @@
 class Solution(object):
     def kthSmallest(self, matrix, k):
-
         if not matrix:
             return 0
         import heapq

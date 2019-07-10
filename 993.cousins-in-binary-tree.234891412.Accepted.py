@@ -8,12 +8,6 @@ Output: false
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def adjacent(self, root, node1, node2):
         if not root:
@@ -37,7 +31,6 @@ class Solution(object):
         return self._level(root.right, node, level + 1)
 
     def isCousins(self, root, x, y):
-
         if ((self._level(root, x, 1) == self._level(root, y, 1)) and not self.adjacent(root, x, y)):
             return True
         return False

@@ -1,20 +1,10 @@
-
-
-
-
-
-
 class Solution1:
     def findMin(self, nums):
-
         return min(nums)
-
-
 
 
 class Solution2:
     def findMin(self, nums):
-
         left = 0
         right = len(nums) - 1
         while left <= right:

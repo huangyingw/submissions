@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def exclusiveTime(self, n, logs):
-
         stack = []
         exclusive = [0 for _ in range(n)]
         start = None

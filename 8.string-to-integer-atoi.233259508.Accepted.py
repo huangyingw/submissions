@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def myAtoi(self, str):
-
         str = str.strip()
         negative = False
         if str and str[0] == '-':

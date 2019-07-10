@@ -15,15 +15,8 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def isSymmetric(self, root):
-
         if not root:
             return True
 

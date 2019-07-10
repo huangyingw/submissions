@@ -3,7 +3,6 @@ from collections import Counter
 
 class Solution:
     def findShortestSubArray(self, nums):
-
         first, last = {}, {}
         degree = Counter(nums)
         for i in range(len(nums)):

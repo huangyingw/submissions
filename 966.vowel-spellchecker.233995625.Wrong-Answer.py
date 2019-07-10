@@ -1,37 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from re import sub
 
 
 class Solution:
     def spellchecker(self, wordlist, queries):
-
         def replace_vowels(word):
             return sub('[aeiou]', '_', word)
         wordsset = set(wordlist)

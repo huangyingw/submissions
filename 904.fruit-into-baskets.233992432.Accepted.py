@@ -1,28 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def totalFruit(self, tree):
-
         prev = [None, float("inf"), float("inf")]
         other = [None, float("inf"), float("inf")]
         result = 1

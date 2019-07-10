@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def leafSimilar(self, root1, root2):
-
         if not root1 and not root2:
             return True
         leaf1 = []

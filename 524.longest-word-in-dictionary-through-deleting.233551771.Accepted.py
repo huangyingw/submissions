@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findLongestWord(self, s, d):
-
         def is_subsequence(s, t):
             i, j = 0, 0
             while i < len(s) and (len(t) - j) >= (len(s) - i):

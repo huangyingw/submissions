@@ -1,26 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
-
-
-
-
-
     def trap(self, height):
-
         ans = 0
         size = len(height)
         for i in range(size - 1):
@@ -31,10 +10,6 @@ class Solution:
                 max_r = max(max_r, height[j])
             ans += min(max_r, max_l) - height[i]
         return ans
-
-
-
-
 
     def trap2(self, height):
         if not height:
@@ -52,7 +27,6 @@ class Solution:
         for i in range(1, size):
             ans += min(left_max[i], right_max[i]) - height[i]
         return ans
-
 
     def trap3(self, height):
         ans = current = 0

@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def deleteAndEarn(self, nums):
-
         freq = Counter(nums)
         pairs = [(num, count) for num, count in freq.items()]
         pairs.sort()

@@ -1,11 +1,9 @@
-
 import heapq
 from collections import Counter
 
 
 class Solution:
     def reorganizeString(self, S):
-
         result = ''
         c = Counter(S)
         l = []

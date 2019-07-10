@@ -1,33 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def isScramble(self, s1, s2, memo={}):
-
-
         if len(s1) != len(s2) or sorted(s1) != sorted(s2):
             return False
         if len(s1) <= len(s2) <= 1:

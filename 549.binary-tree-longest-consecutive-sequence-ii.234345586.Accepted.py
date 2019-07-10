@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 class Solution:
     def __init__(self):
         self.result = 0
 
     def longestConsecutive(self, root):
-
         self.helper(root)
         return self.result
 

@@ -1,17 +1,8 @@
 class Solution(object):
-
-
-
-
-
-
-
     def sortedSquares(self, A):
         pos = 0
         while pos < len(A) and A[pos] < 0:
             pos += 1
-
-
         npos = pos - 1
         res = []
         while pos < len(A) and npos >= 0:

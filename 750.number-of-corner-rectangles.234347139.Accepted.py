@@ -1,6 +1,5 @@
 class Solution:
     def countCornerRectangles(self, grid):
-
         result = 0
         if not grid or not grid[0]:
             return result

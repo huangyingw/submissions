@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValidSudoku(self, board):
         vset = [0] * 9

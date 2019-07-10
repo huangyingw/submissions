@@ -1,16 +1,8 @@
-
-
-
-
-
-
-
 import string
 
 
 class Solution:
     def reverseOnlyLetters(self, S):
-
         letters = set(string.ascii_lowercase + string.ascii_uppercase)
         S = [c for c in S]
         left, right = 0, len(S) - 1

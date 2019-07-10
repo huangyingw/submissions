@@ -1,31 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def cloneGraph(self, node):
-
         if node is None:
             return None
         label_map = {}

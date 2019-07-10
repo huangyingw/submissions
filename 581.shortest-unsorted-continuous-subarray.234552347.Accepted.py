@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def findUnsortedSubarray(self, nums):
-
         minimum = float('inf')
         maximum = -float('inf')
         for i in range(1, len(nums)):

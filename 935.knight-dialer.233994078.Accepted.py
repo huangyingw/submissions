@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def knightDialer(self, N):
-
         can_reach = [[4, 6],
                      [6, 8],
                      [7, 9],

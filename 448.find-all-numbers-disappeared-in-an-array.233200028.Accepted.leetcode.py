@@ -12,7 +12,6 @@ Output:
 
 class Solution(object):
     def findDisappearedNumbers(self, nums):
-
         if not nums:
             return []
         result = []

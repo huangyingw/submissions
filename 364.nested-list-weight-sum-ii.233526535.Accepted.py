@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def depthSumInverse(self, nestedList):
-
         depth_sums = []
         for nested in nestedList:
             self.dfs(nested, 0, depth_sums)

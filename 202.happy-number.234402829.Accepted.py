@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def isHappy(self, n):
-
         def calculateSum(n):
             sum = 0
             while(n):

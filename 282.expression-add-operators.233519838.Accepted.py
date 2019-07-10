@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def addOperators(self, num, target):
-
         if not num:
             return []
         self.num, self.target, self.expressions = num, target, []

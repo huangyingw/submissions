@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import bisect
 
 
@@ -21,7 +7,6 @@ class RangeModule(object):
         self.in_range = [False, False]
 
     def addRange(self, left, right, add=True):
-
         i = bisect.bisect_left(self.points, left)
         if self.points[i] != left:
             self.points.insert(i, left)
@@ -34,11 +19,9 @@ class RangeModule(object):
         self.in_range[i:j] = [add]
 
     def queryRange(self, left, right):
-
         i = bisect.bisect(self.points, left) - 1
         j = bisect.bisect_left(self.points, right)
         return all(self.in_range[i:j])
 
     def removeRange(self, left, right):
-
         self.addRange(left, right, False)

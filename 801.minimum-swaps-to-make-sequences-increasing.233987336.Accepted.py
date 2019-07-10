@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minSwap(self, A, B):
-
         prev_no_swap, prev_swap = 0, 1
         for i in range(1, len(A)):
             no_swap, swap = float("inf"), float("inf")

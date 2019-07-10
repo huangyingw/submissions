@@ -16,15 +16,8 @@
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def invertTree(self, root):
-
         if not root:
             return
         leftTree = self.invertTree(root.left)
@@ -34,15 +27,8 @@ class Solution(object):
         return root
 
 
-
-
-
-
-
-
 class Solution(object):
     def invertTree(self, root):
-
         if not root:
             return None
         queue = [root]

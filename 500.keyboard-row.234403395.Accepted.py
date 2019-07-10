@@ -1,9 +1,5 @@
-
 class Solution:
-
-
     def findWords(self, words):
-
         line1 = "qwertyuiopQWERTYUIOP"
         line2 = "asdfghjklASDFGHJKL"
         line3 = "zxcvbnmZXCVBNM"

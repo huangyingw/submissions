@@ -1,6 +1,5 @@
 class Solution:
     def findNumberOfLIS(self, nums):
-
         if not nums:
             return 0
         length, count = [1] * len(nums), [1] * len(nums)

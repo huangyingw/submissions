@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def searchBST(self, root, val):
-
         if not root:
             return None
         if root.val == val:

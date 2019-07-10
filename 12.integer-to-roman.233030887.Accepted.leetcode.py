@@ -1,29 +1,4 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def intToRoman(self, num):
         values = [1000, 900, 500, 400,
                   100, 90, 50, 40,
@@ -42,5 +17,4 @@ class Solution(object):
             i += 1
         return roman
 if __name__ == '__main__':
-
     s = Solution()

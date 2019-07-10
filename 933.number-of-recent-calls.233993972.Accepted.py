@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
@@ -17,7 +7,6 @@ class RecentCounter:
         self.WINDOW = 3000
 
     def ping(self, t):
-
         self.times.append(t)
         while t - self.times[0] > self.WINDOW:
             self.times.popleft()

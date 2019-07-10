@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def canCompleteCircuit(self, gas, cost):
-
         if sum(gas) < sum(cost):
             return -1
         tank = 0

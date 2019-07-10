@@ -1,6 +1,5 @@
 class Solution(object):
     def twoCitySchedCost(self, costs):
-
         result = 0
         costs = sorted(costs, key=lambda x: x[0] - x[1])
         for index in range(len(costs)):

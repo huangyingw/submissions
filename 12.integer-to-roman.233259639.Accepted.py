@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def intToRoman(self, num):
-
         mapping = [(1000, 'M'),
                    (900, 'CM'),
                    (500, 'D'),

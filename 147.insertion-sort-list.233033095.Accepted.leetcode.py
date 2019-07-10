@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def insertionSortList(self, head):
-
-
         if head is None:
             return None
         helper = ListNode(-1000)

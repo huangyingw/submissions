@@ -1,6 +1,5 @@
 class Solution(object):
     def fourSumCount(self, A, B, C, D):
-
         hashTable = {}
         for a in A:
             for b in B:

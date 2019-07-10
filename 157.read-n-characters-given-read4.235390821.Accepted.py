@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 def read4(buf):
     pass
 

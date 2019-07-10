@@ -1,14 +1,5 @@
-
 class Solution:
-
-
-
-
-
-
-
     def findMaxConsecutiveOnes(self, nums):
-
         res = -1
         count = 0
         for i in range(len(nums)):
@@ -18,10 +9,7 @@ class Solution:
         count = max(count, len(nums) - res - 1)
         return count
 
-
-
     def findMaxConsecutiveOnes(self, nums):
-
         max_count = 0
         count = 0
         for n in nums:
@@ -33,14 +21,6 @@ class Solution:
                 count = 0
         return max_count
 
-
-
-
-
-
-
-
     def findMaxConsecutiveOnes(self, nums):
-
         temp = bytearray(nums).split(b'\x00')
         return max([len(i) for i in temp])

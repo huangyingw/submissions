@@ -1,15 +1,8 @@
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def groupAnagrams(self, strs):
-
         sorted_words = defaultdict(list)
         for word in strs:
             letter_list = [c for c in word]

@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def robotSim(self, commands, obstacles):
-
         NORTH, EAST, SOUTH, WEST = 0, 1, 2, 3
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         position, orientation = (0, 0), NORTH

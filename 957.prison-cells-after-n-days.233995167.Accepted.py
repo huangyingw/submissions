@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def prisonAfterNDays(self, cells, N):
-
         day = 0
         state = tuple(cells)
         state_to_day = {}

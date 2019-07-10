@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def diameterOfBinaryTree(self, root):
-
         self.d = 1
 
         def depth(node):

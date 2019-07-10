@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findLongestChain(self, pairs):
-
         pairs.sort(key=lambda x: x[0])
         chain = 0
         end = pairs[0][0] - 1

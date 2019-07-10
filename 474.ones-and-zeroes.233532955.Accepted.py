@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findMaxForm(self, strs, m, n):
-
         max_form = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
         for s in strs:
             s_zeros = sum([True for c in s if c == "0"])

@@ -9,7 +9,6 @@
 
 class Solution(object):
     def maxSubArray(self, nums):
-
         if not nums:
             return 0
         currSum, result = nums[0], nums[0]

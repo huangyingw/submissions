@@ -1,7 +1,5 @@
 class Solution(object):
     def compress(self, chars):
-
-
         anchor = write = 0
         for read, c in enumerate(chars):
             if read + 1 == len(chars) or chars[read + 1] != c:

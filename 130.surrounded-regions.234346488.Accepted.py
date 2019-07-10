@@ -1,10 +1,8 @@
 class Solution:
     def solve(self, board):
-
         if not board or not board[0]:
             return
         m, n = len(board), len(board[0])
-
         for i in range(m):
             self.check(i, 0, board, m, n)
             if n > 0:

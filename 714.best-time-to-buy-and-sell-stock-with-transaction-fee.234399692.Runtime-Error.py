@@ -1,7 +1,3 @@
-
-
-
-
 class Solution1:
     def maxProfit(self, prices, fee):
         cash, hold = 0, -prices[0]
@@ -13,7 +9,6 @@ class Solution1:
 
 class Solution2:
     def maxProfit(self, prices, fee):
-
         if not prices:
             return 0
         profit = 0

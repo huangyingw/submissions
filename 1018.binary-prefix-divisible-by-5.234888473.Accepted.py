@@ -17,7 +17,6 @@ A[i] is 0 or 1
 
 class Solution(object):
     def prefixesDivBy5(self, A):
-
         result = []
         if not A:
             return []

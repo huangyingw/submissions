@@ -1,5 +1,3 @@
-
-
 class Solution:
     def mostCommonWord(self, paragraph, banned):
         for c in string.punctuation:

@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -20,11 +7,9 @@ class TreeNode(object):
 
 class Solution(object):
     def countUnivalSubtrees(self, root):
-
         self.univariates = 0
         self.is_univariate(root)
         return self.univariates
-
 
     def is_univariate(self, root):
         if not root:

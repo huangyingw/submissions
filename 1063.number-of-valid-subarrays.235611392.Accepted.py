@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def validSubarrays(self, nums):
-
         result = 0
         stack = []
         for num in nums:

@@ -1,6 +1,4 @@
 class Solution:
-
-
     def majorityElement(self, nums):
         n1 = n2 = None
         c1 = c2 = 0

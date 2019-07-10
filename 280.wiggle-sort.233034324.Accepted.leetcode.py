@@ -1,35 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def wiggleSort(self, nums):
         for i in range(len(nums) - 1):
             if (i % 2 == 0 and nums[i] > nums[i + 1]) or\

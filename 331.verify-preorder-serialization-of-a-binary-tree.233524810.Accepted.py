@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValidSerialization(self, preorder):
-
         if not preorder:
             return True
         expected_leaves = 1

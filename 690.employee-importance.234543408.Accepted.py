@@ -1,16 +1,7 @@
-
-
-
-
-
 class Employee:
     def __init__(self, id, importance, subordinates):
-
-
         self.id = id
-
         self.importance = importance
-
         self.subordinates = subordinates
 
 
@@ -25,7 +16,6 @@ class Solution(object):
         return dfs(query_id)
 
     def getImportance(self, employees, id):
-
         from collections import deque
         e = {e.id: e for e in employees}
         q = deque([id])

@@ -1,11 +1,5 @@
-
-
-
-
 class Solution:
-
     def searchMatrix(self, matrix, target):
-
         if not matrix:
             return False
         row = len(matrix)
@@ -20,9 +14,7 @@ class Solution:
                 i += 1
         return False
 
-
     def searchMatrix2(self, matrix, target):
-
         if not matrix:
             return False
         if not matrix[0]:

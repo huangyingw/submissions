@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countComponents(self, n, edges):
-
         parents = [i for i in range(n)]
         components = n
 

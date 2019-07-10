@@ -1,8 +1,5 @@
-
 class Solution:
-
     def canPlaceFlowers(self, flowerbed, n):
-
         sum_0s = 0
         sum_flowers = 0
         flowerbed.append(1)
@@ -16,8 +13,6 @@ class Solution:
             else:
                 sum_0s += 1
         return n <= sum_flowers
-
-
 
     def canPlaceFlowers(self, flowerbed, n):
         flowerbed.insert(0, 0)

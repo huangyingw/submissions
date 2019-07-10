@@ -1,33 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def permuteUnique(self, num):
         res = []
         if len(num) == 0:
@@ -49,14 +20,12 @@ class Solution(object):
             num[i], num[index] = num[index], num[i]
 
     def permuteUnique(self, num):
-
         res = [[]]
         for i in range(len(nums)):
             cache = set()
             while len(res[0]) == i:
                 curr = res.pop(0)
                 for j in range(len(curr) + 1):
-
                     new_perm = curr[:j] + [nums[i]] + curr[j:]
                     stemp = ''.join(map(str, new_perm))
                     if stemp not in cache:

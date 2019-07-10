@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
-
         n = len(barcodes)
         freq = Counter(barcodes)
         freq = sorted([(count, num) for num, count in freq.items()], reverse=True)

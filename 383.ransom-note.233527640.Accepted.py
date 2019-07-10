@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
-
         mag_count = Counter(magazine)
         ransom_count = Counter(ransomNote)
         for c in ransom_count:

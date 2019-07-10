@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def reorderLogFiles(self, logs):
-
         letters, numbers = [], []
         digits = {str(i) for i in range(10)}
         for log in logs:

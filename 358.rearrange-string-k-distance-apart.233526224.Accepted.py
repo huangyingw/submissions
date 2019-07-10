@@ -1,19 +1,9 @@
-
-
-
-
-
-
-
-
-
 from collections import Counter
 import heapq
 
 
 class Solution(object):
     def rearrangeString(self, s, k):
-
         freq = Counter(s)
         heap = [(-count, letter) for letter, count in freq.items()]
         heapq.heapify(heap)

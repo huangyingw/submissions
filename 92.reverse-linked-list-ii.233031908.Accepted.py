@@ -7,14 +7,8 @@
 '''
 
 
-
-
-
-
-
 class Solution(object):
     def reverseBetween(self, head, m, n):
-
         if m == n:
             return head
         result = ListNode(0)

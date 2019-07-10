@@ -1,12 +1,9 @@
 class Solution(object):
     def rotate(self, matrix):
-
-
         if matrix is None or len(matrix) == 1:
             return
         ls = len(matrix)
         for i in range(ls / 2):
-
             begin, end = i, ls - 1 - i
             for k in range(ls - 2 * i - 1):
                 temp = matrix[end - k][begin]
@@ -16,6 +13,5 @@ class Solution(object):
                 matrix[begin][begin + k] = temp
         return
 if __name__ == '__main__':
-
     s = Solution()
     s.rotate([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])

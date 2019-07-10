@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def minAreaRect(self, points):
         n = len(points)

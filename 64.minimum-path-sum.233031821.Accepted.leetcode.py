@@ -1,6 +1,5 @@
 class Solution(object):
     def minPathSum(self, grid):
-
         height = len(grid)
         if height == 0:
             return 0
@@ -16,6 +15,5 @@ class Solution(object):
                     compare.append(pathmap[i - 1][j] + grid[i][j])
                 if j - 1 >= 0:
                     compare.append(pathmap[i][j - 1] + grid[i][j])
-
                 pathmap[i][j] = min(compare)
         return pathmap[-1][-1]

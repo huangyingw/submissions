@@ -1,26 +1,4 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
     def removeElement(self, nums, val):
         ls = len(nums)
         if ls == 0:
@@ -35,5 +13,4 @@ class Solution(object):
                 index += 1
         return ls - count
 if __name__ == '__main__':
-
     s = Solution()

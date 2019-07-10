@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minEatingSpeed(self, piles, H):
-
         bananas, max_pile = sum(piles), max(piles)
         min_rate = (bananas + H - 1) // H
         max_rate = max_pile

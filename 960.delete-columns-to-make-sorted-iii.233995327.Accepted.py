@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minDeletionSize(self, A):
-
         rows, cols = len(A), len(A[0])
         max_subsequence = [1] * cols
         for col_end in range(1, cols):

@@ -1,31 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def largestPalindrome(self, n):
-
-
         if n == 1:
             return 9
         for a in xrange(2, 9 * 10 ** (n - 1)):

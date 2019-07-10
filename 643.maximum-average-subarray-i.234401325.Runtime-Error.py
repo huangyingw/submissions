@@ -1,7 +1,5 @@
-
 class Solution:
     def findMaxAverage1(self, nums, k):
-
         dp = [0]
         for x in nums:
             dp.append(dp[-1] + x)

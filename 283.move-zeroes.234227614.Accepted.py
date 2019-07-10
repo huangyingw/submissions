@@ -1,25 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def moveZeroes(self, nums):
-
         ls = len(nums)
         n_pos = 0
         for i in range(ls):

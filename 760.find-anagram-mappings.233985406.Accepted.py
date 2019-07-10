@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def anagramMappings(self, A, B):
-
         B_to_int = {}
         for i, b in enumerate(B):
             B_to_int[b] = i

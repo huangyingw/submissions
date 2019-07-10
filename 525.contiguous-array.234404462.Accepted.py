@@ -1,10 +1,5 @@
-
-
-
-
 class Solution(object):
     def findMaxLength(self, nums):
-
         track, has = 0, {0: -1}
         length = len(nums)
         ress_max = 0

@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def cheapestJump(self, A, B):
-
         cheapest = [[float("inf"), []] for _ in range(len(A))]
         cheapest[0] = [A[0], [1]]
         for i, cost in enumerate(A[:-1]):

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def sortColors(self, nums):
-
         start, end = 0, len(nums) - 1
         index = 0
         while start <= end:

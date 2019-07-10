@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def getMinimumDifference(self, root):
-
         self.min_diff = float("inf")
         self.prev = float("-inf")
 

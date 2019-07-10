@@ -16,7 +16,6 @@
 
 class Solution(object):
     def solve(self, board):
-
         if len(board) == 0:
             return
         for row in range(len(board)):

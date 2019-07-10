@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def dominantIndex(self, nums):
-
         first_i = 0
         second = 0
         for i, num in enumerate(nums[1:], 1):

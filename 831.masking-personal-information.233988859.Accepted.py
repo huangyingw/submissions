@@ -1,34 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maskPII(self, S):
-
         if "@" in S:
             name, address = S.lower().split("@")
             return name[0] + "*****" + name[-1] + "@" + address

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def advantageCount(self, A, B):
-
         B_i = sorted([(b, i) for i, b in enumerate(B)])
         result = [None] * len(A)
         i = 0

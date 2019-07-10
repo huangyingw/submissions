@@ -1,15 +1,8 @@
-
-
-
-
-
-
 import time
 
 
 class Solution(object):
     def getFactors(self, n):
-
         return self.factorise(n, 2, [], [])
 
     def factorise(self, n, trial, partial, factors):

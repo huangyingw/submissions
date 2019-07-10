@@ -1,10 +1,8 @@
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
 
 
 class Solution:
@@ -14,7 +12,6 @@ class Solution:
         self.second = None
 
     def recoverTree(self, root):
-
         self.traverse(root)
         self.first.val, self.second.val = self.second.val, self.first.val
 

@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def readBinaryWatch(self, num):
-
         if num == 0:
             return ["0:00"]
         bits_set = [[i] for i in range(10)]

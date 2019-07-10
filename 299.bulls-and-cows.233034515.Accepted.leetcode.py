@@ -1,6 +1,5 @@
 class Solution(object):
     def getHint(self, secret, guess):
-
         check = {}
         ls = len(secret)
         bull, cow = 0, 0
@@ -9,7 +8,6 @@ class Solution(object):
             if guess[i] == secret[i]:
                 bull += 1
             else:
-
                 different.append(i)
                 try:
                     check[secret[i]] += 1

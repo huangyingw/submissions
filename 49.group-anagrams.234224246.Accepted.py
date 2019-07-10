@@ -1,29 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def groupAnagrams(self, strs):
         strs.sort()
         hash = {}
@@ -36,7 +11,6 @@ class Solution(object):
         return hash.values()
 
     def hash_key(self, s):
-
         table = [0] * 26
         for ch in s:
             index = ord(ch) - ord('a')

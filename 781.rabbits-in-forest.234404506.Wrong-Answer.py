@@ -1,9 +1,5 @@
-
-
 class Solution:
-
     def numRabbits(self, answers):
-
         from collections import Counter
         mapping = Counter(answers)
         ret = 0
@@ -12,7 +8,6 @@ class Solution:
         return ret
 
     def numRabbits(self, answers):
-
         from collections import Counter
         dic = Counter(answers)
         return sum([math.ceil(dic[i] / (i + 1)) * (i + 1) for i in dic.keys()])

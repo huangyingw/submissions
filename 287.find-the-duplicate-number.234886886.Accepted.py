@@ -11,7 +11,6 @@
 
 class Solution(object):
     def findDuplicate(self, nums):
-
         slow, fast = nums[0], nums[0]
         while True:
             slow = nums[slow]

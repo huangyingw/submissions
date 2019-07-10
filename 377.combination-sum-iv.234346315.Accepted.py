@@ -1,6 +1,5 @@
 class Solution:
     def combinationSum4(self, nums, target):
-
         if not nums:
             return 0
         dp = [0] * (target + 1)

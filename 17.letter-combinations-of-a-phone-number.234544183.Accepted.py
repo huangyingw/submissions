@@ -3,7 +3,6 @@ from itertools import product
 
 class Solution:
     def letterCombinations(self, digits):
-
         mapping = {
             '2': "abc",
                         '3': "def",

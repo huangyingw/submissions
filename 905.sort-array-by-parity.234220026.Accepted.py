@@ -1,17 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
     def sortArrayByParity(self, A):
-
         lo, hi = 0, len(A) - 1
         while lo < hi:
             if A[lo] % 2 > A[hi] % 2:

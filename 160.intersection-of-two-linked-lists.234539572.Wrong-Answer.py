@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
-
-
-
-
-
-
         if not headA or not headB:
             return None
         p = headA
@@ -22,7 +8,6 @@ class Solution(object):
             p = p.next
             q = q.next
         if p:
-
             temp = headA
             while p:
                 p = p.next
@@ -30,7 +15,6 @@ class Solution(object):
             p = headA
             q = headA
         elif q:
-
             temp = headB
             while q:
                 q = q.next
@@ -38,19 +22,12 @@ class Solution(object):
             p = headA
             q = temp
         else:
-
             p = headA
             q = headB
         while p != q:
             p = p.next
             q = q.next
         return p
-
-
-
-
-
-
         pa = headA
         pb = headB
         while pa != pb:

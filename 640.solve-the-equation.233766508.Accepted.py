@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def solveEquation(self, equation):
-
         x, val = 0, 0
         base = 1
         i = 0

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def getModifiedArray(self, length, updates):
-
         if length <= 0:
             return []
         shifts = [0] * (length + 1)

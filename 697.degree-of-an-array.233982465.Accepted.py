@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findShortestSubArray(self, nums):
-
         counts, limits = defaultdict(int), {}
         for i, num in enumerate(nums):
             counts[num] += 1

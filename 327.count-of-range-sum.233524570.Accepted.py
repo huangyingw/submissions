@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countRangeSum(self, nums, lower, upper):
-
         cumul = [0]
         for num in nums:
             cumul.append(num + cumul[-1])

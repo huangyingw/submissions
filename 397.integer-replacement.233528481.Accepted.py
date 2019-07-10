@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def integerReplacement(self, n):
-
         operations = 0
         while n > 1:
             operations += 1

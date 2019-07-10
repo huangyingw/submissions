@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def shortestPathAllKeys(self, grid):
-
         rows, cols = len(grid), len(grid[0])
         possible_keys = set("abcdef")
         keys = set()

@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def subarraysWithKDistinct(self, A, K):
-
         def at_most_k(distinct):
             count = Counter()
             subarrays = 0

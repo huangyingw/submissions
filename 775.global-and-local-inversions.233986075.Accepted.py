@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isIdealPermutation(self, A):
-
         max_before_prev = -1
         for i in range(1, len(A)):
             if A[i] < max_before_prev:

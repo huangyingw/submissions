@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def judgePoint24(self, nums):
-
         n = len(nums)
         if n == 1:
             return abs(nums[0] - 24) < 0.001

@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def wordPattern(self, pattern, str):
-
         str = str.split()
         if len(str) != len(pattern):
             return False

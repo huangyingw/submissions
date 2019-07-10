@@ -1,32 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def uniquePathsWithObstacles(self, obstacleGrid):
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         if m == 0:

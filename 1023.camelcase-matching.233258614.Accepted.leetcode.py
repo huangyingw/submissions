@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def camelMatch(self, queries, pattern):
-
         def can_match(query):
             i = 0
             for c in pattern:

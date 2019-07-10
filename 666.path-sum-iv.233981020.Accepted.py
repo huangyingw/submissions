@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pathSum(self, nums):
-
         mapping = {}
         for num in nums:
             location, val = divmod(num, 10)

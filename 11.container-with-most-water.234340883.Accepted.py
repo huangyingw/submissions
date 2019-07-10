@@ -1,6 +1,5 @@
 class Solution:
     def maxArea(self, height):
-
         if not height or len(height) < 2:
             return 0
         l, r = 0, len(height) - 1

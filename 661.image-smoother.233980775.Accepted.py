@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def imageSmoother(self, M):
-
         rows, cols = len(M), len(M[0])
         smoothed = [[0 for _ in range(cols)] for _ in range(rows)]
         for r in range(rows):

@@ -1,6 +1,5 @@
 class Solution:
     def minCostClimbingStairs(self, cost):
-
         if not cost or len(cost) <= 2:
             return 0
         result = [0] * (len(cost) + 1)

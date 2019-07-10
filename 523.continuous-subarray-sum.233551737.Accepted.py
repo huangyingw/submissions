@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def checkSubarraySum(self, nums, k):
-
         prefix_sum, prefix_sums = 0, {0: -1}
         for i, n in enumerate(nums):
             prefix_sum += n

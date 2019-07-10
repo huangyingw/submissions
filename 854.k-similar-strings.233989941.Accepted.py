@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def kSimilarity(self, A, B):
-
         visited = set()
         k = 0
         frontier = {A}

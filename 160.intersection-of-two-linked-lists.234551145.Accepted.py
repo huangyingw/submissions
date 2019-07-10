@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
-
         if headA == None or headB == None:
             return None
         A_pointer = headA

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canThreePartsEqualSum(self, A):
-
         partition, remainder = divmod(sum(A), 3)
         if remainder != 0:
             return False

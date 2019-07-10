@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def increasingBST(self, root, tail=None):
-
         if root is None:
             return tail
         copy_root = TreeNode(root.val)

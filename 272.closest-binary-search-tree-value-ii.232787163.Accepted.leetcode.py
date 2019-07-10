@@ -21,8 +21,6 @@ class Solution(object):
         if root is None:
             return
         self.inorder(root.right, reverse, target, stk) if reverse else self.inorder(root.left, reverse, target, stk)
-
-
         if not reverse and target <= root.val:
             return
         if reverse and target > root.val:

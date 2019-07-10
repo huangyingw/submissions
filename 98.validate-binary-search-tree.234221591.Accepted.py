@@ -1,35 +1,7 @@
-
-
-
-
-
-
 import sys
 
 
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def isValidBST(self, root):
         return self.isVaild_helper(root, -sys.maxint - 1, sys.maxint)
 

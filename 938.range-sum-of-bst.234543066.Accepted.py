@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def rangeSumBST(self, root, L, R):
-
         self.ans = 0
 
         def dfs(node):

@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict, Counter
 
 
 class Solution(object):
     def numSquarefulPerms(self, A):
-
         freq = Counter(A)
         pairs = defaultdict(set)
         unique = list(freq.keys())

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def shortestBridge(self, A):
-
         rows, cols = len(A), len(A[0])
         visited = set()
         perimeter = set()

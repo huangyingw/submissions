@@ -20,7 +20,6 @@ Note:
 
 class Solution(object):
     def canThreePartsEqualSum(self, A):
-
         total_sum = 0
         for val in A:
             total_sum += val

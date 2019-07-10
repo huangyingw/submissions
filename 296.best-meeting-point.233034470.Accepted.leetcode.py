@@ -1,28 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def minDistance1D(self, points):
-
         distance = 0
         i, j = 0, len(points) - 1
         while i < j:

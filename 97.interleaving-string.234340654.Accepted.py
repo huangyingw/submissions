@@ -1,18 +1,5 @@
 class Solution:
     def isInterleave(self, s1, s2, s3):
-
-
-
-
-
-
-
-
-
-
-
-
-
         m, n = len(s1), len(s2)
         if len(s3) != m + n:
             return False

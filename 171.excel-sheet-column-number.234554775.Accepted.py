@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def titleToNumber(self, s):
         cn = 0

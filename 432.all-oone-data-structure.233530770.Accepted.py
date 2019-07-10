@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Block(object):
     def __init__(self, val=0):
         self.val = val
@@ -33,7 +20,6 @@ class Block(object):
 
 class AllOne(object):
     def __init__(self):
-
         self.begin = Block()
         self.end = Block()
         self.begin.after = self.end
@@ -41,7 +27,6 @@ class AllOne(object):
         self.mapping = {}
 
     def inc(self, key):
-
         if not key in self.mapping:
             current_block = self.begin
         else:
@@ -58,7 +43,6 @@ class AllOne(object):
             current_block.remove()
 
     def dec(self, key):
-
         if not key in self.mapping:
             return
         current_block = self.mapping[key]
@@ -76,7 +60,6 @@ class AllOne(object):
             current_block.remove()
 
     def getMaxKey(self):
-
         if self.end.before.val == 0:
             return ""
         key = self.end.before.keys.pop()
@@ -84,7 +67,6 @@ class AllOne(object):
         return key
 
     def getMinKey(self):
-
         if self.begin.after.val == 0:
             return ""
         key = self.begin.after.keys.pop()

@@ -13,15 +13,8 @@ The answer will not exceed 2^31 - 1.
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def sumRootToLeaf(self, root):
-
         def traversal(root, paths, pathlen, allpaths):
             if not root:
                 return

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numSubarrayBoundedMax(self, A, L, R):
-
         subarrays, total = 0, 0
         last_above_max = -1
         for i, num in enumerate(A):

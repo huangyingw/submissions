@@ -1,38 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def threeSumSmaller(self, nums, target):
-
-
         nums.sort()
         ls = len(nums)
         res = 0

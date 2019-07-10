@@ -1,6 +1,5 @@
 class Solution:
     def combine(self, n, k):
-
         res = []
         ll = list(range(1, n + 1))
         self.dfs(res, [], k, ll)

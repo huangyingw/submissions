@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def orderOfLargestPlusSign(self, N, mines):
-
         mines = {(r, c) for r, c in mines}
         distances = [[0 for _ in range(N)] for _ in range(N)]
         plus = 0

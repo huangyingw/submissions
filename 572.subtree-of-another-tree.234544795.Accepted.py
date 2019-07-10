@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isSubtree(self, a, b):
-
         if not b:
             return True
 

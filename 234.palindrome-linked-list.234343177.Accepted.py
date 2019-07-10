@@ -1,4 +1,3 @@
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -7,7 +6,6 @@ class ListNode(object):
 
 class Solution(object):
     def isPalindrome(self, head):
-
         rev = None
         slow, fast = head, head
         while fast and fast.next:

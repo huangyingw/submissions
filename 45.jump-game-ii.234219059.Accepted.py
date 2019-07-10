@@ -1,6 +1,5 @@
 class Solution:
     def jump(self, nums):
-
         if len(nums) <= 1:
             return 0
         end = 0 + nums[0]
@@ -9,7 +8,6 @@ class Solution:
         maxDis = 0 + nums[0]
         while end < len(nums) - 1:
             for i in range(start + 1, end + 1):
-
                 maxDis = max(maxDis, nums[i] + i)
             start = end
             end = maxDis

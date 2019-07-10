@@ -1,23 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def findUnsortedSubarray(self, nums):
-
         stack = []
         l, r = len(nums), 0
         for i in range(len(nums)):

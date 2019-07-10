@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def sufficientSubset(self, root, limit):
-
         if root.left is None and root.right is None:
             return None if root.val < limit else root
         if root.left:

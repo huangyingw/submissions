@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def racecar(self, target):
-
         min_steps = {0: 0}
 
         def helper(dist):

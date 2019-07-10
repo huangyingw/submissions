@@ -1,31 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def findSecondMinimumValue(self, root):
         if not root:
             return -1

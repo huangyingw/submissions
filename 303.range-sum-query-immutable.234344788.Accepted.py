@@ -6,5 +6,4 @@ class NumArray(object):
             self.sum[i + 1] = self.sum[i] + nums[i]
 
     def sumRange(self, i, j):
-
         return self.sum[j + 1] - self.sum[i]

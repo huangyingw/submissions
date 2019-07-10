@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution:
     def rotateRight(self, head, k):
-
         if not head:
             return []
         l = 1

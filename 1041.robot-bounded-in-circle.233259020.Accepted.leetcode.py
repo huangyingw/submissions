@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isRobotBounded(self, instructions):
-
         r, c = 0, 0
         dr, dc = 1, 0
         for instruction in instructions:

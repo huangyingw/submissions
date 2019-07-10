@@ -1,39 +1,5 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def findMedianSortedArrays(self, nums1, nums2):
-
-
         ls1, ls2 = len(nums1), len(nums2)
         if ls1 < ls2:
             return self.findMedianSortedArrays(nums2, nums1)
@@ -52,5 +18,4 @@ class Solution(object):
             else:
                 return (max(L1, L2) + min(R1, R2)) / 2.0
 if __name__ == '__main__':
-
     s = Solution()

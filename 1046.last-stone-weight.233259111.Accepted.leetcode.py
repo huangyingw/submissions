@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import heapq
 
 
 class Solution(object):
     def lastStoneWeight(self, stones):
-
         stones = [-stone for stone in stones]
         heapq.heapify(stones)
         while len(stones) > 1:

@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def diStringMatch(self, S):
-
         result = []
         low, high = 0, len(S)
         for c in S:

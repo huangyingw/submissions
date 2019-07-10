@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findNumberOfLIS(self, nums):
-
         if not nums:
             return 0
         lengths, counts = [], []

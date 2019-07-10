@@ -1,21 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def gardenNoAdj(self, N, paths):
-
         edges = defaultdict(set)
         for i, j in paths:
             edges[i].add(j)

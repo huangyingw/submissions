@@ -1,6 +1,5 @@
 class Solution(object):
     def wordBreak(self, s, wordDict):
-
         self.result = []
         self.dfs(s, wordDict, '')
         return self.result

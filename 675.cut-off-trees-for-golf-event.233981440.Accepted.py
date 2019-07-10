@@ -1,22 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def cutOffTree(self, forest):
         rows, cols = len(forest), len(forest[0])
@@ -30,7 +11,6 @@ class Solution(object):
             to_visit.discard((r, c))
             visited.add((r, c))
             for r1, c1 in [(r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)]:
-
                 if 0 <= r1 < rows and 0 <= c1 < cols and forest[r1][c1] and (r1, c1) not in visited:
                     queue.append((r1, c1))
         if to_visit:

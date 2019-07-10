@@ -1,33 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isValid(self, code):
-
         status = "text"
         tag_stack = []
         upper = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")

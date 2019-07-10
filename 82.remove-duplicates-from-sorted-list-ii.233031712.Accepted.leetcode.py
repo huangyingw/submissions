@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def deleteDuplicates(self, head):
-
         if not head:
             return None
         result = ListNode(0)

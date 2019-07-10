@@ -1,6 +1,5 @@
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
-
         d = {}
         for word in wordList:
             for i in range(len(word)):

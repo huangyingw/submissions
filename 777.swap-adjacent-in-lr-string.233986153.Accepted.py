@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canTransform(self, start, end):
-
         if len(start) != len(end):
             return False
         left, right = 0, 0

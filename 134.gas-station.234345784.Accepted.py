@@ -1,6 +1,5 @@
 class Solution:
     def canCompleteCircuit(self, gas, cost):
-
         start, total, tank = 0, 0, 0
         for i in range(len(gas)):
             curr = gas[i] - cost[i]

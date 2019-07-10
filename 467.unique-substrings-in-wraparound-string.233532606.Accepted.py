@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findSubstringInWraproundString(self, p):
-
         substring_ending = [0] * 26
         length = 0
         for i, c in enumerate(p):

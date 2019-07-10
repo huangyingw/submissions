@@ -1,23 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
     def sumOfLeftLeaves(self, root):
         stack = [root]
         res = 0

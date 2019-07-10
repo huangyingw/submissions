@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def lemonadeChange(self, bills):
-
         store_five = 0
         store_ten = 0
         for bill in bills:

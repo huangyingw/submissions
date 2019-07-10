@@ -1,27 +1,15 @@
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class HitCounter(object):
     def __init__(self):
-
         self.time_diff = 300
         self.q = deque()
 
     def hit(self, timestamp):
-
         self.q.append(timestamp)
 
     def getHits(self, timestamp):
-
         while self.q and timestamp - self.q[0] >= self.time_diff:
             self.q.popleft()
         return len(self.q)

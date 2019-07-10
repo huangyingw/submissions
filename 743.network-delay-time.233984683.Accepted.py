@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def networkDelayTime(self, times, N, K):
-
         best_times = [float("inf") for _ in range(N + 1)]
         best_times[K] = 0
         network = [[] for _ in range(N + 1)]

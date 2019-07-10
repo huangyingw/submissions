@@ -1,30 +1,5 @@
 class Solution:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def reverse(self, x):
-
         res, isPos = 0, 1
         if x < 0:
             isPos = -1

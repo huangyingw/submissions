@@ -1,6 +1,5 @@
 class Solution(object):
     def calculate(self, s):
-
         curr, total, sign, i = 0, 0, 1, 0
         stack = []
         while i < len(s):

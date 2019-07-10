@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def convertBST(self, root):
-
         self.running_sum = 0
 
         def inorder(node):

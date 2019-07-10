@@ -1,6 +1,5 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):
-
         if not strs:
             return ""
         end_index = 0

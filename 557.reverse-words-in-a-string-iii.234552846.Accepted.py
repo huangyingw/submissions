@@ -1,5 +1,3 @@
-
-
 class Solution:
     def reverseWords(self, s):
         rs = s[::-1]

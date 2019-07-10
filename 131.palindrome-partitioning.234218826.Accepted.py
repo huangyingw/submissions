@@ -1,7 +1,5 @@
 class Solution(object):
     def partition(self, s):
-
-
         result = []
         curr = []
         self.recurPartition(result, curr, s, 0)

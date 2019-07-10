@@ -1,6 +1,5 @@
 class Solution:
     def partitionLabels(self, S):
-
         last_index = {c: i for i, c in enumerate(S)}
         left = right = 0
         result = []

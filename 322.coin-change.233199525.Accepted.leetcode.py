@@ -1,6 +1,5 @@
 class Solution(object):
     def coinChange(self, coins, amount):
-
         if not coins:
             return 0
         dp = [float('inf') for _ in range(amount + 1)]

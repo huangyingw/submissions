@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def thirdMax(self, nums):
-
         maxima = [float("-inf")] * 3
         for num in nums:
             if num in maxima:

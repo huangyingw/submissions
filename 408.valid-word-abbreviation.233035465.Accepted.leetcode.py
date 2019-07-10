@@ -1,38 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def validWordAbbreviation(self, word, abbr):
         pos = curr = 0
         for i in range(len(abbr)):

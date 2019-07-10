@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
-
     def guessNumber(self, n):
-
         low = 1
         high = n
         while low <= high:

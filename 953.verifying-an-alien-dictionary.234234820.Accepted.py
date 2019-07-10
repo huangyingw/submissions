@@ -1,6 +1,5 @@
 class Solution(object):
     def isAlienSorted(self, words, order):
-
         order_map = {}
         for i, v in enumerate(order):
             order_map[v] = i

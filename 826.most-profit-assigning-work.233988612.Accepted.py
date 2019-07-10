@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxProfitAssignment(self, difficulty, profit, worker):
-
         max_profits = list(zip(difficulty, profit))
         max_profits.sort()
         max_profits.append((float("inf"), 0))

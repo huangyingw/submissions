@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def canBreak(self, s, wordDict):
         can_make = [False] * (len(s) + 1)
@@ -19,7 +10,6 @@ class Solution(object):
         return can_make[-1]
 
     def wordBreak(self, s, wordDict):
-
         if not self.canBreak(s, wordDict):
             return []
         result_lists = self.break_word(s, 0, wordDict, {})

@@ -1,6 +1,5 @@
 class Solution(object):
     def equationsPossible(self, equations):
-
         equal_list, unequal_list = [], []
         for equation in equations:
             x, y = equation[0], equation[3]

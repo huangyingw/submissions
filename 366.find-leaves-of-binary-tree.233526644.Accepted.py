@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findLeaves(self, root):
-
         leaves = []
         self.height(root, leaves)
         return leaves

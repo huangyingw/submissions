@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lenLongestFibSubseq(self, A):
-
         A_set = set(A)
         max_length = 0
         for i, num in enumerate(A):

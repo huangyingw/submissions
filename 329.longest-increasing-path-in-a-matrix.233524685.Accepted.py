@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestIncreasingPath(self, matrix):
-
         if not matrix or not matrix[0]:
             return 0
         longest = 0

@@ -10,7 +10,6 @@
 
 class Solution(object):
     def sortColors(self, nums):
-
         zero, last = 0, len(nums) - 1
         index = 0
         while index <= last:

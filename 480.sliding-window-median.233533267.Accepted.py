@@ -1,20 +1,9 @@
-
-
-
-
-
-
-
-
-
-
 from collections import defaultdict
 import heapq
 
 
 class Solution(object):
     def medianSlidingWindow(self, nums, k):
-
         lower, upper = [], []
         for i in range(k):
             heapq.heappush(upper, nums[i])
@@ -39,8 +28,6 @@ class Solution(object):
             else:
                 balance -= 1
                 heapq.heappush(lower, -nums[i])
-
-
             if balance > 0:
                 heapq.heappush(lower, -heapq.heappop(upper))
             elif balance < 0:

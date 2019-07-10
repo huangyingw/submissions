@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def largestOverlap(self, A, B):
-
         def image_to_bits(image):
             bits = []
             for row in image:

@@ -1,6 +1,5 @@
 class Solution(object):
     def wordBreak(self, s, wordDict):
-
         dp = [False] * (len(s) + 1)
         dp[0] = True
         wordDict = set(wordDict)

@@ -1,39 +1,4 @@
-
-
-
-
-
-
-
-
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def findLeaves(self, root):
         res = []
         self.findLeaves_helper(root, res)

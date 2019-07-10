@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def fullJustify(self, words, maxWidth):
-
         line_chars = 0
         line_words = []
         justified = []

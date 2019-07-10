@@ -1,18 +1,8 @@
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def updateMatrix(self, matrix):
-
         rows, cols = len(matrix), len(matrix[0])
         deltas = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         frontier = deque()
@@ -34,7 +24,6 @@ class Solution(object):
 
 class Solution2(object):
     def updateMatrix(self, matrix):
-
         rows, cols = len(matrix), len(matrix[0])
         deltas = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         unknown = set()

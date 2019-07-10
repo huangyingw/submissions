@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def uncommonFromSentences(self, A, B):
-
         count = dict()
         result = []
         for word in A.split():

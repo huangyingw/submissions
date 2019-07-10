@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def calculateMinimumHP(self, dungeon):
-
         rows, cols = len(dungeon), len(dungeon[0])
         for r in range(rows - 1):
             dungeon[r].append(float('inf'))

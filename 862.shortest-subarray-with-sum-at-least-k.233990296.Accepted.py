@@ -1,20 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 from collections import deque
 
 
 class Solution(object):
     def shortestSubarray(self, A, K):
-
         n = len(A)
         prefix_sums = [0] * (n + 1)
         for i in range(n):

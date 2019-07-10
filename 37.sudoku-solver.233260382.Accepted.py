@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def solveSudoku(self, board):
-
         self.size = 9
         self.board = board
         self.new_digits = []

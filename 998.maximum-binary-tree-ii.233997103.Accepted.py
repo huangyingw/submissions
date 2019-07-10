@@ -1,27 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def insertIntoMaxTree(self, root, val):
-
         new_root = TreeNode(float("inf"))
         new_root.right = root
         node = new_root

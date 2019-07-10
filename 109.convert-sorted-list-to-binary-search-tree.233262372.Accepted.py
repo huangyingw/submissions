@@ -1,17 +1,7 @@
-
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
 
 
 class TreeNode(object):
@@ -23,7 +13,6 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedListToBST(self, head):
-
         count = 0
         node = head
         while node:
@@ -36,7 +25,6 @@ class Solution(object):
             return None
         mid = (start + end) // 2
         left_subtree = self.list_to_bst(node_as_list, start, mid - 1)
-
         root = TreeNode(node_as_list[0].val)
         root.left = left_subtree
         node_as_list[0] = node_as_list[0].next

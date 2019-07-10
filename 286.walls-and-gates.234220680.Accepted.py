@@ -1,7 +1,5 @@
 class Solution(object):
     def wallsAndGates(self, rooms):
-
-
         direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         m = len(rooms)
         if m == 0:
@@ -10,7 +8,6 @@ class Solution(object):
         q = []
         for row in range(m):
             for col in range(n):
-
                 if rooms[row][col] == 0:
                     q.append((row, col))
         while len(q) > 0:
@@ -19,7 +16,6 @@ class Solution(object):
             for d in direction:
                 r = row + d[0]
                 c = col + d[1]
-
                 if r < 0 or c < 0 or r >= m or c >= n or rooms[r][c] != 2147483647:
                     continue
                 rooms[r][c] = rooms[row][col] + 1

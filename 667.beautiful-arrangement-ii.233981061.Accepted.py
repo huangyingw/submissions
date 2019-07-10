@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def constructArray(self, n, k):
-
         result = []
         low, high = 1, k + 1
         next_low = True

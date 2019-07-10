@@ -1,6 +1,5 @@
 class Solution:
     def removeDuplicateLetters(self, s):
-
         if not s or len(s) < 2:
             return s
         count = [0] * 26

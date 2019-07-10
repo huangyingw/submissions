@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def splitArray(self, nums):
-
         n = len(nums)
         if n < 7:
             return False

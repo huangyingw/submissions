@@ -1,6 +1,5 @@
 class Solution:
     def palindromePairs(self, words):
-
         lookup = {w: i for i, w in enumerate(words)}
         result = []
         for i, w in enumerate(words):

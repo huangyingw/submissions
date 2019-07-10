@@ -1,12 +1,5 @@
-
-
-
-
-
 class Solution:
-
     def findAndReplacePattern(self, words, pattern):
-
         patter_list = [pattern.find(i) for i in pattern]
 
         def is_iso(word):

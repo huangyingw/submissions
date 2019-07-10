@@ -1,19 +1,8 @@
-
-
-
-
-
-
-
-
-
 class Solution:
     maxD = 0
 
     def diameterOfBinaryTree(self, root):
-
         def maxDepth(root):
-
             if root == None:
                 return 0
             left = maxDepth(root.left)

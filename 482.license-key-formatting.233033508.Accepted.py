@@ -20,7 +20,6 @@ String S is non-empty.
 
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
-
         S = S.replace('-', '').upper()
         result = ""
         if len(S) % K == 0:

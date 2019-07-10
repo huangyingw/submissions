@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def smallestFactorization(self, a):
-
         if a == 1:
             return 1
         result = 0

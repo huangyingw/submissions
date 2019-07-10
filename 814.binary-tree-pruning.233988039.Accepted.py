@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def pruneTree(self, root):
-
         def contains_one(node):
             if not node:
                 return False

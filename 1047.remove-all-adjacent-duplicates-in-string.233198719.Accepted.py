@@ -15,7 +15,6 @@ S consists only of English lowercase letters.
 
 class Solution(object):
     def removeDuplicates(self, S):
-
         stack = []
         if not S:
             return ""

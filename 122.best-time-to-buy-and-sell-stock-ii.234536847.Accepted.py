@@ -1,8 +1,5 @@
-
 class Solution:
-
     def maxProfit(self, prices):
-
         if not prices:
             return 0
         i = 0
@@ -18,9 +15,7 @@ class Solution:
             maxProfit += peak - valley
         return maxProfit
 
-
     def maxProfit(self, prices):
-
         maxProfit = 0
         for i in range(1, len(prices)):
             if prices[i] > prices[i - 1]:

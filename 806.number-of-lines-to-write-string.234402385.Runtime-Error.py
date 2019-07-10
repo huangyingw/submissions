@@ -1,5 +1,3 @@
-
-
 def numberOfcurs(self, widths, S):
     res, cur = 1, 0
     for i in S:

@@ -16,15 +16,8 @@ Therefore, sum = 12 + 13 = 25.
 '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def sumNumbers(self, root):
-
         if not root:
             return 0
 

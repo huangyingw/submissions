@@ -1,32 +1,7 @@
 class Solution:
     def minPathSum(self, grid):
-
         if not grid or len(grid) == 0:
             return 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         m, n = len(grid), len(grid[0])
         curr = [0] * m
         curr[0] = grid[0][0]

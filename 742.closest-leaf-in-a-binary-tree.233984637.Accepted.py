@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findClosestLeaf(self, root, k):
-
         nearest_leaves = {0: (float("inf"), 0)}
 
         def closest_down(node):

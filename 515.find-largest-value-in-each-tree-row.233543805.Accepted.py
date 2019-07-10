@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def largestValues(self, root):
-
         result = []
         if not root:
             return []

@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -20,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def countNodes(self, root):
-
         if not root:
             return 0
         left_subtree = self.left_depth(root.left)

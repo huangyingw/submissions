@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxA(self, N):
-
         def helper(n):
             if n in memo:
                 return memo[n]

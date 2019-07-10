@@ -14,15 +14,8 @@
  '''
 
 
-
-
-
-
-
-
 class Solution(object):
     def buildTree(self, inorder, postorder):
-
         self.index = len(inorder) - 1
 
         def recursive(postorder, inorder, start, end):

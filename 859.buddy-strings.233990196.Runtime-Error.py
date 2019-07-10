@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def matrixScore(self, A):
-
         rows, cols = len(A), len(A[0])
         for r in range(rows):
             if A[r][0] == 0:

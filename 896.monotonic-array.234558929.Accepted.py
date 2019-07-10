@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def isMonotonic(self, A):
-
         increasing = decreasing = True
         for i in range(len(A) - 1):
             if A[i] > A[i + 1]:

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def nextPermutation(self, nums):
-
         if not nums or len(nums) == 1:
             return
         i = len(nums) - 2
@@ -23,7 +11,6 @@ class Solution(object):
                 j += 1
             j -= 1
             nums[i], nums[j] = nums[j], nums[i]
-
         left = i + 1
         right = len(nums) - 1
         while left < right:

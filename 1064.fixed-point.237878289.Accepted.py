@@ -1,15 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
     def fixedPoint(self, A):
         l, h = 0, len(A) - 1
         while l <= h:

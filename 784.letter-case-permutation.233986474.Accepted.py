@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def letterCasePermutation(self, S):
-
         permutations = [[]]
         for c in S:
             if "0" <= c <= "9":

@@ -1,6 +1,5 @@
 class Solution(object):
     def fractionToDecimal(self, numerator, denominator):
-
         if numerator == 0:
             return '0'
         fraction = ''

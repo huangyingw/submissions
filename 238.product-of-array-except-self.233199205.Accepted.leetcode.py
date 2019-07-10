@@ -1,6 +1,5 @@
 class Solution(object):
     def productExceptSelf(self, nums):
-
         if not nums:
             return []
         dp = [1] * len(nums)

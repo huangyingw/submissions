@@ -1,7 +1,5 @@
 class Solution(object):
     def mostCommonWord(self, paragraph, banned):
-
-
         banned = set(banned)
         count = collections.Counter(word for word in re.split('[ !?\',;.]',
                                                               paragraph.lower()) if word)

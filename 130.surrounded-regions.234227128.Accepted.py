@@ -1,6 +1,5 @@
 class Solution(object):
     def solve(self, board):
-
         if not board:
             return
         height, width = len(board), len(board[0])

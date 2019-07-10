@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def checkValidString(self, s):
-
         min_open, max_open = 0, 0
         for c in s:
             if c == "(":

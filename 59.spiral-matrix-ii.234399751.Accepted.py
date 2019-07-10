@@ -1,12 +1,5 @@
-
-
-
-
 class Solution:
-
-
     def generateMatrix(self, n):
-
         if n == 0:
             return []
         elif n == 1:
@@ -25,10 +18,7 @@ class Solution:
                 r, c = r + dr[di], c + dc[di]
         return seen
 
-
-
     def generateMatrix2(self, n):
-
         ret = [[0] * n for _ in range(n)]
         i = j = d = 0
         dirs = [(0, 1), (1, 0), (0, -1), (-1, 0)]

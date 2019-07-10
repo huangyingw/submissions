@@ -29,7 +29,6 @@ Note:
 
 class Solution(object):
     def shipWithinDays(self, weights, D):
-
         high, low = sum(weights) + 1, max(weights)
         while(low < high):
             mid = (high + low) / 2
@@ -52,7 +51,6 @@ class Solution(object):
 
 class Solution(object):
     def shipWithinDays(self, weights, D):
-
         left, right = max(weights), sum(weights)
         while left < right:
             curr_sum, groups, invalid = 0, 0, True

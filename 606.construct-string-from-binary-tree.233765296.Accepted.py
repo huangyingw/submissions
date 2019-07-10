@@ -1,23 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def tree2str(self, t):
-
         result = []
 
         def preorder(node):

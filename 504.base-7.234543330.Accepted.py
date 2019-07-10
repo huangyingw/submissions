@@ -1,9 +1,5 @@
-
 class Solution:
-
-
     def convertToBase7(self, num):
-
         flag = 0
         if num == 0:
             return "0"

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maximumSwap(self, num):
-
         s = [int(c) for c in str(num)]
         max_seen, max_seen_i = -1, -1
         demote, promote = -1, -1

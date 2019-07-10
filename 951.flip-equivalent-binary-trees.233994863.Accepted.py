@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def flipEquiv(self, root1, root2):
-
         if not root1 and not root2:
             return True
         if not root1 or not root2:

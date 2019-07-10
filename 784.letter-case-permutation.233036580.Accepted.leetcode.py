@@ -1,19 +1,4 @@
 class Solution(object):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def letterCasePermutation(self, S):
         B = sum(letter.isalpha() for letter in S)
         ans = []

@@ -1,8 +1,5 @@
-
-
 class Solution(object):
     def toGoatLatin(self, S):
-
         result = []
         for i, word in enumerate(S.split()):
             if word[0] in "aeiouAEIOU":

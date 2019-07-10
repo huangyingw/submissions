@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def insertIntoBST(self, root, val):
         if root == None:

@@ -1,7 +1,3 @@
-
-
-
-
 class Solution:
     def robotSim(self, commands, obstacles):
         i = j = mx = d = 0

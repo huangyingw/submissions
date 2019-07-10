@@ -8,7 +8,6 @@ class Node(object):
 
 class LRUCache(object):
     def __init__(self, capacity):
-
         self.capacity = capacity
         self.dict = {}
         self.head = Node(0, 0)
@@ -17,7 +16,6 @@ class LRUCache(object):
         self.tail.prev = self.head
 
     def get(self, key):
-
         if key in self.dict:
             n = self.dict[key]
             self._remove(n)
@@ -27,7 +25,6 @@ class LRUCache(object):
         return -1
 
     def put(self, key, value):
-
         if key in self.dict:
             self._remove(self.dict[key])
         n = Node(key, value)

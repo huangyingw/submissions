@@ -1,25 +1,11 @@
-
-
-
-
-
-
-
-
-
-
-
 class TwoSum(object):
     def __init__(self):
-
         self.nums = {}
 
     def add(self, number):
-
         self.nums[number] = number in self.nums
 
     def find(self, value):
-
         for num in self.nums:
             if value == 2 * num:
                 if self.nums[num]:

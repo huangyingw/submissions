@@ -29,7 +29,6 @@ instructions[i] is in {'G', 'L', 'R'}
 
 class Solution(object):
     def isRobotBounded(self, instructions):
-
         start_x, start_y = 0, 0
         left, direct = 0, 0
         moves = [[0, 1], [-1, 0], [0, -1], [1, 0]]

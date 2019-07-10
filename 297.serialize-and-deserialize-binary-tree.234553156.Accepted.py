@@ -1,5 +1,3 @@
-
-
 class Codec:
     def serialize(self, root):
         def serializeHelper(root, string):

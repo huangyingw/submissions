@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def countNumbersWithUniqueDigits(self, n):
-
         if n == 0:
             return 1
         uniques = 10

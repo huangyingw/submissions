@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def isBalanced(self, root):
-
         def balanced(node):
             if not node:
                 return 0

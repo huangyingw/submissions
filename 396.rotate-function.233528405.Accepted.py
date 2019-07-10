@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxRotateFunction(self, A):
-
         rotate_val, sum_A = 0, 0
         for i, num in enumerate(A):
             sum_A += num

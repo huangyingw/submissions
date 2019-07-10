@@ -1,22 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numDecodings(self, s):
-
         ways = 0
         if s[0] == "*":
             ways = 9
@@ -26,12 +9,10 @@ class Solution(object):
         prev_ways = 1
         for c in s[1:]:
             new = 0
-
             if c == "*":
                 new = 9 * ways
             elif c != "0":
                 new = ways
-
             if prev_char == "*":
                 if c == "*":
                     new += prev_ways * 15

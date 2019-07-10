@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numRescueBoats(self, people, limit):
-
         boats = 0
         people.sort()
         light, heavy = 0, len(people) - 1

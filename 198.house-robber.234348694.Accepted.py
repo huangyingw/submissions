@@ -1,6 +1,5 @@
 class Solution:
     def rob(self, nums):
-
         if not nums:
             return 0
         current, prev = nums[0], 0

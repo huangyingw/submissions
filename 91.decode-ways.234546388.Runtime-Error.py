@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def numDecodings1(self, s):
-
         if not s or s == "0":
             return 0
         care, dont = 0, 1

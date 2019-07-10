@@ -20,7 +20,6 @@ Note:
 
 class Solution(object):
     def divisorGame(self, N):
-
         if N == 0:
             return False
         move = 0
@@ -30,7 +29,6 @@ class Solution(object):
                     N -= num
                     move += 1
                     break
-
         if move % 2:
             return True
         return False

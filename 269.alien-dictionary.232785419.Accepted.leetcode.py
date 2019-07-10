@@ -7,7 +7,6 @@ class Solution(object):
             return ""
         if len(words) == 1:
             return "".join([s for s in Set(words[0])])
-
         adj_dict = self.build_graph(words)
         visit_dict = dict([(k, 0) for k in adj_dict.keys()])
         res = []

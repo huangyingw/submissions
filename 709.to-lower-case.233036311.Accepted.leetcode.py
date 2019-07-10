@@ -1,6 +1,5 @@
 class Solution(object):
     def toLowerCase(self, str):
-
         res = []
         gap = ord('a') - ord('A')
         for c in str:

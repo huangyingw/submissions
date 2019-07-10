@@ -1,7 +1,5 @@
-
 class Solution:
     def uniqueMorseRepresentations(self, words):
-
         concatenation = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
         letter = "abcdefghijklmnopqrstuvwxyz"
         mapping = dict(zip(letter, concatenation))

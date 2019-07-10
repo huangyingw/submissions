@@ -7,9 +7,7 @@ Morse_tab = [".-", "-...", "-.-.",
 
 
 class Solution(object):
-
     def uniqueMorseRepresentations(self, words):
-
         if len(words) == 0:
             return 0
         ans_set = set()

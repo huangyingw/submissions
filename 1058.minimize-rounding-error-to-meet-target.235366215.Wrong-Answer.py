@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def minimizeError(self, prices, target):
-
         base = 0
         remainders = []
         for price in prices:

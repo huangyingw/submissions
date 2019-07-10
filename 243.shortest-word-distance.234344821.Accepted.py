@@ -1,6 +1,5 @@
 class Solution:
     def shortestDistance(self, words, word1, word2):
-
         idx1, idx2 = len(words), len(words)
         result = len(words)
         for i in range(len(words)):

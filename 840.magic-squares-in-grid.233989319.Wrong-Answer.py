@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numMagicSquaresInside(self, grid):
-
         def is_magic(row, col):
             if grid[row + 1][col + 1] != 5:
                 return False

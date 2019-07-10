@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def threeSumMulti(self, A, target):
-
         counts = [0] * 101
         for num in A:
             counts[num] += 1

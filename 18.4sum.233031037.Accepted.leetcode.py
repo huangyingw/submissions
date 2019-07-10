@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def fourSum(self, nums, target):
         sort_nums = sorted(nums)
@@ -35,24 +26,5 @@ class Solution(object):
                     else:
                         k -= 1
         return res.keys()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
-
     s = Solution()

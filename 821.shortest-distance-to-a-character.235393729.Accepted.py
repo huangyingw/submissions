@@ -1,6 +1,5 @@
 class Solution:
     def shortestToChar(self, S, C):
-
         site = len(S)
         output = []
         pre_pending = []

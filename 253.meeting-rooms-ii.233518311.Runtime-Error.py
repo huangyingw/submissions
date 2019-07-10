@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
@@ -20,7 +7,6 @@ import heapq
 
 class Solution(object):
     def minMeetingRooms(self, intervals):
-
         max_rooms = 0
         rooms = []
         intervals.sort(key=lambda x: x.start)

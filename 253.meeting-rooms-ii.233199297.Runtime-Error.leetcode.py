@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 class Solution:
     def minMeetingRooms(self, intervals):
         if not intervals or len(intervals) == 0:

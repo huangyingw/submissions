@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Codec:
     def encode(self, strs):
-
         encoding = []
         for s in strs:
             len_s = str(len(s))
@@ -23,7 +9,6 @@ class Codec:
         return "".join(encoding)
 
     def decode(self, s):
-
         decoding = []
         i = 0
         while i < len(s):

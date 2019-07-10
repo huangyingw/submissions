@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def insertIntoBST(self, root, val):
-
         def helper(node, val):
             if node:
                 if node.val < val and not node.right:

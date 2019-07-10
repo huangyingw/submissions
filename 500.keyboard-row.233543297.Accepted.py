@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def findWords(self, words):
-
         keyboard = {}
         rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
         for i, row in enumerate(rows):

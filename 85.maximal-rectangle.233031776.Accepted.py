@@ -14,7 +14,6 @@
 
 class Solution(object):
     def largestRectangleArea(self, heights):
-
         if not heights:
             return 0
         stack = []
@@ -40,7 +39,6 @@ class Solution(object):
         return result
 
     def maximalRectangle(self, matrix):
-
         if not matrix:
             return 0
         m, n = len(matrix), len(matrix[0])

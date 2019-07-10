@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def lengthOfLIS(self, nums):
-
         LIS = []
         for num in nums:
             list_nb = self.binary_search(num, LIS)

@@ -1,6 +1,5 @@
 class NumMatrix(object):
     def __init__(self, matrix):
-
         if not matrix:
             return
         rows = len(matrix)
@@ -12,6 +11,5 @@ class NumMatrix(object):
                     j - 1]
 
     def sumRegion(self, row1, col1, row2, col2):
-
         return self.sums[row2 + 1][col2 + 1] - self.sums[row1][col2 + 1] - self.sums[row2 + 1][col1] + self.sums[row1][
             col1]

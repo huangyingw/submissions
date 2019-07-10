@@ -23,12 +23,10 @@ It is guaranteed an answer exists.
 
 class Solution(object):
     def gardenNoAdj(self, N, paths):
-
         plant = [1, 2, 3, 4]
         result = [0 for _ in range(N)]
         if not paths:
             return [plant[index % 4] for index in range(N)]
-
         change = {}
         update = []
         for path in paths:

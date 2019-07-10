@@ -1,20 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findContestMatch(self, n):
-
         result = [str(i) for i in range(1, n + 1)]
         while len(result) > 1:
             new_result = []

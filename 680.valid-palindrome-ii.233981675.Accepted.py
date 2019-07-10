@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def validPalindrome(self, s):
-
         n = len(s)
         i = 0
         while i < n // 2:

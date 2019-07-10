@@ -1,16 +1,8 @@
-
-
-
-
-
-
-
 from collections import defaultdict
 
 
 class Solution(object):
     def findDuplicateSubtrees(self, root):
-
         def serialize(node):
             if not node:
                 return "

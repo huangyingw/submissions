@@ -1,11 +1,5 @@
-
 class Solution:
-
-
-
-
     def longestPalindrome(self, s):
-
         res = 0
         flag = 0
         count = {}
@@ -24,9 +18,7 @@ class Solution:
             return res + 1
         return res
 
-
     def longestPalindrome(self, s):
-
         letter = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(j) for j in range(ord('A'), ord('Z') + 1)]
         result = 0
         for i in letter:

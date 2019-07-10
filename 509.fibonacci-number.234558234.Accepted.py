@@ -1,9 +1,5 @@
-
-
-
 class Solution:
     def fib(self, N):
-
         if N == 0:
             return 0
         l = [0, 1]

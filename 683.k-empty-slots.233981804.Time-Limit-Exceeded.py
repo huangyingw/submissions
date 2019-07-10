@@ -1,25 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def kEmptySlots(self, flowers, k):
-
         n = len(flowers)
         days = [None for _ in range(n)]
         for day, pos in enumerate(flowers, 1):

@@ -1,6 +1,5 @@
 class Solution(object):
     def search(self, nums, target):
-
         if not nums:
             return -1
         l, r = 0, len(nums) - 1

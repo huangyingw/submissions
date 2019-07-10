@@ -1,32 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def depthSum(self, nestedList):
-
         return self.depthSum_helper(nestedList, 1)
 
     def depthSum_helper(self, nestedList, depth):

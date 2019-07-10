@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 class Solution:
     def sortArrayByParityII(self, A):
-
         odd = 1
         for even in range(0, len(A), 2):
             if A[even] % 2 == 1:

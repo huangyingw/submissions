@@ -1,6 +1,5 @@
 class Solution:
     def uniquePaths(self, m, n):
-
         dmap = [[0] * n for _ in range(m)]
         for i in range(m):
             dmap[i][0] = 1

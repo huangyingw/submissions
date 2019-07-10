@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -15,7 +7,6 @@ import heapq
 
 class Solution(object):
     def mergeKLists(self, lists):
-
         prev = dummy = ListNode(None)
         next_nodes = [(l.val, l) for l in lists if l]
         heapq.heapify(next_nodes)

@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def numComponents(self, head, G):
-
         H = set(G)
         count = 0
         connected = False

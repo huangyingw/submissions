@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,7 +8,6 @@ class TreeNode(object):
 
 class Solution(object):
     def countSmaller(self, nums):
-
         smaller = [0 for _ in range(len(nums))]
         if len(nums) < 2:
             return smaller

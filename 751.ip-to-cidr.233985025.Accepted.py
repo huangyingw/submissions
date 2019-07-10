@@ -1,17 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def ipToCIDR(self, ip, n):
-
         results = []
 
         def num_to_ip(num):

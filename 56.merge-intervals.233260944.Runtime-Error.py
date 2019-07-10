@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
@@ -14,7 +6,6 @@ class Interval(object):
 
 class Solution(object):
     def merge(self, intervals):
-
         intervals.sort(key=lambda x: x.start)
         merged = []
         for interval in intervals:

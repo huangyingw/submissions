@@ -1,6 +1,5 @@
 class Solution(object):
     def isMatch(self, s, p):
-
         if len(p) == 0:
             return len(s) == 0
         dp = [[False for _ in range(len(p) + 1)] for _ in range(len(s) + 1)]

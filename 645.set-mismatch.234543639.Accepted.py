@@ -1,7 +1,5 @@
-
 class Solution:
     def findErrorNums(self, nums):
-
         once = set(nums)
         sum_whole = sum(range(len(nums) + 1))
         sum_once = sum(once)

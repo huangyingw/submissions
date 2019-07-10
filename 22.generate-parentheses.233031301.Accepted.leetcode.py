@@ -1,6 +1,5 @@
 class Solution(object):
     def generateParenthesis(self, n):
-
         result = []
 
         def backtracking(S, left, right):

@@ -1,32 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def removeComments(self, source):
-
         removed = []
         comment_block = False
         new_line = []

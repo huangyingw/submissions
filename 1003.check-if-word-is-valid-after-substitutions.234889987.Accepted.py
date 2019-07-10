@@ -29,7 +29,6 @@ S[i] is 'a', 'b', or 'c'
 
 class Solution(object):
     def isValid(self, S):
-
         stack = []
         if not S:
             return False

@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -16,7 +7,6 @@ class TreeNode(object):
 
 class Solution(object):
     def numTrees(self, n):
-
         memo = [-1] * (n + 1)
         return self.helper(n, memo)
 
@@ -27,8 +17,6 @@ class Solution(object):
             return memo[n]
         count = 0
         for i in range(1, n + 1):
-
-
             count += self.helper(i - 1, memo) * self.helper(n - i, memo)
         memo[n] = count
         return count

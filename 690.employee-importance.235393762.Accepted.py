@@ -1,6 +1,5 @@
 class Solution:
     def getImportance(self, employees, id):
-
         pending = [id]
         imp = 0
         while(len(pending) > 0):

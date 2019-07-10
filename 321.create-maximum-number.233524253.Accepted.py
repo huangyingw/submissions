@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def maxNumber(self, nums1, nums2, k):
-
         max_number = 0
         for i in range(k + 1):
             if i <= len(nums1) and k - i <= len(nums2):
@@ -26,7 +12,6 @@ class Solution(object):
     def max_single(self, nums, k):
         stack, n = [], len(nums)
         for i, num in enumerate(nums):
-
             while stack and num > stack[-1] and (len(stack) + (n - i) > k):
                 stack.pop()
             if len(stack) < k:

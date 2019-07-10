@@ -1,6 +1,5 @@
 class Solution:
     def fourSum(self, nums, target):
-
         nums.sort()
         ret = []
         for i in range(len(nums) - 3):

@@ -1,24 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def findRedundantConnection(self, edges):
-
         parents = {}
 
         def find_parent(n):

@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def invertTree(self, root):
-
         if not root:
             return None
         temp = root.left

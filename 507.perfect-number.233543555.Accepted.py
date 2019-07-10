@@ -1,16 +1,8 @@
-
-
-
-
-
-
-
 import math
 
 
 class Solution(object):
     def checkPerfectNumber(self, num):
-
         if num <= 1:
             return False
         sum_divisors = 1

@@ -1,10 +1,5 @@
-
-
-
-
 class Solution:
     def shiftingLetters(self, S, shifts):
-
         temp = list(S)
         length = len(shifts)
         offset = 0

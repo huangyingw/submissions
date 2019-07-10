@@ -1,6 +1,5 @@
 class Solution(object):
     def numDistinct(self, s, t):
-
         row, col = len(s), len(t)
         if col > row:
             return 0

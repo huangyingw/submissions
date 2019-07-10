@@ -1,11 +1,5 @@
-
-
-
-
-
 class Solution(object):
     def preorder(self, root):
-
         result = []
         if root == None:
             return result
@@ -17,10 +11,8 @@ class Solution(object):
         return result
 
 
-
 class Solution(object):
     def preorder(self, root):
-
         if root == None:
             return []
         lst = [root.val]

@@ -1,8 +1,5 @@
 class Solution(object):
     def canJump(self, nums):
-
-
-
         length = len(nums)
         begin = length - 1
         for i in reversed(range(length - 1)):

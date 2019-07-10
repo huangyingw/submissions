@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def convertToBase7(self, num):
-
         negative = num < 0
         num = abs(num)
         base_7 = []

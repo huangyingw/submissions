@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution:
     def sumOfLeftLeaves(self, root):
-
         if not root:
             return 0
         if root.left and not root.left.left and not root.left.right:

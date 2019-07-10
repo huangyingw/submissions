@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
 from collections import Counter
 
 
 class Solution(object):
     def findSubstring(self, s, words):
-
         result = []
         word_len = len(words[0])
         for stripe in range(word_len):

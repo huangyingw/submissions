@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def dailyTemperatures(self, temperatures):
-
         result = [0 for _ in range(len(temperatures))]
         stack = []
         for i, temp in enumerate(temperatures):

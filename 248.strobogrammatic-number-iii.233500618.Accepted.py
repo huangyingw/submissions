@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
 class Solution(object):
     def strobogrammaticInRange(self, low, high):
-
         max_len, min_len = len(high), len(low)
         low, high = int(low), int(high)
         live_list = ['']

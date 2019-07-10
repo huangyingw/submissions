@@ -1,18 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def longestConsecutive(self, root):
-
         self.longest = 0
 
         def helper(node):

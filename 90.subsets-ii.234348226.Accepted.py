@@ -1,7 +1,5 @@
 class Solution(object):
     def subsetsWithDup(self, nums):
-
-
         nums.sort()
         result = [[]]
         size = 0

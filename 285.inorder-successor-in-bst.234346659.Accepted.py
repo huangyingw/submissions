@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def inorderSuccessor(self, root, p):
-
         successor = None
         while root:
             if p.val < root.val:
@@ -19,7 +10,6 @@ class Solution(object):
         return successor
 
     def inorderSuccessor2(self, root, p):
-
         if not root:
             return None
         if p.val >= root.val:

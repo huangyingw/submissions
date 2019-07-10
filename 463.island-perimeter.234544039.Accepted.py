@@ -1,21 +1,5 @@
-
 class Solution:
     def islandPerimeter(self, grid):
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         l = n = 0
         a = len(grid)
         b = len(grid[0])

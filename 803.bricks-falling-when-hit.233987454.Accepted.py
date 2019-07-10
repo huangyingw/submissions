@@ -1,19 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution(object):
     def hitBricks(self, grid, hits):
-
         rows, cols = len(grid), len(grid[0])
         nbors = ((1, 0), (0, 1), (-1, 0), (0, -1))
         for r, c in hits:

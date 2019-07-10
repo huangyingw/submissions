@@ -1,14 +1,5 @@
-
-
-
-
-
-
-
-
 class Solution(object):
     def deleteDuplicates(self, head):
-
         if not head:
             return None
         if head.next and head.val == head.next.val:

@@ -1,9 +1,5 @@
-
-
-
 class Solution(object):
     def checkPossibility(self, nums):
-
         if len(nums) <= 2:
             return True
         count = index = 0

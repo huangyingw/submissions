@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
 import heapq
-
 
 
 class Interval(object):
@@ -21,7 +9,6 @@ class Interval(object):
 
 class Solution(object):
     def employeeFreeTime(self, schedule):
-
         employees = len(schedule)
         next_start_times = [(schedule[i][0].start, 0, i) for i in range(employees)]
         heapq.heapify(next_start_times)
