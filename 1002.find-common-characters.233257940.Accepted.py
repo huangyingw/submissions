@@ -1,4 +1,3 @@
-_project_ = 'leetcode'
 
 
 
