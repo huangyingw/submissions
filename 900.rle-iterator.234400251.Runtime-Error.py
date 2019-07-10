@@ -4,16 +4,11 @@
 
 class RLEIterrator():
     def __init__(self, A):
-        """
-        :type A: List[int]
-        """
+
         self.inputList = A
 
     def next(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         index = 0
         while index < len(self.inputList):
             if self.inputList[index] == 0:

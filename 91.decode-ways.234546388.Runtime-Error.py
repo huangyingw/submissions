@@ -4,10 +4,7 @@
 
 class Solution:
     def numDecodings1(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         if not s or s == "0":
             return 0
         care, dont = 0, 1

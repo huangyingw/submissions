@@ -7,11 +7,7 @@ class Solution:
 
 
     def uncommonFromSentences1(self, A, B):
-        """
-        :type A: str
-        :type B: str
-        :rtype: List[str]
-        """
+
         from collections import Counter
         mapping = Counter(A.split() + B.split())
         return [m[0] for m in mapping.items() if m[1] == 1]

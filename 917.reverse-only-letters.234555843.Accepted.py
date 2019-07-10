@@ -3,10 +3,7 @@
 
 class Solution(object):
     def reverseOnlyLetters(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         S = list(S)
         low, high = 0, len(S) - 1
         while low < high:

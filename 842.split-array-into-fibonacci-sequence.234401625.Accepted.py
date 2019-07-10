@@ -4,10 +4,7 @@
 
 class Solution(object):
     def splitIntoFibonacci(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
+
         n = len(S)
         for i in range(1, 11):
             for j in range(1, 11):

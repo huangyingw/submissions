@@ -4,10 +4,7 @@
 
 class Solution:
     def reverseOnlyLetters(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         temp = list(S)
         left = 0
         right = len(temp) - 1

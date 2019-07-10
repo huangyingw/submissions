@@ -4,11 +4,7 @@
 
 class Solution:
     def shiftingLetters(self, S, shifts):
-        """
-        :type S: str
-        :type shifts: List[int]
-        :rtype: str
-        """
+
         temp = list(S)
         length = len(shifts)
         offset = 0

@@ -3,11 +3,7 @@
 
 class Solution(object):
     def uncommonFromSentences(self, A, B):
-        """
-        :type A: str
-        :type B: str
-        :rtype: List[str]
-        """
+
         count = dict()
         result = []
         for word in A.split():

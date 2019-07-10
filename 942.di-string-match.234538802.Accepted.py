@@ -4,10 +4,7 @@
 
 class Solution:
     def diStringMatch(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
+
         length = len(S)
         ans = []
         left = 0
