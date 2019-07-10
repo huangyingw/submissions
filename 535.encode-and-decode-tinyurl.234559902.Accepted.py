@@ -6,7 +6,6 @@ class Codec:
         self.url2code = {}
 
     def encode(self, longUrl):
-        """Encodes a URL to a shortened URL."""
         while longUrl not in self.url2code:
             code = ''.join(random.choice(Codec.alphabet) for _ in range(5))
             if code not in self.code2url:
@@ -23,13 +22,11 @@ class Codec:
         return "http://tinyurl.com/" + str(self.count)
 
     def decode(self, shortUrl):
-
         code = uuid.uuid3(uuid.NAMESPACE_URL, str(longUrl))
         self.code2url[str(code)] = longUrl
         return "http://tinyurl.com/" + str(code)
 
     def decode(self, shortUrl):
-        """Decodes a shortened URL to its original URL."""
         return self.code2url[shortUrl.split('/')[-1]]
 
 import uuid

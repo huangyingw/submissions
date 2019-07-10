@@ -28,7 +28,12 @@ Explanation: The output [11, 0, 11, 11] would also be accepted.
 Note:
 1 <= S.length <= 200
 S contains only digits.
+"""
 
+
+class Solution(object):
+    def splitIntoFibonacci(self, S):
+        """
         :type S: str
         :rtype: List[int]
         """

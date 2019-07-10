@@ -1,25 +1,9 @@
 
-"""
-Given a list of strings words representing an English Dictionary,
-find the longest word in words that can be built one character at a time by other words in words.
-If there is more than one possible answer, return the longest word with the smallest lexicographical order.
-If there is no answer, return the empty string.
-Example 1:
-Input:
-words = ["w","wo","wor","worl", "world"]
-Output: "world"
-Explanation:
-The word "world" can be built one character at a time by "w", "wo", "wor", and "worl".
-Example 2:
-Input:
-words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
-Output: "apple"
-Explanation:
-Both "apply" and "apple" can be built from other words in the dictionary. However, "apple" is lexicographically small
 
-        :type words: List[str]
-        :rtype: str
-        """
+class Solution(object):
+
+    def longestWord1(self, words):
+
         seen, res = set(""), ""
         buckets = defaultdict(list)
         min_len, max_len = float('inf'), float('-inf')
@@ -34,8 +18,6 @@ Both "apply" and "apple" can be built from other words in the dictionary. Howeve
                     if len(w) > len(res) or (len(w) == len(res) and res > w):
                         res = w
         return res
-
-
 
     def longestWord2(self, words):
 

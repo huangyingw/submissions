@@ -1,22 +1,4 @@
 
-"""
-Given a 2D board and a word, find if the word exists in the grid.
-The word can be constructed from letters of sequentially adjacent cell,
-where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
-Example:
-board =
-[
-  ['A','B','C','E'],
-  ['S','F','C','S'],
-  ['A','D','E','E']
-]
-Given word = "ABCCED", return true.
-Given word = "SEE", return true.
-Given word = "ABCB", return false.
-"""
-
-
-
 
 class Solution1:
     def exist(self, board, word):
@@ -27,7 +9,6 @@ class Solution1:
                 if self.dfs(board, i, j, word):
                     return True
         return False
-
 
     def dfs(self, board, i, j, word):
         if len(word) == 0:
