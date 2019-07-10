@@ -1,9 +1,6 @@
 class Solution(object):
     def solveNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+
 
         if n == 0:
             return 0

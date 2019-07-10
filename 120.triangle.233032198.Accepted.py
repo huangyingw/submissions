@@ -13,10 +13,7 @@
 
 class Solution(object):
     def minimumTotal(self, triangle):
-        """
-        :type triangle: List[List[int]]
-        :rtype: int
-        """
+
         length = len(triangle)
         columns = len(triangle[length - 1])
         matrix = [[0 for col in range(columns)] for row in range(length)]

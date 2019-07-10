@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestOnes(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         i = 0
         for j in range(len(A)):
             K -= 1 - A[j]

@@ -70,12 +70,7 @@ class Solution:
 
 
     def ladderLength(self, beginWord, endWord, wordList):
-        """
-        :type beginWord: str
-        :type endWord: str
-        :type wordList: Set[str]
-        :rtype: int
-        """
+
         queue = [(beginWord, 1)]
         while queue:
             e, lens = queue.pop(0)

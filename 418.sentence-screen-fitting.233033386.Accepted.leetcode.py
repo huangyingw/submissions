@@ -1,10 +1,6 @@
 class Solution(object):
     def wordsTyping(self, sentences, rows, cols):
-        """"
-        :sentences List<String>
-        :rows int
-        :cols int
-        """
+
         sentence = '-'.join(sentences)
         sentence += '-'
         index_in_sentence = 0

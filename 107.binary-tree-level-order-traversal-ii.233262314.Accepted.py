@@ -19,10 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def levelOrderBottom(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         traversal = []
         self.inorder(root, 0, traversal)
         return traversal[::-1]

@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countPrimeSetBits(self, L, R):
-        """
-        :type L: int
-        :type R: int
-        :rtype: int
-        """
+
         result = 0
         primes = {2, 3, 5, 7, 11, 13, 17, 19}
         for i in range(L, R + 1):

@@ -21,12 +21,7 @@ a != b, b != c, c != a
 
 class Solution(object):
     def numMovesStones(self, a, b, c):
-        """
-        :type a: int
-        :type b: int
-        :type c: int
-        :rtype: List[int]
-        """
+
         lista = [a, b, c]
         lista.sort()
         a, b, c = lista[0], lista[1], lista[2]

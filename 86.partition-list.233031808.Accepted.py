@@ -14,11 +14,7 @@
 
 class Solution(object):
     def partition(self, head, x):
-        """
-        :type head: ListNode
-        :type x: int
-        :rtype: ListNode
-        """
+
         if not head or not head.next:
             return head
         left, right = ListNode(0), ListNode(0)

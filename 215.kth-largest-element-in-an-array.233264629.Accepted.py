@@ -11,11 +11,7 @@ import random
 
 class Solution(object):
     def findKthLargest(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         k = len(nums) - k
         left, right = 0, len(nums) - 1
         while True:

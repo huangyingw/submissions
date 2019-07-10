@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def equationsPossible(self, equations):
-        """
-        :type equations: List[str]
-        :rtype: bool
-        """
+
         graph = [[] for _ in range(26)]
         not_equal = []
         for eqn in equations:

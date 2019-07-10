@@ -1,9 +1,6 @@
 class Solution:
     def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         max_Jump = 0
         for n in range(len(nums)):
             if nums[n] != 0:

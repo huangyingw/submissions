@@ -1,9 +1,6 @@
 class Solution(object):
     def lengthLongestPath(self, input):
-        """
-        :type input: str
-        :rtype: int
-        """
+
         if not input:
             return 0
         directories = input.split('\n')

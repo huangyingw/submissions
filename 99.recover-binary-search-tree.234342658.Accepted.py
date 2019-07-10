@@ -14,10 +14,7 @@ class Solution:
         self.second = None
 
     def recoverTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
-        """
+
         self.traverse(root)
         self.first.val, self.second.val = self.second.val, self.first.val
 

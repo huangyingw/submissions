@@ -18,10 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def wordsAbbreviation(self, dictionary):
-        """
-        :type dict: List[str]
-        :rtype: List[str]
-        """
+
         def make_abbreviation(word, i):
             abbreviation = word[:i + 1] + str(len(word) - (i + 2)) + word[-1]
             return word if len(abbreviation) >= len(word) else abbreviation

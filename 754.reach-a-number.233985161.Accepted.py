@@ -15,10 +15,7 @@ import math
 
 class Solution(object):
     def reachNumber(self, target):
-        """
-        :type target: int
-        :rtype: int
-        """
+
         target = abs(target)
         steps = int(math.ceil((math.sqrt(1 + 8 * target) - 1) / 2))
         target -= steps * (steps + 1) // 2

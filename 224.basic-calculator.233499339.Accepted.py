@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def calculate(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         digits = {str(i) for i in range(10)}
         expression = ['(']
         for c in s:

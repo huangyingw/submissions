@@ -20,10 +20,7 @@ class Interval(object):
 
 class Solution(object):
     def eraseOverlapIntervals(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
+
         erase = 0
         if not intervals:
             return 0

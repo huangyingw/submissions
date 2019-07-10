@@ -19,10 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def largestBSTSubtree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.largest = 0
 
         def is_bst(node):

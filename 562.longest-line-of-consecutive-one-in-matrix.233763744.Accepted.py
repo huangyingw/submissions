@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestLine(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: int
-        """
+
         if not M or not M[0]:
             return 0
         rows, cols = len(M), len(M[0])

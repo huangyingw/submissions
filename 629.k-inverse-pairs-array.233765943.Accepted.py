@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def kInversePairs(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: int
-        """
+
         if k == 0:
             return 1
         MODULO = 10 ** 9 + 7

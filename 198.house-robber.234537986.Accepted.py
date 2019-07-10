@@ -2,10 +2,7 @@
 class Solution:
 
     def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         memo = [0 for _ in range(len(nums) + 1)]
@@ -16,10 +13,7 @@ class Solution:
 
 
     def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
 
         if not nums:
             return 0

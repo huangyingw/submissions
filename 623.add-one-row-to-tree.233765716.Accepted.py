@@ -15,12 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def addOneRow(self, root, v, d):
-        """
-        :type root: TreeNode
-        :type v: int
-        :type d: int
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         if d == 1:

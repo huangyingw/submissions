@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validSubarrays(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         result = 0
         stack = []
         for num in nums:

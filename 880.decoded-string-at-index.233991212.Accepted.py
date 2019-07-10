@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def decodeAtIndex(self, S, K):
-        """
-        :type S: str
-        :type K: int
-        :rtype: str
-        """
+
         length = 0
         for index, c in enumerate(S):
             if "0" <= c <= "9":

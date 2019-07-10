@@ -1,9 +1,6 @@
 class Solution(object):
     def maxAreaOfIsland(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
 
         ans = 0
         for i in range(len(grid)):

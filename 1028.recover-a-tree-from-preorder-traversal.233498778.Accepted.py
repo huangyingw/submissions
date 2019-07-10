@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def recoverFromPreorder(self, S):
-        """
-        :type S: str
-        :rtype: TreeNode
-        """
+
         self.i = 0
 
         def helper(required_depth):

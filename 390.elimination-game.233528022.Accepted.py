@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lastRemaining(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         head = 1
         l_to_r = True
         step = 1

@@ -20,12 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def pourWater(self, heights, V, K):
-        """
-        :type heights: List[int]
-        :type V: int
-        :type K: int
-        :rtype: List[int]
-        """
+
         heights = [float("inf")] + heights + [float("inf")]
         K += 1
         while V > 0:

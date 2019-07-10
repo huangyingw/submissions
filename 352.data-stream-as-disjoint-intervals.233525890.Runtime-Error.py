@@ -29,9 +29,7 @@ class IntervalNode(object):
 
 class SummaryRanges(object):
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.parents = {}
         self.intervals = set()
 
@@ -45,10 +43,7 @@ class SummaryRanges(object):
         return interval_node
 
     def addNum(self, val):
-        """
-        :type val: int
-        :rtype: void
-        """
+
         if val in self.parents:
             return
         lower = self.get_parent(val - 1)
@@ -70,9 +65,7 @@ class SummaryRanges(object):
             self.intervals.add(new_inner)
 
     def getIntervals(self):
-        """
-        :rtype: List[Interval]
-        """
+
         result = list(self.intervals)
         result.sort(key=lambda x: x.start)
         return result

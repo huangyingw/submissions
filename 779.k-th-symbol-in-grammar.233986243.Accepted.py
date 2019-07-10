@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def kthGrammar(self, N, K):
-        """
-        :type N: int
-        :type K: int
-        :rtype: int
-        """
+
         length = 2 ** (N - 1)
         inverse = False
         while length > 1:

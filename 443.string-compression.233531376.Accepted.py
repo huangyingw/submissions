@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def compress(self, chars):
-        """
-        :type chars: List[str]
-        :rtype: int
-        """
+
         chars += " "
         char_start = 0
         result_length = 0

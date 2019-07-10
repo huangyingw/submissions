@@ -16,10 +16,7 @@ import heapq
 
 class Solution(object):
     def highFive(self, items):
-        """
-        :type items: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         TOP_SCORES = 5
         heaps = defaultdict(list)
         for id, score in items:

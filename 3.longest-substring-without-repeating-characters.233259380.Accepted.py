@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         last_seen = {}
         start = 0
         longest = 0

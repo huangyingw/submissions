@@ -6,11 +6,7 @@ class Solution(object):
         return ans
 
     def smallestDistancePair(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         nums.sort()
         low, high = min([abs(nums[i] - nums[i + 1]) for i in range(len(nums) - 1)]), abs(nums[0] - nums[~0])
         while low < high:

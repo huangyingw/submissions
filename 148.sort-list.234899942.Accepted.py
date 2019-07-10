@@ -13,10 +13,7 @@
 
 class Solution(object):
     def sortList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if not head or not head.next:
             return head
         slow, fast = head, head.next

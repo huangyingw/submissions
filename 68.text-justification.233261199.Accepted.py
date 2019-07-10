@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def fullJustify(self, words, maxWidth):
-        """
-        :type words: List[str]
-        :type maxWidth: int
-        :rtype: List[str]
-        """
+
         line_chars = 0
         line_words = []
         justified = []

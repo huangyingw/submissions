@@ -1,10 +1,7 @@
 
 class Solution:
     def checkPossibility(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         p = None
         for i in range(len(nums) - 1):
             if nums[i] > nums[i + 1]:

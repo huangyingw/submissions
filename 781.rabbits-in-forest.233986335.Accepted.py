@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numRabbits(self, answers):
-        """
-        :type answers: List[int]
-        :rtype: int
-        """
+
         colours = {}
         rabbits = 0
         for rabbit in answers:

@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeKdigits(self, num, k):
-        """
-        :type num: str
-        :type k: int
-        :rtype: str
-        """
+
         result = []
         for c in num:
             while k and result and result[-1] > c:

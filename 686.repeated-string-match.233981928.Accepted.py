@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def repeatedStringMatch(self, A, B):
-        """
-        :type A: str
-        :type B: str
-        :rtype: int
-        """
+
         if set(B) - set(A):
             return -1
         div, mod = divmod(len(B), len(A))

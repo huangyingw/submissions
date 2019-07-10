@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMinDifference(self, timePoints):
-        """
-        :type timePoints: List[str]
-        :rtype: int
-        """
+
         minutes = []
         for time in timePoints:
             hrs, mins = time.split(":")

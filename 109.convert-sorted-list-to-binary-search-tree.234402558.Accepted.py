@@ -30,10 +30,7 @@ class Solution:
         return slowPtr
 
     def sortedListToBST(self, head):
-        """
-        :type head: ListNode
-        :rtype: TreeNode
-        """
+
 
         if not head:
             return None

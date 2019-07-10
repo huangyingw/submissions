@@ -22,10 +22,7 @@ import heapq
 
 class Solution(object):
     def minMeetingRooms(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
+
         max_rooms = 0
         rooms = []
         intervals.sort(key=lambda x: x.start)

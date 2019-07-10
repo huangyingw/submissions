@@ -14,9 +14,7 @@ import bisect
 
 class Solution(object):
     def __init__(self, w):
-        """
-        :type w: List[int]
-        """
+
         self.cumulative = []
         total = 0
         for weight in w:
@@ -24,8 +22,6 @@ class Solution(object):
             self.cumulative.append(total)
 
     def pickIndex(self):
-        """
-        :rtype: int
-        """
+
         x = random.randint(1, self.cumulative[-1])
         return bisect.bisect_left(self.cumulative, x)

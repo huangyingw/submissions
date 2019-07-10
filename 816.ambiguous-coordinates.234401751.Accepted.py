@@ -21,10 +21,7 @@ class Solution(object):
 
 class Solution:
     def ambiguousCoordinates(self, S):
-        """
-        :type S: str
-        :rtype: List[str]
-        """
+
         S = S[1:-1]
         res = []
         for i in range(1, len(S)):

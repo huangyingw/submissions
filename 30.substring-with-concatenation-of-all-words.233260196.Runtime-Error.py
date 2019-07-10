@@ -13,11 +13,7 @@ from collections import Counter
 
 class Solution(object):
     def findSubstring(self, s, words):
-        """
-        :type s: str
-        :type words: List[str]
-        :rtype: List[int]
-        """
+
         result = []
         word_len = len(words[0])
         for stripe in range(word_len):

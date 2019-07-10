@@ -10,11 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isOneEditDistance(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+
         diff = len(s) - len(t)
         if abs(diff) > 1:
             return False

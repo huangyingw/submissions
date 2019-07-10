@@ -1,11 +1,7 @@
 
 class Solution(object):
     def exist(self, board, word):
-        """
-        :type board: List[List[str]]
-        :type word: str
-        :rtype: bool
-        """
+
         if not board or not board[0]:
             return False
         m, n = len(board), len(board[0])

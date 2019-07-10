@@ -1,9 +1,6 @@
 class Solution(object):
     def canReorderDoubled(self, A):
-        """
-        :type A: List[int]
-        :rtype: bool
-        """
+
         v_map = {}
         A.sort(key=lambda x: abs(x))
         for n in A:

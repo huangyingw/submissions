@@ -4,11 +4,7 @@ from collections import Counter
 
 class Solution:
     def rearrangeString(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: str
-        """
+
         if k == 0:
             return s
         l = [(-count, c) for c, count in Counter(s).items()]

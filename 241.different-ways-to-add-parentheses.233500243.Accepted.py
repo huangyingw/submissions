@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def diffWaysToCompute(self, input):
-        """
-        :type input: str
-        :rtype: List[int]
-        """
+
         start = 0
         parsed = []
         for i in range(len(input)):

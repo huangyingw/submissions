@@ -22,11 +22,7 @@
 
 class Solution(object):
     def buildTree(self, inorder, postorder):
-        """
-        :type inorder: List[int]
-        :type postorder: List[int]
-        :rtype: TreeNode
-        """
+
         self.index = len(inorder) - 1
 
         def recursive(postorder, inorder, start, end):

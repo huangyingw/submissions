@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def partitionDisjoint(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         last_left = 0
         max_left = max_overall = A[0]
         for i, num in enumerate(A[1:], 1):

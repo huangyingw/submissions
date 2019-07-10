@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def checkInclusion(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: bool
-        """
+
         n1 = len(s1)
         freq = [0] * 26
         for c in s1:

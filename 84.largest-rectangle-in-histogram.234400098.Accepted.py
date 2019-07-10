@@ -1,10 +1,7 @@
 
 class Solution:
     def largestRectangleArea(self, heights):
-        """
-        :type heights: List[int]
-        :rtype: int
-        """
+
         heights.append(0)
         stack = [-1]
         ans = 0

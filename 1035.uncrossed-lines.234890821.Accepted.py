@@ -22,11 +22,7 @@ Note:
 
 class Solution(object):
     def maxUncrossedLines(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: int
-        """
+
         dp = [[0] * len(A) for _ in range(len(B))]
         dp[0][0] = 1 if A[0] == B[0] else 0
         for index_i in range(1, len(dp)):

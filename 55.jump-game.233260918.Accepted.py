@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         stack = [0]
         max_reach = -1
         while stack:

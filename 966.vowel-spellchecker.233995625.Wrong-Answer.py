@@ -33,11 +33,7 @@ from re import sub
 
 class Solution:
     def spellchecker(self, wordlist, queries):
-        """
-        :type wordlist: List[str]
-        :type queries: List[str]
-        :rtype: List[str]
-        """
+
         def replace_vowels(word):
             return sub('[aeiou]', '_', word)
         wordsset = set(wordlist)

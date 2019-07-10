@@ -5,12 +5,12 @@ Return the number of land squares in the grid for which we cannot walk off the b
 Example 1:
 Input: [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
 Output: 3
-Explanation: 
+Explanation:
 There are three 1s that are enclosed by 0s, and one 1 that isn't enclosed because its on the boundary.
 Example 2:
 Input: [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]
 Output: 0
-Explanation: 
+Explanation:
 All 1s are either on the boundary or can reach the boundary.
 Note:
 1 <= A.length <= 500
@@ -22,10 +22,7 @@ All rows have the same size.
 
 class Solution(object):
     def numEnclaves(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         result = 0
         queue = []
         for row in range(len(A)):

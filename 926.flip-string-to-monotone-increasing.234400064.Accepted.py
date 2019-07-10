@@ -18,12 +18,7 @@ Explanation: We flip to get 00000000.
 Note:
 1 <= S.length <= 20000
 S only consists of '0' and '1' characters.
-"""
 
-
-class Solution:
-    def minFlipsMonoIncr(self, S):
-        """
         :type S: str
         :rtype: int
         """

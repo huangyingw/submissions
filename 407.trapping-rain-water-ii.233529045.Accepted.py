@@ -13,10 +13,7 @@ import heapq
 
 class Solution(object):
     def trapRainWater(self, heightMap):
-        """
-        :type heightMap: List[List[int]]
-        :rtype: int
-        """
+
         if not heightMap or not heightMap[0]:
             return 0
         rows, cols = len(heightMap), len(heightMap[0])

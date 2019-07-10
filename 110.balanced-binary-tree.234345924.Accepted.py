@@ -9,10 +9,7 @@
 
 class Solution:
     def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         return self.checkBalance(root) != -1
 
     def checkBalance(self, root):

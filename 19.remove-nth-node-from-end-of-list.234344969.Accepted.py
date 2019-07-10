@@ -7,11 +7,7 @@
 
 class Solution:
     def removeNthFromEnd(self, head, n):
-        """
-        :type head: ListNode
-        :type n: int
-        :rtype: ListNode
-        """
+
         dummy = ListNode(0)
         dummy.next = head
         fast, slow = dummy, dummy

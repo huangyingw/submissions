@@ -1,10 +1,6 @@
 class Solution:
     def combine(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: List[List[int]]
-        """
+
         res = []
         ll = list(range(1, n + 1))
         self.dfs(res, [], k, ll)

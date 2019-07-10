@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxEnvelopes(self, envelopes):
-        """
-        :type envelopes: List[List[int]]
-        :rtype: int
-        """
+
 
         envelopes.sort(key=lambda x: (x[0], -x[1]))
 

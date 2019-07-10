@@ -13,11 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: bool
-        """
+
         nb_prerequisites = defaultdict(int)
         prereq_list = defaultdict(list)
         for after, before in prerequisites:

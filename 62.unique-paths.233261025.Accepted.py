@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def uniquePaths(self, m, n):
-        """
-        :type m: int    cols
-        :type n: int    rows
-        :rtype: int
-        """
+
         if m == 0 or n == 0:
             return 0
         row_paths = [1 for _ in range(n)]

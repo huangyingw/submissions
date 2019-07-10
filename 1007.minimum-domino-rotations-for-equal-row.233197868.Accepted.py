@@ -5,7 +5,7 @@ Return the minimum number of rotations so that all the values in A are the same,
 If it cannot be done, return -1.
 Input: A = [2,1,2,4,2,2], B = [5,2,6,2,3,2]
 Output: 2
-Explanation: 
+Explanation:
 The first figure represents the dominoes as given by A and B: before we do any rotations.
 If we rotate the second and fourth dominoes, we can make every value in the top row equal to 2, as indicated by the second figure.
 '''
@@ -13,11 +13,7 @@ If we rotate the second and fourth dominoes, we can make every value in the top 
 
 class Solution(object):
     def minDominoRotations(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: int
-        """
+
         if len(A) != len(B):
             return -1
         if len(A) == 0:

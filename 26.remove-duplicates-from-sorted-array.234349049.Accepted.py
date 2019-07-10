@@ -1,9 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         idx = 0

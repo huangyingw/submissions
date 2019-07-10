@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def smallestRepunitDivByK(self, K):
-        """
-        :type K: int
-        :rtype: int
-        """
+
         if K % 10 not in {1, 3, 7, 9}:
             return -1
         mod_N, mod_set = 0, set()

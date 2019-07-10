@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def beautifulArray(self, N):
-        """
-        :type N: int
-        :rtype: List[int]
-        """
+
         if N == 1:
             return [1]
         evens = self.beautifulArray(N // 2)

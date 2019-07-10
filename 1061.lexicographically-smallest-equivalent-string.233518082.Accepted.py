@@ -20,12 +20,7 @@ from collections import defaultdict
 
 class Solution(object):
     def smallestEquivalentString(self, A, B, S):
-        """
-        :type A: str
-        :type B: str
-        :type S: str
-        :rtype: str
-        """
+
         equivalents = defaultdict(set)
         for a, b in zip(A, B):
             equivalents[a].add(b)

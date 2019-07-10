@@ -13,10 +13,7 @@
 
 class Solution(object):
     def longestIncreasingPath(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: int
-        """
+
         result = 0
         dp = [[0 for col in range(len(matrix[0]))] for row in range(len(matrix))]
         for row in range(len(matrix)):

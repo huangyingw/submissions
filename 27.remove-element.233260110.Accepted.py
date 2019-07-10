@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeElement(self, nums, val):
-        """
-        :type nums: List[int]
-        :type val: int
-        :rtype: int
-        """
+
         next_free = 0
         for i, num in enumerate(nums):
             if num != val:

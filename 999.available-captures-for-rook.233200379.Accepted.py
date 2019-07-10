@@ -4,17 +4,14 @@ The rook moves as in the rules of Chess: it chooses one of four cardinal directi
 Return the number of pawns the rook can capture in one move.
 Input: [[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]
 Output: 3
-Explanation: 
+Explanation:
 In this example the rook is able to capture all the pawns.
 '''
 
 
 class Solution(object):
     def numRookCaptures(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: int
-        """
+
         result = 0
         rook_index = (0, 0)
         for row in range(len(board)):

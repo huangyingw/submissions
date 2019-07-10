@@ -7,11 +7,7 @@
 
 class Solution(object):
     def partition(self, head, x):
-        """
-        :type head: ListNode
-        :type x: int
-        :rtype: ListNode
-        """
+
         if head is None:
             return None
         less = lesshead = None

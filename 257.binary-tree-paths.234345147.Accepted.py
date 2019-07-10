@@ -8,10 +8,7 @@
 
 class Solution:
     def binaryTreePaths(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[str]
-        """
+
         if not root:
             return []
         stack = [(root, str(root.val))]

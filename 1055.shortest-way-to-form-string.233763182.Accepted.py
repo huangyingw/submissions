@@ -18,11 +18,7 @@ import bisect
 
 class Solution(object):
     def shortestWay(self, source, target):
-        """
-        :type source: str
-        :type target: str
-        :rtype: int
-        """
+
         char_indices = defaultdict(list)
         for i, c in enumerate(source):
             char_indices[c].append(i)

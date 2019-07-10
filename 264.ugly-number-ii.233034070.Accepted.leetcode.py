@@ -1,9 +1,6 @@
 class Solution(object):
     def nthUglyNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n <= 5:
             return n
         dp = [0] * (n + 1)

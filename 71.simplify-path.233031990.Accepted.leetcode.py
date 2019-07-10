@@ -1,9 +1,6 @@
 class Solution(object):
     def simplifyPath(self, path):
-        """
-        :type path: str
-        :rtype: str
-        """
+
         result = []
         plist = path.split('/')
         for pos in plist:

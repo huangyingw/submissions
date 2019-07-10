@@ -9,10 +9,7 @@
 
 class Solution:
     def levelOrderBottom(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         if not root:
             return []
         res = []

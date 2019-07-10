@@ -8,10 +8,7 @@
 
 class Solution:
     def sumNumbers(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         return self.getSum(root, 0)
 
     def getSum(self, node, s):

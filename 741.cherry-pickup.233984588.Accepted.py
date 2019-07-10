@@ -21,10 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def cherryPickup(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         n = len(grid)
         memo = {}
 

@@ -1,10 +1,7 @@
 
 class Solution:
     def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
+
         if not prices:
             return 0
 

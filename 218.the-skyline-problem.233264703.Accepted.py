@@ -18,10 +18,7 @@ import heapq
 
 class Solution(object):
     def getSkyline(self, buildings):
-        """
-        :type buildings: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         skyline = [(0, 0)]
         current = [(0, float('inf'))]
         edges = [(l, -h, r) for l, r, h in buildings]

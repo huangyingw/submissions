@@ -42,11 +42,7 @@ class Solution(object):
 
 
     def isMatch(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: bool
-        """
+
         s_index, p_index = 0, 0
         star, s_star = -1, 0
         s_len, p_len = len(s), len(p)

@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def scoreOfParentheses(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         stack = []
         for s in S:
             if s == "(":

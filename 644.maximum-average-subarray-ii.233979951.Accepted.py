@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMaxAverage(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: float
-        """
+
         n = len(nums)
         if k < 80:
             cumulative = [0]

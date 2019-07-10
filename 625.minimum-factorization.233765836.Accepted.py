@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def smallestFactorization(self, a):
-        """
-        :type a: int
-        :rtype: int
-        """
+
         if a == 1:
             return 1
         result = 0

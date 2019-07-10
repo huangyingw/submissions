@@ -1,9 +1,6 @@
 class Solution:
     def findNumberOfLIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         length, count = [1] * len(nums), [1] * len(nums)

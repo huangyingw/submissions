@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         n = len(s)
         i = 0
         while i < n // 2:

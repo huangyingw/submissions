@@ -18,10 +18,7 @@ class TreeNode(object):
 
 class Solution(object):
     def numTrees(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         memo = [-1] * (n + 1)
         return self.helper(n, memo)
 

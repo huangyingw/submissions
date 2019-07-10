@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxScoreSightseeingPair(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         best_minus_dist = 0
         result = 0
         for num in A:

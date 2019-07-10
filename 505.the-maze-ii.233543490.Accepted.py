@@ -16,12 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shortestDistance(self, maze, start, destination):
-        """
-        :type maze: List[List[int]]
-        :type start: List[int]
-        :type destination: List[int]
-        :rtype: int
-        """
+
         rows, cols = len(maze), len(maze[0])
         distance = 0
         visited = set()

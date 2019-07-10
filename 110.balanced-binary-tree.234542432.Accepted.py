@@ -10,10 +10,7 @@
 class Solution(object):
 
     def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
 
         if root == None:
             return True
@@ -21,20 +18,14 @@ class Solution(object):
         return flag and self.isBalanced(root.left) and self.isBalanced(root.right)
 
     def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
 
     def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
 
         def dfs(root):
             if root is None:

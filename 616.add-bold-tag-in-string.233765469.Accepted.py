@@ -15,11 +15,7 @@ from collections import defaultdict
 
 class Solution(object):
     def addBoldTag(self, s, dict):
-        """
-        :type s: str
-        :type dict: List[str]
-        :rtype: str
-        """
+
         in_tag = [False for _ in range(len(s))]
         start_letters = defaultdict(list)
         for word in dict:

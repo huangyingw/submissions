@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def hIndex(self, citations):
-        """
-        :type citations: List[int]
-        :rtype: int
-        """
+
         buckets = [0] * (len(citations) + 1)
         for citation in citations:
             buckets[min(citation, len(citations))] += 1

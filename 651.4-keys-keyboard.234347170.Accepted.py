@@ -1,9 +1,6 @@
 class Solution:
     def maxA(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         if N < 7:
             return N
         result = [0, 1, 2, 3, 4, 5, 6]

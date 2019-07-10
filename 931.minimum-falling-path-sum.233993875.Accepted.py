@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def minFallingPathSum(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         n = len(A)
         row_minima = [0] * n
         for r in range(n - 1, -1, -1):

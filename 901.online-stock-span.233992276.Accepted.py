@@ -19,10 +19,7 @@ class StockSpanner(object):
         self.stack = []
 
     def next(self, price):
-        """
-        :type price: int
-        :rtype: int
-        """
+
         result = 1
         while self.stack and price >= self.stack[-1][0]:
             _, count = self.stack.pop()

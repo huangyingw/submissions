@@ -1,9 +1,6 @@
 class Solution:
     def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
+
         buy1, sell1 = float('-inf'), 0
         buy2, sell2 = float('-inf'), 0
         for price in prices:

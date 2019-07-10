@@ -19,11 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def openLock(self, deadends, target):
-        """
-        :type deadends: List[str]
-        :type target: str
-        :rtype: int
-        """
+
         queue, target = {"0000"}, {target}
         visited = set()
         deadends = set(deadends)

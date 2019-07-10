@@ -2,10 +2,7 @@
 class Solution(object):
 
     def toHex(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
+
         d = {0: '0',
              1: '1',
              2: '2',
@@ -36,10 +33,7 @@ class Solution(object):
 
 
     def toHex(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
+
         if num == 0:
             return "0"
         if num < 0:

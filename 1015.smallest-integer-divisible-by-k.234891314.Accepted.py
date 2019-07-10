@@ -18,10 +18,7 @@ Explanation: The smallest answer is N = 111, which has length 3.
 
 class Solution(object):
     def smallestRepunitDivByK(self, K):
-        """
-        :type K: int
-        :rtype: int
-        """
+
         length, value = 0, 0
         for no_one in range(100000):
             value = (10 * value + 1) % K

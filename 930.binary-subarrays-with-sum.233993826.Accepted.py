@@ -11,11 +11,7 @@ from collections import defaultdict
 
 class Solution:
     def numSubarraysWithSum(self, A, S):
-        """
-        :type A: List[int]
-        :type S: int
-        :rtype: int
-        """
+
         result = 0
         running = 0
         partials = defaultdict(int, {0: 1})

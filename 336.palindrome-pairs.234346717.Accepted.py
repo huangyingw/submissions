@@ -1,9 +1,6 @@
 class Solution:
     def palindromePairs(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[List[int]]
-        """
+
         lookup = {w: i for i, w in enumerate(words)}
         result = []
         for i, w in enumerate(words):

@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def simplifyPath(self, path):
-        """
-        :type path: str
-        :rtype: str
-        """
+
         path_list = path.split('/')
         result = []
         for item in path_list:

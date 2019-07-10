@@ -3,10 +3,7 @@ class Solution(object):
         return row >= 0 and col >= 0 and row < row_size and col < col_size
 
     def orangesRotting(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         queue = []
         for row_index in range(len(grid)):
             for col_index in range(len(grid[0])):

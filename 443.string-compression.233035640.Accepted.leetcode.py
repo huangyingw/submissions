@@ -1,9 +1,6 @@
 class Solution(object):
     def compress(self, chars):
-        """
-        :type chars: List[str]
-        :rtype: int
-        """
+
 
         anchor = write = 0
         for read, c in enumerate(chars):

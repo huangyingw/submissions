@@ -21,10 +21,7 @@ class Interval(object):
 
 class Solution(object):
     def findRightInterval(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: List[int]
-        """
+
         intervals = [[intervals[i], i] for i in range(len(intervals))]
         intervals.sort(key=lambda x: x[0].start)
         result = [-1] * len(intervals)

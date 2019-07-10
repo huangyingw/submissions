@@ -17,9 +17,7 @@ _project_ = 'leetcode'
 
 class CBTInserter:
     def __init__(self, root):
-        """
-        :type root: TreeNode
-        """
+
         self.nodelist = [root]
         for node in self.nodelist:
             if node.left:
@@ -28,10 +26,7 @@ class CBTInserter:
                 self.nodelist.append(node.right)
 
     def insert(self, v):
-        """
-        :type v: int
-        :rtype: int
-        """
+
         node = TreeNode(v)
         self.nodelist.append(node)
         n = len(self.nodelist)
@@ -43,7 +38,5 @@ class CBTInserter:
         return parent.val
 
     def get_root(self):
-        """
-        :rtype: TreeNode
-        """
+
         return self.nodelist[0]

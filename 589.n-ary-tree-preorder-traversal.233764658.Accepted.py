@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def preorder(self, root):
-        """
-        :type root: Node
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         stack = [root]

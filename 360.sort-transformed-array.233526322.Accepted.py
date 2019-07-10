@@ -12,13 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sortTransformedArray(self, nums, a, b, c):
-        """
-        :type nums: List[int]
-        :type a: int
-        :type b: int
-        :type c: int
-        :rtype: List[int]
-        """
+
         def transform(x):
             return a * x * x + b * x + c
         transformed = [transform(num) for num in nums]

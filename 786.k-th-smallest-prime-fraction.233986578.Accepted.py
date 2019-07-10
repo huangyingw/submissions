@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def kthSmallestPrimeFraction(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: List[int]
-        """
+
         def count_smaller_fractions(x):
             count, denominator, largest = 0, 1, [0, 1]
             for numerator in range(len(A) - 1):

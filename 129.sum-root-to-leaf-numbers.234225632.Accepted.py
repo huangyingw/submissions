@@ -8,10 +8,7 @@
 
 class Solution(object):
     def sumNumbers(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if root is None:
             return 0
         res = 0

@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minWindow(self, S, T):
-        """
-        :type S: str
-        :type T: str
-        :rtype: str
-        """
+
         next_in_s = [None for _ in range(len(S))]
         next_by_letter = [-1 for _ in range(26)]
         for i in range(len(S) - 1, -1, -1):

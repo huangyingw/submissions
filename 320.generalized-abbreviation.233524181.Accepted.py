@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def generateAbbreviations(self, word):
-        """
-        :type word: str
-        :rtype: List[str]
-        """
+
         abbreviations = [[]]
         for c in word:
             new_abbreviations = []

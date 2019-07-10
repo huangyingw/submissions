@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findIntegers(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+
 
         binary = bin(num)[2:][::-1]
 

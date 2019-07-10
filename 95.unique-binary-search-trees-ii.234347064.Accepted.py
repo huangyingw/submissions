@@ -8,10 +8,7 @@
 
 class Solution:
     def generateTrees(self, n):
-        """
-        :type n: int
-        :rtype: List[TreeNode]
-        """
+
         if n == 0:
             return []
         return self.generateSubtree(1, n)

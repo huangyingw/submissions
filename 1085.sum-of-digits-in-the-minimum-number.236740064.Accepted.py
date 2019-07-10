@@ -1,9 +1,6 @@
 class Solution(object):
     def sumOfDigits(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         if not A:
             return 0
         mini = min(A)

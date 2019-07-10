@@ -1,10 +1,7 @@
 
 class Solution:
     def detectCapitalUse(self, word):
-        """
-        :type word: str
-        :rtype: bool
-        """
+
         if len(word) == 1:
             return True
         if word.islower() or word.isupper():

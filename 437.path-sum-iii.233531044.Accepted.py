@@ -15,11 +15,7 @@ from collections import defaultdict
 
 class Solution(object):
     def pathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
+
         paths = defaultdict(int)
         paths[0] = 1
 

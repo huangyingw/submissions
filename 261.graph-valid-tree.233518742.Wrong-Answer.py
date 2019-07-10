@@ -15,18 +15,10 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validTree(self, n, edges):
-        """
-        :type n: int
-        :type edges: List[List[int]]
-        :rtype: bool
-        """
+
         class Solution(object):
             def validTree(self, n, edges):
-                """
-                :type n: int
-                :type edges: List[List[int]]
-                :rtype: bool
-                """
+
                 def dfs(node):
                     nbors = adjacency.pop(node, [])
                     for nbor in nbors:
@@ -43,11 +35,7 @@ class Solution(object):
 
 class Solution2(object):
     def validTree(self, n, edges):
-        """
-        :type n: int
-        :type edges: List[List[int]]
-        :rtype: bool
-        """
+
         def find(node):
             if parents[node] == -1:
                 return node

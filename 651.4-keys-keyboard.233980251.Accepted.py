@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxA(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         def helper(n):
             if n in memo:
                 return memo[n]

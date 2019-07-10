@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMaxLength(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         max_len = 0
         balance = 0
         balances = {0: -1}

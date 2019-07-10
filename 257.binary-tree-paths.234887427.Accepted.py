@@ -21,10 +21,7 @@
 
 class Solution(object):
     def binaryTreePaths(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[str]
-        """
+
         if not root:
             return []
         paths = []

@@ -5,10 +5,7 @@
 
 class Solution:
     def minCut(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         if not s or len(s) == 0:
             return 0
         n = len(s)

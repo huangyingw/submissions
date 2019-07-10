@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def orderOfLargestPlusSign(self, N, mines):
-        """
-        :type N: int
-        :type mines: List[List[int]]
-        :rtype: int
-        """
+
         mines = {(r, c) for r, c in mines}
         distances = [[0 for _ in range(N)] for _ in range(N)]
         plus = 0

@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def toHex(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
+
         if num == 0:
             return "0"
         if num < 0:

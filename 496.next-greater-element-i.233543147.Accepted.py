@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nextGreaterElement(self, findNums, nums):
-        """
-        :type findNums: List[int]
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         result = [-1 for _ in range(len(findNums))]
         find_to_i = {}
         for i, num in enumerate(findNums):

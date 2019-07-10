@@ -1,17 +1,11 @@
 class Trie:
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.children = {}
         self.is_word = False
 
     def insert(self, word):
-        """
-        Inserts a word into the trie.
-        :type word: str
-        :rtype: void
-        """
+
         curr = self
         for c in word:
             if c not in curr.children:
@@ -20,11 +14,7 @@ class Trie:
         curr.is_word = True
 
     def search(self, word):
-        """
-        Returns if the word is in the trie.
-        :type word: str
-        :rtype: bool
-        """
+
         curr = self
         for c in word:
             if c not in curr.children:
@@ -33,11 +23,7 @@ class Trie:
         return True if curr.is_word else False
 
     def startsWith(self, prefix):
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        :type prefix: str
-        :rtype: bool
-        """
+
         curr = self
         for c in prefix:
             if c not in curr.children:

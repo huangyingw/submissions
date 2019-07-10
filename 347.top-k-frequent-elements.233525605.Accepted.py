@@ -11,11 +11,7 @@ from collections import Counter
 
 class Solution(object):
     def topKFrequent(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
+
         n = len(nums)
         frequencies = [[] for _ in range(n + 1)]
         for num, freq in Counter(nums).items():

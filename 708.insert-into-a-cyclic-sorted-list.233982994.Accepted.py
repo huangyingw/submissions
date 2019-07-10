@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def insert(self, head, insertVal):
-        """
-        :type head: Node
-        :type insertVal: int
-        :rtype: Node
-        """
+
         if not head:
             new_node = Node(insertVal, None)
             new_node.next = new_node

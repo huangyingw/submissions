@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestRectangleArea(self, heights):
-        """
-        :type heights: List[int]
-        :rtype: int
-        """
+
         max_area = 0
         heights = [0] + heights + [0]
         stack = [0]

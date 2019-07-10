@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def coinChange(self, coins, amount):
-        """
-        :type coins: List[int]
-        :type amount: int
-        :rtype: int
-        """
+
         coins.sort(reverse=True)
         self.result = float("inf")
 

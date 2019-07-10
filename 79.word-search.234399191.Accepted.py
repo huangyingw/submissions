@@ -46,11 +46,7 @@ from collections import Counter
 
 class Solution:
     def exist(self, board, word):
-        """
-        :type board: List[List[str]]
-        :type word: str
-        :rtype: bool
-        """
+
         if not board or not board[0] or not word:
             return False
         if not self.checkContent(board, word):

@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def integerReplacement(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         operations = 0
         while n > 1:
             operations += 1

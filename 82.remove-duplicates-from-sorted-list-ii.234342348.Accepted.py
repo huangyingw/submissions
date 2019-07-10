@@ -7,10 +7,7 @@
 
 class Solution:
     def deleteDuplicates(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         dummy = prev = ListNode(0)
         dummy.next = head
         while head and head.next:

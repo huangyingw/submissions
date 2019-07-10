@@ -1,10 +1,6 @@
 class Solution(object):
     def shipWithinDays(self, weights, D):
-        """
-        :type weights: List[int]
-        :type D: int
-        :rtype: int
-        """
+
         high, low = sum(weights) + 1, max(weights)
         while(low < high):
             mid = (high + low) / 2
@@ -27,11 +23,7 @@ class Solution(object):
 
 class Solution(object):
     def shipWithinDays(self, weights, D):
-        """
-        :type weights: List[int]
-        :type D: int
-        :rtype: int
-        """
+
         left, right = max(weights), sum(weights)
         while left < right:
             curr_sum, groups, invalid = 0, 0, True

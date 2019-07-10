@@ -16,10 +16,7 @@ from collections import defaultdict
 
 class Solution(object):
     def longestWord(self, words):
-        """
-        :type words: List[str]
-        :rtype: str
-        """
+
         length_to_words = defaultdict(set)
         for word in words:
             length_to_words[len(word)].add(word)

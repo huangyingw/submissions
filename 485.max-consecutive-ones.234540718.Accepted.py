@@ -8,10 +8,7 @@ class Solution:
 
 
     def findMaxConsecutiveOnes(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         res = -1
         count = 0
         for i in range(len(nums)):
@@ -24,10 +21,7 @@ class Solution:
 
 
     def findMaxConsecutiveOnes(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         max_count = 0
         count = 0
         for n in nums:
@@ -47,9 +41,6 @@ class Solution:
 
 
     def findMaxConsecutiveOnes(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         temp = bytearray(nums).split(b'\x00')
         return max([len(i) for i in temp])

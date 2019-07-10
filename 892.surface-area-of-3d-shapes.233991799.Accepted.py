@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def surfaceArea(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         n = len(grid)
         area = 0
         for row in range(n):

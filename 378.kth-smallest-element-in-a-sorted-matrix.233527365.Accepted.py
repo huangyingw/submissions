@@ -13,11 +13,7 @@ import heapq
 
 class Solution(object):
     def kthSmallest(self, matrix, k):
-        """
-        :type matrix: List[List[int]]
-        :type k: int
-        :rtype: int
-        """
+
 
         rows, cols = len(matrix), len(matrix[0])
         if k > (rows * cols) // 2:

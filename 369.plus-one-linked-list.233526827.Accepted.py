@@ -19,10 +19,7 @@ class ListNode(object):
 
 class Solution(object):
     def plusOne(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         new_head = ListNode(0)
         new_head.next = head
         i, j = new_head, new_head

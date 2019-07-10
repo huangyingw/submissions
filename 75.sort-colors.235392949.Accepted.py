@@ -1,9 +1,6 @@
 class Solution(object):
     def sortColors(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
+
         index0, index1 = 0, 0
         for i in range(0, len(nums)):
             v = nums[i]

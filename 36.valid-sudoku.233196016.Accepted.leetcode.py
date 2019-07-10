@@ -1,9 +1,6 @@
 class Solution(object):
     def isValidSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: bool
-        """
+
         import collections
         dict_row, dict_col, dict_cell = collections.defaultdict(set), collections.defaultdict(set), collections.defaultdict(set)
         for row_index in range(1, 4):

@@ -1,9 +1,6 @@
 class Solution(object):
     def intToRoman(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
+
         thousands = ['', 'M', 'MM', 'MMM']
         hundreds = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM']
         tens = ['', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC']

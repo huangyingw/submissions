@@ -17,12 +17,7 @@ Output: "1"
 Example 2:
 Input: 4
 Output: "1211"
-"""
 
-
-class Solution(object):
-    def countAndSay(self, n):
-        """
         :type n: int
         :rtype: str
         """

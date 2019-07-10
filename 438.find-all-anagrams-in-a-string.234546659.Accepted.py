@@ -4,11 +4,7 @@ from collections import Counter
 
 class Solution(object):
     def findAnagrams(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: List[int]
-        """
+
         res = []
         pCounter = Counter(p)
         sCounter = Counter(s[:len(p) - 1])

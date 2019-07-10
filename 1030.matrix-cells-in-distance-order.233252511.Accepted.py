@@ -1,12 +1,6 @@
 class Solution(object):
     def allCellsDistOrder(self, R, C, r0, c0):
-        """
-        :type R: int
-        :type C: int
-        :type r0: int
-        :type c0: int
-        :rtype: List[List[int]]
-        """
+
         cells = [[x, y] for x in range(R) for y in range(C)]
         distance = {}
         for cell in cells:

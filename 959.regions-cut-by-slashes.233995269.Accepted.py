@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def regionsBySlashes(self, grid):
-        """
-        :type grid: List[str]
-        :rtype: int
-        """
+
         n = len(grid)
         UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
         parents = {}

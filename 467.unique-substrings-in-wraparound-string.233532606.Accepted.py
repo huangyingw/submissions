@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findSubstringInWraproundString(self, p):
-        """
-        :type p: str
-        :rtype: int
-        """
+
         substring_ending = [0] * 26
         length = 0
         for i, c in enumerate(p):

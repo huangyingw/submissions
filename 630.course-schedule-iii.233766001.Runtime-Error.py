@@ -17,10 +17,7 @@ import heapq
 
 class Solution(object):
     def scheduleCourse(self, courses):
-        """
-        :type courses: List[List[int]]
-        :rtype: int
-        """
+
         total_length = 0
         taken_courses = []
         courses.sort(key=lambda c: c[1])

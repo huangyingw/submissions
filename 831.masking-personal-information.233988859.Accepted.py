@@ -30,10 +30,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maskPII(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         if "@" in S:
             name, address = S.lower().split("@")
             return name[0] + "*****" + name[-1] + "@" + address

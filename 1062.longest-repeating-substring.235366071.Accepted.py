@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestRepeatingSubstring(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         def helper(guess):
             seen = set()
             for i in range(n - guess + 1):

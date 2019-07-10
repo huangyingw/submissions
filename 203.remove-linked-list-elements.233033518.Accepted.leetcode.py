@@ -7,11 +7,7 @@
 
 class Solution(object):
     def removeElements(self, head, val):
-        """
-        :type head: ListNode
-        :type val: int
-        :rtype: ListNode
-        """
+
 
         prehead = ListNode(-1)
         prehead.next = head

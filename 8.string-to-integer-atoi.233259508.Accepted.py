@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def myAtoi(self, str):
-        """
-        :type str: str
-        :rtype: int
-        """
+
         str = str.strip()
         negative = False
         if str and str[0] == '-':

@@ -10,10 +10,7 @@ class Solution:
 
 
     def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
+
 
         temp_list = []
         while head:
@@ -27,10 +24,7 @@ class Solution:
 
 
     def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
+
         fast = slow = head
 
         while fast and fast.next:

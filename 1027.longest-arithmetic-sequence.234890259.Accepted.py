@@ -1,9 +1,6 @@
 class Solution(object):
     def longestArithSeqLength(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         from collections import defaultdict
         dp = defaultdict(int)
 

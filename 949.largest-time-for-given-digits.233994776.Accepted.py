@@ -13,10 +13,7 @@ from itertools import permutations
 
 class Solution(object):
     def largestTimeFromDigits(self, A):
-        """
-        :type A: List[int]
-        :rtype: str
-        """
+
         best_minutes = -1
         for time in permutations(A):
             hours = time[0] * 10 + time[1]

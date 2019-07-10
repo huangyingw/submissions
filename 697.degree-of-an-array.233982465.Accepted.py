@@ -13,10 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findShortestSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         counts, limits = defaultdict(int), {}
         for i, num in enumerate(nums):
             counts[num] += 1

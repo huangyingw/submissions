@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         left, right = 1, n
         while left < right:
             mid = (left + right) // 2

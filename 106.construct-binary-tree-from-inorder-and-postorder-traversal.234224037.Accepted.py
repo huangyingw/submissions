@@ -8,11 +8,7 @@
 
 class Solution(object):
     def buildTree(self, inorder, postorder):
-        """
-        :type inorder: List[int]
-        :type postorder: List[int]
-        :rtype: TreeNode
-        """
+
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}
         return self.buildTreeUtil(inorder, postorder, inOrderMap, 0, n - 1, 0, n - 1)

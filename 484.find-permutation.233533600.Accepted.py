@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findPermutation(self, s):
-        """
-        :type s: str
-        :rtype: List[int]
-        """
+
         permutation, stack = [], []
         for i in range(1, len(s) + 1):
             stack.append(i)

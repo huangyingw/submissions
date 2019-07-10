@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minSteps(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         steps = 0
         divisor = 2
         while n > 1:

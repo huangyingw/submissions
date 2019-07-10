@@ -15,19 +15,14 @@ from collections import defaultdict
 
 class ValidWordAbbr(object):
     def __init__(self, dictionary):
-        """
-        :type dictionary: List[str]
-        """
+
         self.dictionary = set(dictionary)
         self.freq = defaultdict(int)
         for word in self.dictionary:
             self.freq[self.abbreviate(word)] += 1
 
     def isUnique(self, word):
-        """
-        :type word: str
-        :rtype: bool
-        """
+
         abbr = self.abbreviate(word)
         if word in self.dictionary:
             return self.freq[abbr] == 1

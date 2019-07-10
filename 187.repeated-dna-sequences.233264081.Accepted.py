@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRepeatedDnaSequences(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
         substrings, repeated = set(), set()
         TARGET = 10
         for i in range(len(s) - TARGET + 1):

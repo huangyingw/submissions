@@ -9,10 +9,7 @@ from collections import deque
 
 class Solution:
     def minDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
         queue = deque([(root, 1)])

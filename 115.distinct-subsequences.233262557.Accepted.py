@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numDistinct(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: int
-        """
+
         prev_subsequences = [1 for _ in range(len(s) + 1)]
         for r in range(1, len(t) + 1):
             subsequences = [0 for _ in range(len(s) + 1)]

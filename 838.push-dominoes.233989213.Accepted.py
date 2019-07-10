@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def pushDominoes(self, dominos):
-        """
-        :type dominos: str
-        :rtype: str
-        """
+
         prev_R = float("-inf")
         rights = []
         for i, c in enumerate(dominos):

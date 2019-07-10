@@ -1,9 +1,6 @@
 class Solution(object):
     def subsetsWithDup(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         def dfs(start):
             result.append(list(current))
             for index in range(start, len(nums)):

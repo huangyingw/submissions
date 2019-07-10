@@ -24,10 +24,7 @@
 
 class Solution(object):
     def invertTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         if not root:
             return
         leftTree = self.invertTree(root.left)
@@ -45,10 +42,7 @@ class Solution(object):
 
 class Solution(object):
     def invertTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         queue = [root]

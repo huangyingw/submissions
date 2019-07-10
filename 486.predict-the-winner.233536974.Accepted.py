@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def PredictTheWinner(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         def helper(left, right):
             if right < left:
                 return 0

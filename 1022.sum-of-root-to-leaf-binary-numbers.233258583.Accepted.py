@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sumRootToLeaf(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def helper(node, running):
             if not node:
                 return 0

@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minCost(self, costs):
-        """
-        :type costs: List[List[int]]
-        :rtype: int
-        """
+
         if not costs:
             return 0
         for i in range(1, len(costs)):

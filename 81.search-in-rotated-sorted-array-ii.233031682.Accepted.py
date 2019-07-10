@@ -13,11 +13,7 @@
 
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: bool
-        """
+
         left, right = 0, len(nums) - 1
         while left <= right:
             mid = (left + right) / 2

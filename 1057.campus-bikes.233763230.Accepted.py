@@ -24,11 +24,7 @@ import heapq
 
 class Solution(object):
     def assignBikes(self, workers, bikes):
-        """
-        :type workers: List[List[int]]
-        :type bikes: List[List[int]]
-        :rtype: List[int]
-        """
+
         distances = []
         for i, (x, y) in enumerate(workers):
             distances.append([])

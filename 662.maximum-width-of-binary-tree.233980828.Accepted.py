@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def widthOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
         max_width = 1

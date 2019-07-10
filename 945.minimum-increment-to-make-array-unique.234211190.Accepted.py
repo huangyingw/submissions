@@ -1,9 +1,6 @@
 class Solution(object):
     def minIncrementForUnique(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         if A is None or len(A) == 0:
             return 0
         res = 0

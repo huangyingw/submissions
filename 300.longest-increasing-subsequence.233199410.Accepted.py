@@ -10,10 +10,7 @@
 
 class Solution(object):
     def lengthOfLIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if len(nums) <= 1:
             return len(nums)
         count = [0 for _ in range(len(nums))]

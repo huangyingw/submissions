@@ -8,7 +8,7 @@ For example:
     ...
     26 -> Z
     27 -> AA
-    28 -> AB 
+    28 -> AB
     ...
 Example 1:
 Input: 1
@@ -19,12 +19,7 @@ Output: "AB"
 Example 3:
 Input: 701
 Output: "ZY"
-"""
 
-
-class Solution(object):
-    def convertToTitle(self, n):
-        """
         :type n: int
         :rtype: str
         """

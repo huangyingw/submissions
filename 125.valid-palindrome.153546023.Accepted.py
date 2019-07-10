@@ -34,10 +34,7 @@
 
 class Solution(object):
     def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         s = s.lower()
         start = 0
         end = len(s) - 1

@@ -7,10 +7,7 @@
 
 class Solution(object):
     def reverseList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if not head:
             return None
         prev, curr = None, head

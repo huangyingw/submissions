@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeInvalidParentheses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
         valid = []
         self.remove(s, valid, 0, 0, ('(', ')'))
         return valid

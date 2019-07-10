@@ -1,9 +1,6 @@
 class Solution(object):
     def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
+
 
         if grid is None or len(grid) == 0:
             return 0

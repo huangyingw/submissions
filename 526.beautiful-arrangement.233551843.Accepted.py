@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countArrangement(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         used = [False for _ in range(N + 1)]
         self.count = 0
 

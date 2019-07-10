@@ -8,10 +8,7 @@
 
 class Solution(object):
     def smallestFromLeaf(self, root):
-        """
-        :type root: TreeNode
-        :rtype: str
-        """
+
         self.result = "~"
 
         def dfs(node, A):

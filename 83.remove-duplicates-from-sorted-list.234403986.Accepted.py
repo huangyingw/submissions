@@ -8,10 +8,7 @@
 
 class Solution(object):
     def deleteDuplicates(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if head is None or head.next is None:
             return head
         root, tail, head = head, head, head.next

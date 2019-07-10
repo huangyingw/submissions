@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def prefixesDivBy5(self, A):
-        """
-        :type A: List[int]
-        :rtype: List[bool]
-        """
+
         result = []
         num = 0
         for bit in A:

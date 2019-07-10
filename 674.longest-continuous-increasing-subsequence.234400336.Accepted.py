@@ -1,10 +1,7 @@
 
 class Solution:
     def findLengthOfLCIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if len(nums) < 1:
             return 0
         temp = 1

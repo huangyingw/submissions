@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def guessNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         low, high = 1, n
         while True:
             mid = (low + high) // 2

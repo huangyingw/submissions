@@ -85,10 +85,7 @@
 
 class Solution(object):
     def calculateMinimumHP(self, dungeon):
-        """
-        :type dungeon: List[List[int]]
-        :rtype: int
-        """
+
         m = len(dungeon)
         n = len(dungeon[0])
         dp = [sys.maxint for _ in range(n + 1)]

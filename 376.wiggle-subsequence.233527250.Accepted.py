@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def wiggleMaxLength(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         max_length = 1

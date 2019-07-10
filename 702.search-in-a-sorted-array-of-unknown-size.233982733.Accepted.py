@@ -19,11 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def search(self, reader, target):
-        """
-        :type reader: ArrayReader
-        :type target: int
-        :rtype: int
-        """
+
         left, right = 0, 20000
         while left <= right:
             mid = (left + right) // 2

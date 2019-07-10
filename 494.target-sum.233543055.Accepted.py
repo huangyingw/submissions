@@ -13,11 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findTargetSumWays(self, nums, S):
-        """
-        :type nums: List[int]
-        :type S: int
-        :rtype: int
-        """
+
         sums = defaultdict(int)
         sums[0] = 1
         running = nums[:]

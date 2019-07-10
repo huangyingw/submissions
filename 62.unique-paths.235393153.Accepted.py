@@ -1,10 +1,6 @@
 class Solution:
     def uniquePaths(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+
         ans = 1
         m -= 1
         n -= 1

@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def threeSumMulti(self, A, target):
-        """
-        :type A: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         counts = [0] * 101
         for num in A:
             counts[num] += 1

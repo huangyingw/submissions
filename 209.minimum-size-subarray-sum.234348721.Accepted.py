@@ -1,10 +1,6 @@
 class Solution:
     def minSubArrayLen(self, s, nums):
-        """
-        :type s: int
-        :type nums: List[int]
-        :rtype: int
-        """
+
         l, r = 0, 0
         ret, sum = float('inf'), 0
         while r < len(nums):

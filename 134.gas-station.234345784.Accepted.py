@@ -1,10 +1,6 @@
 class Solution:
     def canCompleteCircuit(self, gas, cost):
-        """
-        :type gas: List[int]
-        :type cost: List[int]
-        :rtype: int
-        """
+
         start, total, tank = 0, 0, 0
         for i in range(len(gas)):
             curr = gas[i] - cost[i]

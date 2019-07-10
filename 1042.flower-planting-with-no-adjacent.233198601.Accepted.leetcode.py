@@ -1,10 +1,6 @@
 class Solution(object):
     def gardenNoAdj(self, N, paths):
-        """
-        :type N: int
-        :type paths: List[List[int]]
-        :rtype: List[int]
-        """
+
         plant = [1, 2, 3, 4]
         result = [0 for _ in range(N)]
         if not paths:

@@ -1,10 +1,6 @@
 class Solution(object):
     def mostCommonWord(self, paragraph, banned):
-        """
-        :type paragraph: str
-        :type banned: List[str]
-        :rtype: str
-        """
+
 
         banned = set(banned)
         count = collections.Counter(word for word in re.split('[ !?\',;.]',

@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxDistToClosest(self, seats):
-        """
-        :type seats: List[int]
-        :rtype: int
-        """
+
         empty_seats = []
         max_distance = 0
         last_seat = float("-inf")

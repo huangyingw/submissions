@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def generateMatrix(self, n):
-        """
-        :type n: int
-        :rtype: List[List[int]]
-        """
+
         spiral = [[0 for _ in range(n)] for _ in range(n)]
         row, col = 0, 0
         d_r, d_c = 0, 1

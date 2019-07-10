@@ -5,11 +5,7 @@ class Solution(object):
         self.memo.append(1)
 
     def fib(self, N):
-        """
-        DP with memo
-        :type N: int
-        :rtype: int
-        """
+
         if N < len(self.memo):
             return self.memo[N]
         for i in range(len(self.memo), N + 1):

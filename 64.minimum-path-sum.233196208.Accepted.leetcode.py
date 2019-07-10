@@ -1,9 +1,6 @@
 class Solution(object):
     def minPathSum(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         if not grid:
             return 0
         row, col = len(grid), len(grid[0])

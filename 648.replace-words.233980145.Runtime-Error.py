@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def replaceWords(self, dict, sentence):
-        """
-        :type dict: List[str]
-        :type sentence: str
-        :rtype: str
-        """
+
         result = []
         root = {}
         for word in dict:

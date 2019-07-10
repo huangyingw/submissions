@@ -1,8 +1,6 @@
 class LRUCache:
     def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
+
         self.capacity = capacity
         self.cache = {}
         self.queue = []
@@ -12,9 +10,7 @@ class LRUCache:
         self.queue.insert(0, key)
 
     def get(self, key):
-        """
-        :rtype: int
-        """
+
         if key in self.cache:
             self.updateQueue(key)
             return self.cache[key]
@@ -22,11 +18,7 @@ class LRUCache:
             return -1
 
     def set(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: nothing
-        """
+
         if not key or not value:
             return None
         if key in self.cache:

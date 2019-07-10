@@ -13,10 +13,7 @@ import heapq
 
 class Solution(object):
     def smallestRange(self, nums):
-        """
-        :type nums: List[List[int]]
-        :rtype: List[int]
-        """
+
         n = len(nums)
         window = [(nums[i][0], 0, i) for i in range(n)]
         heapq.heapify(window)

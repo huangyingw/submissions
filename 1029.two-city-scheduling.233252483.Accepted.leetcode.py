@@ -1,9 +1,6 @@
 class Solution(object):
     def twoCitySchedCost(self, costs):
-        """
-        :type costs: List[List[int]]
-        :rtype: int
-        """
+
         result = 0
         costs = sorted(costs, key=lambda x: x[0] - x[1])
         for index in range(len(costs)):

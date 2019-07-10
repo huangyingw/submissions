@@ -10,11 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def complexNumberMultiply(self, a, b):
-        """
-        :type a: str
-        :type b: str
-        :rtype: str
-        """
+
         a_real, a_im = a.split("+")
         a_real, a_im = int(a_real), int(a_im[:-1])
         b_real, b_im = b.split("+")

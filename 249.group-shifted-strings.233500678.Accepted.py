@@ -13,10 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def groupStrings(self, strings):
-        """
-        :type strings: List[str]
-        :rtype: List[List[str]]
-        """
+
         shifted = defaultdict(list)
         for s in strings:
             shift = ord(s[0]) - ord('a')

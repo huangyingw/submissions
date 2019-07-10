@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMode(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         self.prev = float("inf")
         self.count = 0
         self.mode_count = 0

@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findLonelyPixel(self, picture):
-        """
-        :type picture: List[List[str]]
-        :rtype: int
-        """
+
         pixels = 0
         rows, cols = len(picture), len(picture[0])
         col_counts = [0 for _ in range(cols)]

@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if len(nums) < 2:
             return sum(nums)
         loot, prev = 0, 0

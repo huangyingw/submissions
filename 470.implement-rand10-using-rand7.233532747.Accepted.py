@@ -11,9 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def rand10(self):
-        """
-        :rtype: int
-        """
+
         units = rand7() - 1
         sevens = rand7() - 1
         num = 7 * sevens + units

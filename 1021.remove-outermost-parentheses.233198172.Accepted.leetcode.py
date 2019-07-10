@@ -1,9 +1,6 @@
 class Solution(object):
     def removeOuterParentheses(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         temp, result = "", ""
         start_bracket = 0
         for char in S:

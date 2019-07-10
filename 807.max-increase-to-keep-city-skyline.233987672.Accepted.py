@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxIncreaseKeepingSkyline(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         row_sky = [0 for _ in range(rows)]
         col_sky = [0 for _ in range(cols)]

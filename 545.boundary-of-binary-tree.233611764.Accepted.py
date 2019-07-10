@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def boundaryOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         def left_side(node):
             if not node or (not node.left and not node.right):
                 return

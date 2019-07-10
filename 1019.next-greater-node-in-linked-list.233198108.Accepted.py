@@ -25,10 +25,7 @@ The given list has length in the range [0, 10000].
 
 class Solution(object):
     def nextLargerNodes(self, head):
-        """
-        :type head: ListNode
-        :rtype: List[int]
-        """
+
         result = []
         while head:
             result.append(head.val)

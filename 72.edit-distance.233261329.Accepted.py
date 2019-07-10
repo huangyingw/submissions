@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minDistance(self, word1, word2):
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: int
-        """
+
         def edit_distance(i, j):
             if i < 0 or j < 0:
                 return i + 1 + j + 1

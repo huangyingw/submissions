@@ -5,10 +5,7 @@
 
 class Solution:
     def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         memo = [0] * len(nums)
         memo[-1] = 1
 

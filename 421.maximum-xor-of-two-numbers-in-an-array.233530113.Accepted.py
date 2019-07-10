@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMaximumXOR(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         mask = 0
         max_xor = 0
         for bit in range(31, -1, -1):

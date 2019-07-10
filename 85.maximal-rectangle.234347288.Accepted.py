@@ -1,9 +1,6 @@
 class Solution:
     def maximalRectangle(self, matrix):
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
+
         if not matrix or not matrix[0]:
             return 0
         result, n = 0, len(matrix[0])

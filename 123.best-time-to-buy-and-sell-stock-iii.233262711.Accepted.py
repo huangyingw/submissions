@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
+
         buy1, buy2 = float('-inf'), float('-inf')
         sell1, sell2 = 0, 0
         for price in prices:

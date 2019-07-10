@@ -3,10 +3,7 @@ from collections import defaultdict
 
 class Solution:
     def accountsMerge(self, accounts):
-        """
-        :type accounts: List[List[str]]
-        :rtype: List[List[str]]
-        """
+
         owners, roots = {}, {}
         for account in accounts:
             for i in range(1, len(account)):

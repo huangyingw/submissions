@@ -17,18 +17,12 @@ import random
 
 class RandomizedCollection(object):
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.nums = []
         self.indices = defaultdict(set)
 
     def insert(self, val):
-        """
-        Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
-        :type val: int
-        :rtype: bool
-        """
+
         result = True
         if val in self.indices:
             result = False
@@ -37,11 +31,7 @@ class RandomizedCollection(object):
         return result
 
     def remove(self, val):
-        """
-        Removes a value from the collection. Returns true if the collection contained the specified element.
-        :type val: int
-        :rtype: bool
-        """
+
         if val not in self.indices:
             return False
         i = self.indices[val].pop()
@@ -58,8 +48,5 @@ class RandomizedCollection(object):
         return True
 
     def getRandom(self):
-        """
-        Get a random element from the collection.
-        :rtype: int
-        """
+
         return self.nums[random.randint(0, len(self.nums) - 1)]

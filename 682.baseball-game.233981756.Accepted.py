@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def calPoints(self, ops):
-        """
-        :type ops: List[str]
-        :rtype: int
-        """
+
         points = []
         for op in ops:
             if op == "+":

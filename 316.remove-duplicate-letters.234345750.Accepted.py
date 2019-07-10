@@ -1,9 +1,6 @@
 class Solution:
     def removeDuplicateLetters(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         if not s or len(s) < 2:
             return s
         count = [0] * 26

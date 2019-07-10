@@ -1,9 +1,6 @@
 class Solution(object):
     def removeDuplicates(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         stack = []
         if not S:
             return ""

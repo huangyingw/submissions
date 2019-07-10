@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def letterCasePermutation(self, S):
-        """
-        :type S: str
-        :rtype: List[str]
-        """
+
         permutations = [[]]
         for c in S:
             if "0" <= c <= "9":

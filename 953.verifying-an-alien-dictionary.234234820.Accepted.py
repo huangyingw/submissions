@@ -1,10 +1,6 @@
 class Solution(object):
     def isAlienSorted(self, words, order):
-        """
-        :type words: List[str]
-        :type order: str
-        :rtype: bool
-        """
+
         order_map = {}
         for i, v in enumerate(order):
             order_map[v] = i

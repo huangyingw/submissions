@@ -7,10 +7,7 @@
 
 class Solution(object):
     def plusOne(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         dummy = ListNode(0)
         dummy.next = head
         place_stop, tail = dummy, dummy

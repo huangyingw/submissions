@@ -1,11 +1,6 @@
 class Solution(object):
     def maxSumTwoNoOverlap(self, A, L, M):
-        """
-        :type A: List[int]
-        :type L: int
-        :type M: int
-        :rtype: int
-        """
+
         cumm_sum = [0]
         for index in range(len(A)):
             cumm_sum.append(cumm_sum[index] + A[index])

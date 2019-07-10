@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def wordPatternMatch(self, pattern, str):
-        """
-        :type pattern: str
-        :type str: str
-        :rtype: bool
-        """
+
         m, n = len(pattern), len(str)
 
         def is_match(i, j):

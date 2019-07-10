@@ -1,10 +1,6 @@
 class Solution(object):
     def validateStackSequences(self, pushed, popped):
-        """
-        :type pushed: List[int]
-        :type popped: List[int]
-        :rtype: bool
-        """
+
         in_stack = []
         pos = 0
         while pos != len(pushed):

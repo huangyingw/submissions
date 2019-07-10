@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lengthOfLIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         LIS = []
         for num in nums:
             list_nb = self.binary_search(num, LIS)

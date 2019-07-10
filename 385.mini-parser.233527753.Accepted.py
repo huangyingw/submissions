@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def deserialize(self, s):
-        """
-        :type s: str
-        :rtype: NestedInteger
-        """
+
         return self.helper(eval(s))
 
     def helper(self, s_eval):

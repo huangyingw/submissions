@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def maxTurbulenceSize(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         if len(A) == 1:
             return 1
         result = 0

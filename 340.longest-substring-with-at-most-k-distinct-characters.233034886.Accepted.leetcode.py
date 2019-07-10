@@ -1,10 +1,6 @@
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
+
         count = [0] * 256
         i, numDistinct, maxLen = 0, 0, 0
         for j in range(len(s)):

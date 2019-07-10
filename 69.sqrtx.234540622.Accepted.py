@@ -2,10 +2,7 @@
 class Solution:
 
     def mySqrt(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+
         low = 0
         high = x
         while low <= high:
@@ -20,10 +17,7 @@ class Solution:
 
 
     def mySqrt(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+
         if x == 0:
             return 0
         low = 1

@@ -7,10 +7,7 @@
 
 class Solution(object):
     def insertionSortList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
 
         if head is None:
             return None

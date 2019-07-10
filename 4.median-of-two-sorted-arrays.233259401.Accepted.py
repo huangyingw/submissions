@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMedianSortedArrays(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: float
-        """
+
         def get_kth_smallest(a_start, b_start, k):
             if k <= 0 or k > len(A) - a_start + len(B) - b_start:
                 raise ValueError('k is out of the bounds of the input lists')

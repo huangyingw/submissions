@@ -23,10 +23,7 @@ from collections import deque
 
 class Solution(object):
     def predictPartyVictory(self, senate):
-        """
-        :type senate: str
-        :rtype: str
-        """
+
         n = len(senate)
         d, r = deque(), deque()
         for i, c in enumerate(senate):

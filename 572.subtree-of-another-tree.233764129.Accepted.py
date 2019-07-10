@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isSubtree(self, s, t):
-        """
-        :type s: TreeNode
-        :type t: TreeNode
-        :rtype: bool
-        """
+
         def serialize(node):
             if not node:
                 serial.append("

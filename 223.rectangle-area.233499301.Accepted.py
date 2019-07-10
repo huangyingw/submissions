@@ -11,17 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def computeArea(self, A, B, C, D, E, F, G, H):
-        """
-        :type A: int
-        :type B: int
-        :type C: int
-        :type D: int
-        :type E: int
-        :type F: int
-        :type G: int
-        :type H: int
-        :rtype: int
-        """
+
         x_lhs = max(A, E)
         x_rhs = min(C, G)
         x_overlap = max(x_rhs - x_lhs, 0)

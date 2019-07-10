@@ -5,10 +5,7 @@
 class Solution:
 
     def addDigits(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+
         while True:
             result = 0
             while num != 0:
@@ -23,20 +20,14 @@ class Solution:
 
 
     def addDigits(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+
         while num >= 10:
             num = sum(map(int, str(num)))
         return num
 
 
     def addDigits(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+
         if num == 0:
             return 0
         else:

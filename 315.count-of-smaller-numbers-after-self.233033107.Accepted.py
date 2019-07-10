@@ -20,10 +20,7 @@ class TreeNode(object):
 
 class Solution(object):
     def countSmaller(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         if len(nums) == 0:
             return []
         node = TreeNode(nums[len(nums) - 1])

@@ -15,10 +15,7 @@
 
 class Solution:
     def sortedListToBST(self, head):
-        """
-        :type head: ListNode
-        :rtype: TreeNode
-        """
+
         return self.dfs(head, None)
 
     def dfs(self, head, tail):

@@ -1,10 +1,7 @@
 
 class Solution(object):
     def gameOfLife(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: void Do not return anything, modify board in-place instead.
-        """
+
         def count(x, y):
             res = 0
             for r in range(x - 1, x + 2):

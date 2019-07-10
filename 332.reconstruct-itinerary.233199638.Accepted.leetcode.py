@@ -3,10 +3,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findItinerary(self, tickets):
-        """
-        :type tickets: List[List[str]]
-        :rtype: List[str]
-        """
+
         n = len(tickets)
         trips = defaultdict(list)
         for x in tickets:

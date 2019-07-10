@@ -46,17 +46,13 @@ class DLL:
 
 class LRUCache(object):
     def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
+
         self.capacity = capacity
         self.queue = DLL()
         self.mapping = {}
 
     def get(self, key):
-        """
-        :rtype: int
-        """
+
         if key not in self.mapping:
             return -1
         node = self.mapping[key]
@@ -64,11 +60,7 @@ class LRUCache(object):
         return node.val
 
     def set(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: nothing
-        """
+
         if key in self.mapping:
             node = self.mapping[key]
             node.val = value

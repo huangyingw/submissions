@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def gcdOfStrings(self, str1, str2):
-        """
-        :type str1: str
-        :type str2: str
-        :rtype: str
-        """
+
         a, b = len(str1), len(str2)
         if a < b:
             a, b = b, a

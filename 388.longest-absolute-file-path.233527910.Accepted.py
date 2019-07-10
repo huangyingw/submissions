@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lengthLongestPath(self, input):
-        """
-        :type input: str
-        :rtype: int
-        """
+
         longest = 0
         depths = [0]
         for line in input.splitlines():

@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRadius(self, houses, heaters):
-        """
-        :type houses: List[int]
-        :type heaters: List[int]
-        :rtype: int
-        """
+
         heaters.sort()
         houses.sort()
         heaters = [float("-inf")] + heaters + [float("inf")]

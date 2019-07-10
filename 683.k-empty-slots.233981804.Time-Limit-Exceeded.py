@@ -21,11 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def kEmptySlots(self, flowers, k):
-        """
-        :type flowers: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         n = len(flowers)
         days = [None for _ in range(n)]
         for day, pos in enumerate(flowers, 1):

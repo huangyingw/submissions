@@ -8,10 +8,7 @@
 
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
 
         if nums is None or len(nums) == 0:
             return None

@@ -8,10 +8,7 @@
 
 class Solution(object):
     def sumRootToLeaf(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def traversal(root, paths, pathlen, allpaths):
             if not root:
                 return

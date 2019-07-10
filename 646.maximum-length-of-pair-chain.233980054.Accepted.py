@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findLongestChain(self, pairs):
-        """
-        :type pairs: List[List[int]]
-        :rtype: int
-        """
+
         pairs.sort(key=lambda x: x[0])
         chain = 0
         end = pairs[0][0] - 1

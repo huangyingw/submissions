@@ -1,10 +1,7 @@
 
 class Solution:
     def reverseVowels(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         vowels = set(list("aeiouAEIOU"))
         s = list(s)
         ptr_1, ptr_2 = 0, len(s) - 1

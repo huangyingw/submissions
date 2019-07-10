@@ -1,11 +1,7 @@
 
 class Solution:
     def findMaxAverage1(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: float
-        """
+
         dp = [0]
         for x in nums:
             dp.append(dp[-1] + x)

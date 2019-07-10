@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def selfDividingNumbers(self, left, right):
-        """
-        :type left: int
-        :type right: int
-        :rtype: List[int]
-        """
+
         def is_self_dividing(num):
             copy = num
             while copy > 0:

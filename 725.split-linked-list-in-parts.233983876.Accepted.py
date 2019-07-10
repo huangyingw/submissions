@@ -24,11 +24,7 @@ class ListNode(object):
 
 class Solution(object):
     def splitListToParts(self, root, k):
-        """
-        :type root: ListNode
-        :type k: int
-        :rtype: List[ListNode]
-        """
+
         node, count = root, 0
         while node:
             count += 1

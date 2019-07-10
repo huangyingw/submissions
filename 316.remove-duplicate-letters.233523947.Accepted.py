@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeDuplicateLetters(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         s_set = sorted(set(s))
         for c in s_set:
             suffix = s[s.index(c):]

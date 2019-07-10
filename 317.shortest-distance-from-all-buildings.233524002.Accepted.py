@@ -16,10 +16,7 @@ from copy import deepcopy
 
 class Solution(object):
     def shortestDistance(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         house = 0
         distances = deepcopy(grid)

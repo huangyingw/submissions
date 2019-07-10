@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         cand1, count1 = None, 0
         cand2, count2 = None, 0
         for num in nums:

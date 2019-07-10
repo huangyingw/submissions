@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def gameOfLife(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: void Do not return anything, modify board in-place instead.
-        """
+
         if not board or not board[0]:
             return
         rows, cols = len(board), len(board[0])

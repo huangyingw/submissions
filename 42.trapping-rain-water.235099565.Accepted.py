@@ -5,10 +5,7 @@
 
 class Solution(object):
     def trap(self, height):
-        """
-        :type height: List[int]
-        :rtype: int
-        """
+
         if not height:
             return 0
         left, right = 0, len(height) - 1

@@ -1,9 +1,6 @@
 class Solution:
     def minCostII(self, costs):
-        """
-        :type costs: List[List[int]]
-        :rtype: int
-        """
+
         if not costs or not costs[0]:
             return 0
         pmin1, pmin2 = -1, -1

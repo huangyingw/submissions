@@ -14,21 +14,13 @@ from collections import defaultdict
 
 class WordDistance(object):
     def __init__(self, words):
-        """
-        initialize your data structure here.
-        :type words: List[str]
-        """
+
         self.word_indices = defaultdict(list)
         for i, word in enumerate(words):
             self.word_indices[word].append(i)
 
     def shortest(self, word1, word2):
-        """
-        Adds a word into the data structure.
-        :type word1: str
-        :type word2: str
-        :rtype: int
-        """
+
         i1 = self.word_indices[word1]
         i2 = self.word_indices[word2]
         distance = float('inf')

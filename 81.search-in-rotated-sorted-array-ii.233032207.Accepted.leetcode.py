@@ -1,10 +1,6 @@
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: bool
-        """
+
         def get(start, end):
             if start > end:
                 return False

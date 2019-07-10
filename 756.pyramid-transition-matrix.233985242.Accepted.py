@@ -18,11 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def pyramidTransition(self, bottom, allowed):
-        """
-        :type bottom: str
-        :type allowed: List[str]
-        :rtype: bool
-        """
+
         triangles = defaultdict(list)
         for triple in allowed:
             triangles[triple[:-1]].append(triple[-1])

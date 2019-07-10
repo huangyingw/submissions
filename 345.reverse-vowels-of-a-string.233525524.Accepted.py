@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def reverseVowels(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         vowels = {"a", "e", "i", "o", "u"}
         vowels |= {c.upper() for c in vowels}
         vowel_i = [i for i, c in enumerate(s) if c in vowels]

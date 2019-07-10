@@ -16,11 +16,7 @@
 
 class Solution(object):
     def searchMatrix(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
+
         if not matrix:
             return 0
         left, right = 0, len(matrix[0]) - 1

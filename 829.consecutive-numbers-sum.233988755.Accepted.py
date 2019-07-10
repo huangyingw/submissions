@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def consecutiveNumbersSum(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         k = 1
         temp = N - ((k + 1) * k) // 2
         result = 0

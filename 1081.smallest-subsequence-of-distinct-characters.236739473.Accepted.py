@@ -1,9 +1,6 @@
 class Solution(object):
     def smallestSubsequence(self, text):
-        """
-        :type text: str
-        :rtype: str
-        """
+
         if not text:
             return ''
         import collections

@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestOverlap(self, A, B):
-        """
-        :type A: List[List[int]]
-        :type B: List[List[int]]
-        :rtype: int
-        """
+
         def image_to_bits(image):
             bits = []
             for row in image:

@@ -24,20 +24,11 @@ class LogSystem(object):
         self.logs = []
 
     def put(self, id, timestamp):
-        """
-        :type id: int
-        :type timestamp: str
-        :rtype: void
-        """
+
         self.logs.append((id, timestamp))
 
     def retrieve(self, s, e, gra):
-        """
-        :type s: str
-        :type e: str
-        :type gra: str
-        :rtype: List[int]
-        """
+
         result = []
         pref = self.prefixes[gra]
         s_prefix, e_prefix = s[:pref], e[:pref]

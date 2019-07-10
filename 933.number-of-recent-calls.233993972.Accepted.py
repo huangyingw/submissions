@@ -19,10 +19,7 @@ class RecentCounter:
         self.WINDOW = 3000
 
     def ping(self, t):
-        """
-        :type t: int
-        :rtype: int
-        """
+
         self.times.append(t)
         while t - self.times[0] > self.WINDOW:
             self.times.popleft()

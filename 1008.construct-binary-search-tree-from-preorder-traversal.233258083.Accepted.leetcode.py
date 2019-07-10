@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def bstFromPreorder(self, preorder):
-        """
-        :type preorder: List[int]
-        :rtype: TreeNode
-        """
+
         self.i = 0
 
         def helper(max_value=float("inf")):

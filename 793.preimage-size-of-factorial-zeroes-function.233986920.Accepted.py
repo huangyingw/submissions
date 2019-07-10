@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def preimageSizeFZF(self, K):
-        """
-        :type K: int
-        :rtype: int
-        """
+
         def factorial_zeros(n):
             factor = 5
             result = 0

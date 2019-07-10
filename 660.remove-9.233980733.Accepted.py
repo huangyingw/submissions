@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def newInteger(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         result = []
         while n:
             result.append(str(n % 9))

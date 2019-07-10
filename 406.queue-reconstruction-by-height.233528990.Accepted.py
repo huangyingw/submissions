@@ -14,10 +14,7 @@ from collections import defaultdict
 
 class Solution(object):
     def reconstructQueue(self, people):
-        """
-        :type people: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         queue = []
         height_groups = defaultdict(list)
         for height, in_front in people:

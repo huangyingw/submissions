@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def validateStackSequences(self, pushed, popped):
-        """
-        :type pushed: List[int]
-        :type popped: List[int]
-        :rtype: bool
-        """
+
         stack = []
         i = 0
         for num in pushed:

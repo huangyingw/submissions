@@ -40,28 +40,18 @@ class SegementTree(object):
 
 class NumArray(object):
     def __init__(self, nums):
-        """
-        :type nums: List[int]
-        """
+
         self.nums = nums
         self.segment_tree = SegementTree(len(nums))
         for index, num in enumerate(nums):
             self.segment_tree.update(index, num)
 
     def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: None
-        """
+
         diff = val - self.nums[i]
         self.segment_tree.update(i, diff)
         self.nums[i] = val
 
     def sumRange(self, i, j):
-        """
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
+
         return self.segment_tree.range_sum(i, j)

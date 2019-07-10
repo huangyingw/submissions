@@ -1,9 +1,6 @@
 class Solution:
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         n = len(s)
         dp = [0] * (n + 1)
         dp[0] = 1
@@ -19,10 +16,7 @@ class Solution:
         return dp[n]
 
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         f0 = 0
         e0, e1, e2 = 1, 0, 0
         for c in s:

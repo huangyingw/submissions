@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def constructFromPrePost(self, pre, post):
-        """
-        :type pre: List[int]
-        :type post: List[int]
-        :rtype: TreeNode
-        """
+
         def helper(pre_start, pre_end, post_start, post_end):
 
             if pre_start == pre_end:

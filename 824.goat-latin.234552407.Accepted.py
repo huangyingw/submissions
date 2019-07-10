@@ -9,7 +9,7 @@ If a word begins with a consonant (i.e. not a vowel), remove the first letter an
 For example, the word "goat" becomes "oatgma".
 Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
 For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
-Return the final sentence representing the conversion from S to Goat Latin. 
+Return the final sentence representing the conversion from S to Goat Latin.
 Example 1:
 Input: "I speak Goat Latin"
 Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
@@ -19,12 +19,7 @@ Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaa
 Notes:
 S contains only uppercase, lowercase and spaces. Exactly one space between each word.
 1 <= S.length <= 150.
-"""
 
-
-class Solution(object):
-    def toGoatLatin(self, S):
-        """
         :type S: str
         :rtype: str
         """

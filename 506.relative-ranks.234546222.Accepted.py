@@ -1,10 +1,7 @@
 
 class Solution:
     def findRelativeRanks(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[str]
-        """
+
         N = len(nums)
         p = [(n, i) for i, n in enumerate(nums)]
         p = sorted(p, key=lambda x: x[0], reverse=True)

@@ -7,11 +7,7 @@
 
 class Solution(object):
     def rotateRight(self, head, k):
-        """
-        :type head: ListNode
-        :type k: int
-        :rtype: ListNode
-        """
+
         if k == 0:
             return head
         if not head:

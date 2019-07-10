@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isValidSerialization(self, preorder):
-        """
-        :type preorder: str
-        :rtype: bool
-        """
+
         if not preorder:
             return True
         expected_leaves = 1

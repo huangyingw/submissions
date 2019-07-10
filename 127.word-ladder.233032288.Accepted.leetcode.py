@@ -1,11 +1,6 @@
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
-        """
-        :type beginWord: str
-        :type endWord: str
-        :type wordList: List[str]
-        :rtype: int
-        """
+
         d = {}
         for word in wordList:
             for i in range(len(word)):

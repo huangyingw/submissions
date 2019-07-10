@@ -17,13 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def profitableSchemes(self, G, P, group, profit):
-        """
-        :type G: int
-        :type P: int
-        :type group: List[int]
-        :type profit: List[int]
-        :rtype: int
-        """
+
         MOD = 10 ** 9 + 7
         schemes = [[0] * (G + 1) for _ in range(P + 1)]
         schemes[0][0] = 1

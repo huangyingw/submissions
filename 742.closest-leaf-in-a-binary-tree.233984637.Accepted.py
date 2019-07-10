@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findClosestLeaf(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: int
-        """
+
         nearest_leaves = {0: (float("inf"), 0)}
 
         def closest_down(node):

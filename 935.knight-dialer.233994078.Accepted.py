@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def knightDialer(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         can_reach = [[4, 6],
                      [6, 8],
                      [7, 9],

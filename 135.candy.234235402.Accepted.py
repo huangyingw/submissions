@@ -1,9 +1,6 @@
 class Solution(object):
     def candy(self, ratings):
-        """
-        :type ratings: List[int]
-        :rtype: int
-        """
+
 
         if ratings is None or len(ratings) == 0:
             return 0

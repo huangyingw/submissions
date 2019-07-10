@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shortestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         longest_prefix_suffix = self.kmp_table(s + '*' + s[::-1])
         return s[:longest_prefix_suffix:-1] + s
 

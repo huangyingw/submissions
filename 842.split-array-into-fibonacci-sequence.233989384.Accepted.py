@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def splitIntoFibonacci(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
+
         MAX_NUM = 2 ** 31 - 1
 
         def helper(i, n1, n2):

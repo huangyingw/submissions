@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numComponents(self, head, G):
-        """
-        :type head: ListNode
-        :type G: List[int]
-        :rtype: int
-        """
+
         H = set(G)
         count = 0
         connected = False

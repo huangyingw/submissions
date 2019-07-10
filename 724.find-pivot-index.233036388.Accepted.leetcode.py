@@ -1,9 +1,6 @@
 class Solution(object):
     def pivotIndex(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         totalsum = sum(nums)
         leftsum = 0
         for i, v in enumerate(nums):

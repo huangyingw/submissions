@@ -1,17 +1,11 @@
-"""
-time: O(N)
-space: O(1)
-"""
+
 import heapq
 from collections import Counter
 
 
 class Solution:
     def reorganizeString(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         result = ''
         c = Counter(S)
         l = []

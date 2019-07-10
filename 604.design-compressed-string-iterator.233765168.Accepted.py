@@ -15,18 +15,14 @@ _project_ = 'leetcode'
 
 class StringIterator(object):
     def __init__(self, compressedString):
-        """
-        :type compressedString: str
-        """
+
         self.letter = None
         self.count = 0
         self.i = 0
         self.s = compressedString
 
     def next(self):
-        """
-        :rtype: str
-        """
+
         if not self.hasNext():
             return " "
         if self.count == 0:
@@ -35,9 +31,7 @@ class StringIterator(object):
         return self.letter
 
     def hasNext(self):
-        """
-        :rtype: bool
-        """
+
         return self.count > 0 or self.i < len(self.s)
 
     def move(self):

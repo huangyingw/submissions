@@ -2,10 +2,7 @@
 class Solution:
 
     def flipAndInvertImage(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         for r in range(len(A)):
             for c in range(len(A[0])):
 
@@ -16,10 +13,7 @@ class Solution:
 
 
     def flipAndInvertImage(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         reverse = []
         for i in A:
             temp = []

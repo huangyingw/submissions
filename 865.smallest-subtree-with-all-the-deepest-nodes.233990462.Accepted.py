@@ -15,10 +15,7 @@ from collections import namedtuple
 
 class Solution(object):
     def subtreeWithAllDeepest(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         Result = namedtuple("Result", ["node", "depth"])
 
         def helper(node):

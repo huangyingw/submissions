@@ -2,10 +2,7 @@
 class Solution:
 
     def firstUniqChar(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         for i in range(len(s)):
             if s.count(s[i]) == 1:
                 return i
@@ -15,10 +12,7 @@ class Solution:
 
 
     def firstUniqChar(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         res = []
         ret = len(s)
         for i in set(s):

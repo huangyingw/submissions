@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minDeletionSize(self, A):
-        """
-        :type A: List[str]
-        :rtype: int
-        """
+
         rows, cols = len(A), len(A[0])
         cols_deleted = 0
         rows_to_check = {row for row in range(1, rows)}

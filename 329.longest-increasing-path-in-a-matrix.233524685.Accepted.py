@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestIncreasingPath(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: int
-        """
+
         if not matrix or not matrix[0]:
             return 0
         longest = 0

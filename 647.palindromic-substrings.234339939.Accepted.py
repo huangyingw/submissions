@@ -1,9 +1,6 @@
 class Solution:
     def countSubstrings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         result = 0
         for i in range(len(s)):
             result += self.getCount(s, i, i)

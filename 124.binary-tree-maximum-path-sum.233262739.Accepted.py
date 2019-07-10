@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxPathSum(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         return self.helper(root)[0]
 
     def helper(self, node):

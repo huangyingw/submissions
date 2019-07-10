@@ -14,10 +14,7 @@ from collections import Counter
 
 class Solution(object):
     def reorderedPowerOf2(self, N):
-        """
-        :type N: int
-        :rtype: bool
-        """
+
         digit_count = Counter(str(N))
         len_N = len(str(N))
         power_of_two = 2 ** int(ceil(log(10 ** (len_N - 1), 2)))

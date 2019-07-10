@@ -7,10 +7,7 @@
 
 class Solution(object):
     def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
+
         rev = None
         slow, fast = head, head.next
         while fast and fast.next:

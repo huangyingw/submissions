@@ -17,10 +17,7 @@ class UndirectedGraphNode(object):
 
 class Solution(object):
     def cloneGraph(self, node):
-        """
-        :type node: UndirectedGraphNode
-        :rtype: UndirectedGraphNode
-        """
+
         if not node:
             return
         cloned_start = UndirectedGraphNode(node.label)

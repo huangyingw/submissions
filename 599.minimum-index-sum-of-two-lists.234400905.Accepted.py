@@ -2,11 +2,7 @@
 class Solution:
 
     def findRestaurant(self, list1, list2):
-        """
-        :type list1: List[str]
-        :type list2: List[str]
-        :rtype: List[str]
-        """
+
         common = set(list1) & set(list2)
         index_sum = 0
         res = []

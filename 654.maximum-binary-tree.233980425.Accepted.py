@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
         def helper(i, j):
             if i > j:
                 return None

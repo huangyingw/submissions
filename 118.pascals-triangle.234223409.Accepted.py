@@ -1,9 +1,6 @@
 class Solution:
     def generate(self, numRows):
-        """
-        :type numRows: int
-        :rtype: List[List[int]]
-        """
+
         result = []
         for i in range(numRows):
             result.append([0] * (i + 1))

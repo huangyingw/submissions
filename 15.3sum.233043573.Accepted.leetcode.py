@@ -14,10 +14,7 @@
 
 class Solution(object):
     def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         nums.sort()
         if (len(nums) >= 3) and (nums[0] == nums[len(nums) - 1]) and (nums[0] == 0):
             return [[0, 0, 0]]

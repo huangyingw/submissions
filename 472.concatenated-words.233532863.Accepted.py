@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findAllConcatenatedWordsInADict(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[str]
-        """
+
         def is_concat(word):
             if not word or word in word_set:
                 return True

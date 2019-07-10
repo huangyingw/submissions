@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def distanceK(self, root, target, K):
-        """
-        :type root: TreeNode
-        :type target: TreeNode
-        :type K: int
-        :rtype: List[int]
-        """
+
         results = []
 
         def nodes_at_distance(node, distance):

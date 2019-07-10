@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def checkRecord(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         BASE = 10 ** 9 + 7
         records = [1, 2]
         zero, one, two = 1, 1, 0

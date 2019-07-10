@@ -3,10 +3,7 @@ from collections import defaultdict
 
 class Solution:
     def permuteUnique(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         nums.sort()
         ret = []
         used = defaultdict(lambda: False)

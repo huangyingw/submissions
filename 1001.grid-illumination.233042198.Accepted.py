@@ -19,15 +19,11 @@ from collections import defaultdict
 
 class Solution(object):
     def gridIllumination(self, N, lamps, queries):
-        """
-        :type N: int
-        :type lamps: List[List[int]]
-        :type queries: List[List[int]]
-        :rtype: List[int]
-        """
+
         lamps = {tuple(lamp) for lamp in lamps}
         x_lamps, y_lamps = defaultdict(int), defaultdict(int)
         up_diag_lamps, down_diag_lamps = defaultdict(int), defaultdict(int)
+
         for x, y in lamps:
             x_lamps[x] += 1
             y_lamps[y] += 1

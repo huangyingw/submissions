@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nextGreaterElements(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         stack = []
         next_greater = [-1] * len(nums)
         for i in range(2 * len(nums)):

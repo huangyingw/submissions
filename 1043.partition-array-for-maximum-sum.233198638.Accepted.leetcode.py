@@ -1,10 +1,6 @@
 class Solution(object):
     def maxSumAfterPartitioning(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         if not A:
             return 0
         N = len(A)

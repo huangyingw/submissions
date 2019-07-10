@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findSecondMinimumValue(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         min_val = root.val
         self.second_min = float("inf")
 

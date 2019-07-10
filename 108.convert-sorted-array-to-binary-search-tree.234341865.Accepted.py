@@ -10,10 +10,7 @@
 
 class Solution:
     def sortedArrayToBST(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
         return self.dfs(0, len(nums) - 1, nums)
 
     def dfs(self, low, high, nums):

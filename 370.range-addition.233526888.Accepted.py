@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def getModifiedArray(self, length, updates):
-        """
-        :type length: int
-        :type updates: List[List[int]]
-        :rtype: List[int]
-        """
+
         if length <= 0:
             return []
         shifts = [0] * (length + 1)

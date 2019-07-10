@@ -15,10 +15,7 @@ from collections import Counter
 
 class Solution(object):
     def canReorderDoubled(self, A):
-        """
-        :type A: List[int]
-        :rtype: bool
-        """
+
         counts = Counter(A)
         for num in sorted(counts, key=abs):
             if counts[num] > counts[num * 2]:

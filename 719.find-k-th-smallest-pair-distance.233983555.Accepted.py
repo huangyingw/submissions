@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def smallestDistancePair(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         def k_pair_distances(diff):
             count, j = 0, 0
             for i, num in enumerate(nums):

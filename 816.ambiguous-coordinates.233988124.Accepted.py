@@ -23,10 +23,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def ambiguousCoordinates(self, S):
-        """
-        :type S: str
-        :rtype: List[str]
-        """
+
         def insert_decimal(s):
             if s == "0":
                 return [s]

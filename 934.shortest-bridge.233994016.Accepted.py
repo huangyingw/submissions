@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def shortestBridge(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(A), len(A[0])
         visited = set()
         perimeter = set()

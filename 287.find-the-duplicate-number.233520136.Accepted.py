@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         slow = nums[0]
         fast = nums[slow]
         while fast != slow:

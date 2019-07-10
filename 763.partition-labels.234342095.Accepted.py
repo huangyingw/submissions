@@ -1,9 +1,6 @@
 class Solution:
     def partitionLabels(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
+
         last_index = {c: i for i, c in enumerate(S)}
         left = right = 0
         result = []

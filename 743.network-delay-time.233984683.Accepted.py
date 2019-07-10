@@ -16,12 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def networkDelayTime(self, times, N, K):
-        """
-        :type times: List[List[int]]
-        :type N: int
-        :type K: int
-        :rtype: int
-        """
+
         best_times = [float("inf") for _ in range(N + 1)]
         best_times[K] = 0
         network = [[] for _ in range(N + 1)]

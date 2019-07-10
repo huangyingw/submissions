@@ -1,9 +1,6 @@
 class Solution(object):
     def validWordSquare(self, words):
-        """
-        :type words: List[str]
-        :rtype: bool
-        """
+
         if words is None or len(words) == 0:
             return True
         ls = len(words)

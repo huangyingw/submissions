@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def splitArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         n = len(nums)
         if n < 7:
             return False

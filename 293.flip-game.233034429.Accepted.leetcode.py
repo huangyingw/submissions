@@ -1,9 +1,6 @@
 class Solution(object):
     def generatePossibleNextMoves(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
 
         res = []
         if s is None or len(s) == 0:

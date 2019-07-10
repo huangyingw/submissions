@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def rectangleArea(self, rectangles):
-        """
-        :type rectangles: List[List[int]]
-        :rtype: int
-        """
+
         x_events = []
         for i, (x1, y1, x2, y2) in enumerate(rectangles):
             x_events.append((x1, True, i))

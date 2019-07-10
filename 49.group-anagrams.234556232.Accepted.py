@@ -12,12 +12,7 @@ Output:
 Note:
 All inputs will be in lowercase.
 The order of your output does not matter.
-"""
 
-
-class Solution(object):
-    def groupAnagrams(self, strs):
-        """
         :type strs: List[str]
         :rtype: List[List[str]]
         """

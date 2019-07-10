@@ -1,9 +1,6 @@
 class Solution(object):
     def maxDistToClosest(self, seats):
-        """
-        :type seats: List[int]
-        :rtype: int
-        """
+
         seatsStr = ''.join(str(num) for num in seats)
         maxDistance = 0
         for zeros in re.finditer(r'0+', seatsStr):

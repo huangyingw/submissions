@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minTotalDistance(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = [], []
         for r in range(len(grid)):
             for c in range(len(grid[0])):

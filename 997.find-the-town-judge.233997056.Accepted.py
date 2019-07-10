@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findJudge(self, N, trust):
-        """
-        :type N: int
-        :type trust: List[List[int]]
-        :rtype: int
-        """
+
         trust_count = [0] * (N + 1)
         for trustee, trusted in trust:
             trust_count[trusted] += 1

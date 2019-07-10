@@ -8,11 +8,7 @@
 
 class Solution(object):
     def inorderSuccessor(self, root, p):
-        """
-        :type root: TreeNode
-        :type p: TreeNode
-        :rtype: TreeNode
-        """
+
         successor = None
         while root:
             if p.val < root.val:
@@ -23,11 +19,7 @@ class Solution(object):
         return successor
 
     def inorderSuccessor2(self, root, p):
-        """
-        :type root: TreeNode
-        :type p: TreeNode
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         if p.val >= root.val:

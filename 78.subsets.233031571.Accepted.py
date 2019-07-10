@@ -5,10 +5,7 @@ Given a set of distinct integers, nums, return all possible subsets (the power s
 
 class Solution(object):
     def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         result = [[]]
         for num in nums:
             for j in range(len(result)):

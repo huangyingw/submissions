@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         if not s:
             return 0
         nb_ways = [0] * (len(s) + 1)

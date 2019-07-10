@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def tree2str(self, t):
-        """
-        :type t: TreeNode
-        :rtype: str
-        """
+
         result = []
 
         def preorder(node):

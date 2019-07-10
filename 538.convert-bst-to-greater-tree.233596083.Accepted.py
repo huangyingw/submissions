@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def convertBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         self.running_sum = 0
 
         def inorder(node):

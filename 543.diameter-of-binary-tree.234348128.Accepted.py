@@ -9,10 +9,7 @@
 
 class Solution:
     def diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def depth(node):
             if not node:
                 return 0

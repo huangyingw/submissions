@@ -13,10 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def wordSquares(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[List[str]]
-        """
+
         prefixes = defaultdict(list)
         for word in words:
             for i in range(1, len(word)):

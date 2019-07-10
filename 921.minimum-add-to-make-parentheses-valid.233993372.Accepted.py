@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def minAddToMakeValid(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         additions = 0
         net_open = 0
         for c in S:

@@ -31,38 +31,22 @@ class Excel(object):
         return [r - 1, ord(c) - ord("A")]
 
     def __init__(self, H, W):
-        """
-        :type H: int
-        :type W: str
-        """
+
         rows, cols = self._indices(H, W)
         self.excel = [[0 for _ in range(cols + 1)] for _ in range(rows + 1)]
 
     def set(self, r, c, v):
-        """
-        :type r: int
-        :type c: str
-        :type v: int
-        :rtype: void
-        """
+
         r, c, = self._indices(r, c)
         self.excel[r][c] = v
 
     def get(self, r, c):
-        """
-        :type r: int
-        :type c: str
-        :rtype: int
-        """
+
         r, c = self._indices(r, c)
         return self.get_i(r, c)
 
     def get_i(self, r, c):
-        """
-        :type r: int
-        :type c: int
-        :rtype: int
-        """
+
         contents = self.excel[r][c]
         if isinstance(contents, int):
             return contents
@@ -80,12 +64,7 @@ class Excel(object):
         return total
 
     def sum(self, r, c, strs):
-        """
-        :type r: int
-        :type c: str
-        :type strs: List[str]
-        :rtype: int
-        """
+
         r, c = self._indices(r, c)
         self.excel[r][c] = strs
         return self.get_i(r, c)

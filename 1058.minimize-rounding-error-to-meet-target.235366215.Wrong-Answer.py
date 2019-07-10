@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minimizeError(self, prices, target):
-        """
-        :type prices: List[str]
-        :type target: int
-        :rtype: str
-        """
+
         base = 0
         remainders = []
         for price in prices:

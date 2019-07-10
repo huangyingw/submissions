@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numberOfLines(self, widths, S):
-        """
-        :type widths: List[int]
-        :type S: str
-        :rtype: List[int]
-        """
+
         line, width = 0, 100
         for c in S:
             c_length = widths[ord(c) - ord("a")]

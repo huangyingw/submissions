@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validWordAbbreviation(self, word, abbr):
-        """
-        :type word: str
-        :type abbr: str
-        :rtype: bool
-        """
+
         i, j = 0, 0
         while j < len(abbr):
             if abbr[j] < "a":

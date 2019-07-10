@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isRobotBounded(self, instructions):
-        """
-        :type instructions: str
-        :rtype: bool
-        """
+
         r, c = 0, 0
         dr, dc = 1, 0
         for instruction in instructions:

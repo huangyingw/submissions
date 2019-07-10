@@ -1,10 +1,6 @@
 class Solution(object):
     def fourSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
+
         sumMapping = {}
         for index_i in range(len(nums) - 1):
             for index_j in range(index_i + 1, len(nums)):

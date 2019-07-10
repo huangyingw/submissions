@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def getImportance(self, employees, id):
-        """
-        :type employees: Employee
-        :type id: int
-        :rtype: int
-        """
+
         importance, subordinates = {}, {}
         for employee in employees:
             importance[employee.id] = employee.importance

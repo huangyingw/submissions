@@ -14,10 +14,7 @@ from collections import Counter
 
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
-        """
-        :type barcodes: List[int]
-        :rtype: List[int]
-        """
+
         n = len(barcodes)
         freq = Counter(barcodes)
         freq = sorted([(count, num) for num, count in freq.items()], reverse=True)

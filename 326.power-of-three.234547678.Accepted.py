@@ -5,10 +5,7 @@ class Solution:
 
 
     def isPowerOfThree(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
+
         if n <= 0:
             return False
         while n > 1:
@@ -22,16 +19,10 @@ class Solution:
 
 
     def isPowerOfThree(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
+
         return n > 0 and 1162261467 % n == 0
 
 
     def isPowerOfThree(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
+
         return n > 0 and (n == 1 or (n % 3 == 0 and self.isPowerOfThree(n / 3)))

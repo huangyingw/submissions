@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def fallingSquares(self, positions):
-        """
-        :type positions: List[List[int]]
-        :rtype: List[int]
-        """
+
         box_heights = [positions[0][1]]
         max_heights = [positions[0][1]]
         for left, side in positions[1:]:

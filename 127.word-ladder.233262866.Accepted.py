@@ -19,12 +19,7 @@ from collections import defaultdict
 
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
-        """
-        :type beginWord: str
-        :type endWord: str
-        :type wordList: List[str]
-        :rtype: int
-        """
+
         length = 1
         visited = set()
         if endWord not in wordList:

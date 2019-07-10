@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def removeStones(self, stones):
-        """
-        :type stones: List[List[int]]
-        :rtype: int
-        """
+
         parents = {}
 
         def find(x):

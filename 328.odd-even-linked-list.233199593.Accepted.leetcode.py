@@ -7,10 +7,7 @@
 
 class Solution(object):
     def oddEvenList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if not head:
             return None
         odd, even = head, head.next

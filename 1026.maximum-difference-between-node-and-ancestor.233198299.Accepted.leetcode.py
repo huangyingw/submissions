@@ -8,10 +8,7 @@
 
 class Solution(object):
     def maxAncestorDiff(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def utility_fun(root, res):
             if not root:
                 return 2147483648, -2147483648, res

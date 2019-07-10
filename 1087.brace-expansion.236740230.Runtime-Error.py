@@ -1,9 +1,6 @@
 class Solution(object):
     def permute(self, S):
-        """
-        :type S: str
-        :rtype: List[str]
-        """
+
         if not S:
             return []
         if '{' not in S:

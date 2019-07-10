@@ -21,12 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def areSentencesSimilarTwo(self, words1, words2, pairs):
-        """
-        :type words1: List[str]
-        :type words2: List[str]
-        :type pairs: List[List[str]]
-        :rtype: bool
-        """
+
         def find(word):
             if word not in mapping:
                 return None

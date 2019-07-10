@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sumSubseqWidths(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         result = 0
         n = len(A)
         A.sort()

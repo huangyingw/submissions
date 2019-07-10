@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
+
         fast, slow = head, head
         rev = None
         while fast and fast.next:

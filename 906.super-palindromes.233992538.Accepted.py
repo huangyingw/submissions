@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def superpalindromesInRange(self, L, R):
-        """
-        :type L: str
-        :type R: str
-        :rtype: int
-        """
+
         L_sqrt = int(int(L) ** 0.5)
         R_sqrt = int((int(R) + 1) ** 0.5)
         digits = [str(i) for i in range(10)]

@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def matrixScore(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(A), len(A[0])
         for r in range(rows):
             if A[r][0] == 0:

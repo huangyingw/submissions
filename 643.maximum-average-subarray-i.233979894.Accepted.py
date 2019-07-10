@@ -10,11 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findMaxAverage(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: float
-        """
+
         window_sum = sum(nums[:k])
         max_average = window_sum / float(k)
         for i in range(len(nums) - k):

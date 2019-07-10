@@ -18,11 +18,7 @@
 
 class Solution(object):
     def numDistinct(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: int
-        """
+
         row, col = len(s), len(t)
         if col > row:
             return 0

@@ -1,9 +1,6 @@
 class Solution:
     def longestValidParentheses(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         if not s or len(s) == 0:
             return 0
         stack, result = [], 0

@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRestaurant(self, list1, list2):
-        """
-        :type list1: List[str]
-        :type list2: List[str]
-        :rtype: List[str]
-        """
+
         if len(list1) > len(list2):
             list1, list2 = list2, list1
         dict1 = {rest: i for i, rest in enumerate(list1)}

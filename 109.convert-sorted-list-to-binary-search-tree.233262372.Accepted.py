@@ -25,10 +25,7 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedListToBST(self, head):
-        """
-        :type head: ListNode
-        :rtype: TreeNode
-        """
+
         count = 0
         node = head
         while node:

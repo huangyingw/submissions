@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def intToRoman(self, num):
-        """
-        :type num: int
-        :rtype: str
-        """
+
         mapping = [(1000, 'M'),
                    (900, 'CM'),
                    (500, 'D'),

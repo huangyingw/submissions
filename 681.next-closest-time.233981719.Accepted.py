@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nextClosestTime(self, time):
-        """
-        :type time: str
-        :rtype: str
-        """
+
         result = [c for c in time]
         digits = set(int(c) for c in time[:2] + time[3:])
         min_digit = min(digits)

@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minCut(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         min_cuts = [i - 1 for i in range(len(s) + 1)]
         for i in range(len(s)):
             left, right = i, i

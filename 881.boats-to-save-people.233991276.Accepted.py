@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numRescueBoats(self, people, limit):
-        """
-        :type people: List[int]
-        :type limit: int
-        :rtype: int
-        """
+
         boats = 0
         people.sort()
         light, heavy = 0, len(people) - 1

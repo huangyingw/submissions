@@ -11,10 +11,7 @@ class Solution:
         self.result = 0
 
     def longestConsecutive(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.helper(root)
         return self.result
 

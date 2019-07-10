@@ -9,11 +9,7 @@
 
 class Solution(object):
     def pathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
+
 
         self.result = 0
         cache = {0: 1}

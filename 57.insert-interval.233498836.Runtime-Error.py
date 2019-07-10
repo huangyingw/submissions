@@ -19,11 +19,7 @@ class Interval(object):
 
 class Solution(object):
     def insert(self, intervals, newInterval):
-        """
-        :type intervals: List[Interval]
-        :type newInterval: Interval
-        :rtype: List[Interval]
-        """
+
         left, right = 0, len(intervals) - 1
         while left < len(intervals) and intervals[left].end < newInterval.start:
             left += 1

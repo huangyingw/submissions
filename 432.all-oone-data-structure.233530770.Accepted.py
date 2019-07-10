@@ -35,9 +35,7 @@ class Block(object):
 
 class AllOne(object):
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.begin = Block()
         self.end = Block()
         self.begin.after = self.end
@@ -45,11 +43,7 @@ class AllOne(object):
         self.mapping = {}
 
     def inc(self, key):
-        """
-        Inserts a new key <Key> with value 1. Or increments an existing key by 1.
-        :type key: str
-        :rtype: void
-        """
+
         if not key in self.mapping:
             current_block = self.begin
         else:
@@ -66,11 +60,7 @@ class AllOne(object):
             current_block.remove()
 
     def dec(self, key):
-        """
-        Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
-        :type key: str
-        :rtype: void
-        """
+
         if not key in self.mapping:
             return
         current_block = self.mapping[key]
@@ -88,10 +78,7 @@ class AllOne(object):
             current_block.remove()
 
     def getMaxKey(self):
-        """
-        Returns one of the keys with maximal value.
-        :rtype: str
-        """
+
         if self.end.before.val == 0:
             return ""
         key = self.end.before.keys.pop()
@@ -99,10 +86,7 @@ class AllOne(object):
         return key
 
     def getMinKey(self):
-        """
-        Returns one of the keys with Minimal value.
-        :rtype: str
-        """
+
         if self.begin.after.val == 0:
             return ""
         key = self.begin.after.keys.pop()

@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRedundantConnection(self, edges):
-        """
-        :type edges: List[List[int]]
-        :rtype: List[int]
-        """
+
         parents = {}
 
         def find_parent(n):

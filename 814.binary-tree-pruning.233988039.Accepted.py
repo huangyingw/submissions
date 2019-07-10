@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def pruneTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         def contains_one(node):
             if not node:
                 return False

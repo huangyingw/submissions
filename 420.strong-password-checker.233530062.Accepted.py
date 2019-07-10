@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def strongPasswordChecker(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         upper, lower, digit = False, False, False
         subs, i = 0, 0
         singles, doubles = 0, 0

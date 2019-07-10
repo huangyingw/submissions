@@ -8,10 +8,7 @@
 
 class Solution:
     def convertBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         self.val = 0
 
         def visit(node):

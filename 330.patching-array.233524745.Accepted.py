@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minPatches(self, nums, n):
-        """
-        :type nums: List[int]
-        :type n: int
-        :rtype: int
-        """
+
         next_missing = 1
         patches = 0
         i = 0

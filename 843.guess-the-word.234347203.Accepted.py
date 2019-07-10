@@ -13,11 +13,7 @@ from collections import defaultdict
 
 class Solution:
     def findSecretWord(self, wordlist, master):
-        """
-        :type wordlist: List[Str]
-        :type master: Master
-        :rtype: None
-        """
+
         def compPair(x, y):
             return sum(c1 == c2 for c1, c2 in zip(x, y))
 

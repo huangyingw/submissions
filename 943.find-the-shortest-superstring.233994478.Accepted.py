@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def shortestSuperstring(self, A):
-        """
-        :type A: List[str]
-        :rtype: str
-        """
+
         N = len(A)
         overlaps = [[0] * N for _ in range(N)]
         for i, x in enumerate(A):

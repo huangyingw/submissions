@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         next = 2
         for index in range(2, len(nums)):
             if nums[index] != nums[next - 2]:

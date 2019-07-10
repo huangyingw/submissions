@@ -14,9 +14,7 @@ _project_ = 'leetcode'
 
 class WordFilter(object):
     def __init__(self, words):
-        """
-        :type words: List[str]
-        """
+
         self.prefix_root = [set(), [None for _ in range(26)]]
         self.suffix_root = [set(), [None for _ in range(26)]]
         self.weights = {}
@@ -40,11 +38,7 @@ class WordFilter(object):
             insert(word, False)
 
     def f(self, prefix, suffix):
-        """
-        :type prefix: str
-        :type suffix: str
-        :rtype: int
-        """
+
         def find_words(word, forwards):
             if forwards:
                 node = self.prefix_root

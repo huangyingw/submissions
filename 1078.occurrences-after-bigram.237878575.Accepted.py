@@ -11,12 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findOcurrences(self, text, first, second):
-        """
-        :type text: str
-        :type first: str
-        :type second: str
-        :rtype: List[str]
-        """
+
         result = []
         s = text.split()
         for i in range(2, len(s)):

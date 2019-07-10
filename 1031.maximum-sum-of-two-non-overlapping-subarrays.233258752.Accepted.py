@@ -20,12 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSumTwoNoOverlap(self, A, L, M):
-        """
-        :type A: List[int]
-        :type L: int
-        :type M: int
-        :rtype: int
-        """
+
         L_sum, M_sum = sum(A[M:L + M]), sum(A[L:L + M])
         L_before_M_sum, M_before_L_sum = sum(A[:L]), sum(A[:M])
         L_before_M_best, M_before_L_best = L_before_M_sum, M_before_L_sum

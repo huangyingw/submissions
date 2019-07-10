@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def spiralOrder(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
-        """
+
         if not matrix or not matrix[0]:
             return []
         spiral = []

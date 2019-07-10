@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def minTransfers(self, transactions):
-        """
-        :type transactions: List[List[int]]
-        :rtype: int
-        """
+
         balances = defaultdict(int)
         for lender, receiver, amount in transactions:
             balances[lender] += amount

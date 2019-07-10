@@ -7,10 +7,7 @@
 
 class Solution(object):
     def detectCycle(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if not head:
             return None
         slow, fast = head, head.next

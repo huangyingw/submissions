@@ -1,9 +1,6 @@
 class Solution:
     def numTrees(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
 
         dp = [0] * (n + 1)
         dp[0] = dp[1] = 1

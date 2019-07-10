@@ -10,10 +10,7 @@ from collections import Counter
 
 class Solution(object):
     def permuteUnique(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         freq = Counter(nums)
         permutations = []
         self.permute_helper(len(nums), [], freq, permutations)

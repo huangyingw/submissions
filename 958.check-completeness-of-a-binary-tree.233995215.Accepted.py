@@ -14,10 +14,7 @@ from collections import deque
 
 class Solution:
     def isCompleteTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         queue = deque([root])
         while True:
             node = queue.popleft()

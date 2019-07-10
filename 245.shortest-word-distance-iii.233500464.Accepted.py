@@ -10,12 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shortestWordDistance(self, words, word1, word2):
-        """
-        :type words: List[str]
-        :type word1: str
-        :type word2: str
-        :rtype: int
-        """
+
         last1, last2 = -1, -1
         same = word1 == word2
         distance = len(words)

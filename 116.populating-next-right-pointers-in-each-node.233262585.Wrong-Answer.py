@@ -21,10 +21,7 @@ class TreeLinkNode(object):
 
 class Solution(object):
     def connect(self, root):
-        """
-        :type root: TreeLinkNode
-        :rtype: nothing
-        """
+
         level = [root]
         while level and level[0]:
             next_level = []

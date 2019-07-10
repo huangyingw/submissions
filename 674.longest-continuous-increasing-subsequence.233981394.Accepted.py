@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findLengthOfLCIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         longest, current = 0, 0
         for i, num in enumerate(nums):
             if i == 0 or num <= nums[i - 1]:

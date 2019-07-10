@@ -15,12 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxNumber(self, nums1, nums2, k):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
+
         max_number = 0
         for i in range(k + 1):
             if i <= len(nums1) and k - i <= len(nums2):

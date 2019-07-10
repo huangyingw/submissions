@@ -22,10 +22,7 @@ class TreeNode(object):
 
 class Solution(object):
     def countUnivalSubtrees(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.univariates = 0
         self.is_univariate(root)
         return self.univariates

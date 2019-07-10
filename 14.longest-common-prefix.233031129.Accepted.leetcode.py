@@ -1,9 +1,6 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: str
-        """
+
         def prefix(strs, index):
             check_prefix = strs[0][:index]
             for index in range(1, len(strs)):

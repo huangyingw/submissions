@@ -1,9 +1,6 @@
 class Solution:
     def spiralOrder(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
-        """
+
         if not matrix or len(matrix) == 0:
             return []
         ret = []

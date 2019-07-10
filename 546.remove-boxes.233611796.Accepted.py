@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeBoxes(self, boxes):
-        """
-        :type boxes: List[int]
-        :rtype: int
-        """
+
         def helper(left, right, same):
             if left > right:
                 return 0

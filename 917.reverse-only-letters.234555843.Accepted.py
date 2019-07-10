@@ -1,6 +1,6 @@
 """
 Problem Link: https://leetcode.com/problems/reverse-only-letters/
-Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place, 
+Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place,
 and all letters reverse their positions.
 Example 1:
 Input: "ab-cd"
@@ -13,14 +13,9 @@ Input: "Test1ng-Leet=code-Q!"
 Output: "Qedo1ct-eeLg=ntse-T!"
 Note:
 S.length <= 100
-33 <= S[i].ASCIIcode <= 122 
+33 <= S[i].ASCIIcode <= 122
 S doesn't contain \ or "
-"""
 
-
-class Solution(object):
-    def reverseOnlyLetters(self, S):
-        """
         :type S: str
         :rtype: str
         """

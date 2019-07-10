@@ -10,19 +10,13 @@ _project_ = 'leetcode'
 
 class MovingAverage(object):
     def __init__(self, size):
-        """
-        Initialize your data structure here.
-        :type size: int
-        """
+
         self.array = [None for _ in range(size)]
         self.i = 0
         self.total = 0
 
     def next(self, val):
-        """
-        :type val: int
-        :rtype: float
-        """
+
         if self.array[self.i] is not None:
             self.total -= self.array[self.i]
         self.total += val

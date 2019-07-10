@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         n = len(A)
         if n < 3:
             return 0

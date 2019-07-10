@@ -23,13 +23,7 @@ Note:
 1 <= words[i].length <= 20
 order.length == 26
 All characters in words[i] and order are english lowercase letters.
-"""
 
-
-
-class Solution(object):
-    def isAlienSorted(self, words, order):
-        """
         :type words: List[str]
         :type order: str
         :rtype: bool

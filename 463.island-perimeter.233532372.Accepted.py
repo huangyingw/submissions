@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def islandPerimeter(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         for row in grid:
             row.append(0)

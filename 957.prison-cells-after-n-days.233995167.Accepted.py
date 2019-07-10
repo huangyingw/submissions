@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def prisonAfterNDays(self, cells, N):
-        """
-        :type cells: List[int]
-        :type N: int
-        :rtype: List[int]
-        """
+
         day = 0
         state = tuple(cells)
         state_to_day = {}

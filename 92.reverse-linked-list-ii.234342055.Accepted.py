@@ -1,11 +1,6 @@
 class Solution:
     def reverseBetween(self, head, m, n):
-        """
-        :type head: ListNode
-        :type m: int
-        :type n: int
-        :rtype: ListNode
-        """
+
         if not head:
             return None
         dummy = ListNode(0)

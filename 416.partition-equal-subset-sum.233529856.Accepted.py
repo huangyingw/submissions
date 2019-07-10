@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canPartition(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         sum_nums = sum(nums)
         if sum_nums % 2 == 1:
             return False

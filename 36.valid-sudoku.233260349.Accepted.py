@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isValidSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: bool
-        """
+
         size = 9
         digits = {str(i) for i in range(1, 10)}
         rows = [set() for _ in range(size)]

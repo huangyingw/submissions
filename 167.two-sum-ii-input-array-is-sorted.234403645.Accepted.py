@@ -4,11 +4,7 @@
 
 class Solution:
     def twoSum(self, numbers, target):
-        """
-        :type numbers: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+
         pair = {}
         for i in range(len(numbers)):
             if numbers[i] in pair.keys():

@@ -7,10 +7,7 @@
 
 class Solution(object):
     def nextLargerNodes(self, head):
-        """
-        :type head: ListNode
-        :rtype: List[int]
-        """
+
         result = []
         while head:
             result.append(head.val)

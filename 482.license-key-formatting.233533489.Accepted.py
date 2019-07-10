@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
-        """
-        :type S: str
-        :type K: int
-        :rtype: str
-        """
+
         key = S.replace("-", "").upper()
         formatted = []
         i = len(key) - K

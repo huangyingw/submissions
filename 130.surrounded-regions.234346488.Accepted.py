@@ -1,9 +1,6 @@
 class Solution:
     def solve(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: void Do not return anything, modify board in-place instead.
-        """
+
         if not board or not board[0]:
             return
         m, n = len(board), len(board[0])

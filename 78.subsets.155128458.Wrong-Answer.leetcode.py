@@ -1,9 +1,6 @@
 class Solution(object):
     def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         def dfs(start):
             for index in range(start, len(nums)):
                 current.append(nums[start])

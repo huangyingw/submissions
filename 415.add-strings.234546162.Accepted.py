@@ -1,11 +1,7 @@
 
 class Solution:
     def addStrings(self, num1, num2):
-        """
-        :type num1: str
-        :type num2: str
-        :rtype: str
-        """
+
         num1, num2 = list(num1), list(num2)
         carry, res = 0, []
         while len(num2) > 0 or len(num1) > 0:

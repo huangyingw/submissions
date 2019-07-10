@@ -1,9 +1,6 @@
 class Solution(object):
     def setZeroes(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
-        """
+
         col0 = 1
         for row in range(len(matrix)):
             if matrix[row][0] == 0:

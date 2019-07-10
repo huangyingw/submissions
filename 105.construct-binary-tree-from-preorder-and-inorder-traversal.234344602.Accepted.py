@@ -10,11 +10,7 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, preorder, inorder):
-        """
-        :type preorder: List[int]
-        :type inorder: List[int]
-        :rtype: TreeNode
-        """
+
         inorderDict = {num: i for i, num in enumerate(inorder)}
         pre = iter(preorder)
 

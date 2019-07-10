@@ -8,11 +8,7 @@
 
 class Solution(object):
     def pathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: List[List[int]]
-        """
+
         result = []
 
         def dfs(root, curr_sum, sum, path, result):

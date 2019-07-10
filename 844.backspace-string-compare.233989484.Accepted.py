@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def backspaceCompare(self, S, T):
-        """
-        :type S: str
-        :type T: str
-        :rtype: bool
-        """
+
         s_i, t_i = len(S) - 1, len(T) - 1
 
         def next_char(string, i):

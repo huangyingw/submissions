@@ -1,10 +1,6 @@
 class Solution(object):
     def buildTree(self, preorder, inorder):
-        """
-        :type preorder: List[int]
-        :type inorder: List[int]
-        :rtype: TreeNode
-        """
+
         map = {}
         for idx, val in enumerate(inorder):
             map[val] = idx

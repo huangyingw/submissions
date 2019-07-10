@@ -17,10 +17,7 @@
 
 class Solution(object):
     def evalRPN(self, tokens):
-        """
-        :type tokens: List[str]
-        :rtype: int
-        """
+
         if not tokens:
             return 0
         stack = []

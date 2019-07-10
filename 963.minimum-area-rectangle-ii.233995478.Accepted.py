@@ -17,10 +17,7 @@ from itertools import combinations
 
 class Solution(object):
     def minAreaFreeRect(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: float
-        """
+
         min_area = float("inf")
         points = [complex(*p) for p in sorted(points)]
         line_to_mid = defaultdict(list)

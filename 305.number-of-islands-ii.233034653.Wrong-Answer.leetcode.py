@@ -1,11 +1,6 @@
 class Solution(object):
     def numIslands2(self, m, n, positions):
-        """
-        :type m: int
-        :type n: int
-        :type positions: List[List[int]]
-        :rtype: List[int]
-        """
+
 
         ans = []
         islands = Union()
@@ -20,9 +15,7 @@ class Solution(object):
 
 
 class Union(object):
-    """
-    quick union find with weights
-    """
+
 
     def __init__(self):
 

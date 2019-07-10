@@ -1,10 +1,6 @@
 class Solution:
     def minimumDeleteSum(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: int
-        """
+
         l1, l2 = len(s1), len(s2)
         dp = [[0] * (l2 + 1) for _ in range(l1 + 1)]
         for i in range(l1):

@@ -16,16 +16,7 @@ words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
 Output: "apple"
 Explanation:
 Both "apply" and "apple" can be built from other words in the dictionary. However, "apple" is lexicographically small
-"""
-from collections import defaultdict
 
-
-class Solution(object):
-
-
-
-    def longestWord1(self, words):
-        """
         :type words: List[str]
         :rtype: str
         """
@@ -47,10 +38,7 @@ class Solution(object):
 
 
     def longestWord2(self, words):
-        """
-        :type words: List[str]
-        :rtype: str
-        """
+
         max_len = 0
         ans = ""
         words.sort(key=lambda x: len(x))

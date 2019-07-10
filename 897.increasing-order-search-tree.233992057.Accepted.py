@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def increasingBST(self, root, tail=None):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         if root is None:
             return tail
         copy_root = TreeNode(root.val)

@@ -18,28 +18,10 @@ Output: 0
 Note:
 answers will have length at most 1000.
 Each answers[i] will be an integer in the range [0, 999].
-"""
 
-
-class Solution:
-
-    def numRabbits(self, answers):
-        """
         :type answers: List[int]
         :rtype: int
-        """
-        from collections import Counter
-        mapping = Counter(answers)
-        ret = 0
-        for idx, val in mapping.items():
-            ret += val if val % (idx + 1) == 0 else (val // (idx + 1) + 1) * (idx + 1)
-        return ret
 
-
-
-
-    def numRabbits(self, answers):
-        """
         :type answers: List[int]
         :rtype: int
         """

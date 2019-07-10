@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nextGreaterElement(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         num = [c for c in str(n)]
         i = len(num) - 1
         while i > 0 and num[i - 1] >= num[i]:

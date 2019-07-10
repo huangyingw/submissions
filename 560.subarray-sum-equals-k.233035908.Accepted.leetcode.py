@@ -1,10 +1,6 @@
 class Solution(object):
     def subarraySum(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         sum_map = {}
         sum_map[0] = 1
         count = curr_sum = 0

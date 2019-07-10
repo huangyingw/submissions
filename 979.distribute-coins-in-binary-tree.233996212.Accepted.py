@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def distributeCoins(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def helper(node, parent):
             if not node:
                 return 0

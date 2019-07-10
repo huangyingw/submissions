@@ -1,9 +1,6 @@
 class Solution(object):
     def commonChars(self, A):
-        """
-        :type A: List[str]
-        :rtype: List[str]
-        """
+
         char_map = {}
         for char in A[0]:
             if char in char_map:

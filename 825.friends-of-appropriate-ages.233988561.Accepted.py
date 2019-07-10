@@ -18,10 +18,7 @@ from collections import Counter
 
 class Solution(object):
     def numFriendRequests(self, ages):
-        """
-        :type ages: List[int]
-        :rtype: int
-        """
+
         freq = Counter(ages)
         age_counts = [(k, v) for k, v in freq.items()]
         age_counts.sort()

@@ -3,10 +3,7 @@ class Solution:
 
 
     def findWords(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[str]
-        """
+
         line1 = "qwertyuiopQWERTYUIOP"
         line2 = "asdfghjklASDFGHJKL"
         line3 = "zxcvbnmZXCVBNM"

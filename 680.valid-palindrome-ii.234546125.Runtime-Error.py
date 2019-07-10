@@ -21,10 +21,7 @@ class Solution1:
 
 class Solution2:
     def validPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         a = s[::-1]
         if a == s:
             return True

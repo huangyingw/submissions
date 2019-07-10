@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lengthOfLongestSubstringTwoDistinct(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         start, max_substring = 0, 0
         last_seen = {}
         for i, c in enumerate(s):

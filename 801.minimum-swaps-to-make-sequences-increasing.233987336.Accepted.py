@@ -21,11 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minSwap(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: int
-        """
+
         prev_no_swap, prev_swap = 0, 1
         for i in range(1, len(A)):
             no_swap, swap = float("inf"), float("inf")

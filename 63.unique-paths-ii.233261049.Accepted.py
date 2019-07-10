@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
-        """
-        :type obstacleGrid: List[List[int]]
-        :rtype: int
-        """
+
         m = len(obstacleGrid)
         n = len(obstacleGrid[0])
         if not m or not n:

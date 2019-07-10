@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def judgePoint24(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         n = len(nums)
         if n == 1:
             return abs(nums[0] - 24) < 0.001

@@ -7,10 +7,7 @@ class ListNode:
 
 class Solution:
     def swapPairs(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         dummy = p = ListNode(0)
         dummy.next = head
         while head and head.next:

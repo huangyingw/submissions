@@ -31,12 +31,7 @@ Notice each digit has it's own entry in the array.
 Note:
 All characters have an ASCII value in [35, 126].
 1 <= len(chars) <= 1000.
-"""
 
-
-class Solution(object):
-    def compress(self, chars):
-        """
         :type chars: List[str]
         :rtype: int
         """

@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lemonadeChange(self, bills):
-        """
-        :type bills: List[int]
-        :rtype: bool
-        """
+
         fives, tens = 0, 0
         for bill in bills:
             if bill == 5:

@@ -1,9 +1,6 @@
 class Solution(object):
     def baseNeg2(self, N):
-        """
-        :type N: int
-        :rtype: str
-        """
+
         if N == 0:
             digits = ['0']
         else:

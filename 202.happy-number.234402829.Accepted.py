@@ -8,10 +8,7 @@
 
 class Solution(object):
     def isHappy(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
+
         def calculateSum(n):
             sum = 0
             while(n):

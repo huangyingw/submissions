@@ -10,10 +10,7 @@
 
 class Solution:
     def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
 
         low = 1
         high = n

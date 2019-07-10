@@ -9,10 +9,7 @@
 class Solution(object):
 
     def minDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if root == None:
             return 0
         if not root.left:

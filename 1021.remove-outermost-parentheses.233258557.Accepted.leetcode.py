@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeOuterParentheses(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         result = []
         balance = 0
         for c in S:

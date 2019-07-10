@@ -21,10 +21,7 @@ from collections import deque
 
 class Solution(object):
     def postorderTraversal(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         result = deque()

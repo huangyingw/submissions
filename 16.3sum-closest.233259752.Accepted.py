@@ -10,11 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def threeSumClosest(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         nums.sort()
         closest = float('inf')
         for i in range(len(nums) - 2):

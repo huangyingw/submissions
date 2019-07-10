@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestValidParentheses(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         stack = []
         for i, c in enumerate(s):
             if c == ")" and stack and s[stack[-1]] == '(':

@@ -1,10 +1,6 @@
 class Solution(object):
     def camelMatch(self, queries, pattern):
-        """
-        :type queries: List[str]
-        :type pattern: str
-        :rtype: List[bool]
-        """
+
         import re
         result = []
         patterns = re.findall('[A-Z][a-z]*', pattern)

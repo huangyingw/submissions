@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSubArrayLen(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
+
         cumul, max_length = 0, 0
         first_index = {}
         for i, num in enumerate(nums):

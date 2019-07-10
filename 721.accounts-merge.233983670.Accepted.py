@@ -18,10 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def accountsMerge(self, accounts):
-        """
-        :type accounts: List[List[str]]
-        :rtype: List[List[str]]
-        """
+
         email_to_account = defaultdict(list)
         for i, account in enumerate(accounts):
             for email in account[1:]:

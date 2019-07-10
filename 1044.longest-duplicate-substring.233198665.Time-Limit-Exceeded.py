@@ -78,10 +78,7 @@ def lcp_w_suffix_str(array, s):
 
 class Solution(object):
     def longestDupSubstring(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         suffix_array = create_suffix_array(S)
         lcp_array = lcp_w_suffix_str(suffix_array, S)
         start, end = 0, 0

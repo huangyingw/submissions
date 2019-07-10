@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def circularArrayLoop(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         n = len(nums)
         for i, num in enumerate(nums):
             pos = num > 0

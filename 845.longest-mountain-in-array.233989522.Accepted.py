@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestMountain(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         valley, peak = 0, 0
         prev = 0
         longest = 0

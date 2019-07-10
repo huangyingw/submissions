@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def wordsTyping(self, sentence, rows, cols):
-        """
-        :type sentence: List[str]
-        :type rows: int
-        :type cols: int
-        :rtype: int
-        """
+
         sentence_len = sum(len(w) for w in sentence) + len(sentence)
 
         line_fits = []

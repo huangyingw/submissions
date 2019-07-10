@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canTransform(self, start, end):
-        """
-        :type start: str
-        :type end: str
-        :rtype: bool
-        """
+
         if len(start) != len(end):
             return False
         left, right = 0, 0

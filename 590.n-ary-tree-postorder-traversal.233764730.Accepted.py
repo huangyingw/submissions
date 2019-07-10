@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def postorder(self, root):
-        """
-        :type root: Node
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         stack = [root]

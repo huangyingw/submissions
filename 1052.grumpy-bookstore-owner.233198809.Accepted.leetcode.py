@@ -1,11 +1,6 @@
 class Solution(object):
     def maxSatisfied(self, customers, grumpy, X):
-        """
-        :type customers: List[int]
-        :type grumpy: List[int]
-        :type X: int
-        :rtype: int
-        """
+
         result = 0
         prefix_sum = [0] * (len(customers) + 1)
         index = 0

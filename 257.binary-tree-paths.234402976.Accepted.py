@@ -10,10 +10,7 @@
 class Solution:
 
     def binaryTreePaths(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[str]
-        """
+
         def searchBT(root, path, ans):
             if root.left == None and root.right == None:
                 ans.append(path + str(root.val))
@@ -28,10 +25,7 @@ class Solution:
 
 
     def binaryTreePaths(self, r):
-        """
-        :type root: TreeNode
-        :rtype: List[str]
-        """
+
         stack = []
         res = []
 

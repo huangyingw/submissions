@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def checkValidString(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         min_open, max_open = 0, 0
         for c in s:
             if c == "(":

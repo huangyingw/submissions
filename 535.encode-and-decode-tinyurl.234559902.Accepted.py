@@ -15,19 +15,7 @@ class Codec:
         return "http://tinyurl.com/" + self.url2code[longUrl]
 
     def decode(self, shortUrl):
-        """Decodes a shortened URL to its original URL."""
-        return self.code2url[shortUrl[-5:]]
 
-
-
-class Codec_counter:
-    def __init__(self):
-        self.code2url = {}
-        self.url2code = {}
-        self.count = 0
-
-    def encode(self, longUrl):
-        """Encodes a URL to a shortened URL."""
         while longUrl not in self.url2code:
             self.count += 1
             self.code2url[str(self.count)] = longUrl
@@ -35,18 +23,7 @@ class Codec_counter:
         return "http://tinyurl.com/" + str(self.count)
 
     def decode(self, shortUrl):
-        """Decodes a shortened URL to its original URL."""
-        return self.code2url[shortUrl.split('/')[-1]]
 
-import uuid
-
-
-class Codec_uuid3:
-    def __init__(self):
-        self.code2url = {}
-
-    def encode(self, longUrl):
-        """Encodes a URL to a shortened URL."""
         code = uuid.uuid3(uuid.NAMESPACE_URL, str(longUrl))
         self.code2url[str(code)] = longUrl
         return "http://tinyurl.com/" + str(code)

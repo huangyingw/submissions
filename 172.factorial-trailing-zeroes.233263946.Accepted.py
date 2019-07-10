@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def trailingZeroes(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         zeroes = 0
         power_of_5 = 5
         while power_of_5 <= n:

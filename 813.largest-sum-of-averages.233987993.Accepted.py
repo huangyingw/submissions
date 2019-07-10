@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestSumOfAverages(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: float
-        """
+
         memo = {}
 
         def helper(i, k):

@@ -13,11 +13,7 @@ from collections import Counter
 
 class Solution(object):
     def minWindow(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
+
         freq = Counter(t)
         best_start, best_end = 0, float('inf')
         start, end = 0, -1

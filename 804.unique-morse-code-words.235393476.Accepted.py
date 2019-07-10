@@ -1,9 +1,6 @@
 class Solution:
     def uniqueMorseRepresentations(self, words):
-        """
-        :type words: List[str]
-        :rtype: int
-        """
+
         morse_code = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
         temp = []
         for tmp in words:

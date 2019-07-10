@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canThreePartsEqualSum(self, A):
-        """
-        :type A: List[int]
-        :rtype: bool
-        """
+
         partition, remainder = divmod(sum(A), 3)
         if remainder != 0:
             return False

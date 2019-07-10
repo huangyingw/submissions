@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def averageOfLevels(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[float]
-        """
+
         nodes = [root]
         result = []
         while True:

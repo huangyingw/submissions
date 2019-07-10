@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def closestValue(self, root, target):
-        """
-        :type root: TreeNode
-        :type target: float
-        :rtype: int
-        """
+
         closest = root.val
         while root:
             if root.val == target:

@@ -2,10 +2,7 @@
 class Solution:
 
     def findUnsortedSubarray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         n = len(nums)
         cmax, cmin = -float('inf'), float('inf')
         l, r = 0, -1

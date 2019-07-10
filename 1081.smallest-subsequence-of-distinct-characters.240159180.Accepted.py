@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def smallestSubsequence(self, text):
-        """
-        :type text: str
-        :rtype: str
-        """
+
         last_index = {c: i for i, c in enumerate(text)}
         stack = []
         for i, c in enumerate(text):

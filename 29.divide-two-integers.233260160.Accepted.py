@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def divide(self, dividend, divisor):
-        """
-        :type dividend: int
-        :type divisor: int
-        :rtype: int
-        """
+
         if divisor == 0:
             return None
         diff_sign = (divisor < 0) ^ (dividend < 0)

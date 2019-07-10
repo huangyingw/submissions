@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def evalRPN(self, tokens):
-        """
-        :type tokens: List[str]
-        :rtype: int
-        """
+
         ops = {'+', '-', '/', '*'}
         stack = []
         for token in tokens:

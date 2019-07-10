@@ -4,10 +4,7 @@ class Solution(object):
 
 
     def thirdMax(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         a = set(nums)
         return sorted(list(a))[-3 if len(a) >= 3 else -1]
 

@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findSubsequences(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         subsequences = set()
         for num in nums:
             new_subsequences = set()

@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isAdditiveNumber(self, num):
-        """
-        :type num: str
-        :rtype: bool
-        """
+
         n = len(num)
         if n < 3:
             return False

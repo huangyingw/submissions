@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shipWithinDays(self, weights, D):
-        """
-        :type weights: List[int]
-        :type D: int
-        :rtype: int
-        """
+
         def can_ship(capacity):
             days = D
             load = 0

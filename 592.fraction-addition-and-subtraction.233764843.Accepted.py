@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def fractionAddition(self, expression):
-        """
-        :type expression: str
-        :rtype: str
-        """
+
         def GCD(a, b):
             div, mod = divmod(a, b)
             if mod == 0:

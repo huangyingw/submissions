@@ -20,12 +20,7 @@ from collections import defaultdict
 
 class Solution(object):
     def areSentencesSimilar(self, words1, words2, pairs):
-        """
-        :type words1: List[str]
-        :type words2: List[str]
-        :type pairs: List[List[str]]
-        :rtype: bool
-        """
+
         if len(words1) != len(words2):
             return False
         similar = defaultdict(set)

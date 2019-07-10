@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numSubarrayBoundedMax(self, A, L, R):
-        """
-        :type A: List[int]
-        :type L: int
-        :type R: int
-        :rtype: int
-        """
+
         subarrays, total = 0, 0
         last_above_max = -1
         for i, num in enumerate(A):

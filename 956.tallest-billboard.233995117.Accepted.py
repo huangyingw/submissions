@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution:
     def tallestBillboard(self, rods):
-        """
-        :type rods: List[int]
-        :rtype: int
-        """
+
         diffs = {0: 0}
         for rod in rods:
             new_diffs = defaultdict(int, diffs)

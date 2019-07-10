@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minArea(self, image, x, y):
-        """
-        :type image: List[List[str]]
-        :type x: int
-        :type y: int
-        :rtype: int
-        """
+
         if not image or not image[0] or image[x][y] != '1':
             return 0
 

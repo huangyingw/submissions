@@ -1,10 +1,6 @@
 class Solution(object):
     def strWithout3a3b(self, A, B):
-        """
-        :type A: int
-        :type B: int
-        :rtype: str
-        """
+
         result = ''
         if A > B:
             while B > 0 and A > 0:

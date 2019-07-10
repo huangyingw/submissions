@@ -1,9 +1,6 @@
 class Solution(object):
     def spiralOrder(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
-        """
+
         if matrix is None or len(matrix) == 0:
             return matrix
         m, n = len(matrix), len(matrix[0])

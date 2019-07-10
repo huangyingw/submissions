@@ -4,16 +4,13 @@
 	Input:  [1,2,3,4]
 	Output: [24,12,8,6]
 	 1 1 2 6
-	 	12 8 6 
+	 	12 8 6
 '''
 
 
 class Solution(object):
     def productExceptSelf(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         if not nums:
             return []
         dp = [1] * len(nums)

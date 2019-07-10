@@ -18,11 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findBlackPixel(self, picture, N):
-        """
-        :type picture: List[List[str]]
-        :type N: int
-        :rtype: int
-        """
+
         pixels = 0
         rows, cols = len(picture), len(picture[0])
         col_counts = [0 for _ in range(cols)]

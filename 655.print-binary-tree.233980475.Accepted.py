@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 
 class Solution(object):
-    """
-    :type root: TreeNode
-    :rtype: List[List[str]]
-    """
+
     def height(node):
         if not node:
             return 0

@@ -11,11 +11,7 @@ class Solution(object):
         self.buf4 = [''] * 4
 
     def read(self, buf, n):
-        """
-        :type buf: Destination buffer (List[str])
-        :type n: Maximum number of characters to read (int)
-        :rtype: The number of characters read (int)
-        """
+
         i = 0
         while i < n:
             if self.buf4_pointer == 0:

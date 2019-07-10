@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def bstToGst(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         self.running = 0
 
         def inorder(node):

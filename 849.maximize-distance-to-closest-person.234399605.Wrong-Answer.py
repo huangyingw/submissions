@@ -6,10 +6,7 @@ class Solution:
 
 
     def maxDistToClosest(self, seats):
-        """
-        :type seats: List[int]
-        :rtype: int
-        """
+
         max_dis = 0
         cur_dis = 0
         for value in seats:

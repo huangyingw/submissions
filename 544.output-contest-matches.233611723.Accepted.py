@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findContestMatch(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+
         result = [str(i) for i in range(1, n + 1)]
         while len(result) > 1:
             new_result = []

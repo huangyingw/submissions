@@ -17,11 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def gardenNoAdj(self, N, paths):
-        """
-        :type N: int
-        :type paths: List[List[int]]
-        :rtype: List[int]
-        """
+
         edges = defaultdict(set)
         for i, j in paths:
             edges[i].add(j)

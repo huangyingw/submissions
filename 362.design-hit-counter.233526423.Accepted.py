@@ -14,28 +14,16 @@ from collections import deque
 
 class HitCounter(object):
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.time_diff = 300
         self.q = deque()
 
     def hit(self, timestamp):
-        """
-        Record a hit.
-        @param timestamp - The current timestamp (in seconds granularity).
-        :type timestamp: int
-        :rtype: void
-        """
+
         self.q.append(timestamp)
 
     def getHits(self, timestamp):
-        """
-        Return the number of hits in the past 5 minutes.
-        @param timestamp - The current timestamp (in seconds granularity).
-        :type timestamp: int
-        :rtype: int
-        """
+
         while self.q and timestamp - self.q[0] >= self.time_diff:
             self.q.popleft()
         return len(self.q)

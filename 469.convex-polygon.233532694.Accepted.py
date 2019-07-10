@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isConvex(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: bool
-        """
+
         points.append(points[0])
         points.append(points[1])
         previous = [points[1][0] - points[0][0], points[1][1] - points[0][1]]

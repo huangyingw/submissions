@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+
         negative = x < 0
         x = abs(x)
         reversed = 0

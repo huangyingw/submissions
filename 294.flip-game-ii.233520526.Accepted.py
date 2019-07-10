@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canWin(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         def helper(s):
             if s in memo:
                 return memo[s]

@@ -1,9 +1,6 @@
 class Solution:
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         f0 = 0
         e0, e1, e2 = 1, 0, 0
         mod = 10 ** 9 + 7

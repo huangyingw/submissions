@@ -11,10 +11,7 @@ from collections import defaultdict
 
 class Solution(object):
     def groupAnagrams(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: List[List[str]]
-        """
+
         sorted_words = defaultdict(list)
         for word in strs:
             letter_list = [c for c in word]

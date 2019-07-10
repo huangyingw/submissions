@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minimumDeleteSum(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: int
-        """
+
         dp = [0]
         for c in s2:
             dp.append(dp[-1] + ord(c))

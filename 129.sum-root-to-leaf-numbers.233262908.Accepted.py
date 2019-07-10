@@ -19,10 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def sumNumbers(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         return self.helper(root, 0)
 
     def helper(self, node, partial):

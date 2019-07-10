@@ -34,10 +34,7 @@ _project_ = 'leetcode'
 
 class NestedIterator(object):
     def __init__(self, nestedList):
-        """
-        Initialize your data structure here.
-        :type nestedList: List[NestedInteger]
-        """
+
         self.flat = []
 
         def flatten(nested):
@@ -50,13 +47,9 @@ class NestedIterator(object):
         self.flat = self.flat[::-1]
 
     def next(self):
-        """
-        :rtype: int
-        """
+
         return self.flat.pop()
 
     def hasNext(self):
-        """
-        :rtype: bool
-        """
+
         return bool(self.flat)

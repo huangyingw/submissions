@@ -1,10 +1,6 @@
 class Solution(object):
     def uniquePaths(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+
         maxValue = m if m > n else n
         minValue = m + n - maxValue
         numerator = m + n

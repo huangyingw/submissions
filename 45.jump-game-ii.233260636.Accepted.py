@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def jump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if len(nums) == 1:
             return 0
         start, end = 0, 0

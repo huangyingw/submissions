@@ -7,10 +7,7 @@ class Solution:
         return (n)
 
     def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
+
         if x < 0:
             return (False)
         else:

@@ -1,9 +1,6 @@
 class Solution(object):
     def bitwiseComplement(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         if N == 0:
             return 1
         import math

@@ -1,14 +1,9 @@
-"""
-time complexity: O(mn)
-"""
+
 
 
 class Solution(object):
     def reverseWords(self, str):
-        """
-        :type str: List[str]
-        :rtype: void Do not return anything, modify str in-place instead.
-        """
+
         self.reverse(str, 0, len(str) - 1)
         start, end = 0, -1
         for i in range(len(str)):

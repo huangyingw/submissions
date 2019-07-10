@@ -22,11 +22,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def videoStitching(self, clips, T):
-        """
-        :type clips: List[List[int]]
-        :type T: int
-        :rtype: int
-        """
+
         prev_stitch_end, stitch_end = -1, 0
         result = 0
         for start, end in sorted(clips):

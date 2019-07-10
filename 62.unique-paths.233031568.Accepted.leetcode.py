@@ -1,10 +1,6 @@
 class Solution:
     def uniquePaths(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+
         dmap = [[0] * n for _ in range(m)]
         for i in range(m):
             dmap[i][0] = 1

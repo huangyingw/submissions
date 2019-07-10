@@ -1,9 +1,6 @@
 class Solution:
     def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         stack = []
         for i in s:
             if i == "}" or i == "]" or i == ")":

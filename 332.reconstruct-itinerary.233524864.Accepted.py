@@ -19,10 +19,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findItinerary(self, tickets):
-        """
-        :type tickets: List[List[str]]
-        :rtype: List[str]
-        """
+
         tickets.sort(reverse=True)
         flights = defaultdict(list)
         for start, end in tickets:
@@ -39,10 +36,7 @@ class Solution(object):
 
 class Solution2(object):
     def findItinerary(self, tickets):
-        """
-        :type tickets: List[List[str]]
-        :rtype: List[str]
-        """
+
         flights = defaultdict(list)
         tickets.sort(reverse=True)
         for start, end in tickets:

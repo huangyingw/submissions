@@ -10,10 +10,7 @@ from collections import Counter
 
 class Solution(object):
     def canPermutePalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         freq = Counter(s)
         odd = False
         for letter, count in freq.items():

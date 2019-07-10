@@ -1,8 +1,6 @@
 class NumMatrix(object):
     def __init__(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        """
+
         if not matrix:
             return
         self.m, self.n = len(matrix), len(matrix[0])
@@ -13,12 +11,7 @@ class NumMatrix(object):
                 self.update(i, j, matrix[i][j])
 
     def update(self, row, col, val):
-        """
-        :type row: int
-        :type col: int
-        :type val: int
-        :rtype: void
-        """
+
         if self.m == 0 or self.n == 0:
             return
         diff = val - self.nums[row][col]
@@ -32,13 +25,7 @@ class NumMatrix(object):
             i += (i & -i)
 
     def sumRegion(self, row1, col1, row2, col2):
-        """
-        :type row1: int
-        :type col1: int
-        :type row2: int
-        :type col2: int
-        :rtype: int
-        """
+
         if self.m == 0 or self.n == 0:
             return 0
         return self.getRangeSum(row2 + 1, col2 + 1) + self.getRangeSum(row1, col1) - self.getRangeSum(row2 + 1,

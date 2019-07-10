@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numsSameConsecDiff(self, N, K):
-        """
-        :type N: int
-        :type K: int
-        :rtype: List[int]
-        """
+
         partials = [i for i in range(1, 10)]
         for _ in range(N - 1):
             new_partials = []

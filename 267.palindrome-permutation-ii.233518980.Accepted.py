@@ -16,10 +16,7 @@ from collections import Counter
 
 class Solution(object):
     def generatePalindromes(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
         char_counts = Counter(s)
         odd_char = ""
         for char, count in char_counts.items():

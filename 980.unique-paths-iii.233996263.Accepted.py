@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def uniquePathsIII(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         unvisited = set()
         for r in range(rows):

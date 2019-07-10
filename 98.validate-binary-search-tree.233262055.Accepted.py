@@ -23,10 +23,7 @@ class TreeNode(object):
 
 class Solution(object):
     def isValidBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         self.correct = True
         self.prev = float('-inf')
         self.inorder(root)

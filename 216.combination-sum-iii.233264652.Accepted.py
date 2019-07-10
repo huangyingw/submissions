@@ -10,11 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def combinationSum3(self, k, n):
-        """
-        :type k: int
-        :type n: int
-        :rtype: List[List[int]]
-        """
+
         results = []
         self.cs3([], n, results, k)
         return results

@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def addOperators(self, num, target):
-        """
-        :type num: str
-        :type target: int
-        :rtype: List[str]
-        """
+
         if not num:
             return []
         self.num, self.target, self.expressions = num, target, []

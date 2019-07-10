@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validIPAddress(self, IP):
-        """
-        :type IP: str
-        :rtype: str
-        """
+
         ip_list = IP.split(".")
         if len(ip_list) == 4:
             for group in ip_list:

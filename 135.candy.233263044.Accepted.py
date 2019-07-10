@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def candy(self, ratings):
-        """
-        :type ratings: List[int]
-        :rtype: int
-        """
+
         left = [1 for _ in range(len(ratings))]
         right = [1 for _ in range(len(ratings))]
         for i in range(1, len(ratings)):

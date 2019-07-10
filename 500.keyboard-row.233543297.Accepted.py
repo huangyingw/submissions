@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findWords(self, words):
-        """
-        :type words: List[str]
-        :rtype: List[str]
-        """
+
         keyboard = {}
         rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
         for i, row in enumerate(rows):

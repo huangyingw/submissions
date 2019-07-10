@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def leastBricks(self, wall):
-        """
-        :type wall: List[List[int]]
-        :rtype: int
-        """
+
         edges = defaultdict(int)
         for row in wall:
             edge = 0

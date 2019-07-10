@@ -2,11 +2,7 @@
 class Solution:
 
     def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+
 
         if len(set(s)) != len(set(t)):
             return False
@@ -18,11 +14,7 @@ class Solution:
 
 
     def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+
         dic1 = {}
         dic2 = {}
         for i in s:
@@ -40,11 +32,7 @@ class Solution:
     from collections import Counter
 
     def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+
         s_d = Counter(s)
         t_d = Counter(t)
         if len(s_d.keys()) != len(t_d.keys()):

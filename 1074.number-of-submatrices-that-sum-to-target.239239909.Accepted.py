@@ -15,11 +15,7 @@ from collections import defaultdict
 
 class Solution(object):
     def numSubmatrixSumTarget(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: int
-        """
+
         rows, cols = len(matrix), len(matrix[0])
         if rows < cols:
             matrix = zip(*matrix[::-1])

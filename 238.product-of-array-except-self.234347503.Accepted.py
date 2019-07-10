@@ -1,9 +1,6 @@
 class Solution:
     def productExceptSelf(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         result = []
         product = 1
         for i in nums:

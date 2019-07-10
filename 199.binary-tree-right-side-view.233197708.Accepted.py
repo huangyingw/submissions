@@ -20,10 +20,7 @@
 
 class Solution(object):
     def rightSideView(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         stack, node_depth = [(root, 0)], {}

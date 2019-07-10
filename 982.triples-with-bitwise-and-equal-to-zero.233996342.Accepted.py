@@ -16,10 +16,7 @@ from collections import defaultdict
 
 class Solution:
     def countTriplets(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         pairs = defaultdict(int)
         for num1 in A:
             for num2 in A:

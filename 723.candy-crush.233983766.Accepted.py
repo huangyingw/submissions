@@ -22,10 +22,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def candyCrush(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         rows, cols = len(board), len(board[0])
         while True:
             stable = True

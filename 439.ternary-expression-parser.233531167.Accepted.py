@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def parseTernary(self, expression):
-        """
-        :type expression: str
-        :rtype: str
-        """
+
         stack = []
         for c in expression[::-1]:
             if stack and stack[-1] == "?":

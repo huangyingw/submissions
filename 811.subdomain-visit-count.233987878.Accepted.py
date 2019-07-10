@@ -18,10 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def subdomainVisits(self, cpdomains):
-        """
-        :type cpdomains: List[str]
-        :rtype: List[str]
-        """
+
         counts = defaultdict(int)
         for cpdomain in cpdomains:
             count, domains = cpdomain.split(" ")

@@ -17,12 +17,7 @@ However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks po
 Note:
 arr will have length in range [1, 10].
 arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
-"""
 
-
-class Solution:
-    def maxChunksToSorted(self, arr):
-        """
         :type arr: List[int]
         :rtype: int
         """

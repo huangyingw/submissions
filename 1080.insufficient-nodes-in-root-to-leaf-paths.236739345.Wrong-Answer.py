@@ -8,11 +8,7 @@
 
 class Solution(object):
     def sufficientSubset(self, root, limit):
-        """
-        :type root: TreeNode
-        :type limit: int
-        :rtype: TreeNode
-        """
+
         def reduce_tree(root, limit, curr_sum):
             if not root:
                 return None

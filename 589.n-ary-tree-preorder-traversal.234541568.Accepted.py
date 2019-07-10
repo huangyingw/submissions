@@ -1,20 +1,11 @@
 
-"""
 
-class Node(object):
-    def __init__(self, val, children):
-        self.val = val
-        self.children = children
-"""
 
 
 
 class Solution(object):
     def preorder(self, root):
-        """
-        :type root: Node
-        :rtype: List[int]
-        """
+
         result = []
         if root == None:
             return result
@@ -29,10 +20,7 @@ class Solution(object):
 
 class Solution(object):
     def preorder(self, root):
-        """
-        :type root: Node
-        :rtype: List[int]
-        """
+
         if root == None:
             return []
         lst = [root.val]

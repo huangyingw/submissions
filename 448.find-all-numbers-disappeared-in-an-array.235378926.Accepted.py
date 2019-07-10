@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findDisappearedNumbers(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         for num in nums:
             num = abs(num)
             nums[num - 1] = -abs(nums[num - 1])

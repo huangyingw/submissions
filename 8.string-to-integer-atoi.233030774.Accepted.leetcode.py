@@ -1,9 +1,6 @@
 class Solution(object):
     def myAtoi(self, str):
-        """
-        :type str: str
-        :rtype: int
-        """
+
         sign = 1
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0

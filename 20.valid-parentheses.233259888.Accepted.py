@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         stack = []
         match = {'(': ')', '[': ']', '{': '}'}
         for c in s:

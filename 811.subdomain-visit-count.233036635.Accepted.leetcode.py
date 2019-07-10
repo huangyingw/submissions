@@ -1,9 +1,6 @@
 class Solution(object):
     def subdomainVisits(self, cpdomains):
-        """
-        :type cpdomains: List[str]
-        :rtype: List[str]
-        """
+
         domain_count = {}
         for cpdomain in cpdomains:
             count, domain = cpdomain.split(' ')

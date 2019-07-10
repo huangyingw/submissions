@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def monotoneIncreasingDigits(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         s = [int(c) for c in str(N)]
         i = 0
         while i + 1 < len(s):

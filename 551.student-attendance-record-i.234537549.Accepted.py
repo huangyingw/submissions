@@ -3,10 +3,7 @@ class Solution:
 
 
     def checkRecord(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+
         count_A = count_L = 0
         length = len(s)
         for i in s:

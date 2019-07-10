@@ -13,12 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxCount(self, m, n, ops):
-        """
-        :type m: int
-        :type n: int
-        :type ops: List[List[int]]
-        :rtype: int
-        """
+
         max_r, max_c = m, n
         for r, c in ops:
             max_r = min(max_r, r)

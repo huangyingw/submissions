@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def bestRotation(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         n = len(A)
         rotations = [0 for _ in range(n)]
         for i, num in enumerate(A):

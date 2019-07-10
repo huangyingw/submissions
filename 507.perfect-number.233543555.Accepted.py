@@ -12,10 +12,7 @@ import math
 
 class Solution(object):
     def checkPerfectNumber(self, num):
-        """
-        :type num: int
-        :rtype: bool
-        """
+
         if num <= 1:
             return False
         sum_divisors = 1

@@ -1,10 +1,7 @@
 
 class Solution:
     def sortedArrayToBST(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
         def helper(nums, start, end):
             if start >= end:
                 return None

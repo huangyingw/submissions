@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nearestPalindromic(self, n):
-        """
-        :type n: str
-        :rtype: str
-        """
+
         digits = len(n)
         candidates = {int("1" + "0" * (digits - 1) + "1")}
         if len(n) > 1:

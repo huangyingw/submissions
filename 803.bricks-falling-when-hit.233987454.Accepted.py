@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def hitBricks(self, grid, hits):
-        """
-        :type grid: List[List[int]]
-        :type hits: List[List[int]]
-        :rtype: List[int]
-        """
+
         rows, cols = len(grid), len(grid[0])
         nbors = ((1, 0), (0, 1), (-1, 0), (0, -1))
         for r, c in hits:

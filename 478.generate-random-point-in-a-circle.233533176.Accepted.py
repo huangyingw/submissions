@@ -20,19 +20,13 @@ import random
 
 class Solution(object):
     def __init__(self, radius, x_center, y_center):
-        """
-        :type radius: float
-        :type x_center: float
-        :type y_center: float
-        """
+
         self.radius = radius
         self.x_center = x_center
         self.y_center = y_center
 
     def randPoint(self):
-        """
-        :rtype: List[float]
-        """
+
         x, y = 2 * random.random() - 1, 2 * random.random() - 1
         if x * x + y * y > 1:
             return self.randPoint()

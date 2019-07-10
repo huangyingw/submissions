@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findNthDigit(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         length = 1
         digits = 9
         while n > digits:

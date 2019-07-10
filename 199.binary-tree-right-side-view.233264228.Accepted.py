@@ -19,10 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def rightSideView(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         right_view = []

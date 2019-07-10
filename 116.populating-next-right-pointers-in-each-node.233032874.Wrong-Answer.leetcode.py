@@ -9,10 +9,7 @@
 
 class Solution(object):
     def connect(self, root):
-        """
-        :type root: TreeLinkNode
-        :rtype: nothing
-        """
+
         if root is None:
             return
         nodes = [root]

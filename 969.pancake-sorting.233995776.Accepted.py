@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def pancakeSort(self, A):
-        """
-        :type A: List[int]
-        :rtype: List[int]
-        """
+
         flips = []
         for unsorted in range(len(A), 0, -1):
             i = A.index(unsorted)

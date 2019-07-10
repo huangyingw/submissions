@@ -1,9 +1,6 @@
 class Solution(object):
     def validUtf8(self, data):
-        """
-        :type data: List[int]
-        :rtype: bool
-        """
+
         seveneth_mask = 1 << 7
         sixth_mask = 1 << 6
         no_bytes = 0

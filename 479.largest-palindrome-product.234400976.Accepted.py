@@ -4,10 +4,7 @@ class Solution:
 
 
     def largestPalindrome(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n == 1:
             return 9
         if n == 2:

@@ -8,10 +8,7 @@
 
 class Codec:
     def serialize(self, root):
-        """Encodes a tree to a single string.
-        :type root: TreeNode
-        :rtype: str
-        """
+
         def preorder(root):
             if root:
                 seralizeTree.append(str(root.val) + ',')
@@ -24,10 +21,7 @@ class Codec:
         return ''.join(seralizeTree)
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-        :type data: str
-        :rtype: TreeNode
-        """
+
         def buildTree(preorder):
             value = preorder.pop(0)
             if value == '

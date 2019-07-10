@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def similarRGB(self, color):
-        """
-        :type color: str
-        :rtype: str
-        """
+
         result = ["
         for i in range(1, 6, 2):
             first, second = int(color[i], 16), int(color[i + 1], 16)

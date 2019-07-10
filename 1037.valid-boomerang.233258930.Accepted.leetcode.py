@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isBoomerang(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: bool
-        """
+
         if len({tuple(point) for point in points}) != 3:
             return False
         dx_1 = points[1][0] - points[0][0]

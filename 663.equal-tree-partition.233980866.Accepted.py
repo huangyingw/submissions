@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def checkEqualTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         def make_sum(node):
             if not node:
                 return 0

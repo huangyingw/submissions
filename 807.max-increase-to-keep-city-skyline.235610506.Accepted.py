@@ -1,9 +1,6 @@
 class Solution:
     def maxIncreaseKeepingSkyline(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         skyline_Top = []
         skyline_Left = []
         RowLen = len(grid)

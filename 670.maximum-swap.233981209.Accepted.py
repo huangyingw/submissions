@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maximumSwap(self, num):
-        """
-        :type num: int
-        :rtype: int
-        """
+
         s = [int(c) for c in str(num)]
         max_seen, max_seen_i = -1, -1
         demote, promote = -1, -1

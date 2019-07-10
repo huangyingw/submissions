@@ -9,10 +9,7 @@ Morse_tab = [".-", "-...", "-.-.",
 class Solution(object):
 
     def uniqueMorseRepresentations(self, words):
-        """
-        :type words: List[str]
-        :rtype: int
-        """
+
         if len(words) == 0:
             return 0
         ans_set = set()

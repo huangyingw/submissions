@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 
 class Solution(object):
-    """
-    :type target: str
-    :type dictionary: List[str]
-    :rtype: str
-    """
+
 
     def minAbbreviation(self, target, dictionary):
         def abbr(target, num):

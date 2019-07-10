@@ -30,12 +30,7 @@ import re
 
 class Solution(object):
     def basicCalculatorIV(self, expression, evalvars, evalints):
-        """
-        :type expression: str
-        :type evalvars: List[str]
-        :type evalints: List[int]
-        :rtype: List[str]
-        """
+
         class CounterMul(Counter):
             def __add__(self, other):
                 self.update(other)

@@ -12,11 +12,7 @@ from collections import Counter
 
 class Solution(object):
     def isScramble(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: bool
-        """
+
         count1 = Counter(s1)
         for c in s2:
             if c not in count1:

@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def minIncrementForUnique(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         increments = 0
         last_used = -1
         for num in sorted(A):

@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def totalNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+
         partials = [[]]
         for col in range(n):
             new_partials = []

@@ -3,10 +3,7 @@ class Solution:
 
 
     def compress(self, chars):
-        """
-        :type chars: List[str]
-        :rtype: int
-        """
+
         left = i = 0
         while i < len(chars):
             char, length = chars[i], 1

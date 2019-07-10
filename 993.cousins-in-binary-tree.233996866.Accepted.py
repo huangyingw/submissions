@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isCousins(self, root, x, y):
-        """
-        :type root: TreeNode
-        :type x: int
-        :type y: int
-        :rtype: bool
-        """
+
         val_to_node = {root.val: root}
         node_to_parent = {root: None}
         while True:

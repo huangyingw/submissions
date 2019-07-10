@@ -22,11 +22,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findSecretWord(self, wordlist, master):
-        """
-        :type wordlist: List[Str]
-        :type master: Master
-        :rtype: None
-        """
+
         def pair_matches(a, b):
             return sum(c1 == c2 for c1, c2 in zip(a, b))
 

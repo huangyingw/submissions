@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sufficientSubset(self, root, limit):
-        """
-        :type root: TreeNode
-        :type limit: int
-        :rtype: TreeNode
-        """
+
         if root.left is None and root.right is None:
             return None if root.val < limit else root
         if root.left:

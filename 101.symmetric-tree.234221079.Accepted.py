@@ -8,10 +8,7 @@
 
 class Solution(object):
     def isSymmetric(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         if root is None:
             return True
         return self.mirrorVisit(root.left, root.right)

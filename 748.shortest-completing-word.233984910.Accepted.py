@@ -18,11 +18,7 @@ from collections import Counter
 
 class Solution(object):
     def shortestCompletingWord(self, licensePlate, words):
-        """
-        :type licensePlate: str
-        :type words: List[str]
-        :rtype: str
-        """
+
         letters = [c.lower() for c in licensePlate if c > "9"]
         freq = Counter(letters)
         words.sort(key=lambda x: len(x))

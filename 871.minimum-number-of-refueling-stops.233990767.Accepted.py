@@ -22,12 +22,7 @@ import heapq
 
 class Solution:
     def minRefuelStops(self, target, startFuel, stations):
-        """
-        :type target: int
-        :type startFuel: int
-        :type stations: List[List[int]]
-        :rtype: int
-        """
+
         stops = 0
         fuel = startFuel
         past_fuels = []

@@ -23,12 +23,7 @@ from collections import defaultdict
 
 class Solution(object):
     def reachableNodes(self, edges, M, N):
-        """
-        :type edges: List[List[int]]
-        :type M: int
-        :type N: int
-        :rtype: int
-        """
+
         adjacency = defaultdict(set)
         subdivisions = {}
         for a, b, intermediate in edges:

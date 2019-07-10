@@ -1,9 +1,6 @@
 class Solution(object):
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         ls = len(s)
         if ls == 0:
             return 0

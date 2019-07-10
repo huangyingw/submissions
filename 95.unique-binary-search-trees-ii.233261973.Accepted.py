@@ -17,10 +17,7 @@ class TreeNode(object):
 
 class Solution(object):
     def generateTrees(self, n):
-        """
-        :type n: int
-        :rtype: List[TreeNode]
-        """
+
         if n <= 0:
             return []
         return self.generate(1, n)

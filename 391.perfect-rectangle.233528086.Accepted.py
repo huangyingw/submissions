@@ -12,10 +12,7 @@ from collections import defaultdict
 
 class Solution(object):
     def isRectangleCover(self, rectangles):
-        """
-        :type rectangles: List[List[int]]
-        :rtype: bool
-        """
+
         min_r, min_c = float("inf"), float("inf")
         max_r, max_c = float("-inf"), float("-inf")
         area = 0

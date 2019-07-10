@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def sortedSquares(self, A):
-        """
-        :type A: List[int]
-        :rtype: List[int]
-        """
+
         left, right = 0, len(A) - 1
         result = []
         while left <= right:

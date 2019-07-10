@@ -9,10 +9,7 @@ from collections import deque, defaultdict
 
 class Solution:
     def verticalOrder(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         if not root:
             return []
         cols = defaultdict(list)

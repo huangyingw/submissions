@@ -1,9 +1,6 @@
 class Solution(object):
     def trap(self, height):
-        """
-        :type height: List[int]
-        :rtype: int
-        """
+
         ls = len(height)
         if ls == 0:
             return 0

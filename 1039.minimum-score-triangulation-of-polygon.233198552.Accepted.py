@@ -25,10 +25,7 @@ Note:
 
 class Solution(object):
     def minScoreTriangulation(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         n = len(A)
         dp = [[0] * n for _ in range(n)]
         for length in range(n):

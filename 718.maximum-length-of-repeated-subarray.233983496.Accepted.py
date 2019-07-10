@@ -8,11 +8,7 @@ _project_ = 'leetcode'
 
 
 class Solution(object):
-    """
-    :type A: List[int]
-    :type B: List[int]
-    :rtype: int
-    """
+
 
     def findLength(self, A, B):
         def mutual_subarray(length):

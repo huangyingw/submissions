@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestPalindromeSubseq(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         n = len(s)
         if s == s[::-1]:
             return n

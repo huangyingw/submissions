@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def rangeSumBST(self, root, L, R):
-        """
-        :type root: TreeNode
-        :type L: int
-        :type R: int
-        :rtype: int
-        """
+
         def helper(node):
             if not node:
                 return 0

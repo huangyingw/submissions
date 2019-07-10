@@ -1,10 +1,6 @@
 class Solution(object):
     def fractionToDecimal(self, numerator, denominator):
-        """
-        :type numerator: int
-        :type denominator: int
-        :rtype: str
-        """
+
         if numerator == 0:
             return '0'
         fraction = ''

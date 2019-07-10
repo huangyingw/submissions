@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def binaryTreePaths(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[str]
-        """
+
         def helper(node, partial):
             if not node:
                 return

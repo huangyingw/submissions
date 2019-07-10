@@ -8,10 +8,7 @@
 
 class Solution(object):
     def inorderTraversal(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         if not root:
             return []
         stack, result = [root], []

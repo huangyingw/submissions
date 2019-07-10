@@ -12,12 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def powerfulIntegers(self, x, y, bound):
-        """
-        :type x: int
-        :type y: int
-        :type bound: int
-        :rtype: List[int]
-        """
+
         result = set()
 
         def make_power_list(val):

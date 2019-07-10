@@ -46,10 +46,7 @@ class SolutionIII(object):
     val = 0
 
     def bstToGst(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         if root.right:
             self.bstToGst(root.right)
         root.val += self.val

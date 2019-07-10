@@ -1,10 +1,7 @@
 
 class Solution(object):
     def constructRectangle(self, area):
-        """
-        :type area: int
-        :rtype: List[int]
-        """
+
 
         bondary = int(area**0.5)
         for i in range(bondary, 0, -1):

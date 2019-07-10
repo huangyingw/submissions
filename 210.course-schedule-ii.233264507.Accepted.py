@@ -14,11 +14,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: List[int]
-        """
+
         order = []
         nb_prerequisites = defaultdict(int)
         prereq_list = defaultdict(list)

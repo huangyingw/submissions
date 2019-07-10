@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def depthSum(self, nestedList):
-        """
-        :type nestedList: List[NestedInteger]
-        :rtype: int
-        """
+
         def helper(nested, depth):
             total = 0
             for item in nested:

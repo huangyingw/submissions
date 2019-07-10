@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def reversePairs(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         self.pairs = 0
 
         def mergesort(nums):

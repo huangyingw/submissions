@@ -1,9 +1,6 @@
 class Solution(object):
     def lastStoneWeight(self, stones):
-        """
-        :type stones: List[int]
-        :rtype: int
-        """
+
         while len(stones) > 1:
             max_x = max(stones)
             stones.remove(max_x)

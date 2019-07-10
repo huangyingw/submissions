@@ -1,9 +1,6 @@
 class Solution:
     def checkPossibility(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         mistake = 0
         x = nums[0]
         nums.append(max(nums))

@@ -19,11 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def buildTree(self, inorder, postorder):
-        """
-        :type inorder: List[int]
-        :type postorder: List[int]
-        :rtype: TreeNode
-        """
+
         if not inorder:
             return None
         inorder_index = inorder.index(postorder.pop())

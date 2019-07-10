@@ -19,10 +19,7 @@ class TreeLinkNode(object):
 
 class Solution(object):
     def connect(self, root):
-        """
-        :type root: TreeLinkNode
-        :rtype: nothing
-        """
+
         if not root:
             return
         level = [root]

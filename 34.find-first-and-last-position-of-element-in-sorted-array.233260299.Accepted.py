@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+
         def binary(target, left, right):
             if left > right:
                 return left

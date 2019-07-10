@@ -1,8 +1,6 @@
 class NumArray(object):
     def __init__(self, nums):
-        """
-        :type nums: List[int]
-        """
+
         self.length = len(nums)
         self.nums, self.bit = nums, [0] * (self.length + 1)
         for i in range(self.length):
@@ -12,11 +10,7 @@ class NumArray(object):
                 k += (k & -k)
 
     def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: void
-        """
+
         diff, self.nums[i] = val - self.nums[i], val
         i += 1
         while i <= self.length:
@@ -24,11 +18,7 @@ class NumArray(object):
             i += (i & -i)
 
     def sumRange(self, i, j):
-        """
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
+
         result, j = 0, j + 1
         while j:
             result += self.bit[j]

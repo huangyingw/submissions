@@ -1,9 +1,6 @@
 class Solution(object):
     def wallsAndGates(self, rooms):
-        """
-        :type rooms: List[List[int]]
-        :rtype: void Do not return anything, modify rooms in-place instead.
-        """
+
 
         direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         m = len(rooms)

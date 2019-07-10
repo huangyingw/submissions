@@ -1,9 +1,6 @@
 class Solution(object):
     def highFive(self, items):
-        """
-        :type items: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         if not items:
             return []
         score_map = {}

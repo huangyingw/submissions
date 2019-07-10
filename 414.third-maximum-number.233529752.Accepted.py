@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def thirdMax(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         maxima = [float("-inf")] * 3
         for num in nums:
             if num in maxima:

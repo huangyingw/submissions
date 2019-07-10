@@ -4,29 +4,20 @@ from collections import Counter
 
 
 def sortColors1(self, nums):
-    """
-    :type nums: List[int]
-    :rtype: void Do not return anything, modify nums in-place instead.
-    """
+
     nums.sort()
 
 
 
 def sortColors(self, nums):
-    """
-    :type nums: List[int]
-    :rtype: void Do not return anything, modify nums in-place instead.
-    """
+
     c = Counter(nums)
     nums[:] = [0] * c[0] + [1] * c[1] + [2] * c[2]
 
 
 
 def sortColors3(self, nums):
-    """
-    :type nums: List[int]
-    :rtype: void Do not return anything, modify nums in-place instead.
-    """
+
     import heapq
     heap = []
     for num in nums:
@@ -38,10 +29,7 @@ def sortColors3(self, nums):
 
 
 def sortColors4(self, nums):
-    """
-    :type nums: List[int]
-    :rtype: void Do not return anything, modify nums in-place instead.
-    """
+
     def swap(arr, i1, i2):
         temp = arr[i1]
         arr[i1] = arr[i2]

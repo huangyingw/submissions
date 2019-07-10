@@ -1,9 +1,6 @@
 class Solution(object):
     def countPrimes(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
 
         isPrime = [True] * n
         for i in xrange(2, n):

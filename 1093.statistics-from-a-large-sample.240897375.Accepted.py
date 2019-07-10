@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sampleStats(self, count):
-        """
-        :type count: List[int]
-        :rtype: List[float]
-        """
+
         minimum = None
         sample_count = sum(count)
         sum_samples, samples_seen = 0, 0

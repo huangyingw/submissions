@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numDupDigitsAtMostN(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         digits = [int(c) for c in str(N + 1)]
         n = len(digits)
         not_dup = 0

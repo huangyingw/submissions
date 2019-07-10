@@ -10,10 +10,7 @@ class Solution(object):
 
 
     def sumOfLeftLeaves(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         sum = 0
         if root != None:
             if root.left != None:

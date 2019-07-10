@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         max_length = 0
         letters = set()
         for c in s:

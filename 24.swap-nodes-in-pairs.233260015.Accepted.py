@@ -18,10 +18,7 @@ class ListNode(object):
 
 class Solution(object):
     def swapPairs(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         prev = dummy = ListNode(None)
         while head and head.next:
             next_head = head.next.next

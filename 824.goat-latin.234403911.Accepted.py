@@ -1,10 +1,7 @@
 
 class Solution:
     def toGoatLatin(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         postfix = "maa"
         new_list = []
         for word in S.split():

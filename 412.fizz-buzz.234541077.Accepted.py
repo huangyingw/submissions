@@ -1,10 +1,7 @@
 
 class Solution:
     def fizzBuzz(self, n):
-        """
-        :type n: int
-        :rtype: List[str]
-        """
+
         res = list(range(1, n + 1))
         for i in range(len(res)):
             if res[i] % 15 == 0:

@@ -15,18 +15,7 @@ as "[1,2,3,null,null,4,5]"
 Clarification: The above format is the same as how LeetCode serializes a binary tree. You do not necessarily need to follow this format,
 so please be creative and come up with different approaches yourself.
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
-"""
-
-
-
-
-
-
-
-
-class Codec:
-    def serialize(self, root):
-        """Encodes a tree to a single string.
+Encodes a tree to a single string.
         :type root: TreeNode
         :rtype: str
         """
@@ -41,10 +30,7 @@ class Codec:
         return serializeHelper(root, "")
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-        :type data: str
-        :rtype: TreeNode
-        """
+
         def deserializeHeper(l):
             if l[0] == "None":
                 l.pop(0)

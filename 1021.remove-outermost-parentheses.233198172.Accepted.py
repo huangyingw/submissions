@@ -6,19 +6,19 @@ Return S after removing the outermost parentheses of every primitive string in t
 Example 1:
 Input: "(()())(())"
 Output: "()()()"
-Explanation: 
+Explanation:
 The input string is "(()())(())", with primitive decomposition "(()())" + "(())".
 After removing outer parentheses of each part, this is "()()" + "()" = "()()()".
 Example 2:
 Input: "(()())(())(()(()))"
 Output: "()()()()(())"
-Explanation: 
+Explanation:
 The input string is "(()())(())(()(()))", with primitive decomposition "(()())" + "(())" + "(()(()))".
 After removing outer parentheses of each part, this is "()()" + "()" + "()(())" = "()()()()(())".
 Example 3:
 Input: "()()"
 Output: ""
-Explanation: 
+Explanation:
 The input string is "()()", with primitive decomposition "()" + "()".
 After removing outer parentheses of each part, this is "" + "" = "".
 Note:
@@ -30,10 +30,7 @@ S is a valid parentheses string
 
 class Solution(object):
     def removeOuterParentheses(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         temp, result = "", ""
         start_bracket = 0
         for char in S:

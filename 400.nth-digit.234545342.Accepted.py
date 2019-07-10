@@ -1,20 +1,10 @@
 
-"""
-1位数  9*1
-2位数  90*2
-3位数  900*3
-4位数  9000*4
-bit = 1 =>+1
-base = 9  =>*10
-"""
+
 
 
 class Solution:
     def findNthDigit(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         bit = 1
         base = 9
         while n > bit * base:

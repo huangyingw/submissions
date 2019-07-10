@@ -17,11 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def loudAndRich(self, richer, quiet):
-        """
-        :type richer: List[List[int]]
-        :type quiet: List[int]
-        :rtype: List[int]
-        """
+
         n = len(quiet)
         richer_than = [set() for _ in range(n)]
         for a, b in richer:

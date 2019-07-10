@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRelativeRanks(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[str]
-        """
+
         num_i = [(num, i) for i, num in enumerate(nums)]
         num_i.sort(reverse=True)
         result = [None for _ in range(len(nums))]

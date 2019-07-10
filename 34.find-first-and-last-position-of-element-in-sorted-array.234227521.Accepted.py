@@ -1,10 +1,6 @@
 class Solution(object):
     def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+
         length = len(nums)
         if length == 0:
             return [-1, -1]

@@ -15,10 +15,7 @@ from collections import Counter
 
 class Solution(object):
     def numTilePossibilities(self, tiles):
-        """
-        :type tiles: str
-        :rtype: int
-        """
+
         self.total = 0
         freq = Counter(tiles)
 

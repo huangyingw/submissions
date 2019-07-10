@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def setZeroes(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
-        """
+
         if not matrix or not matrix[0]:
             return 0
         rows = len(matrix)

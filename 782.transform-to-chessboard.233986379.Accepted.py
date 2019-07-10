@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def movesToChessboard(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: int
-        """
+
         n = len(board)
         rows = {tuple(row) for row in board}
         cols = set(zip(*board))

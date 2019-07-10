@@ -16,10 +16,7 @@ from collections import defaultdict
 
 class Solution:
     def minAreaRect(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = set(), set()
         for r, c in points:
             rows.add(r)

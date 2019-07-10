@@ -10,10 +10,7 @@
 
 class Solution:
     def findMode(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         self.mode = set()
         self.max_freq = 0
         self.cur_freq = 0

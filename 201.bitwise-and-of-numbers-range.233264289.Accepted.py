@@ -13,11 +13,7 @@ from math import log
 
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+
         if m == 0:
             return 0
         result = 0

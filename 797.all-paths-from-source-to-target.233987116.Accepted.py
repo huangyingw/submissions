@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def allPathsSourceTarget(self, graph):
-        """
-        :type graph: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         paths, results = [[0]], []
         while paths:
             new_paths = []

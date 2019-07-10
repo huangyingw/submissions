@@ -1,11 +1,7 @@
 
 class Solution:
     def expressiveWords(self, S, words):
-        """
-        :type S: str
-        :type words: List[str]
-        :rtype: int
-        """
+
         return sum(self.check(S, W) for W in words)
 
     def check(self, S, W):

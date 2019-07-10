@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numDecodings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         ways = 0
         if s[0] == "*":
             ways = 9

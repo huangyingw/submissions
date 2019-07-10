@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nthSuperUglyNumber(self, n, primes):
-        """
-        :type n: int
-        :type primes: List[int]
-        :rtype: int
-        """
+
         super_ugly = [1]
 
         indices = [0 for _ in range(len(primes))]

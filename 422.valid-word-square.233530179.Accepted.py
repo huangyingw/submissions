@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validWordSquare(self, words):
-        """
-        :type words: List[str]
-        :rtype: bool
-        """
+
         if len(words) != len(words[0]):
             return False
         n = len(words[0])

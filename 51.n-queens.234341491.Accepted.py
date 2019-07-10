@@ -1,9 +1,6 @@
 class Solution:
     def solveNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+
         def dfs(row):
             if row == n:
                 ret.append([''.join(r) for r in chessboard])

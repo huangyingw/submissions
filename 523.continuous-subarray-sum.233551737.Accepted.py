@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def checkSubarraySum(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: bool
-        """
+
         prefix_sum, prefix_sums = 0, {0: -1}
         for i, n in enumerate(nums):
             prefix_sum += n

@@ -1,9 +1,6 @@
 class Solution(object):
     def equationsPossible(self, equations):
-        """
-        :type equations: List[str]
-        :rtype: bool
-        """
+
         equal_list, unequal_list = [], []
         for equation in equations:
             x, y = equation[0], equation[3]

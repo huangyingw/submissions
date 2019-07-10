@@ -1,10 +1,6 @@
 class Solution(object):
     def threeSumClosest(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         nums.sort()
         result, min_diff = 0, float('inf')
         for index in range(len(nums) - 1):

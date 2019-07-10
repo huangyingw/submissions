@@ -14,10 +14,7 @@
 
 class Solution(object):
     def largestRectangleArea(self, heights):
-        """
-        :type heights: List[int]
-        :rtype: int
-        """
+
         if not heights:
             return 0
         stack = []
@@ -43,10 +40,7 @@ class Solution(object):
         return result
 
     def maximalRectangle(self, matrix):
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
+
         if not matrix:
             return 0
         m, n = len(matrix), len(matrix[0])

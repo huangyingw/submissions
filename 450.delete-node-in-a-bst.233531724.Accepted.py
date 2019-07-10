@@ -19,11 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def deleteNode(self, root, key):
-        """
-        :type root: TreeNode
-        :type key: int
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         if key > root.val:

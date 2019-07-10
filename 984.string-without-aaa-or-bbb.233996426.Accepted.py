@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def strWithout3a3b(self, a, b):
-        """
-        :type A: int
-        :type B: int
-        :rtype: str
-        """
+
         result = []
         diff = a - b
         if diff > 0:

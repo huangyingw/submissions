@@ -1,10 +1,6 @@
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: List[int]
-        """
+
         graph = [[] for _ in range(numCourses)]
         visited = [False for _ in range(numCourses)]
         stack = [False for _ in range(numCourses)]

@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def smallestFromLeaf(self, root):
-        """
-        :type root: TreeNode
-        :rtype: str
-        """
+
         def helper(node):
             if not node:
                 return ""

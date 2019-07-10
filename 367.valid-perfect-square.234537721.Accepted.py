@@ -2,10 +2,7 @@
 class Solution:
 
     def isPerfectSquare(self, num):
-        """
-        :type num: int
-        :rtype: bool
-        """
+
         low = 1
         high = num
         while low <= high:

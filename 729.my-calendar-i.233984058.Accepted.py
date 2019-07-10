@@ -22,11 +22,7 @@ class MyCalendar(object):
         self.bookings = [(float("-inf"), float("-inf")), (float("inf"), float("inf"))]
 
     def book(self, start, end):
-        """
-        :type start: int
-        :type end: int
-        :rtype: bool
-        """
+
         i = bisect.bisect_left(self.bookings, (start, end))
         if end > self.bookings[i][0]:
             return False

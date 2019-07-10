@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestComponentSize(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         def prime_factors(x):
             factors = set()
             while x % 2 == 0:

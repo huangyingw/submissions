@@ -3,11 +3,7 @@ class Solution:
 
 
     def findTheDifference(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
+
         return (set(t) - set(s)).pop()
 
 
@@ -15,11 +11,7 @@ class Solution:
 
 
     def findTheDifference(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
+
         for c in 'abcdefghijklmnopqrstuvwxyz':
             if s.count(c) != t.count(c):
                 return c
@@ -28,11 +20,7 @@ class Solution:
     from collections import Counter
 
     def findTheDifference(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
+
         s_count, t_count = Counter(s), Counter(t)
         for k, v in t_count.items():
             if k not in s_count:

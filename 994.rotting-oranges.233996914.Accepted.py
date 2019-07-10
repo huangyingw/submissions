@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def orangesRotting(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         fresh, rotten = set(), set()
         for r in range(rows):

@@ -22,11 +22,7 @@ from collections import defaultdict
 
 class Solution(object):
     def getHint(self, secret, guess):
-        """
-        :type secret: str
-        :type guess: str
-        :rtype: str
-        """
+
         bulls, cows = 0, 0
         unmatched_secret, unmatched_guess = defaultdict(int), defaultdict(int)
         for s, g in zip(secret, guess):

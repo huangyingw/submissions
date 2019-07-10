@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestDupSubstring(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         MOD = 2 ** 63 - 1
         MULTIPLIER = 26
         s = [ord(c) - ord("a") for c in S]

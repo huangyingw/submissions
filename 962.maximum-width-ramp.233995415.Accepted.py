@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxWidthRamp(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         max_ramp = 0
         stack = []
         for i, num in enumerate(A):

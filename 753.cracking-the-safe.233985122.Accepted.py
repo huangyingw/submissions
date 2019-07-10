@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 
 class Solution(object):
-    """
-    :type n: int
-    :type k: int
-    :rtype: str
-    """
+
 
     def crackSafe(self, n, k):
         seen = set()

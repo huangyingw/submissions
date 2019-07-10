@@ -18,12 +18,7 @@ import heapq
 
 class Solution(object):
     def mincostToHireWorkers(self, quality, wage, K):
-        """
-        :type quality: List[int]
-        :type wage: List[int]
-        :type K: int
-        :rtype: float
-        """
+
         wage_per_quality = [(w / float(q), q) for w, q in zip(wage, quality)]
         wage_per_quality.sort()
         workers = [-q for _, q in wage_per_quality[:K]]

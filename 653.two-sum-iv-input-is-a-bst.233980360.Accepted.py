@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findTarget(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: bool
-        """
+
         visited = set()
 
         def traverse(node):

@@ -11,15 +11,9 @@ class Solution:
     maxD = 0
 
     def diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def maxDepth(root):
-            """
-            :type root: TreeNode
-            :rtype: int
-            """
+
             if root == None:
                 return 0
             left = maxDepth(root.left)

@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def makesquare(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         def dfs(index):
             if index == len(nums):
                 return True

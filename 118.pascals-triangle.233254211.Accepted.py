@@ -1,9 +1,6 @@
 class Solution(object):
     def generate(self, numRows):
-        """
-        :type numRows: int
-        :rtype: List[List[int]]
-        """
+
         triangle = []
         for row in range(numRows):
             new_row = [0 for _ in range(row + 1)]

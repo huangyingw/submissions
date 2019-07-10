@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         def balanced(node):
             if not node:
                 return 0

@@ -3,10 +3,7 @@ import collections
 
 class Solution:
     def firstUniqChar(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         n = len(s)
         if n == 1:
             return 0

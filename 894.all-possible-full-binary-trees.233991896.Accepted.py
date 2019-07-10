@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def allPossibleFBT(self, N):
-        """
-        :type N: int
-        :rtype: List[TreeNode]
-        """
+
         memo = {}
 
         def helper(n):

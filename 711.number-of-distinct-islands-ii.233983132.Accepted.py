@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numDistinctIslands2(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         if not grid or not grid[0]:
             return 0
         rows, cols = len(grid), len(grid[0])

@@ -15,11 +15,7 @@ from collections import Counter, defaultdict
 
 class Solution:
     def wordSubsets(self, A, B):
-        """
-        :type A: List[str]
-        :type B: List[str]
-        :rtype: List[str]
-        """
+
         required = defaultdict(int)
         for b in B:
             freq = Counter(b)

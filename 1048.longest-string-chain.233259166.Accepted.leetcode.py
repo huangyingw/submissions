@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def longestStrChain(self, words):
-        """
-        :type words: List[str]
-        :rtype: int
-        """
+
         longest = defaultdict(int)
         for word in sorted(words, key=len):
             for i in range(len(word)):

@@ -10,10 +10,7 @@
 
 class Solution(object):
     def convertBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         self.val = 0
 
         def visit(root):
@@ -29,10 +26,7 @@ class Solution(object):
 
 class Solution(object):
     def convertBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         stack = [root]

@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestTriangleArea(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: float
-        """
+
         n = len(points)
         largest = 0
         for i in range(n - 2):

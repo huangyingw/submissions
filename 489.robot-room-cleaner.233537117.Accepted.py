@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def cleanRoom(self, robot):
-        """
-        :type robot: Robot
-        :rtype: None
-        """
+
         visited = set()
 
         def dfs(x, y, dx, dy):

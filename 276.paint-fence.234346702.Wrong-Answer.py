@@ -1,10 +1,6 @@
 class Solution:
     def numWays(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: int
-        """
+
         if n == 1:
             return k
         if n == 2:

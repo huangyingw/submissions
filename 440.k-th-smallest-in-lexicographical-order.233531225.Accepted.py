@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findKthNumber(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: int
-        """
+
         kth = 1
         k -= 1
         while k > 0:

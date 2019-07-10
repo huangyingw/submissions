@@ -1,9 +1,6 @@
 class Solution:
     def jump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if len(nums) <= 1:
             return 0
         end = 0 + nums[0]

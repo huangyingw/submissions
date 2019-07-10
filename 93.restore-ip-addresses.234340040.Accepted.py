@@ -1,10 +1,7 @@
 
 class Solution:
     def restoreIpAddresses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
         res = []
         self.dfs(res, s, 0, '', 0)
         return res

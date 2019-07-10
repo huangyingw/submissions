@@ -25,11 +25,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def movesToStamp(self, stamp, target):
-        """
-        :type stamp: str
-        :type target: str
-        :rtype: List[int]
-        """
+
         memo = {}
 
         def helper(i, j, results):

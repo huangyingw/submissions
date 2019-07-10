@@ -21,10 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shortestPathAllKeys(self, grid):
-        """
-        :type grid: List[str]
-        :rtype: int
-        """
+
         rows, cols = len(grid), len(grid[0])
         possible_keys = set("abcdef")
         keys = set()

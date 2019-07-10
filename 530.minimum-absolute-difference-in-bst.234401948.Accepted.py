@@ -10,10 +10,7 @@
 
 class Solution:
     def getMinimumDifference(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         stack = [root]
         queue = []
         while stack and stack[0]:
@@ -36,10 +33,7 @@ class Solution:
 
 class Solution2:
     def getMinimumDifference(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
 
         iot_list = []
 

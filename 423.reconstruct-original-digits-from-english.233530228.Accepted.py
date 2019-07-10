@@ -14,10 +14,7 @@ from collections import Counter
 
 class Solution(object):
     def originalDigits(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         digit_freq = [0] * 10
         letter_freq = Counter(s)
 

@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def wordBreak(self, s, wordDict):
-        """
-        :type s: str
-        :type wordDict: Set[str]
-        :rtype: bool
-        """
+
         can_make = [False] * (len(s) + 1)
         can_make[0] = True
         for i in range(1, len(s) + 1):

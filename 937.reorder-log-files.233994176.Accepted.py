@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def reorderLogFiles(self, logs):
-        """
-        :type logs: List[str]
-        :rtype: List[str]
-        """
+
         letters, numbers = [], []
         digits = {str(i) for i in range(10)}
         for log in logs:

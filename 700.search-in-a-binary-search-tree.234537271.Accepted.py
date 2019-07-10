@@ -10,11 +10,7 @@
 
 class Solution:
     def searchBST(self, root, val):
-        """
-        :type root: TreeNode
-        :type val: int
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         if root.val == val:
@@ -28,11 +24,7 @@ class Solution:
 
 class Solution:
     def searchBST(self, root, val):
-        """
-        :type root: TreeNode
-        :type val: int
-        :rtype: TreeNode
-        """
+
         stack = [root]
         while stack:
             root = stack.pop()

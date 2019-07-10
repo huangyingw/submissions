@@ -10,10 +10,7 @@
 
 class Solution(object):
     def sortColors(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
+
         zero, last = 0, len(nums) - 1
         index = 0
         while index <= last:

@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findDiagonalOrder(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
-        """
+
         diagonal = []
         if not matrix or not matrix[0]:
             return diagonal

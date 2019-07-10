@@ -1,9 +1,6 @@
 class Solution:
     def maxProduct(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         B = nums[::-1]
         for i in range(1, len(nums)):
             nums[i] *= nums[i - 1] or 1

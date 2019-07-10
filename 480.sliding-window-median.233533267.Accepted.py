@@ -16,11 +16,7 @@ import heapq
 
 class Solution(object):
     def medianSlidingWindow(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[float]
-        """
+
         lower, upper = [], []
         for i in range(k):
             heapq.heappush(upper, nums[i])

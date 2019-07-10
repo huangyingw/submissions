@@ -22,10 +22,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findRedundantDirectedConnection(self, edges):
-        """
-        :type edges: List[List[int]]
-        :rtype: List[int]
-        """
+
         n = len(edges)
         parents = [[] for _ in range(n + 1)]
         nbors = [set() for _ in range(n + 1)]

@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSumOfThreeSubarrays(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
+
         one_sum = sum(nums[:k])
         two_sum = sum(nums[k:k * 2])
         three_sum = sum(nums[k * 2:k * 3])

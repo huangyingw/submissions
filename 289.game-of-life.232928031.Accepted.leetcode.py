@@ -1,9 +1,6 @@
 class Solution(object):
     def gameOfLife(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: void Do not return anything, modify board in-place instead.
-        """
+
         if board and board[0]:
             M, N = len(board), len(board[0])
             board_next = copy.deepcopy(board)

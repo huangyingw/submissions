@@ -24,11 +24,7 @@ class Solution(object):
         self.leftover = deque()
 
     def read(self, buf, n):
-        """
-        :type buf: Destination buffer (List[str])
-        :type n: Maximum number of characters to read (int)
-        :rtype: The number of characters read (int)
-        """
+
         total_chars, added_chars, read_chars = 0, 4, 0
         while self.leftover and total_chars < n:
             buf[total_chars] = self.leftover.popleft()

@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def longestConsecutive(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         numset = set(nums)
         longest = 0
         for num in numset:

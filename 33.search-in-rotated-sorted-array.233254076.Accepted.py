@@ -1,10 +1,6 @@
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         if not nums:
             return -1
         left, right = 0, len(nums) - 1
@@ -27,11 +23,7 @@ class Solution(object):
 
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         def searchRecursive(nums, left, right, target):
             if left > right:
                 return -1

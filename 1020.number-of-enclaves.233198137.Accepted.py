@@ -1,9 +1,6 @@
 class Solution(object):
     def numEnclaves(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         result = 0
         queue = []
         for row in range(len(A)):

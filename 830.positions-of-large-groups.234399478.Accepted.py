@@ -1,10 +1,7 @@
 
 class Solution:
     def largeGroupPositions(self, S):
-        """
-        :type S: str
-        :rtype: List[List[int]]
-        """
+
         ans = []
         i = 0
         for j in range(len(S)):
@@ -15,10 +12,7 @@ class Solution:
         return ans
 
     def largeGroupPositions(self, S):
-        """
-        :type S: str
-        :rtype: List[List[int]]
-        """
+
         i, j, n, res = 0, 0, len(S), []
         while j < n:
             while j < n and S[i] == S[j]:

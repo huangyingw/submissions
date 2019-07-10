@@ -1,10 +1,6 @@
 class Solution(object):
     def shortestCommonSupersequence(self, str1, str2):
-        """
-        :type str1: str
-        :type str2: str
-        :rtype: str
-        """
+
         def lcs(A, B):
             n, m = len(A) + 1, len(B) + 1
             dp = [["" for _ in range(m)] for _ in range(n)]

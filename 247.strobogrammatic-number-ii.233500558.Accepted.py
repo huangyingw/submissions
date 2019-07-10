@@ -13,10 +13,7 @@ import time
 
 class Solution(object):
     def findStrobogrammatic(self, n):
-        """
-        :type n: int
-        :rtype: List[str]
-        """
+
         if n <= 0:
             return ['']
         if n % 2 == 1:

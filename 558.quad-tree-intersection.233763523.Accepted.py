@@ -19,11 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def intersect(self, quadTree1, quadTree2):
-        """
-        :type quadTree1: Node
-        :type quadTree2: Node
-        :rtype: Node
-        """
+
         if quadTree1.isLeaf:
             return quadTree1 if quadTree1.val else quadTree2
         if quadTree2.isLeaf:

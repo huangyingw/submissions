@@ -1,9 +1,6 @@
 class Solution:
     def swimInWater(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         connected = [[-1 for n in range(len(grid))] for n in range(len(grid[0]))]
         connected[0][0] = grid[0][0]
         pending = {'0_0': grid[0][0]}

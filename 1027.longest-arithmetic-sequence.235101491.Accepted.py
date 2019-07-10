@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def longestArithSeqLength(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
 
         sequences = [defaultdict(int) for _ in range(len(A))]
         for i in range(1, len(A)):

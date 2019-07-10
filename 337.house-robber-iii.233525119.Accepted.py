@@ -23,10 +23,7 @@ class TreeNode(object):
 
 class Solution(object):
     def rob(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         return max(self.helper(root))
 
     def helper(self, node):

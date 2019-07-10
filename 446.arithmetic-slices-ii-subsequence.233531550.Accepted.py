@@ -19,10 +19,7 @@ from collections import defaultdict
 
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         count = 0
         subsequences = []
 

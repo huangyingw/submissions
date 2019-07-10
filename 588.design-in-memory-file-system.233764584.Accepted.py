@@ -30,10 +30,7 @@ class FileSystem(object):
         self.files = {}
 
     def ls(self, path):
-        """
-        :type path: str
-        :rtype: List[str]
-        """
+
         path = path.split("/")
         if path[-1] in self.files:
             return [path[-1]]
@@ -44,10 +41,7 @@ class FileSystem(object):
         return sorted(list(folder.children.keys()))
 
     def mkdir(self, path):
-        """
-        :type path: str
-        :rtype: void
-        """
+
         folder = self.root
         for folder_string in path.split("/")[1:]:
             if folder_string not in folder.children:
@@ -55,11 +49,7 @@ class FileSystem(object):
             folder = folder.children[folder_string]
 
     def addContentToFile(self, filePath, content):
-        """
-        :type filePath: str
-        :type content: str
-        :rtype: void
-        """
+
         path = filePath.split("/")
         file_name = path[-1]
         if file_name in self.files:
@@ -72,9 +62,6 @@ class FileSystem(object):
             folder.children[file_name] = None
 
     def readContentFromFile(self, filePath):
-        """
-        :type filePath: str
-        :rtype: str
-        """
+
         file_name = filePath.split("/")[-1]
         return self.files[file_name]

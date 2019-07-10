@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSubarraySumCircular(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         if all(num <= 0 for num in A):
             return max(A)
         overall_max, overall_min = float('-inf'), float('inf')

@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def permute(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         permutations = [[]]
         for num in nums:
             new_permutations = []
@@ -26,10 +23,7 @@ class Solution(object):
 
 class Solution2(object):
     def permute(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         return self.permute_helper(nums, 0)
 
     def permute_helper(self, nums, index):

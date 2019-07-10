@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lexicalOrder(self, n):
-        """
-        :type n: int
-        :rtype: List[int]
-        """
+
         lexical = [1]
         while len(lexical) < n:
             num = lexical[-1] * 10

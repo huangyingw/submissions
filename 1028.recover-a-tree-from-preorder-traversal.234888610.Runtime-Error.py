@@ -32,10 +32,7 @@ Each node will have a value between 1 and 10^9.
 
 class Solution(object):
     def longestArithSeqLength(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         from collections import defaultdict
         dp = defaultdict(int)
 

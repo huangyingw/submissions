@@ -17,10 +17,7 @@ from collections import deque
 
 class Codec:
     def serialize(self, root):
-        """Encodes a tree to a single string.
-        :type root: TreeNode
-        :rtype: str
-        """
+
         nodes = []
 
         def preorder(node):
@@ -34,10 +31,7 @@ class Codec:
         return ",".join(nodes)
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-        :type data: str
-        :rtype: TreeNode
-        """
+
         node_list = deque(data.split(","))
 
         def rebuild():

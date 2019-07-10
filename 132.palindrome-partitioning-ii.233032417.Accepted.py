@@ -10,10 +10,7 @@
 
 class Solution(object):
     def minCut(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         if not s:
             return 0
         P = [[False for _ in range(len(s))] for _ in range(len(s))]

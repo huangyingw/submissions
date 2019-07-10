@@ -10,10 +10,7 @@
 
 class Solution:
     def flatten(self, root):
-        """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
-        """
+
         while root:
             if not root.right:
                 root.left, root.right = root.right, root.left

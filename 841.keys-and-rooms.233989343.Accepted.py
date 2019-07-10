@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canVisitAllRooms(self, rooms):
-        """
-        :type rooms: List[List[int]]
-        :rtype: bool
-        """
+
         visited = set()
 
         def dfs(room):

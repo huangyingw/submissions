@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def flatten(self, head):
-        """
-        :type head: Node
-        :rtype: Node
-        """
+
         node = head
         while node:
             if node.child:

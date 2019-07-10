@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nextLargerNodes(self, head):
-        """
-        :type head: ListNode
-        :rtype: List[int]
-        """
+
         result = []
         stack = []
         node = head

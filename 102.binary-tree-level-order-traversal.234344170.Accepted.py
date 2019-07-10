@@ -8,10 +8,7 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         if not root:
             return []
         result = []

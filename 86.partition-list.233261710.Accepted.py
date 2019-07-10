@@ -17,11 +17,7 @@ class ListNode(object):
 
 class Solution(object):
     def partition(self, head, x):
-        """
-        :type head: ListNode
-        :type x: int
-        :rtype: ListNode
-        """
+
         lesser_head = lesser = ListNode(None)
         greater_head = greater = ListNode(None)
         node = head

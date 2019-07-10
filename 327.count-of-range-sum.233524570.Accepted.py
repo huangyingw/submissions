@@ -12,12 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countRangeSum(self, nums, lower, upper):
-        """
-        :type nums: List[int]
-        :type lower: int
-        :type upper: int
-        :rtype: int
-        """
+
         cumul = [0]
         for num in nums:
             cumul.append(num + cumul[-1])

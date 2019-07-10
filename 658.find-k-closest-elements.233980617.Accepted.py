@@ -10,12 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findClosestElements(self, arr, k, x):
-        """
-        :type arr: List[int]
-        :type k: int
-        :type x: int
-        :rtype: List[int]
-        """
+
         left, right = 0, len(arr) - 1
         while left <= right:
             mid = (left + right) // 2

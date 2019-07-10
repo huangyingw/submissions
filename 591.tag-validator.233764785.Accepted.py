@@ -29,10 +29,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isValid(self, code):
-        """
-        :type code: str
-        :rtype: bool
-        """
+
         status = "text"
         tag_stack = []
         upper = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")

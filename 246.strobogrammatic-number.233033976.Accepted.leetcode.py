@@ -1,9 +1,6 @@
 class Solution(object):
     def isStrobogrammatic(self, num):
-        """
-        :type num: str
-        :rtype: bool
-        """
+
 
         dic = {'0': '0', '6': '9', '9': '6', '1': '1', '8': '8'}
         temp_s = ''

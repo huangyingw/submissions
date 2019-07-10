@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findNumberOfLIS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         lengths, counts = [], []

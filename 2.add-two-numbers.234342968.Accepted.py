@@ -7,11 +7,7 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
+
         dummy = current = ListNode(0)
         carry = 0
         while l1 or l2 or carry:

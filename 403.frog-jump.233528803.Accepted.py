@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canCross(self, stones):
-        """
-        :type stones: List[int]
-        :rtype: bool
-        """
+
         jumps = {}
         for stone in stones:
             jumps[stone] = set()

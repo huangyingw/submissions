@@ -1,10 +1,7 @@
 class Solution:
 
     def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
+
         str_x = str(x)
         left = 0
         right = len(str_x) - 1

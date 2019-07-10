@@ -1,10 +1,7 @@
 
 class Solution:
     def hasGroupsSizeX(self, deck):
-        """
-        :type deck: List[int]
-        :rtype: bool
-        """
+
 
         from collections import Counter
         from functools import reduce

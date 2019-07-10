@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def binaryGap(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         previous, max_gap = None, 0
         i = 0
         while N > 0:

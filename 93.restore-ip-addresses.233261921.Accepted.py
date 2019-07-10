@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def restoreIpAddresses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
+
         nb_sections = 4
         if 3 * nb_sections < len(s) < nb_sections:
             return []

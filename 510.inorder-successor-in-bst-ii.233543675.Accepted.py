@@ -20,10 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def inorderSuccessor(self, node):
-        """
-        :type node: Node
-        :rtype: Node
-        """
+
         if node.right:
             node = node.right
             while node.left:

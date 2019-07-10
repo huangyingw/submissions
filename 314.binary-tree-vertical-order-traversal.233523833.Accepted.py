@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def verticalOrder(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         vertical = defaultdict(list)
         frontier = [(root, 0)]
         for node, col in frontier:

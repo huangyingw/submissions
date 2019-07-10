@@ -15,11 +15,7 @@ import heapq
 
 class Solution(object):
     def rearrangeString(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: str
-        """
+
         freq = Counter(s)
         heap = [(-count, letter) for letter, count in freq.items()]
         heapq.heapify(heap)

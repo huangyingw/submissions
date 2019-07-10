@@ -8,10 +8,7 @@
 
 class Solution:
     def maxPathSum(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.res = root.val
         self.dfs(root)
         return self.res

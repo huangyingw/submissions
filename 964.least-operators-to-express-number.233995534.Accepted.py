@@ -23,11 +23,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def leastOpsExpressTarget(self, x, target):
-        """
-        :type x: int
-        :type target: int
-        :rtype: int
-        """
+
         pos = neg = powers = 0
         while target:
             target, remainder = divmod(target, x)

@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sequenceReconstruction(self, org, seqs):
-        """
-        :type org: List[int]
-        :type seqs: List[List[int]]
-        :rtype: bool
-        """
+
         extended = [None] + org
         pairs = set((n1, n2) for n1, n2 in zip(extended, org))
         num_to_index = {num: i for i, num in enumerate(extended)}

@@ -8,11 +8,7 @@
 
 class Solution(object):
     def buildTree(self, preorder, inorder):
-        """
-        :type preorder: List[int]
-        :type inorder: List[int]
-        :rtype: TreeNode
-        """
+
         self.index = 0
 
         def recursive(preorder, inorder, start, end):

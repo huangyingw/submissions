@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def reverseStr(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: str
-        """
+
         reverse = True
         result = []
         for i in range(0, len(s), k):

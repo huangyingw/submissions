@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minDiffInBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.min_diff = float("inf")
         self.prev = float("-inf")
 

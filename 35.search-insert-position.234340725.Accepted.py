@@ -1,10 +1,6 @@
 class Solution:
     def searchInsert(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+
         if not nums or len(nums) == 0:
             return 0
         if nums[-1] < target:

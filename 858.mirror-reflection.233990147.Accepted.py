@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def mirrorReflection(self, p, q):
-        """
-        :type p: int
-        :type q: int
-        :rtype: int
-        """
+
         k = 1
         while (k * q) % p != 0:
             k += 1

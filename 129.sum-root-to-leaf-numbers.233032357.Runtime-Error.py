@@ -24,10 +24,7 @@ Therefore, sum = 12 + 13 = 25.
 
 class Solution(object):
     def sumNumbers(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
 

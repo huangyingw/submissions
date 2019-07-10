@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findTilt(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.tilt = 0
 
         def helper(node):

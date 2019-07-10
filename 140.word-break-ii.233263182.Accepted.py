@@ -21,11 +21,7 @@ class Solution(object):
         return can_make[-1]
 
     def wordBreak(self, s, wordDict):
-        """
-        :type s: str
-        :type wordDict: Set[str]
-        :rtype: List[str]
-        """
+
         if not self.canBreak(s, wordDict):
             return []
         result_lists = self.break_word(s, 0, wordDict, {})

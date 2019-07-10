@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def flipgame(self, fronts, backs):
-        """
-        :type fronts: List[int]
-        :type backs: List[int]
-        :rtype: int
-        """
+
         duplicates = {f for f, b in zip(fronts, backs) if f == b}
         result = float("inf")
         for f, b in zip(fronts, backs):

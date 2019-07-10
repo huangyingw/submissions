@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minCameraCover(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         covered = {None}
 
         def helper(node, parent):

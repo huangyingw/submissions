@@ -17,16 +17,12 @@ import bisect
 
 class ExamRoom(object):
     def __init__(self, N):
-        """
-        :type N: int
-        """
+
         self.seats = []
         self.N = N
 
     def seat(self):
-        """
-        :rtype: int
-        """
+
         if not self.seats:
             self.seats.append(0)
             return 0
@@ -42,8 +38,5 @@ class ExamRoom(object):
         return index
 
     def leave(self, p):
-        """
-        :type p: int
-        :rtype: void
-        """
+
         self.seats.remove(p)

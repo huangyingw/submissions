@@ -9,11 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def myPow(self, x, n):
-        """
-        :type x: float
-        :type n: int
-        :rtype: float
-        """
+
         neg = n < 0
         pos_result = self.pos_pow(x, abs(n))
         return 1 / pos_result if neg else pos_result

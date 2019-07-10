@@ -1,10 +1,7 @@
 
 class Solution:
     def findDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         from collections import Counter
         mapping = Counter(nums)
         return [i for i, v in mapping.items() if v == 2]

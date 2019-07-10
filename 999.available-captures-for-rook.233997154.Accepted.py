@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numRookCaptures(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: int
-        """
+
         SIZE = 8
         for r in range(SIZE):
             for c in range(SIZE):

@@ -1,14 +1,9 @@
-"""
-Time complexity: O(n^2)
-"""
+
 
 
 class Solution:
     def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         result = ''
         for i in range(len(s)):
             odd = self.getPalindrome(i, i, s)

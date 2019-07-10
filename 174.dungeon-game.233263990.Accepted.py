@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def calculateMinimumHP(self, dungeon):
-        """
-        :type dungeon: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(dungeon), len(dungeon[0])
         for r in range(rows - 1):
             dungeon[r].append(float('inf'))

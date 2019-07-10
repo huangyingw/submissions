@@ -13,12 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def calcEquation(self, equations, values, queries):
-        """
-        :type equations: List[List[str]]
-        :type values: List[float]
-        :type queries: List[List[str]]
-        :rtype: List[float]
-        """
+
         graph = defaultdict(dict)
         for i in range(len(equations)):
             num, den, val = equations[i][0], equations[i][1], values[i]

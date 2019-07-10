@@ -1,10 +1,6 @@
 class Solution(object):
     def reverseStr(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: str
-        """
+
         if len(s) <= k:
             return s[::-1]
         elif len(s) <= 2 * k:

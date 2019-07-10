@@ -8,11 +8,7 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p, q):
-        """
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: bool
-        """
+
         if not p or not q:
             return p == q
         if p.val != q.val:

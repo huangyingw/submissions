@@ -7,11 +7,7 @@
 
 class Solution(object):
     def insert(self, intervals, newInterval):
-        """
-        :type intervals: List[Interval]
-        :type newInterval: Interval
-        :rtype: List[Interval]
-        """
+
         if intervals is None or len(intervals) == 0:
             return [newInterval]
         intervals.sort(key=lambda x: x.start)

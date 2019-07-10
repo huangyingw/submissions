@@ -19,10 +19,7 @@ class TreeNode(object):
 
 class Solution(object):
     def longestConsecutive(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         self.longest = 0
         self.consecutive(root, float('inf'), 0)
         return self.longest

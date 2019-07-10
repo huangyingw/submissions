@@ -13,11 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def advantageCount(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: List[int]
-        """
+
         B_i = sorted([(b, i) for i, b in enumerate(B)])
         result = [None] * len(A)
         i = 0

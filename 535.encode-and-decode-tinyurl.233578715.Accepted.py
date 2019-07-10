@@ -19,10 +19,7 @@ class Codec:
         self.map = {}
 
     def encode(self, longUrl):
-        """Encodes a URL to a shortened URL.
-        :type longUrl: str
-        :rtype: str
-        """
+
         encoding = []
         for i in range(6):
             encoding.append(self.letters[random.randint(0, 61)])
@@ -33,8 +30,5 @@ class Codec:
         return encoding
 
     def decode(self, shortUrl):
-        """Decodes a shortened URL to its original URL.
-        :type shortUrl: str
-        :rtype: str
-        """
+
         return self.map[shortUrl]

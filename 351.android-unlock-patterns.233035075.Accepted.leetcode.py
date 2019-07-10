@@ -1,10 +1,6 @@
 class Solution(object):
     def numberOfPatterns(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+
         used = [False] * 9
         res = 0
         for l in range(m, n + 1):

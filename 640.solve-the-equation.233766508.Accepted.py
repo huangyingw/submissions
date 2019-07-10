@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def solveEquation(self, equation):
-        """
-        :type equation: str
-        :rtype: str
-        """
+
         x, val = 0, 0
         base = 1
         i = 0

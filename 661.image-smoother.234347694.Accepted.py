@@ -1,9 +1,6 @@
 class Solution:
     def imageSmoother(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         m = len(M)
         n = len(M[0]) if m else 0
         ret = [[0] * n for j in range(m)]

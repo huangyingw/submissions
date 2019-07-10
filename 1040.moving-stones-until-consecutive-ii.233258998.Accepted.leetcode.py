@@ -22,10 +22,7 @@ from collections import deque
 
 class Solution(object):
     def numMovesStonesII(self, stones):
-        """
-        :type stones: List[int]
-        :rtype: List[int]
-        """
+
         n = len(stones)
         stones.sort()
         sum_gaps = stones[-1] - stones[0] - n + 1

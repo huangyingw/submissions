@@ -1,12 +1,6 @@
 class Solution(object):
     def colorBorder(self, grid, r0, c0, color):
-        """
-        :type grid: List[List[int]]
-        :type r0: int
-        :type c0: int
-        :type color: int
-        :rtype: List[List[int]]
-        """
+
         if not grid:
             return grid
         visited, border = [], []

@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSumAfterPartitioning(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         results = [0]
         for i in range(len(A)):
             subarray_max, max_result = 0, 0

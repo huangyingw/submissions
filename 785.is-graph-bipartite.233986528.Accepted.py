@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isBipartite(self, graph):
-        """
-        :type graph: List[List[int]]
-        :rtype: bool
-        """
+
         n = len(graph)
         colours = [None] * n
         for i in range(len(graph)):

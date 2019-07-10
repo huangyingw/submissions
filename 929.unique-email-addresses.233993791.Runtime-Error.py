@@ -21,10 +21,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def numUniqueEmails(self, emails):
-        """
-        :type emails: List[str]
-        :rtype: int
-        """
+
         unique = set()
         for email in emails:
             local, domain = email.split("@")

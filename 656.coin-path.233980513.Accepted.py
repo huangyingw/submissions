@@ -19,11 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def cheapestJump(self, A, B):
-        """
-        :type A: List[int]
-        :type B: int
-        :rtype: List[int]
-        """
+
         cheapest = [[float("inf"), []] for _ in range(len(A))]
         cheapest[0] = [A[0], [1]]
         for i, cost in enumerate(A[:-1]):

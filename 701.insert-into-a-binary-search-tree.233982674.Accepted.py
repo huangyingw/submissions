@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def insertIntoBST(self, root, val):
-        """
-        :type root: TreeNode
-        :type val: int
-        :rtype: TreeNode
-        """
+
         new_node = TreeNode(val)
         if not root:
             return new_node

@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestDivisibleSubset(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
         max_to_set = {-1: set()}
         nums.sort()
         for num in nums:

@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def calculate(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         stack = []
         num = 0
         op = '+'

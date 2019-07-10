@@ -1,9 +1,6 @@
 class Solution(object):
     def productExceptSelf(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+
 
         totalProduct = reduce((lambda total, num: total * num), nums)
         if totalProduct:

@@ -23,10 +23,7 @@ class ListNode(object):
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
-        """
-        :type head1, head1: ListNode
-        :rtype: ListNode
-        """
+
         if not headA or not headB:
             return None
         savedA, savedB = headA, headB
@@ -39,10 +36,7 @@ class Solution(object):
 
 class Solution2(object):
     def getIntersectionNode(self, headA, headB):
-        """
-        :type head1, head1: ListNode
-        :rtype: ListNode
-        """
+
         if not headA or not headB:
             return None
         savedA, savedB = headA, headB

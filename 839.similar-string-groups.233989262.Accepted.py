@@ -21,10 +21,7 @@ from collections import defaultdict
 
 class Solution(object):
     def numSimilarGroups(self, A):
-        """
-        :type A: List[str]
-        :rtype: int
-        """
+
         N, W = len(A), len(A[0])
         word_swap = defaultdict(set)
         if N < 2 * W:

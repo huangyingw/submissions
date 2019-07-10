@@ -16,10 +16,7 @@ class ListNode(object):
 
 class Solution(object):
     def insertionSortList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         sorted_tail = dummy = ListNode(float('-inf'))
         dummy.next = head
         while sorted_tail.next:

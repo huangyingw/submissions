@@ -16,11 +16,7 @@ class ListNode(object):
 
 class Solution(object):
     def removeElements(self, head, val):
-        """
-        :type head: ListNode
-        :type val: int
-        :rtype: ListNode
-        """
+
         dummy = prev = ListNode(None)
         dummy.next = head
         while head:

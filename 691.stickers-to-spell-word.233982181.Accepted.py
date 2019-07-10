@@ -21,11 +21,7 @@ from collections import defaultdict
 
 class Solution(object):
     def minStickers(self, stickers, target):
-        """
-        :type stickers: List[str]
-        :type target: str
-        :rtype: int
-        """
+
         target_set, remaining_target = set(target), set(target)
         char_to_word = defaultdict(set)
         for sticker in stickers:

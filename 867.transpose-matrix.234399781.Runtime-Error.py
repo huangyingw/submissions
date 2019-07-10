@@ -4,10 +4,7 @@ class Solution:
 
 
     def transpose(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         trans = []
         for c in range(len(A[0])):
             temp = []

@@ -18,12 +18,7 @@ from collections import defaultdict
 
 class Solution(object):
     def numBusesToDestination(self, routes, S, T):
-        """
-        :type routes: List[List[int]]
-        :type S: int
-        :type T: int
-        :rtype: int
-        """
+
         routes = [set(route) for route in routes]
         stop_to_routes = defaultdict(set)
         for route, stops in enumerate(routes):

@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def depthSumInverse(self, nestedList):
-        """
-        :type nestedList: List[NestedInteger]
-        :rtype: int
-        """
+
         depth_sums = []
         for nested in nestedList:
             self.dfs(nested, 0, depth_sums)

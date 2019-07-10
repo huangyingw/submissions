@@ -15,12 +15,7 @@ Note:
 S.length <= 100
 33 <= S[i].ASCIIcode <= 122
 S doesn't contain \ or "
-"""
 
-
-class Solution:
-    def reverseOnlyLetters(self, S):
-        """
         :type S: str
         :rtype: str
         """

@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def magicalString(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n == 0:
             return 0
         i = 2

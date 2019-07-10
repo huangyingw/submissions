@@ -15,10 +15,7 @@ from collections import Counter
 
 class Solution:
     def hasGroupsSizeX(self, deck):
-        """
-        :type deck: List[int]
-        :rtype: bool
-        """
+
         freq = Counter(deck)
         min_count = min(freq.values())
         if min_count == 1:

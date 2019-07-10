@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def shortestPathLength(self, graph):
-        """
-        :type graph: List[List[int]]
-        :rtype: int
-        """
+
         if len(graph) == 0 or len(graph[0]) == 0:
             return 0
         n = len(graph)

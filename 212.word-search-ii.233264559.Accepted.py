@@ -19,11 +19,7 @@ class Node:
 
 class Solution(object):
     def findWords(self, board, words):
-        """
-        :type board: List[List[str]]
-        :type words: List[str]
-        :rtype: List[str]
-        """
+
         root = Node()
         for word in words:
             node = root

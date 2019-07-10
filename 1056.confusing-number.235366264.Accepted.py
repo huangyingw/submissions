@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def confusingNumber(self, N):
-        """
-        :type N: int
-        :rtype: bool
-        """
+
         S = str(N)
         rotation = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
         result = []

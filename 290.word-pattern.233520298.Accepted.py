@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def wordPattern(self, pattern, str):
-        """
-        :type pattern: str
-        :type str: str
-        :rtype: bool
-        """
+
         str = str.split()
         if len(str) != len(pattern):
             return False

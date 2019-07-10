@@ -15,11 +15,7 @@ from collections import defaultdict
 
 class Solution(object):
     def sumOfDistancesInTree(self, N, edges):
-        """
-        :type N: int
-        :type edges: List[List[int]]
-        :rtype: List[int]
-        """
+
         neighbours = defaultdict(set)
         for a, b in edges:
             neighbours[a].add(b)

@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def partitionLabels(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
+
         last = {c: i for i, c in enumerate(S)}
         result = []
         start, end = 0, 0

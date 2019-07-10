@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestValues(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         result = []
         if not root:
             return []

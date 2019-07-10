@@ -8,10 +8,7 @@
 class Solution(object):
 
     def guessNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         low = 1
         high = n
         while low <= high:

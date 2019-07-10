@@ -1,10 +1,6 @@
 class Solution:
     def getImportance(self, employees, id):
-        """
-        :type employees: Employee
-        :type id: int
-        :rtype: int
-        """
+
         pending = [id]
         imp = 0
         while(len(pending) > 0):

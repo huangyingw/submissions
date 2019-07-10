@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def makeLargestSpecial(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         specials = []
         if not S:
             return ""

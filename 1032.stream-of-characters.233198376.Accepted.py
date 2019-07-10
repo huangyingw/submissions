@@ -6,9 +6,7 @@ class Trie(object):
 
 class StreamChecker(object):
     def __init__(self, words):
-        """
-        :type words: List[str]
-        """
+
         self.trie_node = Trie()
         for word in words:
             ptr = self.trie_node
@@ -20,10 +18,7 @@ class StreamChecker(object):
         self.stream = []
 
     def query(self, letter):
-        """
-        :type letter: str
-        :rtype: bool
-        """
+
         self.stream.append(letter)
         root = self.trie_node
         for char in reversed(self.stream):

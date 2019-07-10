@@ -1,17 +1,10 @@
 
 class Solution:
-    """
-    a**2+b**2 = c
-    b**2 = c - a**2  右边是平方数且大于零
-    那么可以遍历[0,c**.5+1]，看是否有书满足c-a**2是平方数
-    """
+
 
 
     def judgeSquareSum(self, c):
-        """
-        :type c: int
-        :rtype: bool
-        """
+
         def is_square(N):
             return int(N**.5)**2 == N
         return any(is_square(c - a * a) for a in xrange(int(c**.5) + 1))
@@ -19,10 +12,7 @@ class Solution:
 
 
     def judgeSquareSum(self, c):
-        """
-        :type c: int
-        :rtype: bool
-        """
+
         def is_square(N):
             return int(N**.5)**2 == N
         for a in range(int(c**.5) + 1):

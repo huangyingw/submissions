@@ -1,19 +1,12 @@
 class MyHashMap(object):
 
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
+
         self.size = 10000
         self.nodes = [None] * self.size
 
     def put(self, key, value):
-        """
-        value will always be non-negative.
-        :type key: int
-        :type value: int
-        :rtype: void
-        """
+
         index = hash(key) % self.size
         if self.nodes[index] is None:
             self.nodes[index] = ListNode(-1, -1)
@@ -24,11 +17,7 @@ class MyHashMap(object):
             prev.next.val = value
 
     def get(self, key):
-        """
-        Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
-        :type key: int
-        :rtype: int
-        """
+
         index = hash(key) % self.size
         if self.nodes[index] is None:
             return -1
@@ -39,11 +28,7 @@ class MyHashMap(object):
             return prev.next.val
 
     def remove(self, key):
-        """
-        Removes the mapping of the specified value key if this map contains a mapping for the key
-        :type key: int
-        :rtype: void
-        """
+
         index = hash(key) % self.size
         if self.nodes[index] is None:
             return

@@ -5,7 +5,7 @@ Return the final string after all such duplicate removals have been made.  It is
 Example 1:
 Input: "abbaca"
 Output: "ca"
-Explanation: 
+Explanation:
 For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
 Note:
 1 <= S.length <= 20000
@@ -15,10 +15,7 @@ S consists only of English lowercase letters.
 
 class Solution(object):
     def removeDuplicates(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
+
         stack = []
         if not S:
             return ""

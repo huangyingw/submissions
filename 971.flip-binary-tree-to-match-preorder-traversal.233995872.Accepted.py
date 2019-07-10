@@ -20,11 +20,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def flipMatchVoyage(self, root, voyage):
-        """
-        :type root: TreeNode
-        :type voyage: List[int]
-        :rtype: List[int]
-        """
+
         flipped = []
         self.i = 0
 

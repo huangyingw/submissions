@@ -8,10 +8,7 @@
 
 class Solution(object):
     def bstToGst(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
+
         self.curr_sum = 0
 
         def greaterSum(root):

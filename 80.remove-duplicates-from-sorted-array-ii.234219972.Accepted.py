@@ -1,9 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if nums is None:
             return 0
         length = len(nums)

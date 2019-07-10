@@ -22,11 +22,7 @@ from fractions import Fraction
 
 class Solution:
     def isRationalEqual(self, S, T):
-        """
-        :type S: str
-        :type T: str
-        :rtype: bool
-        """
+
         def to_numeric(s):
             if not ("(") in s:
                 return Fraction(s)

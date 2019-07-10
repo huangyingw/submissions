@@ -2,10 +2,7 @@
 class Solution:
 
     def dominantIndex(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         import heapq
         if len(nums) < 2:
             return 0
@@ -14,10 +11,7 @@ class Solution:
 
 
     def dominantIndex(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         origin = nums[:]
         max_num = max(nums)
         nums.remove(max_num)

@@ -1,10 +1,6 @@
 class Solution:
     def multiply(self, num1, num2):
-        """
-        :type num1: str
-        :type num2: str
-        :rtype: str
-        """
+
         result = [0] * (len(num1) + len(num2))
         tail = len(result) - 1
         for n1 in reversed(num1):

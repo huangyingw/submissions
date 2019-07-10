@@ -1,10 +1,6 @@
 class Solution:
     def isSubtree(self, s, t):
-        """
-        :type s: TreeNode
-        :type t: TreeNode
-        :rtype: bool
-        """
+
         if not s:
             return s is t
         if self.isEqual(s, t):

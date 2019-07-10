@@ -1,10 +1,7 @@
 
 class Solution:
     def getRow(self, rowIndex):
-        """
-        :type rowIndex: int
-        :rtype: List[int]
-        """
+
         if rowIndex == 0:
             return [1]
         c = Solution.getRow(self, rowIndex - 1)

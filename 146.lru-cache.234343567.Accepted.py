@@ -8,9 +8,7 @@ class Node(object):
 
 class LRUCache(object):
     def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
+
         self.capacity = capacity
         self.dict = {}
         self.head = Node(0, 0)
@@ -19,10 +17,7 @@ class LRUCache(object):
         self.tail.prev = self.head
 
     def get(self, key):
-        """
-        :type key: int
-        :rtype: int
-        """
+
         if key in self.dict:
             n = self.dict[key]
             self._remove(n)
@@ -32,11 +27,7 @@ class LRUCache(object):
         return -1
 
     def put(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: void
-        """
+
         if key in self.dict:
             self._remove(self.dict[key])
         n = Node(key, value)

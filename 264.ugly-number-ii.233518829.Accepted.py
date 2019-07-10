@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def nthUglyNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         ugly = [1]
         i_2, i_3, i_5 = 0, 0, 0
         while len(ugly) < n:

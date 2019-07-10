@@ -39,11 +39,7 @@ class Solution(object):
         return
 
     def pathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: int
-        """
+
         self.result = 0
         self.pathSumHelper(root, sum, 0, {0: 1})
         return self.result

@@ -1,9 +1,6 @@
 class Solution(object):
     def minFlipsMonoIncr(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         ones = [0]
         for char in S:
             ones.append(ones[-1] + int(char))

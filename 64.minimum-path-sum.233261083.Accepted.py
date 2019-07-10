@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minPathSum(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         m = len(grid)
         n = len(grid[0])
         min_path = [float('inf') for _ in range(n + 1)]

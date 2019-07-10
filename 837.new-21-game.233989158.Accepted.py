@@ -15,12 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def new21Game(self, N, K, W):
-        """
-        :type N: int
-        :type K: int
-        :type W: int
-        :rtype: float
-        """
+
         if K == 0 or N >= K + W:
             return 1
         probability = [0] * (N + 1)

@@ -24,10 +24,7 @@ Note:
 
 class Solution(object):
     def prevPermOpt1(self, A):
-        """
-        :type A: List[int]
-        :rtype: List[int]
-        """
+
         left, right = len(A) - 2, len(A) - 1
         for left in range(len(A) - 2, -1, -1):
             if A[left] > A[left + 1]:

@@ -12,10 +12,7 @@ from collections import defaultdict
 
 class Solution(object):
     def isReflected(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: bool
-        """
+
         y_to_x = defaultdict(set)
         for x, y in points:
             y_to_x[y].add(x)

@@ -23,11 +23,7 @@ class MyCalendarTwo(object):
         self.intervals = []
 
     def book(self, start, end):
-        """
-        :type start: int
-        :type end: int
-        :rtype: bool
-        """
+
         for i, j in self.doubles:
             if start < j and end > i:
                 return False

@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def expand(self, S):
-        """
-        :type S: str
-        :rtype: List[str]
-        """
+
         group_start = 0
         groups = []
         while group_start < len(S):

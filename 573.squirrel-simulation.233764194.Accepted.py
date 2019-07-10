@@ -14,14 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minDistance(self, height, width, tree, squirrel, nuts):
-        """
-        :type height: int
-        :type width: int
-        :type tree: List[int]
-        :type squirrel: List[int]
-        :type nuts: List[List[int]]
-        :rtype: int
-        """
+
         if not nuts:
             return 0
         nuts_to_tree = 0

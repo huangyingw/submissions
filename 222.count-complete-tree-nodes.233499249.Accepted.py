@@ -22,10 +22,7 @@ class TreeNode(object):
 
 class Solution(object):
     def countNodes(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
         left_subtree = self.left_depth(root.left)

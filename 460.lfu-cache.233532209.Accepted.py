@@ -17,9 +17,7 @@ import heapq
 
 class LFUCache(object):
     def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
+
         self.capacity = capacity
         self.time = 0
         self.map = {}
@@ -28,10 +26,7 @@ class LFUCache(object):
         self.update = set()
 
     def get(self, key):
-        """
-        :type key: int
-        :rtype: int
-        """
+
         self.time += 1
         if key in self.map:
             freq, _ = self.freq_time[key]
@@ -41,11 +36,7 @@ class LFUCache(object):
         return -1
 
     def put(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: void
-        """
+
         if self.capacity <= 0:
             return
         self.time += 1

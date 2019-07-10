@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def splitArraySameAverage(self, A):
-        """
-        :type A: List[int]
-        :rtype: bool
-        """
+
         def n_sum_target(n, tgt, j):
             if (n, tgt, j) in invalid:
                 return False

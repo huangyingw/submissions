@@ -16,10 +16,7 @@ class Interval(object):
 
 class Solution(object):
     def merge(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: List[Interval]
-        """
+
         intervals.sort(key=lambda x: x.start)
         merged = []
         for interval in intervals:

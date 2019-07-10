@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def multiply(self, num1, num2):
-        """
-        :type num1: str
-        :type num2: str
-        :rtype: str
-        """
+
         num1, num2 = num1[::-1], num2[::-1]
         result = [0] * (len(num1) + len(num2))
         for i in range(len(num1)):

@@ -1,17 +1,9 @@
-"""
-Important: the 1st char cannot be *
-Time: O(mn)
-Space: O(m)
-"""
+
 
 
 class Solution(object):
     def isMatch(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: bool
-        """
+
         prev = [True]
         for j in range(len(p)):
             prev.append(p[j] == '*' and prev[j - 1])

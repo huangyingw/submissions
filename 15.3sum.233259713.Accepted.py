@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         results = []
         nums.sort()
         i = 0

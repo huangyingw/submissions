@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def diameterOfBinaryTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         if not root:
             return 0
         self.diameter = 0

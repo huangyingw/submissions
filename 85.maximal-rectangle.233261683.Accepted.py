@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maximalRectangle(self, matrix):
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
+
         if not matrix or not matrix[0]:
             return 0
         rows = len(matrix)

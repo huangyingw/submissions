@@ -13,11 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def mostCommonWord(self, paragraph, banned):
-        """
-        :type paragraph: str
-        :type banned: List[str]
-        :rtype: str
-        """
+
         banned = set(banned)
         punct = {"!", "?", ",", ".", ";", "'"}
         counter = defaultdict(int)

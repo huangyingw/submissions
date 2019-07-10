@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def integerBreak(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n <= 3:
             return n - 1
         threes, remainder = divmod(n - 4, 3)
@@ -30,10 +27,7 @@ class Solution(object):
 
 class Solution2(object):
     def integerBreak(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         max_breaks = [0, 1]
         for i in range(2, n + 1):
             max_break = 0

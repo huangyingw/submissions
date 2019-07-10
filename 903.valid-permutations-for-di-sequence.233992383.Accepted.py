@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def numPermsDISequence(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         dp = [1] * (len(S) + 1)
 
         for move in S:

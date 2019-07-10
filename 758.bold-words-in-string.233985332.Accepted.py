@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def boldWords(self, words, S):
-        """
-        :type words: List[str]
-        :type S: str
-        :rtype: str
-        """
+
         S = "
         bold = [False for _ in range(len(S))]
         for word in words:

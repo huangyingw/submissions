@@ -11,11 +11,7 @@ from collections import defaultdict
 
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
+
         start, longest = 0, 0
         last_seen = defaultdict(int)
         for end, c in enumerate(s):

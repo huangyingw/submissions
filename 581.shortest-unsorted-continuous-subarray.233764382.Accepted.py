@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findUnsortedSubarray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         n = len(nums)
         right, left = -1, -1
         for i in range(1, n):

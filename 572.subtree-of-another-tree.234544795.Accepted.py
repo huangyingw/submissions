@@ -9,11 +9,7 @@
 
 class Solution(object):
     def isSubtree(self, a, b):
-        """
-        :type s: TreeNode
-        :type t: TreeNode
-        :rtype: bool
-        """
+
         if not b:
             return True
 

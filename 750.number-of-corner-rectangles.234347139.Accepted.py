@@ -1,9 +1,6 @@
 class Solution:
     def countCornerRectangles(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         result = 0
         if not grid or not grid[0]:
             return result

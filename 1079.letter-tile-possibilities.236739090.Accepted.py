@@ -1,9 +1,6 @@
 class Solution(object):
     def numTilePossibilities(self, tiles):
-        """
-        :type tiles: str
-        :rtype: int
-        """
+
         if not tiles:
             return 0
         import collections

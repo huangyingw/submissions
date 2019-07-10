@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def pacificAtlantic(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[List[int]]
-        """
+
         if not matrix or not matrix[0]:
             return []
         rows, cols = len(matrix), len(matrix[0])

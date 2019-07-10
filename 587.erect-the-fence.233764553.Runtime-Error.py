@@ -22,10 +22,7 @@ class Point(object):
 
 class Solution(object):
     def outerTrees(self, points):
-        """
-        :type points: List[Point]
-        :rtype: List[Point]
-        """
+
         if len(points) < 3:
             return points
 

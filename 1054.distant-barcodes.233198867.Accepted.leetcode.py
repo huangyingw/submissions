@@ -1,9 +1,6 @@
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
-        """
-        :type barcodes: List[int]
-        :rtype: List[int]
-        """
+
         import heapq
         di = collections.Counter(barcodes)
         pq = [(-value, key) for key, value in di.items()]

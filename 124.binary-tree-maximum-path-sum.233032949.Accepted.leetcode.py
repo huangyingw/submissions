@@ -11,10 +11,7 @@ class Solution(object):
         self.result = -2147483647
 
     def maxPathSum(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
 
         self.getNodeMaxValue(root)
         return self.result

@@ -25,10 +25,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def soupServings(self, N):
-        """
-        :type N: int
-        :rtype: float
-        """
+
         memo = {}
 
         def helper(A, B):

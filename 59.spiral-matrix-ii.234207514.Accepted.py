@@ -1,9 +1,6 @@
 class Solution(object):
     def generateMatrix(self, n):
-        """
-        :type n: int
-        :rtype: List[List[int]]
-        """
+
         res = [[0] * n for _ in range(n)]
         pos = [0, 0]
         move = (0, 1)

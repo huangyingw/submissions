@@ -11,10 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def subsets(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         nb_subsets = 2**len(nums)
         all_subsets = []
         for subset_nb in range(nb_subsets):

@@ -2,10 +2,7 @@
 class Solution:
 
     def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
+
         def sink(i, j):
             if 0 <= i < len(grid) and 0 <= j < len(grid[i]) and grid[i][j] == '1':
                 grid[i][j] = '0'
@@ -16,10 +13,7 @@ class Solution:
 
 
     def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
+
         if not grid or not grid[0]:
             return 0
         m, n = len(grid), len(grid[0])

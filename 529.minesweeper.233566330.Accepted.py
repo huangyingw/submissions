@@ -21,11 +21,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def updateBoard(self, board, click):
-        """
-        :type board: List[List[str]]
-        :type click: List[int]
-        :rtype: List[List[str]]
-        """
+
         r, c = click
         rows, cols = len(board), len(board[0])
         for row in range(rows):

@@ -6,10 +6,7 @@
 
 class Solution(object):
     def guessNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
 
         begin, end = 1, n
         while begin <= end:

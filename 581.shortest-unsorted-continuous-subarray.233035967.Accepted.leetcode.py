@@ -17,10 +17,7 @@ class Solution(object):
 
 
     def findUnsortedSubarray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         stack = []
         l, r = len(nums), 0
         for i in range(len(nums)):

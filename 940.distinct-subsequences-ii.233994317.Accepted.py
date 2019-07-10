@@ -13,10 +13,7 @@ from collections import defaultdict
 
 class Solution:
     def distinctSubseqII(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         total = 1
         extended = defaultdict(int)
         for c in S:

@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def lenLongestFibSubseq(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         A_set = set(A)
         max_length = 0
         for i, num in enumerate(A):

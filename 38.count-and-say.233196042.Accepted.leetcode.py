@@ -1,9 +1,6 @@
 class Solution(object):
     def countAndSay(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+
         if n == 1:
             return "1"
         new_num = ""

@@ -28,10 +28,7 @@ from collections import defaultdict, deque
 
 class Solution(object):
     def catMouseGame(self, graph):
-        """
-        :type graph: List[List[int]]
-        :rtype: int
-        """
+
         DRAW, MOUSE, CAT = 0, 1, 2
         n = len(graph)
 

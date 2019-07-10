@@ -1,10 +1,6 @@
 class Solution(object):
     def findAnagrams(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: List[int]
-        """
+
         res = []
         if s is None or p is None or len(s) == 0 or len(p) == 0:
             return res

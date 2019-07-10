@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def dailyTemperatures(self, temperatures):
-        """
-        :type temperatures: List[int]
-        :rtype: List[int]
-        """
+
         result = [0 for _ in range(len(temperatures))]
         stack = []
         for i, temp in enumerate(temperatures):

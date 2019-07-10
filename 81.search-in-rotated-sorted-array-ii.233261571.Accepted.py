@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: bool
-        """
+
         return self.binary(nums, 0, len(nums) - 1, target)
 
     def binary(self, nums, left, right, target):

@@ -1,9 +1,6 @@
 class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
-        """
-        :type obstacleGrid: List[List[int]]
-        :rtype: int
-        """
+
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         dp = [[0 for _ in range(n)] for _ in range(m)]
         if obstacleGrid[0][0] == 1 or obstacleGrid[m - 1][n - 1] == 1:

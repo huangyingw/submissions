@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def canIWin(self, maxChoosableInteger, desiredTotal):
-        """
-        :type maxChoosableInteger: int
-        :type desiredTotal: int
-        :rtype: bool
-        """
+
         if maxChoosableInteger * (maxChoosableInteger + 1) // 2 < desiredTotal:
             return False
         return self.next_player_win(desiredTotal, list(range(1, maxChoosableInteger + 1)), {})

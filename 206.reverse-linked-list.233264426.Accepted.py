@@ -16,10 +16,7 @@ class ListNode(object):
 
 class Solution(object):
     def reverseList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         reversed = None
         while head:
             next = head.next

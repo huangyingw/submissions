@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numTilings(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         MOD = 10 ** 9 + 7
         prev_tilings, tilings = 0, 1
         prev_one_extra, one_extra = 0, 0

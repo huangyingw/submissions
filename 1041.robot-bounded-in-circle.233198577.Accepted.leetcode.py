@@ -1,9 +1,6 @@
 class Solution(object):
     def isRobotBounded(self, instructions):
-        """
-        :type instructions: str
-        :rtype: bool
-        """
+
         start_x, start_y = 0, 0
         left, direct = 0, 0
         moves = [[0, 1], [-1, 0], [0, -1], [1, 0]]

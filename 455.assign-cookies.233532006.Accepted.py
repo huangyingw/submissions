@@ -14,11 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findContentChildren(self, g, s):
-        """
-        :type g: List[int]
-        :type s: List[int]
-        :rtype: int
-        """
+
         content = 0
         child = 0
         g.sort()

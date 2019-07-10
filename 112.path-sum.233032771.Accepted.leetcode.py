@@ -8,11 +8,7 @@
 
 class Solution(object):
     def hasPathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: bool
-        """
+
         if root is None:
             return False
         sum = sum - root.val

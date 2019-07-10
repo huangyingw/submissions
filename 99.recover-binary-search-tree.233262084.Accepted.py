@@ -20,10 +20,7 @@ class TreeNode(object):
 
 class Solution(object):
     def recoverTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
-        """
+
         self.swapped1 = None
         self.swapped2 = None
         self.prev = TreeNode(float('-inf'))

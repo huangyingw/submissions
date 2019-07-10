@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countAndSay(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+
         sequence = [1]
         for _ in range(n - 1):
             next = []

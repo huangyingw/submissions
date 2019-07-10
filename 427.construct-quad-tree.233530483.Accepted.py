@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def construct(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: Node
-        """
+
         def helper(r, c, side):
             if side == 1:
                 return Node(bool(grid[r][c]), True, None, None, None, None)

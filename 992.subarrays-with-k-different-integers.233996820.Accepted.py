@@ -17,11 +17,7 @@ from collections import Counter
 
 class Solution(object):
     def subarraysWithKDistinct(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         def at_most_k(distinct):
             count = Counter()
             subarrays = 0

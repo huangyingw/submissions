@@ -12,10 +12,7 @@
 
 class Solution(object):
     def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         dp = [[0 for _ in range(len(s))] for _ in range(len(s))]
         maxLength, result = 1, ""
         for index in range(len(s)):
@@ -44,10 +41,7 @@ class Solution(object):
 
 class Solution(object):
     def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         def expand(s, left, right):
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1

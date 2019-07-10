@@ -7,12 +7,7 @@
 
 class Solution(object):
     def reverseBetween(self, head, m, n):
-        """
-        :type head: ListNode
-        :type m: int
-        :type n: int
-        :rtype: ListNode
-        """
+
         if m == n:
             return head
         split_node, prev, curr = None, None, head

@@ -8,10 +8,7 @@
 
 class Solution(object):
     def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
 
         if root is None:
             return True

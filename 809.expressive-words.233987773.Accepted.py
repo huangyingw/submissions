@@ -23,11 +23,7 @@ from collections import namedtuple
 
 class Solution(object):
     def expressiveWords(self, S, words):
-        """
-        :type S: str
-        :type words: List[str]
-        :rtype: int
-        """
+
         Groups = namedtuple("groups", ["chars", "counts"])
 
         def get_groups(word):

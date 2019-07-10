@@ -1,9 +1,6 @@
 class Solution:
     def minCostClimbingStairs(self, cost):
-        """
-        :type cost: List[int]
-        :rtype: int
-        """
+
         if not cost or len(cost) <= 2:
             return 0
         result = [0] * (len(cost) + 1)

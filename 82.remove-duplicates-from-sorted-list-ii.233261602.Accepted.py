@@ -16,10 +16,7 @@ class ListNode(object):
 
 class Solution(object):
     def deleteDuplicates(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         pseudo = prev = ListNode(None)
         pseudo.next = head
         node = head

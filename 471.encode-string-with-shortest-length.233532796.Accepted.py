@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def encode(self, s, memo={}):
-        """
-        :type s: str
-        :rtype: str
-        """
+
         if s in memo:
             return memo[s]
         encodings = [s]

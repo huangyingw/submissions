@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def sumOfDigits(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         minimum = min(A)
         digit_sum = 0
         while minimum:

@@ -13,10 +13,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxAncestorDiff(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         def helper(node, min_val, max_val):
             if not node:
                 return max_val - min_val

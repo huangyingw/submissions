@@ -8,10 +8,7 @@
 
 class Solution(object):
     def longestConsecutive(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+
         return self.longestConsecutive_helper(root, -10000, 1)
 
     def longestConsecutive_helper(self, root, previous, curr):

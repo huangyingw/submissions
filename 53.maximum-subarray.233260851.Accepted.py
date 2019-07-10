@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         overall_max = float('-inf')
         max_ending_here = 0
         for num in nums:

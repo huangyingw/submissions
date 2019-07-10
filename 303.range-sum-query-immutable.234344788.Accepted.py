@@ -6,9 +6,5 @@ class NumArray(object):
             self.sum[i + 1] = self.sum[i] + nums[i]
 
     def sumRange(self, i, j):
-        """
-        :param i: int
-        :param j: int
-        :return: int
-        """
+
         return self.sum[j + 1] - self.sum[i]

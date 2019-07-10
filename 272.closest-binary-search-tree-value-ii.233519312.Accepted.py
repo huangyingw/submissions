@@ -25,12 +25,7 @@ import heapq
 
 class Solution(object):
     def closestKValues(self, root, target, k):
-        """
-        :type root: TreeNode
-        :type target: float
-        :type k: int
-        :rtype: List[int]
-        """
+
         closest = [(float('-inf'), 0)]
         self.find_closest(root, target, k, closest)
         return [val for _, val in closest]

@@ -2,10 +2,7 @@
 class Solution:
 
     def convertToTitle(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+
         alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         res = ""
         while n > 0:
@@ -18,10 +15,7 @@ class Solution:
 
 
     def convertToTitle(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+
         res = ''
         dist = ord('A')
         while n > 0:

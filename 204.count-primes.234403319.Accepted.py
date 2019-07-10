@@ -2,10 +2,7 @@
 class Solution:
 
     def countPrimes(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         def isPrime(num):
             for i in range(2, int(num**0.5) + 1):
                 if num % i == 0:
@@ -23,10 +20,7 @@ class Solution:
 
 
     def countPrimes(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n < 2:
             return 0
         s = [1] * n

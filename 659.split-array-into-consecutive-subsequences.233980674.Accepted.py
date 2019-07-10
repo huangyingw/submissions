@@ -13,10 +13,7 @@ from collections import Counter, defaultdict
 
 class Solution(object):
     def isPossible(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+
         freq = Counter(nums)
         sequences = defaultdict(int)
         for num in nums:

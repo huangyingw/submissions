@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def kSimilarity(self, A, B):
-        """
-        :type A: str
-        :type B: str
-        :rtype: int
-        """
+
         visited = set()
         k = 0
         frontier = {A}

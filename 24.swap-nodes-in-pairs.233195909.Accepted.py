@@ -12,10 +12,7 @@
 
 class Solution(object):
     def swapPairs(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
+
         if head is None:
             return head
         ref = head

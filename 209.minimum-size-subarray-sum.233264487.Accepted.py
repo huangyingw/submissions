@@ -11,11 +11,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minSubArrayLen(self, s, nums):
-        """
-        :type s: int
-        :type nums: List[int]
-        :rtype: int
-        """
+
         subarray_sum, min_length, start = 0, len(nums) + 1, 0
         for i in range(len(nums)):
             subarray_sum += nums[i]

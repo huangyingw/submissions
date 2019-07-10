@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Codec:
     def encode(self, root):
-        """Encodes an n-ary tree to a binary tree.
-        :type root: Node
-        :rtype: TreeNode
-        """
+
         if not root:
             return None
         binary = TreeNode(root.val)
@@ -32,10 +29,7 @@ class Codec:
         return binary
 
     def decode(self, data):
-        """Decodes your binary tree to an n-ary tree.
-        :type data: TreeNode
-        :rtype: Node
-        """
+
         if not data:
             return None
         nary = Node(data.val, [])

@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def isSelfCrossing(self, x):
-        """
-        :type x: List[int]
-        :rtype: bool
-        """
+
         for i in range(len(x)):
 
             if i >= 3:

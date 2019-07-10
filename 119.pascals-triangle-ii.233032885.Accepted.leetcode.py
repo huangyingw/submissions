@@ -1,9 +1,6 @@
 class Solution(object):
     def getRow(self, rowIndex):
-        """
-        :type rowIndex: int
-        :rtype: List[int]
-        """
+
         last = [1]
         res = [1]
         for r in range(1, rowIndex + 1):

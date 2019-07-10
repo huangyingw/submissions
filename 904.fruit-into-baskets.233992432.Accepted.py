@@ -24,10 +24,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def totalFruit(self, tree):
-        """
-        :type tree: List[int]
-        :rtype: int
-        """
+
         prev = [None, float("inf"), float("inf")]
         other = [None, float("inf"), float("inf")]
         result = 1

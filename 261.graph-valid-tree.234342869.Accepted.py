@@ -1,10 +1,6 @@
 class Solution:
     def validTree(self, n, edges):
-        """
-        :type n: int
-        :type edges: List[List[int]]
-        :rtype: bool
-        """
+
         roots = [i for i in range(n)]
         count = n
         for edge in edges:

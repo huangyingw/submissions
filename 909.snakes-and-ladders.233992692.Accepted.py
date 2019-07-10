@@ -24,10 +24,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def snakesAndLadders(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: int
-        """
+
         linear = [-1]
         reverse = False
         for row in board[::-1]:

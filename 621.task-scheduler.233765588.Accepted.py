@@ -20,11 +20,7 @@ from collections import Counter
 
 class Solution(object):
     def leastInterval(self, tasks, n):
-        """
-        :type tasks: List[str]
-        :type n: int
-        :rtype: int
-        """
+
         counts = Counter(tasks)
         max_count = max(counts.values())
         result = (max_count - 1) * (n + 1)

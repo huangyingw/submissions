@@ -23,14 +23,7 @@ The length of each domain name will not exceed 100.
 Each address will have either 1 or 2 "." characters.
 The input count in any count-paired domain will not exceed 10000.
 The answer output can be returned in any order.
-"""
 
-
-class Solution:
-
-
-    def subdomainVisits(self, cpdomains):
-        """
         :type cpdomains: List[str]
         :rtype: List[str]
         """

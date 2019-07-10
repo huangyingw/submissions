@@ -28,11 +28,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxVacationDays(self, flights, days):
-        """
-        :type flights: List[List[int]]
-        :type days: List[List[int]]
-        :rtype: int
-        """
+
         cities = len(flights)
         weeks = len(days[0])
         if not cities or not weeks:

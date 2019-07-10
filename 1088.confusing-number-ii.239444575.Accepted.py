@@ -2,10 +2,7 @@ class Solution(object):
     result = 0
 
     def confusingNumberII(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
+
         original_a = [0, 1, 6, 8, 9]
         o_rotation = [0, 1, 9, 8, 6]
 

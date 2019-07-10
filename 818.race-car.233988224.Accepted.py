@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def racecar(self, target):
-        """
-        :type target: int
-        :rtype: int
-        """
+
         min_steps = {0: 0}
 
         def helper(dist):

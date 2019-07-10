@@ -12,11 +12,7 @@ from collections import defaultdict
 
 class Solution(object):
     def numMatchingSubseq(self, S, words):
-        """
-        :type S: str
-        :type words: List[str]
-        :rtype: int
-        """
+
         letter_to_suffixes = defaultdict(list)
         letter_to_suffixes["
         result = 0

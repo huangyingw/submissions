@@ -5,11 +5,7 @@ class Solution:
 
 
     def nextGreaterElement(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[int]
-        """
+
         l2 = len(nums2)
         nums2_next = [-1] * l2
         for i in range(l2 - 1):
@@ -25,11 +21,7 @@ class Solution:
 
 
     def nextGreaterElement2(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[int]
-        """
+
         if not nums1 or not nums2:
             return []
         nextGreat = {}

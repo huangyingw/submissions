@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numEnclaves(self, A):
-        """
-        :type A: List[List[int]]
-        :rtype: int
-        """
+
         rows, cols = len(A), len(A[0])
         result = 0
         self.edge = False

@@ -17,10 +17,7 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
         return self.convert(nums, 0, len(nums) - 1)
 
     def convert(self, nums, left, right):

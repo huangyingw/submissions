@@ -20,10 +20,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findDuplicate(self, paths):
-        """
-        :type paths: List[str]
-        :rtype: List[List[str]]
-        """
+
         content_to_path = defaultdict(list)
         for path in paths:
             path_list = path.split(" ")

@@ -9,10 +9,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def generateParenthesis(self, n):
-        """
-        :type n: int
-        :rtype: List[str]
-        """
+
         result = []
         self.generate([], n, n, result)
         return result

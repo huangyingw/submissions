@@ -1,9 +1,6 @@
 class Solution(object):
     def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+
         nums.sort()
         result = []
         for i in range(len(nums) - 2):

@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def smallestRangeII(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         A = sorted(A)
         result = A[-1] - A[0]
         left_min = A[0] + K

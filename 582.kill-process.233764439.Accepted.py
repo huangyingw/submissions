@@ -19,12 +19,7 @@ from collections import defaultdict
 
 class Solution(object):
     def killProcess(self, pid, ppid, kill):
-        """
-        :type pid: List[int]
-        :type ppid: List[int]
-        :type kill: int
-        :rtype: List[int]
-        """
+
         node_to_children = defaultdict(list)
         for node, parent in zip(pid, ppid):
             node_to_children[parent].append(node)

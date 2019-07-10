@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def duplicateZeros(self, arr):
-        """
-        :type arr: List[int]
-        :rtype: None Do not return anything, modify arr in-place instead.
-        """
+
         length = 0
         for i, num in enumerate(arr):
             length += 2 if num == 0 else 1

@@ -10,10 +10,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def isUnivalTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+
         value = root.val
 
         def helper(node):

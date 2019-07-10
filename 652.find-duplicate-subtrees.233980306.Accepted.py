@@ -12,10 +12,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findDuplicateSubtrees(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[TreeNode]
-        """
+
         def serialize(node):
             if not node:
                 return "

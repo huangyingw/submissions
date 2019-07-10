@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def validTicTacToe(self, board):
-        """
-        :type board: List[str]
-        :rtype: bool
-        """
+
         counts, lines = [0, 0], [0, 0]
         for i, char in enumerate(("O", "X")):
             for j, row in enumerate(board):

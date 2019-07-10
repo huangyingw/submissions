@@ -28,10 +28,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def removeComments(self, source):
-        """
-        :type source: List[str]
-        :rtype: List[str]
-        """
+
         removed = []
         comment_block = False
         new_line = []

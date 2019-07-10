@@ -17,10 +17,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def largestPalindrome(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if n == 1:
             return 9
         for a in range(1, 9 * 10 ** (n - 1)):

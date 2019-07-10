@@ -12,11 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countComponents(self, n, edges):
-        """
-        :type n: int
-        :type edges: List[List[int]]
-        :rtype: int
-        """
+
         parents = [i for i in range(n)]
         components = n
 

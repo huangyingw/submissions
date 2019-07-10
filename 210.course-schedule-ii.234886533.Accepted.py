@@ -4,20 +4,16 @@
 	Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses.
 	There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.
 	Example 1:
-	Input: 2, [[1,0]] 
+	Input: 2, [[1,0]]
 	Output: [0,1]
-	Explanation: There are a total of 2 courses to take. To take course 1 you should have finished   
+	Explanation: There are a total of 2 courses to take. To take course 1 you should have finished
 	             course 0. So the correct course order is [0,1] .
 '''
 
 
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: List[int]
-        """
+
         graph = [[] for _ in range(numCourses)]
         visited = [False for _ in range(numCourses)]
         stack = [False for _ in range(numCourses)]

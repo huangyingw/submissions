@@ -16,11 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def constructArray(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: List[int]
-        """
+
         result = []
         low, high = 1, k + 1
         next_low = True

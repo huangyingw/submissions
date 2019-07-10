@@ -13,10 +13,7 @@ from collections import Counter
 
 class Solution(object):
     def findLHS(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         freq = Counter(nums)
         max_harmonious = 0
         for num, count in freq.items():

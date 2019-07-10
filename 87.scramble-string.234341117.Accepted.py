@@ -4,11 +4,7 @@ class Solution:
         self.memo = {}
 
     def isScramble(self, s1, s2):
-        """
-        :type s1: str
-        :type s2: str
-        :rtype: bool
-        """
+
         if (s1, s2) in self.memo:
             return self.memo[(s1, s2)]
         if s1 == s2:

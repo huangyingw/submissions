@@ -15,11 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def maxUncrossedLines(self, A, B):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :rtype: int
-        """
+
         if len(A) < len(B):
             A, B = B, A
         max_uncrossed = [0] * (len(B) + 1)

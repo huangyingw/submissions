@@ -12,10 +12,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def numMagicSquaresInside(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+
         def is_magic(row, col):
             if grid[row + 1][col + 1] != 5:
                 return False

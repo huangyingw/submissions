@@ -13,10 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def findFrequentTreeSum(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
+
         def count_sums(node):
             if not node:
                 return 0

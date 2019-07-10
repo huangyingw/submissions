@@ -13,11 +13,7 @@ from collections import defaultdict
 
 class Solution(object):
     def characterReplacement(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
+
         longest, start = 0, 0
         freq = defaultdict(int)
         for end in range(len(s)):

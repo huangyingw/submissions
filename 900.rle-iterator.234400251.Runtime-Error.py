@@ -22,18 +22,9 @@ A.length is an even integer.
 0 <= A[i] <= 10^9
 There are at most 1000 calls to RLEIterator.next(int n) per test case.
 Each call to RLEIterator.next(int n) will have 1 <= n <= 10^9.
-"""
 
-
-class RLEIterrator():
-    def __init__(self, A):
-        """
         :type A: List[int]
-        """
-        self.inputList = A
 
-    def next(self, n):
-        """
         :type n: int
         :rtype: int
         """

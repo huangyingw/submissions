@@ -1,9 +1,6 @@
 class Solution:
     def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         if not nums:
             return 0
         max_so_far = result = nums[0]

@@ -25,10 +25,7 @@ _project_ = 'leetcode'
 
 class Solution:
     def oddEvenJumps(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         n = len(A)
 
         def next_list():

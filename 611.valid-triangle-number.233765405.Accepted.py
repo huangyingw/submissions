@@ -17,10 +17,7 @@ from collections import Counter
 
 class Solution(object):
     def triangleNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         nums.sort()
         triangles = 0
         for i, longest_side in enumerate(nums):
@@ -38,10 +35,7 @@ from math import factorial
 
 class Solution2(object):
     def triangleNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+
         sides = Counter(nums)
         if 0 in sides:
             del sides[0]

@@ -8,11 +8,7 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, inorder, postorder):
-        """
-        :type inorder: List[int]
-        :type postorder: List[int]
-        :rtype: TreeNode
-        """
+
         inorderDict = {num: i for i, num in enumerate(inorder)}
 
         def helper(start, end):

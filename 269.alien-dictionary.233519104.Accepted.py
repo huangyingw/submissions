@@ -15,10 +15,7 @@ from collections import defaultdict
 
 class Solution(object):
     def alienOrder(self, words):
-        """
-        :type words: List[str]
-        :rtype: str
-        """
+
         after = defaultdict(int)
         order = defaultdict(set)
         seen = set(words[0])

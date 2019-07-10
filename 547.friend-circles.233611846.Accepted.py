@@ -19,10 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def findCircleNum(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: int
-        """
+
         n = len(M)
         group = [i for i in range(n)]
 
@@ -40,10 +37,7 @@ class Solution(object):
 
 class Solution2(object):
     def findCircleNum(self, M):
-        """
-        :type M: List[List[int]]
-        :rtype: int
-        """
+
         def dfs(i):
             for j in range(len(M)):
                 if M[i][j] == 1:

@@ -1,9 +1,6 @@
 class Solution:
     def constructMaximumBinaryTree(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+
         stack = []
         for num in nums:
             curr = TreeNode(num)

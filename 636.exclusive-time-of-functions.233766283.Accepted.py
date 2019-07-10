@@ -18,11 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def exclusiveTime(self, n, logs):
-        """
-        :type n: int
-        :type logs: List[str]
-        :rtype: List[int]
-        """
+
         stack = []
         exclusive = [0 for _ in range(n)]
         start = None

@@ -19,10 +19,7 @@ from collections import deque
 
 class Codec:
     def serialize(self, root):
-        """Encodes a tree to a single string.
-        :type root: Node
-        :rtype: str
-        """
+
         serial = []
 
         def preorder(node):
@@ -36,10 +33,7 @@ class Codec:
         return " ".join(serial)
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-        :type data: str
-        :rtype: Node
-        """
+
         if not data:
             return None
         tokens = deque(data.split())

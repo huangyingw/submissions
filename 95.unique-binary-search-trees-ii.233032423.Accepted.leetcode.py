@@ -8,10 +8,7 @@
 
 class Solution(object):
     def generateTrees(self, n):
-        """
-        :type n: int
-        :rtype: List[TreeNode]
-        """
+
         if n == 0:
             return []
         return self.get_trees(1, n)

@@ -3,11 +3,7 @@ from collections import Counter
 
 class Solution:
     def isOneEditDistance(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
+
         if len(s) > len(t):
             return self.isOneEditDistance(t, s)
         m, n = len(s), len(t)

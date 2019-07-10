@@ -1,10 +1,6 @@
 class Solution(object):
     def largestSumAfterKNegations(self, A, K):
-        """
-        :type A: List[int]
-        :type K: int
-        :rtype: int
-        """
+
         A.sort()
         index = 0
         while K > 0:

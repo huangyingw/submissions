@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def countPalindromicSubsequences(self, S):
-        """
-        :type S: str
-        :rtype: int
-        """
+
         NUM_LETTERS, MOD = 4, 10 ** 9 + 7
         S = [ord(c) - ord("a") for c in S]
         memo = {}

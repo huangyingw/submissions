@@ -17,10 +17,7 @@ from collections import defaultdict
 
 class Solution(object):
     def verticalTraversal(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         x_to_y_and_val = defaultdict(list)
 
         def helper(node, x, y):

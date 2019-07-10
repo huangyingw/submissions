@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def treeToDoublyList(self, root):
-        """
-        :type root: Node
-        :rtype: Node
-        """
+
         if not root:
             return None
         left_head = self.treeToDoublyList(root.left)

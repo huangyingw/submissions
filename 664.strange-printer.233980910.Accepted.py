@@ -18,10 +18,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def strangePrinter(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+
         s = "".join([a for a, b in zip(s, "
         memo = {}
 

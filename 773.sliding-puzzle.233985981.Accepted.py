@@ -14,10 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def slidingPuzzle(self, board):
-        """
-        :type board: List[List[int]]
-        :rtype: int
-        """
+
         nbors = [[1, 3], [0, 2, 4], [1, 5], [0, 4], [1, 3, 5], [2, 4]]
 
         def next_boards(b):

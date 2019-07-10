@@ -15,10 +15,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def intersectionSizeTwo(self, intervals):
-        """
-        :type intervals: List[List[int]]
-        :rtype: int
-        """
+
         intervals.sort(key=lambda x: x[1])
         intersection = []
         for start, end in intervals:

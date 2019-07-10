@@ -19,12 +19,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minMutation(self, start, end, bank):
-        """
-        :type start: str
-        :type end: str
-        :type bank: List[str]
-        :rtype: int
-        """
+
         chars = set("ACGT")
         bank = set(bank)
         if end not in bank:

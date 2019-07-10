@@ -9,10 +9,7 @@ from collections import deque
 
 class Solution:
     def levelOrderBottom(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[List[int]]
-        """
+
         if not root:
             return []
         queue, res = deque([(root, 1)]), []

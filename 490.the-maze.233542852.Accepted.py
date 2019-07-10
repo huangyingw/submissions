@@ -14,12 +14,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def hasPath(self, maze, start, destination):
-        """
-        :type maze: List[List[int]]
-        :type start: List[int]
-        :type destination: List[int]
-        :rtype: bool
-        """
+
         queue = [start]
         dirns = ((1, 0), (-1, 0), (0, 1), (0, -1))
         visited = set()

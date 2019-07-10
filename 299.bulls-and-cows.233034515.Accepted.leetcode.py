@@ -1,10 +1,6 @@
 class Solution(object):
     def getHint(self, secret, guess):
-        """
-        :type secret: str
-        :type guess: str
-        :rtype: str
-        """
+
         check = {}
         ls = len(secret)
         bull, cow = 0, 0

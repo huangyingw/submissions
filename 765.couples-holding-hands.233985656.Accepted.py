@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def minSwapsCouples(self, row):
-        """
-        :type row: List[int]
-        :rtype: int
-        """
+
         n = len(row) // 2
         couple_to_location = [[] for _ in range(n)]
         for i, person in enumerate(row):

@@ -16,10 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def subarrayBitwiseORs(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
+
         all_or, subarray_or = set(), set()
         for num in A:
             new_or = {num | x for x in subarray_or}

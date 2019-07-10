@@ -12,11 +12,7 @@ class Solution(object):
     ELEMENTS = 4
 
     def fourSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
+
         results = []
         self.n_sum(sorted(nums), target, [], self.ELEMENTS, results)
         return results

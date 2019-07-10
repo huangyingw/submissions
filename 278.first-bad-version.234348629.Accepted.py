@@ -6,10 +6,7 @@
 
 class Solution:
     def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+
         if not n or n == 0:
             return -1
         l, r = 1, n

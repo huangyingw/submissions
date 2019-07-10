@@ -15,11 +15,7 @@ import bisect
 
 class Solution(object):
     def maxSumSubmatrix(self, matrix, k):
-        """
-        :type matrix: List[List[int]]
-        :type k: int
-        :rtype: int
-        """
+
         if not matrix or not matrix[0]:
             return 0
         rows, cols = len(matrix), len(matrix[0])

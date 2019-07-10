@@ -25,10 +25,7 @@ class Solution(object):
         self.i = 0
 
     def str2tree(self, s):
-        """
-        :type s: str
-        :rtype: TreeNode
-        """
+
         def next_num():
             num, neg = 0, False
             if s[self.i] == "-":

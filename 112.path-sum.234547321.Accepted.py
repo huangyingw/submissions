@@ -9,11 +9,7 @@
 class Solution(object):
 
     def hasPathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: bool
-        """
+
         if root == None:
             return False
         elif root.left == None and root.right == None:
@@ -26,11 +22,7 @@ class Solution(object):
 
 
     def hasPathSum(self, root, sum):
-        """
-        :type root: TreeNode
-        :type sum: int
-        :rtype: bool
-        """
+
         if root is None:
             return False
         stack = [(root, sum)]

@@ -8,10 +8,7 @@ import heapq
 
 class Solution:
     def minMeetingRooms(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
+
         if not intervals:
             return 0
         heap = []

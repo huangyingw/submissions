@@ -16,13 +16,7 @@ _project_ = 'leetcode'
 
 class Solution(object):
     def getMaxRepetitions(self, s1, n1, s2, n2):
-        """
-        :type s1: str
-        :type n1: int
-        :type s2: str
-        :type n2: int
-        :rtype: int
-        """
+
         if any(c for c in set(s2) if c not in set(s1)):
             return 0
         i, j = 0, 0
