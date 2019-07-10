@@ -16,7 +16,12 @@ After shifting the first 3 letters of S by 9, we have "rpl", the answer.
 Note:
 1 <= S.length = shifts.length <= 20000
 0 <= shifts[i] <= 10 ^ 9
+"""
 
+
+class Solution:
+    def shiftingLetters(self, S, shifts):
+        """
         :type S: str
         :type shifts: List[int]
         :rtype: str

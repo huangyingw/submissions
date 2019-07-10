@@ -14,7 +14,15 @@ Note:
 0 <= A.length <= 200
 0 <= B.length <= 200
 A and B both contain only spaces and lowercase letters.
+"""
 
+
+class Solution:
+
+
+
+    def uncommonFromSentences1(self, A, B):
+        """
         :type A: str
         :type B: str
         :rtype: List[str]
