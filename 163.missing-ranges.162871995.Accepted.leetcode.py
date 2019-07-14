@@ -13,6 +13,6 @@ class Solution(object):
             else:
                 cur = nums[index]
             if cur - pre >= 2:
-                ranges.append(getRange(pre + 1, cur - 1))
+                ranges += [getRange(pre + 1, cur - 1)]
             pre = cur
         return ranges

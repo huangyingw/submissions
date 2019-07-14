@@ -8,8 +8,8 @@ class Solution(object):
             else:
                 curr = nums[i]
             if curr - prev > 2:
-                ranges.append("%d->%d" % (prev + 1, curr - 1))
+                ranges += ["%d->%d" % (prev + 1, curr - 1)]
             elif curr - prev == 2:
-                ranges.append("%d" % (prev + 1))
+                ranges += ["%d" % (prev + 1)]
             prev = curr
         return ranges
