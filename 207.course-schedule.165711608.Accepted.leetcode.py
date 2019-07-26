@@ -3,8 +3,7 @@ class Solution(object):
         adjacencyList = {}
         inCount = [0] * numCourses
         for prerequisite in prerequisites:
-            adjacencyList.setdefault(
-                prerequisite[1], []).append(prerequisite[0])
+            adjacencyList.setdefault(prerequisite[1], []).append(prerequisite[0])
             inCount[prerequisite[0]] += 1
         queue = [idx for idx in range(numCourses) if inCount[idx] == 0]
         while queue:
