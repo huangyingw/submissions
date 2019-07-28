@@ -1,9 +1,5 @@
 class Solution(object):
     def minDominoRotations(self, A, B):
-        if len(A) != len(B):
-            return -1
-        if len(A) == 0:
-            return 0
         for possibility in set([A[0], B[0]]):
             top_rotation, bottom_rotation = 0, 0
             for a_num, b_num in zip(A, B):
