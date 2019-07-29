@@ -8,12 +8,12 @@ class Solution(object):
         for after, before in prerequisites:
             nb_prerequisites[after] += 1
             prereq_list[before].append(after)
-        can_take = set(i for i in range(numCourses)) - set(nb_prerequisites.keys())
+        can_take = [idx for idx in range(numCourses) if nb_prerequisites[idx] == 0]
         while can_take:
-            course = can_take.pop()
+            course = can_take.pop(0)
             numCourses -= 1
             for dependent in prereq_list[course]:
                 nb_prerequisites[dependent] -= 1
                 if nb_prerequisites[dependent] == 0:
-                    can_take.add(dependent)
+                    can_take.append(dependent)
         return numCourses == 0
