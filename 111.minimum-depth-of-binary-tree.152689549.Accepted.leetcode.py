@@ -9,10 +9,10 @@ class Solution(object):
             size = len(queue)
             for i in range(size):
                 node = queue.pop(0)
-                if node.left is None and node.right is None:
+                if not node.left and not node.right:
                     return depth
                 if node.left:
-                    queue.append(node.left)
+                    queue += [node.left]
                 if node.right:
-                    queue.append(node.right)
+                    queue += [node.right]
         return depth
