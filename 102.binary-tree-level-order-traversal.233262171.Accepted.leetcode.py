@@ -3,15 +3,15 @@ class Solution(object):
         result = []
         if not root:
             return result
-        level_nodes = [root]
-        while level_nodes:
-            new_level_nodes = []
+        nodes = [root]
+        while nodes:
+            next_step = []
             result += [[]]
-            for node in level_nodes:
+            for node in nodes:
                 result[-1] += [node.val]
                 if node.left:
-                    new_level_nodes += [node.left]
+                    next_step += [node.left]
                 if node.right:
-                    new_level_nodes += [node.right]
-            level_nodes = new_level_nodes
+                    next_step += [node.right]
+            nodes = next_step
         return result
