@@ -6,8 +6,7 @@ class Solution(object):
         result = []
         while queue:
             current = []
-            size = len(queue)
-            for _ in range(size):
+            for _ in range(len(queue)):
                 root = queue.pop(0)
                 current += [root.val]
                 if root.left:
