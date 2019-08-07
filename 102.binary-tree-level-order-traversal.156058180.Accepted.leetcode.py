@@ -9,10 +9,10 @@ class Solution(object):
             size = len(queue)
             for _ in range(size):
                 root = queue.pop(0)
-                current.append(root.val)
+                current += [root.val]
                 if root.left:
-                    queue.append(root.left)
+                    queue += [root.left]
                 if root.right:
-                    queue.append(root.right)
-            result.append(current)
+                    queue += [root.right]
+            result += [current]
         return result
