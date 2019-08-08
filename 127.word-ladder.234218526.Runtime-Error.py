@@ -28,5 +28,3 @@ class Solution(object):
                         wordlist.discard(neigh)
         if not is_connected:
             return self.bfs(next_level, backward, wordlist, level + 1)
-if __name__ == "__main__":
-    s = Solution()
