@@ -1,8 +1,6 @@
 class Solution(object):
     def connect(self, root):
-        if root is None:
-            return
-        nodes = [root]
+        nodes = [root] if root else []
         while nodes:
             next_step = []
             last = None
