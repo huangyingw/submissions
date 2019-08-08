@@ -2,10 +2,10 @@ class Solution(object):
     def generate(self, numRows):
         if numRows == 1:
             return [[1]]
-        res = []
+        result = []
         for i in range(numRows):
             row = [1] * (i + 1)
-            res.append(row)
+            result.append(row)
             for j in range(1, len(row) - 1):
-                res[i][j] = res[i - 1][j - 1] + res[i - 1][j]
-        return res
+                result[i][j] = result[i - 1][j - 1] + result[i - 1][j]
+        return result

@@ -1,6 +1,6 @@
 class Solution(object):
     def minimumTotal(self, triangle):
-        if triangle is None or len(triangle) == 0:
+        if not triangle:
             return 0
         ls = len(triangle)
         dp = [0] * ls
