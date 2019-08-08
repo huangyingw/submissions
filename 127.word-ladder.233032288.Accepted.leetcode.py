@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution():
     def ladderLength(self, beginWord, endWord, wordList):
         d = {}
         for word in wordList:
@@ -27,4 +27,3 @@ class Solution(object):
                             if neigh not in visited:
                                 queue.append((neigh, steps + 1))
         return 0
-Solution().ladderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])
