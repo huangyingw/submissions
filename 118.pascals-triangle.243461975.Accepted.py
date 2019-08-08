@@ -1,14 +1,14 @@
 class Solution(object):
     def generate(self, numRows):
-        Ans = []
+        result = []
         for i in range(numRows):
             if i <= 1:
                 pre = [1] * (i + 1)
-                Ans.append(pre)
+                result.append(pre)
             else:
                 temp = [1]
                 for y in range(1, i):
                     temp.append(pre[y - 1] + pre[y])
                 pre = temp + [1]
-                Ans.append(pre)
-        return Ans
+                result.append(pre)
+        return result
