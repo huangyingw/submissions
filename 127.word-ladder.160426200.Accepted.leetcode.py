@@ -14,8 +14,7 @@ class Solution(object):
                 s1, s2 = s2, s1
             s = set()
             for w in s1:
-                new_words = [w[:i] + t + w[i + 1:]
-                             for t in string.ascii_lowercase for i in xrange(l)]
+                new_words = [w[:i] + t + w[i + 1:] for t in string.ascii_lowercase for i in xrange(l)]
                 for new_word in new_words:
                     if new_word in s2:
                         return step + 1
