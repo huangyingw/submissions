@@ -16,11 +16,7 @@ class Solution(object):
                     j += 1
                     continue
                 if nums[i] + nums[j] + nums[k] == 0:
-                    temp = []
-                    temp.append(nums[i])
-                    temp.append(nums[j])
-                    temp.append(nums[k])
-                    result.append(temp)
+                    result += [[nums[i], nums[j], nums[k]]]
                     k -= 1
                     j += 1
                 elif nums[i] + nums[j] + nums[k] > 0:
