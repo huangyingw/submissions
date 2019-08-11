@@ -2,11 +2,11 @@ class Solution:
     def findMin(self, nums):
         if not nums:
             return -1
-        l, r = 0, len(nums) - 1
-        while l < r:
-            m = l + (r - l) // 2
-            if nums[r] < nums[m]:
-                l = m + 1
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = left + (right - left) // 2
+            if nums[right] < nums[mid]:
+                left = mid + 1
             else:
-                r = m
-        return nums[l]
+                right = mid
+        return nums[left]
