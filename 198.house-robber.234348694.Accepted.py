@@ -3,6 +3,6 @@ class Solution:
         if not nums:
             return 0
         current, prev = nums[0], 0
-        for i in nums[1:]:
-            prev, current = current, max(prev + i, current)
+        for num in nums[1:]:
+            prev, current = current, max(prev + num, current)
         return current
