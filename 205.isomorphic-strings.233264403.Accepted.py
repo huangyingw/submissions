@@ -2,14 +2,14 @@ class Solution(object):
     def isIsomorphic(self, s, t):
         if len(s) != len(t):
             return False
-        s_to_t = {}
-        t_mapped = set()
+        sMap = {}
+        tMap = set()
         for cs, ct in zip(s, t):
-            if cs in s_to_t:
-                if s_to_t[cs] != ct:
+            if cs in sMap:
+                if sMap[cs] != ct:
                     return False
-            elif ct in t_mapped:
+            elif ct in tMap:
                 return False
-            s_to_t[cs] = ct
-            t_mapped.add(ct)
+            sMap[cs] = ct
+            tMap.add(ct)
         return True
