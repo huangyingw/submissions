@@ -1,14 +1,14 @@
 class Solution(object):
     def isIsomorphic(self, s, t):
-        s_to_t = {}
-        t_to_s = {}
+        sMap = {}
+        tMap = {}
         for idx in range(len(s)):
-            if s[idx] not in s_to_t:
-                s_to_t[s[idx]] = t[idx]
-            elif s_to_t[s[idx]] != t[idx]:
+            if s[idx] not in sMap:
+                sMap[s[idx]] = t[idx]
+            elif sMap[s[idx]] != t[idx]:
                 return False
-            if t[idx] not in t_to_s:
-                t_to_s[t[idx]] = s[idx]
-            elif t_to_s[t[idx]] != s[idx]:
+            if t[idx] not in tMap:
+                tMap[t[idx]] = s[idx]
+            elif tMap[t[idx]] != s[idx]:
                 return False
         return True
