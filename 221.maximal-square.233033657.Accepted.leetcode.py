@@ -2,15 +2,15 @@ class Solution(object):
     def maximalSquare(self, matrix):
         if matrix is None or len(matrix) == 0:
             return 0
-        rows, cols, res, prev = len(matrix), len(matrix[0]), 0, 0
+        rows, cols, maxLen, prev = len(matrix), len(matrix[0]), 0, 0
         dp = [0] * (cols + 1)
-        for i in range(1, rows + 1):
-            for j in range(1, cols + 1):
-                temp = dp[j]
-                if matrix[i - 1][j - 1] == '1':
-                    dp[j] = min(dp[j - 1], dp[j], prev) + 1
-                    res = max(res, dp[j])
+        for row in range(1, rows + 1):
+            for col in range(1, cols + 1):
+                temp = dp[col]
+                if matrix[row - 1][col - 1] == '1':
+                    dp[col] = min(dp[col - 1], dp[col], prev) + 1
+                    maxLen = max(maxLen, dp[col])
                 else:
-                    dp[j] = 0
+                    dp[col] = 0
                 prev = temp
-        return res * res
+        return maxLen * maxLen
