@@ -1,13 +1,12 @@
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
-        dummy = ListNode(-1)
-        current = dummy
+        nav = dummy = ListNode(-1)
         while l1 or l2:
             if not l2 or l1.val <= l2.val:
-                current.next = l1
+                nav.next = l1
                 l1 = l1.next
             else:
-                current.next = l2
+                nav.next = l2
                 l2 = l2.next
-            current = current.next
+            nav = nav.next
         return dummy.next
