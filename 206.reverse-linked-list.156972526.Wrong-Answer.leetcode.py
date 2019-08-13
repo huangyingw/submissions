@@ -1,9 +1,9 @@
 class Solution(object):
     def reverseList(self, head):
-        pre = None
-        while pre:
+        prev = None
+        while prev:
             temp = head.next
-            head.next = pre
-            pre = head
+            head.next = prev
+            prev = head
             head = temp
-        return pre
+        return prev
