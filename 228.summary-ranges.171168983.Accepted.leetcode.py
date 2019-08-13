@@ -2,8 +2,7 @@ class Solution(object):
     def summaryRanges(self, nums):
         if not nums:
             return []
-        end = nums[0]
-        start = end
+        start = nums[0]
         result = []
         for idx in range(len(nums)):
             if idx + 1 < len(nums) and nums[idx] + 1 == nums[idx + 1]:
