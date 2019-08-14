@@ -6,7 +6,7 @@ class Solution(object):
         count, curr = 0, root
         while stack:
             if curr.left:
-                stack.append(curr.left)
+                stack += [curr.left]
                 curr = curr.left
             else:
                 val = stack.pop()
@@ -14,6 +14,6 @@ class Solution(object):
                 if count == k:
                     return val.val
                 if val.right:
-                    stack.append(val.right)
+                    stack += [val.right]
                     curr = val.right
         return float('-inf')

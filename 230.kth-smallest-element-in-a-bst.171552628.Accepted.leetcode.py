@@ -1,10 +1,10 @@
 class Solution(object):
     def kthSmallest(self, root, k):
         result = []
-        stack = []
-        while stack or root:
+        stack = [root]
+        while stack:
             if root:
-                stack.append(root)
+                stack += [root]
                 root = root.left
             else:
                 root = stack.pop()
