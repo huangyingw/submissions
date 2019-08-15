@@ -3,7 +3,7 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         prev, p = dummy, head
-        while p != None and p.next != None:
+        while p and p.next:
             q, r = p.next, p.next.next
             prev.next = q
             q.next = p
