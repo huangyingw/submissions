@@ -5,10 +5,10 @@ class Solution(object):
         for idx, val in enumerate(nums):
             while dequeue and nums[dequeue[-1]] < val:
                 dequeue.pop()
-            dequeue.append(idx)
+            dequeue += [idx]
             if idx + 1 < k:
                 continue
             while idx - dequeue[0] + 1 > k:
                 dequeue.pop(0)
-            result.append(nums[dequeue[0]])
+            result += [nums[dequeue[0]]]
         return result
