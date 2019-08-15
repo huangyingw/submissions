@@ -1,8 +1,8 @@
 class Solution(object):
     def swapPairs(self, head):
-        dummyHead = ListNode(-1)
-        dummyHead.next = head
-        prev, p = dummyHead, head
+        dummy = ListNode(-1)
+        dummy.next = head
+        prev, p = dummy, head
         while p != None and p.next != None:
             q, r = p.next, p.next.next
             prev.next = q
@@ -10,4 +10,4 @@ class Solution(object):
             p.next = r
             prev = p
             p = r
-        return dummyHead.next
+        return dummy.next
