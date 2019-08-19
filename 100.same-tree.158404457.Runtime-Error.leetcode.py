@@ -7,8 +7,8 @@ class Solution(object):
             q = stackQ.pop()
             if p and q and p.val != p.val:
                 return False
-            stackP.append(p.left)
-            stackP.append(p.right)
-            stackQ.append(q.left)
-            stackQ.append(q.right)
+            stackP += [p.left]
+            stackP += [p.right]
+            stackQ += [q.left]
+            stackQ += [q.right]
         return not stackP and not stackQ
