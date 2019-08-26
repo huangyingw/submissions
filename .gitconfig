@@ -10,6 +10,7 @@
     remote = github
 [gsync]
     remote = github
+    branch = master
 [merge]
     allow = true
 [vrun]
