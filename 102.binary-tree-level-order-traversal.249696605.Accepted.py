@@ -1,8 +1,10 @@
 class Solution(object):
     def levelOrder(self, root):
+        if not root:
+            return []
         queue = [root]
         result = []
-        while queue and root:
+        while queue:
             current = []
             for _ in range(len(queue)):
                 root = queue.pop(0)
