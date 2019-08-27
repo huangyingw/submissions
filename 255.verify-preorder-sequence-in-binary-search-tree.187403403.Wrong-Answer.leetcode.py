@@ -7,5 +7,5 @@ class Solution(object):
                 return False
             while stack and stack[-1] < num:
                 minV = stack.pop()
-            stack.append(num)
+            stack += [num]
         return False
