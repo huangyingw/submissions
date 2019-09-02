@@ -8,13 +8,13 @@ class Solution(object):
             node = queue.pop(0)
             if node.left is None and node.right is None:
                 break
-            if node.left is not None:
+            if node.left:
                 queue.append(node.left)
-            if node.right is not None:
+            if node.right:
                 queue.append(node.right)
             if node == rightMost:
                 depth += 1
-                if node.right is not None:
+                if node.right:
                     rightMost = node.right
                 else:
                     rightMost = node.left
