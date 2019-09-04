@@ -6,7 +6,8 @@ class Solution(object):
         depth = 0
         while queue:
             depth += 1
-            for _ in range(len(queue)):
+            size = len(queue)
+            for i in range(size):
                 node = queue.pop(0)
                 if not node.left and not node.right:
                     return depth
