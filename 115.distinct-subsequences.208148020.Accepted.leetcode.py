@@ -6,4 +6,4 @@ class Solution(object):
             for j in range(len(t), 0, -1):
                 if s[i - 1] == t[j - 1]:
                     dp[j] += dp[j - 1]
-        return dp[len(t)]
+        return dp[-1]
