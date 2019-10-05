@@ -1,10 +1,3 @@
-class Employee:
-    def __init__(self, id, importance, subordinates):
-        self.id = id
-        self.importance = importance
-        self.subordinates = subordinates
-
-
 class Solution(object):
     def getImportance(self, employees, query_id):
         emap = {e.id: e for e in employees}
