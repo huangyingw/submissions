@@ -9,6 +9,4 @@ class Solution(object):
         n = abs(divisor)
         res = math.log(m) - math.log(n)
         res = int(math.exp(res))
-        if isPositive:
-            return min(res, 2147483647)
-        return max(0 - res, -2147483648)
+        return min(res, 2147483647) if isPositive else max(0 - res, -2147483648)
