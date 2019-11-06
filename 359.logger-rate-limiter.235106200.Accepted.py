@@ -6,8 +6,6 @@ _project_ = 'leetcode'
 # Given a message and a timestamp (in seconds granularity), return true if the message should be printed in the
 # given timestamp, otherwise returns false.
 # It is possible that several messages arrive roughly at the same time.
-# Dictionary maps messages to last print time. If message not sen before or not seen for 10 seconds then update last
-# print time and return true. Else return false.
 # Time - O(1)
 # Space - O(n)
 

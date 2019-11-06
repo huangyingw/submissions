@@ -7,7 +7,7 @@ class Solution(object):
             if expected_leaves == 0:
                 return False
             if node == "
-                expected_leaves -= 1
+            expected_leaves -= 1
             else:
                 expected_leaves += 1
         return expected_leaves == 0

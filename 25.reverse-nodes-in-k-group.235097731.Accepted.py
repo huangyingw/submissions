@@ -25,7 +25,6 @@ class Solution(object):
                     if not slow and len(group) < k:
                         return head
                 for i in range(k / 2):
-                    print i, k - i - 1
                     group[i].val, group[k - i - 1].val = group[k - i - 1].val, group[i].val
         return head
 # Space: O(k)

@@ -114,7 +114,6 @@ class Solution(object):
                     min_begin = begin
                     min_end = end
                     min_window = window_ls
-        # print min_begin, min_end
         if count == ls_t:
             return s[min_begin: min_end + 1]
         else:

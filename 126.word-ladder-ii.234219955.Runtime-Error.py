@@ -7,7 +7,6 @@ class Solution(object):
         wordlist.discard(endWord)
         hash_map, res = {}, []
         self.bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
-        print hash_map
         self.dfs(res, [beginWord], beginWord, endWord, hash_map)
         return res
 

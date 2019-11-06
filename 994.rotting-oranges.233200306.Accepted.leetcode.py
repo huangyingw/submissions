@@ -12,7 +12,6 @@ class Solution(object):
         queue.append((-1, -1))
         while queue:
             flag = False
-            print queue
             while(queue[0][0] != -1 and queue[0][1] != -1):
                 (row, col) = queue[0]
                 if self.valid(row + 1, col, len(grid), len(grid[0])) and grid[row + 1][col] == 1:

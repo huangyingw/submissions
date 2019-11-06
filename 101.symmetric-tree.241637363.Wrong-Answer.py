@@ -7,7 +7,6 @@ class Solution(object):
         while lqueue and rqueue:
             lroot = lqueue.pop()
             rroot = rqueue.pop()
-            print
             if not lroot or not rroot:
                 return False
             if lroot.val != rroot.val:

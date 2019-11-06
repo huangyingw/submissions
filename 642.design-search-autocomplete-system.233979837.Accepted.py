@@ -11,11 +11,11 @@ class AutocompleteSystem(object):
 
     def input(self, c):
         if c == "
-            sentence = "".join(self.partial)
-            self.counts[sentence] += 1
-            self.partial = []
-            self.matches = []
-            return []
+        sentence = "".join(self.partial)
+        self.counts[sentence] += 1
+        self.partial = []
+        self.matches = []
+        return []
         if not self.partial:
             self.matches = [(-count, sentence) for sentence, count in self.counts.items() if sentence[0] == c]
             self.matches.sort()

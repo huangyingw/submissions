@@ -12,7 +12,6 @@ class Solution(object):
             return s
         # create a new list like this: "abc"->"a#b#c"
         temp_s = '#'.join('{}'.format(s))
-        # print temp_s
         tls = len(temp_s)
         seed = range(1, tls - 1)
         # this table stores the max length palindrome

@@ -7,7 +7,6 @@ _project_ = 'leetcode'
 # Key 3: (Ctrl-C): Copy selection to buffer.
 # Key 4: (Ctrl-V): Print buffer on screen appending it after what has already been printed.
 # Now, you can only press the keyboard for N times (with the above four keys), find out the maximum numbers of 'A' you
-# can print on screen.
 # then using the remaining N - i to create maxA(i) * (N - i). N - i must be at least 4 to create at least one copy.
 # In fact the optimal occurs when N - i is 4 or 5.
 # Time - O(n)
@@ -24,8 +23,7 @@ class Solution(object):
             if n in memo:
                 return memo[n]
             max_A = n       # press 'A' n times
-            for i in range(max(n - 5, 0), n - 3):               # i + 1 print 'A' to make a base list
-                max_A = max(max_A, helper(i) * (n - i - 1))     # then n - (i + 1) copies of the base list
+            max_A = max(max_A, helper(i) * (n - i - 1))     # then n - (i + 1) copies of the base list
             memo[n] = max_A
             return max_A
         memo = {}

@@ -23,7 +23,6 @@ class Solution(object):
                 count = 0
         if len(curr) > 0:
             res_list.append(curr)
-        # print res_list
         for index, curr in enumerate(res_list):
             text = ''
             remain = sum([len(t) for t in curr])

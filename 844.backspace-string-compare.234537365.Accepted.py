@@ -4,7 +4,7 @@ class Solution:
             stack = []
             for s in string:
                 if s == '
-                    if stack:
+                if stack:
                         stack.pop()
                 else:
                     stack.append(s)

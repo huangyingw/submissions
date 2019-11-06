@@ -16,7 +16,7 @@ class Solution(object):
                     continue
                 final.append(pos)
                 if temp_s[pos - step] == '
-                    continue
+                continue
                 len_table[pos] = step
             seed = final
         max_pos, max_step = 0, 0

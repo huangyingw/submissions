@@ -5,7 +5,6 @@ class Solution(object):
         dp = [1] * len(nums)
         for index in range(1, len(nums)):
             dp[index] = dp[index - 1] * nums[index - 1]
-        print dp
         right = 1
         for index in range(len(nums) - 1, -1, -1):
             dp[index] *= right

@@ -29,7 +29,6 @@ class Solution(object):
             building_list.append(f(buildings[x][1], buildings[x][2], 0))
         building_list = sorted(building_list)
         for buil in building_list:
-            print buil.x, buil.h, buil.s
         heap = [0]
         result = []
         curr_max = heap[0]

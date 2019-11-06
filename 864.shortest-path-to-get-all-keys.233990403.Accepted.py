@@ -21,7 +21,7 @@ class Solution(object):
                 if r < 0 or r >= rows or c < 0 or c >= cols:
                     continue
                 if grid[r][c] == "
-                    continue
+                continue
                 if "A" <= grid[r][c] <= "F" and grid[r][c] not in open_locks:
                     continue
                 visited.add((r, c, open_locks))

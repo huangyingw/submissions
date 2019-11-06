@@ -9,7 +9,6 @@ class Solution(object):
             dp[index][0] = dp[index - 1][0] + grid[index][0]
         for index in range(1, col):
             dp[0][index] = dp[0][index - 1] + grid[0][index]
-        print dp
         for index_i in range(1, row):
             for index_j in range(1, col):
                 dp[index_i][index_j] = min(dp[index_i - 1][index_j], dp[index_i][index_j - 1]) + grid[index_i][index_j]

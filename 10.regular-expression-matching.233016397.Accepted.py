@@ -15,7 +15,6 @@ class Solution(object):
         for j in range(1, n):
             if p[j] == '*' and dp[0][j - 1]:
                 dp[0][j + 1] = True
-        # print dp
         for i in range(m):
             for j in range(n):
                 if p[j] == '.' or p[j] == s[i]:

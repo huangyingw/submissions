@@ -45,7 +45,6 @@ class Solution(object):
             while pos < ls and s[pos].isdigit():
                 pos += 1
                 isNumeric = True
-        print pos, ls, isNumeric
         if pos == ls and isNumeric:
             return True
         return False

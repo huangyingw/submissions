@@ -13,7 +13,6 @@ class MinStack(object):
                 self.minimum = x
             else:
                 self.stack.append(x)
-        print self.stack
 
     def pop(self):
         if self.stack:

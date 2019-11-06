@@ -16,7 +16,6 @@ class Solution(object):
     #     for i, ch in enumerate(s):
     #         flag = True
     #         if (i / inter) % 2 == 1:
-    #             # print i
     #             flag = False
     #         if flag:
     #             temp_s[row][col] = ch

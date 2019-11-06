@@ -49,16 +49,16 @@ class Solution:
         m, n = len(board), len(board[0])
         old, board[i][j] = board[i][j], '
         if i > 0 and board[i - 1][j] != '
-                self.deepDive(board, i - 1, j, word, position + 1):
+        self.deepDive(board, i - 1, j, word, position + 1):
             return True
         if i + 1 < m and board[i + 1][j] != '
-                self.deepDive(board, i + 1, j, word, position + 1):
+        self.deepDive(board, i + 1, j, word, position + 1):
             return True
         if j > 0 and board[i][j - 1] != '
-                self.deepDive(board, i, j - 1, word, position + 1):
+        self.deepDive(board, i, j - 1, word, position + 1):
             return True
         if j + 1 < n and board[i][j + 1] != '
-                self.deepDive(board, i, j + 1, word, position + 1):
+        self.deepDive(board, i, j + 1, word, position + 1):
             return True
         board[i][j] = old
         return False

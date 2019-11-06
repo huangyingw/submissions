@@ -11,5 +11,4 @@ class Solution(object):
             if curr_sum == total_sum / 3:
                 curr_sum = 0
                 groups += 1
-        print groups
         return groups == 3

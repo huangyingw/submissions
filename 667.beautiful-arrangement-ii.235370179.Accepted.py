@@ -5,7 +5,6 @@ _project_ = 'leetcode'
 # 1 to n and obeys the following requirement:
 # Suppose this list is [a1, a2, a3, ... , an], then the list [|a1 - a2|, |a2 - a3|, |a3 - a4|, ... , |an-1 - an|]
 # has exactly k distinct integers.
-# If there are multiple answers, print any of them.
 # The criteria that there are k differences between consecutive numbers means those differences are 1, 2, .. k.
 # Use the first k + 1 nums to produce a list with all the required differences. Build the list with the largest
 # difference first, then taking numbers from each end in turn create all the other differences.
