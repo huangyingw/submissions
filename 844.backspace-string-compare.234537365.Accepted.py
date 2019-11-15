@@ -5,7 +5,7 @@ class Solution:
             for s in string:
                 if s == '
                 if stack:
-                        stack.pop()
+                    stack.pop()
                 else:
                     stack.append(s)
             return stack
