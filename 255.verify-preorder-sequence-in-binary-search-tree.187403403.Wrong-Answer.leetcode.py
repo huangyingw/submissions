@@ -1,11 +1,11 @@
 class Solution(object):
     def verifyPreorder(self, preorder):
-        minV = -sys.maxint - 1
+        min = -sys.maxint - 1
         stack = []
         for num in preorder:
-            if num < minV:
+            if num < min:
                 return False
             while stack and stack[-1] < num:
-                minV = stack.pop()
-            stack += [num]
+                min = stack.pop()
+            stack.append(num)
         return False

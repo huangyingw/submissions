@@ -1,5 +1,12 @@
 class Solution(object):
     def numIslands2(self, m, n, positions):
+        """
+        :type m: int
+        :type n: int
+        :type positions: List[List[int]]
+        :rtype: List[int]
+        """
+        # quick union find with weights
         ans = []
         islands = Union()
         for p in map(tuple, positions):
@@ -13,7 +20,12 @@ class Solution(object):
 
 
 class Union(object):
+    """
+    quick union find with weights
+    """
+
     def __init__(self):
+        # use dic to reduce index operations
         self.id = {}
         self.sz = {}
         self.count = 0

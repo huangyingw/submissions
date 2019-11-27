@@ -1,5 +1,9 @@
 class Solution(object):
     def findCircleNum(self, M):
+        """
+        :type M: List[List[int]]
+        :rtype: int
+        """
         def find_set(x):
             return set[x]
 

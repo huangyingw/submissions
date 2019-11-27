@@ -1,3 +1,5 @@
+_author_ = 'jake'
+_project_ = 'leetcode'
 import functools
 
 

@@ -2,10 +2,10 @@ class Solution(object):
     def reverseList(self, head):
         if not head:
             return head
-        prev = None
+        pre = None
         while head.next:
             temp = head.next
-            head.next = prev
+            head.next = pre
             head = temp
-            prev = head
-        return prev
+            pre = head
+        return pre

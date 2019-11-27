@@ -7,3 +7,5 @@ class WordDistance(object):
     def shortest(self, word1, word2):
         idxs1 = self.w_to_idx[word1]
         idxs2 = self.w_to_idx[word2]
+        '''
+        '''

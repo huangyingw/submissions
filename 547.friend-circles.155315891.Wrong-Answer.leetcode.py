@@ -1,8 +1,12 @@
 class Solution(object):
     def findCircleNum(self, M):
+        """
+        :type M: List[List[int]]
+        :rtype: int
+        """
         def find_set(x):
             if set[x] != x:
-                set[x] = find_set(set[x])
+                set[x] = find_set(set[x])  # path compression.
             return set[x]
 
         def union_set(x, y):

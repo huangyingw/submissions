@@ -21,6 +21,10 @@ class f(object):
 
 class Solution(object):
     def getSkyline(self, buildings):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
         if len(buildings) == 0:
             return []
         building_list = []

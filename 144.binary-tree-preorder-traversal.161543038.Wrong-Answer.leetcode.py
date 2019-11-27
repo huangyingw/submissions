@@ -1,7 +1,7 @@
 class Solution(object):
     def preorderTraversal(self, root):
         if not root:
-            return []
+            return None
         result = []
         stack = [root]
         while stack:

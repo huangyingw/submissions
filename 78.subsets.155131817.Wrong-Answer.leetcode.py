@@ -1,13 +1,13 @@
 class Solution(object):
     def subsets(self, nums):
-        def dfs(start):
+        def helper(start):
             result.append(list(current))
             for index in range(start, len(nums)):
                 current.append(nums[start])
-                dfs(index + 1)
+                helper(index + 1)
                 current.pop()
         result = []
         current = []
         nums.sort()
-        dfs(0)
+        helper(0)
         return result

@@ -1,10 +1,10 @@
 class Solution(object):
     def isIsomorphic(self, s, t):
-        sMap = {}
-        tMap = {}
+        s_to_t = {}
+        t_to_s = {}
         for idx in range(len(s)):
-            if sMap[s[idx]] != t[idx] or tMap[t[idx]] != s[idx]:
+            if s_to_t[s[idx]] != t[idx] or t_to_s[t[idx]] != s[idx]:
                 return False
-            sMap[s[idx]] = t[idx]
-            tMap[t[idx]] = s[idx]
+            s_to_t[s[idx]] = t[idx]
+            t_to_s[t[idx]] = s[idx]
         return True

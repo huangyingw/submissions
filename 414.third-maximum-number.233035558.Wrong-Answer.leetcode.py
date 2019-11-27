@@ -1,5 +1,9 @@
 class Solution(object):
     def thirdMax(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         import Queue
         pq = Queue.PriorityQueue(4)
         check = set()
