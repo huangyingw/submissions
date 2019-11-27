@@ -5,10 +5,12 @@ class Solution(object):
     def numSquares(self, n):
         if n < 0:
             return -1
+        # corner case 2
         if n == 0:
             return 1
         q = deque()
         visited = set()
+        # val, step
         q.append((0, 0))
         visited.add(0)
         while q:
@@ -23,4 +25,5 @@ class Solution(object):
                     if tmp not in visited:
                         visited.add(tmp)
                         q.append((tmp, step + 1))
+        # Should never reach here
         return -1

@@ -1,7 +1,7 @@
 class Solution(object):
     def groupStrings(self, strings):
         groups = collections.defaultdict(list)
-        for s in strings:
+        for s in strings:  # Grouping.
             groups[self.hashStr(s)].append(s)
         result = []
         for key, val in groups.iteritems():

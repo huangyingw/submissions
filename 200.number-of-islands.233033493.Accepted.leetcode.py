@@ -1,5 +1,10 @@
 class Solution(object):
     def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        # BFS with marks
         if grid is None or len(grid) == 0:
             return 0
         islands = 0

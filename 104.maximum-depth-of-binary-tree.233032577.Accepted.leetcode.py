@@ -1,5 +1,9 @@
 class Solution:
     def maxDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
         if root is None:
             return 0
         ld = self.maxDepth(root.left)

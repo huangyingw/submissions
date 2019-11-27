@@ -1,3 +1,7 @@
+_author_ = 'jake'
+_project_ = 'leetcode'
+
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -7,6 +11,11 @@ class TreeNode(object):
 
 class Solution(object):
     def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
         if not p and not q:
             return True
         if not p or not q:

@@ -9,6 +9,8 @@ class Solution(object):
             return None
         root = TreeNode(preorder[pStart])
         rootIdx = inOrderMap[root.val]
-        root.left = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + 1, pStart + rootIdx - iStart + 1, iStart, rootIdx - 1)
-        root.right = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1, iEnd)
+        root.left = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + 1, pStart + rootIdx - iStart + 1, iStart,
+                                       rootIdx - 1)
+        root.right = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1,
+                                        iEnd)
         return root

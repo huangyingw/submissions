@@ -1,7 +1,14 @@
 class Solution(object):
     def largestRectangleArea(self, heights):
+        """
+        :type heights: List[int]
+        :rtype: int
+        """
+        # https://leetcode.com/discuss/70983/4ms-java-solution-using-o-n-stack-space-o-n-time
         largest_rectangle = 0
         ls = len(heights)
+        # heights[stack[top]] > heights[pos] > heights[stack[top - 1]]
+        # keep the increase order
         stack = [-1]
         top, pos = 0, 0
         for pos in range(ls):

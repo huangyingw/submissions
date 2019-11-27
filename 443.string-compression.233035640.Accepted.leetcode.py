@@ -1,5 +1,10 @@
 class Solution(object):
     def compress(self, chars):
+        """
+        :type chars: List[str]
+        :rtype: int
+        """
+        # https://leetcode.com/problems/string-compression/solution/
         anchor = write = 0
         for read, c in enumerate(chars):
             if read + 1 == len(chars) or chars[read + 1] != c:

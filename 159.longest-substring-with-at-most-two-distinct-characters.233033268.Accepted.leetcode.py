@@ -1,5 +1,9 @@
 class Solution(object):
     def lengthOfLongestSubstringTwoDistinct(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
         i, j, maxLen = 0, -1, 0
         for k in range(1, len(s)):
             if s[k] == s[k - 1]:

@@ -1,5 +1,9 @@
 class Solution(object):
     def rightSideView(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
         if not root:
             return []
         queue = [root]
@@ -9,8 +13,8 @@ class Solution(object):
             for _ in range(size):
                 root = queue.pop(0)
                 if root.left:
-                    queue += [root.left]
+                    queue.append(root.left)
                 if root.right:
-                    queue += [root.right]
-            result += [root.val]
+                    queue.append(root.right)
+            result.append(root.val)
         return result

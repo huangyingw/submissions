@@ -26,3 +26,4 @@ class Solution(object):
                     visited.add(ns)
                     queue.append(ns)
         return ans
+1

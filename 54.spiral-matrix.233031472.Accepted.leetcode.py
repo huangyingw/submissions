@@ -1,5 +1,9 @@
 class Solution(object):
     def spiralOrder(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: List[int]
+        """
         if matrix is None or len(matrix) == 0:
             return matrix
         m, n = len(matrix), len(matrix[0])
@@ -17,5 +21,22 @@ class Solution(object):
             [matrix[j][c_start] for j in reversed(range(r_start + 1, r_end))]
         res = curr + self.get_spiralOrder(matrix, r_start + 1, r_end - 1, c_start + 1, c_end - 1)
         return res
+    # def spiralOrder(self, matrix):
+    #     res = []
+    #     if not matrix:
+    #         return []
+    #     i, j, di, dj = 0, 0, 0, 1
+    #     m, n = len(matrix), len(matrix[0])
+    #     for v in xrange(m * n):
+    #         res.append(matrix[i][j])
+    #         matrix[i][j] = ''
+    #         if matrix[(i + di) % m][(j + dj) % n] == '':
+    #             # (0, 1) -> (1, 0) -> (0, -1) -> (-1, 0)
+    #             # then loop
+    #             di, dj = dj, -di
+    #         i += di
+    #         j += dj
+    #     return res
 if __name__ == '__main__':
+    # begin
     s = Solution()

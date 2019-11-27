@@ -1,5 +1,9 @@
 class Solution(object):
     def groupStrings(self, strings):
+        """
+        :type strings: List[str]
+        :rtype: List[List[str]]
+        """
         dic = {}
         for s in strings:
             key = self.hashCode(s)

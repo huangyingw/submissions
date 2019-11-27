@@ -1,3 +1,8 @@
+'''
+Given a string, find the longest substring that contains only two unique characters. For example, given "abcbbbbcccbdddadacb", the longest substring that contains 2 unique character is "bcbbbbcccb".
+'''
+
+
 class Solution(object):
     def lengthOfLongestSubstringKDistinct(self, S, K):
         charMapping, start = {}, 0

@@ -1,6 +1,10 @@
 class Solution(object):
     def minimumTotal(self, triangle):
-        if not triangle:
+        """
+        :type triangle: List[List[int]]
+        :rtype: int
+        """
+        if triangle is None or len(triangle) == 0:
             return 0
         ls = len(triangle)
         dp = [0] * ls

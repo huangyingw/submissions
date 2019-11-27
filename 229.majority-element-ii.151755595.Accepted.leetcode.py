@@ -1,4 +1,6 @@
 class Solution:
+    # @param {integer[]} nums
+    # @return {integer[]}
     def majorityElement(self, nums):
         n1 = n2 = None
         c1 = c2 = 0

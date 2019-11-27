@@ -15,7 +15,9 @@ class ZigzagIterator(object):
             n = self.v1[self.x]
             if self.x < len(self.v2):
                 self.l = 1
+                # keep self.x same
             else:
+                # keep self.l same
                 self.x += 1
         else:
             n = self.v2[self.x]

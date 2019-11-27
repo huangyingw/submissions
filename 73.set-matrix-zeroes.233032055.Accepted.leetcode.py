@@ -1,5 +1,9 @@
 class Solution(object):
     def setZeroes(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
         if not matrix:
             return
         m = len(matrix)
@@ -13,7 +17,9 @@ class Solution(object):
                 if matrix[i][j] == 0:
                     r.append(i)
                     c.append(j)
+        # row with zero
         r = set(r)
+        # column with zero
         c = set(c)
         for i in r:
             for j in range(n):
