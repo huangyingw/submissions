@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/product-of-array-except-self/description/
 """
 Given an array nums of n integers where n > 1,
 return an array output such that output[i] is equal to
@@ -12,19 +11,8 @@ Could you solve it with constant space complexity?
 (The output array does not count as extra space for the purpose of space complexity analysis.)
 """
 from functools import reduce
-
-
 class Solution:
-    # 1
-    # # with division
-    # 用所有数的积来进行计算
-    # 当nums中有0时，会出现问题。
-    # 可以处理
     def productExceptSelf(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
         def mutifly(a, b):
             return a * b
         if all(nums):
@@ -37,8 +25,6 @@ class Solution:
                 nums[i] = 1
                 ret[i] = reduce(mutifly, nums)
             return ret
-    # 2
-
     def productExceptSelf2(self, nums):
         p = 1
         n = len(nums)

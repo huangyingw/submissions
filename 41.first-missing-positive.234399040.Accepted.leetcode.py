@@ -4,7 +4,6 @@ class Solution:
             return 1
         max_num = max(nums)
         return min(set(range(1, max_num + 2)) - set(nums))
-
     def firstMissingPositive(self, nums):
         if len(nums) == 0:
             return 1

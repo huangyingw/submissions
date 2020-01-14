@@ -1,11 +1,5 @@
 class Solution(object):
     def findMissingRanges(self, nums, lower, upper):
-        """
-        :type nums: List[int]
-        :type lower: int
-        :type upper: int
-        :rtype: List[str]
-        """
         ranges = []
         prev = lower - 1
         for i in range(len(nums) + 1):

@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def kthSmallest(self, matrix, k):
         rows, cols = len(matrix), len(matrix[0])

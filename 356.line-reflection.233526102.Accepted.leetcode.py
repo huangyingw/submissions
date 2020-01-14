@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def isReflected(self, points):
         y_to_x = defaultdict(set)

@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def findTargetSumWays(self, nums, S):
         sums = defaultdict(int)

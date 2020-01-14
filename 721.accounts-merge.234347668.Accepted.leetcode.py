@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def accountsMerge(self, accounts):
         owners, roots = {}, {}
@@ -22,7 +20,6 @@ class Solution:
             one_account = [owners[k]] + sorted(list(v))
             result.append(one_account)
         return result
-
     def findRoot(self, node, roots):
         while roots[node] != node:
             roots[node] = roots[roots[node]]

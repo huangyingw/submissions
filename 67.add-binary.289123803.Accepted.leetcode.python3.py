@@ -8,7 +8,7 @@ class Solution:
             ach = ord(a[i]) - ord('0') if i >= 0 else 0
             bch = ord(b[j]) - ord('0') if j >= 0 else 0
             res.append(str(ach ^ bch ^ carry))
-            carry = (ach + bch + carry) >> 1  # It is equivalent to (a+b+c)/2
+            carry = (ach + bch + carry) >> 1
             i -= 1
             j -= 1
         return ''.join(res[::-1])

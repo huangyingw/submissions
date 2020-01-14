@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution:
     def isOneEditDistance(self, s, t):
         if len(s) > len(t):

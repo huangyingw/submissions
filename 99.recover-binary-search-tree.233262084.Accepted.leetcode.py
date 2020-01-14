@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def recoverTree(self, root):
         self.swapped1 = None
@@ -12,7 +10,6 @@ class Solution(object):
         self.prev = TreeNode(float('-inf'))
         self.inorder(root)
         self.swapped1.val, self.swapped2.val = self.swapped2.val, self.swapped1.val
-
     def inorder(self, node):
         if not node:
             return

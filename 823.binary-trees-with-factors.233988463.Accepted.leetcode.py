@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def numFactoredBinaryTrees(self, A):
         MOD = 10 ** 9 + 7

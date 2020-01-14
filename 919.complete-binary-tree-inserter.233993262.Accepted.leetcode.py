@@ -6,7 +6,6 @@ class CBTInserter:
                 self.nodelist.append(node.left)
             if node.right:
                 self.nodelist.append(node.right)
-
     def insert(self, v):
         node = TreeNode(v)
         self.nodelist.append(node)
@@ -17,6 +16,5 @@ class CBTInserter:
         else:
             parent.right = node
         return parent.val
-
     def get_root(self):
         return self.nodelist[0]

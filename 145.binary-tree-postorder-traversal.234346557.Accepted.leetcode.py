@@ -3,8 +3,6 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution:
     def postorderTraversal(self, root):
         if root:

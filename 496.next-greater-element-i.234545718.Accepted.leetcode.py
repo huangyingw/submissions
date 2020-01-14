@@ -11,7 +11,6 @@ class Solution:
         for k in nums1:
             res.append(nums2_next[nums2.index(k)])
         return res
-
     def nextGreaterElement2(self, nums1, nums2):
         if not nums1 or not nums2:
             return []

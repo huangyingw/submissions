@@ -12,7 +12,6 @@ class Solution:
                 buy, result[i][j] = max(buy, result[i - 1][j - 1] - prices[j - 1]), max(result[i][j - 1],
                                                                                         buy + prices[j - 1])
         return result[k][l]
-
     def quickSolve(self, prices):
         buy, sell = float('-inf'), 0
         for price in prices:

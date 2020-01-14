@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/unique-paths/description/
 """
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
@@ -17,9 +16,6 @@ Example 2:
 Input: m = 7, n = 3
 Output: 28
 """
-# A(m,n)=A(m-1,n)+A(m,n-1)
-
-
 class Solution:
     def uniquePaths(self, m, n):
         aux = [[1 for x in range(n)] for x in range(m)]

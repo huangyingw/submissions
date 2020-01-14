@@ -1,9 +1,5 @@
 class Solution(object):
     def bstFromPreorder(self, preorder):
-        """
-        :type preorder: List[int]
-        :rtype: TreeNode
-        """
         root = TreeNode(preorder[0])
         stack = [root]
         for index in range(1, len(preorder)):

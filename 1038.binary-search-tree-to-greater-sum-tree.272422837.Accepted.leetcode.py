@@ -1,6 +1,5 @@
 class Solution(object):
     ListNode = []
-
     def bstToGst(self, root):
         self.ListNode = []
         self.dfs(root)
@@ -9,7 +8,6 @@ class Solution(object):
             SumNum += node.val
             node.val = SumNum
         return root
-
     def dfs(self, node):
         if node:
             if node.right:

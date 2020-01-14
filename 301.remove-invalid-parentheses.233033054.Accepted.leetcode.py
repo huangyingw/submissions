@@ -1,12 +1,7 @@
 class Solution(object):
     def removeInvalidParentheses(self, s):
-        """
-        :type s: str
-        :rtype: List[str]
-        """
         if not s:
             return [""]
-
         def isValid(s):
             count = 0
             for char in s:

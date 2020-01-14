@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/set-matrix-zeroes/description/
 """
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place.
 Example 1:
@@ -32,19 +31,8 @@ A straight forward solution using O(mn) space is probably a bad idea.
 A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 """
-
-
 class Solution:
-    # 1
-    # force
-    # wrong
-    # 一开始理解错题意，以为只是将0周围的数字变成0即可。
-    # 后面发现是将这一行以及这一列的所有数字变成0
     def setZeroes(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
-        """
         point_set = set()
         rows = len(matrix)
         columns = len(matrix[0])
@@ -61,25 +49,18 @@ class Solution:
                         point_set.add((i, j + 1))
         for (r, c) in point_set:
             matrix[r][c] = 0
-
     def setZeroes2(self, matrix):
-        # First row has zero?
         m, n, firstRowHasZero = len(matrix), len(matrix[0]), not all(matrix[0])
-        # Use first row/column as marker, scan the matrix
         for i in range(1, m):
             for j in range(n):
                 if matrix[i][j] == 0:
                     matrix[0][j] = matrix[i][0] = 0
-        # Set the zeros
         for i in range(1, m):
             for j in range(n - 1, -1, -1):
                 if matrix[i][0] == 0 or matrix[0][j] == 0:
                     matrix[i][j] = 0
-        # Set the zeros for the first row
         if firstRowHasZero:
             matrix[0] = [0] * n
-    # 3
-
     def setZeroes3(self, matrix):
         if not matrix or not matrix[0]:
             return

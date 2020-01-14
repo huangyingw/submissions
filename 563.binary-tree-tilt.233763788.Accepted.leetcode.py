@@ -1,7 +1,6 @@
 class Solution(object):
     def findTilt(self, root):
         self.tilt = 0
-
         def helper(node):
             if not node:
                 return 0

@@ -1,6 +1,4 @@
 from collections import Counter, defaultdict
-
-
 class Solution(object):
     def isPossible(self, nums):
         freq = Counter(nums)

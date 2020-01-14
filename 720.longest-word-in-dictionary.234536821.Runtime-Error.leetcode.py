@@ -14,7 +14,6 @@ class Solution(object):
                     if len(w) > len(res) or (len(w) == len(res) and res > w):
                         res = w
         return res
-
     def longestWord2(self, words):
         max_len = 0
         ans = ""

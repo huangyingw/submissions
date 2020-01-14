@@ -1,7 +1,6 @@
 class Solution(object):
     def tree2str(self, t):
         result = []
-
         def preorder(node):
             if not node:
                 return

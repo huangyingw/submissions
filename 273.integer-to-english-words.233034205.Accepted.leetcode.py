@@ -1,9 +1,7 @@
 class Solution(object):
     def numberToWords(self, num):
-        to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
-               'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.split()
+        to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve '               'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.split()
         tens = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.split()
-
         def words(n):
             if n < 20:
                 return to19[n - 1:n]

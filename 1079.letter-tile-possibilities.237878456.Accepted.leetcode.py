@@ -1,11 +1,8 @@
 from collections import Counter
-
-
 class Solution(object):
     def numTilePossibilities(self, tiles):
         self.total = 0
         freq = Counter(tiles)
-
         def helper(remaining):
             if remaining == 0:
                 return

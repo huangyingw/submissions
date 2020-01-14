@@ -1,19 +1,15 @@
 class Excel(object):
     def _indices(self, r, c):
         return [r - 1, ord(c) - ord("A")]
-
     def __init__(self, H, W):
         rows, cols = self._indices(H, W)
         self.excel = [[0 for _ in range(cols + 1)] for _ in range(rows + 1)]
-
     def set(self, r, c, v):
         r, c, = self._indices(r, c)
         self.excel[r][c] = v
-
     def get(self, r, c):
         r, c = self._indices(r, c)
         return self.get_i(r, c)
-
     def get_i(self, r, c):
         contents = self.excel[r][c]
         if isinstance(contents, int):
@@ -30,7 +26,6 @@ class Excel(object):
                 for col in range(c1, c2 + 1):
                     total += self.get_i(row, col)
         return total
-
     def sum(self, r, c, strs):
         r, c = self._indices(r, c)
         self.excel[r][c] = strs

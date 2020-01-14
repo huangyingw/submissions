@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def numSubarraysWithSum(self, A, S):
         result = 0

@@ -1,7 +1,6 @@
 class RLEIterrator():
     def __init__(self, A):
         self.inputList = A
-
     def next(self, n):
         index = 0
         while index < len(self.inputList):

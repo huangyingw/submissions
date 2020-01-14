@@ -1,7 +1,5 @@
 import heapq
 from collections import Counter
-
-
 class Solution(object):
     def reorganizeString(self, S):
         freq = Counter(S)
@@ -10,7 +8,6 @@ class Solution(object):
         heap = [(-count, letter) for letter, count in freq.items()]
         heapq.heapify(heap)
         result = []
-
         def add_letter(letter, neg_count):
             result.append(letter)
             neg_count += 1

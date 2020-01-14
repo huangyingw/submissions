@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def numMusicPlaylists(self, N, L, K):
         used_count = {0: 1}

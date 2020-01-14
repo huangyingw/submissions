@@ -1,6 +1,4 @@
 from copy import deepcopy
-
-
 class Solution(object):
     def shortestDistance(self, grid):
         rows, cols = len(grid), len(grid[0])

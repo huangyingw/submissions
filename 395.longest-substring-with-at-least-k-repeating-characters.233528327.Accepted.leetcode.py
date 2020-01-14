@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def longestSubstring(self, s, k):
         longest = 0

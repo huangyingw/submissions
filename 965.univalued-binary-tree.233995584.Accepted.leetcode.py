@@ -1,7 +1,6 @@
 class Solution:
     def isUnivalTree(self, root):
         value = root.val
-
         def helper(node):
             if not node:
                 return True

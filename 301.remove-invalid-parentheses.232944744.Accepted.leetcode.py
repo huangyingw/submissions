@@ -17,7 +17,6 @@ class Solution(object):
                             q.append(t)
                             vis.add(t)
         return ans
-
     def isValidParentheses(self, s):
         cnt = 0
         for c in s:

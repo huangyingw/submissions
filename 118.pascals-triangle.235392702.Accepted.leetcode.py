@@ -13,8 +13,6 @@ class Solution(object):
                 a += 1
             Ans[i].append(1)
         return Ans
-
-
 class SolutionII(object):
     def generate(self, numRows):
         Ans = []

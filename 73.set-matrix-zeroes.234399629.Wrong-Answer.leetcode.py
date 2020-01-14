@@ -16,7 +16,6 @@ class Solution:
                         point_set.add((i, j + 1))
         for (r, c) in point_set:
             matrix[r][c] = 0
-
     def setZeroes2(self, matrix):
         m, n, firstRowHasZero = len(matrix), len(matrix[0]), not all(matrix[0])
         for i in range(1, m):
@@ -29,7 +28,6 @@ class Solution:
                     matrix[i][j] = 0
         if firstRowHasZero:
             matrix[0] = [0] * n
-
     def setZeroes3(self, matrix):
         if not matrix or not matrix[0]:
             return

@@ -12,7 +12,6 @@ class Solution(object):
         head2 = self.sortList(head2)
         head = self.merge(head1, head2)
         return head
-
     def merge(self, head1, head2):
         if not head1:
             return head2

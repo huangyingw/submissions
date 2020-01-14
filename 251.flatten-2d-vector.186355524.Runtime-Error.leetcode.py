@@ -3,7 +3,6 @@ class Vector2D(object):
         self.col = 0
         self.row = 0
         self.data = vec2d
-
     def next(self):
         result = self.data[self.row][self.col]
         self.col += 1
@@ -11,6 +10,5 @@ class Vector2D(object):
             self.row += 1
             self.col = 0
         return result
-
     def hasNext(self):
         return self.row < len(self.data)

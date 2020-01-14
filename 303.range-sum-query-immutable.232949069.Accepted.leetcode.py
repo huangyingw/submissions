@@ -1,21 +1,15 @@
 class NumArray(object):
     def __init__(self, nums):
         self.ST = SegmentTree(nums)
-
     def sumRange(self, i, j):
         return self.ST.query(self.ST.root, i, j)
-
-
 class Node(object):
     def __init__(self, start, end):
         self.left, self.right = None, None
         self.start, self.end, self.sum = start, end, 0
-
-
 class SegmentTree(object):
     def __init__(self, vals):
         self.root = self.build(0, len(vals) - 1, vals)
-
     def build(self, start, end, vals):
         if start > end:
             return None
@@ -28,7 +22,6 @@ class SegmentTree(object):
         else:
             root.sum = vals[start]
         return root
-
     def query(self, root, start, end):
         if not root or start > end:
             return 0

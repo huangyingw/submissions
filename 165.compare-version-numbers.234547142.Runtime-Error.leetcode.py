@@ -10,8 +10,6 @@ class Solution:
             elif vv1 < vv2:
                 return -1
         return 0
-
-
 class Solution:
     def compareVersion(self, version1, version2):
         if version1 == version2:

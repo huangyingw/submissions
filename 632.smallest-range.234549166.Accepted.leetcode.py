@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/smallest-range/
 """
 You have k lists of sorted integers in ascending order. Find the smallest range that includes at least one number from each of the k lists.
 We define the range [a,b] is smaller than range [c,d] if b-a < d-c or a < c if b-a == d-c.
@@ -15,8 +14,6 @@ The given list may contain duplicates, so ascending order means >= here.
 -105 <= value of elements <= 105.
 For Java users, please note that the input type has been changed to List<List<Integer>>. And after you reset the code template, you'll see this point.
 """
-
-
 class Solution:
     def smallestRange(self, A):
         import functools
@@ -34,14 +31,8 @@ class Solution:
                 ans = left, right
         return ans
 import heapq
-
-
 class Solution:
     def smallestRange(self, nums):
-        """
-        :type nums: List[List[int]]
-        :rtype: List[int]
-        """
         queue = [(list_num[0], i, 0) for i, list_num in enumerate(nums)]
         heapq.heapify(queue)
         result = [float("-inf"), float("inf")]

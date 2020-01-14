@@ -1,9 +1,5 @@
 class Solution(object):
     def minDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
         if root is None:
             return 0
         queue = [root]

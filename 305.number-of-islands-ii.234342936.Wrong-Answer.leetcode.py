@@ -21,7 +21,6 @@ class Solution:
                     count -= 1
             result.append(count)
         return result
-
     def findRoot(self, islands, root):
         while root != islands[root]:
             islands[root] = islands[islands[root]]

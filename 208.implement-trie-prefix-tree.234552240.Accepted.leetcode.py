@@ -1,7 +1,6 @@
 class Trie:
     def __init__(self):
         self.dic = {}
-
     def insert(self, word):
         cur = self.dic
         for c in word:
@@ -9,7 +8,6 @@ class Trie:
                 cur[c] = {}
             cur = cur[c]
         cur['end'] = {}
-
     def search(self, word):
         cur = self.dic
         for c in word:
@@ -20,7 +18,6 @@ class Trie:
         if 'end' in cur:
             return True
         return False
-
     def startsWith(self, prefix):
         cur = self.dic
         for c in prefix:

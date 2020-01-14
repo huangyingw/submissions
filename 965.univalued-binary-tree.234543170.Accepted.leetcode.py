@@ -1,7 +1,6 @@
 class Solution:
     def isUnivalTree(self, root):
         vals = []
-
         def dfs(node):
             if node:
                 vals.append(node.val)
@@ -9,8 +8,6 @@ class Solution:
                 dfs(node.right)
         dfs(root)
         return len(set(vals)) == 1
-
-
 class Solution2:
     def isUnivalTree(self, root):
         left_correct = (not root.left or root.val == root.left.val

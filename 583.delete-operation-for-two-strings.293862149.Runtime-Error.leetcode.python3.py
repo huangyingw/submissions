@@ -1,7 +1,6 @@
 class Solution:
     def minDistance(self, word1, word2):
         return len(word1) + len(word2) - 2 * self.lcs(word1, word2, len(word1), len(word2))
-
     def lcs(self, s1, s2, m, n):
         if m == 0 and n == 0:
             return 0

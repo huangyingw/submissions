@@ -5,7 +5,6 @@ class LRUCache(object):
             self.value = value
             self.prev = None
             self.next = None
-
     def __init__(self, capacity):
         self.capacity = capacity
         self.head = self.Node(-1, -1)
@@ -13,7 +12,6 @@ class LRUCache(object):
         self.tail.prev = self.head
         self.head.next = self.tail
         self.int_to_node = {}
-
     def get(self, key):
         if key not in self.int_to_node:
             return -1
@@ -22,7 +20,6 @@ class LRUCache(object):
         node.next.prev = node.prev
         self.moveToTail(node)
         return node.value
-
     def put(self, key, value):
         if self.get(key) != -1:
             self.int_to_node[key].value = value
@@ -34,7 +31,6 @@ class LRUCache(object):
         insert = self.Node(key, value)
         self.int_to_node.put(key, insert)
         self.moveToTail(insert)
-
     def moveToTail(self, current):
         current.prev = self.tail.prev
         current.prev.next = current

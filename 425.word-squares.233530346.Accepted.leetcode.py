@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def wordSquares(self, words):
         prefixes = defaultdict(list)
@@ -11,7 +9,6 @@ class Solution(object):
         for word in words:
             self.build_square([word], prefixes, squares)
         return squares
-
     def build_square(self, partial, prefixes, squares):
         if len(partial) == len(partial[0]):
             squares.append(list(partial))

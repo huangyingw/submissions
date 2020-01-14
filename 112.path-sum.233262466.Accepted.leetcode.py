@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def hasPathSum(self, root, sum):
         if not root:

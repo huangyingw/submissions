@@ -1,7 +1,6 @@
 class Solution(object):
     def smallestFromLeaf(self, root):
         self.result = "~"
-
         def dfs(node, A):
             if node:
                 A.append(chr(node.val + ord('a')))

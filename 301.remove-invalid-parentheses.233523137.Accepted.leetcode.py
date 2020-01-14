@@ -3,7 +3,6 @@ class Solution(object):
         valid = []
         self.remove(s, valid, 0, 0, ('(', ')'))
         return valid
-
     def remove(self, s, valid, start, removed, par):
         net_open = 0
         for i in range(start, len(s)):

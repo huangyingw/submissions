@@ -7,8 +7,6 @@ class Solution(object):
         else:
             root.left = self.insertIntoBST(root.left, val)
         return root
-
-
 class SolutionII(object):
     def insertIntoBST(self, root, val):
         root_head = root

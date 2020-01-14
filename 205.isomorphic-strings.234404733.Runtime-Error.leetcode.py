@@ -5,8 +5,6 @@ def isIsomorphic1(self, s, t):
     for i, val in enumerate(t):
         d2[val] = d2.get(val, []) + [i]
     return sorted(d1.values()) == sorted(d2.values())
-
-
 def isIsomorphic2(self, s, t):
     d1, d2 = [[] for _ in range(256)], [[] for _ in range(256)]
     for i, val in enumerate(s):
@@ -14,20 +12,12 @@ def isIsomorphic2(self, s, t):
     for i, val in enumerate(t):
         d2[ord(val)].append(i)
     return sorted(d1) == sorted(d2)
-
-
 def isIsomorphic3(self, s, t):
     return len(set(zip(s, t))) == len(set(s)) == len(set(t))
-
-
 def isIsomorphic4(self, s, t):
     return [s.find(i) for i in s] == [t.find(j) for j in t]
-
-
 def isIsomorphic5(self, s, t):
     return map(s.find, s) == map(t.find, t)
-
-
 def isIsomorphic(self, s, t):
     d1, d2 = [0 for _ in range(256)], [0 for _ in range(256)]
     for i in range(len(s)):

@@ -1,11 +1,8 @@
 import collections
-
-
 class Solution:
     def findFrequentTreeSum(self, root):
         if root == None:
             return []
-
         def getSum(node):
             if node == None:
                 return 0

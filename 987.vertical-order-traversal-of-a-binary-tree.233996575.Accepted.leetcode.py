@@ -1,10 +1,7 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def verticalTraversal(self, root):
         x_to_y_and_val = defaultdict(list)
-
         def helper(node, x, y):
             if not node:
                 return

@@ -8,7 +8,6 @@ class Solution:
                 ans[i] = warmer_index - i
             nxt[T[i]] = i
         return ans
-
     def dailyTemperatures2(self, T):
         ret = [0] * len(T)
         stack = []

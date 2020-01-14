@@ -1,10 +1,7 @@
 from collections import deque
-
-
 class Codec:
     def serialize(self, root):
         nodes = []
-
         def preorder(node):
             if not node:
                 nodes.append("null")
@@ -14,10 +11,8 @@ class Codec:
                 preorder(node.right)
         preorder(root)
         return ",".join(nodes)
-
     def deserialize(self, data):
         node_list = deque(data.split(","))
-
         def rebuild():
             if not node_list:
                 return None

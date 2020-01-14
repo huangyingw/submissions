@@ -1,6 +1,4 @@
 import random
-
-
 class Solution(object):
     def findKthLargest(self, nums, k):
         k = len(nums) - k
@@ -13,7 +11,6 @@ class Solution(object):
                 right = index - 1
             else:
                 left = index + 1
-
     def partition(self, nums, left, right):
         rand_index = random.randint(left, right)
         rand_entry = nums[rand_index]

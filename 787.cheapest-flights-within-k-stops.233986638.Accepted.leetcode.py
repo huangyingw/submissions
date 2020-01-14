@@ -1,7 +1,5 @@
 from collections import defaultdict
 import heapq
-
-
 class Solution(object):
     def findCheapestPrice(self, n, flights, src, dst, K):
         flts = defaultdict(list)

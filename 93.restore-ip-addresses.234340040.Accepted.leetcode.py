@@ -3,7 +3,6 @@ class Solution:
         res = []
         self.dfs(res, s, 0, '', 0)
         return res
-
     def dfs(self, res, s, secNum, sec, idx):
         if secNum > 4:
             return

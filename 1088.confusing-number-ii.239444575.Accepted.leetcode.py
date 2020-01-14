@@ -1,10 +1,8 @@
 class Solution(object):
     result = 0
-
     def confusingNumberII(self, N):
         original_a = [0, 1, 6, 8, 9]
         o_rotation = [0, 1, 9, 8, 6]
-
         def recursive(original, rotation, digit, N):
             if original > N:
                 return

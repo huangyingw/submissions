@@ -8,7 +8,6 @@ class Solution(object):
         nums.sort(reverse=True)
         if nums[0] > target:
             return False
-
         def dfs(subsets, last, partial):
             if subsets == 1:
                 return True
@@ -22,8 +21,6 @@ class Solution(object):
                     used[i] = False
             return False
         return dfs(k, 0, 0)
-
-
 class Solution2(object):
     def canPartitionKSubsets(self, nums, k):
         total = sum(nums)
@@ -32,7 +29,6 @@ class Solution2(object):
         if total % k != 0 or nums[0] > target:
             return False
         partition = [0 for _ in range(k)]
-
         def helper(i):
             if i == len(nums):
                 return True

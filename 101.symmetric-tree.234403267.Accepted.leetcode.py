@@ -1,7 +1,6 @@
 class Solution(object):
     def isSymmetric(self, root):
         return self.isMirror(root, root)
-
     def isMirror(self, node1, node2):
         if not node1 and not node2:
             return True

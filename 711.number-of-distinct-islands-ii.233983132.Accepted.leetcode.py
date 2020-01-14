@@ -3,7 +3,6 @@ class Solution(object):
         if not grid or not grid[0]:
             return 0
         rows, cols = len(grid), len(grid[0])
-
         def BFS(base_r, base_c):
             grid[base_r][base_c] = 0
             queue = [(base_r, base_c)]

@@ -14,7 +14,6 @@ class Solution(object):
         ans = set()
         self.dfs(0, left_remove, right_remove, 0, '', s, ans)
         return list(ans)
-
     def dfs(self, index, left_remove, right_remove, left_pare, cur, s, ans):
         if left_remove < 0 or right_remove < 0 or left_pare < 0:
             return

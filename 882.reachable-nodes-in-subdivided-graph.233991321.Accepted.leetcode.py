@@ -1,7 +1,5 @@
 import heapq
 from collections import defaultdict
-
-
 class Solution(object):
     def reachableNodes(self, edges, M, N):
         adjacency = defaultdict(set)

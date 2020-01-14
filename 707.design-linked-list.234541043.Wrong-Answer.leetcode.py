@@ -2,13 +2,10 @@ class Node(object):
     def __init__(self, val):
         self.val = val
         self.next = None
-
-
 class MyLinkedList(object):
     def __init__(self):
         self.head = None
         self.size = 0
-
     def get(self, index):
         if index < 0 or index >= self.size:
             return -1
@@ -18,13 +15,11 @@ class MyLinkedList(object):
         for i in range(index):
             curr = curr.next
         return curr.val
-
     def addAtHead(self, val):
         node = Node(val)
         node.next = self.head
         self.head = node
         self.size += 1
-
     def addAtTail(self, val):
         curr = self.head
         if curr is None:
@@ -34,7 +29,6 @@ class MyLinkedList(object):
                 curr = curr.next
             curr.next = Node(val)
         self.size += 1
-
     def addAtIndex(self, index, val):
         if index < 0 or index > self.size:
             return
@@ -48,7 +42,6 @@ class MyLinkedList(object):
             node.next = curr.next
             curr.next = node
             self.size += 1
-
     def deleteAtIndex(self, index):
         if index < 0 or index >= self.size:
             return

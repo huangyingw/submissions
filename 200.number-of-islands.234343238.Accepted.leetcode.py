@@ -7,7 +7,6 @@ class Solution:
                 return 1
             return 0
         return sum(sink(i, j) for i in range(len(grid)) for j in range(len(grid[i])))
-
     def numIslands(self, grid):
         if not grid or not grid[0]:
             return 0
@@ -31,7 +30,6 @@ class Solution:
                     roots[root] = nb_root
                     root = nb_root
         return result
-
     def findRoot(self, roots, node):
         while node != roots[node]:
             roots[node] = roots[roots[node]]

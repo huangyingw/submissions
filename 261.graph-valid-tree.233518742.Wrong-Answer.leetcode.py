@@ -14,8 +14,6 @@ class Solution(object):
                     adjacency[b].append(a)
                 dfs(0)
                 return not adjacency
-
-
 class Solution2(object):
     def validTree(self, n, edges):
         def find(node):

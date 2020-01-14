@@ -1,16 +1,13 @@
 class WordDictionary(object):
     def __init__(self):
         self.trie = {}
-
     def addWord(self, word):
         t = self.trie
         for c in word:
             t = t.setdefault(c, {})
         t[None] = None
-
     def search(self, word):
         return self.dfs(word, self.trie)
-
     def dfs(self, word, trie):
         if word == '':
             return None in trie

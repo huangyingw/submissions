@@ -1,26 +1,19 @@
 class MyHashSet1:
     def __init__(self):
         self.arr = [False] * 1000000
-
     def add(self, key):
         self.arr[key] = True
-
     def remove(self, key):
         self.arr[key] = False
-
     def contains(self, key):
         return self.arr[key]
-
-
 class MyHashSet2:
     def __init__(self):
         self.cap = 10000
         self.size = 0
         self.set = [None] * self.cap
-
     def hash(self, key):
         return key % self.cap
-
     def add(self, key):
         if self.contains(key):
             return
@@ -28,13 +21,11 @@ class MyHashSet2:
         if not self.set[hash_key]:
             self.set[hash_key] = []
         self.set[hash_key].append(key)
-
     def remove(self, key):
         if not self.contains(key):
             return
         hash_key = self.hash(key)
         self.set[hash_key].remove(key)
-
     def contains(self, key):
         hash_key = self.hash(key)
         if not self.set[hash_key]:

@@ -4,10 +4,8 @@ class Trie(object):
             self.content = content
             self.isWord = False
             self.nexts = {}
-
     def __init__(self):
         root = self.TrieNode()
-
     def insert(self, word):
         if self.search(word):
             return
@@ -20,7 +18,6 @@ class Trie(object):
                 node = current.nexts.get(c, None)
             current = node
         current.isWord = True
-
     def search(self, word):
         current = root
         for i in range(0, len(word)):
@@ -29,7 +26,6 @@ class Trie(object):
                 return False
             current = node
         return current.isWord
-
     def startsWith(self, prefix):
         current = root
         for i in range(0, len(prefix)):

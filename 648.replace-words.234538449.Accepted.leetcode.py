@@ -1,7 +1,5 @@
 import collections
 from functools import reduce
-
-
 class Solution(object):
     def replaceWords(self, roots, sentence):
         Trie = lambda: collections.defaultdict(Trie)
@@ -9,7 +7,6 @@ class Solution(object):
         END = True
         for root in roots:
             reduce(dict.__getitem__, root, trie)[END] = root
-
         def replace(word):
             cur = trie
             for letter in word:
@@ -18,12 +15,9 @@ class Solution(object):
                 cur = cur[letter]
             return cur.get(END, word)
         return " ".join(map(replace, sentence.split()))
-
-
 class Solution2:
     def replaceWords(self, dict, sentence):
         from collections import defaultdict
-
         def init_lookup(dict):
             lookup = defaultdict(list)
             for word in dict:
@@ -39,8 +33,6 @@ class Solution2:
                     root = dict_word
             new_sentence.append(root)
         return " ".join(new_sentence)
-
-
 class Solution3:
     def replaceWords(self, dict, sentence):
         from collections import defaultdict

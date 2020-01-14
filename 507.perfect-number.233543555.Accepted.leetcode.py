@@ -1,6 +1,4 @@
 import math
-
-
 class Solution(object):
     def checkPerfectNumber(self, num):
         if num <= 1:

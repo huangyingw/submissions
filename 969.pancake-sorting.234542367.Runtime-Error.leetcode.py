@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/pancake-sorting/
 """
 Given an array A, we can perform a pancake flip: We choose some positive integer k <= A.length,
 then reverse the order of the first k elements of A.  We want to perform zero or more pancake flips
@@ -24,8 +23,6 @@ Note:
 1 <= A.length <= 100
 A[i] is a permutation of [1, 2, ..., A.length]
 """
-
-
 class Solution(object):
     def pancakeSort1(self, A):
         ans = []
@@ -38,7 +35,6 @@ class Solution(object):
             ans.extend([i, length])
             length -= 1
         return ans
-
     def pancakeSort2(self, A):
         res = []
         for x in range(len(A), 1, -1):

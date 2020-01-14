@@ -12,6 +12,5 @@ class Solution:
         if left - right >= 0:
             return True
         return False
-
     def isPalindrome(self, x):
         return str(x) == str(x)[::-1]

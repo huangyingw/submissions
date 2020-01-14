@@ -1,6 +1,4 @@
 import collections
-
-
 class Solution:
     def firstUniqChar(self, s):
         n = len(s)

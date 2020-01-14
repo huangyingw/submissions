@@ -1,7 +1,6 @@
 class Solution(object):
     def nthMagicalNumber(self, N, A, B):
         low, high = 1, 10 ** 14
-
         def gcd(a, b):
             a, b = b, a % b
             if b == 0:

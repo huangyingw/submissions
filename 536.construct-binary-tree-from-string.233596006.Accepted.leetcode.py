@@ -3,12 +3,9 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def __init__(self):
         self.i = 0
-
     def str2tree(self, s):
         def next_num():
             num, neg = 0, False
@@ -19,7 +16,6 @@ class Solution(object):
                 num = num * 10 + int(s[self.i])
                 self.i += 1
             return TreeNode(-num) if neg else TreeNode(num)
-
         def helper():
             if self.i >= len(s):
                 return None

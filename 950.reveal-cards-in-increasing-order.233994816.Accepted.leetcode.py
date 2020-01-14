@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution:
     def deckRevealedIncreasing(self, deck):
         n = len(deck)

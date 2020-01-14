@@ -1,7 +1,6 @@
 class Solution:
     def isBalanced(self, root):
         return self.checkBalance(root) != -1
-
     def checkBalance(self, root):
         if not root:
             return 0

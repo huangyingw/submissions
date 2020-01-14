@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/reveal-cards-in-increasing-order/description/
 """
 n a deck of cards, every card has a unique integer.  You can order the deck in any order you want.
 Initially, all the cards start face down (unrevealed) in one deck.
@@ -28,8 +27,6 @@ Note:
 A[i] != A[j] for all i != j
 """
 from collections import deque
-
-
 class Solution(object):
     def deckRevealedIncreasing(self, deck):
         N = len(deck)

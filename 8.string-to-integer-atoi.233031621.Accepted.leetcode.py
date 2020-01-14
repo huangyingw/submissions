@@ -1,9 +1,5 @@
 class Solution:
     def myAtoi(self, str):
-        """
-        :type str: str
-        :rtype: int
-        """
         str = str.strip()
         number = ""
         for x in str:

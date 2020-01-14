@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 """
 2:"abc"
 3:"def"
@@ -10,14 +9,8 @@
 9:"wxyz"
 """
 from itertools import product
-
-
 class Solution:
     def letterCombinations(self, digits):
-        """
-        :type digits: str
-        :rtype: List[str]
-        """
         mapping = {
             '2': "abc",
                         '3': "def",

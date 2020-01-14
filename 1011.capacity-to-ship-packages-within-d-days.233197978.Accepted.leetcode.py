@@ -18,8 +18,6 @@ class Solution(object):
             else:
                 high = mid
         return low
-
-
 class Solution(object):
     def shipWithinDays(self, weights, D):
         left, right = max(weights), sum(weights)

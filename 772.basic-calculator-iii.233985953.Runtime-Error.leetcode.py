@@ -1,7 +1,6 @@
 class Solution(object):
     def calculate(self, s):
         operators = {"+", "-", "*", "/"}
-
         def parse(i):
             parsed = []
             while i < len(s):
@@ -20,7 +19,6 @@ class Solution(object):
                     return parsed, i
                 i += 1
             return parsed, len(s)
-
         def calculate(tokens):
             if isinstance(tokens, int):
                 return tokens

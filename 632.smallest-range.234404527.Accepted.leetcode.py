@@ -15,8 +15,6 @@ class Solution:
                 ans = left, right
         return ans
 import heapq
-
-
 class Solution:
     def smallestRange(self, nums):
         queue = [(list_num[0], i, 0) for i, list_num in enumerate(nums)]

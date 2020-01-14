@@ -1,9 +1,5 @@
 class Solution(object):
     def connect(self, root):
-        """
-        :type root: TreeLinkNode
-        :rtype: nothing
-        """
         dummy = TreeLinkNode(-1)
         node = dummy
         while root:

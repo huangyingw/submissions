@@ -2,12 +2,9 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.isWord = False
-
-
 class Trie:
     def __init__(self):
         self.root = TrieNode()
-
     def insert(self, word):
         node = self.root
         for c in word:
@@ -15,7 +12,6 @@ class Trie:
                 node.children[c] = TrieNode()
             node = node.children[c]
         node.isWord = True
-
     def search(self, word):
         node = self.root
         for c in word:
@@ -23,7 +19,6 @@ class Trie:
                 return False
             node = node.children[c]
         return node.isWord
-
     def startsWith(self, prefix):
         node = self.root
         for c in prefix:

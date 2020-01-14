@@ -1,37 +1,5 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-# class Solution(object):
-#     def removeNthFromEnd(self, head, n):
-#         """
-#         :type head: ListNode
-#         :type n: int
-#         :rtype: ListNode
-#         """
-
-
 class Solution(object):
-    # def removeNthFromEnd(self, head, n):
-    #     # with O(n) space
-    #     index = []
-    #     pos = head
-    #     while pos is not None:
-    #         index.append(pos)
-    #         pos = pos.next
-    #     ls = len(index)
-    #     if n == ls:
-    #         if ls > 1:
-    #             return index[1]
-    #         else:
-    #             return None
-    #     else:
-    #         index_pos = ls - n - 1
-    #         index[index_pos].next = index[index_pos + 1].next
-    #         return head
     def removeNthFromEnd(self, head, n):
-        # https://leetcode.com/discuss/86721/o-n-solution-in-java
         if head is None:
             return None
         slow = fast = head

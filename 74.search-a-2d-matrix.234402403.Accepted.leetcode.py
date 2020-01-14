@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/search-a-2d-matrix/description/
 """
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 Integers in each row are sorted from left to right.
@@ -22,16 +21,8 @@ matrix = [
 target = 13
 Output: false
 """
-
-
 class Solution:
-    # 从右上角开始
     def searchMatrix(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
         if not matrix:
             return False
         row = len(matrix)
@@ -45,14 +36,7 @@ class Solution:
             else:
                 i += 1
         return False
-    # 用两个二分法来找出结果
-
     def searchMatrix2(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
         if not matrix:
             return False
         if not matrix[0]:

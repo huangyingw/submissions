@@ -8,14 +8,12 @@ class Solution:
         begin = dummyHead
         while head:
             count += 1
-            # If (head - begin) == k
             if count % k == 0:
                 begin = self.reverseList(begin, head.next)
                 head = begin.next
             else:
                 head = head.next
         return dummyHead.next
-
     def reverseList(self, begin, end):
         cur = begin.next
         prev = begin

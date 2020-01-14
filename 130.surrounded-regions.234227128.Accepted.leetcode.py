@@ -13,7 +13,6 @@ class Solution(object):
         for i in range(height):
             for j in range(width):
                 board[i][j] = "O" if board[i][j] == "S" else "X"
-
     def buildLeakWall(self, board):
         leakWall, height, width = [], len(board), len(board[0])
         for i in range(height):

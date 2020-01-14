@@ -13,11 +13,9 @@ class Solution(object):
                         add2 = s[i:i + j]
                         add3 = s[i + j:i + j + k]
                         add4 = s[i + j + k:]
-                        if self.isValid(add1) and self.isValid(add2) and \
-                                self.isValid(add3) and self.isValid(add4):
+                        if self.isValid(add1) and self.isValid(add2) and self.isValid(add3) and self.isValid(add4):
                             res.append(add1 + '.' + add2 + '.' + add3 + '.' + add4)
         return res
-
     def isValid(self, add):
         if len(add) == 1:
             return True

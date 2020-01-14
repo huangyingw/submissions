@@ -1,9 +1,5 @@
 class Solution(object):
     def myAtoi(self, str):
-        """
-        :type str: str
-        :rtype: int
-        """
         sign = 1
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0
@@ -24,16 +20,5 @@ class Solution(object):
             result = result * 10 + num
             pos += 1
         return sign * result
-    # def myAtoi(self, s):
-    #     #https://leetcode.com/discuss/83626/line-python-solution-eafp-instead-lbyl-easier-logic-beats-24%25
-    #     try:
-    #         s = s.lstrip() + '$' # remove leading spaces and append an end mark
-    #         for i, ch in enumerate(s):
-    #             if not (ch in '+-' or '0' <= ch <= '9'):
-    #                 result = int(s[:i])
-    #                 return -2 ** 31 if result < -2 ** 31 else 2 ** 31 - 1 if result > 2 ** 31 - 1 else result
-    #     except:
-    #         return 0
 if __name__ == '__main__':
-    # begin
     s = Solution()

@@ -2,7 +2,6 @@ class Solution(object):
     def __init__(self):
         self.result = []
         self.current = []
-
     def pathSum(self, root, sum):
         if not root:
             return []

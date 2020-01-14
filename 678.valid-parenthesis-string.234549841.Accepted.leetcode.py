@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/valid-parenthesis-string/
 """
 Given a string containing only three types of characters: '(', ')' and '*',
 write a function to check whether this string is valid. We define the validity of a string by these rules:
@@ -19,8 +18,6 @@ Output: True
 Note:
 The string size will be in the range [1, 100].
 """
-
-
 class Solution:
     def checkValidString(self, s):
         cmin = cmax = 0
@@ -37,7 +34,6 @@ class Solution:
             if cmax < 0:
                 return False
         return cmin == 0
-
     def checkValidString(self, s):
         cmin = cmax = 0
         for i in s:

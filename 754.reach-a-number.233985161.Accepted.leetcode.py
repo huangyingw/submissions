@@ -1,6 +1,4 @@
 import math
-
-
 class Solution(object):
     def reachNumber(self, target):
         target = abs(target)

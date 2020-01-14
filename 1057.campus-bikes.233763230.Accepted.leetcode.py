@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def assignBikes(self, workers, bikes):
         distances = []

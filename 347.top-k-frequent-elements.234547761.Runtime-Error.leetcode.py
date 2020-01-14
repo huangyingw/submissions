@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/top-k-frequent-elements/description/
 """
 Given a non-empty array of integers, return the k most frequent elements.
 Example 1:
@@ -12,29 +11,10 @@ You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 """
 from collections import Counter
-
-
 class Solution:
-    # 1
-    # one line
     def topKFrequent1(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
         return [v for v, c in Counter(nums).most_common(k)]
-        # mapping = Counter(nums).most_common(k)
-        # return [v for v,c in mapping]
-    # 2
-    # 使用堆heapq
-
     def topKFrequent2(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: List[int]
-        """
         import heapq
         m = {}
         for num in nums:

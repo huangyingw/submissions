@@ -18,8 +18,6 @@ class Solution(object):
                 else:
                     right = mid - 1
         return -1
-
-
 class Solution(object):
     def search(self, nums, target):
         def searchRecursive(nums, left, right, target):

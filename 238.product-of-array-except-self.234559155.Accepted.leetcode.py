@@ -6,6 +6,5 @@ class Solution(object):
         else:
             totalProduct = []
             for i in range(len(nums)):
-                totalProduct.append(reduce((lambda total, num: total * num), \
-                                           [num for index, num in enumerate(nums) if index != i]))
+                totalProduct.append(reduce((lambda total, num: total * num), [num for index, num in enumerate(nums) if index != i]))
             return totalProduct

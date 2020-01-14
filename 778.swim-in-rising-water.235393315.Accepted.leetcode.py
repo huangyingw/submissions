@@ -10,7 +10,6 @@ class Solution:
             connected[site[0]][site[1]] = height
             self.check_four_direction(site, height, grid, connected, pending)
         return (connected[len(grid) - 1][len(grid[0]) - 1])
-
     def check_four_direction(self, site, height, grid, connected, pending):
         if site[0] > 0 and connected[site[0] - 1][site[1]] == -1:
             pending[str(site[0] - 1) + '_' + str(site[1])] = max(grid[site[0] - 1][site[1]], height)

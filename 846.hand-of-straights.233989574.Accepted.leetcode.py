@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def isNStraightHand(self, hand, W):
         if len(hand) % W != 0:

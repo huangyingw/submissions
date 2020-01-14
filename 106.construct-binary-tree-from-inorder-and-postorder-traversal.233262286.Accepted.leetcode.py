@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def buildTree(self, inorder, postorder):
         if not inorder:

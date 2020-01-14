@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/jump-game-ii/description/
 """
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 Each element in the array represents your maximum jump length at that position.
@@ -11,10 +10,6 @@ Explanation: The minimum number of jumps to reach the last index is 2.
 Note:
 You can assume that you can always reach the last index.
 """
-# 实际上这是一个求最短路径的题目
-# 使用贪心算法，跳的越远越好。
-
-
 class Solution(object):
     def jump1(self, nums):
         jumps = 0
@@ -22,13 +17,10 @@ class Solution(object):
         previous_jump_max = 0
         for i in range(len(nums) - 1):
             current_jump_max = max(current_jump_max, i + nums[i])
-            # Note 1
             if i == previous_jump_max:
                 jumps += 1
                 previous_jump_max = current_jump_max
-            # Note 2
         return jumps
-
     def jump2(self, nums):
         ans, n = 0, len(nums)
         i, e = 0, 0

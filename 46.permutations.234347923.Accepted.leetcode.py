@@ -3,7 +3,6 @@ class Solution:
         ret = []
         self.dfs(nums, ret, [])
         return ret
-
     def dfs(self, nums, ret, permutation):
         if not nums:
             ret.append(permutation)

@@ -3,7 +3,6 @@ class Solution(object):
         leaves = []
         self.height(root, leaves)
         return leaves
-
     def height(self, node, leaves):
         if not node:
             return -1

@@ -1,10 +1,5 @@
-# https://leetcode.com/problems/reorder-log-files/description/
 class Solution:
     def reorderLogFiles(self, logs):
-        """
-        :type logs: List[str]
-        :rtype: List[str]
-        """
         digit_logs = []
         letter_logs = []
         for log in logs:
@@ -14,7 +9,6 @@ class Solution:
                 letter_logs.append(log)
         letter_logs.sort(key=lambda a: a.split()[1:])
         return letter_logs + digit_logs
-
     def reorderLogFiles(self, logs):
         l = filter(lambda l: l[l.find(" ") + 1].isalpha(), logs)
         d = filter(lambda l: l[l.find(" ") + 1].isdigit(), logs)

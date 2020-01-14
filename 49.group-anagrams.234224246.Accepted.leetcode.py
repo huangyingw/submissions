@@ -9,7 +9,6 @@ class Solution(object):
             except KeyError:
                 hash[key] = [s]
         return hash.values()
-
     def hash_key(self, s):
         table = [0] * 26
         for ch in s:

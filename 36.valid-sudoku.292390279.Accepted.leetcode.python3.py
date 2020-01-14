@@ -1,6 +1,4 @@
 import collections
-
-
 class Solution(object):
     def isValidSudoku(self, board):
         dict_row, dict_col, dict_cell = collections.defaultdict(set), collections.defaultdict(set), collections.defaultdict(set)

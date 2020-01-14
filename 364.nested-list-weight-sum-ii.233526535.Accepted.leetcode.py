@@ -8,7 +8,6 @@ class Solution(object):
         for i, depth_sum in enumerate(depth_sums):
             total += (max_depth - i) * depth_sum
         return total
-
     def dfs(self, nested, depth, depth_sums):
         if len(depth_sums) <= depth:
             depth_sums.append(0)
@@ -17,8 +16,6 @@ class Solution(object):
         else:
             for n in nested.getList():
                 self.dfs(n, depth + 1, depth_sums)
-
-
 class Solution2(object):
     def depthSumInverse(self, nestedList):
         unweighted, weighted = 0, 0

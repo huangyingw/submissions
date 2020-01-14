@@ -7,14 +7,12 @@ class NumArray(object):
             while k <= self.length:
                 self.bit[k] += nums[i]
                 k += (k & -k)
-
     def update(self, i, val):
         diff, self.nums[i] = val - self.nums[i], val
         i += 1
         while i <= self.length:
             self.bit[i] += diff
             i += (i & -i)
-
     def sumRange(self, i, j):
         result, j = 0, j + 1
         while j:

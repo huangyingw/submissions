@@ -17,8 +17,6 @@ class Solution(object):
             else:
                 high = mid - 1
         return low - 1
-
-
 class Solution2(object):
     def longestRepeatingSubstring(self, S):
         n = len(S)

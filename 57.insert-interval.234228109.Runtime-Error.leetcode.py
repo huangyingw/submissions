@@ -16,7 +16,6 @@ class Solution(object):
         if len(intervals) == 0 or pos == len(intervals):
             intervals.append(newInterval)
         return intervals
-
     def check_overlap(self, curr_int, new_int):
         if curr_int.start <= new_int.start:
             if curr_int.end > new_int.start:
@@ -25,7 +24,6 @@ class Solution(object):
             if curr_int.start <= new_int.end:
                 return True
         return False
-
     def merge_intervals(self, int1, int2):
         temp_int = Interval()
         temp_int.start = min([int1.start, int2.start])

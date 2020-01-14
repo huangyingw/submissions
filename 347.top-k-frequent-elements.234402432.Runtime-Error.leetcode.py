@@ -1,10 +1,7 @@
 from collections import Counter
-
-
 class Solution:
     def topKFrequent1(self, nums, k):
         return [v for v, c in Counter(nums).most_common(k)]
-
     def topKFrequent2(self, nums, k):
         import heapq
         m = {}

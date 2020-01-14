@@ -1,7 +1,6 @@
 class Solution:
     def cloneGraph(self, node):
         mapping = dict()
-
         def clone(root):
             if not root:
                 return None

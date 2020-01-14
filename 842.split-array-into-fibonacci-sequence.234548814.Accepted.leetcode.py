@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/split-array-into-fibonacci-sequence/
 """
 Given a string S of digits, such as S = "123456579", we can split it into a Fibonacci-like sequence [123, 456, 579].
 Formally, a Fibonacci-like sequence is a list F of non-negative integers such that:
@@ -29,14 +28,8 @@ Note:
 1 <= S.length <= 200
 S contains only digits.
 """
-
-
 class Solution(object):
     def splitIntoFibonacci(self, S):
-        """
-        :type S: str
-        :rtype: List[int]
-        """
         n = len(S)
         for i in range(1, 11):
             for j in range(1, 11):
@@ -46,7 +39,6 @@ class Solution(object):
                 if L:
                     return L
         return []
-
     def buildFibo(self, s, i, j):
         a = s[:i]
         b = s[i:i + j]

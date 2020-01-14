@@ -5,7 +5,6 @@ class Solution:
             for j in range(i + 1, len(height)):
                 ret = max(ret, min(height[i], height[j]) * (j - i))
         return ret
-
     def maxArea(self, height):
         lpoint, rpoint = 0, len(height) - 1
         max_area = 0

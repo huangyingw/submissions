@@ -1,14 +1,9 @@
 class Solution(object):
     def minMeetingRooms(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: int
-        """
         class Point:
             def __init__(self, time, flag):
                 self.time = time
                 self.flag = flag
-
             def __lt__(self, other):
                 if self.time < other.time:
                     return True

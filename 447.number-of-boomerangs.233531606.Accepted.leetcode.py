@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def numberOfBoomerangs(self, points):
         def dist_squared(p1, p2):

@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/special-binary-string/
 """
 Special binary strings are binary strings with the following two properties:
 The number of 0's is equal to the number of 1's.
@@ -15,8 +14,6 @@ Note:
 S has length at most 50.
 S is guaranteed to be a special binary string as defined above.
 """
-
-
 def makeLargestSpecial(self, S):
     count = i = 0
     res = []

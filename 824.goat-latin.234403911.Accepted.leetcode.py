@@ -10,7 +10,6 @@ class Solution:
             postfix = postfix + 'a'
             new_list.append(word)
         return " ".join(new_list)
-
     def toGoatLatin(self, S):
         if not S:
             return S
@@ -25,7 +24,6 @@ class Solution:
             result.append(word)
             aCount += 1
         return ' '.join(result)
-
     def toGoatLatin(self, S):
         words = S.split()
         vowels = set('aeiouAEIOU')

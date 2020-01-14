@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def gridIllumination(self, N, lamps, queries):
         lamps = {tuple(lamp) for lamp in lamps}

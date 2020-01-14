@@ -4,7 +4,6 @@ class Solution(object):
         while head:
             head.next, pre, head = pre, head, head.next
         return pre
-
     def isPalindrome(self, head):
         fast = slow = head
         while fast and fast.next:

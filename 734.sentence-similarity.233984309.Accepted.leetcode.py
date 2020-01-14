@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def areSentencesSimilar(self, words1, words2, pairs):
         if len(words1) != len(words2):

@@ -1,26 +1,4 @@
-# class Solution(object):
-#     def removeElement(self, nums, val):
-#         """
-#         :type nums: List[int]
-#         :type val: int
-#         :rtype: int
-#         """
-
-
 class Solution(object):
-    # def removeElement(self, nums, val):
-    #     ls = len(nums)
-    #     if ls == 0:
-    #         return ls
-    #     pos = 0
-    #     for i in range(ls):
-    #         if nums[i] == val:
-    #             continue
-    #         else:
-    #             nums[pos] = nums[i]
-    #             pos += 1
-    #     # del nums[pos:]
-    #     return pos
     def removeElement(self, nums, val):
         ls = len(nums)
         if ls == 0:
@@ -35,5 +13,4 @@ class Solution(object):
                 index += 1
         return ls - count
 if __name__ == '__main__':
-    # begin
     s = Solution()

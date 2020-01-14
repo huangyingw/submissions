@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def findShortestSubArray(self, nums):
         counts, limits = defaultdict(int), {}

@@ -3,7 +3,6 @@ class Solution(object):
         memo = {}
         self.helper(nums, target, memo)
         return memo[target]
-
     def helper(self, nums, target, memo):
         if target < 0:
             return 0
@@ -16,8 +15,6 @@ class Solution(object):
             combos += self.helper(nums, target - num, memo)
         memo[target] = combos
         return combos
-
-
 class Solution2(object):
     def combinationSum4(self, nums, target):
         combos = [0] * (target + 1)

@@ -1,12 +1,8 @@
 import gc
-
-
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
-
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         if not headA or not headB:
@@ -17,8 +13,6 @@ class Solution(object):
             headB = savedA if not headB else headB.next
         gc.collect()
         return headA
-
-
 class Solution2(object):
     def getIntersectionNode(self, headA, headB):
         if not headA or not headB:

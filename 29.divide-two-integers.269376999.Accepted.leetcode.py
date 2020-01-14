@@ -1,10 +1,5 @@
 class Solution:
     def divide(self, dividend, divisor):
-        """
-        :type dividend: int
-        :type divisor: int
-        :rtype: int
-        """
         INT_MAX = 2147483647
         sign = (dividend < 0) == (divisor < 0)
         dividend, divisor, result = abs(dividend), abs(divisor), 0

@@ -10,7 +10,6 @@ class Solution(object):
                     islands += 1
                     self.set_island(r, c, grid)
         return islands
-
     def set_island(self, row, col, grid):
         if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]):
             return

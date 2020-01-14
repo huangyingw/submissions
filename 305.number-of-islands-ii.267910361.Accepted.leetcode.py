@@ -1,11 +1,5 @@
 class Solution:
     def numIslands2(self, m, n, positions):
-        """
-        :type m: int
-        :type n: int
-        :type positions: List[List[int]]
-        :rtype: List[int]
-        """
         matrix = [[0 for i in range(n)] for j in range(m)]
         roots, result, island = {}, [], 0
         row, col = [-1, 0, 1, 0], [0, 1, 0, -1]
@@ -27,7 +21,6 @@ class Solution:
             result.append(island)
             matrix[x][y] = 1
         return result
-
     def find(self, node, roots):
         root = node
         while root != roots[root]:

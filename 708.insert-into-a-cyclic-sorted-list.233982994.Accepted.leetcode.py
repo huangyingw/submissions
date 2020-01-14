@@ -4,7 +4,6 @@ class Solution(object):
             new_node = Node(insertVal, None)
             new_node.next = new_node
             return new_node
-
         def insert_after(node):
             node.next = Node(insertVal, node.next)
         original_head = head

@@ -6,7 +6,6 @@ class Solution(object):
                 if board[i][j] == '.':
                     empty.append(9 * i + j)
         self.solve(board, empty)
-
     def solve(self, board, empty):
         if len(empty) == 0:
             return True
@@ -21,7 +20,6 @@ class Solution(object):
                 board[row][col] = '.'
                 empty.append(first_value)
         return False
-
     def is_safe(self, board, row, col, ch):
         for k in range(9):
             if board[k][col] == ch:

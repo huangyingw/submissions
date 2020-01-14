@@ -8,12 +8,9 @@ class Solution(object):
                     new_permutations.append(perm[:i] + [num] + perm[i:])
             permutations = new_permutations
         return permutations
-
-
 class Solution2(object):
     def permute(self, nums):
         return self.permute_helper(nums, 0)
-
     def permute_helper(self, nums, index):
         permutations = []
         if index >= len(nums):

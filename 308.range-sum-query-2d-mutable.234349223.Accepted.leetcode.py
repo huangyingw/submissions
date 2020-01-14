@@ -8,7 +8,6 @@ class NumMatrix(object):
         for i in range(self.m):
             for j in range(self.n):
                 self.update(i, j, matrix[i][j])
-
     def update(self, row, col, val):
         if self.m == 0 or self.n == 0:
             return
@@ -21,14 +20,12 @@ class NumMatrix(object):
                 self.tree[i][j] += diff
                 j += (j & -j)
             i += (i & -i)
-
     def sumRegion(self, row1, col1, row2, col2):
         if self.m == 0 or self.n == 0:
             return 0
         return self.getRangeSum(row2 + 1, col2 + 1) + self.getRangeSum(row1, col1) - self.getRangeSum(row2 + 1,
                                                                                                       col1) - self.getRangeSum(
             row1, col2 + 1)
-
     def getRangeSum(self, row, col):
         result, i = 0, row
         while i > 0:

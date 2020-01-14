@@ -14,8 +14,6 @@ class Solution:
         for i in range(0, n):
             output.append(right2left[(n - 1) - i] * left2right[i])
         return output
-
-
 class Solution2:
     def productExceptSelf(self, nums):
         n = len(nums)

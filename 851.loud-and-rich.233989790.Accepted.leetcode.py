@@ -5,7 +5,6 @@ class Solution(object):
         for a, b in richer:
             richer_than[b].add(a)
         result = [None] * n
-
         def update_results(person):
             if result[person] is not None:
                 return

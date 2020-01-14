@@ -1,7 +1,6 @@
 class Solution:
     def sumNumbers(self, root):
         return self.getSum(root, 0)
-
     def getSum(self, node, s):
         if not node:
             return 0

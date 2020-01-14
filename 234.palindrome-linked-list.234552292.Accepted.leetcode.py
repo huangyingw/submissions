@@ -12,7 +12,6 @@ class Solution(object):
             secondHalf = secondHalf.next
             firstHalfRev = firstHalfRev.next
         return True
-
     def rev(self, node, l):
         newHead = None
         for i in range(l):
@@ -26,7 +25,6 @@ class Solution(object):
                 tmp.next = newHead
                 newHead = tmp
         return newHead, node
-
     def length(self, head):
         count = 0
         while (head):

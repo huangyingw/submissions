@@ -9,7 +9,6 @@ class Solution:
                 for r in right:
                     res.append("(" + l + ", " + r + ')')
         return res
-
     def point(self, s):
         if s[0] == '0' and s[-1] == '0':
             return ['0'] if s == '0' else []

@@ -1,7 +1,5 @@
 from collections import defaultdict
 import string
-
-
 class Solution(object):
     def findLadders(self, beginWord, endWord, wordList):
         if endWord not in wordList:

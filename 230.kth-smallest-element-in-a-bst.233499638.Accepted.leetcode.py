@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def kthSmallest(self, root, k):
         stack = []
@@ -20,15 +18,12 @@ class Solution(object):
             while node:
                 stack.append(node)
                 node = node.left
-
-
 class Solution2(object):
     def kthSmallest(self, root, k):
         self.k = k
         self.result = None
         self.helper(root)
         return self.result
-
     def helper(self, node):
         if not node:
             return

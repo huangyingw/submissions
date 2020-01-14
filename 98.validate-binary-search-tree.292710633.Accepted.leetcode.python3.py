@@ -4,7 +4,6 @@ class Solution(object):
         self.prev = float('-inf')
         self.inorder(root)
         return self.correct
-
     def inorder(self, node):
         if not node or not self.correct:
             return

@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution:
     def mergeKLists(self, lists):
         dummy = curr = ListNode(0)

@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def trapRainWater(self, heightMap):
         if not heightMap or not heightMap[0]:

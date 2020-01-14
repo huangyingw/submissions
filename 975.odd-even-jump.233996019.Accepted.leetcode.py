@@ -1,7 +1,6 @@
 class Solution:
     def oddEvenJumps(self, A):
         n = len(A)
-
         def next_list():
             result = [None] * n
             stack = []

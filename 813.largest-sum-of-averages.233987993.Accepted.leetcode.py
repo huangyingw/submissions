@@ -1,7 +1,6 @@
 class Solution(object):
     def largestSumOfAverages(self, A, K):
         memo = {}
-
         def helper(i, k):
             if (i, k) in memo:
                 return memo[(i, k)]

@@ -1,7 +1,6 @@
 class MagicDictionary(object):
     def __init__(self):
         self.root = {}
-
     def buildDict(self, dict):
         for word in dict:
             node = self.root

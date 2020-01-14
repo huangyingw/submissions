@@ -9,7 +9,6 @@ class Solution(object):
         self.dfs(board, row + 1, col)
         self.dfs(board, row, col - 1)
         self.dfs(board, row, col + 1)
-
     def solve(self, board):
         self.rows = len(board)
         self.cols = len(board[0])

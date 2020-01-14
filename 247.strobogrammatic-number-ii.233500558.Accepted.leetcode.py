@@ -1,6 +1,4 @@
 import time
-
-
 class Solution(object):
     def findStrobogrammatic(self, n):
         if n <= 0:

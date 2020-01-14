@@ -5,8 +5,6 @@ class Solution(object):
             for c in range(C):
                 result.append((r, c))
         return sorted(result, key=lambda x: abs(x[0] - r0) + abs(x[1] - c0))
-
-
 class Solution2(object):
     def allCellsDistOrder(self, R, C, r0, c0):
         queue = deque()

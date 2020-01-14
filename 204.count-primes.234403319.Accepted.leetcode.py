@@ -12,7 +12,6 @@ class Solution:
             if isPrime(i):
                 count += 1
         return count
-
     def countPrimes(self, n):
         if n < 2:
             return 0

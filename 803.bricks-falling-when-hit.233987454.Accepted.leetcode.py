@@ -4,7 +4,6 @@ class Solution(object):
         nbors = ((1, 0), (0, 1), (-1, 0), (0, -1))
         for r, c in hits:
             grid[r][c] -= 1
-
         def dfs(row, col):
             if row < 0 or row >= rows or col < 0 or col >= cols:
                 return 0
@@ -14,12 +13,10 @@ class Solution(object):
             return 1 + sum(dfs(row + dr, col + dc) for dr, dc in nbors)
         for c in range(cols):
             dfs(0, c)
-
         def connected(r, c):
             if r == 0:
                 return True
-            return any(0 <= (r + dr) < rows and 0 <= (c + dc) < cols \
-                       and grid[r + dr][c + dc] == 2 for dr, dc in nbors)
+            return any(0 <= (r + dr) < rows and 0 <= (c + dc) < cols and grid[r + dr][c + dc] == 2 for dr, dc in nbors)
         result = []
         for r, c in reversed(hits):
             grid[r][c] += 1

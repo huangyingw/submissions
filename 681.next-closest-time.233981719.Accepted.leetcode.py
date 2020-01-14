@@ -4,7 +4,6 @@ class Solution(object):
         digits = set(int(c) for c in time[:2] + time[3:])
         min_digit = min(digits)
         max_digits = {0: 2, 3: 5, 4: 9}
-
         def increase(i):
             if i == 1:
                 if time[0] == "2":

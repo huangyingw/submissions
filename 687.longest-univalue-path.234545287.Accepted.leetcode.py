@@ -1,7 +1,6 @@
 class Solution(object):
     def longestUnivaluePath(self, root):
         self.longest = 0
-
         def traverse(node):
             if not node:
                 return 0

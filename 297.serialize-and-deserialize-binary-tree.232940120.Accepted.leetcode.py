@@ -10,7 +10,6 @@ class Codec:
         vals = []
         doit(root)
         return ' '.join(vals)
-
     def deserialize(self, data):
         def doit():
             val = next(vals)

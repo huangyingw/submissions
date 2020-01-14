@@ -1,6 +1,4 @@
 import json
-
-
 class Codec:
     def serialize(self, root):
         if not root:
@@ -20,7 +18,6 @@ class Codec:
                 nodes.append(frontNode.right)
                 maps.append(frontMap['r'])
         return json.dumps(tree)
-
     def deserialize(self, data):
         tree = json.loads(data)
         if not tree:

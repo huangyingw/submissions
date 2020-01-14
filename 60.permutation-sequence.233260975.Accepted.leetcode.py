@@ -1,6 +1,4 @@
 from math import factorial
-
-
 class Solution(object):
     def getPermutation(self, n, k):
         chars = [str(i) for i in range(1, n + 1)]

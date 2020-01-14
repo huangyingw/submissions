@@ -2,7 +2,6 @@ class Solution:
     def maxAreaOfIsland(self, grid):
         max_size = 0
         rows, cols = len(grid), len(grid[0])
-
         def dfs(i, j, size):
             if not (0 <= i < rows and 0 <= j < cols) or grid[i][j] in (-1, 0):
                 return

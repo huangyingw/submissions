@@ -8,7 +8,6 @@ class Solution(object):
             if guess[i] == secret[i]:
                 bull += 1
             else:
-                # store possible index and count for cow
                 different.append(i)
                 try:
                     check[secret[i]] += 1

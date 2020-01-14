@@ -5,7 +5,6 @@ class Solution:
             result += self.getCount(s, i, i)
             result += self.getCount(s, i, i + 1)
         return result
-
     def getCount(self, s, left, right):
         count = 0
         while left >= 0 and right < len(s) and s[left] == s[right]:

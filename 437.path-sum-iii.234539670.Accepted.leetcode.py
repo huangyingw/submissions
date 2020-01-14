@@ -4,7 +4,6 @@ class Solution(object):
         cache = {0: 1}
         self.dfs(root, sum, 0, cache)
         return self.result
-
     def dfs(self, root, target, currPathSum, cache):
         if root is None:
             return

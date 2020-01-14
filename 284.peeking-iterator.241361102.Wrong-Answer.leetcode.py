@@ -2,10 +2,8 @@ class PeekingIterator(object):
     def __init__(self, iterator):
         self.iterator = iterator
         self.n = None
-
     def peek(self):
         return self.n
-
     def next(self):
         if self.n != None:
             tmp = self.n
@@ -13,7 +11,6 @@ class PeekingIterator(object):
             return tmp
         else:
             return self.iterator.next()
-
     def hasNext(self):
         if self.n != None:
             return True

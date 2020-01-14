@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/number-of-atoms/
 """
 Given a chemical formula (given as a string), return the count of each atom.
 An atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.
@@ -30,8 +29,6 @@ The length of formula will be in the range [1, 1000].
 formula will only consist of letters, digits, and round parentheses, and is a valid formula as defined in the problem.
 Accepted
 """
-
-
 class Solution(object):
     def countOfAtoms(self, formula):
         def parse():

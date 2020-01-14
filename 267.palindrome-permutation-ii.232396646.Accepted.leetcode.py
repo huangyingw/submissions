@@ -1,7 +1,6 @@
 class Solution(object):
     def __init__(self):
         self.results = []
-
     def generatePalindromes(self, s):
         d = {}
         for i in s:
@@ -28,7 +27,6 @@ class Solution(object):
                 continue
             self.recursion(candidate[i], candidate[:i] + candidate[i + 1:], len(candidate), single)
         return self.results
-
     def recursion(self, left, candidate, l, single):
         if len(left) == l:
             self.results.append(left + single + left[::-1])

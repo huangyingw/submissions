@@ -2,7 +2,6 @@ class Solution(object):
     def findCircleNum(self, M):
         n = len(M)
         group = [i for i in range(n)]
-
         def get_group(x):
             while group[x] != x:
                 group[x] = group[group[x]]

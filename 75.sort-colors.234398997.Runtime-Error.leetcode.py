@@ -1,15 +1,9 @@
 from collections import Counter
-
-
 def sortColors1(self, nums):
     nums.sort()
-
-
 def sortColors(self, nums):
     c = Counter(nums)
     nums[:] = [0] * c[0] + [1] * c[1] + [2] * c[2]
-
-
 def sortColors3(self, nums):
     import heapq
     heap = []
@@ -19,8 +13,6 @@ def sortColors3(self, nums):
     while heap:
         nums[i] = heapq.heappop(heap)
         i += 1
-
-
 def sortColors4(self, nums):
     def swap(arr, i1, i2):
         temp = arr[i1]

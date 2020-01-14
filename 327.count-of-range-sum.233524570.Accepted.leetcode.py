@@ -3,7 +3,6 @@ class Solution(object):
         cumul = [0]
         for num in nums:
             cumul.append(num + cumul[-1])
-
         def mergesort(cumul, left, right):
             count = 0
             if right - left <= 1:

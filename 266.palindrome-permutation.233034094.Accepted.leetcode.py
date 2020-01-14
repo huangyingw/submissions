@@ -1,9 +1,5 @@
 class Solution(object):
     def canPermutePalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
         dic = {}
         for c in s:
             dic[c] = dic.get(c, 0) + 1

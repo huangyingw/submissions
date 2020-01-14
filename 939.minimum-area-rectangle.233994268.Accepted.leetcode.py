@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def minAreaRect(self, points):
         rows, cols = set(), set()

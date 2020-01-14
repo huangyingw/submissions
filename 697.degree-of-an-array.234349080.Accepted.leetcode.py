@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution:
     def findShortestSubArray(self, nums):
         first, last = {}, {}

@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
         di = collections.Counter(barcodes)

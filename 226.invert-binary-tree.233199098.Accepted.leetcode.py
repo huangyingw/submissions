@@ -1,27 +1,5 @@
-'''
-	Invert a binary tree.
-	Example:
-	Input:
-	     4
-	   /   \
-	  2     7
-	 / \   / \
-	1   3 6   9
-	Output:
-	     4
-	   /   \
-	  7     2
-	 / \   / \
-	9   6 3   1
-'''
-
-
 class Solution(object):
     def invertTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
         if not root:
             return
         leftTree = self.invertTree(root.left)
@@ -29,14 +7,8 @@ class Solution(object):
         root.left = rightTree
         root.right = leftTree
         return root
-
-
 class Solution(object):
     def invertTree(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
         if not root:
             return None
         queue = [root]

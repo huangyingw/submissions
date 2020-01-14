@@ -1,10 +1,8 @@
 class WordDictionary(object):
     def __init__(self):
         self.word_store = collections.defaultdict(list)
-
     def addWord(self, word):
         self.word_store[len(word)].append(word)
-
     def search(self, word):
         word_len = len(word)
         if '.' not in word:

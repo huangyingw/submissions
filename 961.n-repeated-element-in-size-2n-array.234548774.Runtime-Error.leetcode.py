@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
 """
 In a array A of size 2N, there are N+1 unique elements, and exactly one of these elements is repeated N times.
 Return the element repeated N times.
@@ -17,19 +16,10 @@ Note:
 A.length is even
 """
 from collections import Counter
-
-
 class Solution:
-    # 利用内置函数
     def repeatedNTimes1(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
         mapping = Counter(A)
         return mapping.most_common(1)[0][0]
-    # N
-
     def repeatedNTimes2(self, A):
         lookup = set()
         for element in A:
@@ -37,13 +27,7 @@ class Solution:
                 lookup.add(element)
             else:
                 return element
-    # 用随机的方法避免最坏情况N
-
     def repeatedNTimes3(self, A):
-        """
-        :type A: List[int]
-        :rtype: int
-        """
         import random
         i = 0
         j = 0

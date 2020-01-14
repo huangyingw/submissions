@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def canReorderDoubled(self, A):
         counts = Counter(A)

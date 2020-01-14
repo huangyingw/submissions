@@ -18,7 +18,6 @@ class Solution(object):
             head = head.next
         head.next = curr
         return result
-
     def length(self, head):
         count = 0
         while head:

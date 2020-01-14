@@ -3,7 +3,6 @@ class Solution(object):
         self.result = 0
         self.helper(root, sum, 0, {0: 1})
         return self.result
-
     def helper(self, root, target, currPathSum, cache):
         if not root:
             return

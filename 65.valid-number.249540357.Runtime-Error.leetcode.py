@@ -1,14 +1,5 @@
-"""
-Python Trick
-"""
-
-
 class Solution(object):
     def isNumber(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
         try:
             new_num = float(s)
         except:
@@ -17,14 +8,8 @@ class Solution(object):
 """
 DFA
 """
-
-
 class Solution(object):
     def isNumber(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
         states = [{},
                   {'blank': 1, 'digit': 2, 'sign': 3, 'dot': 4},
                   {'digit': 2, 'dot': 5, 'e': 6, 'blank': 9},

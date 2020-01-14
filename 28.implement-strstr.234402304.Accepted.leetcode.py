@@ -4,7 +4,6 @@ class Solution:
             if haystack[i:i + len(needle)] == needle:
                 return i
         return -1
-
     def strStr(self, haystack, needle):
         if not needle:
             return 0

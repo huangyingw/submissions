@@ -17,12 +17,9 @@ class Solution:
         for i in range(1, len(queue)):
             res = min(res, queue[i] - queue[i - 1])
         return res
-
-
 class Solution2:
     def getMinimumDifference(self, root):
         iot_list = []
-
         def InOrderTraversal(node):
             if node.left:
                 InOrderTraversal(node.left)

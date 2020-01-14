@@ -1,7 +1,5 @@
 import re
 from collections import Counter
-
-
 class Solution:
     def shortestCompletingWord(self, licensePlate, words):
         regex = re.compile('[^a-zA-Z]')
@@ -13,7 +11,6 @@ class Solution:
                 if res == '' or len(word) < len(res):
                     res = word
         return res
-
     def contains(self, counter1, w2):
         c2 = Counter(w2)
         c2.subtract(counter1)

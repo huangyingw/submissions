@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def permuteUnique(self, nums):
         nums.sort()
@@ -8,7 +6,6 @@ class Solution:
         used = defaultdict(lambda: False)
         self.dfs(nums, ret, [], used)
         return ret
-
     def dfs(self, nums, ret, permutation, used):
         if len(nums) == len(permutation):
             ret.append(permutation)

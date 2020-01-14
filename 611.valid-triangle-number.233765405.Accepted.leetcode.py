@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def triangleNumber(self, nums):
         nums.sort()
@@ -16,8 +14,6 @@ class Solution(object):
                     left += 1
         return triangles
 from math import factorial
-
-
 class Solution2(object):
     def triangleNumber(self, nums):
         sides = Counter(nums)
@@ -26,7 +22,6 @@ class Solution2(object):
         sides = list(sides.items())
         sides.sort()
         triangles = 0
-
         def binom(n, k):
             if k > n:
                 return 0

@@ -8,7 +8,6 @@ class Solution(object):
                 end = i
                 self.reverse(str, start, end - 1)
         self.reverse(str, end + 1, len(str) - 1)
-
     def reverse(self, str, left, right):
         while left < right:
             str[left], str[right] = str[right], str[left]

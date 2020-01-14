@@ -1,10 +1,5 @@
 class Solution(object):
     def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        # BFS with marks
         if grid is None or len(grid) == 0:
             return 0
         islands = 0
@@ -14,7 +9,6 @@ class Solution(object):
                     self.explore(grid, i, j)
                     islands += 1
         return islands
-
     def explore(self, grid, i, j):
         grid[i][j] = 'X'
         if i - 1 >= 0 and grid[i - 1][j] == '1':

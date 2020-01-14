@@ -8,7 +8,6 @@ class Solution(object):
                 merged = self.merge(max1, max2)
                 max_number = max(max_number, int("".join(map(str, merged))))
         return [int(c) for c in str(max_number)]
-
     def max_single(self, nums, k):
         stack, n = [], len(nums)
         for i, num in enumerate(nums):
@@ -17,7 +16,6 @@ class Solution(object):
             if len(stack) < k:
                 stack.append(num)
         return stack
-
     def merge(self, nums1, nums2):
         i, j = 0, 0
         merged = []

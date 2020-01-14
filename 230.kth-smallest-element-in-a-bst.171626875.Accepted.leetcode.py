@@ -1,7 +1,6 @@
 class Solution(object):
     count = 0
     result = -1
-
     def kthSmallest(self, root, k):
         def dfs(root, k):
             if not root or self.count > k:

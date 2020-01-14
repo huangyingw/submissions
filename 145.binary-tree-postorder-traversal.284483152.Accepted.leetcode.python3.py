@@ -3,7 +3,6 @@ class Solution(object):
         result = []
         self.postorder(root, result)
         return result
-
     def postorder(self, node, result):
         if not node:
             return

@@ -2,13 +2,10 @@ class IntervalNode(object):
     def __init__(self, interval):
         self.inner = interval
         self.parent = self
-
-
 class SummaryRanges(object):
     def __init__(self):
         self.parents = {}
         self.intervals = set()
-
     def get_parent(self, v):
         if v not in self.parents:
             return None
@@ -17,7 +14,6 @@ class SummaryRanges(object):
             interval_node.parent = interval_node.parent.parent
             interval_node = interval_node.parent
         return interval_node
-
     def addNum(self, val):
         if val in self.parents:
             return
@@ -38,7 +34,6 @@ class SummaryRanges(object):
             new_inner = Interval(val, val)
             self.parents[val] = IntervalNode(new_inner)
             self.intervals.add(new_inner)
-
     def getIntervals(self):
         result = list(self.intervals)
         result.sort(key=lambda x: x.start)

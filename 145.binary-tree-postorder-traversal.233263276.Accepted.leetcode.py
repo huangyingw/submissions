@@ -4,8 +4,6 @@ class TreeNode(object):
         self.left = None
         self.right = None
 from collections import deque
-
-
 class Solution(object):
     def postorderTraversal(self, root):
         if not root:
@@ -20,14 +18,11 @@ class Solution(object):
             if node.right:
                 stack.append(node.right)
         return list(result)
-
-
 class Solution2(object):
     def postorderTraversal(self, root):
         result = []
         self.postorder(root, result)
         return result
-
     def postorder(self, node, result):
         if not node:
             return

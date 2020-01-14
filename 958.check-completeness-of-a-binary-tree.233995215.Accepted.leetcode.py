@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution:
     def isCompleteTree(self, root):
         queue = deque([root])

@@ -1,12 +1,9 @@
 def read4(buf):
     pass
 from collections import deque
-
-
 class Solution(object):
     def __init__(self):
         self.leftover = deque()
-
     def read(self, buf, n):
         total_chars, added_chars, read_chars = 0, 4, 0
         while self.leftover and total_chars < n:

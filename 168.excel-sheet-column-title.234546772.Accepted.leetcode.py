@@ -8,7 +8,6 @@ class Solution:
             tempString = alpha[word]
             res = ''.join((tempString, res))
         return res
-
     def convertToTitle(self, n):
         res = ''
         dist = ord('A')

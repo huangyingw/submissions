@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def countOfAtoms(self, formula):
         def count_atoms(start):

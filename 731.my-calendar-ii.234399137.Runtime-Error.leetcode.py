@@ -2,7 +2,6 @@ class MyCalendarTwo1:
     def __init__(self):
         self.calendar = []
         self.overlaps = []
-
     def book(self, start, end):
         for i, j in self.overlaps:
             if start < j and end > i:
@@ -13,13 +12,10 @@ class MyCalendarTwo1:
         self.calendar.append((start, end))
         return True
 import bisect
-
-
 class MyCalendarTwo2:
     def __init__(self):
         self.cal = [0]
         self.bookings = [0]
-
     def book(self, start, end):
         i = bisect.bisect(self.cal, start)
         j = bisect.bisect_left(self.cal, end)

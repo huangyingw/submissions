@@ -3,14 +3,11 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def generateTrees(self, n):
         if n <= 0:
             return []
         return self.generate(1, n)
-
     def generate(self, left, right):
         if left > right:
             return [None]

@@ -3,7 +3,6 @@ class Solution:
         self.ret = 0
         self.dfs([-1] * n, 0)
         return self.ret
-
     def dfs(self, b, r):
         if len(b) == r:
             self.ret += 1
@@ -12,7 +11,6 @@ class Solution:
             b[r] = c
             if self.isValid(b, r):
                 self.dfs(b, r + 1)
-
     def isValid(self, b, r):
         for i in range(r):
             if b[i] == b[r] or abs(b[r] - b[i]) == r - i:

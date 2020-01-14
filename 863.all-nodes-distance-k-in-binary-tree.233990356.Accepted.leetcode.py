@@ -1,7 +1,6 @@
 class Solution(object):
     def distanceK(self, root, target, K):
         results = []
-
         def nodes_at_distance(node, distance):
             if not node:
                 return
@@ -10,7 +9,6 @@ class Solution(object):
             else:
                 nodes_at_distance(node.left, distance - 1)
                 nodes_at_distance(node.right, distance - 1)
-
         def helper(node):
             if not node:
                 return -1

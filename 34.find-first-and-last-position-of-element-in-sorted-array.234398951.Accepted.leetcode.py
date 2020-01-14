@@ -9,7 +9,6 @@ class Solution:
                 else:
                     right = mid - 1
             return left
-
         def binarySearchRight(A, x):
             left, right = 0, len(A) - 1
             while left <= right:

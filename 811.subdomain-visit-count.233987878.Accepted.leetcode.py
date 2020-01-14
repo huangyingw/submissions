@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def subdomainVisits(self, cpdomains):
         counts = defaultdict(int)

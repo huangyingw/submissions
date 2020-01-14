@@ -7,7 +7,6 @@ class Solution(object):
         left = self.searchLeft(image, 0, y)
         right = self.searchRight(image, y, len(image[0]) - 1)
         return (right - left + 1) * (bottom - top + 1)
-
     def searchTop(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2
@@ -20,7 +19,6 @@ class Solution(object):
         elif ("1" in image[end]) == True:
             return end
         return end
-
     def searchBottom(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2
@@ -33,7 +31,6 @@ class Solution(object):
         elif ("1" in image[start]) == True:
             return start
         return start
-
     def searchLeft(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2
@@ -46,7 +43,6 @@ class Solution(object):
         elif any(image[k][start] == "1" for k in range(len(image))) == True:
             return end
         return end
-
     def searchRight(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2

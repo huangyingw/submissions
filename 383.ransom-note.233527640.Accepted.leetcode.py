@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
         mag_count = Counter(magazine)

@@ -11,21 +11,18 @@ class Solution(object):
             new.next = summ
             summ = new
         return summ
-
     def getLength(self, node):
         count = 0
         while node:
             count += 1
             node = node.next
         return count
-
     def addLeadingZeroes(self, count, node):
         for i in range(count):
             new = ListNode(0)
             new.next = node
             node = new
         return node
-
     def addNumbers(self, l1, l2):
         if not l1 and not l2:
             return (0, None)

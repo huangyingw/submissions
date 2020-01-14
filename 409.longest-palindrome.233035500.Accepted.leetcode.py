@@ -1,12 +1,4 @@
 class Solution:
-    # https://leetcode.com/problems/longest-palindrome/solution/
-    # def longestPalindrome(self, s):
-    #     ans = 0
-    #     for v in collections.Counter(s).itervalues():
-    #         ans += v / 2 * 2
-    #         if ans % 2 == 0 and v % 2 == 1:
-    #             ans += 1
-    #     return ans
     def longestPalindrome(self, s):
         ans = 0
         char_map = {}

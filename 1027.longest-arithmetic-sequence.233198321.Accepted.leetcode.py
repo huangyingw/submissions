@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def longestArithSeqLength(self, A):
         dp = defaultdict(int)

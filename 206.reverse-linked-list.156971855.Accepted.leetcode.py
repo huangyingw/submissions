@@ -1,9 +1,5 @@
 class Solution(object):
     def reverseList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
         pre = None
         temp = head
         while head:

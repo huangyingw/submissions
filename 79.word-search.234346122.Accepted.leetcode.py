@@ -8,7 +8,6 @@ class Solution(object):
                 if self.dfs(board, word, i, j):
                     return True
         return False
-
     def dfs(self, board, word, x, y):
         if not word:
             return True
@@ -16,7 +15,6 @@ class Solution(object):
             return False
         tmp = board[x][y]
         board[x][y] = '
-        neighbor = self.dfs(board, word[1:], x + 1, y) or self.dfs(board, word[1:], x - 1, y) \
-            or self.dfs(board, word[1:], x, y + 1) or self.dfs(board, word[1:], x, y - 1)
+        neighbor = self.dfs(board, word[1:], x + 1, y) or self.dfs(board, word[1:], x - 1, y) or self.dfs(board, word[1:], x, y + 1) or self.dfs(board, word[1:], x, y - 1)
         board[x][y] = tmp
         return neighbor

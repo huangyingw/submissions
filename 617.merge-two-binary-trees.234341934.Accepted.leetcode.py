@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def mergeTrees(self, t1, t2):
         if t1 and t2:

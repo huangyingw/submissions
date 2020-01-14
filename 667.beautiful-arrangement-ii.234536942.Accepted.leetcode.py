@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/beautiful-arrangement-ii/description/
 """
 Given two integers n and k, you need to construct a list which contains n different positive integers ranging from 1 to n and obeys the following requirement:
 Suppose this list is [a1, a2, a3, ... , an], then the list [|a1 - a2|, |a2 - a3|, |a3 - a4|, ... , |an-1 - an|] has exactly k distinct integers.
@@ -13,8 +12,6 @@ Explanation: The [1, 3, 2] has three different positive integers ranging from 1 
 Note:
 The n and k are in the range 1 <= k < n <= 104.
 """
-
-
 class Solution(object):
     def constructArray(self, n, k):
         ans = list(range(1, n - k))

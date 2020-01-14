@@ -1,6 +1,4 @@
 from math import log, ceil
-
-
 class Solution(object):
     def poorPigs(self, buckets, minutesToDie, minutesToTest):
         rounds = minutesToTest // minutesToDie

@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/teemo-attacking/description/
 """
 In LOL world, there is a hero called Teemo and his attacking can make his enemy Ashe be in poisoned condition. Now, given the Teemo's attacking ascending time series towards Ashe and the poisoning time duration per Teemo's attacking, you need to output the total time that Ashe is in poisoned condition.
 You may assume that Teemo attacks at the very beginning of a specific time point, and makes Ashe be in poisoned condition immediately.
@@ -21,22 +20,13 @@ Note:
 You may assume the length of given time series array won't exceed 10000.
 You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.
 """
-
-
 class Solution:
     def findPoisonedDuration(self, timeSeries, duration):
-        """
-        :type timeSeries: List[int]
-        :type duration: int
-        :rtype: int
-        """
         if len(timeSeries) == 0:
             return 0
         return sum(min(duration, i - j) for i, j in zip(timeSeries[1:], timeSeries[:-1])) + duration
-
     def findPoisonedDuration(self, timeSeries, duration):
         return sum(min(duration, b - a) for a, b in zip(timeSeries, timeSeries[1:] + [10e7]))
-        # 用这个可以省略判断0的情况
 if __name__ == '__main__':
     t = Solution()
     assert t.findPoisonedDuration([1, 4], 2) == 4

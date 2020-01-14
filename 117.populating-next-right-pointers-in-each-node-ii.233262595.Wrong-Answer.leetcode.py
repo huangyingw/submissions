@@ -4,8 +4,6 @@ class TreeLinkNode(object):
         self.left = None
         self.right = None
         self.next = None
-
-
 class Solution(object):
     def connect(self, root):
         if not root:

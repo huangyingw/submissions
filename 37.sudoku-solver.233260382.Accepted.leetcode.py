@@ -16,7 +16,6 @@ class Solution(object):
                 self.new_digits = []
                 self.find_new()
         self.solve_recursive()
-
     def eliminate(self, row, col):
         for i in range(self.size):
             if isinstance(self.board[i][col], set):
@@ -27,14 +26,12 @@ class Solution(object):
             for box_col in range(3 * (col // 3), 3 + 3 * (col // 3)):
                 if isinstance(self.board[box_row][box_col], set):
                     self.board[box_row][box_col].discard(self.board[row][col])
-
     def find_new(self):
         for row in range(self.size):
             for col in range(self.size):
                 if isinstance(self.board[row][col], set) and len(self.board[row][col]) == 1:
                     self.board[row][col] = self.board[row][col].pop()
                     self.new_digits.append((row, col))
-
     def solve_recursive(self):
         for r in range(self.size):
             for c in range(self.size):
@@ -49,7 +46,6 @@ class Solution(object):
                         self.board[r][c] = save_set
                 return False
         return True
-
     def is_valid(self, row, col, digit):
         for i in range(self.size):
             if self.board[row][i] == digit or self.board[i][col] == digit:

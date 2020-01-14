@@ -1,6 +1,4 @@
 import math
-
-
 class Solution(object):
     def smallestGoodBase(self, n):
         n = int(n)

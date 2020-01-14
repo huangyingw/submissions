@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/jewels-and-stones/description/
 """
 You're given strings J representing the types of stones that are jewels, and S representing the stones you have.
 Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
@@ -14,17 +13,8 @@ Note:
 S and J will consist of letters and have length at most 50.
 The characters in J are distinct.
 """
-
-
 class Solution:
-    # 1
-    # 97.83%
     def numJewelsInStones(self, J, S):
-        """
-        :type J: str
-        :type S: str
-        :rtype: int
-        """
         ret = 0
         for i in J:
             ret += S.count(i)

@@ -2,7 +2,6 @@ class Solution(object):
     def shortestDistance(self, grid):
         if not grid:
             return -1
-
         def bfs(grid, distance_reach_map, row, col):
             if(row < 0 or row > len(grid) or col < 0 or col > len(grid[0])):
                 return

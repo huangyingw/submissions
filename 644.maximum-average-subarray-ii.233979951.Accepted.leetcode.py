@@ -10,7 +10,6 @@ class Solution(object):
                 max_sum = max([cumulative[length + i] - cumulative[i] for i in range(n - length + 1)])
                 result = max(result, max_sum / float(length))
             return result
-
         def has_average(x):
             subarray_sum = 0
             for i in range(k):

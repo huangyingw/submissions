@@ -1,7 +1,6 @@
 class Solution:
     def plusOne(self, digits):
         return list(map(int, str(int("".join(map(str, digits))) + 1)))
-
     def plusOne(self, digits):
         for i in range(len(digits) - 1, -1, -1):
             if digits[i] < 9:

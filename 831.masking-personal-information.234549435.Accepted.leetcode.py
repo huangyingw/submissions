@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/masking-personal-information/description/
 """
 We are given a personal information string S, which may represent either an email address or a phone number.
 We would like to mask this personal information according to the following rules:
@@ -15,8 +14,6 @@ To mask a phone number with country code like "+111 111 111 1111", we write it i
 Note that extraneous characters like "(", ")", " ", as well as extra dashes or plus signs not part of the above formatting scheme should be removed.
 Return the correct "mask" of the information provided.
 """
-
-
 class Solution(object):
     def maskPII(self, S):
         at = S.find('@')

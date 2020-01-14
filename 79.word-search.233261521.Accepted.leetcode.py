@@ -8,7 +8,6 @@ class Solution(object):
                 if self.can_find(word, 0, board, r, c):
                     return True
         return False
-
     def can_find(self, word, i, board, r, c):
         if i >= len(word):
             return True

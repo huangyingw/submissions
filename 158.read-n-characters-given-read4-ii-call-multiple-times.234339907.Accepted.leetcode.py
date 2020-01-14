@@ -3,7 +3,6 @@ class Solution(object):
         self.buf4_pointer = 0
         self.buf4_count = 0
         self.buf4 = [''] * 4
-
     def read(self, buf, n):
         i = 0
         while i < n:

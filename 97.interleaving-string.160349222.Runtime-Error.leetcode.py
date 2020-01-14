@@ -3,7 +3,6 @@ class Solution(object):
         s1 = '0' + s1
         s2 = '0' + s2
         s3 = '0' + s3
-
         def dfs(row, col):
             if row > len(s1) or col > len(s2):
                 return False

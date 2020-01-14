@@ -1,10 +1,5 @@
 class Solution(object):
     def getHint(self, secret, guess):
-        """
-        :type secret: str
-        :type guess: str
-        :rtype: str
-        """
         check = {}
         ls = len(secret)
         bull, cow = 0, 0
@@ -13,7 +8,6 @@ class Solution(object):
             if guess[i] == secret[i]:
                 bull += 1
             else:
-                # store possible index and count for cow
                 different.append(i)
                 try:
                     check[secret[i]] += 1

@@ -12,7 +12,6 @@ class Solution:
                 if not self.isValidUnit(square):
                     return False
         return True
-
     def isValidUnit(self, unit):
         vals = [i for i in unit if i != '.']
         return len(set(vals)) == len(vals)

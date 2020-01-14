@@ -1,6 +1,5 @@
 class Solution(object):
     def coinChange(self, coins, amount):
-        # bottom-up dp
         if amount == 0:
             return 0
         if coins is None or len(coins) == 0:

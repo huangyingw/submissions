@@ -1,7 +1,6 @@
 class Solution(object):
     def preorderTraversal(self, root):
         result = []
-
         def dfs(root):
             if not root:
                 return

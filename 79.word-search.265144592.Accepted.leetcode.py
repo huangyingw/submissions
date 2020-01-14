@@ -7,7 +7,6 @@ class Solution:
                 if self.dfs(board, i, j, word):
                     return True
         return False
-
     def dfs(self, board, i, j, word):
         if len(word) == 0:
             return True
@@ -15,7 +14,6 @@ class Solution:
             return False
         tmp = board[i][j]
         board[i][j] = "#"
-        res = self.dfs(board, i + 1, j, word[1:]) or self.dfs(board, i - 1, j, word[1:]) \
-            or self.dfs(board, i, j + 1, word[1:]) or self.dfs(board, i, j - 1, word[1:])
+        res = self.dfs(board, i + 1, j, word[1:]) or self.dfs(board, i - 1, j, word[1:]) or self.dfs(board, i, j + 1, word[1:]) or self.dfs(board, i, j - 1, word[1:])
         board[i][j] = tmp
         return res

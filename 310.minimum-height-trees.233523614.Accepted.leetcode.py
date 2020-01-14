@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def findMinHeightTrees(self, n, edges):
         if n == 1:

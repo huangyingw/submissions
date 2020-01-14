@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def maxEqualRowsAfterFlips(self, matrix):
         row_counter = defaultdict(int)

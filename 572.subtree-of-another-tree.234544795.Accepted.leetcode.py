@@ -2,7 +2,6 @@ class Solution(object):
     def isSubtree(self, a, b):
         if not b:
             return True
-
         def checkTree(root1, root2):
             if not root1 and not root2:
                 return True
@@ -11,7 +10,6 @@ class Solution(object):
             if root1.val != root2.val:
                 return False
             return checkTree(root1.left, root2.left) and checkTree(root1.right, root2.right)
-
         def dfs(s, t):
             if not s:
                 return False

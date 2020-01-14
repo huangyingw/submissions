@@ -9,7 +9,6 @@ class Solution:
             roots[right] = left
             count -= 1
         return count == 1
-
     def findRoot(self, roots, node):
         while node != roots[node]:
             roots[node] = roots[roots[node]]

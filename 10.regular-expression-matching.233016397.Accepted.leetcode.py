@@ -1,12 +1,5 @@
 class Solution(object):
     def isMatch(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: bool
-        """
-        # bottom up o(m*n)
-        # https://leetcode.com/discuss/93024/easy-dp-java-solution-with-detailed-explanation
         if s == p:
             return True
         m, n = len(s), len(p)
@@ -26,5 +19,4 @@ class Solution(object):
                         dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1] or dp[i + 1][j - 1]
         return dp[m][n]
 if __name__ == '__main__':
-    # begin
     s = Solution()

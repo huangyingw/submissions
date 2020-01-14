@@ -5,7 +5,6 @@ class Solution(object):
             location, val = divmod(num, 10)
             depth, pos = divmod(location, 10)
             mapping[(depth, pos - 1)] = val
-
         def sum_paths(location, partial):
             if location not in mapping:
                 return 0

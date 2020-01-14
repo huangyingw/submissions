@@ -1,7 +1,6 @@
 class Solution(object):
     def splitIntoFibonacci(self, S):
         MAX_NUM = 2 ** 31 - 1
-
         def helper(i, n1, n2):
             fib = [n1, n2]
             while i < len(S):

@@ -4,10 +4,8 @@ class BSTIterator(object):
         while root:
             self.stack.append(root)
             root = root.left
-
     def hasNext(self):
         return True if self.stack else False
-
     def next(self):
         node = self.stack.pop()
         result = node.val

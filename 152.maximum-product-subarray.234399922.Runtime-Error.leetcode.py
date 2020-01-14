@@ -5,7 +5,6 @@ class Solution:
             nums[i] *= nums[i - 1] or 1
             B[i] *= B[i - 1] or 1
         return max(nums + B)
-
     def maxProduct(nums):
         maximum = big = small = nums[0]
         for n in nums[1:]:

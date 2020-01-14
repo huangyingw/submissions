@@ -1,13 +1,10 @@
 from collections import Counter
-
-
 class Solution(object):
     def combinationSum2(self, candidates, target):
         results = []
         freq = list(Counter(candidates).items())
         self.combos(freq, 0, target, [], results)
         return results
-
     def combos(self, freq, next, target, partial, results):
         if target == 0:
             results.append(partial)

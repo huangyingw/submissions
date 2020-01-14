@@ -5,7 +5,6 @@ class Solution:
         while(len(pending) > 0):
             pending, imp = self.processing(employees, pending, imp)
         return imp
-
     def processing(self, employees, pending, imp):
         tmp = []
         for n in range(len(employees)):

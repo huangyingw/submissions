@@ -1,7 +1,6 @@
 class Solution:
     def wordBreak(self, s, wordDict):
         return self.dfs(s, wordDict, {})
-
     def dfs(self, s, wordDict, record):
         if s in record:
             return record[s]

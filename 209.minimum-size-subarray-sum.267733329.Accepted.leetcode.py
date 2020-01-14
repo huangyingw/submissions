@@ -1,11 +1,5 @@
-# Time: O(n)
 class Solution:
     def minSubArrayLen(self, s, nums):
-        """
-        :type s: int
-        :type nums: List[int]
-        :rtype: int
-        """
         total = l = 0
         result = len(nums) + 1
         for r in range(len(nums)):

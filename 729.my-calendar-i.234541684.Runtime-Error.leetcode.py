@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/my-calendar-i/description/
 """
 Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
 Your class will have the method, book(int start, int end). Formally,
@@ -20,12 +19,9 @@ Note:
 The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 """
-
-
 class MyCalendar1(object):
     def __init__(self):
         self.calendar = []
-
     def book(self, start, end):
         for s, e in self.calendar:
             if s < end and start < e:
@@ -33,18 +29,10 @@ class MyCalendar1(object):
         self.calendar.append((start, end))
         return True
 from bisect import bisect
-
-
 class MyCalendar2:
     def __init__(self):
         self.eventList = [(0, 0), (float('inf'), float('inf'))]
-
     def book(self, start, end):
-        """
-        :type start: int
-        :type end: int
-        :rtype: bool
-        """
         p = bisect(self.eventList, (start, end))
         if self.eventList[p - 1][1] > start:
             return False

@@ -1,7 +1,6 @@
 class Solution:
     def minDistance(self, A, B):
         memo = {}
-
         def dp(i, j):
             if (i, j) not in memo:
                 if i == len(A) or j == len(B):

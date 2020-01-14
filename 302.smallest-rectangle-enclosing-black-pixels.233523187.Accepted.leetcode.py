@@ -7,7 +7,6 @@ class Solution(object):
         left_edge = self.find_edge(0, y, False, True, image)
         right_edge = self.find_edge(y + 1, len(image[0]), False, False, image)
         return (right_edge - left_edge) * (bottom_edge - top_edge)
-
     def find_edge(self, left, right, column, black, image):
         while left < right:
             mid = (left + right) // 2
@@ -16,7 +15,6 @@ class Solution(object):
             else:
                 left = mid + 1
         return left
-
     def any_black(self, i, column, image):
         if column:
             return ('1' in image[i])

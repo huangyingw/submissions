@@ -9,7 +9,6 @@ class Solution(object):
             mid = slow.next
             slow.next = None
             return mid
-
         def reverse(head):
             pre = None
             while head:
@@ -18,7 +17,6 @@ class Solution(object):
                 pre = head
                 head = temp
             return pre
-
         def merge(l1, l2):
             dummy = ListNode(-1)
             nav = dummy

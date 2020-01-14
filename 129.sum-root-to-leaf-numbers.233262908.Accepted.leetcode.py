@@ -3,12 +3,9 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def sumNumbers(self, root):
         return self.helper(root, 0)
-
     def helper(self, node, partial):
         if not node:
             return 0

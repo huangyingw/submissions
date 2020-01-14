@@ -1,11 +1,9 @@
 class Solution(object):
     ELEMENTS = 4
-
     def fourSum(self, nums, target):
         results = []
         self.n_sum(sorted(nums), target, [], self.ELEMENTS, results)
         return results
-
     def n_sum(self, nums, target, partial, n, results):
         if len(nums) < n or target > nums[-1] * n or target < nums[0] * n:
             return

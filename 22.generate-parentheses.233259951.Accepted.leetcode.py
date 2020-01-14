@@ -3,7 +3,6 @@ class Solution(object):
         result = []
         self.generate([], n, n, result)
         return result
-
     def generate(self, prefix, left, right, result):
         if left == 0 and right == 0:
             result.append("".join(prefix))

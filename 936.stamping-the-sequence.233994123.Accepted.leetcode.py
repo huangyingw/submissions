@@ -1,7 +1,6 @@
 class Solution:
     def movesToStamp(self, stamp, target):
         memo = {}
-
         def helper(i, j, results):
             if (i, j) in memo:
                 return memo[(i, j)]

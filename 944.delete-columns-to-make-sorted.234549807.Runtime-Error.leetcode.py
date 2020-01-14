@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/delete-columns-to-make-sorted/
 """
 We are given an array A of N lowercase letter strings, all of the same length.
 Now, we may choose any set of deletion indices, and for each string, we delete all the characters in those indices.
@@ -23,11 +22,7 @@ Note:
 1 <= A.length <= 100
 1 <= A[i].length <= 1000
 """
-
-
 def minDeletionSize(self, A):
     return sum(any(a > b for a, b in zip(col, col[1:])) for col in zip(*A))
-
-
 def minDeletionSize(self, A):
     return sum(list(col) != sorted(col) for col in zip(*A))

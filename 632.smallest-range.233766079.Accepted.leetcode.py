@@ -1,6 +1,4 @@
 import heapq
-
-
 class Solution(object):
     def smallestRange(self, nums):
         n = len(nums)

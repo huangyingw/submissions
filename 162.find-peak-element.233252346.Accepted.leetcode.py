@@ -8,8 +8,6 @@ class Solution(object):
             else:
                 left = mid + 1
         return left
-
-
 class Solution(object):
     def findPeakElement(self, nums):
         left = [False] * len(nums)

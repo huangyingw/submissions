@@ -1,10 +1,5 @@
 class Solution:
     def threeSumSmaller(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
         nums.sort()
         ret = 0
         for i in range(len(nums)):

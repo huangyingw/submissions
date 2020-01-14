@@ -4,8 +4,6 @@ class Solution(object):
         nums.reverse()
         nums[:k] = reversed(nums[:k])
         nums[k:] = reversed(nums[k:])
-
-
 class Solution2(object):
     def rotate(self, nums, k):
         n = len(nums)

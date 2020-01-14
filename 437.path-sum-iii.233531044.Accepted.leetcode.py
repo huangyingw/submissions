@@ -1,11 +1,8 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def pathSum(self, root, sum):
         paths = defaultdict(int)
         paths[0] = 1
-
         def helper(node, partial):
             if not node:
                 return 0

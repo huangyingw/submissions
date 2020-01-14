@@ -1,14 +1,12 @@
 class Solution:
     def solveSudoku(self, board):
         self.solve(board)
-
     def findEmpty(self, board):
         for i in range(9):
             for j in range(9):
                 if board[i][j] == '.':
                     return (i, j)
         return None
-
     def solve(self, board):
         pos = self.findEmpty(board)
         if not pos:
@@ -21,7 +19,6 @@ class Solution:
                     return True
                 board[x][y] = '.'
         return False
-
     def isValid(self, board, row, col, val):
         for i in board[row]:
             if i == val:

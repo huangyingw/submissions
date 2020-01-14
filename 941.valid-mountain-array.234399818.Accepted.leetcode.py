@@ -6,7 +6,6 @@ class Solution:
         while j > 0 and A[j - 1] > A[j]:
             j -= 1
         return 0 < i == j < n - 1
-
     def validMountainArray(self, A):
         if len(A) < 3:
             return False

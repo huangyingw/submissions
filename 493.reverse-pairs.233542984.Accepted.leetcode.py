@@ -1,7 +1,6 @@
 class Solution(object):
     def reversePairs(self, nums):
         self.pairs = 0
-
         def mergesort(nums):
             if len(nums) < 2:
                 return nums
@@ -9,7 +8,6 @@ class Solution(object):
             left = mergesort(nums[:mid])
             right = mergesort(nums[mid:])
             return merge(left, right)
-
         def merge(left, right):
             j = 0
             for num in left:

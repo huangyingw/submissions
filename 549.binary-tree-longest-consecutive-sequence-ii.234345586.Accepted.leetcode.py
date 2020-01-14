@@ -1,11 +1,9 @@
 class Solution:
     def __init__(self):
         self.result = 0
-
     def longestConsecutive(self, root):
         self.helper(root)
         return self.result
-
     def helper(self, node):
         if not node:
             return [0, 0]

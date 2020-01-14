@@ -9,7 +9,6 @@ class Solution(object):
                     count += 1
                     self.merge(grid, row, col)
         return count
-
     def merge(self, grid, row, col):
         if 0 > row or row >= len(grid) or col < 0 or col >= len(grid[0]):
             return

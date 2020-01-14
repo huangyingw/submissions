@@ -12,7 +12,6 @@ class Solution:
         tail_dis = cur_dis
         max_dis = ((max_dis + 1) // 2, head_dis, tail_dist)
         return max_dis
-
     def maxDistToClosest(self, seats):
         start, end = 0, len(seats) - 1
         while seats[start] == 0:

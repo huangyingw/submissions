@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution:
     def groupAnagrams(self, strs):
         if not strs:

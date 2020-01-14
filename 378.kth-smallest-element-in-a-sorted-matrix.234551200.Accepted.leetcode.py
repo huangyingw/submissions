@@ -1,6 +1,4 @@
 from Queue import PriorityQueue
-
-
 class Solution(object):
     def kthSmallest(self, matrix, k):
         p = PriorityQueue()

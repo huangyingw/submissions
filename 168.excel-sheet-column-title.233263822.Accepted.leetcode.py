@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution(object):
     def convertToTitle(self, n):
         column = deque()

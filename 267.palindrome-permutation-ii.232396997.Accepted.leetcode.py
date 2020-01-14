@@ -21,14 +21,12 @@ class Solution(object):
             ret = self.permute(list(halfChars))
             ret = map(lambda x: "".join(x + [mid] + x[::-1]), ret)
         return ret
-
     def permute(self, letters):
         ret = []
         used = [False] * len(letters)
         letters.sort()
         self.dfs(letters, [], used, ret)
         return ret
-
     def dfs(self, letters, path, used, ret):
         if len(path) == len(letters):
             ret.append(path[:])

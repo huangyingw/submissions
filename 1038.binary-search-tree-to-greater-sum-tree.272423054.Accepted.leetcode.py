@@ -1,6 +1,5 @@
 class Solution(object):
     val = 0
-
     def bstToGst(self, root):
         if root.right:
             self.bstToGst(root.right)

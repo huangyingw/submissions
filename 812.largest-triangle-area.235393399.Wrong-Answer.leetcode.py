@@ -1,7 +1,6 @@
 class Solution:
     def largestTriangleArea(self, points):
         return max([self.area(triangle[0], triangle[1], triangle[2]) for triangle in itertools.combinations(points, 3)])
-
     def area(self, a, b, c):
         b_vec = list(map(lambda x: x[0] - x[1], zip(b, a)))
         c_vec = list(map(lambda x: x[0] - x[1], zip(c, a)))

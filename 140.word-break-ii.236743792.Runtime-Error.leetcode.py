@@ -8,12 +8,10 @@ class Solution(object):
                     can_make[i] = True
                     break
         return can_make[-1]
-
     def wordBreak(self, s, wordDict):
         if not self.canBreak(s, wordDict):
             return []
         return [" ".join(result) for result in result_lists]
-
     def break_word(self, s, left, wordDict, memo):
         if left >= len(s):
             return [[]]

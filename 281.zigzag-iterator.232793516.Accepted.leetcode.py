@@ -9,12 +9,10 @@ class ZigzagIterator(object):
                 self.l.append(v2[i])
             i += 1
         self.index = 0
-
     def next(self):
         cur = self.l[self.index]
         self.index += 1
         return cur
-
     def hasNext(self):
         if self.index < len(self.l):
             return True

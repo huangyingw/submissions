@@ -6,7 +6,6 @@ class Solution:
                 return num
             else:
                 num_set.add(num)
-
     def findDuplicate2(self, nums):
         slow = fast = temp = 0
         while True:

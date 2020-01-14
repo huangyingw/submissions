@@ -5,7 +5,6 @@ class Solution:
             dp.append(dp[-1] + x)
         ma = max(dp[i + k] - dp[i] for i in range(len(nums) - k + 1))
         return ma / k
-
     def findMaxAverage2(self, nums, k):
         s = sum(nums[:k])
         max_sum = s

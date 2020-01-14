@@ -1,7 +1,6 @@
 class Solution(object):
     def maxPathSum(self, root):
         self.max_sum = 0
-
         def dfs(root):
             if not root:
                 return 0

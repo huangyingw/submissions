@@ -4,8 +4,6 @@ class Solution:
         binary = binary[2:]
         reversed_binary = binary[::-1] + ''.join(['0' for _ in range(32 - len(binary))])
         return int(reversed_binary, 2)
-
-
 class Solution2:
     def reverseBits(self, n):
         reversed, bit = 0, 31

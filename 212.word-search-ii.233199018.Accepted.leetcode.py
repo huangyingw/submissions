@@ -1,13 +1,10 @@
 class TrieNode(object):
     def __init__(self):
         self.value, self.links = None, [None] * 26
-
-
 class Trie(object):
     def __init__(self):
         self.root = TrieNode()
         return
-
     def insert(self, word):
         if word:
             curr = self.root
@@ -18,8 +15,6 @@ class Trie(object):
                 curr = curr.links[offset]
             curr.value = word
         return
-
-
 class Solution(object):
     def helper(self, x, y, board, trie_node, result):
         if trie_node.value:
@@ -30,7 +25,6 @@ class Solution(object):
                 self.helper(x1, y1, board, trie_node.links[ord(ch) - ord('a')], result)
                 board[x1][y1] = ch
         return
-
     def findWords(self, board, words):
         trie = Trie()
         for word in words:

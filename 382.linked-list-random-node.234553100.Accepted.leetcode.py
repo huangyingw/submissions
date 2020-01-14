@@ -1,10 +1,7 @@
 import random
-
-
 class Solution(object):
     def __init__(self, head):
         self.head = head
-
     def getRandom(self):
         res = None
         length = 0

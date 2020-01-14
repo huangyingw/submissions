@@ -2,8 +2,6 @@ class Trie(object):
     def __init__(self):
         self.nodes = {}
         self.word = False
-
-
 class StreamChecker(object):
     def __init__(self, words):
         self.trie_node = Trie()
@@ -15,7 +13,6 @@ class StreamChecker(object):
                 ptr = ptr.nodes[char]
             ptr.word = True
         self.stream = []
-
     def query(self, letter):
         self.stream.append(letter)
         root = self.trie_node

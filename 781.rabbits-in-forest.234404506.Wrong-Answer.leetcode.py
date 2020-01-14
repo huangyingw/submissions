@@ -6,7 +6,6 @@ class Solution:
         for idx, val in mapping.items():
             ret += val if val % (idx + 1) == 0 else (val // (idx + 1) + 1) * (idx + 1)
         return ret
-
     def numRabbits(self, answers):
         from collections import Counter
         dic = Counter(answers)

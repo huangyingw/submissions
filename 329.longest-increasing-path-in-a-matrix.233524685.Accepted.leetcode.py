@@ -8,7 +8,6 @@ class Solution(object):
             for c in range(len(matrix[0])):
                 longest = max(longest, self.dfs(r, c, matrix, memo))
         return longest
-
     def dfs(self, r, c, matrix, memo):
         if memo[r][c] != -1:
             return memo[r][c]

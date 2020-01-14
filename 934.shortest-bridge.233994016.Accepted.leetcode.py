@@ -3,7 +3,6 @@ class Solution:
         rows, cols = len(A), len(A[0])
         visited = set()
         perimeter = set()
-
         def neighbours(r, c):
             if r != 0:
                 yield (r - 1, c)
@@ -13,7 +12,6 @@ class Solution:
                 yield (r, c - 1)
             if c != rows - 1:
                 yield (r, c + 1)
-
         def get_perimeter(r, c):
             if r < 0 or r >= rows or c < 0 or c >= cols:
                 return

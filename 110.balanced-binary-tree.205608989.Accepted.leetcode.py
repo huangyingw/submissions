@@ -1,7 +1,6 @@
 class Solution(object):
     def isBalanced(self, root):
         return self.maxDepth(root) != -1
-
     def maxDepth(self, root):
         if not root:
             return 0

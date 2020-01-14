@@ -4,11 +4,8 @@ class TreeNode(object):
         self.left = None
         self.right = None
 from collections import deque
-
-
 def serialize(self, root):
     serial_list = []
-
     def serial(node):
         if not node:
             return
@@ -17,11 +14,8 @@ def serialize(self, root):
         serial(node.right)
     serial(root)
     return " ".join(serial_list)
-
-
 def deserialize(self, data):
     preorder = deque(int(val) for val in data.split())
-
     def deserial(low, high):
         if preorder and low < preorder[0] < high:
             val = preorder.popleft()

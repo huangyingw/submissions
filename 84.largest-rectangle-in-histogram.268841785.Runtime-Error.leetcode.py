@@ -1,12 +1,6 @@
 from typing import List
-
-
 class Solution:
     def largestRectangleArea(self, heights):
-        """
-        :type heights: List[int]
-        :rtype: int
-        """
         stack = [-1]
         heights.append(-1)
         result, i = 0, 0

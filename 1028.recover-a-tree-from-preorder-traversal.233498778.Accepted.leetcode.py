@@ -1,7 +1,6 @@
 class Solution(object):
     def recoverFromPreorder(self, S):
         self.i = 0
-
         def helper(required_depth):
             depth = 0
             while self.i + depth < len(S) and S[self.i + depth] == "-":

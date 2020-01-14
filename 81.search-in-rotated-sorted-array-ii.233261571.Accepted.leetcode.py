@@ -1,7 +1,6 @@
 class Solution(object):
     def search(self, nums, target):
         return self.binary(nums, 0, len(nums) - 1, target)
-
     def binary(self, nums, left, right, target):
         if left > right:
             return False

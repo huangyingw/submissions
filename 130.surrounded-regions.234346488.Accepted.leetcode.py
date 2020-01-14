@@ -19,7 +19,6 @@ class Solution:
             for j in range(n):
                 if board[i][j] == '1':
                     board[i][j] = 'O'
-
     def check(self, i, j, board, m, n):
         if 0 <= i < m and 0 <= j < n and board[i][j] == 'O':
             board[i][j] = '1'

@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/my-calendar-ii/description/
 """
 Implement a MyCalendarTwo class to store your events.
 A new event can be added if adding the event will not cause a triple booking.
@@ -27,13 +26,10 @@ Note:
 The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 """
-
-
 class MyCalendarTwo1:
     def __init__(self):
         self.calendar = []
         self.overlaps = []
-
     def book(self, start, end):
         for i, j in self.overlaps:
             if start < j and end > i:
@@ -44,15 +40,10 @@ class MyCalendarTwo1:
         self.calendar.append((start, end))
         return True
 import bisect
-
-
 class MyCalendarTwo2:
     def __init__(self):
-        # self.calendar = []
-        # self.overlaps = []
         self.cal = [0]
         self.bookings = [0]
-
     def book(self, start, end):
         i = bisect.bisect(self.cal, start)
         j = bisect.bisect_left(self.cal, end)

@@ -8,7 +8,6 @@ class Solution(object):
                 left_side(node.left)
             else:
                 left_side(node.right)
-
         def right_side(node):
             if not node or (not node.left and not node.right):
                 return
@@ -17,7 +16,6 @@ class Solution(object):
                 right_side(node.right)
             else:
                 right_side(node.left)
-
         def inorder(node):
             if not node:
                 return

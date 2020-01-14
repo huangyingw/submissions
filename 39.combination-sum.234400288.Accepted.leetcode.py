@@ -2,7 +2,6 @@ class Solution:
     def combinationSum(self, candidates, target):
         res = []
         candidates.sort()
-
         def dfs(target, index, path):
             if target < 0:
                 return

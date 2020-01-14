@@ -8,7 +8,6 @@ class Solution(object):
             else:
                 root = root.right
         return successor
-
     def inorderSuccessor2(self, root, p):
         if not root:
             return None

@@ -1,6 +1,4 @@
 import string
-
-
 class Solution(object):
     def findLadders(self, beginWord, endWord, wordlist):
         wordlist.discard(beginWord)
@@ -9,7 +7,6 @@ class Solution(object):
         self.bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
         self.dfs(res, [beginWord], beginWord, endWord, hash_map)
         return res
-
     def bfs(self, forward, backward, wordlist, reverse, hash_map):
         if len(forward) == 0 or len(backward) == 0:
             return
@@ -35,7 +32,6 @@ class Solution(object):
                         wordlist.discard(neigh)
         if not is_connected:
             self.bfs(next_level, backward, wordlist, reverse, hash_map)
-
     def dfs(self, res, path, begin, end, hash_map):
         if begin == end:
             res.append(path)

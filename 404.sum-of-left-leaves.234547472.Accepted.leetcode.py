@@ -5,7 +5,6 @@ class Solution(object):
         if root.left and not root.left.left and not root.left.right:
             return root.left.val + self.sumOfLeftLeaves(root.right)
         return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
-
     def sumOfLeftLeaves(self, root):
         sum = 0
         if root != None:

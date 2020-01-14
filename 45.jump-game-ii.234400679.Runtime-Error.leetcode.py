@@ -9,7 +9,6 @@ class Solution(object):
                 jumps += 1
                 previous_jump_max = current_jump_max
         return jumps
-
     def jump2(self, nums):
         ans, n = 0, len(nums)
         i, e = 0, 0

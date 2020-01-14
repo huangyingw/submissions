@@ -2,7 +2,6 @@ class Solution:
     def __init__(self, arg):
         super(ClassName, self).__init__()
         self.arg = arg
-
     def repeatedStringMatch(self, A, B):
         if set(A) != set(B):
             if len(A) < len(B):

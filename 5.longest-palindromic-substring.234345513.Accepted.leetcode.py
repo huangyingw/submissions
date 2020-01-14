@@ -9,7 +9,6 @@ class Solution:
             if len(result) < len(even):
                 result = even
         return result
-
     def getPalindrome(self, l, r, s):
         while l >= 0 and r < len(s) and s[l] == s[r]:
             l -= 1

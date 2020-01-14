@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/shifting-letters/
 """
 We have a string S of lowercase letters, and an integer array shifts.
 Call the shift of a letter, the next letter in the alphabet, (wrapping around so that 'z' becomes 'a').
@@ -17,15 +16,8 @@ Note:
 1 <= S.length = shifts.length <= 20000
 0 <= shifts[i] <= 10 ^ 9
 """
-
-
 class Solution:
     def shiftingLetters(self, S, shifts):
-        """
-        :type S: str
-        :type shifts: List[int]
-        :rtype: str
-        """
         temp = list(S)
         length = len(shifts)
         offset = 0
@@ -34,7 +26,6 @@ class Solution:
             offset %= 26
             temp[i] = chr(ord(temp[i]) + offset if ord(temp[i]) + offset <= 122 else ord(temp[i]) + offset - 26)
         return ''.join(temp)
-
     def shiftingLetters2(self, S, shifts):
         for i in range(len(shifts) - 1)[::-1]:
             shifts[i] += shifts[i + 1]

@@ -2,15 +2,11 @@ class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def sortedListToBST(self, head):
         count = 0
@@ -19,7 +15,6 @@ class Solution(object):
             count += 1
             node = node.next
         return self.list_to_bst([head], 0, count - 1)
-
     def list_to_bst(self, node_as_list, start, end):
         if start > end:
             return None

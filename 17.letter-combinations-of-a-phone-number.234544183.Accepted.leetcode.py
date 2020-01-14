@@ -1,6 +1,4 @@
 from itertools import product
-
-
 class Solution:
     def letterCombinations(self, digits):
         mapping = {

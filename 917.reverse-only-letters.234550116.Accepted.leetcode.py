@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/reverse-only-letters/description/
 """
 Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place,
 and all letters reverse their positions.
@@ -16,14 +15,8 @@ S.length <= 100
 33 <= S[i].ASCIIcode <= 122
 S doesn't contain \ or "
 """
-
-
 class Solution:
     def reverseOnlyLetters(self, S):
-        """
-        :type S: str
-        :rtype: str
-        """
         temp = list(S)
         left = 0
         right = len(temp) - 1

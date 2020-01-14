@@ -1,11 +1,3 @@
-# class Solution(object):
-#     def longestCommonPrefix(self, strs):
-#         """
-#         :type strs: List[str]
-#         :rtype: str
-#         """
-
-
 class Solution(object):
     def longestCommonPrefix(self, strs):
         ls = len(strs)
@@ -32,9 +24,5 @@ class Solution(object):
                 break
             pos += 1
         return prefix
-    # def longestCommonPrefix(self, strs):
-    #     # https://leetcode.com/discuss/89987/one-line-solution-using-itertools-takewhile
-    #     return reduce(lambda s1, s2: ''.join(y[0] for y in itertools.takewhile(lambda x: x[0] == x[1], zip(s1, s2))), strs or [''])
 if __name__ == '__main__':
-    # begin
     s = Solution()

@@ -13,7 +13,6 @@ class Solution:
             middle = int((first + last) / 2)
             if first > last:
                 return first
-
     def searchInsert(self, nums, target):
         p = self.binarysearch(nums, target)
         return p

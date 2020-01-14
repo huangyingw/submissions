@@ -13,7 +13,6 @@ class Solution:
             if i[0] == sum_index:
                 ret.append(list1[i[1]])
         return ret
-
     def findRestaurant(self, list1, list2):
         d = {}
         for i, r in enumerate(list1):

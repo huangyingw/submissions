@@ -3,8 +3,6 @@ class Point(object):
         self.x = a
         self.y = b
 from collections import defaultdict
-
-
 class Solution(object):
     def maxPoints(self, points):
         if len(points) <= 2:

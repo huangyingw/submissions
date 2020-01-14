@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
 """
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).
@@ -13,15 +12,8 @@ Follow up:
 This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
 Would this affect the run-time complexity? How and why?
 """
-
-
 class Solution:
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: bool
-        """
         left = 0
         right = len(nums) - 1
         while left + 1 < right:
@@ -51,6 +43,5 @@ class Solution:
         if nums[left] == target:
             return True
         return True if nums[right] == target else False
-
     def search(self, nums, target):
         return target in nums

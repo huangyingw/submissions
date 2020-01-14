@@ -1,6 +1,5 @@
 class Solution(object):
     _dp = [0]
-
     def numSquares(self, n):
         dp = self._dp
         while len(dp) <= n:

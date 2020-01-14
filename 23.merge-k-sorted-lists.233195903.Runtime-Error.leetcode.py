@@ -1,22 +1,5 @@
-'''
-	Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
-	Example:
-	Input:
-	[
-	  1->4->5,
-	  1->3->4,
-	  2->6
-	]
-	Output: 1->1->2->3->4->4->5->6
-'''
-
-
 class Solution(object):
     def mergeKLists(self, lists):
-        """
-        :type lists: List[ListNode]
-        :rtype: ListNode
-        """
         from heapq import heappush, heappop
         heap = []
         head = point = ListNode(0)
@@ -31,16 +14,8 @@ class Solution(object):
             if node:
                 heapq.heappush(heap, (node.val, node))
         return point.next
-# Space: O(K)
-# Time: O(N*log(K))
-
-
 class Solution(object):
     def mergeKLists(self, lists):
-        """
-        :type lists: List[ListNode]
-        :rtype: ListNode
-        """
         def merge2Lists(l1, l2):
             head = point = ListNode(0)
             while l1 and l2:
@@ -64,5 +39,3 @@ class Solution(object):
                 lists[index] = merge2Lists(lists[index], lists[index + interval])
             interval *= 2
         return lists[0]
-# Time: O(N*log(k))
-# Space: O(1)

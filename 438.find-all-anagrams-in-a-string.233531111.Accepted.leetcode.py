@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def findAnagrams(self, s, p):
         n = len(p)
@@ -8,7 +6,6 @@ class Solution(object):
         result = []
         if n > len(s):
             return result
-
         def update_freq(c, step):
             freq[c] += step
             if freq[c] == 0:

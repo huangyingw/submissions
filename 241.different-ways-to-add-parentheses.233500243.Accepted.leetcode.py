@@ -9,7 +9,6 @@ class Solution(object):
                 start = i + 1
         parsed.append(int(input[start:len(input)]))
         return self.diff_ways(parsed, 0, len(parsed) - 1, {})
-
     def diff_ways(self, s, left, right, memo):
         if left == right:
             return [s[left]]

@@ -3,7 +3,6 @@ class Solution(object):
         partitons = []
         self.find_partitions(s, [], partitons)
         return partitons
-
     def find_partitions(self, s, partial, partitions):
         if not s:
             partitions.append(partial)

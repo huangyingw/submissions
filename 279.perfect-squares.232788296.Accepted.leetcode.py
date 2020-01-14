@@ -1,16 +1,8 @@
 import sys
-
-
 class Solution(object):
     def numSquares(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        # corner case 1
         if n < 0:
             return -1
-        # corner case 2
         if n == 0:
             return 1
         dp = [sys.maxint] * (n + 1)

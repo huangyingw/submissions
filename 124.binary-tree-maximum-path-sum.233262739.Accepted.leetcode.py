@@ -1,7 +1,6 @@
 class Solution(object):
     def maxPathSum(self, root):
         return self.helper(root)[0]
-
     def helper(self, node):
         if not node:
             return float('-inf'), 0

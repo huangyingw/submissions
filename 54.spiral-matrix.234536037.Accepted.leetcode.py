@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/spiral-matrix/description/
 """
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
 Example 1:
@@ -18,16 +17,8 @@ Input:
 ]
 Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 """
-
-
 class Solution:
-    # 1
-    # 常规法
     def spiralOrder(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: List[int]
-        """
         if not matrix:
             return []
         R, C = len(matrix), len(matrix[0])
@@ -46,9 +37,6 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return ans
-    # 2
-    # 分层法
-
     def spiralOrder2(self, matrix):
         def spiral_coords(r1, c1, r2, c2):
             for c in range(c1, c2 + 1):

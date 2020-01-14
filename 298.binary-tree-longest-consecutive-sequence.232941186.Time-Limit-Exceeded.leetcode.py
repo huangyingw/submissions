@@ -12,7 +12,6 @@ class Solution(object):
                     if root.right.val == root.val + 1:
                         right = 1 + consecutive(root.right)
                 return max(left, right, 1)
-
         def dfs(root):
             s = []
             s.append(root)

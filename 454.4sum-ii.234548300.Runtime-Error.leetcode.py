@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/4sum-ii/description/
 """
 Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l)
 there are such that A[i] + B[j] + C[k] + D[l] is zero.
@@ -17,17 +16,8 @@ The two tuples are:
 1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
 2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 """
-
-
 class Solution1:
     def fourSumCount(self, A, B, C, D):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :type C: List[int]
-        :type D: List[int]
-        :rtype: int
-        """
         cnts = 0
         dd = {}
         aa = {}
@@ -50,17 +40,8 @@ class Solution1:
                 if -c - d in ab:
                     cnts += ab[-c - d] * cv * dv
         return cnts
-
-
 class Solution2:
     def fourSumCount(self, A, B, C, D):
-        """
-        :type A: List[int]
-        :type B: List[int]
-        :type C: List[int]
-        :type D: List[int]
-        :rtype: int
-        """
         from collections import Counter
         AB = Counter(a + b for a in A for b in B)
         return sum(AB[-c - d] for c in C for d in D)

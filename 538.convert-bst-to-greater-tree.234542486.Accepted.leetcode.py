@@ -1,7 +1,6 @@
 class Solution(object):
     def convertBST(self, root):
         self.val = 0
-
         def visit(root):
             if root:
                 visit(root.right)
@@ -10,8 +9,6 @@ class Solution(object):
                 visit(root.left)
         visit(root)
         return root
-
-
 class Solution(object):
     def convertBST(self, root):
         if not root:

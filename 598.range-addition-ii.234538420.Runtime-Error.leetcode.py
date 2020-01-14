@@ -5,7 +5,6 @@ class Solution:
             a = min(i[0], a)
             b = min(i[1], b)
         return a * b
-
     def maxCount2(self, m, n, ops):
         if not ops:
             return m * n

@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/verifying-an-alien-dictionary/description/
 """
 In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order.
 The order of the alphabet is some permutation of lowercase letters.
@@ -24,21 +23,10 @@ Note:
 order.length == 26
 All characters in words[i] and order are english lowercase letters.
 """
-# 用新的字母顺序表判断所给的数组是否为有序的
-
-
 class Solution(object):
     def isAlienSorted(self, words, order):
-        """
-        :type words: List[str]
-        :type order: str
-        :rtype: bool
-        """
         d = {v: i for i, v in enumerate(order)}
         encode_words = []
-        # for word in words:
-        #     encode_word = ''.join([d[l] for l in word])
-        #     encode_words.append(encode_word)
         encode_words = [[d[l] for l in word] for word in words]
         return sorted(encode_words) == encode_words
 if __name__ == '__main__':

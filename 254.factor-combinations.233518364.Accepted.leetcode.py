@@ -1,10 +1,7 @@
 import time
-
-
 class Solution(object):
     def getFactors(self, n):
         return self.factorise(n, 2, [], [])
-
     def factorise(self, n, trial, partial, factors):
         while trial * trial <= n:
             if n % trial == 0:
@@ -12,8 +9,6 @@ class Solution(object):
                 self.factorise(n // trial, trial, partial + [trial], factors)
             trial += 1
         return factors
-
-
 class Solution2(object):
     def getFactors(self, n):
         stack = [(n, 2, [])]

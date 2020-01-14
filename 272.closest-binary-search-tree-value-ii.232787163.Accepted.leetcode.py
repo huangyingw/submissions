@@ -16,13 +16,10 @@ class Solution(object):
                 else:
                     res.append(stk2.pop())
         return res
-
     def inorder(self, root, reverse, target, stk):
         if root is None:
             return
         self.inorder(root.right, reverse, target, stk) if reverse else self.inorder(root.left, reverse, target, stk)
-        # The first inequality is less than or equal, the second inequality must be larger than (without equal).
-        # Or the first is less than, the second is larger than or equal to
         if not reverse and target <= root.val:
             return
         if reverse and target > root.val:

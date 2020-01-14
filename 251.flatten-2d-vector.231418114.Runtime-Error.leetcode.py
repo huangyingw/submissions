@@ -8,12 +8,10 @@ class Vector2D(object):
                 self.col = 0
                 break
             self.row += 1
-
     def next(self):
         ret = self.vec[self.row][self.col]
         self.col += 1
         return ret
-
     def hasNext(self):
         if self.row == len(self.vec):
             return False

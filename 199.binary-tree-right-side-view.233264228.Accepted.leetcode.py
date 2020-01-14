@@ -3,8 +3,6 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution(object):
     def rightSideView(self, root):
         if not root:
@@ -21,14 +19,11 @@ class Solution(object):
                     next_layer.append(node.right)
             layer = next_layer
         return right_view
-
-
 class Solution2(object):
     def rightSideView(self, root):
         right_side = []
         self.recursive(root, 0, right_side)
         return right_side
-
     def recursive(self, node, depth, right_side):
         if not node:
             return

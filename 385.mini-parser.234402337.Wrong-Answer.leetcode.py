@@ -5,13 +5,9 @@ class NestedInteger:
     def setInteger(self, value):
     def getInteger(self):
     def getList(self):
-
-
 class Solution:
     def deserialize(self, s):
         return eval(s)
-
-
 class Solution:
     def deserialize(self, s):
         if s[0] != '[':

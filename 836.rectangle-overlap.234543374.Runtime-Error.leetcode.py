@@ -3,8 +3,6 @@ class Solution1:
         if (rec1[0] <= rec2[0] < rec1[2] or rec2[0] <= rec1[0] < rec2[2]) and (rec1[1] <= rec2[1] < rec1[3] or rec2[1] <= rec1[1] < rec2[3]):
             return True
         return False
-
-
 class Solution2:
     def isRectangleOverlap(self, rec1, rec2):
         x1, y1, x2, y2 = rec1

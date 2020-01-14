@@ -16,7 +16,6 @@ class Solution(object):
             nums[start] = nums[right]
             nums[right] = pivot
             return right
-
         def select(left, right):
             pivot = partition(left, right)
         return select(0, len(nums) - 1)

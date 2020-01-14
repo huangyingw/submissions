@@ -6,7 +6,6 @@ class Solution:
                 if A[i] == B[j]:
                     memo[i][j] = memo[i + 1][j + 1] + 1
         return max(max(row) for row in memo)
-
     def findLength2(self, A, B):
         def check(length):
             seen = {A[i:i + length]

@@ -4,7 +4,6 @@ class Solution(object):
         for index in range(len(A)):
             cumm_sum.append(cumm_sum[index] + A[index])
         result = 0
-
         def valid(index_i, index_j):
             return index_i + L <= len(A) and index_j + M <= len(A) and(index_j >= index_i + L or index_i >= index_j + M)
         for index_i in range(len(A)):

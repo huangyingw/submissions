@@ -18,7 +18,6 @@ class Solution:
                 else:
                     return False
         return True
-
     def checkzero(self, nums, n):
         if nums[n] != 0:
             return n

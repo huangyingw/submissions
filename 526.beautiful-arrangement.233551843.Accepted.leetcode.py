@@ -2,7 +2,6 @@ class Solution(object):
     def countArrangement(self, N):
         used = [False for _ in range(N + 1)]
         self.count = 0
-
         def helper(i):
             if i == 0:
                 self.count += 1

@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def findAndReplacePattern(self, words, pattern):
         def canonical(s):

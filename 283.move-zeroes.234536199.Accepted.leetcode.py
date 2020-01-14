@@ -4,7 +4,6 @@ class Solution:
             if nums[i] == 0:
                 nums.remove(0)
                 nums.append(0)
-
     def moveZeroes(self, nums):
         left = 0
         for num in nums:

@@ -1,7 +1,6 @@
 class Solution:
     def rotate(self, matrix):
         matrix[::] = list(zip(*matrix[::-1]))
-
     def rotate(self, matrix):
         matrix.reverse()
         for i in range(len(matrix)):

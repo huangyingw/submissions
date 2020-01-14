@@ -2,7 +2,6 @@ class Solution(object):
     def findSecondMinimumValue(self, root):
         min_val = root.val
         self.second_min = float("inf")
-
         def helper(node):
             if not node:
                 return

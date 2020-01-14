@@ -8,7 +8,6 @@ class ValidWordAbbr(object):
                 d[k] = set()
             d[k].add(v)
         self.d = d
-
     def isUnique(self, word):
         key = self.c2k(word)
         if not self.d.get(key):

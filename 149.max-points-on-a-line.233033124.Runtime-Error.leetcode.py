@@ -1,17 +1,5 @@
-# Definition for a point.
-# class Point(object):
-#     def __init__(self, a=0, b=0):
-#         self.x = a
-#         self.y = b
-
-
 class Solution(object):
     def maxPoints(self, points):
-        """
-        :type points: List[Point]
-        :rtype: int
-        """
-        # map all possible angle
         if points is None or len(points) == 0:
             return 0
         ls = len(points)
@@ -39,7 +27,6 @@ class Solution(object):
                 max_point = max(max_point, line_map[x][y])
             res = max(res, max_point + overlap + 1)
         return res
-
     def generateGCD(self, x, y):
         if y == 0:
             return x

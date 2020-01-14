@@ -1,9 +1,5 @@
 class Solution(object):
     def connect(self, root):
-        """
-        :type root: TreeLinkNode
-        :rtype: nothing
-        """
         if not root:
             return
         queue = collections.deque()

@@ -1,4 +1,3 @@
-# https://leetcode.com/problems/longest-word-in-dictionary/description/
 """
 Given a list of strings words representing an English Dictionary,
 find the longest word in words that can be built one character at a time by other words in words.
@@ -18,17 +17,8 @@ Explanation:
 Both "apply" and "apple" can be built from other words in the dictionary. However, "apple" is lexicographically small
 """
 from collections import defaultdict
-
-
 class Solution(object):
-    # 1
-    # 使用difaultdict可以一个key映射一个list类型的value
-    # 将长度相同的word装入同一个桶中
     def longestWord1(self, words):
-        """
-        :type words: List[str]
-        :rtype: str
-        """
         seen, res = set(""), ""
         buckets = defaultdict(list)
         min_len, max_len = float('inf'), float('-inf')
@@ -43,14 +33,7 @@ class Solution(object):
                     if len(w) > len(res) or (len(w) == len(res) and res > w):
                         res = w
         return res
-    # 2
-    # 先排序
-
     def longestWord2(self, words):
-        """
-        :type words: List[str]
-        :rtype: str
-        """
         max_len = 0
         ans = ""
         words.sort(key=lambda x: len(x))

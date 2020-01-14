@@ -6,7 +6,6 @@ class Solution(object):
         for i in range(ls - 1):
             res += self.twoSumSmaller(nums, i + 1, target - nums[i])
         return res
-
     def twoSumSmaller(self, nums, start, target):
         res, left, right = 0, start, len(nums) - 1
         while left < right:

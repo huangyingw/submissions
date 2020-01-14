@@ -1,9 +1,5 @@
 class Solution(object):
     def canAttendMeetings(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: bool
-        """
         if not intervals:
             return True
         intervals.sort(key=lambda val: val.start)

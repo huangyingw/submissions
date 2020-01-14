@@ -13,7 +13,6 @@ class Solution:
             if curr.left:
                 stack.append((curr.left, val - curr.left.val, ls + [curr.left.val]))
         return res
-
     def pathSum(self, root, s):
         if not root:
             return []

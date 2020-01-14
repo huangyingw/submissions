@@ -1,7 +1,5 @@
 def read4(buf):
     pass
-
-
 class Solution:
     def read(self, buf, n):
         total_chars, last_chars = 0, 4

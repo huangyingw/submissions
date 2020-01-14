@@ -9,7 +9,6 @@ class Solution:
                     chessboard[row][col] = 'Q'
                     dfs(row + 1)
                     chessboard[row][col] = '.'
-
         def isValid(row, col):
             for i in range(row):
                 for j in range(n):

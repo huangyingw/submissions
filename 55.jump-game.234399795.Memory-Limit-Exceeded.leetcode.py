@@ -2,7 +2,6 @@ class Solution:
     def canJump(self, nums):
         memo = [0] * len(nums)
         memo[-1] = 1
-
         def canJumpFromPosition(position, nums):
             if memo[position] != 0:
                 return True if memo[position] == 1 else False
@@ -14,8 +13,6 @@ class Solution:
             memo[position] = -1
             return False
         return canJumpFromPosition(0, nums)
-
-
 class Solution2:
     def canJump(self, nums):
         memo = [0] * len(nums)
@@ -27,8 +24,6 @@ class Solution2:
                     memo[i] = 1
                     break
         return memo[0] == 1
-
-
 class Solution3:
     def canJump(self, nums):
         lastPos = len(nums) - 1

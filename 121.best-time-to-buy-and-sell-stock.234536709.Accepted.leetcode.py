@@ -1,6 +1,4 @@
 import sys
-
-
 class Solution:
     def maxProfit(self, prices):
         minPrice = sys.maxsize

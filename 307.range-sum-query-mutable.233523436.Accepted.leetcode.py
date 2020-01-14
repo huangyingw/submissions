@@ -8,13 +8,11 @@ class NumArray(object):
                 self.bin_sums.append(num)
             else:
                 self.bin_sums[-1] += num
-
     def update(self, i, val):
         bin_i = i // self.width
         diff = val - self.nums[i]
         self.bin_sums[bin_i] += diff
         self.nums[i] = val
-
     def sumRange(self, i, j):
         bin_i, bin_j = i // self.width, j // self.width
         range_sum = sum(self.bin_sums[bin_i:bin_j])

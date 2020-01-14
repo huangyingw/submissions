@@ -1,7 +1,5 @@
 from collections import defaultdict
 import heapq
-
-
 class Solution(object):
     def medianSlidingWindow(self, nums, k):
         lower, upper = [], []

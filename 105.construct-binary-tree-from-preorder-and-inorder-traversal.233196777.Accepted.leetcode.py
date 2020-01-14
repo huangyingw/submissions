@@ -1,7 +1,6 @@
 class Solution(object):
     def buildTree(self, preorder, inorder):
         self.index = 0
-
         def recursive(preorder, inorder, start, end):
             if start > end:
                 return None

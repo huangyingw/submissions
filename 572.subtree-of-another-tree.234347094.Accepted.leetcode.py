@@ -5,7 +5,6 @@ class Solution:
         if self.isEqual(s, t):
             return True
         return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
-
     def isEqual(self, m, n):
         if not m or not n:
             return m is n

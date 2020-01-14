@@ -1,13 +1,10 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def leadsToDestination(self, n, edges, source, destination):
         visited = set()
         edge_dict = defaultdict(set)
         for start, end in edges:
             edge_dict[start].add(end)
-
         def can_reach_dest(node):
             if node == destination and len(edge_dict[node]) == 0:
                 return True

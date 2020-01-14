@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def accountsMerge(self, accounts):
         email_to_account = defaultdict(list)
@@ -9,7 +7,6 @@ class Solution(object):
                 email_to_account[email].append(i)
         result = []
         visited = [False for _ in range(len(accounts))]
-
         def dfs(i):
             emails = set()
             if visited[i]:

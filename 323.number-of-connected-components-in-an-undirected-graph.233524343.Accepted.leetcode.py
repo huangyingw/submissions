@@ -2,7 +2,6 @@ class Solution(object):
     def countComponents(self, n, edges):
         parents = [i for i in range(n)]
         components = n
-
         def update_parent(node):
             while node != parents[node]:
                 parents[node] = parents[parents[node]]

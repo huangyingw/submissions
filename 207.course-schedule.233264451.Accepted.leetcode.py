@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         nb_prerequisites = defaultdict(int)

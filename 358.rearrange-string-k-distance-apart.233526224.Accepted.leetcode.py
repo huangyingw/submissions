@@ -1,7 +1,5 @@
 from collections import Counter
 import heapq
-
-
 class Solution(object):
     def rearrangeString(self, s, k):
         freq = Counter(s)

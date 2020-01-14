@@ -2,8 +2,6 @@ class Interval(object):
     def __init__(self, s=0, e=0):
         self.start = s
         self.end = e
-
-
 class Solution(object):
     def findRightInterval(self, intervals):
         intervals = [[intervals[i], i] for i in range(len(intervals))]

@@ -3,7 +3,6 @@ class Solution(object):
         map = {}
         for idx, val in enumerate(inorder):
             map[val] = idx
-
         def dfs(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None

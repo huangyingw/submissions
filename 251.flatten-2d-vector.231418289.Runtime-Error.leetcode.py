@@ -1,10 +1,8 @@
 class Vector2D(object):
     def __init__(self, vec2d):
         self.i = iter(vec2d)
-
     def next(self):
         return self.val
-
     def hasNext(self):
         if not hasattr(self, 'j'):
             try:

@@ -8,7 +8,6 @@ class Solution(object):
         tree_sum = make_sum(root)
         if tree_sum % 2 == 1:
             return False
-
         def find_split(node):
             if not node:
                 return False

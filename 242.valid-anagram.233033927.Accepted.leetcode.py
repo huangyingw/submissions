@@ -1,20 +1,5 @@
 class Solution(object):
-    # def isAnagram(self, s, t):
-    #     """
-    #     :type s: str
-    #     :type t: str
-    #     :rtype: bool
-    #     """
-    #     # sort
-    #     return sorted(s) == sorted(t)
     def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
-        # hash
-        # https://leetcode.com/articles/valid-anagram/
         if len(s) != len(t):
             return False
         counter = [0] * 26

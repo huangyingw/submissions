@@ -1,6 +1,4 @@
 import math
-
-
 class Solution(object):
     def isPowerOfFour(self, num):
         if num <= 0:

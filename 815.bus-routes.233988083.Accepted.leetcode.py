@@ -1,6 +1,4 @@
 from collections import defaultdict
-
-
 class Solution(object):
     def numBusesToDestination(self, routes, S, T):
         routes = [set(route) for route in routes]

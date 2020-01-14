@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution(object):
     def maxSlidingWindow(self, nums, k):
         q = deque()

@@ -1,6 +1,4 @@
 from collections import deque, defaultdict
-
-
 class Solution:
     def verticalOrder(self, root):
         if not root:

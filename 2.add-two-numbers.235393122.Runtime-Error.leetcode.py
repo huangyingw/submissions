@@ -3,7 +3,6 @@ class Solution:
         ans = []
         z = 0
         return self.add(l1, l2, ans, z)
-
     def add(self, l1, l2, ans, z):
         if l1.next == None and l2.next == None:
             n = l1.val + l2.val + z

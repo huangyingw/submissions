@@ -1,7 +1,5 @@
 import heapq
 from collections import Counter
-
-
 class Solution:
     def rearrangeString(self, s, k):
         if k == 0:

@@ -1,7 +1,6 @@
 class Solution:
     def cleanRoom(self, robot):
         visited = set()
-
         def dfs(x, y, dx, dy):
             robot.clean()
             visited.add((x, y))

@@ -1,12 +1,6 @@
 class Solution:
     def validTree(self, n, edges):
-        """
-        :type n: int
-        :type edges: List[List[int]]
-        :rtype: bool
-        """
         union_arr = range(n)
-
         def find_union(p):
             if union_arr[p] == p:
                 return p

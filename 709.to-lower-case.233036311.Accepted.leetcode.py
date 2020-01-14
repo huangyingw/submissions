@@ -1,9 +1,5 @@
 class Solution(object):
     def toLowerCase(self, str):
-        """
-        :type str: str
-        :rtype: str
-        """
         res = []
         gap = ord('a') - ord('A')
         for c in str:
@@ -12,5 +8,3 @@ class Solution(object):
             else:
                 res.append(c)
         return ''.join(res)
-    # def toLowerCase(self, str):
-    #     return str.lower()

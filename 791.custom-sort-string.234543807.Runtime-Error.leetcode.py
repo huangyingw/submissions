@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution:
     def customSortString(self, S, T):
         c = Counter(T)

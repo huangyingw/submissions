@@ -12,7 +12,6 @@ class NumMatrix(object):
                 if c != 0 and r != 0:
                     matrix[r][c] -= matrix[r - 1][c - 1]
         self.matrix = matrix
-
     def sumRegion(self, row1, col1, row2, col2):
         region = self.matrix[row2][col2]
         if col1 != 0:

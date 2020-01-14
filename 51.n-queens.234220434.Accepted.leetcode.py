@@ -6,7 +6,6 @@ class Solution(object):
         board = [['.'] * n for t in range(n)]
         self.do_solveNQueens(res, board, n)
         return res
-
     def do_solveNQueens(self, res, board, num):
         if num == 0:
             res.append([''.join(t) for t in board])

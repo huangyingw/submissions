@@ -14,8 +14,6 @@ class Solution:
                     queue.append(front.right)
             elif queue:
                 queue.append(None)
-
-
 class Solution:
     def connect(self, root):
         if not root:
@@ -38,7 +36,6 @@ class Solution:
                 root = root.right
             else:
                 root = self.getNext(root)
-
     def getNext(self, node):
         node = node.next
         while node:

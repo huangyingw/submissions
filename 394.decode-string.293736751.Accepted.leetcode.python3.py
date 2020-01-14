@@ -2,7 +2,6 @@ class Solution(object):
     def decodeString(self, s):
         self.i = 0
         return "".join(self.decode(s))
-
     def decode(self, s):
         result = []
         while self.i < len(s) and s[self.i] != "]":

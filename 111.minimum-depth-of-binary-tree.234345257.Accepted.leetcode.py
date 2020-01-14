@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution:
     def minDepth(self, root):
         if not root:

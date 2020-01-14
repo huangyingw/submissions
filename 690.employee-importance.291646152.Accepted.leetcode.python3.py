@@ -1,6 +1,4 @@
 from collections import deque
-
-
 class Solution(object):
     def getImportance(self, employees, id):
         e = {e.id: e for e in employees}

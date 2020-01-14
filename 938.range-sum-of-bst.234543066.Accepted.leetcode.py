@@ -1,7 +1,6 @@
 class Solution:
     def rangeSumBST(self, root, L, R):
         self.ans = 0
-
         def dfs(node):
             if node:
                 if L <= node.val <= R:
@@ -12,8 +11,6 @@ class Solution:
                     dfs(node.right)
         dfs(root)
         return self.ans
-
-
 class Solution:
     def rangeSumBST(self, root, L, R):
         ans = 0

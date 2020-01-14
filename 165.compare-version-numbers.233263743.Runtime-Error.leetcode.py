@@ -1,6 +1,4 @@
 import itertools
-
-
 class Solution(object):
     def compareVersion(self, version1, version2):
         v1 = [int(v) for v in version1.split('.')]

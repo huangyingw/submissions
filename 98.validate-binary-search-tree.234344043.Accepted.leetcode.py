@@ -3,8 +3,6 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
-
-
 class Solution:
     def isValidBST(self, root):
         stack, prev, curr = [], None, root

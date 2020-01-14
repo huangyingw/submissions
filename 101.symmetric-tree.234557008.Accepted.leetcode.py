@@ -3,7 +3,6 @@ class Solution(object):
         if not root:
             return True
         return self.isMirror(root, root)
-
     def isMirror(self, l, r):
         if not l and not r:
             return True

@@ -1,7 +1,6 @@
 class Solution(object):
     def __init__(self):
         self.result = []
-
     def dfs(self, root, current):
         if not root:
             return
@@ -9,7 +8,6 @@ class Solution(object):
             self.result.append(current + root.val)
         self.dfs(root.left, current + root.val + '->')
         self.dfs(root.right, current + root.val + '->')
-
     def binaryTreePaths(self, root):
         self.dfs(root, '')
         return self.result

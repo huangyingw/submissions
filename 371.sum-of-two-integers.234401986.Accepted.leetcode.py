@@ -2,7 +2,6 @@ class Solution:
     def getSum(self, a, b):
         tmp = [a, b]
         return sum(tmp)
-
     def getSum(self, a, b):
         MOD = 0xFFFFFFFF
         MAX_INT = 0x7FFFFFFF

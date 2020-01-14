@@ -1,7 +1,6 @@
 class Solution(object):
     def generateParenthesis(self, n):
         result = []
-
         def dfs(current, left, right):
             if right > left or left > n:
                 return

@@ -17,7 +17,6 @@ class Solution:
         if flag == 1:
             return res + 1
         return res
-
     def longestPalindrome(self, s):
         letter = [chr(i) for i in range(ord('a'), ord('z') + 1)] + [chr(j) for j in range(ord('A'), ord('Z') + 1)]
         result = 0

@@ -1,7 +1,6 @@
 class Solution:
     def __init__(self):
         self.memo = {}
-
     def isScramble(self, s1, s2):
         if (s1, s2) in self.memo:
             return self.memo[(s1, s2)]

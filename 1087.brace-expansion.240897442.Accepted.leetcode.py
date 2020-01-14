@@ -11,7 +11,6 @@ class Solution(object):
             groups.append(sorted(S[group_start:group_end].split(",")))
             group_start = group_end + 1
         results = []
-
         def expand(group, partial):
             if group == len(groups):
                 results.append(partial)

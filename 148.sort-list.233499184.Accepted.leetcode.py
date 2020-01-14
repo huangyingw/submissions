@@ -2,8 +2,6 @@ class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
-
 class Solution(object):
     def sortList(self, head):
         if not head or not head.next:
@@ -15,7 +13,6 @@ class Solution(object):
         one = self.sortList(head)
         two = self.sortList(slow)
         return self.merge(one, two)
-
     def merge(self, one, two):
         dummy = merged = ListNode(None)
         while one and two:

@@ -1,6 +1,4 @@
 from collections import Counter, defaultdict
-
-
 class Solution:
     def wordSubsets(self, A, B):
         required = defaultdict(int)

@@ -1,6 +1,4 @@
 import fractions
-
-
 class Solution:
     def maxPoints(self, points):
         if len(points) <= 2:

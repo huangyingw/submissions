@@ -1,7 +1,6 @@
 class Solution(object):
     def soupServings(self, N):
         memo = {}
-
         def helper(A, B):
             if A <= 0 and B <= 0:
                 return 0.5

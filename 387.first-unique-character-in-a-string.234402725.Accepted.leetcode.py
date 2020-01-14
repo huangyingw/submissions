@@ -4,7 +4,6 @@ class Solution:
             if s.count(s[i]) == 1:
                 return i
         return -1
-
     def firstUniqChar(self, s):
         res = []
         ret = len(s)
@@ -16,7 +15,6 @@ class Solution:
         for i in res:
             ret = min(ret, s.index(i))
         return ret
-
     def firstUniqChar(self, s):
         if not s:
             return -1

@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def isScramble(self, s1, s2):
         count1 = Counter(s1)
@@ -19,7 +17,6 @@ class Solution(object):
             s2_r = s2[partition:]
             s2_l_swap = s2[:-partition]
             s2_r_swap = s2[-partition:]
-            if (self.isScramble(s1_l, s2_l) and self.isScramble(s1_r, s2_r)) or \
-                    (self.isScramble(s1_l, s2_r_swap) and self.isScramble(s1_r, s2_l_swap)):
+            if (self.isScramble(s1_l, s2_l) and self.isScramble(s1_r, s2_r)) or (self.isScramble(s1_l, s2_r_swap) and self.isScramble(s1_r, s2_l_swap)):
                 return True
         return False

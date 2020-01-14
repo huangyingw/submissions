@@ -1,9 +1,5 @@
 class Solution(object):
     def divisorGame(self, N):
-        """
-        :type N: int
-        :rtype: bool
-        """
         if N == 0:
             return False
         move = 0

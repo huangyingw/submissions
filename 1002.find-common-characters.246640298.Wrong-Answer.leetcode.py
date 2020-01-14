@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def commonChars(self, A):
         counts = Counter(A[0])

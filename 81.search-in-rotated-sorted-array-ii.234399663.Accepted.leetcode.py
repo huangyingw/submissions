@@ -29,6 +29,5 @@ class Solution:
         if nums[left] == target:
             return True
         return True if nums[right] == target else False
-
     def search(self, nums, target):
         return target in nums

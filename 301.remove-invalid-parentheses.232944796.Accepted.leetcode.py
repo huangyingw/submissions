@@ -8,7 +8,6 @@ class Solution(object):
             if ans:
                 return ans
             q = {cur[:i] + cur[i + 1:] for cur in q for i in xrange(len(cur))}
-
     def isValidParentheses(self, s):
         cnt = 0
         for c in s:

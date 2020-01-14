@@ -1,6 +1,4 @@
 class Solution:
-    # @param root, a tree node
-    # @return nothing
     def connect(self, root):
         if None == root:
             return []

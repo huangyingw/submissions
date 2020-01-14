@@ -1,9 +1,5 @@
 class Solution(object):
     def flatten(self, root):
-        """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
-        """
         if root is None:
             return
         if root.left is None and root.right is None:
@@ -18,7 +14,6 @@ class Solution(object):
                 current.right = node
                 current.left = None
                 current = node
-
     def appendNode(self, stack, node):
         if node:
             stack.append(node)

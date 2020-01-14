@@ -9,7 +9,6 @@ class Solution:
             if temp_list[i] != temp_list[l - 1 - i]:
                 return False
         return True
-
     def isPalindrome(self, head):
         fast = slow = head
         while fast and fast.next:

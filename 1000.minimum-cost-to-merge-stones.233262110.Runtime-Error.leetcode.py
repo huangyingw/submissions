@@ -1,8 +1,4 @@
-_author_ = 'jake'
-_project_ = 'leetcode'
 import functools
-
-
 class Solution:
     def mergeStones(self, stones, K):
         n = len(stones)
@@ -11,7 +7,6 @@ class Solution:
         prefix_sum = [0] * (n + 1)
         for i in range(n):
             prefix_sum[i + 1] = prefix_sum[i] + stones[i]
-
         @functools.lru_cache(None)
         def helper(i, j):
             if j - i + 1 < K:

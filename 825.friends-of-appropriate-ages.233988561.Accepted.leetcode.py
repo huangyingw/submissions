@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 class Solution(object):
     def numFriendRequests(self, ages):
         freq = Counter(ages)

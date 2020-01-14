@@ -1,11 +1,8 @@
 from collections import defaultdict, deque
-
-
 class Solution(object):
     def catMouseGame(self, graph):
         DRAW, MOUSE, CAT = 0, 1, 2
         n = len(graph)
-
         def parents(mouse, cat, turn):
             if turn == CAT:
                 return [(new_mouse, cat, 3 - turn) for new_mouse in graph[mouse]]
