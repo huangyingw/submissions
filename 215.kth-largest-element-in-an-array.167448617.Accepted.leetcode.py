@@ -19,6 +19,7 @@ class Solution(object):
             nums[left] = nums[j]
             nums[j] = pivot
             return j
+
         def select(left, right):
             pivot = partition(left, right)
             if pivot + 1 == k:

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def canConvert(self, str1, str2):
         if len(set(str2)) == 26 and str1 != str2:

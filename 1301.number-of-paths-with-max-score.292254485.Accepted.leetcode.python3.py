@@ -3,6 +3,7 @@ class Solution(object):
         MOD = 10 ** 9 + 7
         rows, cols = len(board), len(board[0])
         visited = {}
+
         def helper(r, c):
             if r < 0 or c < 0 or board[r][c] == "X":
                 return [0, 0]

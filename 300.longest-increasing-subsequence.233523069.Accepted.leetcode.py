@@ -8,6 +8,7 @@ class Solution(object):
             else:
                 LIS[list_nb + 1] = min(num, LIS[list_nb + 1])
         return len(LIS)
+
     def binary_search(self, num, LIS):
         left, right = 0, len(LIS) - 1
         while left <= right:

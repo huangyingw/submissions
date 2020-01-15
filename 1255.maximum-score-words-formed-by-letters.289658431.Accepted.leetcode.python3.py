@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def maxScoreWords(self, words, letters, score):
         char_counts = Counter(letters)
@@ -6,11 +8,13 @@ class Solution(object):
         a = ord("a")
         for word in words:
             word_scores.append(sum(score[ord(c) - a] for c in word))
+
         def can_make(word_counts):
             for c, count in word_counts.items():
                 if c not in char_counts or char_counts[c] < count:
                     return False
             return True
+
         def helper(i):
             if i == len(words):
                 return 0

@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def isSameTree(self, p, q):
         if not p and not q:

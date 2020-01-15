@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def originalDigits(self, s):
         digit_freq = [0] * 10

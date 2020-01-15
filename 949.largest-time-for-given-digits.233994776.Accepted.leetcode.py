@@ -1,4 +1,6 @@
 from itertools import permutations
+
+
 class Solution(object):
     def largestTimeFromDigits(self, A):
         best_minutes = -1

@@ -2,9 +2,12 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.isWord = False
+
+
 class WordDictionary:
     def __init__(self):
         self.root = TrieNode()
+
     def addWord(self, word):
         node = self.root
         for c in word:
@@ -16,9 +19,11 @@ class WordDictionary:
     @param: word: A word could contain the dot character '.' to represent any one letter.
     @return: if the word is in the data structure.
     """
+
     def search(self, word):
         node = self.root
         return self.helper(word, node)
+
     def helper(self, word, node):
         if len(word) == 0:
             return node.isWord

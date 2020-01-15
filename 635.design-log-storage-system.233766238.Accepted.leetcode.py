@@ -2,8 +2,10 @@ class LogSystem(object):
     def __init__(self):
         self.prefixes = {"Year": 4, "Month": 7, "Day": 10, "Hour": 13, "Minute": 16, "Second": 19}
         self.logs = []
+
     def put(self, id, timestamp):
         self.logs.append((id, timestamp))
+
     def retrieve(self, s, e, gra):
         result = []
         pref = self.prefixes[gra]
@@ -12,15 +14,20 @@ class LogSystem(object):
             if s_prefix <= timestamp[:pref] <= e_prefix:
                 result.append(id)
         return result
+
+
 class LogNode(object):
     def __init__(self, nb_children):
         self.ids = set()
         self.children = [None for _ in range(nb_children)]
+
+
 class LogSystem2(object):
     def __init__(self):
         self.periods = ["Year", "Month", "Day", "Hour", "Minute", "Second"]
         self.nb_children = {"Year": 13, "Month": 32, "Day": 24, "Hour": 60, "Minute": 60, "Second": 0}
         self.root = LogNode(18)
+
     def put(self, id, timestamp):
         timelist = timestamp.split(":")
         timelist[0] = int(timelist[0]) - 2000
@@ -30,6 +37,7 @@ class LogSystem2(object):
                 node.children[int(t)] = LogNode(self.nb_children[period])
             node = node.children[int(t)]
             node.ids.add(id)
+
     def retrieve(self, s, e, gra):
         s_list, e_list = s.split(":"), e.split(":")
         s_list[0], e_list[0] = int(s_list[0]) - 2000, int(e_list[0]) - 2000

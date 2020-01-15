@@ -22,6 +22,8 @@ class Solution(object):
                     new_dp[r][c] %= 10 ** 9 + 7
             dp = new_dp
         return paths
+
+
 class Solution2(object):
     def findPaths(self, m, n, N, i, j):
         def helper(r, c, steps):

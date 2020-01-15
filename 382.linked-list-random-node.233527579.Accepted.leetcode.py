@@ -1,4 +1,6 @@
 import random
+
+
 class Solution(object):
     def __init__(self, head):
         self.head = head
@@ -6,6 +8,7 @@ class Solution(object):
         while head:
             self.count += 1
             head = head.next
+
     def getRandom(self):
         randnode = random.randint(0, self.count - 1)
         node = self.head

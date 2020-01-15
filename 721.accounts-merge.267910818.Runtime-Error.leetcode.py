@@ -17,6 +17,7 @@ class Solution:
         for k, v in unions.items():
             result.append([names[k]] + sorted(list(v)))
         return result
+
     def find(self, node, roots):
         root = node
         while root != roots[root]:

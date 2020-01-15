@@ -5,6 +5,8 @@ class Solution1:
             cash = max(cash, hold + prices[i] - fee)
             hold = max(hold, cash - prices[i])
         return cash
+
+
 class Solution2:
     def maxProfit(self, prices, fee):
         if not prices:

@@ -2,6 +2,7 @@ class Solution(object):
     def minDiffInBST(self, root):
         self.min_diff = float("inf")
         self.prev = float("-inf")
+
         def inorder(node):
             if not node:
                 return

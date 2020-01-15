@@ -7,6 +7,7 @@ class Codec:
             encoding.append('*')
             encoding.append(s)
         return "".join(encoding)
+
     def decode(self, s):
         decoding = []
         i = 0

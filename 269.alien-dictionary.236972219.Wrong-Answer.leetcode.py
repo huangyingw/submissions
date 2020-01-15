@@ -14,8 +14,10 @@ class Solution(object):
             if self.topSortDFS(node, node, ancestors, visited, result):
                 return ""
         return "".join(result)
+
     def findEdges(self, word1, word2, ancestors):
         min_len = min(len(word1), len(word2))
+
     def topSortDFS(self, root, node, ancestors, visited, result):
         if node not in visited:
             visited[node] = root

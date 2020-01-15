@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def isRectangleCover(self, rectangles):
         min_r, min_c = float("inf"), float("inf")

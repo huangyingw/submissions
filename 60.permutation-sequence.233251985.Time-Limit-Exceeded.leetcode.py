@@ -3,6 +3,7 @@ class Solution(object):
         nums = []
         for index in range(1, n + 1):
             nums.append(index)
+
         def permute(nums):
             if len(nums) == 0:
                 return []

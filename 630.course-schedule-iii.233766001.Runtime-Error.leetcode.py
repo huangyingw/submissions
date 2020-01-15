@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def scheduleCourse(self, courses):
         total_length = 0

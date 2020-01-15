@@ -9,6 +9,7 @@ class Codec:
                 string = serializeHelper(root.right, string)
             return string
         return serializeHelper(root, "")
+
     def deserialize(self, data):
         def deserializeHeper(l):
             if l[0] == "None":

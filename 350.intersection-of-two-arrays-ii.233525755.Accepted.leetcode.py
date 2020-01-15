@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def intersect(self, nums1, nums2):
         freq1 = Counter(nums1)

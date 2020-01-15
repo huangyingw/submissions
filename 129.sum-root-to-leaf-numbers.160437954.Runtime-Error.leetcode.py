@@ -1,6 +1,7 @@
 class Solution(object):
     def sumNumbers(self, root):
         self.sum = 0
+
         def dfs(root, base):
             if not root.left and not root.right:
                 self.sum += root.val + base

@@ -1,6 +1,7 @@
 class Solution(object):
     def valid(self, row, col, row_size, col_size):
         return row >= 0 and col >= 0 and row < row_size and col < col_size
+
     def orangesRotting(self, grid):
         queue = []
         for row_index in range(len(grid)):

@@ -1,9 +1,12 @@
 import heapq
+
+
 class f(object):
     def __init__(self, x, h, s):
         self.x = x
         self.h = h
         self.s = s
+
     def __lt__(self, other):
         if self.x != other.x:
             return self.x < other.x
@@ -14,6 +17,8 @@ class f(object):
                 return self.h < other.h
             else:
                 return self.s > other.s
+
+
 class Solution(object):
     def getSkyline(self, buildings):
         if len(buildings) == 0:

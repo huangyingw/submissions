@@ -6,12 +6,14 @@ class Solution(object):
         right = middleNode.next
         middleNode.next = None
         return self.mergeList(self.sortList(head), self.sortList(right))
+
     def findMiddleNode(self, head):
         slow, fast = head, head.next
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
         return slow
+
     def mergeList(self, left, right):
         dummy = ListNode(None)
         node = dummy

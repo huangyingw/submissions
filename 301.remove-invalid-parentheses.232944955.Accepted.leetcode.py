@@ -12,6 +12,7 @@ class Solution(object):
                         visited.add(ns)
                         ans.extend(dfs(ns))
             return ans
+
         def calc(s):
             a = b = 0
             for c in s:

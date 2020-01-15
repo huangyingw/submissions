@@ -4,6 +4,7 @@ class Solution(object):
             str((ord(word[i]) - ord(word[i - 1])) % 26)
             for i in range(1, len(word))]
         )
+
     def groupStrings(self, strings):
         r = collections.defaultdict(list)
         for s in strings:

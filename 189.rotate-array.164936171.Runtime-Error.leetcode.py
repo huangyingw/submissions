@@ -3,6 +3,7 @@ class Solution(object):
         while left < right:
             nums[left], nums[right] = nums[right], nums[left]
             left, right = left + 1, right - 1
+
     def rotate(self, nums, k):
         self.reverse(nums, 0, len(nums) - 1)
         self.reverse(nums, 0, k - 1)

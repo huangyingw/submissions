@@ -1,6 +1,7 @@
 class Solution(object):
     def buildTree(self, preorder, inorder):
         map = {}
+
         def dfs(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None

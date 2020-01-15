@@ -17,6 +17,7 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return seen
+
     def generateMatrix2(self, n):
         ret = [[0] * n for _ in range(n)]
         i = j = d = 0

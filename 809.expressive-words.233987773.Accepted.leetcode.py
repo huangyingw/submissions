@@ -1,7 +1,10 @@
 from collections import namedtuple
+
+
 class Solution(object):
     def expressiveWords(self, S, words):
         Groups = namedtuple("groups", ["chars", "counts"])
+
         def get_groups(word):
             groups = Groups(chars=[], counts=[])
             count = 1

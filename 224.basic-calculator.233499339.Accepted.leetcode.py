@@ -14,6 +14,7 @@ class Solution(object):
         expression.append(')')
         result, _ = self.evaluate(expression, 1)
         return result
+
     def evaluate(self, expression, i):
         calc, operator = 0, '+'
         while expression[i] != ')':

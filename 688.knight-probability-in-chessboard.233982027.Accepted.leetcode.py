@@ -3,6 +3,7 @@ class Solution(object):
         M = N // 2
         if N % 2 == 1:
             M += 1
+
         def convert(r1, c1):
             if r1 >= M:
                 r1 = N - 1 - r1

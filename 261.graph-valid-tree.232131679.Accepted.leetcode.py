@@ -9,6 +9,7 @@ class Solution(object):
             else:
                 root[root1] = root2
         return len(edges) == n - 1
+
     def find(self, root, e):
         if root[e] == e:
             return e

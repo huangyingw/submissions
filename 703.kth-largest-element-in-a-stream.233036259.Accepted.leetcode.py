@@ -5,6 +5,7 @@ class KthLargest(object):
         heapq.heapify(self.nums)
         while len(self.nums) > k:
             heapq.heappop(self.nums)
+
     def add(self, val):
         if len(self.nums) < self.k:
             heapq.heappush(self.nums, val)

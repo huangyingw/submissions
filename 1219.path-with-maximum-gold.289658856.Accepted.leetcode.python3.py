@@ -2,6 +2,7 @@ class Solution(object):
     def getMaximumGold(self, grid):
         rows, cols = len(grid), len(grid[0])
         neighbours = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+
         def helper(r, c):
             if r < 0 or r >= rows or c < 0 or c >= cols:
                 return 0

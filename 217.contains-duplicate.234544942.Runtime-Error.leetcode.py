@@ -7,6 +7,7 @@ class Solution(object):
             else:
                 mapping[n] = i
         return False
+
     def containsNearbyDuplicate(self, nums, k):
         if len(set(nums)) == len(nums):
             return False

@@ -3,6 +3,7 @@ class Solution:
         from collections import Counter
         mapping = Counter(nums)
         return [i for i, v in mapping.items() if v == 2]
+
     def findDuplicates(self, nums):
         nums_unique = set(nums)
         nums_duplicate = []

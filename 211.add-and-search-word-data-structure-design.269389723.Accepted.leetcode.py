@@ -2,9 +2,12 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.isWord = False
+
+
 class WordDictionary:
     def __init__(self):
         self.root = TrieNode()
+
     def addWord(self, word):
         node = self.root
         for c in word:
@@ -12,9 +15,11 @@ class WordDictionary:
                 node.children[c] = TrieNode()
             node = node.children[c]
         node.isWord = True
+
     def search(self, word):
         node = self.root
         return self.helper(word, node)
+
     def helper(self, word, node):
         if len(word) == 0:
             return node.isWord

@@ -1,6 +1,7 @@
 class Solution(object):
     def btreeGameWinningMove(self, root, n, x):
         self.left, self.right = 0, 0
+
         def count(node):
             if not node:
                 return 0

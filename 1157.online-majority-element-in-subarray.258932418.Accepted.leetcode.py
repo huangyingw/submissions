@@ -1,11 +1,14 @@
 from collections import defaultdict
 import bisect
+
+
 class MajorityChecker(object):
     def __init__(self, arr):
         self.val_to_indices = defaultdict(list)
         for i, val in enumerate(arr):
             self.val_to_indices[val].append(i)
         self.vals = sorted(self.val_to_indices.keys(), key=lambda x: len(self.val_to_indices[x]), reverse=True)
+
     def query(self, left, right, threshold):
         for val in self.vals:
             if len(self.val_to_indices[val]) < threshold:

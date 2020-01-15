@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Codec:
     def serialize(self, root):
         def preorder(node):

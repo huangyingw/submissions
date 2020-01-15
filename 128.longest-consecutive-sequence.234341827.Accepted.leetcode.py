@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def longestConsecutive(self, nums):
         if not nums:
@@ -19,6 +21,7 @@ class Solution:
             unions[root].append(k)
         result = sorted(unions.items(), key=lambda x: len(x[1]), reverse=True)[0]
         return len(result[1])
+
     def findRoot(self, node, roots):
         while roots[node] != node:
             roots[node] = roots[roots[node]]

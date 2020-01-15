@@ -3,6 +3,7 @@ class Solution:
         self.res = root.val
         self.dfs(root)
         return self.res
+
     def dfs(self, node):
         if not node:
             return 0

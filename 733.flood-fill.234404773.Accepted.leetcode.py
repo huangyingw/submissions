@@ -4,6 +4,7 @@ class Solution(object):
         color = image[sr][sc]
         if color == newColor:
             return image
+
         def dfs(r, c):
             if image[r][c] == color:
                 image[r][c] = newColor

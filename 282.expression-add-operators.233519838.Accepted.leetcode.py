@@ -5,6 +5,7 @@ class Solution(object):
         self.num, self.target, self.expressions = num, target, []
         self.helper("", 0, 0, 0)
         return self.expressions
+
     def helper(self, path, index, eval, multed):
         if index == len(self.num) and self.target == eval:
             self.expressions.append(path)

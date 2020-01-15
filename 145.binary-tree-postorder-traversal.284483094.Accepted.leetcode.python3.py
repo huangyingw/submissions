@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def postorderTraversal(self, root):
         if not root:

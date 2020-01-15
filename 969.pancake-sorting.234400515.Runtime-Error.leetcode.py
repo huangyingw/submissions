@@ -10,6 +10,7 @@ class Solution(object):
             ans.extend([i, length])
             length -= 1
         return ans
+
     def pancakeSort2(self, A):
         res = []
         for x in range(len(A), 1, -1):

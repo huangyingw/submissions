@@ -3,11 +3,14 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def pathSum(self, root, sum):
         paths = []
         self.preorder(root, sum, [], paths)
         return paths
+
     def preorder(self, node, target, partial, paths):
         if not node:
             return

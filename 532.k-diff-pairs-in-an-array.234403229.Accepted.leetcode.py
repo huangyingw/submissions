@@ -1,4 +1,6 @@
 import collections
+
+
 class Solution(object):
     def findPairs(self, nums, k):
         if k > 0:

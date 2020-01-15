@@ -13,6 +13,8 @@ class Solution(object):
                 if grid[r][c] == 1 and (row_servers[r] > 1 or cols_servers[c] > 1):
                     result += 1
         return result
+
+
 class Solution2(object):
     def countServers(self, grid):
         rows, cols = len(grid), len(grid[0])

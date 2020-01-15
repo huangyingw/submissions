@@ -1,6 +1,7 @@
 class Solution(object):
     def kSmallestPairs(self, nums1, nums2, k):
         queue = []
+
         def push(i, j):
             if i < len(nums1) and j < len(nums2):
                 heapq.heappush(queue, [nums1[i] + nums2[j], i, j])

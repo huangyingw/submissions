@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def minimumSemesters(self, N, relations):
         course_to_next = defaultdict(list)

@@ -7,6 +7,7 @@ class Solution:
         if root:
             self.inorder(root)
         return list(self.mode)
+
     def calc_freq(self, value):
         if self.cur_item == value:
             self.cur_freq += 1
@@ -18,11 +19,14 @@ class Solution:
             self.max_freq = self.cur_freq
         elif self.max_freq == self.cur_freq:
             self.mode.append(self.cur_item)
+
     def inorder(self, root):
         if root:
             self.inorder(root.left)
             self.calc_freq(root.val)
             self.inorder(root.right)
+
+
 class Solution(object):
     def findMode(self, root):
         if not root:

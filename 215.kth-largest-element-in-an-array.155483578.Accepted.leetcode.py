@@ -16,6 +16,7 @@ class Solution(object):
             nums[start] = nums[right]
             nums[right] = pivot
             return right
+
         def select(left, right):
             pivot = partition(left, right)
             if pivot + 1 == k:

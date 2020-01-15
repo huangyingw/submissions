@@ -2,11 +2,15 @@ class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution:
     def findMiddle(self, head):
         prevPtr = None
@@ -19,6 +23,7 @@ class Solution:
         if prevPtr:
             prevPtr.next = None
         return slowPtr
+
     def sortedListToBST(self, head):
         if not head:
             return None

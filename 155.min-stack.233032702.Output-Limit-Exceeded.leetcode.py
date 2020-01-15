@@ -2,6 +2,7 @@ class MinStack(object):
     def __init__(self):
         self.stack = []
         self.minimum = float('inf')
+
     def push(self, x):
         if not self.stack:
             self.stack.append(x)
@@ -12,11 +13,13 @@ class MinStack(object):
                 self.minimum = x
             else:
                 self.stack.append(x)
+
     def pop(self):
         if self.stack:
             top = self.stack.pop()
             if top < self.minimum:
                 self.minimum = 2 * self.minimum - top
+
     def top(self):
         if not self.stack:
             return None
@@ -26,6 +29,7 @@ class MinStack(object):
                 return self.minimum
             else:
                 return top
+
     def getMin(self):
         if self.stack:
             return self.minimum

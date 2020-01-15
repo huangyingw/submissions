@@ -5,6 +5,7 @@ class Solution(object):
         if not s:
             return False
         return self.is_int(s, True) or self.is_float(s) or self.is_sci(s)
+
     def is_int(self, s, signed):
         if len(s) == 0:
             return False
@@ -18,6 +19,7 @@ class Solution(object):
             if c not in self.digits:
                 return False
         return True
+
     def is_float(self, s):
         try:
             dot = s.index('.')
@@ -32,6 +34,7 @@ class Solution(object):
             return before or after
         except:
             return False
+
     def is_sci(self, s):
         try:
             e = s.index('e')

@@ -4,6 +4,7 @@ class Solution(object):
             return False
         list_s = list(s)
         return self.canWin_helper(list_s)
+
     def canWin_helper(self, s):
         for i in range(len(s) - 1):
             if s[i] == '+' and s[i + 1] == '+':

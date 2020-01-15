@@ -3,6 +3,7 @@ class Solution(object):
         map = {}
         for idx, val in enumerate(inorder):
             map[val] = idx
+
         def helper(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None

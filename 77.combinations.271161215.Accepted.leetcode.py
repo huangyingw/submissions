@@ -3,6 +3,7 @@ class Solution(object):
         res = []
         self.get_combine(res, [], n, k, 1)
         return res
+
     def get_combine(self, res, prefix, n, k, start):
         if k == 0:
             res.append(list(prefix))

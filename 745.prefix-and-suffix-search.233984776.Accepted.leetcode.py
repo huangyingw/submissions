@@ -3,6 +3,7 @@ class WordFilter(object):
         self.prefix_root = [set(), [None for _ in range(26)]]
         self.suffix_root = [set(), [None for _ in range(26)]]
         self.weights = {}
+
         def insert(word, forwards):
             if forwards:
                 node = self.prefix_root
@@ -20,6 +21,7 @@ class WordFilter(object):
             self.weights[word] = weight
             insert(word, True)
             insert(word, False)
+
     def f(self, prefix, suffix):
         def find_words(word, forwards):
             if forwards:

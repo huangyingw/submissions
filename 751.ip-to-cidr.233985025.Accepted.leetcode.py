@@ -1,6 +1,7 @@
 class Solution(object):
     def ipToCIDR(self, ip, n):
         results = []
+
         def num_to_ip(num):
             ip = []
             for _ in range(4):

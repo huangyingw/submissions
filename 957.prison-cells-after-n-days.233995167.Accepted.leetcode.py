@@ -3,6 +3,7 @@ class Solution(object):
         day = 0
         state = tuple(cells)
         state_to_day = {}
+
         def next_state(state):
             return tuple([0] + [int(not (state[i - 1] ^ state[i + 1])) for i in range(1, 7)] + [0])
         while day < N and state not in state_to_day:

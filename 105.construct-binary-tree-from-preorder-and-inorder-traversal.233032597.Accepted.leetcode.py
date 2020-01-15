@@ -3,6 +3,7 @@ class Solution(object):
         n = len(inorder)
         inOrderMap = {inorder[i]: i for i in range(n)}
         return self.buildTreeUtil(preorder, inorder, inOrderMap, 0, n - 1, 0, n - 1)
+
     def buildTreeUtil(self, preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd):
         if pStart > pEnd or iStart > iEnd:
             return None

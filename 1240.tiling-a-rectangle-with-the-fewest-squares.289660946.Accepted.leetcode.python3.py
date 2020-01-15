@@ -3,6 +3,7 @@ class Solution(object):
         if cols > rows:
             cols, rows = rows, cols
         memo = {}
+
         def dp(state):
             if min(state) == rows:
                 return 0

@@ -1,6 +1,7 @@
 class Solution(object):
     def ambiguousCoordinates(self, S):
         S = S[1:-1]
+
         def f(S):
             if not S or len(S) > 1 and S[0] == S[-1] == '0':
                 return []

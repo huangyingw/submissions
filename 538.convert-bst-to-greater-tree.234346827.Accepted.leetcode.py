@@ -1,6 +1,7 @@
 class Solution:
     def convertBST(self, root):
         self.val = 0
+
         def visit(node):
             if node:
                 visit(node.right)

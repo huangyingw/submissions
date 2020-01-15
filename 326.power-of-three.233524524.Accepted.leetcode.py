@@ -1,4 +1,6 @@
 import math
+
+
 class Solution(object):
     def isPowerOfThree(self, n):
         if n <= 0:

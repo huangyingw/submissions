@@ -1,6 +1,7 @@
 class Solution(object):
     def __init__(self):
         self.node = None
+
     def sortedListToBST(self, head):
         if head is None:
             return head
@@ -10,6 +11,7 @@ class Solution(object):
             pos = pos.next
             size += 1
         return self.inorderHelper(0, size - 1)
+
     def inorderHelper(self, start, end):
         if start > end:
             return None

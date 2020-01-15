@@ -9,6 +9,7 @@ class Solution(object):
                 if L:
                     return L
         return []
+
     def buildFibo(self, s, i, j):
         a = s[:i]
         b = s[i:i + j]

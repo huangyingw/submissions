@@ -3,6 +3,8 @@ class Node:
         self.val = int(x)
         self.next = next
         self.random = random
+
+
 class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
         clone_map = {}
@@ -16,6 +18,8 @@ class Solution:
             clone_map.get(cur).random = clone_map.get(cur.random)
             cur = cur.next
         return clone_map.get(head)
+
+
 class Solution1:
     def copyRandomList(self, head: 'Node') -> 'Node':
         cur = head

@@ -1,7 +1,10 @@
 import random
+
+
 class Solution(object):
     def __init__(self, nums):
         self.nums = nums
+
     def pick(self, target):
         count = 0
         for i, num in enumerate(self.nums):

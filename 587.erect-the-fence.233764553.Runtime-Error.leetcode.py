@@ -2,14 +2,18 @@ class Point(object):
     def __init__(self, a=0, b=0):
         self.x = a
         self.y = b
+
+
 class Solution(object):
     def outerTrees(self, points):
         if len(points) < 3:
             return points
+
         def slope(a, b):
             if a.x == b.x:
                 return float("inf")
             return (b.y - a.y) / float(b.x - a.x)
+
         def cross_product(p):
             v1 = [result[-1].x - result[-2].x, result[-1].y - result[-2].y]
             v2 = [p.x - result[-2].x, p.y - result[-2].y]

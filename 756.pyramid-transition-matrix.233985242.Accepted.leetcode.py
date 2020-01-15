@@ -1,9 +1,12 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def pyramidTransition(self, bottom, allowed):
         triangles = defaultdict(list)
         for triple in allowed:
             triangles[triple[:-1]].append(triple[-1])
+
         def helper(prev, current):
             if len(prev) == 1:
                 return True

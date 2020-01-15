@@ -2,6 +2,8 @@ class Node:
     def __init__(self):
         self.children = {}
         self.word = None
+
+
 class Solution(object):
     def findWords(self, board, words):
         root = Node()
@@ -17,6 +19,7 @@ class Solution(object):
             for c in range(len(board[0])):
                 self.search(board, root, r, c, found)
         return found
+
     def search(self, board, node, r, c, found):
         if r < 0 or r >= len(board) or c < 0 or c >= len(board[0]):
             return

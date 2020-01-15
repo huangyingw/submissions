@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def generatePalindromes(self, s):
         char_counts = Counter(s)
@@ -12,6 +14,7 @@ class Solution(object):
         palindromes = []
         self.build_palindromes(palindromes, [], char_counts, len(s) // 2)
         return ["".join(p + [odd_char] + p[::-1]) for p in palindromes]
+
     def build_palindromes(self, palindromes, partial, char_counts, remaining):
         if remaining == 0:
             palindromes.append(partial[:])

@@ -3,6 +3,7 @@ class Solution(object):
         if maxChoosableInteger * (maxChoosableInteger + 1) // 2 < desiredTotal:
             return False
         return self.next_player_win(desiredTotal, list(range(1, maxChoosableInteger + 1)), {})
+
     def next_player_win(self, target, unused, memo):
         if unused[-1] >= target:
             return True

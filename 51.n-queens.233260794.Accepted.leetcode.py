@@ -17,6 +17,7 @@ class Solution(object):
                 result[row] = ''.join(result[row])
             results.append(result)
         return results
+
     def conflict(self, partial, new_row):
         for col, row in enumerate(partial):
             if new_row == row:

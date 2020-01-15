@@ -3,10 +3,13 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def numTrees(self, n):
         memo = [-1] * (n + 1)
         return self.helper(n, memo)
+
     def helper(self, n, memo):
         if n <= 1:
             return 1

@@ -7,6 +7,7 @@ class Solution(object):
         if board[r][c] == "M":
             board[r][c] = "X"
             return board
+
         def helper(r, c):
             if board[r][c] == "B":
                 return

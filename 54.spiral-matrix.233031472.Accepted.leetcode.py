@@ -4,6 +4,7 @@ class Solution(object):
             return matrix
         m, n = len(matrix), len(matrix[0])
         return self.get_spiralOrder(matrix, 0, m - 1, 0, n - 1)
+
     def get_spiralOrder(self, matrix, r_start, r_end, c_start, c_end):
         if r_start > r_end or c_start > c_end:
             return []

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def findRotateSteps(self, ring, key):
         def dist(i, j):

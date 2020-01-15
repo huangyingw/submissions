@@ -1,8 +1,11 @@
 import string
+
+
 class Codec:
     def __init__(self):
         self.long2short = {}
         self.short2long = {}
+
     def encode(self, longUrl):
         if longUrl in self.long2short:
             return "http://tinyurl.com/" + self.long2short(longUrl)
@@ -13,6 +16,7 @@ class Codec:
         self.short2long[code] = longUrl
         self.long2short[longUrl] = code
         return "http://tinyurl.com/" + code
+
     def decode(self, shortUrl):
         if shortUrl[-6:] in self.short2long:
             return self.short2long[shortUrl[-6:]]

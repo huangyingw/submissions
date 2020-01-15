@@ -9,6 +9,7 @@ class Solution(object):
                         new_partials.append(partial + [row])
             partials = new_partials
         return len(partials)
+
     def conflict(self, partial, new_row):
         for col, row in enumerate(partial):
             if new_row == row:

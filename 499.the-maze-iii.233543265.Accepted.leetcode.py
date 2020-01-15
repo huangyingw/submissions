@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def findShortestWay(self, maze, ball, hole):
         def maze_cell(r, c):
@@ -7,8 +9,10 @@ class Solution(object):
             elif 0 <= r < len(maze) and 0 <= c < len(maze[0]) and maze[r][c] == 0:
                 return 0
             return 1
+
         def vertical(dirn):
             return dirn in {"d", "u"}
+
         def perpendicular(dirn):
             return ["r", "l"] if vertical(dirn) else ["u", "d"]
         visited = set()

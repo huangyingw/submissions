@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def connectSticks(self, sticks):
         cost = 0

@@ -10,6 +10,7 @@ class Solution:
         if prevPtr:
             prevPtr.next = None
         return slowPtr
+
     def sortedListToBST(self, head):
         if not head:
             return None

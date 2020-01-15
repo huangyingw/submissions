@@ -8,6 +8,7 @@ class ZigzagIterator(object):
         else:
             self.l = 1
         self.x = 0
+
     def next(self):
         n = None
         if self.l == 0:
@@ -25,5 +26,6 @@ class ZigzagIterator(object):
                 self.x += 1
         self.pointer += 1
         return n
+
     def hasNext(self):
         return self.pointer < len(self.v1) + len(self.v2)

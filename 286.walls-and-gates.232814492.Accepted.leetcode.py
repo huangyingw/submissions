@@ -7,6 +7,7 @@ class Solution(object):
             for j in range(n):
                 if rooms[i][j] == 0:
                     self.bfs(rooms, i, j, m, n, 1)
+
     def bfs(self, rooms, i, j, m, n, distance):
         coords = [(-1, 0), (1, 0), (0, -1), (0, 1)]
         for coord in coords:

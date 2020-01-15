@@ -2,6 +2,7 @@ class Solution(object):
     def maximizeSweetness(self, sweetness, K):
         K += 1
         left, right = 1, sum(sweetness) // K
+
         def can_split(x):
             piece, count = 0, 0
             for sweet in sweetness:

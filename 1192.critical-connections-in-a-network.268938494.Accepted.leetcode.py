@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def criticalConnections(self, n, connections):
         node_to_nbors = defaultdict(list)
@@ -7,6 +9,7 @@ class Solution(object):
             node_to_nbors[connection[1]].append(connection[0])
         connections = {tuple(sorted(connection)) for connection in connections}
         rank = [-float("inf")] * n
+
         def helper(node, depth):
             if rank[node] >= 0:
                 return rank[node]

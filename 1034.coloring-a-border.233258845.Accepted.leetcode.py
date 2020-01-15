@@ -3,6 +3,7 @@ class Solution(object):
         original = grid[r0][c0]
         rows, cols = len(grid), len(grid[0])
         connected = set()
+
         def dfs(r, c):
             if (r, c) in connected:
                 return True

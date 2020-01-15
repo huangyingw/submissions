@@ -4,6 +4,8 @@ class Solution:
         if temp.count('1') <= 1:
             return 0
         return len(max(bin(N)[2:].split('1')[1:-1], key=len)) + 1
+
+
 class Solution:
     def binaryGap(self, N):
         max = 0
@@ -18,6 +20,8 @@ class Solution:
             if max < lst[i] - lst[i - 1]:
                 max = lst[i] - lst[i - 1]
         return max
+
+
 class Solution:
     def binaryGap(self, N):
         n = str(bin(N))

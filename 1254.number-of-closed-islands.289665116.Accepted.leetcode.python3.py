@@ -2,6 +2,7 @@ class Solution(object):
     def closedIsland(self, grid):
         rows, cols = len(grid), len(grid[0])
         nbors = [[1, 0], [0, 1], [-1, 0], [0, - 1]]
+
         def closed(r, c):
             if r < 0 or r >= rows or c < 0 or c >= cols:
                 return True

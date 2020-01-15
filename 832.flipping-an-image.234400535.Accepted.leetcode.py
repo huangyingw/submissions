@@ -6,6 +6,7 @@ class Solution:
         for r in range(len(A)):
             A[r].reverse()
         return A
+
     def flipAndInvertImage(self, A):
         reverse = []
         for i in A:

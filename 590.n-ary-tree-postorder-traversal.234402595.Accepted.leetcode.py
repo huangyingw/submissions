@@ -10,6 +10,8 @@ class Solution(object):
             if curr.children is not None:
                 stack.extend(curr.children)
             res.append(curr.val)
+
+
 class Solution(object):
     def postorder(self, root):
         if root == None:

@@ -1,6 +1,7 @@
 class Solution(object):
     def validPalindrome(self, s):
         return self.validPalindromeHelper(s, 0, len(s) - 1, 1)
+
     def validPalindromeHelper(self, s, left, right, budget):
         while left < len(s) and right >= 0 and left <= right and s[left] == s[right]:
             left += 1

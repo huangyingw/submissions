@@ -1,6 +1,7 @@
 class Solution(object):
     def findTarget(self, root, k):
         visited = set()
+
         def traverse(node):
             if not node:
                 return False

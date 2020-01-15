@@ -12,11 +12,13 @@ class Solution(object):
             if x > 2:
                 factors.add(x)
             return factors
+
         def find(x):
             while x != parents[x]:
                 parents[x] = parents[parents[x]]
                 x = parents[x]
             return x
+
         def union(x, y):
             x, y = find(x), find(y)
             if x == y:

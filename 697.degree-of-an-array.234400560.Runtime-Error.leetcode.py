@@ -12,6 +12,7 @@ class Solution(object):
             if count[x] == degree:
                 ans = min(ans, right[x] - left[x] + 1)
         return ans
+
     def findShortestSubArray(self, nums):
         c = Counter(nums)
         count = max(c.values())

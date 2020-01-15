@@ -8,6 +8,7 @@ class Solution(object):
         self.has_skills = 0
         self.smallest_team = list(range(len(req_skills) + 1))
         team = []
+
         def helper(next_skill):
             if len(team) >= len(self.smallest_team):
                 return

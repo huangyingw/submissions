@@ -15,6 +15,7 @@ class Codec:
         while res and res[-1] == 'null':
             res.pop()
         return '[' + ','.join(map(str, res)) + ']'
+
     def deserialize(self, data):
         if data == '[]':
             return None

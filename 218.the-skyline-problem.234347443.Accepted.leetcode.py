@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def getSkyline(self, buildings):
         rectangles = [[l, -h, r] for l, r, h in buildings] + [[r, h, None] for l, r, h in buildings]

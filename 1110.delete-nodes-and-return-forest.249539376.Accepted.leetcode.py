@@ -2,6 +2,7 @@ class Solution(object):
     def delNodes(self, root, to_delete):
         to_delete = set(to_delete)
         result = []
+
         def helper(node, has_parent):
             if not node:
                 return None

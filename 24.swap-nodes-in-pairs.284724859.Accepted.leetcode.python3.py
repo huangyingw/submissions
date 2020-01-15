@@ -2,6 +2,8 @@ class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
+
+
 class Solution(object):
     def swapPairs(self, head):
         if not head:
@@ -17,6 +19,7 @@ class Solution(object):
                 prev.next = temp
             prev = temp.next
         return cur
+
     def swapPairs_alt(self, head: ListNode) -> ListNode:
         newHead = ListNode(0)
         newHead.next = head
@@ -29,6 +32,7 @@ class Solution(object):
             b.next = a
             cur = a
         return newHead.next
+
     def swapPairs_recursive(self, head: ListNode) -> ListNode:
         if not head or not head.next:
             return head

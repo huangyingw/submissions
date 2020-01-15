@@ -2,6 +2,7 @@ class Solution:
     def searchRange(self, nums, target):
         if not nums:
             return [-1, -1]
+
         def findGreater(target):
             left, right = 0, len(nums) - 1
             while left <= right:

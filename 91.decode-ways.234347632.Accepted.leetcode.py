@@ -13,6 +13,7 @@ class Solution:
             if 0 < int(s[i - 1:i + 1]) <= 26 and s[i - 1:i + 1][0] != '0':
                 dp[i + 1] += dp[i - 1]
         return dp[n]
+
     def numDecodings(self, s):
         f0 = 0
         e0, e1, e2 = 1, 0, 0

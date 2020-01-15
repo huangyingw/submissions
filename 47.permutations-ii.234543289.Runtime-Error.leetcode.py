@@ -5,6 +5,8 @@ class Solution1:
             permutations = [rest[:i] + [head] + rest[i:] for rest in permutations for i in
                             range((rest + [head]).index(head) + 1)]
         return permutations
+
+
 class Solution2:
     def permuteUnique(self, nums):
         ans = [[]]

@@ -7,12 +7,14 @@ class Solution(object):
             i += 1
             j -= 1
         return distance
+
     def minTotalDistance(self, grid):
         rows = self.collectRows(grid)
         cols = self.collectCols(grid)
         row = rows[len(rows) / 2]
         col = cols[len(cols) / 2]
         return self.minDistance1D(rows) + self.minDistance1D(cols)
+
     def collectRows(self, grid):
         rows = []
         for i in range(len(grid)):
@@ -20,6 +22,7 @@ class Solution(object):
                 if grid[i][j] == 1:
                     rows.append(i)
         return rows
+
     def collectCols(self, grid):
         cols = []
         for j in range(len(grid[0])):

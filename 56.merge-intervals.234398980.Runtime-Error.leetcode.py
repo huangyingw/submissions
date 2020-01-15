@@ -2,6 +2,8 @@ class Interval:
     def __init__(self, s=0, e=0):
         self.start = s
         self.end = e
+
+
 class Solution:
     def insert(self, intervals, newInterval):
         start = newInterval.start
@@ -20,6 +22,7 @@ class Solution:
         res.append(Interval(start, end))
         res += intervals[i:]
         return res
+
     def insert2(self, intervals, newInterval):
         s, e = newInterval.start, newInterval.end
         left = [inter for inter in intervals if inter.end < s]

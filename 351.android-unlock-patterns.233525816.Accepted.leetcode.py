@@ -6,6 +6,7 @@ class Solution(object):
         for start, end, skip in skips:
             jumps[(start, end)] = skip
             jumps[(end, start)] = skip
+
         def count_patterns(start):
             paths = [[{start}, start]]
             patterns = 1 if m == 1 else 0
@@ -25,6 +26,8 @@ class Solution(object):
                     patterns += len(paths)
             return patterns
         return 4 * count_patterns(1) + 4 * count_patterns(2) + count_patterns(5)
+
+
 class Solution2(object):
     def numberOfPatterns(self, m, n):
         patterns = [0, 9, 56, 320, 1624, 7152, 26016, 72912, 140704, 140704]

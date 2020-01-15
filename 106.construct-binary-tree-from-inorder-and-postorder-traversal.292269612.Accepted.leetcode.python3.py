@@ -1,6 +1,7 @@
 class Solution:
     def buildTree(self, inorder, postorder):
         inorderDict = {num: i for i, num in enumerate(inorder)}
+
         def helper(start, end):
             if start > end:
                 return None

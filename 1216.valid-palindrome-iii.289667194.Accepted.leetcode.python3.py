@@ -1,6 +1,7 @@
 class Solution(object):
     def isValidPalindrome(self, s, k):
         memo = {}
+
         def helper(start, end):
             if start >= end:
                 return 0

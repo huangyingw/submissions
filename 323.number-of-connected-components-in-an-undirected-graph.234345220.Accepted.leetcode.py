@@ -9,6 +9,7 @@ class Solution:
                 root[left] = right
                 result -= 1
         return result
+
     def findRoot(self, root, node):
         while node != root[node]:
             root[node] = root[root[node]]

@@ -1,6 +1,7 @@
 class Solution(object):
     def findRedundantConnection(self, edges):
         parents = {}
+
         def find_parent(n):
             if n not in parents:
                 return n

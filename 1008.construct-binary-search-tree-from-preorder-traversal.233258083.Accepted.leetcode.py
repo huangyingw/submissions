@@ -1,6 +1,7 @@
 class Solution(object):
     def bstFromPreorder(self, preorder):
         self.i = 0
+
         def helper(max_value=float("inf")):
             if self.i >= len(preorder) or preorder[self.i] > max_value:
                 return None

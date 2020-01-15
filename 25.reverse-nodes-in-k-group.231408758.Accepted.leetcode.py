@@ -14,6 +14,7 @@ class Solution(object):
             else:
                 head = head.next
         return dummy.next
+
     def reverse(self, pre, next):
         last = pre.next
         cur = last.next

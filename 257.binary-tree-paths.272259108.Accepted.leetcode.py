@@ -2,6 +2,7 @@ class Solution:
     def binaryTreePaths(self, r):
         stack = []
         res = []
+
         def dfs(root):
             if not root:
                 return []

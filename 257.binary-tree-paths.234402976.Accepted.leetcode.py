@@ -11,9 +11,11 @@ class Solution:
         if root:
             searchBT(root, "", ans)
         return ans
+
     def binaryTreePaths(self, r):
         stack = []
         res = []
+
         def dfs(root):
             if not root:
                 return []

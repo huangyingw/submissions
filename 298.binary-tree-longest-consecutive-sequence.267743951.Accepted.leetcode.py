@@ -3,6 +3,7 @@ class Solution(object):
         self.longest = 0
         self.consecutive(root, float('inf'), 0)
         return self.longest
+
     def consecutive(self, node, parent_val, sequence):
         if not node:
             return

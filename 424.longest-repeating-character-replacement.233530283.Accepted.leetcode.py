@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def characterReplacement(self, s, k):
         longest, start = 0, 0

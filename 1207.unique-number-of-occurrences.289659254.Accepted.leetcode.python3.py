@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def uniqueOccurrences(self, arr):
         counts = Counter(arr)

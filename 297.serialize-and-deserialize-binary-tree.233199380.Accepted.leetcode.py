@@ -10,6 +10,7 @@ class Codec:
         seralizeTree = []
         preorder(root)
         return ''.join(seralizeTree)
+
     def deserialize(self, data):
         def buildTree(preorder):
             value = preorder.pop(0)

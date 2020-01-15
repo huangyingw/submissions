@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def alienOrder(self, words):
         after = defaultdict(int)

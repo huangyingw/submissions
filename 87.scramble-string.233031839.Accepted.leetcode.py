@@ -1,6 +1,7 @@
 class Solution(object):
     def __init__(self):
         self.cache = {}
+
     def isScramble(self, s1, s2):
         if s1 == s2:
             return True

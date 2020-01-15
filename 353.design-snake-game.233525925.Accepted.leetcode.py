@@ -5,6 +5,7 @@ class SnakeGame(object):
         self.snake = {(0, 0): None}
         self.head, self.tail = (0, 0), (0, 0)
         self.moves = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
+
     def move(self, direction):
         new_head = (self.head[0] + self.moves[direction][0], self.head[1] + self.moves[direction][1])
         if new_head[0] < 0 or new_head[0] >= self.rows or new_head[1] < 0 or new_head[1] >= self.cols:

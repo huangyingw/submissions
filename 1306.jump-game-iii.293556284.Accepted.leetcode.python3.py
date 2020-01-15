@@ -2,6 +2,7 @@ class Solution(object):
     def canReach(self, arr, start):
         n = len(arr)
         visited = set()
+
         def helper(i):
             if i < 0 or i >= n:
                 return False

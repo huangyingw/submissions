@@ -1,9 +1,11 @@
 class Solution(object):
     def __init__(self):
         self.count = 0
+
     def countUnivalSubtrees(self, root):
         self.isUnivalSubtrees(root)
         return self.count
+
     def isUnivalSubtrees(self, root):
         if not root:
             return None

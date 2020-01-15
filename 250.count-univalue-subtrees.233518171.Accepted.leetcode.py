@@ -3,11 +3,14 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def countUnivalSubtrees(self, root):
         self.univariates = 0
         self.is_univariate(root)
         return self.univariates
+
     def is_univariate(self, root):
         if not root:
             return True
@@ -18,11 +21,14 @@ class Solution(object):
                 self.univariates += 1
                 return True
         return False
+
+
 class Solution2(object):
     def countUnivalSubtrees(self, root):
         self.univariates = 0
         self.preorder(root)
         return self.univariates
+
     def preorder(self, root):
         if not root:
             return
@@ -30,6 +36,7 @@ class Solution2(object):
             self.univariates += 1
         self.preorder(root.left)
         self.preorder(root.right)
+
     def is_univariate(self, root):
         if not root:
             return True

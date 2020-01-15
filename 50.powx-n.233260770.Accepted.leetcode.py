@@ -3,6 +3,7 @@ class Solution(object):
         neg = n < 0
         pos_result = self.pos_pow(x, abs(n))
         return 1 / pos_result if neg else pos_result
+
     def pos_pow(self, x, n):
         if n == 0:
             return 1

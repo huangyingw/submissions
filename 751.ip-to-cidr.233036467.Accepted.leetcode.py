@@ -4,9 +4,11 @@ class Solution(object):
         for x in ip.split('.'):
             ans = 256 * ans + int(x)
         return ans
+
     def intToIP(self, x):
         return ".".join(str((x >> i) % 256)
                         for i in (24, 16, 8, 0))
+
     def ipToCIDR(self, ip, n):
         start = self.ipToInt(ip)
         ans = []

@@ -3,11 +3,14 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def levelOrderBottom(self, root):
         traversal = []
         self.inorder(root, 0, traversal)
         return traversal[::-1]
+
     def inorder(self, node, depth, traversal):
         if not node:
             return

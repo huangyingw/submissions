@@ -1,6 +1,7 @@
 class Solution(object):
     def palindromePartition(self, s, k):
         n = len(s)
+
         def cost(left, right):
             result = 0
             while left < right:
@@ -10,6 +11,7 @@ class Solution(object):
                 right -= 1
             return result
         memo = {}
+
         def helper(i, k):
             if k >= n - i:
                 return 0

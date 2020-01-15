@@ -2,6 +2,7 @@ class Solution(object):
     def coinChange(self, coins, amount):
         coins.sort(reverse=True)
         self.result = float("inf")
+
         def dfs(largest_coin, remainder, used_coins):
             if remainder == 0:
                 self.result = min(self.result, used_coins)

@@ -1,4 +1,6 @@
 import heapq
+
+
 class LFUCache(object):
     def __init__(self, capacity):
         self.capacity = capacity
@@ -7,6 +9,7 @@ class LFUCache(object):
         self.freq_time = {}
         self.priority_queue = []
         self.update = set()
+
     def get(self, key):
         self.time += 1
         if key in self.map:
@@ -15,6 +18,7 @@ class LFUCache(object):
             self.update.add(key)
             return self.map[key]
         return -1
+
     def put(self, key, value):
         if self.capacity <= 0:
             return

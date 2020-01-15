@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def subarraysDivByK(self, A, K):
         result = 0

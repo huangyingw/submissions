@@ -9,6 +9,7 @@ class NumMatrix(object):
             for j in range(1, cols + 1):
                 self.sums[i][j] = matrix[i - 1][j - 1] + self.sums[i - 1][j] + self.sums[i][j - 1] - self.sums[i - 1][
                     j - 1]
+
     def sumRegion(self, row1, col1, row2, col2):
         return self.sums[row2 + 1][col2 + 1] - self.sums[row1][col2 + 1] - self.sums[row2 + 1][col1] + self.sums[row1][
             col1]

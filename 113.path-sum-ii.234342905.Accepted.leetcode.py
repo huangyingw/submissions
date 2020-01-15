@@ -5,6 +5,7 @@ class Solution:
         res = []
         self.dfs(root, sum, res, [])
         return res
+
     def dfs(self, root, sum, res, path):
         if not root:
             return

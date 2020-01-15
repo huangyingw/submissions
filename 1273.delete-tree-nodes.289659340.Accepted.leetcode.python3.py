@@ -1,9 +1,12 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def deleteTreeNodes(self, nodes, parents, values):
         node_children = defaultdict(list)
         for child, parent in enumerate(parents):
             node_children[parent].append(child)
+
         def helper(node):
             subtree_sum = values[node]
             subtree_count = 1

@@ -8,6 +8,8 @@ dmap = {'2': 'abc',
         '9': 'wxyz',
         '0': ' ',
         None: None}
+
+
 class Solution(object):
     def letterCombinations(self, digits):
         result = []

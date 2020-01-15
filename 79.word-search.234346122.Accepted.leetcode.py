@@ -8,6 +8,7 @@ class Solution(object):
                 if self.dfs(board, word, i, j):
                     return True
         return False
+
     def dfs(self, board, word, x, y):
         if not word:
             return True

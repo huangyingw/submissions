@@ -1,6 +1,7 @@
 class Solution:
     def minDistance(self, word1, word2):
         return len(word1) + len(word2) - 2 * self.lcs(word1, word2, len(word1), len(word2))
+
     def lcs(self, s1, s2, m, n):
         if m == 0 and n == 0:
             return 0
@@ -8,6 +9,8 @@ class Solution:
             return 1 + self.lcs(s1, s2, m - 1, n - 1)
         else:
             return max(self.lcs(s1, s2, m, n - 1), self.lcs(s1, s2, m - 1, n))
+
+
 class Solution:
     def minDistance(self, word1, word2):
         def lcs(s1, s2, m, n, memo):
@@ -22,9 +25,12 @@ class Solution:
             return memo[m][n]
         memo = [[0 for i in range(len(word2) + 1)] for j in range(len(word1) + 1)]
         return len(word1) + len(word2) - 2 * lcs(word1, word2, len(word1), len(word2), memo)
+
+
 class Solution:
     def minDistance(self, A, B):
         memo = {}
+
         def dp(i, j):
             if (i, j) not in memo:
                 if i == len(A) or j == len(B):
@@ -36,6 +42,8 @@ class Solution:
                 memo[i, j] = ans
             return memo[i, j]
         return dp(0, 0)
+
+
 class Solution:
     def minDistance(self, word1, word2):
         L1, L2 = len(word1), len(word2)
@@ -48,6 +56,8 @@ class Solution:
                     d[i][j] = max(d[i - 1][j], d[i][j - 1])
         len_lcs = d[L1 - 1][L2 - 1]
         return L1 + L2 - 2 * len_lcs
+
+
 class Solution:
     def minDistance(self, word1, word2):
         if len(word1) == 0 or len(word2) == 0:

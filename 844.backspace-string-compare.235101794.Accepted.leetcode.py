@@ -1,6 +1,7 @@
 class Solution(object):
     def backspaceCompare(self, S, T):
         s_i, t_i = len(S) - 1, len(T) - 1
+
         def next_char(string, i):
             delete = 0
             while i >= 0 and (delete or string[i] == "#"):

@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def largestUniqueNumber(self, A):
         freq = Counter(A)

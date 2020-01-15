@@ -1,4 +1,6 @@
 from operator import add
+
+
 class Solution:
     def generate(self, numRows):
         result = [[1]]

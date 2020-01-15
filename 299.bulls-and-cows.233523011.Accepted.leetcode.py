@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def getHint(self, secret, guess):
         bulls, cows = 0, 0

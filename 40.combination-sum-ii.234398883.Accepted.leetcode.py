@@ -4,6 +4,7 @@ class Solution:
         result = []
         self.combine_sum_2(candidates, 0, [], result, target)
         return result
+
     def combine_sum_2(self, nums, start, path, result, target):
         if not target:
             result.append(path)

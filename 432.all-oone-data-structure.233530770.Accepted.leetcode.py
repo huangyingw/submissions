@@ -4,16 +4,20 @@ class Block(object):
         self.keys = set()
         self.before = None
         self.after = None
+
     def remove(self):
         self.before.after = self.after
         self.after.before = self.before
         self.before, self.after = None, None
+
     def insert_after(self, new_block):
         old_after = self.after
         self.after = new_block
         new_block.before = self
         new_block.after = old_after
         old_after.before = new_block
+
+
 class AllOne(object):
     def __init__(self):
         self.begin = Block()
@@ -21,6 +25,7 @@ class AllOne(object):
         self.begin.after = self.end
         self.end.before = self.begin
         self.mapping = {}
+
     def inc(self, key):
         if not key in self.mapping:
             current_block = self.begin
@@ -36,6 +41,7 @@ class AllOne(object):
         self.mapping[key] = new_block
         if not current_block.keys and current_block.val != 0:
             current_block.remove()
+
     def dec(self, key):
         if not key in self.mapping:
             return
@@ -52,12 +58,14 @@ class AllOne(object):
             self.mapping[key] = new_block
         if not current_block.keys:
             current_block.remove()
+
     def getMaxKey(self):
         if self.end.before.val == 0:
             return ""
         key = self.end.before.keys.pop()
         self.end.before.keys.add(key)
         return key
+
     def getMinKey(self):
         if self.begin.after.val == 0:
             return ""

@@ -3,6 +3,7 @@ class Solution(object):
         rows, cols = len(A), len(A[0])
         result = 0
         self.edge = False
+
         def enclave(r, c):
             if r < 0 or c < 0 or r >= rows or c >= cols:
                 return 0

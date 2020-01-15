@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def numMovesStonesII(self, stones):
         n = len(stones)

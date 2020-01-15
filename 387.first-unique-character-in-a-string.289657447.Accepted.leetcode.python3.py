@@ -7,6 +7,8 @@ class Solution:
             if alphabets.get(s[i]) == 1:
                 return i
         return -1
+
+
 class Solution1:
     def firstUniqChar(self, s: str) -> int:
         alphabets = {}

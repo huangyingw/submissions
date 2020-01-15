@@ -3,6 +3,7 @@ class Solution(object):
         self.buff = [''] * 4
         self.offset = 0
         self.bufsize = 0
+
     def read(self, buf, n):
         pos, eof = 0, False
         while not eof and pos < n:

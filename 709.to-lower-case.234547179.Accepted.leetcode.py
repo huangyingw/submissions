@@ -1,6 +1,7 @@
 class Solution:
     def toLowerCase(self, str):
         return str.lower()
+
     def toLowerCase2(self, str):
         result = ""
         for c in str:

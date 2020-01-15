@@ -11,6 +11,7 @@ class Solution:
                     unvisited.add((r, c))
                 elif grid[r][c] == 0:
                     unvisited.add((r, c))
+
         def make_paths(r, c):
             if not unvisited and (r, c) == end:
                 return 1

@@ -3,6 +3,7 @@ class Solution:
         res = []
         self.dfs(res, [], s)
         return res
+
     def dfs(self, res, path, s):
         if not s:
             res.append(path[:])

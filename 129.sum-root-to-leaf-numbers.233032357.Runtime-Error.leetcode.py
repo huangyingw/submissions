@@ -2,6 +2,7 @@ class Solution(object):
     def sumNumbers(self, root):
         if not root:
             return 0
+
         def dfs(root, num, total):
             if not root:
                 return total

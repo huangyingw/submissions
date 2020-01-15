@@ -1,5 +1,7 @@
 from collections import defaultdict
 import heapq
+
+
 class Solution(object):
     def minCostToSupplyWater(self, n, wells, pipes):
         neighbours = defaultdict(list)

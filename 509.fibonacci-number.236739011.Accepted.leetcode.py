@@ -3,6 +3,7 @@ class Solution(object):
         self.memo = []
         self.memo.append(0)
         self.memo.append(1)
+
     def fib(self, N):
         if N < len(self.memo):
             return self.memo[N]

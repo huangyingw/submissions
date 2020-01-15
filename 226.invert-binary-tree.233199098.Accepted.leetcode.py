@@ -7,6 +7,8 @@ class Solution(object):
         root.left = rightTree
         root.right = leftTree
         return root
+
+
 class Solution(object):
     def invertTree(self, root):
         if not root:

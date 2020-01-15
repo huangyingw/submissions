@@ -5,6 +5,7 @@ class Solution:
         result = []
         self.remove(s, 0, 0, result, '(', ')')
         return result
+
     def remove(self, s, last_i, last_j, result, openP, closeP):
         count = 0
         for i in range(last_i, len(s)):

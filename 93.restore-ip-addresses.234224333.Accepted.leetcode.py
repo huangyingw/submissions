@@ -16,6 +16,7 @@ class Solution(object):
                         if self.isValid(add1) and self.isValid(add2) and self.isValid(add3) and self.isValid(add4):
                             res.append(add1 + '.' + add2 + '.' + add3 + '.' + add4)
         return res
+
     def isValid(self, add):
         if len(add) == 1:
             return True

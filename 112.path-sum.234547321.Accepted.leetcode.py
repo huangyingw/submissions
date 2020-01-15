@@ -9,6 +9,7 @@ class Solution(object):
                 return False
         else:
             return self.hasPathSum(root.left, sum - root.val) or self.hasPathSum(root.right, sum - root.val)
+
     def hasPathSum(self, root, sum):
         if root is None:
             return False

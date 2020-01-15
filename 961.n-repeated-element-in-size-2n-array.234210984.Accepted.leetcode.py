@@ -1,4 +1,6 @@
 import collections
+
+
 class Solution(object):
     def repeatedNTimes(self, A):
         counter = collections.Counter(A)

@@ -3,10 +3,13 @@ class Suffix(object):
         self.index = 0
         self.first_rank = -1
         self.adjacent_rank = -1
+
     def __lt__(self, other):
         if self.first_rank == other.first_rank:
             return self.adjacent_rank < other.adjacent_rank
         return self.first_rank < other.first_rank
+
+
 def create_suffix_array(s):
     N = len(s)
     suffix_array = []
@@ -36,6 +39,8 @@ def create_suffix_array(s):
         suffix_array.sort()
         no_char *= 2
     return [suffix.index for suffix in suffix_array]
+
+
 def lcp_w_suffix_str(array, s):
     N = len(array)
     lcp_array = [0] * N
@@ -54,6 +59,8 @@ def lcp_w_suffix_str(array, s):
         if maxLen > 0:
             maxLen -= 1
     return lcp_array
+
+
 class Solution(object):
     def longestDupSubstring(self, S):
         suffix_array = create_suffix_array(S)

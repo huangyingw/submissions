@@ -9,6 +9,7 @@ class Solution(object):
         if leaf1 == leaf2:
             return True
         return False
+
     def dfs(self, node, leavels):
         if not node:
             return

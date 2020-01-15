@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def gardenNoAdj(self, N, paths):
         edges = defaultdict(set)

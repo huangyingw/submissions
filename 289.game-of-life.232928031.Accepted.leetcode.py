@@ -13,6 +13,7 @@ class Solution(object):
             for m in range(M):
                 for n in range(N):
                     board[m][n] = board_next[m][n]
+
     def liveOrDead(self, board, i, j):
         ds = [(1, 1), (1, -1), (1, 0), (-1, 1), (-1, 0), (-1, -1), (0, 1), (0, -1)]
         live_count = 0

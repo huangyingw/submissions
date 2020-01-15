@@ -1,4 +1,6 @@
 from math import log
+
+
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         if m == 0:

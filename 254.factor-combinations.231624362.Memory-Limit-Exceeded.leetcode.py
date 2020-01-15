@@ -3,6 +3,7 @@ class Solution(object):
         ret = []
         self.dfs(ret, [], n, 2)
         return ret
+
     def dfs(self, ret, item, n, start):
         if n == 1:
             if len(item) > 1:

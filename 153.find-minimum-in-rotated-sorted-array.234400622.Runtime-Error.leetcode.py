@@ -1,6 +1,8 @@
 class Solution1:
     def findMin(self, nums):
         return min(nums)
+
+
 class Solution2:
     def findMin(self, nums):
         left = 0

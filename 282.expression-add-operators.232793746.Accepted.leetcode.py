@@ -2,6 +2,7 @@ class Solution(object):
     def addOperators(self, num, target):
         def isLeadingZeros(num):
             return num.startswith('00') or int(num) and num.startswith('0')
+
         def solve(num, target, mulExpr='', mulVal=1):
             ans = []
             if isLeadingZeros(num):

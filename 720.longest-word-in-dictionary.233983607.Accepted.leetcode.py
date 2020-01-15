@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def longestWord(self, words):
         length_to_words = defaultdict(set)

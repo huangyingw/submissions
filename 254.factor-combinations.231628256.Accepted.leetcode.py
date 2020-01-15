@@ -4,6 +4,7 @@ class Solution(object):
         factors = []
         self.getResult(n, result, factors)
         return result
+
     def getResult(self, n, result, factors):
         i = 2 if not factors else factors[-1]
         while i <= n / i:

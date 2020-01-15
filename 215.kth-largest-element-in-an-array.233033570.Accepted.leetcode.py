@@ -2,6 +2,7 @@ class Solution(object):
     def findKthLargest(self, nums, k):
         random.shuffle(nums)
         return self.quickSelection(nums, 0, len(nums) - 1, len(nums) - k)
+
     def quickSelection(self, nums, start, end, k):
         if start > end:
             return float('inf')

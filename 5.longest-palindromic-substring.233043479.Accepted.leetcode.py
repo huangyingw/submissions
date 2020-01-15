@@ -22,6 +22,8 @@ class Solution(object):
                 index_i += 1
             length += 1
         return result
+
+
 class Solution(object):
     def longestPalindrome(self, s):
         def expand(s, left, right):

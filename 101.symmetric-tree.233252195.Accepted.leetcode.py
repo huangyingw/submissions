@@ -2,6 +2,7 @@ class Solution(object):
     def isSymmetric(self, root):
         if not root:
             return True
+
         def dfs(left, right):
             if not left and not right:
                 return True

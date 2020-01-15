@@ -1,6 +1,7 @@
 class Solution(object):
     def minimumMoves(self, arr):
         memo = {}
+
         def dp(i, j):
             if i > j:
                 return 0

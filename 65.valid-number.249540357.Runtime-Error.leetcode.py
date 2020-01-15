@@ -8,6 +8,8 @@ class Solution(object):
 """
 DFA
 """
+
+
 class Solution(object):
     def isNumber(self, s):
         states = [{},

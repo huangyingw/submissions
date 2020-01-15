@@ -1,8 +1,11 @@
 import bisect
+
+
 class ExamRoom(object):
     def __init__(self, N):
         self.seats = []
         self.N = N
+
     def seat(self):
         if not self.seats:
             self.seats.append(0)
@@ -17,5 +20,6 @@ class ExamRoom(object):
             index = self.N - 1
         bisect.insort(self.seats, index)
         return index
+
     def leave(self, p):
         self.seats.remove(p)

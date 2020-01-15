@@ -1,5 +1,7 @@
 from collections import defaultdict
 import heapq
+
+
 class Solution(object):
     def minimumCost(self, N, connections):
         edges = defaultdict(list)

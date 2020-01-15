@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def mostVisitedPattern(self, username, timestamp, website):
         user_sites = defaultdict(list)

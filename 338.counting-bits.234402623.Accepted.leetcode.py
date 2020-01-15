@@ -1,6 +1,8 @@
 class Solution:
     def countBits(self, num):
         return [bin(i).count('1') for i in range(num + 1)]
+
+
 class Solution:
     def countBits(self, num):
         output = [0]

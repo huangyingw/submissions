@@ -6,12 +6,14 @@ class Solution(object):
                 curr_sum = max(arr[index], curr_sum + arr[index])
                 max_sum = max(max_sum, curr_sum)
             return max_sum
+
         def prefix(arr):
             curr_sum, max_val = 0, float('-inf')
             for index, val in enumerate(arr):
                 curr_sum += val
                 max_val = max(max_val, curr_sum)
             return max_val
+
         def suffix(arr):
             curr_sum, max_val = 0, float('-inf')
             for index in range(len(arr) - 1, -1, -1):

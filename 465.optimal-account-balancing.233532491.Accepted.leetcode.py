@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def minTransfers(self, transactions):
         balances = defaultdict(int)
@@ -6,6 +8,7 @@ class Solution(object):
             balances[lender] += amount
             balances[receiver] -= amount
         net_balances = [b for b in balances.values() if b != 0]
+
         def transfers(net_balances):
             if not net_balances:
                 return 0

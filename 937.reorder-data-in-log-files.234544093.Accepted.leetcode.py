@@ -9,6 +9,7 @@ class Solution:
                 letter_logs.append(log)
         letter_logs.sort(key=lambda a: a.split()[1:])
         return letter_logs + digit_logs
+
     def reorderLogFiles(self, logs):
         l = filter(lambda l: l[l.find(" ") + 1].isalpha(), logs)
         d = filter(lambda l: l[l.find(" ") + 1].isdigit(), logs)

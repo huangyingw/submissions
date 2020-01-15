@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def inorderSuccessor(self, root, p):
         succ = None
@@ -13,6 +15,8 @@ class Solution(object):
                 succ = root
                 root = root.left
         return succ
+
+
 class Solution2(object):
     def inorderSuccessor(self, root, p):
         if not root:

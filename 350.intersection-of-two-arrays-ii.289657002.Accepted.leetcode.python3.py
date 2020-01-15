@@ -11,6 +11,8 @@ class Solution:
                 res.append(no)
                 d[no] -= 1
         return res
+
+
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if len(nums2) > len(nums1):

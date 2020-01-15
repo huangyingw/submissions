@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def relativeSortArray(self, arr1, arr2):
         arr1_counts = Counter(arr1)

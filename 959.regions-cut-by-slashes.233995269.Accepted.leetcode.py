@@ -3,12 +3,14 @@ class Solution(object):
         n = len(grid)
         UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
         parents = {}
+
         def find(node):
             parents.setdefault(node, node)
             while parents[node] != node:
                 parents[node] = parents[parents[node]]
                 node = parents[node]
             return node
+
         def union(node1, node2):
             parent1, parent2 = find(node1), find(node2)
             parents[parent2] = parent1

@@ -4,6 +4,7 @@ class Solution(object):
             temp = nums[left]
             nums[left] = nums[right]
             nums[right] = temp
+
     def rotate(self, nums, k):
         self.reverse(nums, 0, len(nums) - 1)
         self.reverse(nums, 0, k - 1)

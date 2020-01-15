@@ -1,7 +1,10 @@
 from collections import deque
+
+
 class Codec:
     def serialize(self, root):
         serial = []
+
         def preorder(node):
             if not node:
                 return
@@ -11,11 +14,13 @@ class Codec:
             serial.append("#")
         preorder(root)
         return " ".join(serial)
+
     def deserialize(self, data):
         if not data:
             return None
         tokens = deque(data.split())
         root = Node(int(tokens.popleft()), [])
+
         def helper(node):
             if not tokens:
                 return

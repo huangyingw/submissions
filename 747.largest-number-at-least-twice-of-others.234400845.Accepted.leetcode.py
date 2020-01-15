@@ -5,6 +5,7 @@ class Solution:
             return 0
         max1, max2 = heapq.nlargest(2, nums)
         return -1 if max1 / 2 < max2 else nums.index(max1)
+
     def dominantIndex(self, nums):
         origin = nums[:]
         max_num = max(nums)

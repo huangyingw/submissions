@@ -1,6 +1,7 @@
 class Solution(object):
     def wordPatternMatch(self, pattern, str):
         m, n = len(pattern), len(str)
+
         def is_match(i, j):
             if i >= m and j >= n:
                 return True

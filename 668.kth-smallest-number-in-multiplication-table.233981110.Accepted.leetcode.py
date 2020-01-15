@@ -2,6 +2,7 @@ class Solution(object):
     def findKthNumber(self, m, n, k):
         if m > n:
             m, n = n, m
+
         def helper(guess):
             count = 0
             for i in range(1, m + 1):

@@ -7,6 +7,7 @@ class Solution(object):
                     grid[i][j] = 0
                     ans = max(self.dfs(grid, i, j), ans)
         return ans
+
     def dfs(self, grid, i, j):
         stack = [(i, j)]
         area = 0

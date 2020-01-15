@@ -3,6 +3,7 @@ class Solution(object):
         results = []
         self.cs3([], n, results, k)
         return results
+
     def cs3(self, partial, target, results, k):
         if len(partial) == k and target == 0:
             results.append(partial)

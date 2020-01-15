@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def findBlackPixel(self, picture, N):
         pixels = 0

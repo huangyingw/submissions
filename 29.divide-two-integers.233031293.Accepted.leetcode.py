@@ -1,4 +1,6 @@
 import math
+
+
 class Solution(object):
     def divide(self, dividend, divisor):
         if divisor == 0:

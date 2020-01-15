@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def invalidTransactions(self, transactions):
         elements = [transaction.split(",") + [i] for i, transaction in enumerate(transactions)]

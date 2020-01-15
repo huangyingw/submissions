@@ -16,6 +16,7 @@ class Solution(object):
                 else:
                     res += len(arr)
             return res
+
     def findStrobogrammatic(self, n):
         def dfs(arr, length, curLen, curString, isOdd):
             elements = ['0', '1', '6', '8', '9']

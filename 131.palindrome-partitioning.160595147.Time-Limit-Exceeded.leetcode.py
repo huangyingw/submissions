@@ -2,6 +2,7 @@ class Solution(object):
     def partition(self, s):
         current = []
         result = []
+
         def isPalindrome(s):
             left = 0
             right = len(s) - 1
@@ -9,6 +10,7 @@ class Solution(object):
                 if s[left] != s[right]:
                     return False
             return True
+
         def dfs(start):
             if start == len(s):
                 result.append(list(current))

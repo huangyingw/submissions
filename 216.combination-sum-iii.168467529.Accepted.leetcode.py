@@ -2,6 +2,7 @@ class Solution(object):
     def combinationSum3(self, k, n):
         current = []
         result = []
+
         def dfs(start, k, n):
             if k < 0 or n < 0:
                 return

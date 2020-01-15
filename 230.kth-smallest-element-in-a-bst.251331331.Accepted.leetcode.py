@@ -4,6 +4,7 @@ class Solution(object):
         self.result = None
         self.helper(root)
         return self.result
+
     def helper(self, node):
         if not node:
             return

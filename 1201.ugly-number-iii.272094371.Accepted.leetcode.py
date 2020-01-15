@@ -4,11 +4,13 @@ class Solution(object):
             while y != 0:
                 x, y = y, x % y
             return x
+
         def lcm(x, y):
             return (x * y) // gcd(x, y)
         a, b, c = sorted([a, b, c])
         ab, ac, bc = lcm(b, a), lcm(c, a), lcm(c, b)
         abc = lcm(bc, a)
+
         def ugly_less_or_equal(x):
             result = (x // a) + (x // b) + (x // c)
             result -= (x // ab) + (x // ac) + (x // bc)

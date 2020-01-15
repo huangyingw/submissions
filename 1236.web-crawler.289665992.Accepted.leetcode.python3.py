@@ -2,6 +2,7 @@ class Solution(object):
     def crawl(self, startUrl, htmlParser):
         PREFIX = "http://"
         n = len(PREFIX)
+
         def get_host_and_path(url):
             suffix = url[n:]
             if "/" not in suffix:
@@ -9,6 +10,7 @@ class Solution(object):
             return suffix.split("/", 1)
         start_host, _ = get_host_and_path(startUrl)
         results = set()
+
         def dfs(url):
             if url in results:
                 return

@@ -7,6 +7,7 @@ class Solution(object):
             result = self.convertHundred(num % 1000) + " " + v[idx] + " " + result if num % 1000 > 0 else result
         result = result.strip()
         return "Zero" if not result else result
+
     def convertHundred(self, num):
         v1 = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
               "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen",

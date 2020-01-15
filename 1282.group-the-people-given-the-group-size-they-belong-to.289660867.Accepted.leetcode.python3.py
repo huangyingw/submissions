@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def groupThePeople(self, groupSizes):
         size_to_group = defaultdict(list)

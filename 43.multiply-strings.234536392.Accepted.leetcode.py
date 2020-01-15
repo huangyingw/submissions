@@ -1,6 +1,7 @@
 class Solution:
     def multiply(self, num1, num2):
         return str(eval(num1 + '*' + num2))
+
     def multiply(self, num1, num2):
         res = [0] * (len(num1) + len(num2))
         for i in range(len(num1) - 1, -1, -1):

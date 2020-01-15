@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def maxRepOpt1(self, text):
         char_substrings = defaultdict(list)

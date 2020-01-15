@@ -2,6 +2,8 @@ class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
+
 class SolutionDvivideAndConquer:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         if not lists:
@@ -13,6 +15,7 @@ class SolutionDvivideAndConquer:
                 lists[i] = self.mergeLists(lists[i], lists[i + interval])
             interval *= 2
         return lists[0]
+
     def mergeLists(self, l1, l2):
         if not l1 or not l2:
             return l1 or l2
@@ -30,6 +33,8 @@ class SolutionDvivideAndConquer:
             cur.next = l1 or l2
         return head.next
 from queue import PriorityQueue
+
+
 class Solution_pq:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         head = cur = ListNode(0)
@@ -48,6 +53,8 @@ class Solution_pq:
                 q.put((node.val, count + 1, node))
                 count += 1
         return head.next
+
+
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         res = ListNode(0)

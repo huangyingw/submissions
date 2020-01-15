@@ -3,6 +3,7 @@ class Solution(object):
         if n == 0:
             return []
         return self.get_trees(1, n)
+
     def get_trees(self, start, end):
         res = []
         if start > end:

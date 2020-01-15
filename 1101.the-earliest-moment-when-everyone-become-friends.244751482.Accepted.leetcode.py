@@ -3,6 +3,7 @@ class Solution(object):
         logs.sort()
         friend = {i: i for i in range(N)}
         groups = N
+
         def leader(i):
             while friend[i] != i:
                 i = friend[i]

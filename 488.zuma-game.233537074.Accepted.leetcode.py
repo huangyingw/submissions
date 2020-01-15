@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def findMinStep(self, board, hand):
         def remove_sequences(board):
@@ -13,6 +15,7 @@ class Solution(object):
             if end - start >= 3:
                 board = board[:start]
             return board
+
         def helper(board):
             if not board:
                 return 0

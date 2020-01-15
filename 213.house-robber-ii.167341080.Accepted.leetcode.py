@@ -6,6 +6,7 @@ class Solution(object):
             return nums[0]
         if len(nums) == 2:
             return max(nums[0], nums[1])
+
         def rob1(left, right):
             dp = [nums[left]] * (right - left + 1)
             dp[1] = max(nums[left], nums[left + 1])

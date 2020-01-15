@@ -3,6 +3,7 @@ class Solution(object):
         res = []
         self.findLeaves_helper(root, res)
         return res
+
     def findLeaves_helper(self, node, res):
         if node is None:
             return -1

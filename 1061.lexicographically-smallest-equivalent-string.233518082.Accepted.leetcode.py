@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def smallestEquivalentString(self, A, B, S):
         equivalents = defaultdict(set)
@@ -6,6 +8,7 @@ class Solution(object):
             equivalents[a].add(b)
             equivalents[b].add(a)
         minimum = {}
+
         def get_minimum(char):
             if char in minimum:
                 return minimum[char]

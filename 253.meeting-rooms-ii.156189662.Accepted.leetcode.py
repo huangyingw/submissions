@@ -4,6 +4,7 @@ class Solution(object):
             def __init__(self, time, flag):
                 self.time = time
                 self.flag = flag
+
             def __lt__(self, other):
                 if self.time < other.time:
                     return True

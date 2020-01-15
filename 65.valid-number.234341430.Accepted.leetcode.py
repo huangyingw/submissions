@@ -5,6 +5,8 @@ class Solution(object):
         except:
             return False
         return True
+
+
 class Solution(object):
     def isNumber(self, s):
         states = [{},

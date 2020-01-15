@@ -1,4 +1,6 @@
 import collections
+
+
 class Solution:
     def longestArithSeqLength(self, A: List[int]) -> int:
         dp = collections.defaultdict(dict)
@@ -9,6 +11,8 @@ class Solution:
                 dp[i][diff] = 1 + dp[j].get(diff, 1)
                 maxLength = max(maxLength, dp[i][diff])
         return maxLength
+
+
 class Solution1:
     def longestArithSeqLength(self, A: List[int]) -> int:
         dp = {}

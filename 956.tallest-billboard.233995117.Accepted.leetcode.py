@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def tallestBillboard(self, rods):
         diffs = {0: 0}

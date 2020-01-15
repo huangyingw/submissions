@@ -9,6 +9,7 @@ class Solution(object):
             pre = current
             current = temp
         return pre
+
     def split(self, head):
         lists = [None for _ in range(2)]
         lists[0] = head
@@ -24,6 +25,7 @@ class Solution(object):
         lists[1] = slow.next
         slow.next = None
         return lists
+
     def merge(self, l1, l2):
         while l2:
             temp = l1.next
@@ -32,6 +34,7 @@ class Solution(object):
             temp = l2.next
             l2.next = l1
             l2 = temp
+
     def reorderList(self, head):
         lists = self.split(head)
         lists[1] = self.reverse(lists[1])

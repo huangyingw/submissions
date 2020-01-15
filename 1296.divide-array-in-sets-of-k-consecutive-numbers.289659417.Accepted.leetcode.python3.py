@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def isPossibleDivide(self, nums, k):
         if len(nums) % k != 0:

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def findFrequentTreeSum(self, root):
         def count_sums(node):

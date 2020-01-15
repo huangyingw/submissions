@@ -14,6 +14,7 @@ class Solution(object):
             if i < lsh and haystack[i] != needle[j]:
                 j = next[j]
         return -1
+
     def makeNext(self, needle):
         ls = len(needle)
         next = [0] * ls

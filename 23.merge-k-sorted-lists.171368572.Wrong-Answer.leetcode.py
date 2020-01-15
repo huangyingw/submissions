@@ -11,6 +11,7 @@ class Solution(object):
                 l2 = l2.next
             nav = nav.next
         return dummy.next
+
     def mergeKLists(self, lists):
         dummy = ListNode(-1)
         for li in lists:

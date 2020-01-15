@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def countCharacters(self, words, chars):
         chars_count = Counter(chars)

@@ -8,6 +8,8 @@ class Solution(object):
                 row.append([1, 0][a[LEN - 1 - i]])
             Ans.append(row)
         return Ans
+
+
 class SolutionII(object):
     def flipAndInvertImage(self, A):
         for a in A:
@@ -18,6 +20,8 @@ class SolutionII(object):
                 l += 1
                 r -= 1
         return A
+
+
 class SolutionIII(object):
     def flipAndInvertImage(self, A):
         for row in A:

@@ -4,6 +4,7 @@ class Solution(object):
         for idx, val in enumerate(inorder):
             map[val] = idx
         return dfs(0, len(preorder) - 1, 0, len(inorder) - 1)
+
         def dfs(preLeft, preRight, inLeft, inRight):
             if preLeft > preRight:
                 return None

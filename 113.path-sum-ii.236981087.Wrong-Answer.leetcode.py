@@ -3,6 +3,7 @@ class Solution(object):
         paths = []
         self.preorder(root, sum, [], paths)
         return paths
+
     def preorder(self, node, target, partial, paths):
         if not node:
             return

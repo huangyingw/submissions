@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numEquivDominoPairs(self, dominoes):
         seen = defaultdict(int)

@@ -1,5 +1,7 @@
 from collections import defaultdict
 import heapq
+
+
 class Solution(object):
     def highFive(self, items):
         TOP_SCORES = 5

@@ -5,6 +5,7 @@ class Solution(object):
         if self.getDepth(root) < 0:
             return False
         return True
+
     def getDepth(self, node):
         if node is None:
             return 1

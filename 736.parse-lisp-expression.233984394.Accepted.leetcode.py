@@ -2,6 +2,7 @@ class Solution(object):
     def evaluate(self, expression):
         tokens = expression.split(" ")
         scopes = [{}]
+
         def helper(start):
             if start >= len(tokens):
                 return 0, start
@@ -37,6 +38,7 @@ class Solution(object):
                 closing_brackets -= 1
                 scopes.pop()
             return result
+
         def continue_let(i):
             return "a" <= tokens[i][0] <= "z" and tokens[i][-1] != ")"
         return helper(0)[0]

@@ -4,6 +4,7 @@ class Solution(object):
         self.v2 = v2
         self.index_v1 = 0
         self.index_v2 = 0
+
     def next(self):
         result = -1
         if self.index_v1 != len(self.v1) and self.index_v1 <= self.index_v2:
@@ -13,6 +14,7 @@ class Solution(object):
             result = self.v2[self.index_v2]
             self.index_v2 += 1
         return result
+
     def hasNext(self):
         return self.index_v1 < len(self.v1) or self.index_v2 < len(self.v2)
 solution = Solution([1, 2], [3, 4, 5, 6])

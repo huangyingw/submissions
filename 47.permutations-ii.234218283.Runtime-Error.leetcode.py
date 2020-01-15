@@ -5,6 +5,7 @@ class Solution(object):
             return res
         self.permute(res, num, 0)
         return res
+
     def permute(self, res, num, index):
         if index == len(num):
             res.append(list(num))
@@ -17,6 +18,7 @@ class Solution(object):
             num[i], num[index] = num[index], num[i]
             self.permute(res, num, index + 1)
             num[i], num[index] = num[index], num[i]
+
     def permuteUnique(self, num):
         res = [[]]
         for i in range(len(nums)):

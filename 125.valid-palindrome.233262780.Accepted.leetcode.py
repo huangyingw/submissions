@@ -1,4 +1,6 @@
 import string
+
+
 class Solution(object):
     def isPalindrome(self, s):
         allowed = set(string.ascii_lowercase + string.digits)

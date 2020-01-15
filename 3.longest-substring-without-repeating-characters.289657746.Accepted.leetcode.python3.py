@@ -13,6 +13,7 @@ class Solution:
             else:
                 temp.add(s[i])
         return max(max_length, len(s) - index)
+
     def lengthOfLongestSubstring1(self, s: str) -> int:
         d = {}
         max_length = 0

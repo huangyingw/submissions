@@ -2,6 +2,7 @@ class Solution(object):
     def combinationSum2(self, candidates, target):
         result = []
         candidates.sort()
+
         def recursive(candidates, target, currList, index):
             if target < 0:
                 return

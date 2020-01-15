@@ -11,6 +11,7 @@ class Solution(object):
             else:
                 not_equal.append((first, second))
         groups = [None] * 26
+
         def dfs(node, group):
             if groups[node] is None:
                 groups[node] = group

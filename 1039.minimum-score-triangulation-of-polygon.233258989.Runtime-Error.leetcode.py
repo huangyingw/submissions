@@ -1,4 +1,6 @@
 from functools import lru_cache
+
+
 class Solution(object):
     def minScoreTriangulation(self, A):
         @lru_cache(None)

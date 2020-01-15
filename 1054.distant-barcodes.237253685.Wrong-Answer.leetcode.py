@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def rearrangeBarcodes(self, barcodes):
         n = len(barcodes)

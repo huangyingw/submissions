@@ -6,6 +6,7 @@ class Solution(object):
     rows = height(root)
     cols = 2 ** rows - 1
     result = [["" for _ in range(cols)] for _ in range(rows)]
+
     def place(node, r, c):
         if not node:
             return

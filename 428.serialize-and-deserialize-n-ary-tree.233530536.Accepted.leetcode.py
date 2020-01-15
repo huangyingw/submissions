@@ -1,7 +1,10 @@
 from collections import deque
+
+
 class Codec:
     def serialize(self, root):
         serial = []
+
         def preorder(node):
             if not node:
                 return

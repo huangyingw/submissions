@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution:
     def hasGroupsSizeX(self, deck):
         freq = Counter(deck)

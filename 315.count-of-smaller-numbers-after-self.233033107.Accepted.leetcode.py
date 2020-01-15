@@ -4,6 +4,8 @@ class TreeNode(object):
         self.left = None
         self.val = val
         self.count = 1
+
+
 class Solution(object):
     def countSmaller(self, nums):
         if len(nums) == 0:
@@ -13,6 +15,7 @@ class Solution(object):
         for index in range(len(nums) - 2, -1, -1):
             result.append(self.insertNode(node, nums[index]))
         return result[::-1]
+
     def insertNode(self, node, val):
         totalCount = 0
         while True:

@@ -1,5 +1,7 @@
 from collections import defaultdict
 import string
+
+
 class Solution:
     def findLadders(self, beginWord, endWord, wordList):
         def backtrack(path, word, result):

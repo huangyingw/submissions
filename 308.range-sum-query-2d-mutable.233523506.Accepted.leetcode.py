@@ -7,6 +7,7 @@ class NumMatrix(object):
             for c in range(1, self.cols):
                 matrix[r][c] += matrix[r][c - 1]
         self.matrix = matrix
+
     def update(self, row, col, val):
         prev = self.matrix[row][col]
         if col != 0:
@@ -14,6 +15,7 @@ class NumMatrix(object):
         diff = val - prev
         for c in range(col, self.cols):
             self.matrix[row][c] += diff
+
     def sumRegion(self, row1, col1, row2, col2):
         sum_region = 0
         for r in range(row1, row2 + 1):

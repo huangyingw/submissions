@@ -3,6 +3,8 @@ class Interval(object):
         self.start = s
         self.end = e
 import heapq
+
+
 class Solution(object):
     def minMeetingRooms(self, intervals):
         max_rooms = 0
@@ -14,6 +16,8 @@ class Solution(object):
                 heapq.heappop(rooms)
             max_rooms = max(max_rooms, len(rooms))
         return max_rooms
+
+
 class Solution2(object):
     def minMeetingRooms(self, intervals):
         overlaps = []

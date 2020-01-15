@@ -1,5 +1,7 @@
 from collections import defaultdict
 import bisect
+
+
 class TopVotedCandidate:
     def __init__(self, persons, times):
         self.times = times
@@ -14,6 +16,7 @@ class TopVotedCandidate:
             elif counts[person] == max_count:
                 leaders.append(person)
             self.leader.append(leaders[-1])
+
     def q(self, t):
         i = bisect.bisect_left(self.times, t)
         if i == len(self.times) or self.times[i] > t:

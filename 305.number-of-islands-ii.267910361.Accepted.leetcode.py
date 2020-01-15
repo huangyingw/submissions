@@ -21,6 +21,7 @@ class Solution:
             result.append(island)
             matrix[x][y] = 1
         return result
+
     def find(self, node, roots):
         root = node
         while root != roots[root]:

@@ -7,6 +7,7 @@ class Solution:
             d1[ord(s[i])] = i
             d2[ord(t[i])] = i
         return True
+
     def isIsomorphic1(self, s: str, t: str) -> bool:
         d1, d2 = {}, {}
         for i in range(len(s)):

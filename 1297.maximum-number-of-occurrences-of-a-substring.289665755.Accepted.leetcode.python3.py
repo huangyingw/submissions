@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def maxFreq(self, s, maxLetters, minSize, maxSize):
         substrings = defaultdict(int)

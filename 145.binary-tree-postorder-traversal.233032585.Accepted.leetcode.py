@@ -1,6 +1,7 @@
 class Solution(object):
     def postorderTraversal(self, root):
         result = []
+
         def recursive(root, result):
             if not root:
                 return
@@ -9,6 +10,8 @@ class Solution(object):
             result.append(root.val)
         recursive(root, result)
         return result
+
+
 class Solution(object):
     def postorderTraversal(self, root):
         if not root:

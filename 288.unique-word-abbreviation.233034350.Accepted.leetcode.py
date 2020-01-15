@@ -8,10 +8,12 @@ class ValidWordAbbr(object):
                 self.abb_dic[curr] = False
             else:
                 self.abb_dic[curr] = True
+
     def isUnique(self, word):
         abb = self.getAbb(word)
         hasAbbr = self.abb_dic.get(abb, None)
         return hasAbbr == None or (hasAbbr and word in self.dictionary)
+
     def getAbb(self, word):
         if len(word) <= 2:
             return word

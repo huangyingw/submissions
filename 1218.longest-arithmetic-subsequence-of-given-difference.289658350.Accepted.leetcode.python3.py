@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def longestSubsequence(self, arr, difference):
         num_to_length = defaultdict(int)

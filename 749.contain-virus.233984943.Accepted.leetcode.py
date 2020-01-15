@@ -2,6 +2,7 @@ class Solution(object):
     def containVirus(self, grid):
         rows, cols = len(grid), len(grid[0])
         used_walls = 0
+
         def get_nbors(r, c):
             if (r, c) in visited:
                 return
@@ -17,6 +18,7 @@ class Solution(object):
                     walls[0] += 1
                 else:
                     get_nbors(r1, c1)
+
         def contain_region(r, c):
             if r < 0 or r >= rows or c < 0 or c >= cols:
                 return

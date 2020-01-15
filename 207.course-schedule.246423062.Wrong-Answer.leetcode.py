@@ -11,6 +11,7 @@ class Solution(object):
                 if self.dfs(graph, visited, stack, course):
                     return False
         return True
+
     def dfs(self, graph, visited, stack, course):
         visited[course] = True
         stack[course] = True

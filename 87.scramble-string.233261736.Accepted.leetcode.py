@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def isScramble(self, s1, s2):
         count1 = Counter(s1)

@@ -1,4 +1,6 @@
 import bisect
+
+
 class Solution(object):
     def isMajorityElement(self, nums, target):
         n = len(nums)

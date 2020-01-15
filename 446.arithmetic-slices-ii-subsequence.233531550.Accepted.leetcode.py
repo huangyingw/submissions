@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numberOfArithmeticSlices(self, A):
         count = 0

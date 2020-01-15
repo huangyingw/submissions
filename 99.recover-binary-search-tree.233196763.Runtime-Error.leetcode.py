@@ -1,6 +1,7 @@
 class Solution(object):
     def recoverTree(self, root):
         first, second, prev = None, None, None
+
         def inorder(root):
             if root:
                 inorder(root.left)

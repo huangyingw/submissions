@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def findSubstring(self, s, words):
         result = []

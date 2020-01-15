@@ -14,6 +14,7 @@ class Solution(object):
                 current.right = node
                 current.left = None
                 current = node
+
     def appendNode(self, stack, node):
         if node:
             stack.append(node)

@@ -3,6 +3,7 @@ class Solution:
         if n == 0:
             return []
         return self.generateSubtree(1, n)
+
     def generateSubtree(self, start, end):
         if start > end:
             return [None]

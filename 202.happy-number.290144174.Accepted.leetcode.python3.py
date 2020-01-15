@@ -9,6 +9,7 @@ class Solution:
             if new_no in temp:
                 return False
             n = new_no
+
     def squareSum(self, n):
         new_no = 0
         while n:

@@ -14,6 +14,7 @@ class Solution(object):
         for i in range(len(S) - 1, -1, -1):
             last_indices[S[i]] = i
             next_index_letter[i] = last_indices[:]
+
         def helper(i, j):
             if (i, j) in memo:
                 return memo[(i, j)]

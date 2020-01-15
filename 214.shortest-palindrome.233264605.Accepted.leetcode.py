@@ -2,6 +2,7 @@ class Solution(object):
     def shortestPalindrome(self, s):
         longest_prefix_suffix = self.kmp_table(s + '*' + s[::-1])
         return s[:longest_prefix_suffix:-1] + s
+
     def kmp_table(self, word):
         failure = [-1] + [0 for _ in range(len(word) - 1)]
         pos = 2

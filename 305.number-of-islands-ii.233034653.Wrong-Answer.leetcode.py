@@ -10,20 +10,25 @@ class Solution(object):
                     islands.unite(p, q)
             ans += [islands.count]
         return ans
+
+
 class Union(object):
     def __init__(self):
         self.id = {}
         self.sz = {}
         self.count = 0
+
     def add(self, p):
         self.id[p] = p
         self.sz[p] = 1
         self.count += 1
+
     def root(self, i):
         while i != self.id[i]:
             self.id[i] = self.id[self.id[i]]
             i = self.id[i]
         return i
+
     def unite(self, p, q):
         i, j = self.root(p), self.root(q)
         if i == j:

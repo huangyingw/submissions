@@ -17,6 +17,7 @@ class Solution:
         if carry == '1':
             res.append(carry)
         return ''.join(res[::-1])
+
     def addBinary_integer(self, a: str, b: str) -> str:
         res = []
         i = len(a) - 1
@@ -33,6 +34,7 @@ class Solution:
         if carry == 1:
             res.append(str(carry))
         return ''.join(res[::-1])
+
     def addBinary_xor(self, a: str, b: str) -> str:
         res = []
         i = len(a) - 1

@@ -1,7 +1,10 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def maxLevelSum(self, root):
         level_sums = defaultdict(int)
+
         def helper(node, level):
             if not node:
                 return

@@ -7,6 +7,7 @@ class Solution(object):
                 self.dfs(M, visited, i)
                 count += 1
         return count
+
     def dfs(self, M, visited, i):
         for j in range(len(M)):
             if M[i][j] == 1 and visited[j] == 0:

@@ -2,6 +2,7 @@ class Solution(object):
     buffer = [None for _ in range(4)]
     oneRead = 0
     offset = 0
+
     def read(self, buf, n):
         lessthan4 = False
         haveRead = 0

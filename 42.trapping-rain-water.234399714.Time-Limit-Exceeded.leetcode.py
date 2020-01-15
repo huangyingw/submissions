@@ -10,6 +10,7 @@ class Solution:
                 max_r = max(max_r, height[j])
             ans += min(max_r, max_l) - height[i]
         return ans
+
     def trap2(self, height):
         if not height:
             return 0
@@ -26,6 +27,7 @@ class Solution:
         for i in range(1, size):
             ans += min(left_max[i], right_max[i]) - height[i]
         return ans
+
     def trap3(self, height):
         ans = current = 0
         stack = []
@@ -40,6 +42,7 @@ class Solution:
             current += 1
             stack.append(current)
         return ans
+
     def trap4(self, height):
         areas = 0
         max_l = max_r = 0

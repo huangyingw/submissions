@@ -1,6 +1,7 @@
 class Solution(object):
     def __init__(self):
         self.total = 0
+
     def convertBST(self, root):
         if root:
             self.convertBST(root.right)

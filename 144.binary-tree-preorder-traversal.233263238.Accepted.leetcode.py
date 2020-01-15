@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def preorderTraversal(self, root):
         if not root:
@@ -17,11 +19,14 @@ class Solution(object):
             if node.left:
                 stack.append(node.left)
         return preorder
+
+
 class Solution2(object):
     def preorderTraversal(self, root):
         result = []
         self.preorder(root, result)
         return result
+
     def preorder(self, node, result):
         if not node:
             return

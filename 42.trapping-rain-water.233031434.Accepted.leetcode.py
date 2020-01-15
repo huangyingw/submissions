@@ -24,6 +24,7 @@ class Solution(object):
             else:
                 pos += 1
         return res
+
     def rain_water(self, height, start, end):
         if end - start <= 1:
             return 0

@@ -14,6 +14,7 @@ class Solution:
             peak = prices[i]
             maxProfit += peak - valley
         return maxProfit
+
     def maxProfit(self, prices):
         maxProfit = 0
         for i in range(1, len(prices)):

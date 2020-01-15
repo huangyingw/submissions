@@ -11,9 +11,12 @@ class Solution(object):
             if element.left:
                 stack.append(element.left)
         return result
+
+
 class Solution(object):
     def preorderTraversal(self, root):
         result = []
+
         def recursive(root, result):
             if not root:
                 return

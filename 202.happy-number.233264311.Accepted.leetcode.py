@@ -9,6 +9,8 @@ class Solution(object):
             fast = sum([int(c) * int(c) for c in str(fast)])
             fast = sum([int(c) * int(c) for c in str(fast)])
         return slow == 1
+
+
 class Solution2(object):
     def isHappy(self, n):
         while True:

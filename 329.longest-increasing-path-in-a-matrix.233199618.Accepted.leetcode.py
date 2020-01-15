@@ -6,6 +6,7 @@ class Solution(object):
             for col in range(len(matrix[0])):
                 result = max(result, self.dfs(matrix, dp, row, col))
         return result
+
     def dfs(self, matrix, dp, i, j):
         if dp[i][j]:
             return dp[i][j]

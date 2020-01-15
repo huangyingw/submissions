@@ -1,8 +1,11 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def smallestStringWithSwaps(self, s, pairs):
         n = len(s)
         parents = {i: i for i in range(n)}
+
         def find(i):
             while parents[i] != i:
                 parents[i] = parents[parents[i]]

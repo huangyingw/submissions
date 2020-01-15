@@ -3,6 +3,7 @@ class Solution(object):
         if not root:
             return []
         paths = []
+
         def dfs(root, curr):
             if root.left is None and root.right is None:
                 paths.append(curr + str(root.val))

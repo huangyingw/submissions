@@ -5,6 +5,7 @@ class Solution(object):
         elif len(lists) == 0:
             return None
         return self.mergeK(lists, 0, len(lists) - 1)
+
     def mergeK(self, lists, low, high):
         if low == high:
             return lists[low]
@@ -12,6 +13,7 @@ class Solution(object):
             return self.mergeTwolists(lists[low], lists[high])
         mid = (low + high) / 2
         return self.mergeTwolists(self.mergeK(lists, low, mid), self.mergeK(lists, mid + 1, high))
+
     def mergeTwolists(self, l1, l2):
         if l1 is None:
             return l2

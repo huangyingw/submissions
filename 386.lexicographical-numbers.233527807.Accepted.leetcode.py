@@ -10,6 +10,8 @@ class Solution(object):
                     num //= 10
             lexical.append(num)
         return lexical
+
+
 class Solution2(object):
     def lexicalOrder(self, n):
         strings = list(map(str, range(1, n + 1)))

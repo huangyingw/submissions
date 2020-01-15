@@ -1,8 +1,11 @@
 import bisect
+
+
 class TimeMap(object):
     def __init__(self):
         self.time_dict = {}
         self.key_map = {}
+
     def set(self, key, value, timestamp):
         if key in self.time_dict:
             self.time_dict[key].append(timestamp)
@@ -10,6 +13,7 @@ class TimeMap(object):
         else:
             self.time_dict[key] = [timestamp]
             self.key_map[key] = [value]
+
     def get(self, key, timestamp):
         if key in self.time_dict:
             t_values = self.time_dict[key]

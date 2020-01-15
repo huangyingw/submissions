@@ -1,5 +1,7 @@
 from collections import defaultdict
 from itertools import combinations
+
+
 class Solution(object):
     def minAreaFreeRect(self, points):
         min_area = float("inf")

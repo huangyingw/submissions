@@ -21,5 +21,6 @@ class Solution(object):
             if m != n:
                 result.append('0' + t + '0')
         return result
+
     def strobogrammatic(self, n):
         return self.strobogrammatic_helper(n, n)

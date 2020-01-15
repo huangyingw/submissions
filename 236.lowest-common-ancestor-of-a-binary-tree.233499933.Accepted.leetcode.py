@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
         if not root or p == root or q == root:

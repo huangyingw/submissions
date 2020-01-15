@@ -3,6 +3,7 @@ class Solution(object):
         digits = [int(c) for c in str(N + 1)]
         n = len(digits)
         not_dup = 0
+
         def permutations(num_digits, length):
             if length == 0:
                 return 1

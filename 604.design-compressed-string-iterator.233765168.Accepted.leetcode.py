@@ -4,6 +4,7 @@ class StringIterator(object):
         self.count = 0
         self.i = 0
         self.s = compressedString
+
     def next(self):
         if not self.hasNext():
             return " "
@@ -11,8 +12,10 @@ class StringIterator(object):
             self.move()
         self.count -= 1
         return self.letter
+
     def hasNext(self):
         return self.count > 0 or self.i < len(self.s)
+
     def move(self):
         self.letter = self.s[self.i]
         self.count = 0

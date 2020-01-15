@@ -4,6 +4,7 @@ class Solution(object):
         visited = set()
         deadends = set(deadends)
         steps = 0
+
         def shift(combo):
             shifts = set()
             for i, c in enumerate(combo):

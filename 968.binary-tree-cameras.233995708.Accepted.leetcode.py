@@ -1,6 +1,7 @@
 class Solution(object):
     def minCameraCover(self, root):
         covered = {None}
+
         def helper(node, parent):
             if not node:
                 return 0

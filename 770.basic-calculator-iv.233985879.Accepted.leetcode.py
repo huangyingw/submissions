@@ -1,14 +1,18 @@
 from collections import Counter
 import re
+
+
 class Solution(object):
     def basicCalculatorIV(self, expression, evalvars, evalints):
         class CounterMul(Counter):
             def __add__(self, other):
                 self.update(other)
                 return self
+
             def __sub__(self, other):
                 self.subtract(other)
                 return self
+
             def __mul__(self, other):
                 product = CounterMul()
                 for x in self:
@@ -17,6 +21,7 @@ class Solution(object):
                         product[xy] += self[x] * other[y]
                 return product
         vals = dict(zip(evalvars, evalints))
+
         def make_counter(token):
             token = str(vals.get(token, token))
             if token.isalpha():

@@ -4,6 +4,7 @@ class Solution(object):
         for i in range(len(array)):
             ans += bisect.bisect_right(array, array[i] + value, lo=i) - i - 1
         return ans
+
     def smallestDistancePair(self, nums, k):
         nums.sort()
         low, high = min([abs(nums[i] - nums[i + 1]) for i in range(len(nums) - 1)]), abs(nums[0] - nums[~0])

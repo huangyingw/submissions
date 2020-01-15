@@ -4,8 +4,10 @@ class WordDictionary(object):
             self.content = content
             self.isWord = False
             self.nexts = {}
+
     def __init__(self):
         self.root = self.TrieNode()
+
     def addWord(self, word):
         current = self.root
         for i in range(0, len(word)):
@@ -16,11 +18,13 @@ class WordDictionary(object):
                 node = current.nexts[c]
             current = node
         current.isWord = True
+
     def search(self, word):
         if not word:
             return False
         trieNode = self.root
         return self.dfs(word, 0, trieNode)
+
     def dfs(self, word, index, trieNode):
         if index == len(word) - 1:
             if word[index] == '.':

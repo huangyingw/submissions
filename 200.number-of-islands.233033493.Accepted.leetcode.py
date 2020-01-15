@@ -9,6 +9,7 @@ class Solution(object):
                     self.explore(grid, i, j)
                     islands += 1
         return islands
+
     def explore(self, grid, i, j):
         grid[i][j] = 'X'
         if i - 1 >= 0 and grid[i - 1][j] == '1':

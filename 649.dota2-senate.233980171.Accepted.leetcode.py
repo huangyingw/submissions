@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def predictPartyVictory(self, senate):
         n = len(senate)

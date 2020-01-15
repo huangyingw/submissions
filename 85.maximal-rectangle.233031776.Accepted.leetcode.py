@@ -23,6 +23,7 @@ class Solution(object):
                 area = heights[curr] * (index - stack[-1] - 1)
             result = max(result, area)
         return result
+
     def maximalRectangle(self, matrix):
         if not matrix:
             return 0

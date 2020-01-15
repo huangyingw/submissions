@@ -2,6 +2,7 @@ class MovingAverage(object):
     def __init__(self, size):
         self.size = size
         self.curr_range = []
+
     def next(self, val):
         if len(self.curr_range) == self.size:
             self.curr_range.pop(0)

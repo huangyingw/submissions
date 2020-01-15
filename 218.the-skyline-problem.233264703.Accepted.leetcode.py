@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def getSkyline(self, buildings):
         skyline = [(0, 0)]

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numSimilarGroups(self, A):
         N, W = len(A), len(A[0])
@@ -12,6 +14,7 @@ class Solution(object):
                         word_swap[w2].add(w1)
         else:
             A_set = set(A)
+
         def get_neighbours(a):
             if word_swap:
                 return word_swap[a]
@@ -25,6 +28,7 @@ class Solution(object):
             return neighbours
         groups = 0
         visited = set()
+
         def dfs(w):
             visited.add(w)
             for nbor in get_neighbours(w):

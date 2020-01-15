@@ -7,6 +7,7 @@ class Solution:
                 if self.dfs(board, i, j, word):
                     return True
         return False
+
     def dfs(self, board, i, j, word):
         if len(word) == 0:
             return True

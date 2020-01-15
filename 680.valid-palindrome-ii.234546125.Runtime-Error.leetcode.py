@@ -8,6 +8,7 @@ class Solution1:
             l += 1
             r -= 1
         return True
+
     def isValidPalindrome(self, s, l, r):
         while l < r:
             if s[l] != s[r]:
@@ -15,6 +16,8 @@ class Solution1:
             l += 1
             r -= 1
         return True
+
+
 class Solution2:
     def validPalindrome(self, s):
         a = s[::-1]

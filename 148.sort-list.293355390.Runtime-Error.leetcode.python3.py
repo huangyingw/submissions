@@ -9,6 +9,7 @@ class Solution(object):
         one = self.sortList(head)
         two = self.sortList(slow)
         return self.merge(one, two)
+
     def merge(self, one, two):
         dummy = merged = ListNode()
         while one and two:

@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def minKBitFlips(self, A, K):
         flips = 0

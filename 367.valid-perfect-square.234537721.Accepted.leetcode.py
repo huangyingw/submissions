@@ -11,6 +11,7 @@ class Solution:
             else:
                 high = mid - 1
         return False
+
     def isPerfectSqure(self, num):
         i = 1
         while num > 0:

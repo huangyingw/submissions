@@ -3,6 +3,7 @@ class Solution(object):
         MOD = 2 ** 63 - 1
         MULTIPLIER = 26
         s = [ord(c) - ord("a") for c in S]
+
         def test(guess):
             hash_value = 0
             for i in range(guess):

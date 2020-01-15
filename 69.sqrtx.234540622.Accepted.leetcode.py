@@ -11,6 +11,7 @@ class Solution:
             else:
                 low = mid + 1
         return high
+
     def mySqrt(self, x):
         if x == 0:
             return 0

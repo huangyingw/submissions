@@ -10,6 +10,8 @@ class Solution(object):
         if remainder == 5:
             return product * 3 * 2
         return product * 3 * 3
+
+
 class Solution2(object):
     def integerBreak(self, n):
         max_breaks = [0, 1]

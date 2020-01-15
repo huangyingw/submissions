@@ -6,6 +6,7 @@ class Solution:
                 nums[i] = n
                 i += 1
         return i
+
     def removeDuplicates2(self, nums):
         i = 2
         while (i < len(nums)):

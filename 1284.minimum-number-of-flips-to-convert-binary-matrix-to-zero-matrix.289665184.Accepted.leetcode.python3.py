@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def minFlips(self, mat):
         rows, cols = len(mat), len(mat[0])

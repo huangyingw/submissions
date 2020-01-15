@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class AutocompleteSystem(object):
     def __init__(self, sentences, times):
         self.partial = []
@@ -6,6 +8,7 @@ class AutocompleteSystem(object):
         self.counts = defaultdict(int)
         for sentence, count in zip(sentences, times):
             self.counts[sentence] = count
+
     def input(self, c):
         if c == "#":
             sentence = "".join(self.partial)

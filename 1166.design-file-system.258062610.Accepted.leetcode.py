@@ -2,9 +2,12 @@ class Node(object):
     def __init__(self, value):
         self.children = {}
         self.value = value
+
+
 class FileSystem(object):
     def __init__(self):
         self.root = Node(None)
+
     def traverse(self, folders):
         node = self.root
         for folder in folders[1:]:
@@ -12,6 +15,7 @@ class FileSystem(object):
                 return None
             node = node.children[folder]
         return node
+
     def createPath(self, path, value):
         folders = path.split("/")
         node = self.traverse(folders[:-1])
@@ -19,6 +23,7 @@ class FileSystem(object):
             return False
         node.children[folders[-1]] = Node(value)
         return True
+
     def get(self, path):
         node = self.traverse(path.split("/"))
         if not node:

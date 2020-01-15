@@ -14,6 +14,7 @@ class Solution:
             else:
                 head = head.next
         return dummyHead.next
+
     def reverseList(self, begin, end):
         cur = begin.next
         prev = begin

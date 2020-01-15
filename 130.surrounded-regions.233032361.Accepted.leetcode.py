@@ -18,6 +18,7 @@ class Solution(object):
                     board[row][col] = 'X'
                 elif board[row][col] == '
                 board[row][col] = 'O'
+
     def merge(self, board, row, col):
         if row < 0 or col < 0 or row >= len(board) or col >= len(board[0]):
             return

@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def lastStoneWeight(self, stones):
         stones = [-stone for stone in stones]

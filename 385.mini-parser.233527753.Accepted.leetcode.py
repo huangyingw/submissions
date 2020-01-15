@@ -1,6 +1,7 @@
 class Solution(object):
     def deserialize(self, s):
         return self.helper(eval(s))
+
     def helper(self, s_eval):
         if isinstance(s_eval, int):
             return NestedInteger(s_eval)

@@ -1,6 +1,7 @@
 class Solution:
     def expressiveWords(self, S, words):
         return sum(self.check(S, W) for W in words)
+
     def check(self, S, W):
         i, j, i2, j2, n, m = 0, 0, 0, 0, len(S), len(W)
         while i < n and j < m:

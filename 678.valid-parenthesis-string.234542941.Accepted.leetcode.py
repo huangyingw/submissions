@@ -14,6 +14,7 @@ class Solution:
             if cmax < 0:
                 return False
         return cmin == 0
+
     def checkValidString(self, s):
         cmin = cmax = 0
         for i in s:

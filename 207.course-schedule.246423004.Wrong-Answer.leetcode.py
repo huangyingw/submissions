@@ -7,6 +7,7 @@ class Solution(object):
             x, y = pair
             graph[x].append(y)
         return True
+
     def dfs(self, graph, visited, stack, course):
         visited[course] = True
         stack[course] = True

@@ -1,6 +1,8 @@
 class Solution(object):
     def containsDuplicate(self, nums):
         return len(nums) != len(set(nums))
+
+
 class Solution1:
     def containsDuplicate(self, nums: List[int]) -> bool:
         temp = set()

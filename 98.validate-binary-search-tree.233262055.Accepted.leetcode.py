@@ -3,12 +3,15 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def isValidBST(self, root):
         self.correct = True
         self.prev = float('-inf')
         self.inorder(root)
         return self.correct
+
     def inorder(self, node):
         if not node or not self.correct:
             return
@@ -18,9 +21,12 @@ class Solution(object):
             return
         self.prev = node.val
         self.inorder(node.right)
+
+
 class Solution2(object):
     def isValidBST(self, root):
         return self.valid(root, float('-inf'), float('inf'))
+
     def valid(self, node, lower, upper):
         if not node:
             return True

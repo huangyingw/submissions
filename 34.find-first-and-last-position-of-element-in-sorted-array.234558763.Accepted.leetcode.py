@@ -4,6 +4,7 @@ class Solution(object):
         if leftIndex == len(nums) or nums[leftIndex] != target:
             return [-1, -1]
         return [leftIndex, self.binarySearch(nums, target, False)]
+
     def binarySearch(self, nums, target, flag):
         low, high = 0, len(nums) - 1
         while low <= high:

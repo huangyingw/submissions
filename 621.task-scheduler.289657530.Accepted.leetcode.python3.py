@@ -12,6 +12,8 @@ class Solution:
             idle_slots -= min(max_val, v)
         return idle_slots + len(tasks) if idle_slots > 0 else len(tasks)
 from collections import Counter
+
+
 class Solution1:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         task_counts = Counter(tasks).values()

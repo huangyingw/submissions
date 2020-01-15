@@ -9,6 +9,7 @@ class Solution:
                 else:
                     cur.next = cur = node
             head = next_head
+
     @staticmethod
     def getLinkedList(head):
         while head:

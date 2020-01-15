@@ -3,6 +3,8 @@ class ListNode:
         self.val = x
         self.next = None
 import heapq
+
+
 class Solution:
     def mergeKLists(self, lists):
         dummy = curr = ListNode(0)

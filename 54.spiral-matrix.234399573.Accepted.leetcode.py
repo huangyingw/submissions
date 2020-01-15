@@ -18,6 +18,7 @@ class Solution:
                 di = (di + 1) % 4
                 r, c = r + dr[di], c + dc[di]
         return ans
+
     def spiralOrder2(self, matrix):
         def spiral_coords(r1, c1, r2, c2):
             for c in range(c1, c2 + 1):

@@ -4,6 +4,7 @@ class Solution:
         candidates.sort()
         self.findCombination(result, [], candidates, target)
         return result
+
     def findCombination(self, result, path, candidates, target):
         if target == 0:
             result.append(path.copy())

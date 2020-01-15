@@ -8,6 +8,7 @@ class Solution(object):
                 current.append(subStr)
                 self.dfs(str, index + 1, current, result)
                 current.pop(current.size() - 1)
+
     def isPalindrome(self, str):
         left = 0
         right = len(str) - 1
@@ -17,6 +18,7 @@ class Solution(object):
             left += 1
             right -= 1
         return True
+
     def partition(self, s):
         result = []
         self.dfs(s, 0, [], result)

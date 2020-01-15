@@ -3,6 +3,7 @@ class Solution(object):
         traversal = []
         self.inorder(root, 0, traversal)
         return traversal[::-1]
+
     def inorder(self, node, depth, traversal):
         if not node:
             return

@@ -1,11 +1,16 @@
 import collections
+
+
 class Interval:
     def __init__(self, s=0, e=0):
         self.start = s
         self.end = e
+
+
 class Solution:
     def overlap(self, a, b):
         return a.start <= b.end and b.start <= a.end
+
     def build_graph(self, intervals):
         graph = collections.defaultdict(list)
         for i, interval_i in enumerate(intervals):
@@ -14,14 +19,17 @@ class Solution:
                     graph[interval_i].append(intervals[j])
                     graph[intervals[j]].append(interval_i)
         return graph
+
     def merge_nodes(self, nodes):
         min_start = min(node.start for node in nodes)
         max_end = max(node.end for node in nodes)
         return Interval(min_start, max_end)
+
     def get_components(self, graph, intervals):
         visited = set()
         comp_number = 0
         nodes_in_comp = collections.defaultdict(list)
+
         def mark_component_dfs(start):
             stack = [start]
             while stack:
@@ -35,10 +43,13 @@ class Solution:
                 mark_component_dfs(interval)
                 comp_number += 1
         return nodes_in_comp, comp_number
+
     def merge(self, intervals):
         graph = self.build_graph(intervals)
         nodes_in_comp, number_of_comps = self.get_components(graph, intervals)
         return [self.merge_nodes(nodes_in_comp[comp]) for comp in range(number_of_comps)]
+
+
 class Solution2:
     def merge(self, intervals):
         intervals.sort(key=lambda x: x.start)

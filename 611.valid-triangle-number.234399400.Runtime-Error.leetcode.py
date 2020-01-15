@@ -1,4 +1,6 @@
 from itertools import combinations
+
+
 class Solution1:
     def triangleNumber(self, nums):
         def is_triangle(*args):
@@ -7,6 +9,8 @@ class Solution1:
                 return 1
             return 0
         return sum([is_triangle(*com) for com in combinations(nums, 3)])
+
+
 class Solution2:
     def triangleNumber(self, nums):
         nums.sort()

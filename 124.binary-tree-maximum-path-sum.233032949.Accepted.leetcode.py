@@ -1,9 +1,11 @@
 class Solution(object):
     def __init__(self):
         self.result = -2147483647
+
     def maxPathSum(self, root):
         self.getNodeMaxValue(root)
         return self.result
+
     def getNodeMaxValue(self, node):
         if node is None:
             return 0

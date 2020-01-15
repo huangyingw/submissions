@@ -10,6 +10,7 @@ class Solution:
             if all(count[c] >= uni[c] for c in uni):
                 res.append(a)
         return res
+
     def wordSubsets(self, A, B):
         ccb = {}
         for b in B:

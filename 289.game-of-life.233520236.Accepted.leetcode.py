@@ -11,6 +11,7 @@ class Solution(object):
         for r in range(rows):
             for c in range(cols):
                 board[r][c] >>= 1
+
     def count_neighbours(self, r, c, board):
         count = 0
         for row_offset in range(-1, 2):

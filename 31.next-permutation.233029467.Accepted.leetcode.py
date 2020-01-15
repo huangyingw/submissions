@@ -16,6 +16,7 @@ class Solution(object):
             for j in range(i + 1, ls):
                 if nums[i] > nums[j]:
                     self.swap(nums, i, j)
+
     def swap(self, nums, index1, index2):
         if index1 == index2:
             return

@@ -27,6 +27,7 @@ class Solution(object):
                 max_point = max(max_point, line_map[x][y])
             res = max(res, max_point + overlap + 1)
         return res
+
     def generateGCD(self, x, y):
         if y == 0:
             return x

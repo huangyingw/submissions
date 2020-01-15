@@ -4,6 +4,7 @@ class Solution(object):
         for employee in employees:
             importance[employee.id] = employee.importance
             subordinates[employee.id] = employee.subordinates
+
         def sum_importance(emp_id):
             if emp_id in sum_importances:
                 return sum_importances[emp_id]

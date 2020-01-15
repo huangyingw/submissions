@@ -7,6 +7,7 @@ class Solution:
             x = self.count(x)
             n -= 1
         return x
+
     def count(self, x):
         m = list(x)
         res = []

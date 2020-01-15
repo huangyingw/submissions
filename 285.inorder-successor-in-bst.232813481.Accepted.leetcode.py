@@ -12,6 +12,7 @@ class Solution(object):
             else:
                 root = root.right
         return prev_root
+
     def leftmost(self, node):
         while node.left:
             node = node.left

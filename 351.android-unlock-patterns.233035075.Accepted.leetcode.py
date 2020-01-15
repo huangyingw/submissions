@@ -6,6 +6,7 @@ class Solution(object):
             res += self.calc_patterns(used, -1, l)
             used = [False] * 9
         return res
+
     def is_valid(self, used, index, last):
         if used[index]:
             return False
@@ -19,6 +20,7 @@ class Solution(object):
         if (index % 3 != last % 3) and (index / 3 != last / 3):
             return True
         return used[mid]
+
     def calc_patterns(self, used, last, length):
         if length == 0:
             return 1

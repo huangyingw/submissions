@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def shortestSubarray(self, A, K):
         n = len(A)

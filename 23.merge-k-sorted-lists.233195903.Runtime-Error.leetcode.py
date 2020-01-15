@@ -14,6 +14,8 @@ class Solution(object):
             if node:
                 heapq.heappush(heap, (node.val, node))
         return point.next
+
+
 class Solution(object):
     def mergeKLists(self, lists):
         def merge2Lists(l1, l2):

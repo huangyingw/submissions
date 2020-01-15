@@ -2,9 +2,12 @@ class TrieNode(object):
     def __init__(self):
         self.words = []
         self.children = {}
+
+
 class Trie(object):
     def __init__(self):
         self.root = TrieNode()
+
     def insert(self, word):
         node = self.root
         for char in word:
@@ -15,6 +18,7 @@ class Trie(object):
             node.words.sort()
             if len(node.words) > 3:
                 node.words = node.words[:3]
+
     def search(self, word):
         result, node = [], self.root
         for char in word:
@@ -25,6 +29,8 @@ class Trie(object):
         for _ in range(len(word) - len(result)):
             result.append([])
         return result
+
+
 class Solution(object):
     def suggestedProducts(self, products, searchWord):
         trie = Trie()

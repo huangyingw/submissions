@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
         dummy = ListNode(-1)

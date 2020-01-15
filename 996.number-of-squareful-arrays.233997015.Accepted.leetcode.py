@@ -1,4 +1,6 @@
 from collections import defaultdict, Counter
+
+
 class Solution(object):
     def numSquarefulPerms(self, A):
         freq = Counter(A)
@@ -10,6 +12,7 @@ class Solution(object):
                 if int((num1 + num2) ** 0.5) ** 2 == num1 + num2:
                     pairs[num1].add(num2)
                     pairs[num2].add(num1)
+
         def helper(num, length):
             if length == len(A):
                 return 1

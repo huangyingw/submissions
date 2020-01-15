@@ -1,4 +1,6 @@
 import bisect
+
+
 class Solution(object):
     def jobScheduling(self, startTime, endTime, profit):
         dp = [[0, 0]]

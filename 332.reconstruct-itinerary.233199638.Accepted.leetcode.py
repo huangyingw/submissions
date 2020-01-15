@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def findItinerary(self, tickets):
         n = len(tickets)
@@ -8,6 +10,7 @@ class Solution(object):
         for x in trips:
             trips[x].sort()
         iter = ["JFK"]
+
         def dfs(curr_iter):
             if len(curr_iter) == n + 1:
                 return curr_iter

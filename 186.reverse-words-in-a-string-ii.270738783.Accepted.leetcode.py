@@ -8,6 +8,7 @@ class Solution:
                 self.reverse(s, start, i - 1)
                 start = i + 1
         s.pop()
+
     def reverse(self, s, left, right):
         while left < right:
             s[left], s[right] = s[right], s[left]

@@ -1,6 +1,7 @@
 class Solution(object):
     def twoSumBSTs(self, root1, root2, target):
         seen = set()
+
         def explore(node):
             if not node:
                 return
@@ -8,6 +9,7 @@ class Solution(object):
             explore(node.left)
             explore(node.right)
         explore(root1)
+
         def find(node):
             if not node:
                 return False

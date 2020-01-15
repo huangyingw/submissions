@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numPairsDivisibleBy60(self, time):
         mod_count = defaultdict(int)

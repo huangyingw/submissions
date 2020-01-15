@@ -3,6 +3,7 @@ class Solution(object):
         if not graph:
             return False
         visited = {}
+
         def dfs(pos):
             for j in graph[pos]:
                 if j in visited:

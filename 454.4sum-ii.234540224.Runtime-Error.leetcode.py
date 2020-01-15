@@ -22,6 +22,8 @@ class Solution1:
                 if -c - d in ab:
                     cnts += ab[-c - d] * cv * dv
         return cnts
+
+
 class Solution2:
     def fourSumCount(self, A, B, C, D):
         from collections import Counter

@@ -3,6 +3,7 @@ class MovingAverage(object):
         self.array = [None for _ in range(size)]
         self.i = 0
         self.total = 0
+
     def next(self, val):
         if self.array[self.i] is not None:
             self.total -= self.array[self.i]

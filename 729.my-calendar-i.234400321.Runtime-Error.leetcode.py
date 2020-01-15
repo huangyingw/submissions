@@ -1,6 +1,7 @@
 class MyCalendar1(object):
     def __init__(self):
         self.calendar = []
+
     def book(self, start, end):
         for s, e in self.calendar:
             if s < end and start < e:
@@ -8,9 +9,12 @@ class MyCalendar1(object):
         self.calendar.append((start, end))
         return True
 from bisect import bisect
+
+
 class MyCalendar2:
     def __init__(self):
         self.eventList = [(0, 0), (float('inf'), float('inf'))]
+
     def book(self, start, end):
         p = bisect(self.eventList, (start, end))
         if self.eventList[p - 1][1] > start:

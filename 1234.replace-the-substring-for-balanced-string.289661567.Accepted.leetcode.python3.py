@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def balancedString(self, s):
         balance = len(s) // 4

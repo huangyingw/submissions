@@ -16,9 +16,11 @@ class Solution:
             nums1[insert_point] = nums2.pop()
             point2 -= 1
             insert_point -= 1
+
     def merge(self, nums1, m, nums2, n):
         nums1[m:] = nums2[:n]
         nums1.sort()
+
     def merge(self, nums1, m, nums2, n):
         while m > 0 and n > 0:
             if nums1[m - 1] > nums2[n - 1]:

@@ -17,6 +17,7 @@ class Solution:
             res.append(tempList)
             currentRow += 1
         return res
+
     def generate(self, numRows):
         triag = [[0]]
         row = []

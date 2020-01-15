@@ -3,6 +3,7 @@ class Solution(object):
         valid = [0, 1, 6, 8, 9]
         rotations = {0: 0, 1: 1, 6: 9, 8: 8, 9: 6}
         self.count = 0
+
         def helper(num, rotation):
             length = len(str(num))
             if num != rotation:

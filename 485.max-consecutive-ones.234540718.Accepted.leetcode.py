@@ -8,6 +8,7 @@ class Solution:
                 res = i
         count = max(count, len(nums) - res - 1)
         return count
+
     def findMaxConsecutiveOnes(self, nums):
         max_count = 0
         count = 0
@@ -19,6 +20,7 @@ class Solution:
             else:
                 count = 0
         return max_count
+
     def findMaxConsecutiveOnes(self, nums):
         temp = bytearray(nums).split(b'\x00')
         return max([len(i) for i in temp])

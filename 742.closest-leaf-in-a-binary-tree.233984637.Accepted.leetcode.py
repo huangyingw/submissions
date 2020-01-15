@@ -1,6 +1,7 @@
 class Solution(object):
     def findClosestLeaf(self, root, k):
         nearest_leaves = {0: (float("inf"), 0)}
+
         def closest_down(node):
             if not node:
                 return (float("inf"), 0)
@@ -15,6 +16,7 @@ class Solution(object):
                     result = (right_dist + 1, right_nearest)
             nearest_leaves[node.val] = result
             return result
+
         def closest(node, parent_val):
             if not node:
                 return

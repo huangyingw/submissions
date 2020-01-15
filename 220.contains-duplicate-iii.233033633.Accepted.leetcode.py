@@ -1,4 +1,6 @@
 from collections import OrderedDict
+
+
 class Solution(object):
     def containsNearbyAlmostDuplicate(self, nums, k, t):
         buckets = {}

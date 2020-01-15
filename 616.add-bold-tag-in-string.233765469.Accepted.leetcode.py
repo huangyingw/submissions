@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def addBoldTag(self, s, dict):
         in_tag = [False for _ in range(len(s))]

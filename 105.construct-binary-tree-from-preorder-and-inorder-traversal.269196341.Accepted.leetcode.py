@@ -2,6 +2,7 @@ class Solution:
     def buildTree(self, preorder, inorder):
         inorderDict = {num: i for i, num in enumerate(inorder)}
         pre = iter(preorder)
+
         def helper(start, end):
             if start > end:
                 return None

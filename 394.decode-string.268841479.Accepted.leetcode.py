@@ -15,6 +15,7 @@ class Solution:
                 for i in range(stack.pop()):
                     stack.append(ss)
         return self.popStack(stack)
+
     def popStack(self, stack):
         result = ''
         while stack and type(stack[-1]) is not int:

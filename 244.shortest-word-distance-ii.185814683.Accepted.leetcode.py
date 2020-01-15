@@ -3,6 +3,7 @@ class WordDistance(object):
         self.w_to_idx = {}
         for idx, val in enumerate(words):
             self.w_to_idx.setdefault(val, []).append(idx)
+
     def shortest(self, word1, word2):
         distance = sys.maxint
         idxs1 = self.w_to_idx[word1]

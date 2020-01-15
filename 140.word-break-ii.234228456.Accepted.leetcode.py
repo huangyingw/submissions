@@ -1,6 +1,7 @@
 class Solution(object):
     def __init__(self):
         self.solution = {}
+
     def wordBreak(self, s, wordDict):
         try:
             return self.solution[s]

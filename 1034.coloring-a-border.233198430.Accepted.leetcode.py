@@ -4,6 +4,7 @@ class Solution(object):
             return grid
         visited, border = [], []
         m, n = len(grid), len(grid[0])
+
         def dfs(r, c):
             if r < 0 or c < 0 or r >= m or c >= n or grid[r][c] != grid[r0][c0] or (r, c) in visited:
                 return

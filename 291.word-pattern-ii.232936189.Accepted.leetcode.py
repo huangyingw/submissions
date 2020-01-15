@@ -2,6 +2,7 @@ class Solution(object):
     def wordPatternMatch(self, pattern, str):
         d, used = {}, {}
         return self.match(pattern, str, d, used)
+
     def match(self, pattern, str, d, used):
         if len(pattern) == 0 and len(str) == 0:
             return True

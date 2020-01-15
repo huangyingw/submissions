@@ -11,6 +11,7 @@ class Codec:
             node.right = self.encode(child)
             node = node.right
         return binary
+
     def decode(self, data):
         if not data:
             return None

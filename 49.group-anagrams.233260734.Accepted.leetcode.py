@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def groupAnagrams(self, strs):
         sorted_words = defaultdict(list)

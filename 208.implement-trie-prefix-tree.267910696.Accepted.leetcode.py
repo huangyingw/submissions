@@ -2,6 +2,8 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.isWord = False
+
+
 class Trie:
     def __init__(self):
         self.root = TrieNode()
@@ -9,6 +11,7 @@ class Trie:
     @param: word: a word
     @return: nothing
     """
+
     def insert(self, word):
         node = self.root
         for c in word:
@@ -20,6 +23,7 @@ class Trie:
     @param: word: A string
     @return: if the word is in the trie.
     """
+
     def search(self, word):
         node = self.root
         for c in word:
@@ -31,6 +35,7 @@ class Trie:
     @param: prefix: A string
     @return: if there is any word in the trie that starts with the given prefix.
     """
+
     def startsWith(self, prefix):
         node = self.root
         for c in prefix:

@@ -1,6 +1,7 @@
 class Solution(object):
     def gameOfLife(self, board):
         index = []
+
         def around(i, j, board):
             count = 0
             for k in range(i - 1, i + 2):

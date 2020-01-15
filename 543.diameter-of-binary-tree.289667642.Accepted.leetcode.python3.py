@@ -1,6 +1,7 @@
 class Solution(object):
     def diameterOfBinaryTree(self, root):
         self.result = 0
+
         def helper(node):
             if not node:
                 return -1

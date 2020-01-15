@@ -7,6 +7,7 @@ class Solution:
             if s.count(i) != t.count(i):
                 return False
         return True
+
     def isAnagram(self, s, t):
         dic1 = {}
         dic2 = {}
@@ -22,6 +23,7 @@ class Solution:
                 dic2[j] = 1
         return dic1 == dic2
     from collections import Counter
+
     def isAnagram(self, s, t):
         s_d = Counter(s)
         t_d = Counter(t)

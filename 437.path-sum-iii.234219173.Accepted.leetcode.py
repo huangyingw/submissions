@@ -9,6 +9,7 @@ class Solution(object):
             self.pathSumHelper(root.right, target, so_far + root.val, cache)
             cache[so_far + root.val] -= 1
         return
+
     def pathSum(self, root, sum):
         self.result = 0
         self.pathSumHelper(root, sum, 0, {0: 1})

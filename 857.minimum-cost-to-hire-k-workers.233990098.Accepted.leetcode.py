@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def mincostToHireWorkers(self, quality, wage, K):
         wage_per_quality = [(w / float(q), q) for w, q in zip(wage, quality)]

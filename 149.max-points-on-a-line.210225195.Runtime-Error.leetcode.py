@@ -1,6 +1,7 @@
 class Solution(object):
     def gcd(self, a, b):
         return a if b == 0 else self.gcd(b, a % b)
+
     def maxPoints(self, points):
         result = 0
         for i in range(0, len(points)):

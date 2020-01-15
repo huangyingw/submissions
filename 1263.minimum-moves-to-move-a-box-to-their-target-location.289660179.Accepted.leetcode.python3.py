@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def minPushBox(self, grid):
         rows, cols = len(grid), len(grid[0])
@@ -10,8 +12,10 @@ class Solution(object):
                     start_box = (r, c)
                 if grid[r][c] == "S":
                     start_person = (r, c)
+
         def heuristic(box):
             return abs(target[0] - box[0]) + abs(target[1] - box[1])
+
         def out_bounds(location):
             r, c = location
             if r < 0 or r >= rows:

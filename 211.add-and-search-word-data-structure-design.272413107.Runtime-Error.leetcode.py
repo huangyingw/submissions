@@ -1,13 +1,16 @@
 class WordDictionary(object):
     def __init__(self):
         self.root = TrieNode()
+
     def addWord(self, word):
         curr = self.root
         for char in word:
             curr = curr.children[char]
         curr.is_leaf = True
+
     def search(self, word):
         return self.helper(word, self.root)
+
     def helper(self, word, node):
         if len(word) == 0:
             return node.is_leaf

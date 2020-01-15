@@ -1,4 +1,6 @@
 from itertools import groupby
+
+
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
         r = [len(list(g)) for k, g in groupby(nums) if k == 1]

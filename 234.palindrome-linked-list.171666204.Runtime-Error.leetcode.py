@@ -7,6 +7,7 @@ class Solution(object):
             pre = head
             head = temp
         return pre
+
     def isPalindrome(self, head):
         fast = slow = head
         while fast and slow:

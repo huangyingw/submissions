@@ -4,6 +4,8 @@ class TreeNode(object):
         self.smaller = 0
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def countSmaller(self, nums):
         smaller = [0 for _ in range(len(nums))]

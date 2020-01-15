@@ -16,6 +16,7 @@ class Solution(object):
                 else:
                     res.append(stk2.pop())
         return res
+
     def inorder(self, root, reverse, target, stk):
         if root is None:
             return

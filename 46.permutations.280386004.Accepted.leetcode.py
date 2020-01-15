@@ -3,6 +3,7 @@ class Solution:
         res = []
         self.get_permute(res, nums, 0)
         return res
+
     def get_permute(self, res, nums, index):
         if index == len(nums):
             res.append(list(nums))

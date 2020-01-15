@@ -8,6 +8,7 @@ class Solution:
                     ans.append([i, j])
                 i = j + 1
         return ans
+
     def largeGroupPositions(self, S):
         i, j, n, res = 0, 0, len(S), []
         while j < n:

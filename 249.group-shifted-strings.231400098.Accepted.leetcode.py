@@ -7,6 +7,7 @@ class Solution(object):
         for key, val in groups.iteritems():
             result.append(sorted(val))
         return result
+
     def hashStr(self, s):
         base = ord(s[0])
         hashcode = ""

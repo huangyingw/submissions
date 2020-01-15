@@ -2,6 +2,7 @@ class Solution(object):
     def cherryPickup(self, grid):
         n = len(grid)
         memo = {}
+
         def helper(r1, c1, r2):
             c2 = r1 + c1 - r2
             if r1 == n or c1 == n or r2 == n or c2 == n:

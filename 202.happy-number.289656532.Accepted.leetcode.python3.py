@@ -6,12 +6,15 @@ class Solution:
             slow = self.squareSum(slow)
             fast = self.squareSum(self.squareSum(fast))
         return fast == 1
+
     def squareSum(self, n):
         new_no = 0
         while n:
             new_no += (n % 10) * (n % 10)
             n //= 10
         return new_no
+
+
 class Solution1:
     def isHappy(self, n):
         while n > 6:
@@ -21,6 +24,8 @@ class Solution1:
                 n //= 10
             n = nextN
         return n == 1
+
+
 class Solution2:
     def isHappy(self, n: int) -> bool:
         temp = set()
@@ -32,6 +37,7 @@ class Solution2:
             if new_no in temp:
                 return False
             n = new_no
+
     def squareSum(self, n):
         new_no = 0
         while n:

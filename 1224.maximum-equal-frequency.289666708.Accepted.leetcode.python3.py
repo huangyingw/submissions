@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def maxEqualFreq(self, nums):
         num_to_count, count_of_counts = defaultdict(int), defaultdict(int)

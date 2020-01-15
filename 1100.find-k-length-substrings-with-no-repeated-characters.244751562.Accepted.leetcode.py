@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numKLenSubstrNoRepeats(self, S, K):
         if K > 26 or K > len(S):

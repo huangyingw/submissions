@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def wallsAndGates(self, rooms):
         if not rooms or not rooms[0]:

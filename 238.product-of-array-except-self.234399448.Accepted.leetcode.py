@@ -1,4 +1,6 @@
 from functools import reduce
+
+
 class Solution:
     def productExceptSelf(self, nums):
         def mutifly(a, b):
@@ -13,6 +15,7 @@ class Solution:
                 nums[i] = 1
                 ret[i] = reduce(mutifly, nums)
             return ret
+
     def productExceptSelf2(self, nums):
         p = 1
         n = len(nums)

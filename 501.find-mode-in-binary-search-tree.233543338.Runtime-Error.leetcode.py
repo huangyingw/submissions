@@ -4,6 +4,7 @@ class Solution(object):
         self.count = 0
         self.mode_count = 0
         modes = []
+
         def inorder(node):
             if not node:
                 return

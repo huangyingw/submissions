@@ -2,6 +2,7 @@ class Solution(object):
     def maxSideLength(self, mat, threshold):
         rows, cols = len(mat), len(mat[0])
         max_side = 0
+
         def val_or_zero(row, col):
             return mat[row][col] if row >= 0 and col >= 0 else 0
         for r in range(rows):

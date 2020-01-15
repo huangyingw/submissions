@@ -2,6 +2,7 @@ class Solution(object):
     def removeInvalidParentheses(self, s):
         if not s:
             return [""]
+
         def isValid(s):
             count = 0
             for char in s:

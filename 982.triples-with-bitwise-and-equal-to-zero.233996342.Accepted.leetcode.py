@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def countTriplets(self, A):
         pairs = defaultdict(int)

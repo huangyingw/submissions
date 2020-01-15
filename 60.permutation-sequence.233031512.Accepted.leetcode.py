@@ -8,6 +8,7 @@ class Solution(object):
             total *= num
         res = self.do_getPermutation(remain, total, n - 1, k - 1)
         return ''.join(str(t) for t in res)
+
     def do_getPermutation(self, remain, curr, n, k):
         if n == 0 or k <= 0 or curr == 0:
             return remain

@@ -5,6 +5,7 @@ class Solution(object):
         while head:
             size += 1
             head = head.next
+
         def dfs(start, end):
             if start > end:
                 return None

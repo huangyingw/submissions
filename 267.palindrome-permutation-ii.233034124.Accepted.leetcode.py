@@ -23,6 +23,7 @@ class Solution(object):
         for r in half:
             res.append(''.join(r) + mid + ''.join(reversed(r)))
         return res
+
     def permute(self, res, num, index):
         if index == len(num):
             res.append(list(num))

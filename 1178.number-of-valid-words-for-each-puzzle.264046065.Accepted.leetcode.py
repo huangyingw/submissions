@@ -1,5 +1,7 @@
 from collections import Counter
 from itertools import combinations
+
+
 class Solution(object):
     def findNumOfValidWords(self, words, puzzles):
         def word_to_int(s):

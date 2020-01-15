@@ -11,6 +11,7 @@ class Solution:
         result[::2] = even_list
         result[1::2] = odd_list
         return result
+
     def sortArrayByParityII(self, A):
         lastEvenPlace = 0
         lastOddPlace = 1

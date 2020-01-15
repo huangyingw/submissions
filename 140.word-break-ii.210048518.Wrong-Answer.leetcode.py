@@ -16,6 +16,7 @@ class Solution(object):
         current = []
         self.dfs(dp, len(s), result, current)
         return result
+
     def dfs(self, dp, end, result, current):
         if end <= 0:
             ans = current.get(current.size() - 1)

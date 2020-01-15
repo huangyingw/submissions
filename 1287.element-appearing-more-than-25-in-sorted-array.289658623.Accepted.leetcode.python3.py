@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def findSpecialInteger(self, arr):
         target = len(arr) // 4 + 1

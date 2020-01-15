@@ -6,6 +6,7 @@ class Solution(object):
         sumV.append(0)
         self.dfs(root, sumV)
         return sumV[0]
+
     def dfs(self, root, sumV):
         if not root:
             return True

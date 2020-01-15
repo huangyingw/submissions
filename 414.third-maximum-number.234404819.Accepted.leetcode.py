@@ -2,6 +2,7 @@ class Solution(object):
     def thirdMax(self, nums):
         a = set(nums)
         return sorted(list(a))[-3 if len(a) >= 3 else -1]
+
     def thirdMax(self, nums):
         if len(nums) < 3:
             return max(nums)

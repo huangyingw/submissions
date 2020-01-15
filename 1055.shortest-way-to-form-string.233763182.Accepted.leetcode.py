@@ -1,5 +1,7 @@
 from collections import defaultdict
 import bisect
+
+
 class Solution(object):
     def shortestWay(self, source, target):
         char_indices = defaultdict(list)

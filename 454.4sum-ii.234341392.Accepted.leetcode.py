@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def fourSumCount(self, A, B, C, D):
         ret = 0

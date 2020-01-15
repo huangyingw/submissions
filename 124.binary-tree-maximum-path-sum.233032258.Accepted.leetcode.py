@@ -3,6 +3,7 @@ class Solution(object):
         self.result = float('-inf')
         self.dfs(root)
         return self.result
+
     def dfs(self, root):
         if not root:
             return 0

@@ -1,4 +1,6 @@
 from re import sub
+
+
 class Solution:
     def spellchecker(self, wordlist, queries):
         def replace_vowels(word):
@@ -10,6 +12,7 @@ class Solution:
         for word in lower_words.keys():
             replaced = replace_vowels(word)
             vowel_words.setdefault(replaced, lower_words[word])
+
         def check(word):
             if word in wordsset:
                 return word

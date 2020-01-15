@@ -16,6 +16,7 @@ class Solution(object):
                 fast = fast.next
                 slow = slow.next
             return self.rotate(head, fast, slow)
+
     def rotate(self, head, fast, slow):
         fast.next = head
         head = slow.next

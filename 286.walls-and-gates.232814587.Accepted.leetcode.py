@@ -10,6 +10,7 @@ class Solution(object):
         self.search(r, y + 1, x, depth + 1)
         self.search(r, y, x - 1, depth + 1)
         self.search(r, y, x + 1, depth + 1)
+
     def wallsAndGates(self, rooms):
         for y in range(0, len(rooms)):
             for x in range(0, len(rooms[0])):

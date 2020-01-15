@@ -15,6 +15,7 @@ class Solution(object):
                     queue.append((r1, c1))
         if to_visit:
             return -1
+
         def distance(r1, c1, r2, c2):
             direct = abs(r1 - r2) + abs(c1 - c2)
             diversions = 0

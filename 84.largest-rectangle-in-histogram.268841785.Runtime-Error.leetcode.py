@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def largestRectangleArea(self, heights):
         stack = [-1]

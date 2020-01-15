@@ -1,9 +1,11 @@
 class Solution(object):
     def __init__(self):
         self.count = 0
+
     def totalNQueens(self, n):
         self.dfs(0, n, 0, 0, 0)
         return self.count
+
     def dfs(self, row, n, column, diag, antiDiag):
         if row == n:
             self.count += 1

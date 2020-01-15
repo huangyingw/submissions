@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution(object):
     def updateMatrix(self, matrix):
         rows, cols = len(matrix), len(matrix[0])
@@ -18,6 +20,8 @@ class Solution(object):
                     matrix[r + dr][c + dc] = matrix[r][c] + 1
                     frontier.append((r + dr, c + dc))
         return matrix
+
+
 class Solution2(object):
     def updateMatrix(self, matrix):
         rows, cols = len(matrix), len(matrix[0])

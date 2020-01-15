@@ -4,6 +4,7 @@ class Solution(object):
         v = ["Thousand", "Million", "Billion"]
         result = result.trim()
         return "Zero" if result.isEmpty() else result
+
     def convertHundred(self, num):
         v1 = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
               "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen",

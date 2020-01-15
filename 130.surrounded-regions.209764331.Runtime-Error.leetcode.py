@@ -3,8 +3,10 @@ class Solution(object):
         def __init__(self, x, y):
             self.x = x
             self.y = y
+
     def isOutOfBound(self, x, y, rows, columns):
         return x < 0 or y < 0 or x >= rows or y >= columns
+
     def solve(self, board):
         if not board or not board[0]:
             return

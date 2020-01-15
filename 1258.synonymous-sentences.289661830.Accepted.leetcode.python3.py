@@ -1,7 +1,10 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def generateSentences(self, synonyms, text):
         parents = {}
+
         def find(s):
             if s not in parents:
                 parents[s] = s

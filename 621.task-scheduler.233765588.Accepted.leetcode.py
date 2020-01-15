@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution(object):
     def leastInterval(self, tasks, n):
         counts = Counter(tasks)

@@ -14,6 +14,8 @@ class Solution(object):
                     subset_sum[i + num] = True
         return False
 from collections import Counter
+
+
 class Solution2(object):
     def canPartition(self, nums):
         nums_sum = sum(nums)
@@ -21,6 +23,7 @@ class Solution2(object):
             return False
         freq = Counter(nums)
         return self.partition(freq, nums_sum // 2)
+
     def partition(self, freq, target):
         if target == 0:
             return True

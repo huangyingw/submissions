@@ -7,10 +7,12 @@ class Solution(object):
             else:
                 mapping[i] = 1
         return False
+
     def containsDuplicate(self, nums):
         if(len(set(nums)) == len(nums)):
             return False
         return True
+
     def containsDuplicate(self, nums):
         nums.sort()
         for i in range(1, len(nums)):

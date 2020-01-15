@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution(object):
     def maximumMinimumPath(self, A):
         rows, cols = len(A), len(A[0])

@@ -1,7 +1,10 @@
 import heapq
+
+
 class Solution(object):
     def shortestPath(self, grid, k):
         rows, cols = len(grid), len(grid[0])
+
         def heuristic(r, c):
             return abs(rows - 1 - r) + abs(cols - 1 - c)
         queue = [(heuristic(0, 0), -k + grid[0][0], 0, 0, 0)]

@@ -2,6 +2,7 @@ class Solution(object):
     def __init__(self):
         self.queue = []
         self.curr_sum = 0
+
     def movingAverage(self, num, size):
         if len(self.queue) >= size:
             val = self.queue.pop(0)

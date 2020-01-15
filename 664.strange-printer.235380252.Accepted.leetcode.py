@@ -2,6 +2,7 @@ class Solution(object):
     def strangePrinter(self, s):
         s = "".join([a for a, b in zip(s, "#" + s) if a != b])
         memo = {}
+
         def helper(i, j):
             if j - i + 1 <= 1:
                 return j - i + 1

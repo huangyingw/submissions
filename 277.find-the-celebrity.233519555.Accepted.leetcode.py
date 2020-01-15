@@ -1,5 +1,7 @@
 def knows(a, b):
     return
+
+
 class Solution(object):
     def findCelebrity(self, n):
         candidate = 0

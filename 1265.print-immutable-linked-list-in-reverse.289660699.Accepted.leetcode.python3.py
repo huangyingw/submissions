@@ -1,6 +1,8 @@
 class Solution(object):
     if not head.getNext():
         return
+
+
 class Solution2(object):
     node = head
     length = 0
@@ -11,6 +13,8 @@ class Solution2(object):
         node = head
         for _ in range(i):
             node = node.getNext()
+
+
 class Solution3(object):
     node = head
     length = 0

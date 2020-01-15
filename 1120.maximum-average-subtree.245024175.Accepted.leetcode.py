@@ -1,6 +1,7 @@
 class Solution(object):
     def maximumAverageSubtree(self, root):
         self.result = 0
+
         def helper(node):
             if not node:
                 return 0, 0

@@ -1,9 +1,11 @@
 class Solution(object):
     def __init__(self):
         self.max = -sys.maxint - 1
+
     def maxPathSum(self, root):
         self.findMax(root)
         return self.max
+
     def findMax(self, root):
         if not root:
             return 0

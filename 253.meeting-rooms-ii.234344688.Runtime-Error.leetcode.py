@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def minMeetingRooms(self, intervals):
         if not intervals:

@@ -4,6 +4,7 @@ class Solution(object):
         curr = []
         self.recurPartition(result, curr, s, 0)
         return result
+
     def recurPartition(self, result, curr, s, start):
         if start == len(s):
             result.append(list(curr))
@@ -12,6 +13,7 @@ class Solution(object):
                 curr.append(s[start:i + 1])
                 self.recurPartition(result, curr, s, i + 1)
                 curr.pop()
+
     def isPalindrome(self, s, begin, end):
         while begin < end:
             if s[begin] != s[end]:

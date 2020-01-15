@@ -12,6 +12,7 @@ class Solution(object):
                 two_parents = i
             if not parent:
                 root = i
+
         def valid(root):
             visited = set()
             queue = [root]

@@ -1,11 +1,13 @@
 class WordDictionary(object):
     def __init__(self):
         self.dictionary = {}
+
     def addWord(self, word):
         if len(word) in self.dictionary:
             self.dictionary[len(word)].append(word)
         else:
             self.dictionary[len(word)] = [word]
+
     def search(self, word):
         if len(word) not in self.dictionary:
             return False

@@ -13,8 +13,11 @@ class Solution:
             else:
                 end = mid
         return nums[start - 1] + (k - self.missing(nums, start - 1))
+
     def missing(self, nums, index):
         return nums[index] - (nums[0] + index)
+
+
 class solution:
     def missingElement(self, nums, k):
         index = 0

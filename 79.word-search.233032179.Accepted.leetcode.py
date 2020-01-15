@@ -10,6 +10,7 @@ class Solution(object):
                         return True
                     check_board[i][j] = True
         return False
+
     def check_exist(self, check_board, board, word, index, ls, row, col):
         if index == ls:
             return True

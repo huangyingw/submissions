@@ -3,6 +3,8 @@ class RandomListNode(object):
         self.label = x
         self.next = None
         self.random = None
+
+
 class Solution(object):
     def copyRandomList(self, head):
         node = head

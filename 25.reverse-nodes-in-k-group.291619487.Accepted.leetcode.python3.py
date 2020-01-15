@@ -17,6 +17,7 @@ class Solution(object):
             pos = pos.next
             index += 1
         return head.next
+
     def reverseList(self, head, end):
         pos = head.next
         last = end

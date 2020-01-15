@@ -4,6 +4,8 @@ class ListNode:
         self.next = None
 import heapq
 from typing import List
+
+
 class Solution:
     def mergeKLists(self, lists):
         dummy = curr = ListNode(0)

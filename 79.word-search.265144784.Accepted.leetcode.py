@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution:
     def exist(self, board, word):
         if not board or not board[0] or not word:
@@ -10,6 +12,7 @@ class Solution:
                 if word[0] == board[i][j] and self.deepDive(board, i, j, word, 1):
                     return True
         return False
+
     def checkContent(self, board, word):
         board_counter = Counter([char for row in board for char in row])
         word_counter = Counter(word)
@@ -17,6 +20,7 @@ class Solution:
             if board_counter[char] < word_counter[char]:
                 return False
         return True
+
     def deepDive(self, board, i, j, word, position):
         if len(word) == position:
             return True

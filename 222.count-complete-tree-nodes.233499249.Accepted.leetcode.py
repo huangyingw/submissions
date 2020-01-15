@@ -3,6 +3,8 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class Solution(object):
     def countNodes(self, root):
         if not root:
@@ -13,6 +15,7 @@ class Solution(object):
             return 2**left_subtree + self.countNodes(root.right)
         else:
             return 2**right_subtree + self.countNodes(root.left)
+
     def left_depth(self, node):
         depth = 0
         while node:

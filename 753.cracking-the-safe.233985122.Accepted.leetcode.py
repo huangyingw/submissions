@@ -3,6 +3,7 @@ class Solution(object):
         seen = set()
         digits = [str(i) for i in range(k)]
         result = []
+
         def dfs(node):
             for x in digits:
                 pattern = node + x

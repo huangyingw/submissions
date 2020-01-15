@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def reconstructQueue(self, people):
         queue = []

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def sortItems(self, n, m, group, beforeItems):
         def top_sort(map_to_after, before_count):

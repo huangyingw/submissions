@@ -1,6 +1,7 @@
 class Solution(object):
     def findBestValue(self, arr, target):
         low, high = 0, max(arr)
+
         def ceiling(x):
             return sum(min(a, x) for a in arr)
         while low < high:

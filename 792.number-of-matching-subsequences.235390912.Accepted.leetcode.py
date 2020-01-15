@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def numMatchingSubseq(self, S, words):
         letter_to_suffixes = defaultdict(list)

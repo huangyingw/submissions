@@ -7,6 +7,7 @@ class Solution:
         for i in range(1, len(nums)):
             memo[i + 1] = max(memo[i], memo[i - 1] + nums[i])
         return memo[len(nums)]
+
     def rob(self, nums):
         if not nums:
             return 0

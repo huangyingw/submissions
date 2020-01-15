@@ -1,6 +1,7 @@
 class Solution(object):
     def permute(self, nums):
         return self.permute_helper(nums, 0)
+
     def permute_helper(self, nums, index):
         permutations = []
         if index >= len(nums):

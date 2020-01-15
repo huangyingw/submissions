@@ -1,6 +1,7 @@
 class Solution(object):
     def restoreIpAddresses(self, s):
         result = []
+
         def dfs(s, temp, count):
             if count == 4:
                 if not s:

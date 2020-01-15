@@ -12,6 +12,7 @@ class Solution(object):
         for i in range(len(board)):
             for j in range(len(board[0])):
                 board[i][j] >>= 1
+
     def findLives(self, board, i, j):
         lives = 0
         for x in range(max(i - 1, 0), min(i + 1, len(board) - 1) + 1):

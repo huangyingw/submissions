@@ -1,4 +1,6 @@
 import string
+
+
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
         wordList.discard(beginWord)
@@ -6,6 +8,7 @@ class Solution(object):
         hash_map, res = {}, []
         res = self.bfs(set([beginWord]), set([endWord]), wordList, 2)
         return res
+
     def bfs(self, forward, backward, wordlist, level):
         if len(forward) == 0 or len(backward) == 0:
             return 0

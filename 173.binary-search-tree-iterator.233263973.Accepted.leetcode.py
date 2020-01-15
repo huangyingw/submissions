@@ -3,14 +3,18 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
+
 class BSTIterator(object):
     def __init__(self, root):
         self.stack = []
         while root:
             self.stack.append(root)
             root = root.left
+
     def hasNext(self):
         return True if self.stack else False
+
     def next(self):
         node = self.stack.pop()
         result = node.val

@@ -3,6 +3,7 @@ class Solution(object):
         order_map = {}
         for i, v in enumerate(order):
             order_map[v] = i
+
         def cmp_alien(x, y):
             ls = min(len(x), len(y))
             index = 0
