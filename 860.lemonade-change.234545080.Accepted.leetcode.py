@@ -17,4 +17,3 @@ class Solution:
             if store_five < 0:
                 return False
         return True
-t = Solution()

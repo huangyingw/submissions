@@ -12,5 +12,3 @@ class Solution(object):
             else:
                 index += 1
         return ls - count
-if __name__ == '__main__':
-    s = Solution()

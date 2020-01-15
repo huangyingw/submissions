@@ -9,5 +9,3 @@ class Solution(object):
                 curr.append(nums[index])
                 res.append(curr)
         return res
-if __name__ == "__main__":
-    s = Solution()

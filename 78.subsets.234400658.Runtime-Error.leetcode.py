@@ -12,4 +12,3 @@ class Solution:
         for num in nums:
             output += [result + [num] for result in output]
         return output
-t = Solution()

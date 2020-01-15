@@ -31,5 +31,4 @@ class Solution3:
             if i + nums[i] >= lastPos:
                 lastPos = i
         return lastPos == 0
-if __name__ == '__main__':
     t = Solution3()

@@ -16,5 +16,3 @@ class Solution(object):
                 num -= values[i]
             i += 1
         return roman
-if __name__ == '__main__':
-    s = Solution()

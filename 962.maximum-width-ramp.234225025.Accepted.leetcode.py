@@ -6,5 +6,3 @@ class Solution(object):
             ans = max(ans, i - m)
             m = min(m, i)
         return ans
-if __name__ == '__main__':
-    s = Solution()

@@ -41,7 +41,6 @@ class Solution(object):
                 if reach == buildings:
                     result = min(result, dist)
         return result
-solution = Solution()
 grid = [[1, 0, 2, 0, 1],
         [0, 0, 0, 0, 0],
         [0, 0, 1, 0, 0]]

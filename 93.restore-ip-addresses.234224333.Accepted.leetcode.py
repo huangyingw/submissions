@@ -24,5 +24,3 @@ class Solution(object):
         if int(add) <= 255:
             return True
         return False
-if __name__ == '__main__':
-    s = Solution()

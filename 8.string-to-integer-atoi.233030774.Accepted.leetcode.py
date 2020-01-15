@@ -20,5 +20,3 @@ class Solution(object):
             result = result * 10 + num
             pos += 1
         return sign * result
-if __name__ == '__main__':
-    s = Solution()

@@ -10,5 +10,3 @@ class Solution(object):
                 floor = p - floor
             result[floor] += s[i]
         return "".join(result)
-if __name__ == '__main__':
-    s = Solution()

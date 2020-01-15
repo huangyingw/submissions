@@ -6,8 +6,6 @@ class Solution:
         for i in range(len(matrix)):
             for j in range(i):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
-if __name__ == '__main__':
-    t = Solution()
     a = [
         [15, 13, 2, 5],
           [14, 3, 4, 1],

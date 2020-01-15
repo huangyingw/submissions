@@ -16,5 +16,3 @@ class Solution(object):
                 return False
             tmp = tmp // 10
         return True
-if __name__ == '__main__':
-    s = Solution()

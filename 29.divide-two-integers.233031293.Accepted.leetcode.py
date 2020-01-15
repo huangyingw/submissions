@@ -13,5 +13,3 @@ class Solution(object):
         if isPositive:
             return min(res, 2147483647)
         return max(0 - res, -2147483648)
-if __name__ == '__main__':
-    s = Solution()

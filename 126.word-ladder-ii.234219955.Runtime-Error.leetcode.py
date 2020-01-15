@@ -42,5 +42,3 @@ class Solution(object):
                 self.dfs(res, path + [word], word, end, hash_map)
         except KeyError:
             pass
-if __name__ == "__main__":
-    s = Solution()

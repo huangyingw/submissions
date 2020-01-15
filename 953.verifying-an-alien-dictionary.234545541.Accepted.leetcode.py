@@ -4,5 +4,3 @@ class Solution(object):
         encode_words = []
         encode_words = [[d[l] for l in word] for word in words]
         return sorted(encode_words) == encode_words
-if __name__ == '__main__':
-    t = Solution()

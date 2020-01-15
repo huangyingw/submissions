@@ -22,5 +22,3 @@ class Solution(object):
             else:
                 res.append(start)
         return res
-if __name__ == '__main__':
-    s = Solution()

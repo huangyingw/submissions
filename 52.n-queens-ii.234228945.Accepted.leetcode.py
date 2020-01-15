@@ -16,5 +16,3 @@ class Solution(object):
                 self.dfs(row + 1, n, (1 << index) | column,
                          (1 << (n - 1 + row - index)) | diag,
                          (1 << (row + index)) | antiDiag)
-if __name__ == '__main__':
-    s = Solution()

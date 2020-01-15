@@ -20,5 +20,4 @@ class Solution2:
                 else:
                     l += 1
         return count
-if __name__ == '__main__':
     t = Solution1()

@@ -17,5 +17,3 @@ class Solution:
         for i in range(k):
             res.append(heapq.heappop(lst)[1])
         return res
-if __name__ == '__main__':
-    t = Solution()

@@ -7,5 +7,3 @@ class Solution(object):
             while num % d == 0:
                 num /= d
         return num == 1
-if __name__ == '__main__':
-    s = Solution()

@@ -13,5 +13,3 @@ class Solution(object):
             prefix.pop()
             self.get_combine(res, prefix,
                              n, k, start + 1)
-if __name__ == "__main__":
-    s = Solution()

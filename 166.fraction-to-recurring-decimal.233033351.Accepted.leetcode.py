@@ -22,5 +22,3 @@ class Solution(object):
             fraction += str(remainder / divisor)
             remainder %= divisor
         return fraction
-if __name__ == '__main__':
-    s = Solution()

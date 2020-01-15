@@ -34,5 +34,3 @@ class Solution(object):
             if height[index] > 0:
                 step += height[index]
         return res - step
-if __name__ == '__main__':
-    s = Solution()

@@ -16,5 +16,3 @@ class Solution(object):
         curr /= n
         res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
         return res
-if __name__ == '__main__':
-    s = Solution()

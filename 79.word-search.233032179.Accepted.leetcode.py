@@ -24,5 +24,3 @@ class Solution(object):
                         return res
                     check_board[curr_row][curr_col] = True
         return False
-if __name__ == "__main__":
-    s = Solution()

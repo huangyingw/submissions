@@ -37,5 +37,3 @@ class Solution(object):
                 text += curr[-1]
             res.append(text)
         return res
-if __name__ == '__main__':
-    s = Solution()

@@ -20,5 +20,3 @@ class Solution:
             return right
         left, right = binarySearchLeft(nums, target), binarySearchRight(nums, target)
         return [left, right] if left <= right else [-1, -1]
-if __name__ == '__main__':
-    t = Solution()

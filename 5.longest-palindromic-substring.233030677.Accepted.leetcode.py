@@ -25,5 +25,3 @@ class Solution(object):
                 max_step = s
                 max_pos = i
         return temp_s[max_pos - max_step:max_pos + max_step + 1].translate(None, '#')
-if __name__ == '__main__':
-    s = Solution()

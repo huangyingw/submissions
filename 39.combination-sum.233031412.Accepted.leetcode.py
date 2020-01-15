@@ -14,5 +14,3 @@ class Solution(object):
                     temp.append(candidates[j])
                     dp[i].append(temp)
         return dp[target]
-if __name__ == '__main__':
-    s = Solution()

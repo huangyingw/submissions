@@ -26,5 +26,3 @@ class Solution(object):
                     else:
                         k -= 1
         return res.keys()
-if __name__ == '__main__':
-    s = Solution()

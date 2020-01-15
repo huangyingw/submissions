@@ -17,5 +17,3 @@ class Solution(object):
                 return False
             pos += 1
         return True
-if __name__ == '__main__':
-    s = Solution()

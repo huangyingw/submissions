@@ -42,8 +42,6 @@ class Solution:
             c1 += 1
             c2 -= 1
         return ans
-if __name__ == '__main__':
-    t = Solution()
     a = [
         [1, 2, 3, 4],
           [5, 6, 7, 8],

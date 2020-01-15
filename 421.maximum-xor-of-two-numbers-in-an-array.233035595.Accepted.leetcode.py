@@ -6,6 +6,4 @@ class Solution(object):
             prefixes = {num >> i for num in nums}
             answer += any(answer ^ 1 ^ p in prefixes for p in prefixes)
         return answer
-if __name__ == '__main__':
-    s = Solution()
     s.findMaximumXOR([3, 10, 5, 25, 2, 8])

@@ -21,7 +21,6 @@ class Solution(object):
                 if grid[row][column] == '0':
                     result = max(result, row_count + column_count[column])
         return result
-solution = Solution()
 grid = [['0', 'E', '0', '0'],
         ['E', '0', 'W', 'E'],
         ['0', 'E', '0', '0']]

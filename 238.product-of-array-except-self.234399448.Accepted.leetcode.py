@@ -25,8 +25,6 @@ class Solution:
             ret[i] = ret * p
             p = p * nums[i]
         return ret
-if __name__ == '__main__':
-    t = Solution()
     input_array = [1, 2, 3, 4]
     output_array = [24, 12, 8, 6]
     assert t.productExceptSelf(input_array) == output_array

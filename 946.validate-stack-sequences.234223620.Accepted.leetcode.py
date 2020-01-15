@@ -20,5 +20,3 @@ class Solution(object):
         if len(in_stack) == 0:
             return True
         return False
-if __name__ == '__main__':
-    s = Solution()

@@ -18,5 +18,3 @@ class Solution:
             i = random.randint(0, len(A) - 1)
             j = random.randint(0, len(A) - 1)
         return A[i]
-if __name__ == '__main__':
-    t = Solution()

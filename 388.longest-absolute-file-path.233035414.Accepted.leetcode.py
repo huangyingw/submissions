@@ -14,5 +14,3 @@ class Solution(object):
             if '.' in line:
                 max_len = max(max_len, cur_len - 1)
         return max_len
-if __name__ == '__main__':
-    s = Solution()

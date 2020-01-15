@@ -19,4 +19,3 @@ class Solution(object):
                         charMapping[character] -= 1
                     start += 1
         return result
-if __name__ == '__main__':

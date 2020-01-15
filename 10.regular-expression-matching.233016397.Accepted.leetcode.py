@@ -18,5 +18,3 @@ class Solution(object):
                     else:
                         dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1] or dp[i + 1][j - 1]
         return dp[m][n]
-if __name__ == '__main__':
-    s = Solution()

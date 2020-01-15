@@ -27,4 +27,3 @@ class Solution(object):
                 m_r = str(start) + "->" + str(upper)
             result.append(m_r)
         return result
-solution = Solution()

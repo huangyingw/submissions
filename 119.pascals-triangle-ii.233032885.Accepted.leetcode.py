@@ -9,5 +9,3 @@ class Solution(object):
             res.append(1)
             last = res
         return res
-if __name__ == "__main__":
-    s = Solution()

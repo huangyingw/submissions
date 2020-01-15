@@ -21,5 +21,4 @@ class Solution2:
                 re.remove(i)
         dfs(1, n)
         return res
-if __name__ == '__main__':
     t = Solution1()
