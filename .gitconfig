@@ -3,7 +3,7 @@
     fetch = +refs/heads/*:refs/remotes/github/*
 [remote "bitbucket"]
     url = git@bitbucket.org:huangyingw/submissions.git
-    fetch = +refs/heads/*:refs/remotes/github/*
+    fetch = +refs/heads/*:refs/remotes/bitbucket/*
 [commit]
     message = n
 [branch "master"]
