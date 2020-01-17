@@ -6,7 +6,7 @@ public class Solution
         {
             return -1;
         }
-
+        
         int start = 0;
         int end = nums.length - 1;
 

@@ -7,15 +7,15 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution
+public class Solution 
 {
-    public TreeNode deleteNode(TreeNode root, int key)
+    public TreeNode deleteNode(TreeNode root, int key) 
     {
         if (root == null)
         {
-            return root;
+            return root;    
         }
-
+        
         if (root.val == key)
         {
             if (root.left != null)
@@ -35,13 +35,13 @@ public class Solution
         }
         else if (root.val < key)
         {
-            root.right = deleteNode(root.right, key);
+            root.right = deleteNode(root.right, key);   
         }
         else
         {
-            root.left = deleteNode(root.left, key);
+            root.left = deleteNode(root.left, key);   
         }
-
+        
         return root;
     }
 }

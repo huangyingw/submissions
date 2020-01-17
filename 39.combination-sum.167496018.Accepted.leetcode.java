@@ -4,10 +4,11 @@ public class Solution
     {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<List<Integer>>();
-        dfs(nums, 0, result, new ArrayList<Integer>(), target);
+        helper(nums, 0, result, new ArrayList<Integer>(), target);
         return result;
     }
-    public void dfs(int[] nums, int start, List<List<Integer>> result, List<Integer> current, int target)
+
+    public void helper(int[] nums, int start, List<List<Integer>> result, List<Integer> current, int target)
     {
         if (target == 0)
         {
@@ -23,8 +24,9 @@ public class Solution
             }
 
             current.add(nums[i]);
-            dfs(nums, i, result, current, target - nums[i]);
+            helper(nums, i, result, current, target - nums[i]);
             current.remove(current.size() - 1);
         }
     }
 }
+

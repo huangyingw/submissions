@@ -8,20 +8,20 @@ class Solution(object):
             graph[x].append(y)
         result = []
         for course in range(numCourses):
-            if visited[course] == False:
-                if self.dfs(graph, visited, stack, course, result):
-                    return []
+        	if visited[course] == False:
+        		if self.dfs(graph, visited, stack, course, result):
+        			return []
         return result
 
     def dfs(self, graph, visited, stack, course, result):
-        visited[course] = True
-        stack[course] = True
-        for neigh in graph[course]:
-            if visited[neigh] == False:
-                if self.dfs(graph, visited, stack, neigh, result):
-                    return True
-            elif stack[neigh]:
-                return True
-        stack[course] = False
-        result.append(course)
-        return False
+    	visited[course] = True
+     stack[course] = True
+     for neigh in graph[course]:
+    		if visited[neigh] == False:
+    			if self.dfs(graph, visited, stack, neigh, result):
+    				return True
+      elif stack[neigh]:
+    			return True
+     stack[course] = False
+     result.append(course)
+     return False

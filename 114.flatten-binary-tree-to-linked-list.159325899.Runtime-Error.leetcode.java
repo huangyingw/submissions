@@ -1,6 +1,7 @@
 public class Solution
 {
     private TreeNode lastVisit = null;
+
     public void flatten(TreeNode root)
     {
         if (root == null)
@@ -21,3 +22,4 @@ public class Solution
         flatten(root.right);
     }
 }
+

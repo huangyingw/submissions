@@ -21,6 +21,8 @@ public class Solution
         while (iter.hasNext())
         {
             int i = iter.next();
+
+            
         }
 
         int[] result = new int[set1.size()];

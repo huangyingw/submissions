@@ -1,13 +1,13 @@
-public class Solution
+public class Solution 
 {
-    public List<Interval> merge(List<Interval> intervals)
+    public List<Interval> merge(List<Interval> intervals) 
     {
-        Collections.sort(intervals, new Comparator<Interval>()
+        Collections.sort(intervals, new Comparator<Interval>() 
         {
             @Override
-            public int compare(Interval i1, Interval i2)
+            public int compare(Interval i1, Interval i2) 
             {
-                if (i1.start == i2.start)
+                if (i1.start == i2.start) 
                 {
                     return i1.end - i2.end;
                 }
@@ -15,16 +15,17 @@ public class Solution
                 return i1.start - i2.start;
             }
         });
+      
         ArrayList<Interval> ans = new ArrayList<Interval>();
         Interval newInterval = null;
 
-        for (Interval interval : intervals)
+        for (Interval interval : intervals) 
         {
-            if (newInterval == null)
+            if (newInterval == null) 
             {
                 newInterval = interval;
             }
-            else
+            else 
             {
                 if (newInterval.end < interval.start)
                 {
@@ -40,9 +41,9 @@ public class Solution
 
         if (newInterval != null)
         {
-            ans.add(newInterval);
+            ans.add(newInterval);    
         }
-
+        
         return ans;
     }
 }

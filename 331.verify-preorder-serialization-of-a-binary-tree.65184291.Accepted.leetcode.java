@@ -1,23 +1,24 @@
-public class Solution
-{
+  public class Solution
+  {
     public boolean isValidSerialization(String preorder)
     {
-        String[] nodes = preorder.split(",");
-        int diff = 1;
+      String[] nodes = preorder.split(",");
+      int diff = 1;
 
-        for (String node : nodes)
+      for (String node : nodes)
+      {
+        if (--diff < 0)
         {
-            if (--diff < 0)
-            {
-                return false;
-            }
-
-            if (!node.equals("#"))
-            {
-                diff += 2;
-            }
+          return false;
         }
 
-        return diff == 0;
+        if (!node.equals("#"))
+        {
+          diff += 2;
+        }
+      }
+
+      return diff == 0;
     }
-}
+  }
+

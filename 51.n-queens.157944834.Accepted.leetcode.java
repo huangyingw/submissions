@@ -6,6 +6,7 @@ public class Solution
         dfs(n, 0, new int[n], result);
         return result;
     }
+
     private void dfs(int n, int row, int[] columnForRow, List<List<String>> result)
     {
         if (row == n)
@@ -45,6 +46,7 @@ public class Solution
             }
         }
     }
+
     private boolean isValid(int row, int[] columnForRow)
     {
         for (int i = 0; i < row; i++)
@@ -59,3 +61,4 @@ public class Solution
         return true;
     }
 }
+

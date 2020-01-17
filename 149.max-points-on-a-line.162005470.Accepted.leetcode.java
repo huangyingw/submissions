@@ -2,7 +2,7 @@ public class Solution
 {
     public int maxPoints(Point[] points)
     {
-        int result = 0, n = points.length;
+        int res = 0, n = points.length;
 
         for (int i = 0; i < n; ++i)
         {
@@ -30,12 +30,13 @@ public class Solution
                     }
                 }
 
-                result = Math.max(result, cnt);
+                res = Math.max(res, cnt);
             }
 
-            result = Math.max(result, duplicate);
+            res = Math.max(res, duplicate);
         }
 
-        return result;
+        return res;
     }
 }
+

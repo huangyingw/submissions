@@ -2,6 +2,7 @@ public class Solution
 {
     public int longestSubstring(String s, int k)
     {
+        //System.out.println(s);
         int n = s.length();
 
         if (n < k)

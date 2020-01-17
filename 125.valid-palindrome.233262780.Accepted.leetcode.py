@@ -5,10 +5,10 @@ class Solution(object):
     def isPalindrome(self, s):
         allowed = set(string.ascii_lowercase + string.digits)
         s = [c for c in s.lower() if c in allowed]
-        start, end = 0, len(s) - 1
-        while start < end:
-            if s[start] != s[end]:
+        i, j = 0, len(s) - 1
+        while i < j:
+            if s[i] != s[j]:
                 return False
-            start += 1
-            end -= 1
+            i += 1
+            j -= 1
         return True

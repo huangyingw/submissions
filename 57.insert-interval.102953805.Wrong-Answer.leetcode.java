@@ -3,7 +3,7 @@ public class Solution
     public List<Interval> insert(List<Interval> intervals, Interval newInterval)
     {
         List<Interval> result = new ArrayList<Interval>();
-
+        
         for (int i = 0; i < intervals.size(); i++)
         {
             Interval interval = intervals.get(i);

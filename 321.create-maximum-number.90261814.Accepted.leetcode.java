@@ -24,6 +24,7 @@ public class Solution
 
         return ans;
     }
+
     public boolean greater(int[] nums1, int start1, int[] nums2, int start2)
     {
         for (; start1 < nums1.length && start2 < nums2.length; start1++, start2++)
@@ -41,6 +42,7 @@ public class Solution
 
         return start1 != nums1.length;
     }
+
     public int[] get_max_sub_array(int[] nums, int k)
     {
         int[] res = new int[k];

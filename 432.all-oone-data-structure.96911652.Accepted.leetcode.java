@@ -1,8 +1,10 @@
 public class AllOne
 {
+
     private ValueNode head;// largest
     private ValueNode tail;// smallest
     private Map<String, ValueNode> elements;
+
     /** Initialize your data structure here. */
     public AllOne()
     {
@@ -10,6 +12,7 @@ public class AllOne
         tail = null;
         this.elements = new HashMap<>();
     }
+
     /**
      * Inserts a new key <key> with value 1. Or increments an existing key by 1.
      */
@@ -49,42 +52,43 @@ public class AllOne
         }
         else
         {
-            ValueNode current = elements.get(key);
+            ValueNode curr = elements.get(key);
 
-            if (current.prev != null && current.prev.value == current.value + 1)
+            if (curr.prev != null && curr.prev.value == curr.value + 1)
             {
-                current.prev.keys.add(key);
-                elements.put(key, current.prev);
+                curr.prev.keys.add(key);
+                elements.put(key, curr.prev);
             }
             else
             {
-                ValueNode prev = new ValueNode(current.value + 1, key);
+                ValueNode prev = new ValueNode(curr.value + 1, key);
 
-                if (current.prev != null)
+                if (curr.prev != null)
                 {
-                    ValueNode prevprev = current.prev;
+                    ValueNode prevprev = curr.prev;
                     prevprev.next = prev;
                     prev.prev = prevprev;
-                    // which means current is head
+                    // which means curr is head
                 }
                 else
                 {
                     head = prev;
                 }
 
-                current.prev = prev;
-                prev.next = current;
+                curr.prev = prev;
+                prev.next = curr;
                 elements.put(key, prev);
             }
 
-            current.keys.remove(key);
+            curr.keys.remove(key);
 
-            if (!checkEmpty(current))
+            if (!checkEmpty(curr))
             {
-                current.updateOneKey(key);
+                curr.updateOneKey(key);
             }
         }
     }
+
     /**
      * Decrements an existing key by 1. If Key's value is 1, remove it from the
      * data structure.
@@ -93,22 +97,22 @@ public class AllOne
     {
         if (elements.containsKey(key))
         {
-            ValueNode current = elements.get(key);
+            ValueNode curr = elements.get(key);
 
-            if (current.next != null && current.next.value == current.value - 1)
+            if (curr.next != null && curr.next.value == curr.value - 1)
             {
-                current.next.keys.add(key);
-                elements.put(key, current.next);
+                curr.next.keys.add(key);
+                elements.put(key, curr.next);
             }
             else
             {
-                if (current.value > 1)
+                if (curr.value > 1)
                 {
-                    ValueNode next = new ValueNode(current.value - 1, key);
+                    ValueNode next = new ValueNode(curr.value - 1, key);
 
-                    if (current.next != null)
+                    if (curr.next != null)
                     {
-                        ValueNode nextnext = current.next;
+                        ValueNode nextnext = curr.next;
                         next.next = nextnext;
                         nextnext.prev = next;
                     }
@@ -117,8 +121,8 @@ public class AllOne
                         tail = next;
                     }
 
-                    current.next = next;
-                    next.prev = current;
+                    curr.next = next;
+                    next.prev = curr;
                     elements.put(key, next);
                 }
                 else
@@ -127,24 +131,27 @@ public class AllOne
                 }
             }
 
-            current.keys.remove(key);
+            curr.keys.remove(key);
 
-            if (!checkEmpty(current))
+            if (!checkEmpty(curr))
             {
-                current.updateOneKey(key);
+                curr.updateOneKey(key);
             }
         }
     }
+
     /** Returns one of the keys with maximal value. */
     public String getMaxKey()
     {
         return head != null ? head.oneKey : "";
     }
+
     /** Returns one of the keys with Minimal value. */
     public String getMinKey()
     {
         return tail != null ? tail.oneKey : "";
     }
+
     private boolean checkEmpty(ValueNode node)
     {
         if (node.keys.isEmpty())
@@ -173,6 +180,7 @@ public class AllOne
             return false;
         }
     }
+
     // Doubly linked list node
     private class ValueNode
     {
@@ -181,6 +189,7 @@ public class AllOne
         ValueNode prev;
         ValueNode next;
         String oneKey; // any key with the value
+
         public ValueNode(int value, String key)
         {
             this.value = value;
@@ -190,6 +199,7 @@ public class AllOne
             prev = null;
             next = null;
         }
+
         public void updateOneKey(String key)
         {
             if (oneKey.equals(key))

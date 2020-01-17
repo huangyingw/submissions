@@ -1,33 +1,41 @@
-public class Solution
-{
-    private ListNode current;
-    public TreeNode sortedListToBST(ListNode head)
-    {
-        current = head;
-        int size = 0;
+  public class Solution {
+    ListNode h;
 
-        while (head != null)
-        {
-            size++;
-            head = head.next;
-        }
+    public TreeNode sortedListToBST(ListNode head) {
+      if (head == null) {
+        return null;
+      }
 
-        return dfs(0, size - 1);
+      h = head;
+      int len = getLength(head);
+      return sortedListToBST(0, len - 1);
     }
-    public TreeNode dfs(int start, int end)
-    {
-        if (start > end)
-        {
-            return null;
-        }
 
-        int mid = (start + end) / 2;
-        TreeNode left = dfs(start, mid - 1);
-        TreeNode root = new TreeNode(current.val);
-        current = current.next;
-        TreeNode right = dfs(mid + 1, end);
-        root.left = left;
-        root.right = right;
-        return root;
+    public int getLength(ListNode head) {
+      int len = 0;
+      ListNode p = head;
+
+      while (p != null) {
+        len++;
+        p = p.next;
+      }
+
+      return len;
     }
-}
+
+    public TreeNode sortedListToBST(int start, int end) {
+      if (start > end) {
+        return null;
+      }
+
+      int mid = (start + end) / 2;
+      TreeNode left = sortedListToBST(start, mid - 1);
+      TreeNode root = new TreeNode(h.val);
+      h = h.next;
+      TreeNode right = sortedListToBST(mid + 1, end);
+      root.left = left;
+      root.right = right;
+      return root;
+    }
+  }
+

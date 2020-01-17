@@ -10,10 +10,10 @@ public class Solution
         ListNode leftDummy = new ListNode(-1);
         ListNode rightDummy = new ListNode(-1);
         ListNode left = leftDummy, right = rightDummy;
-
-        while (head != null)
+        
+        while(head != null)
         {
-            if (head.val < x)
+            if(head.val < x)
             {
                 left.next = head;
                 left = head;
@@ -23,7 +23,7 @@ public class Solution
                 right.next = head;
                 right = head;
             }
-
+            
             head = head.next;
         }
 
@@ -32,3 +32,4 @@ public class Solution
         return leftDummy.next;
     }
 }
+

@@ -5,7 +5,7 @@ class Solution(object):
     def findDuplicateSubtrees(self, root):
         def serialize(node):
             if not node:
-                return "
+                return "#"
             serial = str(node.val) + "," + serialize(node.left) + "," + serialize(node.right)
             subtrees[serial].append(node)
             return serial

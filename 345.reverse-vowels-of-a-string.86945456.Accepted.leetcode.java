@@ -24,20 +24,20 @@ public class Solution
                 left++;
                 continue;
             }
-
+            
             if (!vowList.contains(arr[right]))
             {
                 right--;
                 continue;
             }
-
+            
             char temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
             left++;
             right--;
         }
-
+        
         return new String(arr);
     }
 }

@@ -6,7 +6,7 @@ public class Solution
         dummy.next = head;
         ListNode prevM = dummy;
         ListNode prev = null;
-        ListNode current = null;
+        ListNode curr = null;
         ListNode post = null;
 
         for (int i = 1; i <= n; i++)
@@ -18,14 +18,14 @@ public class Solution
             else if (i == m)
             {
                 prev = prevM.next;
-                current = prev.next;
+                curr = prev.next;
             }
             else
             {
-                post = current.next;
-                current.next = prev;
-                prev = current;
-                current = post;
+                post = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = post;
             }
         }
 
@@ -33,3 +33,4 @@ public class Solution
         return dummy.next;
     }
 }
+

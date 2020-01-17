@@ -6,6 +6,7 @@ public class Solution
         inorderTraversal(treeMap, root, 0);
         return (List<Integer>) treeMap.values();
     }
+
     public void inorderTraversal(Map<Integer, Integer> treeMap, TreeNode root, int level)
     {
         if (root == null)
@@ -18,3 +19,4 @@ public class Solution
         inorderTraversal(treeMap, root.right, level + 1);
     }
 }
+

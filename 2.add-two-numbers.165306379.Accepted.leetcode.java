@@ -22,9 +22,12 @@ public class Solution
 
             current.next = new ListNode(carry % 10);
             current = current.next;
+            System.out.printf("current --> %s\n", current.val);
             carry /= 10;
+            System.out.printf("carry --> %s\n", carry);
         }
 
         return head.next;
     }
 }
+

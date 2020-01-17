@@ -1,37 +1,33 @@
-public class Solution
-{
-    private int factorial(int n)
-    {
-        int r = 1;
+  public class Solution {
+    private int factorial(int n) {
+      int r = 1;
 
-        for (int i = 1; i <= n; i++)
-        {
-            r *= i;
-        }
+      for (int i = 1; i <= n; i++) {
+        r *= i;
+      }
 
-        return r;
+      return r;
     }
-    public String getPermutation(int n, int k)
-    {
-        k--; // 0 based
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        for (int i = 1; i <= n; i++)
-        {
-            numbers.add(i);
-        }
+    public String getPermutation(int n, int k) {
+      k--; // 0 based
+      ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        StringBuilder ans = new StringBuilder();
+      for (int i = 1; i <= n; i++) {
+        numbers.add(i);
+      }
 
-        while (numbers.size() > 1)
-        {
-            int m = factorial(numbers.size() - 1);
-            ans.append(numbers.get(k / m));
-            numbers.remove(k / m);
-            k = k % m;
-        }
+      StringBuilder ans = new StringBuilder();
 
-        ans.append(numbers.get(0));
-        return ans.toString();
+      while (numbers.size() > 1) {
+        int m = factorial(numbers.size() - 1);
+        ans.append(numbers.get(k / m));
+        numbers.remove(k / m);
+        k = k % m;
+      }
+
+      ans.append(numbers.get(0));
+      return ans.toString();
     }
-}
+  }
+

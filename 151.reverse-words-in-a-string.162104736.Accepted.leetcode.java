@@ -21,3 +21,4 @@ class Solution
         return sb.length() == 0 ? "" : sb.substring(0, sb.length() - 1);
     }
 }
+

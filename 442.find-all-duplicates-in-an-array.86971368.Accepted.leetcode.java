@@ -1,9 +1,9 @@
-public class Solution
+public class Solution 
 {
-    public List<Integer> findDuplicates(int[] nums)
+    public List<Integer> findDuplicates(int[] nums) 
     {
         List<Integer> result = new ArrayList<Integer>();
-
+        
         for (int i = 0; i < nums.length; i++)
         {
             if (nums[i] != nums[nums[i] - 1])
@@ -12,7 +12,7 @@ public class Solution
                 i--;
             }
         }
-
+        
         for (int i = 0; i < nums.length; i++)
         {
             if (nums[i] != i + 1)
@@ -20,9 +20,10 @@ public class Solution
                 result.add(nums[i]);
             }
         }
-
+        
         return result;
     }
+    
     public void swap(int[] nums, int i, int j)
     {
         int temp = nums[i];

@@ -10,8 +10,8 @@ public class Solution
         for (int i = 0; i < m; i++)
         {
             dp[0] = data[i][0] == 1 ? 0 : dp[0];
-
-            for (int j = 1; j < n; j++)
+            
+            for(int j = 1; j < n; j++)
             {
                 dp[j] = data[i][0] == 1 ? 0 : dp[j] + dp[j - 1];
             }

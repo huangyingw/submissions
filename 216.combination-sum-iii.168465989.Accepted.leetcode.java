@@ -6,8 +6,12 @@ public class Solution
         dfs(result, 1, n, k, new ArrayList<Integer>());
         return result;
     }
+
     private void dfs(List<List<Integer>> result, int start, int target, int k, List<Integer> current)
     {
+        System.out.printf("k --> %s\n", k);
+        System.out.printf("target --> %s\n", target);
+
         if (target < 0 || k < 0)
         {
             return;
@@ -27,3 +31,4 @@ public class Solution
         }
     }
 }
+

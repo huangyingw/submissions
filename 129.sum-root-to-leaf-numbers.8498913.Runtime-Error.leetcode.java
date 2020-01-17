@@ -1,33 +1,29 @@
-public class Solution
-{
-    private int sumNumbers(TreeNode root, int base)
-    {
-        if (root == null)
-        {
-            return 0;
-        }
+  public class Solution {
 
-        if (root.left == null && root.right == null)
-        {
-            return base;
-        }
+    private int sumNumbers(TreeNode root, int base) {
+      if (root == null) {
+        return 0;
+      }
 
-        int sum = 0;
+      if (root.left == null && root.right == null) {
+        return base;
+      }
 
-        if (root.left != null)
-        {
-            sum += sumNumbers(root.left, base * 10 + root.left.val);
-        }
+      int sum = 0;
 
-        if (root.right != null)
-        {
-            sum += sumNumbers(root.right, base * 10 + root.right.val);
-        }
+      if (root.left != null) {
+        sum += sumNumbers(root.left, base * 10 + root.left.val);
+      }
 
-        return sum;
+      if (root.right != null) {
+        sum += sumNumbers(root.right, base * 10 + root.right.val);
+      }
+
+      return sum;
     }
-    public int sumNumbers(TreeNode root)
-    {
-        return sumNumbers(root, root.val);
+
+    public int sumNumbers(TreeNode root) {
+      return sumNumbers(root, root.val);
     }
-}
+  }
+

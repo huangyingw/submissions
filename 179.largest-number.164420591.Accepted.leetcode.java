@@ -27,3 +27,4 @@ public class Solution
         return result.toString().replaceFirst("^0+(?!$)", "");
     }
 }
+

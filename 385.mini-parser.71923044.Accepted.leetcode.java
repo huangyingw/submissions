@@ -26,60 +26,50 @@
  *     public List<NestedInteger> getList();
  * }
  */
-public class Solution
-{
-    public NestedInteger deserialize(String s)
-    {
-        Stack<NestedInteger> stack = new Stack<NestedInteger>();
-        String temp = "";
-
-        for (char c : s.toCharArray())
-        {
-            switch (c)
-            {
+public class Solution {
+    public NestedInteger deserialize(String s) {
+ 
+    Stack<NestedInteger> stack = new Stack<NestedInteger>();
+    String temp = "";
+ 
+    for(char c: s.toCharArray()){
+        switch(c){
             case '[':
                 stack.push(new NestedInteger()); //start a new NI
                 break;
-
+ 
             case ']':
-                if (!temp.equals(""))
-                {
+                if(!temp.equals("")){
                     stack.peek().add(new NestedInteger(Integer.parseInt(temp))); //add NI to parent
-                    temp = "";
+                    temp="";
                 }
-
+ 
                 NestedInteger top = stack.pop();
-
-                if (!stack.empty())
-                {
+                if(!stack.empty()){
                     stack.peek().add(top);
-                }
-                else
-                {
+                }else{
                     return top;
                 }
-
+ 
                 break;
-
+ 
             case ',':
-                if (!temp.equals(""))
-                {
+                if(!temp.equals("")){
                     stack.peek().add(new NestedInteger(Integer.parseInt(temp)));//add NI to parent
-                    temp = "";
+                    temp="";
                 }
-
+ 
                 break;
-
+ 
             default:
                 temp += c;
-            }
         }
-
-        if (!temp.equals(""))
-        {
-            return new NestedInteger(Integer.parseInt(temp));
-        }
-
-        return null;
     }
+ 
+    if(!temp.equals("")){
+        return new NestedInteger(Integer.parseInt(temp));
+    }
+ 
+    return null;
+}
 }

@@ -58,9 +58,9 @@ public class Solution
                 {
                     if (source.containsKey(sc))
                     {
-                        source.put(sc, source.get(sc) - 1);
+                        source.put(sc, source.get(sc) - 1);    
                     }
-
+                    
                     sc = s.charAt(++start);
                 }
 

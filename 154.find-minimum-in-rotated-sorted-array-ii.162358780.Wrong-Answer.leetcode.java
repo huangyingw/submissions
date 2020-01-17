@@ -4,6 +4,7 @@ public class Solution
     {
         return findMin(num, 0, num.length - 1);
     }
+
     public int findMin(int[] num, int start, int end)
     {
         if (num[start] < num[end])
@@ -32,3 +33,4 @@ public class Solution
         }
     }
 }
+

@@ -15,11 +15,8 @@ public class Solution
             {
                 idx2 = i;
             }
-
-            if (idx1 != -1 && idx2 != -1)
-            {
-                distance = Math.min(distance, Math.abs(idx1 - idx2));
-            }
+            
+            distance = Math.min(distance, Math.abs(idx1 - idx2));
         }
 
         return distance;

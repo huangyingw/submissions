@@ -6,6 +6,7 @@ public class Solution
         traverse(root, 1, ans, true);
         return ans;
     }
+
     public void traverse(TreeNode root, int level, List<List<Integer>> result, Boolean left_to_right)
     {
         if (root == null)

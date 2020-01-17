@@ -2,6 +2,7 @@ public class Solution
 {
     public int longestSubstring(String s, int k)
     {
+        //System.out.println(s);
         int n = s.length();
 
         if (n < k)
@@ -12,7 +13,9 @@ public class Solution
         int counter[] = new int[26];
         boolean valid[] = new boolean[26];
         char ss[] = s.toCharArray();
+
         //统计每个字符的长度
+        
         //检查当前字符串是否是完全满足的
         boolean fullValid = true;
 
@@ -43,6 +46,7 @@ public class Solution
         {
             if (valid[ss[i] - 'a'] == false)
             {
+                // System.out.println(lastStart+"  "+i);
                 max = Math.max(max, longestSubstring(s.substring(lastStart, i), k));
                 lastStart = i + 1;
             }

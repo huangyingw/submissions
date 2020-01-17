@@ -20,10 +20,13 @@ public class Solution
             }
         }
 
-        int[] result = new int[count];
+        int[] res = new int[count];
         count = 0;
-        return result;
+
+        
+        return res;
     }
+
     public int treeSum(Map<Integer, Integer> map, TreeNode root)
     {
         if (root == null)

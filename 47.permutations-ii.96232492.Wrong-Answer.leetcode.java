@@ -18,6 +18,7 @@ public class Solution
         dfs(num, new boolean[num.length], new ArrayList<Integer>(), result);
         return result;
     }
+
     private void dfs(int[] num, boolean[] visited, ArrayList<Integer> current, List<List<Integer>> result)
     {
         if (current.size() == num.length)
@@ -37,7 +38,7 @@ public class Solution
             {
                 continue;
             }
-
+            
             current.add(num[i]);
             visited[i] = true;
             dfs(num, visited, current, result);

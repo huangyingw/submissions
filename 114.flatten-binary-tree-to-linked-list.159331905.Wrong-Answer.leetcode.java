@@ -4,6 +4,7 @@ public class Solution
     {
         flattenHelper(root);
     }
+
     private TreeNode flattenHelper(TreeNode root)
     {
         if (root == null)
@@ -33,3 +34,4 @@ public class Solution
         return rightLastNode;
     }
 }
+

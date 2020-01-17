@@ -1,20 +1,23 @@
 public class WordDistance
 {
+
     HashMap<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+
     public WordDistance(String[] words)
     {
         for (int i = 0; i < words.length; i++)
         {
             String word = words[i];
-
+            
             if (!map.containsKey(word))
             {
                 map.put(word, new ArrayList<Integer>());
             }
-
+            
             map.get(word).add(i);
         }
     }
+
     public int shortest(String word1, String word2)
     {
         List<Integer> idx1 = map.get(word1);
@@ -25,7 +28,7 @@ public class WordDistance
         while (i < idx1.size() && j < idx2.size())
         {
             distance = Math.min(distance, Math.abs(idx1.get(i) - idx2.get(j)));
-
+            
             if (idx1.get(i) < idx2.get(j))
             {
                 i++;
@@ -35,7 +38,7 @@ public class WordDistance
                 j++;
             }
         }
-
+        
         return distance;
     }
 }

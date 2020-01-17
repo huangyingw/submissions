@@ -30,12 +30,12 @@ public class Solution
         for (int end = 0; end < s.length(); end++)
         {
             char c = s.charAt(end);
-
+            
             if (!source.containsKey(c))
             {
                 source.put(c, 0);
             }
-
+            
             source.put(c, source.get(c) + 1);
 
             if (target.containsKey(c) && source.get(c) <= target.get(c))
@@ -46,7 +46,7 @@ public class Solution
             if (count == t.length())
             {
                 char sc = s.charAt(start);
-
+                
                 while (!target.containsKey(sc) || source.get(sc) > target.get(sc))
                 {
                     source.put(sc, source.get(sc) - 1);

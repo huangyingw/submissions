@@ -15,7 +15,7 @@ class Solution(object):
         if x < 0 or x >= len(board) or y < 0 or y >= len(board[0]) or board[x][y] != word[0]:
             return False
         tmp = board[x][y]
-        board[x][y] = '
+        board[x][y] = '#'
         neighbor = self.dfs(board, word[1:], x + 1, y) or self.dfs(board, word[1:], x - 1, y) or self.dfs(board, word[1:], x, y + 1) or self.dfs(board, word[1:], x, y - 1)
         board[x][y] = tmp
         return neighbor

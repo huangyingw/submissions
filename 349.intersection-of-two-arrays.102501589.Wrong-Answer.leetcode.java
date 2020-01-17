@@ -30,6 +30,7 @@ public class Solution
 
         int[] result = new int[set1.size()];
         int i = 0;
+
         return result;
     }
 }

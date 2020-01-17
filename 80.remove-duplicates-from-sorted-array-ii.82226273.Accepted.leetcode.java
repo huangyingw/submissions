@@ -1,12 +1,12 @@
-public class Solution
+public class Solution 
 {
-    public int removeDuplicates(int[] A)
+    public int removeDuplicates(int[] A) 
     {
         int index = 2;
 
-        for (int nav = 2; nav < A.length; nav++)
+        for (int nav = 2; nav < A.length; nav++) 
         {
-            if (A[nav] != A[index - 2])
+            if (A[nav] != A[index - 2]) 
             {
                 A[index++] = A[nav];
             }

@@ -7,7 +7,7 @@ public class Solution
         int[] dp = new int[n + 1];
         boolean isPalin[][] = new boolean[n][n];
 
-        for (int i = 0; i <= n; i++)
+        for (int i = 0; i <= n; i++ )
         {
             dp[i] = n - 1 - i;
         }

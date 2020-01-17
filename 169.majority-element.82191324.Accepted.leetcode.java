@@ -1,33 +1,32 @@
-public class Solution
+public class Solution 
 {
-    public int majorityElement(int[] num)
+    public int majorityElement(int[] num) 
     {
-        if (num.length == 1)
+        if(num.length == 1) 
         {
             return num[0];
         }
-
+        
         int count = 1;
         int result = Integer.MAX_VALUE;
-
-        for (int i = 0; i < num.length; i++)
+        for(int i = 0; i < num.length; i++) 
         {
-            if (result == num[i])
+            if(result == num[i]) 
             {
                 count++;
             }
-            else
+            else 
             {
                 count--;
             }
-
-            if (count == 0)
+            
+            if(count == 0) 
             {
                 result = num[i];
                 count++;
             }
         }
-
+        
         return result;
     }
 }

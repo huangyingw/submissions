@@ -3,13 +3,13 @@ class Solution(object):
         if len(s) != len(t):
             return False
         ls = len(s)
-        sMap = [0] * 127
-        tMap = [0] * 127
+        mapStoT = [0] * 127
+        mapTtoS = [0] * 127
         for i in range(ls):
             s_num, t_num = ord(s[i]), ord(t[i])
-            if sMap[s_num] == 0 and tMap[t_num] == 0:
-                sMap[s_num] = t_num
-                tMap[t_num] = s_num
-            elif tMap[t_num] != s_num or sMap[s_num] != t_num:
+            if mapStoT[s_num] == 0 and mapTtoS[t_num] == 0:
+                mapStoT[s_num] = t_num
+                mapTtoS[t_num] = s_num
+            elif mapTtoS[t_num] != s_num or mapStoT[s_num] != t_num:
                 return False
         return True

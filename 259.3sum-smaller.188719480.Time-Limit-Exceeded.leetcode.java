@@ -11,6 +11,10 @@ public class Solution
 
             while (left < right)
             {
+                System.out.printf("i --> %s\n", i) ;
+                System.out.printf("left --> %s\n", left) ;
+                System.out.printf("right --> %s\n", right) ;
+
                 if (nums[i] + nums[left] + nums[right] < target)
                 {
                     cnt += right - left;
@@ -26,3 +30,4 @@ public class Solution
         return cnt;
     }
 }
+

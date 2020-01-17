@@ -6,8 +6,12 @@ public class Solution
         dfs(result, new StringBuilder(), n, n);
         return result;
     }
+
     private void dfs(List<String> result, StringBuilder sb, int left, int right)
     {
+        System.out.printf("left --> %s\n", left);
+        System.out.printf("right --> %s\n", right);
+
         if (left > right || left < 0)
         {
             return;
@@ -27,3 +31,4 @@ public class Solution
         sb.setLength(sb.length() - 1);
     }
 }
+

@@ -15,69 +15,47 @@
  *     public List<NestedInteger> getList();
  * }
  */
-public class Solution
-{
-    public int depthSumInverse(List<NestedInteger> nestedList)
-    {
-        if (nestedList == null || nestedList.isEmpty())
-        {
+public class Solution {
+    public int depthSumInverse(List<NestedInteger> nestedList) {
+        if (nestedList == null || nestedList.isEmpty()) {
             return 0;
         }
-
         int level = getLv(nestedList);
         int sum = getSum(nestedList, level);
         return sum;
     }
-    private int getLv(List<NestedInteger> nestedList)
-    {
-        if (nestedList == null || nestedList.isEmpty())
-        {
+ 
+    private int getLv(List<NestedInteger> nestedList) {
+        if (nestedList == null || nestedList.isEmpty()) {
             return 0;
         }
-
         int level = 0;
         boolean hasInt = false;
-
-        for (NestedInteger ni : nestedList)
-        {
-            if (!ni.isInteger())
-            {
+        for (NestedInteger ni : nestedList) {
+            if (!ni.isInteger()) {
                 int curLv = getLv(ni.getList());
-
-                if (curLv > level)
-                {
+                if (curLv > level) {
                     level = curLv;
                 }
-            }
-            else
-            {
+            } else {
                 hasInt = true;
             }
         }
-
         return (level > 0 || hasInt) ? level + 1 : 0;
     }
-    private int getSum(List<NestedInteger> nestedList, int level)
-    {
-        if (level == 0 || nestedList == null || nestedList.isEmpty())
-        {
+ 
+    private int getSum(List<NestedInteger> nestedList, int level) {
+        if (level == 0 || nestedList == null || nestedList.isEmpty()) {
             return 0;
         }
-
         int sum = 0;
-
-        for (NestedInteger ni : nestedList)
-        {
-            if (ni.isInteger())
-            {
+        for (NestedInteger ni : nestedList) {
+            if (ni.isInteger()) {
                 sum += ni.getInteger() * level;
-            }
-            else
-            {
+            } else {
                 sum += getSum(ni.getList(), level - 1);
             }
         }
-
         return sum;
     }
 }

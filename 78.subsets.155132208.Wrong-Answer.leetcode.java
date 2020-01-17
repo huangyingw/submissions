@@ -12,6 +12,7 @@ public class Solution
         dfs(S, 0, new ArrayList<Integer>(), result);
         return result;
     }
+
     public void dfs(int[] S, int start, List<Integer> current, List<List<Integer>> result)
     {
         for (int index = start; index < S.length; index++)
@@ -23,3 +24,4 @@ public class Solution
         }
     }
 }
+

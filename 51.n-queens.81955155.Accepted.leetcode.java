@@ -1,76 +1,88 @@
-class Solution
+class Solution 
 {
-    List<List<String>> solveNQueens(int n)
+    /**
+     * Get all distinct N-Queen solutions
+     * @param n: The number of queens
+     * @return: All distinct solutions
+     * For example, A string '...Q' shows a queen on forth position
+     */
+    List<List<String>> solveNQueens(int n) 
     {
+        // write your code here
         List<List<String>> result = new ArrayList<>();
-
-        if (n <= 0)
+        
+        if (n <= 0) 
         {
             return result;
         }
-
+        
         int[] rows = new int[n];
-        dfs(result, rows, n, 0);
+        solveNQueensCore(result, rows, n, 0);
         return result;
     }
-    private void dfs(List<List<String>> result, int[] rows, int n, int rowIndex)
-    {
-        if (rowIndex == n)
+    
+    private void solveNQueensCore(List<List<String>> result,
+                              int[] rows,
+                              int n,
+                              int rowIndex) 
+                              {
+        if (rowIndex == n) 
         {
             result.add(translateString(rows));
             return;
         }
-
-        for (int colIndex = 0; colIndex < n; colIndex++)
+        
+        for (int colIndex = 0; colIndex < n; colIndex++) 
         {
-            if (isValid(rows, rowIndex, colIndex))
+            if (isValid(rows, rowIndex, colIndex)) 
             {
                 rows[rowIndex] = colIndex;
-                dfs(result, rows, n, rowIndex + 1);
+                solveNQueensCore(result, rows, n, rowIndex + 1);
                 rows[rowIndex] = 0;
             }
         }
     }
-    private ArrayList<String> translateString(int[] rows)
+    
+    private ArrayList<String> translateString(int[] rows) 
     {
         ArrayList<String> result = new ArrayList<>();
-
-        for (int i = 0; i < rows.length; i++)
+        for (int i = 0; i < rows.length; i++) 
         {
             StringBuilder sb = new StringBuilder();
-
-            for (int j = 0; j < rows.length; j++)
+            for (int j = 0; j < rows.length; j++) 
             {
-                if (j == rows[i])
+                if (j == rows[i]) 
                 {
                     sb.append('Q');
                 }
-                else
+                else 
                 {
                     sb.append('.');
                 }
             }
-
+            
             result.add(sb.toString());
         }
-
+        
         return result;
     }
-    private boolean isValid(int[] rows, int rowIndex, int colIndex)
+    
+    private boolean isValid(int[] rows, int rowIndex, int colIndex) 
     {
-        for (int i = 0; i < rowIndex; i++)
+        for (int i = 0; i < rowIndex; i++) 
         {
-            if (rows[i] == colIndex)
+            if (rows[i] == colIndex) 
             {
                 return false;
             }
-
-            if (Math.abs(rows[i] - colIndex) == Math.abs(i - rowIndex))
+            
+            if (Math.abs(rows[i] - colIndex) == Math.abs(i - rowIndex)) 
             {
                 return false;
             }
         }
-
+        
         return true;
     }
+    
 }

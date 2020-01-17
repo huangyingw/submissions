@@ -10,12 +10,12 @@ class AutocompleteSystem(object):
             self.counts[sentence] = count
 
     def input(self, c):
-        if c == "
-        sentence = "".join(self.partial)
-        self.counts[sentence] += 1
-        self.partial = []
-        self.matches = []
-        return []
+        if c == "#":
+            sentence = "".join(self.partial)
+            self.counts[sentence] += 1
+            self.partial = []
+            self.matches = []
+            return []
         if not self.partial:
             self.matches = [(-count, sentence) for sentence, count in self.counts.items() if sentence[0] == c]
             self.matches.sort()

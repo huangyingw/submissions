@@ -8,7 +8,7 @@ public class Solution
         }
 
         boolean[][] dp = new boolean[s.length()][s.length()];
-        String result = "";
+        String res = "";
         int maxLen = 0;
 
         for (int left = s.length() - 1; left >= 0; left--)
@@ -22,12 +22,12 @@ public class Solution
                     if (maxLen < right - left + 1)
                     {
                         maxLen = right - left + 1;
-                        result = s.substring(left, right + 1);
+                        res = s.substring(left, right + 1);
                     }
                 }
             }
         }
 
-        return result;
+        return res;
     }
 }

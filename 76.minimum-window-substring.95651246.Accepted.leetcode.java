@@ -58,9 +58,9 @@ public class Solution
                 {
                     if (map.containsKey(sc))
                     {
-                        map.put(sc, map.get(sc) - 1);
+                        map.put(sc, map.get(sc) - 1);    
                     }
-
+                    
                     sc = s.charAt(++start);
                 }
 

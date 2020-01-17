@@ -30,3 +30,4 @@ class Solution
         return A[start] < A[end] ? end : start;
     }
 }
+

@@ -20,6 +20,8 @@ public class Solution
         {
             int digit = d[i] % 10;
             int carry = d[i] / 10;
+
+
             sb.append(digit);
         }
 

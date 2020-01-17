@@ -7,15 +7,15 @@
  *     Interval(int s, int e) { start = s; end = e; }
  * }
  */
-public class Solution
+public class Solution 
 {
-    public int minMeetingRooms(Interval[] intervals)
+    public int minMeetingRooms(Interval[] intervals) 
     {
-        if (intervals == null || intervals.length == 0)
+        if(intervals == null || intervals.length == 0)
         {
-            return 0;
+            return 0;   
         }
-
+        
         Arrays.sort(intervals, new Comparator<Interval>()
         {
             public int compare(Interval o1, Interval o2)
@@ -23,19 +23,20 @@ public class Solution
                 return o1.start - o2.start;
             }
         });
+        
         PriorityQueue<Integer> endTimes = new PriorityQueue<Integer>();
         endTimes.offer(intervals[0].end);
-
-        for (int i = 1; i < intervals.length; i++)
+        
+        for(int i = 1; i < intervals.length; i++)
         {
-            if (intervals[i].end > endTimes.peek())
+            if(intervals[i].end > endTimes.peek())
             {
                 endTimes.poll();
             }
-
+            
             endTimes.offer(intervals[i].end);
         }
-
+        
         return endTimes.size();
     }
 }

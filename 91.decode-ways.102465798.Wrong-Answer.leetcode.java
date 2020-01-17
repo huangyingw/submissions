@@ -6,7 +6,7 @@ public class Solution
         {
             return 0;
         }
-
+        
         int[] dp = new int[s.length() + 1];
         dp[0] = 1;
 
@@ -17,7 +17,7 @@ public class Solution
                 dp[i] += dp[i - 1];
             }
 
-            if (i - 2 >= 0 && (s.charAt(i - 2) == '1' || (s.charAt(i - 2) == '2' && s.charAt(i - 1) <= '6')))
+            if (i -2 >= 0 && (s.charAt(i - 2) == '1' || (s.charAt(i - 2) == '2' && s.charAt(i - 1) <= '6')))
             {
                 dp[i] += dp[i - 2];
             }

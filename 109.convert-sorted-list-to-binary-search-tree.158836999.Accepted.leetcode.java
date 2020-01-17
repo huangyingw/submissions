@@ -1,6 +1,7 @@
 public class Solution
 {
     private ListNode current;
+
     private int getListLength(ListNode head)
     {
         int size = 0;
@@ -13,6 +14,7 @@ public class Solution
 
         return size;
     }
+
     public TreeNode sortedListToBST(ListNode head)
     {
         int size;
@@ -20,6 +22,7 @@ public class Solution
         size = getListLength(head);
         return sortedListToBSTHelper(size);
     }
+
     public TreeNode sortedListToBSTHelper(int size)
     {
         if (size <= 0)
@@ -36,3 +39,4 @@ public class Solution
         return root;
     }
 }
+

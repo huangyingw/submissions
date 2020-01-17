@@ -1,6 +1,7 @@
 public class Solution
 {
     private int[][] dir = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
+
     public List<Integer> numIslands2(int m, int n, int[][] positions)
     {
         UnionFind2D islands = new UnionFind2D(m * n);
@@ -23,10 +24,14 @@ public class Solution
 
                 int q = islands.getID(newX * n + newY);
 
+                System.out.println(p + " --> " + islands.root(p));
+                
                 if (q != -1)
                 {
+                    System.out.println(q + " --> " + islands.root(q));    
                 }
-
+                
+                
                 if (q != -1 && !islands.find(p, q))
                 {
                     islands.unite(p, q);
@@ -39,34 +44,41 @@ public class Solution
         return ans;
     }
 }
+
 class UnionFind2D
 {
     private int[] id;
     private int count;
+
     public UnionFind2D(int size)
     {
         this.count = 0;
         this.id = new int[size];
         Arrays.fill(id, -1);
     }
+
     public int size()
     {
         return this.count;
     }
+
     public int getID(int index)
     {
         return id[index];
     }
+
     public int add(int i)
     {
         id[i] = i;
         ++count;
         return i;
     }
+
     public boolean find(int p, int q)
     {
         return root(p) == root(q);
     }
+
     public void unite(int p, int q)
     {
         int i = root(p);
@@ -74,6 +86,7 @@ class UnionFind2D
         id[i] = j;
         --count;
     }
+
     public int root(int i)
     {
         while (i != id[i])

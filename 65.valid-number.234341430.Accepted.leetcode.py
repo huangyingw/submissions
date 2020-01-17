@@ -5,6 +5,9 @@ class Solution(object):
         except:
             return False
         return True
+"""
+DFA
+"""
 
 
 class Solution(object):

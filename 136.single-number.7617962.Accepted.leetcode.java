@@ -1,14 +1,12 @@
-public class Solution
-{
-    public int singleNumber(int[] A)
-    {
-        int ans = 0;
+  public class Solution {
+    public int singleNumber(int[] A) {
+      int ans = 0;
 
-        for (int i : A)
-        {
-            ans ^= i;
-        }
+      for (int i : A) {
+        ans ^= i;
+      }
 
-        return ans;
+      return ans;
     }
-}
+  }
+

@@ -1,6 +1,6 @@
-public class Solution
+public class Solution 
 {
-    public int largestRectangleArea(int[] height)
+    public int largestRectangleArea(int[] height) 
     {
         Stack<Integer> stack = new Stack<Integer>();
         int i = 0;
@@ -8,17 +8,17 @@ public class Solution
         int[] h = new int[height.length + 1];
         h = Arrays.copyOf(height, height.length + 1);
 
-        while (i < h.length)
+        while (i < h.length) 
         {
-            if (stack.isEmpty() || h[stack.peek()] <= h[i])
+            if (stack.isEmpty() || h[stack.peek()] <= h[i]) 
             {
                 stack.push(i++);
             }
-            else
+            else 
             {
                 int t = stack.pop();
                 maxArea = Math.max(maxArea,
-                                   h[t] * (i - stack.peek() - 1));
+                             h[t] * (i - stack.peek() - 1));
             }
         }
 

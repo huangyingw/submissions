@@ -5,7 +5,7 @@ public class Solution
         int start = 0;
         int end = nums.length - 1;
 
-        while (start + 1 < end)
+        while (start +1 < end)
         {
             int mid = start + (end - start) / 2;
 
@@ -14,9 +14,9 @@ public class Solution
                 return mid;
             }
 
-            if (nums[start] <= nums[mid])
+            if(nums[start] <= nums[mid])
             {
-                if (nums[start] <= target && target <= nums[mid])
+                if(nums[start] <= target && target <= nums[mid])
                 {
                     end = mid;
                 }
@@ -27,7 +27,7 @@ public class Solution
             }
             else
             {
-                if (nums[mid] <= target && target <= nums[end])
+                if(nums[mid] <= target && target <= nums[end])
                 {
                     start = mid;
                 }
@@ -37,18 +37,19 @@ public class Solution
                 }
             }
         }
-
-        if (nums[start] == target)
+        
+        if(nums[start] == target)
         {
             return start;
         }
-        else if (nums[end] == target)
+        else if(nums[end] == target) 
         {
             return end;
         }
         else
         {
-            return -1;
+            return -1;    
         }
+        
     }
 }

@@ -15,25 +15,27 @@ public class Solution
         {
             if (A[index] == 0)
             {
-                swap(A, index++, redIndex++);
+                swap(A, index++ , redIndex++ ); // index cannot be less than redIndex
             }
             else if (A[index] == 2)
             {
-                swap(A, index, blueIndex--);
+                swap(A, index, blueIndex-- );
             }
             else
             {
-                index++;
+                index++ ;
             }
         }
     }
+
     private void swap(int[] a, int index, int blueIndex)
     {
-        if (index != blueIndex)
+        if(index != blueIndex)
         {
             a[blueIndex] ^= a[index];
             a[index] ^= a[blueIndex];
-            a[blueIndex] ^= a[index];
+            a[blueIndex] ^= a[index];    
         }
     }
 }
+

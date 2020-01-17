@@ -6,6 +6,7 @@ public class Solution
         binaryTreePathsDFS(root, "", result);
         return result;
     }
+
     void binaryTreePathsDFS(TreeNode root, String out, List<String> result)
     {
         if (root == null)
@@ -22,3 +23,4 @@ public class Solution
         binaryTreePathsDFS(root.right, out + root.val + "->", result);
     }
 }
+

@@ -28,3 +28,4 @@ public class Solution extends VersionControl
         return isBadVersion(left) ? left : right;
     }
 }
+

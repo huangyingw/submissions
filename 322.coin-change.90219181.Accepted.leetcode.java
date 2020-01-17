@@ -15,7 +15,7 @@ public class Solution
             {
                 if (i - coins[j] >= 0 && dp[i - coins[j]] != Integer.MAX_VALUE)
                 {
-                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);    
                 }
             }
         }

@@ -20,13 +20,13 @@ public class Solution
         {
             int digit = d[i] % 10;
             sb.append(digit);
-
+            
             if (i + 1 < d.length)
             {
-                d[i + 1] += d[i] / 10;
+                d[i + 1] += d[i] / 10;    
             }
         }
-
+        
         while (sb.length() > 1 && sb.charAt(sb.length() - 1) == '0')
         {
             sb.deleteCharAt(sb.length() - 1);

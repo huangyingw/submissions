@@ -2,11 +2,11 @@ public class Solution
 {
     public boolean search(int[] A, int target)
     {
-        if (A == null || A.length == 0)
+        if (A == null || A.length ==0)
         {
             return false;
         }
-
+        
         int left = 0;
         int right = A.length - 1;
 
@@ -51,7 +51,7 @@ public class Solution
         {
             return true;
         }
-
+        
         return false;
     }
 }

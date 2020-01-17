@@ -4,18 +4,19 @@ public class Solution
     {
         ListNode pre = null;
         ListNode temp = null;
-        ListNode current = head;
+        ListNode curr = head;
 
-        while (current != null)
+        while (curr != null)
         {
-            temp = current.next;
-            current.next = pre;
-            pre = current;
-            current = temp;
+            temp = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = temp;
         }
 
         return pre;
     }
+
     private ListNode[] split(ListNode head)
     {
         ListNode[] lists = new ListNode[2];
@@ -45,9 +46,11 @@ public class Solution
         slow.next = null;
         return lists;
     }
+
     private void merge(ListNode l1, ListNode l2)
     {
     }
+
     public void reorderList(ListNode head)
     {
         ListNode[] lists = split(head);
@@ -55,3 +58,4 @@ public class Solution
         merge(lists[0], lists[1]);
     }
 }
+

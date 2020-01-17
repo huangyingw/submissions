@@ -6,7 +6,7 @@ public class Solution
         {
             return 0;
         }
-
+        
         int[] dp = new int[s.length() + 1];
         dp[0] = 1;
 

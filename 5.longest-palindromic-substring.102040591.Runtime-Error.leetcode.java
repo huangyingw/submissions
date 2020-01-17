@@ -28,9 +28,10 @@ public class Solution
             }
 
             i = j;// 这个地方i=j 为了防止 s.charAt(i)出现多次，后面的一些判断就是多余。例如 baaaabc, 当i=1,此时
-
             // j=5
+
             // 从k和j开始向两边扩展
+
             while (k >= 0 && j < n && s.charAt(k) == s.charAt(j))
             {
                 k-- ;

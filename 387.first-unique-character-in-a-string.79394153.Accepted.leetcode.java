@@ -7,11 +7,11 @@ public class Solution
 
         for (char c : chs)
         {
-            if (!m.containsKey(c))
+            if(!m.containsKey(c))
             {
                 m.put(c, 0);
             }
-
+            
             m.put(c, m.get(c) + 1);
         }
 

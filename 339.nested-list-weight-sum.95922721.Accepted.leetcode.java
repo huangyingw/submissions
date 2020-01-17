@@ -21,6 +21,7 @@ public class Solution
     {
         return helper(nestedList, 1);
     }
+
     public int helper(List<NestedInteger> nestedList, int depth)
     {
         if (nestedList == null || nestedList.size() == 0)
@@ -29,19 +30,19 @@ public class Solution
         }
 
         int sum = 0;
-
+        
         for (NestedInteger ni : nestedList)
         {
             if (ni.isInteger())
             {
-                sum += ni.getInteger() * depth;
+                sum += ni.getInteger() * depth;        
             }
             else
             {
-                sum += helper(ni.getList(), depth + 1);
+                sum += helper(ni.getList(), depth + 1);                
             }
         }
-
+        
         return sum;
     }
 }

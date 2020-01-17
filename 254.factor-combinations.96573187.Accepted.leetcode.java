@@ -6,6 +6,7 @@ public class Solution
         helper(ret, new ArrayList<Integer> (), n, 2);
         return ret;
     }
+
     private void helper(List<List<Integer>> ret, List<Integer> item, int n, int start)
     {
         if (n == 1)

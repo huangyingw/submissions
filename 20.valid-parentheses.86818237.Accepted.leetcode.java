@@ -25,12 +25,12 @@ public class Solution
                 {
                     if (c != map.get(stack.pop()))
                     {
-                        return false;
+                        return false;                        
                     }
                 }
             }
         }
-
+        
         return stack.isEmpty();
     }
 }

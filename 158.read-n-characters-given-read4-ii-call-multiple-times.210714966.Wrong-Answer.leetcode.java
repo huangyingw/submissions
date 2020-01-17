@@ -1,5 +1,6 @@
 public class Solution extends Reader4
 {
+
     public int read(char[] buf, int n)
     {
         char[] buffer = new char[4];
@@ -31,3 +32,4 @@ public class Solution extends Reader4
         return haveRead;
     }
 }
+

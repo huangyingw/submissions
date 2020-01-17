@@ -1,106 +1,116 @@
 class TrieNode
 {
-    char content;
-    boolean isEnd;
-    LinkedList<TrieNode> childNode;
-    public TrieNode()
-    {
-        this.content = ' ';
-        this.isEnd = false;
-        this.childNode = new LinkedList<TrieNode>();
-    }
-    public TrieNode(char content)
-    {
-        this.content = content;
-        this.isEnd = false;
-        this.childNode = new LinkedList<TrieNode>();
-    }
-    public TrieNode subNode(char content)
-    {
-        if (childNode != null)
-        {
-            for (TrieNode node : childNode)
-            {
-                if (node.content == content)
-                {
-                    return node;
-                }
-            }
-        }
+  char content;
+  boolean isEnd;
+  LinkedList<TrieNode> childNode;
 
-        return null;
+  public TrieNode()
+  {
+    this.content = ' ';
+    this.isEnd = false;
+    this.childNode = new LinkedList<TrieNode>();
+  }
+
+  public TrieNode(char content)
+  {
+    this.content = content;
+    this.isEnd = false;
+    this.childNode = new LinkedList<TrieNode>();
+  }
+
+  public TrieNode subNode(char content)
+  {
+    if (childNode != null)
+    {
+      for (TrieNode node : childNode)
+      {
+        if (node.content == content)
+        {
+          return node;
+        }
+      }
     }
+
+    return null;
+  }
+
 }
+
 public class Trie
 {
-    private TrieNode root;
-    public Trie()
+  private TrieNode root;
+
+  public Trie()
+  {
+    root = new TrieNode();
+  }
+
+  // Inserts a word into the trie.
+  public void insert(String word)
+  {
+    if (search(word) == true)
     {
-        root = new TrieNode();
+      return;
     }
-    // Inserts a word into the trie.
-    public void insert(String word)
+
+    TrieNode current = root;
+
+    for (int i = 0; i < word.length(); i++ )
     {
-        if (search(word) == true)
-        {
-            return;
-        }
+      char c = word.charAt(i);
+      TrieNode node = current.subNode(c);
 
-        TrieNode current = root;
+      if (node == null)
+      {
+        current.childNode.add(new TrieNode(c));
+        node = current.subNode(c);
+      }
 
-        for (int i = 0; i < word.length(); i++)
-        {
-            char c = word.charAt(i);
-            TrieNode node = current.subNode(c);
-
-            if (node == null)
-            {
-                current.childNode.add(new TrieNode(c));
-                node = current.subNode(c);
-            }
-
-            current = node;
-        }
-
-        current.isEnd = true;
+      current = node;
     }
-    // Returns if the word is in the trie.
-    public boolean search(String word)
+
+    current.isEnd = true;
+  }
+
+  // Returns if the word is in the trie.
+  public boolean search(String word)
+  {
+    TrieNode current = root;
+
+    for (int i = 0; i < word.length(); i++ )
     {
-        TrieNode current = root;
+      TrieNode node = current.subNode(word.charAt(i));
 
-        for (int i = 0; i < word.length(); i++)
-        {
-            TrieNode node = current.subNode(word.charAt(i));
+      if (node == null)
+      {
+        return false;
+      }
 
-            if (node == null)
-            {
-                return false;
-            }
-
-            current = node;
-        }
-
-        return current.isEnd;
+      current = node;
     }
-    // Returns if there is any word in the trie
-    // that starts with the given prefix.
-    public boolean startsWith(String prefix)
+
+    return current.isEnd;
+  }
+
+  // Returns if there is any word in the trie
+  // that starts with the given prefix.
+  public boolean startsWith(String prefix)
+  {
+    TrieNode current = root;
+
+    for (int i = 0; i < prefix.length(); i++ )
     {
-        TrieNode current = root;
+      TrieNode node = current.subNode(prefix.charAt(i));
 
-        for (int i = 0; i < prefix.length(); i++)
-        {
-            TrieNode node = current.subNode(prefix.charAt(i));
+      if (node == null)
+      {
+        return false;
+      }
 
-            if (node == null)
-            {
-                return false;
-            }
-
-            current = node;
-        }
-
-        return true;
+      current = node;
     }
+
+    return true;
+  }
 }
+

@@ -23,10 +23,11 @@ public class Solution
             }
             else
             {
-                index++;
+                index++ ;
             }
         }
     }
+
     private void swap(int[] a, int index, int blueIndex)
     {
         int temp = a[index];

@@ -9,17 +9,18 @@ class MagicDictionary(object):
                 if c not in node:
                     node[c] = {}
                 node = node[c]
-            node["
-                 def search(self, word):
-                 def helper(i, mismatches, node):
-                 if mismatches == 2:
-                 return False
-                 if i == len(word):
-                 return "
-                 for c in node.keys():
-                 if c == "
-                 continue
-                 if helper(i + 1, mismatches + (c != word[i]), node[c]):
-                 return True
-                 return False
-                 return helper(0, 0, self.root)
+            node["#"] = None
+
+    def search(self, word):
+        def helper(i, mismatches, node):
+            if mismatches == 2:
+                return False
+            if i == len(word):
+                return "#" in node and mismatches == 1
+            for c in node.keys():
+                if c == "#":
+                    continue
+                if helper(i + 1, mismatches + (c != word[i]), node[c]):
+                    return True
+            return False
+        return helper(0, 0, self.root)

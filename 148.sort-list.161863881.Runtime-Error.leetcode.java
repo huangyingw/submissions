@@ -12,6 +12,7 @@ public class Solution
 
         return slow;
     }
+
     private ListNode merge(ListNode head1, ListNode head2)
     {
         ListNode dummy = new ListNode(0);
@@ -35,6 +36,7 @@ public class Solution
 
         return dummy.next;
     }
+
     public ListNode sortList(ListNode head)
     {
         ListNode mid = findMiddle(head);
@@ -44,3 +46,4 @@ public class Solution
         return merge(left, right);
     }
 }
+

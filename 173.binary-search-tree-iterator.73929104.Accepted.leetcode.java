@@ -12,15 +12,16 @@ public class BSTIterator
     }
     public int next()
     {
-        while (top != null)
+        while(top != null)
         {
             stack.push(top);
             top = top.left;
         }
-
+        
         top = stack.pop();
         int result = top.val;
         top = top.right;
         return result;
     }
 }
+

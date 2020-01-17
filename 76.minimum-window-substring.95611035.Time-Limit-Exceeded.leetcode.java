@@ -53,15 +53,19 @@ public class Solution
             if (count == t.length())
             {
                 char sc = s.charAt(start);
+                System.out.println("sc --> " + sc);
+                System.out.println("source.get(sc) --> " + source.get(sc));
+                System.out.println("target.get(sc) --> " + target.get(sc));
 
                 while (!source.containsKey(sc) || source.get(sc) > target.get(sc))
                 {
                     if (source.containsKey(sc))
                     {
-                        source.put(sc, source.get(sc) - 1);
+                        source.put(sc, source.get(sc) - 1);    
                     }
-
+                    
                     sc = s.charAt(++start);
+                    System.out.println("sc --> " + sc);
                 }
 
                 if (end - start + 1 < minLen)

@@ -52,7 +52,7 @@ public class Solution
             if (count == t.length())
             {
                 char sc = s.charAt(start);
-
+                
                 while (!target.containsKey(sc) || source.get(sc) > target.get(sc))
                 {
                     source.put(sc, source.get(sc) - 1);

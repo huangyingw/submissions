@@ -10,7 +10,7 @@ public class Solution
             local = Math.max(A[i], local + A[i]);
             global = Math.max(global, local);
         }
-
+        
         return global;
     }
 }

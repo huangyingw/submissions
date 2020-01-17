@@ -4,44 +4,49 @@ public class Solution
     {
         int len = A.length + B.length;
 
-        if (len % 2 == 1)
+        if(len % 2 == 1)
         {
             return findKth(A, 0, B, 0, len / 2 + 1);
         }
-
         return (findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2 + 1)) / 2.0;
     }
-    public int findKth(int[] A, int aStart, int[] B, int bStart, int k)
+
+    // find kth number of two sorted array
+    public int findKth(int[] A, int A_start,
+                        int[] B, int B_start,
+                        int k)
     {
-        if (aStart >= A.length)
+        if(A_start >= A.length)
         {
-            return B[bStart + k - 1];
+            return B[B_start + k - 1];
         }
-
-        if (bStart >= B.length)
+        
+        if(B_start >= B.length)
         {
-            return A[aStart + k - 1];
+            return A[A_start + k - 1];
         }
-
-        if (k == 1)
+        
+        if(k == 1)
         {
-            return Math.min(A[aStart], B[bStart]);
+            return Math.min(A[A_start], B[B_start]);
         }
-
-        int A_key = aStart + k / 2 - 1 < A.length
-                    ? A[aStart + k / 2 - 1]
+        
+        
+        int A_key = A_start + k / 2 - 1 < A.length
+                    ? A[A_start + k / 2 - 1]
                     : Integer.MAX_VALUE;
-        int B_key = bStart + k / 2 - 1 < B.length
-                    ? B[bStart + k / 2 - 1]
+        int B_key = B_start + k / 2 - 1 < B.length
+                    ? B[B_start + k / 2 - 1]
                     : Integer.MAX_VALUE;
 
         if (A_key < B_key)
         {
-            return findKth(A, aStart + k / 2, B, bStart, k - k / 2);
+            return findKth(A, A_start + k / 2, B, B_start, k - k / 2);
         }
         else
         {
-            return findKth(A, aStart, B, bStart + k / 2, k - k / 2);
+            return findKth(A, A_start, B, B_start + k / 2, k - k / 2);
         }
     }
 }
+

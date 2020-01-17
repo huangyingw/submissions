@@ -16,6 +16,7 @@ public class Solution
 
         return sb.toString();
     }
+
     public void reverse(StringBuilder sb, int begin, int end)
     {
         for (; begin < end; begin++, end--)
@@ -26,3 +27,4 @@ public class Solution
         }
     }
 }
+

@@ -3,10 +3,11 @@ public class Solution
     public List<List<Integer>> getFactors(int n)
     {
         List<List<Integer>> ret = new ArrayList<List<Integer>> ();
-        dfs(ret, new ArrayList<Integer> (), n, 2);
+        helper(ret, new ArrayList<Integer> (), n, 2);
         return ret;
     }
-    private void dfs(List<List<Integer>> ret, List<Integer> item, int n, int start)
+
+    private void helper(List<List<Integer>> ret, List<Integer> item, int n, int start)
     {
         if (n == 1)
         {
@@ -21,7 +22,7 @@ public class Solution
             if (n % i == 0)
             {
                 item.add(i);
-                dfs(ret, item, n / i, i);
+                helper(ret, item, n / i, i);
                 item.remove(item.size() - 1);
             }
         }

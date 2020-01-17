@@ -1,29 +1,28 @@
 class Solution(object):
     def largestRectangleArea(self, heights):
         if not heights:
-            return 0
+        	return 0
         stack = []
         result, index = 0, 0
         while index < len(heights):
-            if not stack or heights[index] >= heights[stack[-1]]:
-                stack.append(index)
-                index += 1
-            else:
-                curr = stack.pop()
-                if not stack:
-                    area = heights[curr] * index
-                else:
-                    area = heights[curr] * (index - stack[-1] - 1)
-                result = max(result, area)
+        	if not stack or heights[index] >= heights[stack[-1]]:
+        		stack.append(index)
+          index += 1
+         else:
+        		curr = stack.pop()
+          if not stack:
+        			area = heights[curr]*index
+          else:
+        			area = heights[curr] * (index-stack[-1]-1)
+          result = max(result, area)
         while stack:
-            curr = stack.pop()
-            if not stack:
-                area = heights[curr] * index
-            else:
-                area = heights[curr] * (index - stack[-1] - 1)
-            result = max(result, area)
+        	curr = stack.pop()
+         if not stack:
+        		area = heights[curr]*index
+         else:
+        		area = heights[curr] * (index-stack[-1]-1)
+         result = max(result, area)
         return result
-
     def maximalRectangle(self, matrix):
         if not matrix:
             return 0

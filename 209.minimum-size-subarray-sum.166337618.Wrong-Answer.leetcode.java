@@ -10,15 +10,21 @@ public class Solution
             if (sum < s)
             {
                 sum += nums[++right];
+                System.out.printf("nums[right --> %s]--> %s\n", right, nums[right]);
+                System.out.printf("sum--> %s\n", sum);
             }
 
             if (sum >= s)
             {
                 min = Math.min(min, right - left);
+                System.out.printf("min--> %s\n", min);
                 sum -= nums[left++];
+                System.out.printf("nums[left --> %s]--> %s\n", left - 1, nums[left - 1]);
+                System.out.printf("sum--> %s\n", sum);
             }
         }
 
         return min == Integer.MAX_VALUE ? 0 : min;
     }
 }
+

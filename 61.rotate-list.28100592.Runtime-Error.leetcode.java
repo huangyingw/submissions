@@ -6,29 +6,21 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution
-{
-    public ListNode rotateRight(ListNode head, int k)
-    {
-        if (head == null || head.next == null)
-        {
+public class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head == null || head.next == null)
             return head;
-        }
-
         ListNode cur = head;
         ListNode pre = head;
-
-        for (int i = 0; i < k; i++)
+        for(int i = 0;i<k;i++)
         {
             cur = cur.next;
         }
-
-        while (cur.next != null)
+        while(cur.next != null)
         {
             pre = pre.next;
             cur = cur.next;
         }
-
         cur.next = head;
         head = pre.next;
         pre.next = null;

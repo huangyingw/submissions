@@ -2,11 +2,11 @@ public class Solution
 {
     public List<String> findWords(char[][] board, String[] words)
     {
-        List<String> result = new ArrayList<String>();
+        List<String> res = new ArrayList<String>();
 
         if (board == null || board.length == 0 || board[0].length == 0 || words == null || words.length == 0)
         {
-            return result;
+            return res;
         }
 
         boolean[][] visited = new boolean[board.length][board[0].length];
@@ -16,12 +16,13 @@ public class Solution
         {
             for (int j = 0; j < board[0].length; j++)
             {
-                dfs(board, i, j, "", visited, trie, result);
+                dfs(board, i, j, "", visited, trie, res);
             }
         }
 
-        return result;
+        return res;
     }
+
     private void dfs(char[][] board, int i, int j, String str, boolean[][] visited, Trie trie, List<String> result)
     {
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || visited[i][j])
@@ -50,9 +51,11 @@ public class Solution
         dfs(board, i, j - 1, newStr, visited, trie, result);
         visited[i][j] = false;
     }
+
     class Trie
     {
         TrieNode root;
+
         public Trie(Set<String> strs)
         {
             root = new TrieNode();
@@ -62,6 +65,7 @@ public class Solution
                 insert(str);
             }
         }
+
         // gets the last node in the tree that matches the str, return null if not match
         public TrieNode startWith(String prefix)
         {
@@ -81,6 +85,7 @@ public class Solution
 
             return current;
         }
+
         public void insert(String word)
         {
             TrieNode current = root;
@@ -102,17 +107,20 @@ public class Solution
             current.isWord = true;
         }
     }
+
     class TrieNode
     {
         boolean isWord;
         char content;
         Map<Character, TrieNode> children;
+
         public TrieNode()
         {
             this.content = ' ';
             this.isWord = false;
             this.children = new HashMap<Character, TrieNode>();
         }
+
         public TrieNode(char content)
         {
             this.content = content;
@@ -121,3 +129,4 @@ public class Solution
         }
     }
 }
+

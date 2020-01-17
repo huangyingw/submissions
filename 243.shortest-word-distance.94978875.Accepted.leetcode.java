@@ -15,10 +15,10 @@ public class Solution
             {
                 p2 = i;
             }
-
+            
             if (p1 != -1 && p2 != -1)
             {
-                distance = Math.min(distance, Math.abs(p1 - p2));
+                distance = Math.min(distance, Math.abs(p1 - p2));    
             }
         }
 

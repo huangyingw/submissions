@@ -5,10 +5,11 @@ public class Solution
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         return result;
     }
+
     public void dfs(int[] S, int start, List<Integer> current, List<List<Integer>> result)
     {
         result.add(new ArrayList<Integer>(current));
-
+        
         for (int i = start; i < S.length; i++)
         {
             current.add(S[i]);

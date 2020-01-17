@@ -12,6 +12,7 @@ public class Solution
         TreeNode root = dfs(inMap, inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
         return root;
     }
+
     public TreeNode dfs(HashMap inMap, int[] inorder, int inLeft, int inRight, int[] postorder, int poLeft, int poRight)
     {
         if (inLeft > inRight || poLeft > poRight)
@@ -26,3 +27,4 @@ public class Solution
         return root;
     }
 }
+
