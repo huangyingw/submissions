@@ -1,0 +1,9 @@
+class Solution(object):
+    def twoCitySchedCost(self, costs):
+        result = 0
+        for index in range(len(costs)):
+            if index < len(costs) // 2:
+                result += costs[index][0]
+            else:
+                result += costs[index][1]
+        return result
