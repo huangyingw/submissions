@@ -7,3 +7,10 @@ class Solution(object):
         result = ['']
         for char in number:
             values = phoneMap[char]
+            new_result = []
+            for prefix in result:
+                currElement = prefix
+                for value in values:
+                    new_result.append(currElement + value)
+            result = new_result
+        return result

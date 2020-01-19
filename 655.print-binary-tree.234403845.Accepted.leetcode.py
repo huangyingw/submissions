@@ -1,3 +1,45 @@
+"""
+Print a binary tree in an m*n 2D string array following these rules:
+The row number m should be equal to the height of the given binary tree.
+The column number n should always be an odd number.
+Each unused space should contain an empty string "".
+Print the subtrees following the same rules.
+Example 1:
+Input:
+     1
+    /
+   2
+Output:
+[["", "1", ""],
+ ["2", "", ""]]
+Example 2:
+Input:
+     1
+    / \
+   2   3
+    \
+     4
+Output:
+[["", "", "", "1", "", "", ""],
+ ["", "2", "", "", "", "3", ""],
+ ["", "", "4", "", "", "", ""]]
+Example 3:
+Input:
+      1
+     / \
+    2   5
+   /
+  3
+ /
+4
+Output:
+[["",  "",  "", "",  "", "", "", "1", "",  "",  "",  "",  "", "", ""]
+ ["",  "",  "", "2", "", "", "", "",  "",  "",  "",  "5", "", "", ""]
+ ["",  "3", "", "",  "", "", "", "",  "",  "",  "",  "",  "", "", ""]
+ ["4", "",  "", "",  "", "", "", "",  "",  "",  "",  "",  "", "", ""]]
+"""
+
+
 class Solution(object):
     def get_height(node):
         return 0 if not node else 1 + max(get_height(node.left), get_height(node.right))
