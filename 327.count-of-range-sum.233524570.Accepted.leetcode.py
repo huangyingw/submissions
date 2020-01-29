@@ -8,7 +8,7 @@ class Solution(object):
             count = 0
             if right - left <= 1:
                 return count
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             count += mergesort(cumul, left, mid) + mergesort(cumul, mid, right)
             i, j = mid, mid
             for prefix_sum in cumul[left:mid]:
