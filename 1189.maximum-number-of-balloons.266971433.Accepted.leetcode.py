@@ -6,5 +6,5 @@ class Solution(object):
         counts = Counter(text)
         result = float("inf")
         for c, count in Counter("balloon").items():
-            result = min(result, counts[c] / count)
+            result = min(result, counts[c] // count)
         return result

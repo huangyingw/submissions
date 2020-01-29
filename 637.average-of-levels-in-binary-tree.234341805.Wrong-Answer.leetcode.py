@@ -6,6 +6,6 @@ class Solution:
         result = []
         while this_level:
             temp = [node.val for node in this_level]
-            result.append(sum(temp) / len(temp))
+            result.append(sum(temp) // len(temp))
             this_level = [child for node in this_level for child in [node.left, node.right] if child]
         return result

@@ -7,4 +7,4 @@ class Solution(object):
         if(Y % 2 == 1):
             return 1 + self.brokenCalc(X, Y + 1)
         else:
-            return 1 + self.brokenCalc(X, Y / 2)
+            return 1 + self.brokenCalc(X, Y // 2)

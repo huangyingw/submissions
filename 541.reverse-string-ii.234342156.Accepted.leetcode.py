@@ -7,7 +7,7 @@ class Solution(object):
         else:
             result = s[k - 1::-1]
             start = k
-            for i in range(1, len(s) / (2 * k) + 1):
+            for i in range(1, len(s) // (2 * k) + 1):
                 result += s[start:i * 2 * k] + s[i * 2 * k - 1 + k:i * 2 * k - 1:-1]
                 start = i * 2 * k + k
             result += s[start:]

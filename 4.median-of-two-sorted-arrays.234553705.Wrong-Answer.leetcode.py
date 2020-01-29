@@ -5,8 +5,8 @@ class Solution:
         x, y = len(nums1), len(nums2)
         low, high = 0, x
         while low <= high:
-            partitionX = (low + high) / 2
-            partitionY = ((x + y + 1) / 2) - partitionX
+            partitionX = (low + high) // 2
+            partitionY = ((x + y + 1) // 2) - partitionX
             if partitionX < x and nums2[partitionY - 1] > nums1[partitionX]:
                 low = partitionX + 1
             elif partitionX > 0 and nums1[partitionX - 1] > nums2[partitionY]:
@@ -26,4 +26,4 @@ class Solution:
                     minRight = nums1[partitionX]
                 else:
                     minRight = min(nums1[partitionX], nums2[partitionY])
-                return (maxLeft + minRight) / 2
+                return (maxLeft + minRight) // 2

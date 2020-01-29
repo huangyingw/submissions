@@ -8,5 +8,5 @@ class Solution(object):
             for position, point in enumerate(grid):
                 tempGrid += [position] * sum(point)
             for p in tempGrid:
-                total += abs(p - tempGrid[len(tempGrid) / 2])
+                total += abs(p - tempGrid[len(tempGrid) // 2])
         return total

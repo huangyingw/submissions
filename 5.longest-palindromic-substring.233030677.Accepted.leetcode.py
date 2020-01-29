@@ -7,7 +7,7 @@ class Solution(object):
         tls = len(temp_s)
         seed = range(1, tls - 1)
         len_table = [0] * tls
-        for step in range(1, tls / 2 + 1):
+        for step in range(1, tls // 2 + 1):
             final = []
             for pos in seed:
                 if pos - step < 0 or pos + step >= tls:

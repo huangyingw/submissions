@@ -15,7 +15,7 @@ class Solution(object):
                 while i < len(s) and s[i] == s[i - 1]:
                     seq += 1
                     i += 1
-                subs += seq / 3
+                subs += seq // 3
                 if seq % 3 == 0:
                     singles += 1
                 if seq % 3 == 1:
@@ -29,6 +29,6 @@ class Solution(object):
             return max(types_missing, subs)
         deletions = len(s) - 20
         subs -= min(deletions, singles)
-        subs -= min(max(deletions - singles, 0), doubles * 2) / 2
-        subs -= max(deletions - singles - 2 * doubles, 0) / 3
+        subs -= min(max(deletions - singles, 0), doubles * 2) // 2
+        subs -= max(deletions - singles - 2 * doubles, 0) // 3
         return deletions + max(types_missing, subs)

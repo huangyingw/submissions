@@ -11,7 +11,7 @@ class Solution(object):
             if pos2 >= 0:
                 digit2 = ord(num2[pos2]) - ord('0')
             res.append(str((digit1 + digit2 + carry) % 10))
-            carry = (digit1 + digit2 + carry) / 10
+            carry = (digit1 + digit2 + carry) // 10
             pos1 -= 1
             pos2 -= 1
         return ''.join(res[::-1])

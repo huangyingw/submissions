@@ -12,7 +12,7 @@ class Solution(object):
         def slope(a, b):
             if a.x == b.x:
                 return float("inf")
-            return (b.y - a.y) / float(b.x - a.x)
+            return (b.y - a.y) // float(b.x - a.x)
 
         def cross_product(p):
             v1 = [result[-1].x - result[-2].x, result[-1].y - result[-2].y]

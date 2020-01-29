@@ -5,8 +5,8 @@ class Solution(object):
         rows, cols = len(matrix), len(matrix[0])
         low, high = 0, rows * cols - 1
         while high >= low:
-            mid = (high + low) / 2
-            value = matrix[mid / cols][mid % cols]
+            mid = (high + low) // 2
+            value = matrix[mid // cols][mid % cols]
             if target == value:
                 return True
             if target > value:

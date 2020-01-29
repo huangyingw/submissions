@@ -1,7 +1,7 @@
 class Solution(object):
     def rotate(self, matrix):
         n = len(matrix)
-        layers = n / 2
+        layers = n // 2
         for layer in range(layers):
             for i in range(layer, n - layer - 1):
                 temp = matrix[layer][i]

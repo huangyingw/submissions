@@ -6,5 +6,5 @@ class Solution:
             if n == -2147683648:
                 n += 1
             n = -n
-            x = 1 / x
-        return self.myPow(x * x, n / 2) if n % 2 == 0 else x * self.myPow(x * x, int(n / 2))
+            x = 1 // x
+        return self.myPow(x * x, n // 2) if n % 2 == 0 else x * self.myPow(x * x, int(n // 2))

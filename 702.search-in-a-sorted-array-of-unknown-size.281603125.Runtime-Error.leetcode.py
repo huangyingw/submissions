@@ -6,7 +6,7 @@ class Solutions:
             low = high + 1
             high *= 2
         while low <= high:
-            mid = (low + high) / 2
+            mid = (low + high) // 2
             num = reader.get(mid)
             if num == target:
                 return mid

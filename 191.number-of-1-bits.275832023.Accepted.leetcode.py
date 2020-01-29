@@ -4,5 +4,5 @@ class Solution(object):
         while n:
             if n % 2:
                 AnswerINT += 1
-            n = n / 2
+            n = n // 2
         return AnswerINT

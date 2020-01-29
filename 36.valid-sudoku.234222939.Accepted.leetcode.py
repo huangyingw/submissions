@@ -8,9 +8,9 @@ class Solution(object):
                 curr = board[i][j]
                 if curr != '.':
                     index = 1 << (ord(curr) - ord('0'))
-                    if (hset[i] & index) > 0 or (vset[j] & index) > 0 or (bset[(i / 3) * 3 + j / 3] & index) > 0:
+                    if (hset[i] & index) > 0 or (vset[j] & index) > 0 or (bset[(i // 3) * 3 + j // 3] & index) > 0:
                         return False
                     hset[i] |= index
                     vset[j] |= index
-                    bset[(i / 3) * 3 + j / 3] |= index
+                    bset[(i // 3) * 3 + j // 3] |= index
         return True

@@ -11,6 +11,6 @@ class Solution(object):
         while AnsInt > 0:
             Append_Temp = AnsInt % 10
             Answer.append(Append_Temp)
-            AnsInt = AnsInt / 10
+            AnsInt = AnsInt // 10
         Answer.reverse()
         return Answer

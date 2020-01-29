@@ -17,7 +17,7 @@ class Solution(object):
               "Seventy", "Eighty", "Ninety"
               ]
         result = ''
-        a, b, c = num % 100, num / 100, num % 10
+        a, b, c = num % 100, num // 100, num % 10
         result = v1[b] if b < 20 else v2[b % 10] + (" " + v1[c] if c > 0 else "")
         if a > 0:
             result = v1[a] + " Hundred" + (" " + result if b > 0 else "")

@@ -5,7 +5,7 @@ class Solution(object):
     def binary(self, nums, left, right, target):
         if left > right:
             return False
-        mid = (left + right) / 2
+        mid = (left + right) // 2
         if nums[mid] == target:
             return True
         if nums[left] < nums[mid]:

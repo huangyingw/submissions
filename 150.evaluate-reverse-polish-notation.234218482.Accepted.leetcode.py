@@ -15,6 +15,6 @@ class Solution(object):
                 elif t == "*":
                     a *= b
                 else:
-                    a = int(a * 1.0 / b)
+                    a = int(a * 1.0 // b)
                 stack.append(a)
         return stack[-1]

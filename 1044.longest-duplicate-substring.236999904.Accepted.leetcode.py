@@ -17,7 +17,7 @@ class Solution(object):
                 seen.add(hash_value)
         result, low, high = 0, 0, len(S)
         while low < high:
-            mid = (low + high + 1) / 2
+            mid = (low + high + 1) // 2
             index = test(mid)
             if index:
                 low = mid

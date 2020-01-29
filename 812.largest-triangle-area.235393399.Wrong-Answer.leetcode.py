@@ -5,5 +5,5 @@ class Solution:
     def area(self, a, b, c):
         b_vec = list(map(lambda x: x[0] - x[1], zip(b, a)))
         c_vec = list(map(lambda x: x[0] - x[1], zip(c, a)))
-        area = abs(b_vec[0] * c_vec[1] - c_vec[0] * b_vec[1]) / 2
+        area = abs(b_vec[0] * c_vec[1] - c_vec[0] * b_vec[1]) // 2
         return area

@@ -34,7 +34,7 @@ def create_suffix_array(s):
                 prev_rank, suffix_array[index].first_rank = suffix_array[index].first_rank, rank
             index_map[suffix_array[index].index] = index
         for index in range(N):
-            adjacent_index = suffix_array[index].index + (no_char / 2)
+            adjacent_index = suffix_array[index].index + (no_char // 2)
             suffix_array[index].adjacent_rank = suffix_array[index_map[adjacent_index]] if adjacent_index < N else -1
         suffix_array.sort()
         no_char *= 2

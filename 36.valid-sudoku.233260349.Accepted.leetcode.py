@@ -12,7 +12,7 @@ class Solution(object):
                     continue
                 if digit not in digits:
                     return False
-                box = (size / 3) * (r / (size / 3)) + (c / (size / 3))
+                box = (size // 3) * (r // (size // 3)) + (c // (size // 3))
                 if digit in rows[r] or digit in cols[c] or digit in boxes[box]:
                     return False
                 rows[r].add(digit)

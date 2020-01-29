@@ -7,4 +7,4 @@ class Solution(object):
         for i in range(1, (n - 1)):
             top *= (m + n - 2 - i)
             down *= (n - 1 - i)
-        return top / down
+        return top // down

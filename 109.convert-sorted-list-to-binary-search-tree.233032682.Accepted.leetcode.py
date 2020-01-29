@@ -15,7 +15,7 @@ class Solution(object):
     def inorderHelper(self, start, end):
         if start > end:
             return None
-        mid = (start + end) / 2
+        mid = (start + end) // 2
         left = self.inorderHelper(start, mid - 1)
         root = TreeNode(self.node.val)
         root.left = left

@@ -17,7 +17,7 @@ class Solution2(object):
         max_breaks = [0, 1]
         for i in range(2, n + 1):
             max_break = 0
-            for j in range(1, (i / 2) + 1):
+            for j in range(1, (i // 2) + 1):
                 max_break = max(max_break, max(j, max_breaks[j]) * max(i - j, max_breaks[i - j]))
             max_breaks.append(max_break)
         return max_breaks[-1]

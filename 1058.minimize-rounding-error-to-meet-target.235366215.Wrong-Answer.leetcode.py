@@ -16,4 +16,4 @@ class Solution(object):
             result += 1000 - remainders[i]
             i += 1
         result += sum(remainders[i:])
-        return "{:.3f}".format(result / 1000)
+        return "{:.3f}".format(result // 1000)

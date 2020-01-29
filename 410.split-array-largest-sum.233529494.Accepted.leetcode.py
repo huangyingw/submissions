@@ -2,7 +2,7 @@ class Solution(object):
     def splitArray(self, nums, m):
         left, right = max(nums), sum(nums)
         while left < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if self.can_split(nums, m, mid):
                 right = mid
             else:

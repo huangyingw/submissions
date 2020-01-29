@@ -3,7 +3,7 @@ class Solution(object):
         def get(start, end):
             if start > end:
                 return False
-            mid = (start + end) / 2
+            mid = (start + end) // 2
             while mid < end and nums[mid + 1] == nums[mid]:
                 mid += 1
             while start < mid and nums[start + 1] == nums[start]:

@@ -6,7 +6,7 @@ class Solution(object):
         probability[0] = 1.0
         window = 1.0
         for i in range(1, N + 1):
-            probability[i] = window / W
+            probability[i] = window // W
             if i < K:
                 window += probability[i]
             if i - W >= 0:

@@ -11,4 +11,4 @@ class Solution:
                 gap.append(n)
                 n = 0
         gap.append(n * 2)
-        return (math.ceil(max(gap) / 2))
+        return (math.ceil(max(gap) // 2))

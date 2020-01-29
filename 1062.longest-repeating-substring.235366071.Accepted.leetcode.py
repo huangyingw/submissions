@@ -11,7 +11,7 @@ class Solution(object):
         n = len(S)
         low, high = 0, n
         while low <= high:
-            mid = (low + high) / 2
+            mid = (low + high) // 2
             if helper(mid):
                 low = mid + 1
             else:

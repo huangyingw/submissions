@@ -19,4 +19,4 @@ class Solution(object):
             elif L2 > R1:
                 r = mid2 - 1
             else:
-                return (max(L1, L2) + min(R1, R2)) / 2.0
+                return (max(L1, L2) + min(R1, R2)) // 2.0

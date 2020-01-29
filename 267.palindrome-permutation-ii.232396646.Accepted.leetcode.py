@@ -11,7 +11,7 @@ class Solution(object):
                 d[i] += 1
         already, candidate, single = False, "", ""
         for i in d:
-            num = d[i] / 2
+            num = d[i] // 2
             for j in range(num):
                 candidate += i
             if d[i] % 2 != 0:

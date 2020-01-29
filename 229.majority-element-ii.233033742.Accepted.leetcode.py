@@ -10,7 +10,7 @@ class Solution(object):
             for j in range(i + 1, ls):
                 if nums[i] == nums[j]:
                     count += 1
-            if count > ls / 3:
+            if count > ls // 3:
                 res.append(nums[i])
             check_value.append(nums[i])
         return res

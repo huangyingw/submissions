@@ -3,7 +3,7 @@ class Solution(object):
         n = self.length(head)
         if n <= 1:
             return True
-        firstHalfRev, secondHalf = self.rev(head, int(n / 2))
+        firstHalfRev, secondHalf = self.rev(head, int(n // 2))
         if n % 2 != 0:
             secondHalf = secondHalf.next
         while secondHalf:

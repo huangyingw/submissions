@@ -3,7 +3,7 @@ import heapq
 
 class Solution(object):
     def mincostToHireWorkers(self, quality, wage, K):
-        wage_per_quality = [(w / float(q), q) for w, q in zip(wage, quality)]
+        wage_per_quality = [(w // float(q), q) for w, q in zip(wage, quality)]
         wage_per_quality.sort()
         workers = [-q for _, q in wage_per_quality[:K]]
         heapq.heapify(workers)

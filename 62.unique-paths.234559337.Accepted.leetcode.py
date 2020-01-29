@@ -7,5 +7,5 @@ class Solution(object):
         denpminatorFactorial = list(range(1, minValue))
         result = 1
         for i in range(len(denpminatorFactorial)):
-            result = result * numeratorFactorial[i] / denpminatorFactorial[i]
+            result = result * numeratorFactorial[i] // denpminatorFactorial[i]
         return result

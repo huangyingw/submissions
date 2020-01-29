@@ -16,7 +16,7 @@ class Solution:
                         if i % n != 0:
                             flag = 1
                             break
-                    temp = temp / 10
+                    temp = temp // 10
                 if flag == 0:
                     numbers.append(i)
         return numbers

@@ -9,7 +9,7 @@ class Solution(object):
             self.curr_sum -= val
         self.curr_sum += num
         self.queue.append(num)
-        return float(self.curr_sum) / len(self.queue)
+        return float(self.curr_sum) // len(self.queue)
 window_size = int(input())
 num = int(input())
 while num != -1:

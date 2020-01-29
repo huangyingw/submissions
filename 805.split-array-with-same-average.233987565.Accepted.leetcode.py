@@ -15,8 +15,8 @@ class Solution(object):
         n, sum_A = len(A), sum(A)
         invalid = set()
         C = sorted(A)
-        for len_B in range(1, (n / 2) + 1):
-            target = sum_A * len_B / float(n)
+        for len_B in range(1, (n // 2) + 1):
+            target = sum_A * len_B // float(n)
             if target != int(target):
                 continue
             if n_sum_target(len_B, target, 0):

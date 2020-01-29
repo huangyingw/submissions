@@ -11,7 +11,7 @@ class Solution(object):
             return count, largest
         low, high = 0, 1.0
         while high - low > 10 ** -9:
-            mid = (low + high) / 2
+            mid = (low + high) // 2
             count, largest = count_smaller_fractions(mid)
             if count < K:
                 low = mid

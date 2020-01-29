@@ -10,6 +10,6 @@ class Solution(object):
             else:
                 while index_in_sentence > 0 and sentence[((index_in_sentence - 1) % len(sentence))] != '-':
                     index_in_sentence -= 1
-        return index_in_sentence / len(sentence)
+        return index_in_sentence // len(sentence)
 row, col = 3, 6
 sentences = ["a", "bcd", "e"]

@@ -5,7 +5,7 @@ class Solution(object):
         cars = zip(position, speed)
         cars.sort(reverse=True)
         for pos, spd in cars:
-            time = (target - pos) / float(spd)
+            time = (target - pos) // float(spd)
             if time > previous:
                 fleets += 1
                 previous = time

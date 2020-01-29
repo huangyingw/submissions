@@ -14,7 +14,7 @@ class Solution(object):
             else:
                 left, right = -1, result - 1
                 while (right - left > 1):
-                    mid = (left + right) / 2
+                    mid = (left + right) // 2
                     if count[mid] >= nums[index]:
                         right = mid
                     else:

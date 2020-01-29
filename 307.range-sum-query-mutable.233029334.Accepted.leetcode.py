@@ -22,7 +22,7 @@ class NumArray(object):
                 right = i + 1
             else:
                 left = i - 1
-            self.tree[i / 2] = self.tree[left] + self.tree[right]
+            self.tree[i // 2] = self.tree[left] + self.tree[right]
             i /= 2
 
     def sumRange(self, i, j):

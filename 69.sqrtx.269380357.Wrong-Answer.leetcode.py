@@ -4,7 +4,7 @@ class Solution(object):
             return 0
         left, right = 1, x
         while left < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             squared = mid * mid
             if squared == x:
                 return mid

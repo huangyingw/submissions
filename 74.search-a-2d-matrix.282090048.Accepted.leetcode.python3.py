@@ -6,8 +6,8 @@ class Solution:
         low = 0
         high = (m * n) - 1
         while low <= high:
-            mid = (low + high) / 2
-            midElement = matrix[mid / n][mid % n]
+            mid = (low + high) // 2
+            midElement = matrix[mid // n][mid % n]
             if midElement == target:
                 return True
             elif midElement > target:

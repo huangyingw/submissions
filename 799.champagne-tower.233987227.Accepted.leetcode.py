@@ -4,7 +4,7 @@ class Solution(object):
         for row in range(query_row):
             new_glasses = [0 for _ in range(len(glasses) + 1)]
             for i, glass in enumerate(glasses):
-                pour = max(glass - 1, 0) / 2.0
+                pour = max(glass - 1, 0) // 2.0
                 new_glasses[i] += pour
                 new_glasses[i + 1] += pour
             glasses = new_glasses

@@ -9,11 +9,11 @@ class Solution(object):
                 tens, units = divmod(int1 * int2, 10)
                 result[i + j] += units
                 if result[i + j] > 9:
-                    result[i + j + 1] += result[i + j] / 10
+                    result[i + j + 1] += result[i + j] // 10
                     result[i + j] %= 10
                 result[i + j + 1] += tens
                 if result[i + j + 1] > 9:
-                    result[i + j + 2] += result[i + j + 1] / 10
+                    result[i + j + 2] += result[i + j + 1] // 10
                     result[i + j + 1] %= 10
         while len(result) > 1 and result[-1] == 0:
             result.pop()

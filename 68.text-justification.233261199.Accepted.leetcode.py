@@ -14,7 +14,7 @@ class Solution(object):
                 if gaps == 0:
                     line.append(" " * spaces)
                 for line_word in line_words[1:]:
-                    space = spaces / gaps
+                    space = spaces // gaps
                     if spaces % gaps != 0:
                         space += 1
                     line.append(" " * space)

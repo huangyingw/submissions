@@ -2,7 +2,7 @@ class Solution(object):
     def shipWithinDays(self, weights, D):
         high, low = sum(weights) + 1, max(weights)
         while(low < high):
-            mid = (high + low) / 2
+            mid = (high + low) // 2
             temp_left = mid
             packet_at_left = D - 1
             for weight in weights:

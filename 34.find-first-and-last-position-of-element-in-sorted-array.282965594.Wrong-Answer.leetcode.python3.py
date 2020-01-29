@@ -4,7 +4,7 @@ class Solution:
             return [-1, -1]
         left, right = 0, len(nums) - 1
         while left + 1 < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if nums[mid] < target:
                 left = mid
             else:
@@ -15,7 +15,7 @@ class Solution:
             return_left = right
         left, right = 0, len(nums) - 1
         while left + 1 < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if nums[mid] <= target:
                 left = mid
             else:

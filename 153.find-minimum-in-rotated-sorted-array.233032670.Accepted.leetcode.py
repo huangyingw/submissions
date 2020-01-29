@@ -12,7 +12,7 @@ class Solution(object):
                 left += 1
             if nums[left] <= nums[right]:
                 return nums[left]
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if nums[mid] >= nums[left]:
                 left = mid + 1
             else:

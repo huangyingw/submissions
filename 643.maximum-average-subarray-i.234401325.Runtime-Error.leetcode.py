@@ -4,7 +4,7 @@ class Solution:
         for x in nums:
             dp.append(dp[-1] + x)
         ma = max(dp[i + k] - dp[i] for i in range(len(nums) - k + 1))
-        return ma / k
+        return ma // k
 
     def findMaxAverage2(self, nums, k):
         s = sum(nums[:k])
@@ -14,4 +14,4 @@ class Solution:
             if temp > max_sum:
                 max_sum = temp
             s = temp
-        return max_sum / k
+        return max_sum // k

@@ -17,7 +17,7 @@ class Solution(object):
                     singletonCount += 1
                     if singletonCount > 1:
                         return ret
-                halfChars += [char] * (count / 2)
+                halfChars += [char] * (count // 2)
             ret = self.permute(list(halfChars))
             ret = map(lambda x: "".join(x + [mid] + x[::-1]), ret)
         return ret

@@ -4,7 +4,7 @@ class Solution:
             return letters[0]
         start, last = 0, len(letters) - 1
         while start <= last:
-            mid = (start + last) / 2
+            mid = (start + last) // 2
             if ord(letters[mid]) > ord(target):
                 last = mid - 1
             else:

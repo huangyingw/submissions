@@ -9,6 +9,6 @@ class Solution(object):
                     slow = slow.next
                     if not slow and len(group) < k:
                         return head
-                for i in range(k / 2):
+                for i in range(k // 2):
                     group[i].val, group[k - i - 1].val = group[k - i - 1].val, group[i].val
         return head

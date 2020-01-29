@@ -11,7 +11,7 @@ class Solution(object):
         if len(empty) == 0:
             return True
         first_value = empty[-1]
-        row, col = first_value / 9, first_value % 9
+        row, col = first_value // 9, first_value % 9
         for k in range(1, 10):
             if self.is_safe(board, row, col, str(k)):
                 board[row][col] = str(k)
@@ -28,7 +28,7 @@ class Solution(object):
                 return False
             if board[row][k] == ch:
                 return False
-        start_row, start_col = 3 * (row / 3), 3 * (col / 3)
+        start_row, start_col = 3 * (row // 3), 3 * (col // 3)
         for i in range(start_row, start_row + 3):
             for j in range(start_col, start_col + 3):
                 if board[i][j] == ch:

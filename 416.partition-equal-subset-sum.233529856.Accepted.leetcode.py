@@ -4,7 +4,7 @@ class Solution(object):
         if sum_nums % 2 == 1:
             return False
         nums.sort(reverse=True)
-        target = sum_nums / 2
+        target = sum_nums // 2
         subset_sum = [True] + [False] * target
         for num in nums:
             for i in range(target - 1, -1, -1):
@@ -22,7 +22,7 @@ class Solution2(object):
         if nums_sum % 2 == 1:
             return False
         freq = Counter(nums)
-        return self.partition(freq, nums_sum / 2)
+        return self.partition(freq, nums_sum // 2)
 
     def partition(self, freq, target):
         if target == 0:

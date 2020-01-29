@@ -14,8 +14,8 @@ class Solution(object):
                     return True
                 if self.judgePoint24(remainder + [nums[i] * nums[j]]):
                     return True
-                if nums[j] != 0 and self.judgePoint24(remainder + [float(nums[i]) / float(nums[j])]):
+                if nums[j] != 0 and self.judgePoint24(remainder + [float(nums[i]) // float(nums[j])]):
                     return True
-                if nums[i] != 0 and self.judgePoint24(remainder + [float(nums[j]) / float(nums[i])]):
+                if nums[i] != 0 and self.judgePoint24(remainder + [float(nums[j]) // float(nums[i])]):
                     return True
         return False

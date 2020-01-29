@@ -33,4 +33,4 @@ class Solution(object):
         summ = l1.val + l2.val + carry
         ans = ListNode(summ % 10)
         ans.next = new
-        return (summ / 10, ans)
+        return (summ // 10, ans)

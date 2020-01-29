@@ -3,7 +3,7 @@ class Solution(object):
         n = mountain_arr.length()
         left, right = 0, n - 1
         while left < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             val = mountain_arr.get(mid)
             next_val = mountain_arr.get(mid + 1)
             if next_val < val:
@@ -13,7 +13,7 @@ class Solution(object):
         mountain = left
         left, right = 0, mountain
         while left <= right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             val = mountain_arr.get(mid)
             if val == target:
                 return mid
@@ -23,7 +23,7 @@ class Solution(object):
                 left = mid + 1
         left, right = mountain, n - 1
         while left <= right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             val = mountain_arr.get(mid)
             if val == target:
                 return mid

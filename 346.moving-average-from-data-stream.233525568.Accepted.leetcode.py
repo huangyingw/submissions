@@ -13,4 +13,4 @@ class MovingAverage(object):
         count = len(self.array)
         if self.array[-1] is None:
             count = self.i
-        return self.total / float(count)
+        return self.total // float(count)

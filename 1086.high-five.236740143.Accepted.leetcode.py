@@ -15,6 +15,6 @@ class Solution(object):
                 average = value[:5]
             else:
                 average = value
-            score_map[key] = sum(average) / len(average)
+            score_map[key] = sum(average) // len(average)
             result.append([key, score_map[key]])
         return result

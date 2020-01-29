@@ -2,7 +2,7 @@ class Solution(object):
     def search(self, nums, target):
         left, right = 0, len(nums) - 1
         while left <= right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if nums[mid] == target:
                 return mid
             if nums[left] <= nums[mid]:

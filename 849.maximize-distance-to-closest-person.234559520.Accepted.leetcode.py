@@ -9,6 +9,6 @@ class Solution(object):
             elif zeros.end() == len(seats):
                 if maxDistance < len(zero):
                     maxDistance = len(zero)
-            elif maxDistance < int((len(zero) + 1) / 2):
-                maxDistance = int((len(zero) + 1) / 2)
+            elif maxDistance < int((len(zero) + 1) // 2):
+                maxDistance = int((len(zero) + 1) // 2)
         return maxDistance

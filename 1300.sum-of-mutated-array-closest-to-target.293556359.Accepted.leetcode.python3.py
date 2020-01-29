@@ -5,7 +5,7 @@ class Solution(object):
         def ceiling(x):
             return sum(min(a, x) for a in arr)
         while low < high:
-            mid = (low + high) / 2
+            mid = (low + high) // 2
             value = ceiling(mid) - target
             if value >= 0:
                 high = mid

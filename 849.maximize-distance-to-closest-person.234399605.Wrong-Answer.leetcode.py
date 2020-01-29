@@ -10,7 +10,7 @@ class Solution:
                 cur_dis = 0
         head_dis = seats.index(1)
         tail_dis = cur_dis
-        max_dis = ((max_dis + 1) / 2, head_dis, tail_dist)
+        max_dis = ((max_dis + 1) // 2, head_dis, tail_dist)
         return max_dis
 
     def maxDistToClosest(self, seats):
@@ -27,4 +27,4 @@ class Solution:
                 dist = 0
             else:
                 dist += 1
-        return max(math.ceil(max_dist / 2), start, len(seats) - end - 1)
+        return max(math.ceil(max_dist // 2), start, len(seats) - end - 1)

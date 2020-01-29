@@ -9,7 +9,7 @@ class Solution(object):
             sign = -1 if str[index] == '-' else 1
             index += 1
         while index < len(str) and str[index] >= '0' and str[index] <= '9':
-            if base > MAX / 10 or (base == MAX / 10 and int(str[index]) > 7):
+            if base > MAX // 10 or (base == MAX // 10 and int(str[index]) > 7):
                 return MAX if sign == 1 else MIN
             base = base * 10 + int(str[index])
             index += 1

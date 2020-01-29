@@ -8,7 +8,7 @@ class Solution(object):
         curr_sum, groups = 0, 0
         for val in A:
             curr_sum += val
-            if curr_sum == total_sum / 3:
+            if curr_sum == total_sum // 3:
                 curr_sum = 0
                 groups += 1
         return groups == 3

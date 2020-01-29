@@ -5,4 +5,4 @@ class Solution(object):
         x, y = len(nums1), len(nums2)
         low, high = 0, x
         while low <= high:
-            partitionx = (low + high) / 2
+            partitionx = (low + high) // 2

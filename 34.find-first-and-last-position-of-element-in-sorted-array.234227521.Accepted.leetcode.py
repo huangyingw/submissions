@@ -6,7 +6,7 @@ class Solution(object):
         min = 0
         max = length - 1
         while min <= max:
-            pos = (min + max) / 2
+            pos = (min + max) // 2
             if nums[pos] > target:
                 max = pos - 1
             elif nums[pos] < target:

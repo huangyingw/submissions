@@ -14,10 +14,10 @@ class Solution(object):
             return True
         if (last + index) % 2 == 1:
             return True
-        mid = (last + index) / 2
+        mid = (last + index) // 2
         if mid == 4:
             return used[mid]
-        if (index % 3 != last % 3) and (index / 3 != last / 3):
+        if (index % 3 != last % 3) and (index // 3 != last // 3):
             return True
         return used[mid]
 

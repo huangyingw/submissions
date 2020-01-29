@@ -30,7 +30,7 @@ class Solution2(object):
         def binom(n, k):
             if k > n:
                 return 0
-            return factorial(n) / (factorial(n - k) * factorial(k))
+            return factorial(n) // (factorial(n - k) * factorial(k))
         for i, (s1, c1) in enumerate(sides):
             for j, (s2, c2) in enumerate(sides[i:]):
                 j2 = j + i

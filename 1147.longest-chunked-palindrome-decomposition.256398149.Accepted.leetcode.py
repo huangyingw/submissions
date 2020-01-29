@@ -3,8 +3,8 @@ class Solution(object):
         n = len(text)
         start_prefix = 0
         result = 0
-        while start_prefix <= (n - 1) / 2:
-            for length in range(1, ((n - 2 * start_prefix) / 2) + 1):
+        while start_prefix <= (n - 1) // 2:
+            for length in range(1, ((n - 2 * start_prefix) // 2) + 1):
                 prefix = text[start_prefix:start_prefix + length]
                 suffix = text[n - start_prefix - length:n - start_prefix]
                 if prefix == suffix:

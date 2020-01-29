@@ -19,4 +19,4 @@ class MedianFinder:
     def findMedian(self):
         if len(self.lower) > len(self.higher):
             return float(-self.lower[0])
-        return (-self.lower[0] + self.higher[0]) / 2.0
+        return (-self.lower[0] + self.higher[0]) // 2.0

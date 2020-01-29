@@ -4,7 +4,7 @@ class Solution:
         res = l1
         while l1 or l2:
             l1.val += l2.val + carry if l2 else carry
-            carry = l1.val / 10
+            carry = l1.val // 10
             l1.val %= 10
             if l2:
                 l2 = l2.next

@@ -12,7 +12,7 @@ class Solution(object):
     def do_getPermutation(self, remain, curr, n, k):
         if n == 0 or k <= 0 or curr == 0:
             return remain
-        step = k / curr
+        step = k // curr
         k %= curr
         curr /= n
         res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)

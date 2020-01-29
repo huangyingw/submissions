@@ -20,9 +20,9 @@ class Solution(object):
                 val1 = stack.pop()
                 val2 = stack.pop()
                 if val1 * val2 < 0:
-                    stack.append(-(-val2 / val1))
+                    stack.append(-(-val2 // val1))
                 else:
-                    stack.append(val2 / val1)
+                    stack.append(val2 // val1)
             else:
                 stack.append(int(val))
         return stack[0]

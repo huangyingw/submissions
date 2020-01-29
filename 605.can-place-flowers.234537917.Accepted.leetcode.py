@@ -8,7 +8,7 @@ class Solution:
                 if sum_0s == 0:
                     continue
                 else:
-                    sum_flowers += (sum_0s - 1) / 2
+                    sum_flowers += (sum_0s - 1) // 2
                     sum_0s = 0
             else:
                 sum_0s += 1

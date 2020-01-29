@@ -8,4 +8,4 @@ class Solution:
             if seat != 0:
                 space = max(space, spacetmp)
                 spacetmp = 0
-        return max(int(math.floor((space + 1) / 2)), seats.index(1), seats[::-1].index(1))
+        return max(int(math.floor((space + 1) // 2)), seats.index(1), seats[::-1].index(1))

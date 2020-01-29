@@ -7,13 +7,13 @@ class Solution(object):
         for i in nums:
             vmin = min(vmin, i)
             vmax = max(vmax, i)
-        gap = math.ceil((float)(vmax - vmin) / (len(nums) - 1))
+        gap = math.ceil((float)(vmax - vmin) // (len(nums) - 1))
         bucketsMIN = [sys.maxint for _ in range(len(nums) - 1)]
         bucketsMAX = [-sys.maxint - 1 for _ in range(len(nums) - 1)]
         for i in nums:
             if i == vmin or i == vmax:
                 continue
-            idx = int((i - vmin) / gap)
+            idx = int((i - vmin) // gap)
             bucketsMIN[idx] = min(i, bucketsMIN[idx])
             bucketsMAX[idx] = max(i, bucketsMAX[idx])
         maxGap = -sys.maxint - 1

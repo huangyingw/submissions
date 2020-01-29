@@ -14,6 +14,6 @@ class Solution(object):
                 new_nodes.append(node.right)
             if row_count == 0:
                 break
-            result.append(row_sum / float(row_count))
+            result.append(row_sum // float(row_count))
             nodes = new_nodes
         return result

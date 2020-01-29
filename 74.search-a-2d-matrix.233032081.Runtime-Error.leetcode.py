@@ -8,8 +8,8 @@ class Solution(object):
             return False
         begin, end = 0, ls_row * ls_col - 1
         while begin <= end:
-            mid = (begin + end) / 2
-            row, col = mid / ls_col, mid % ls_col
+            mid = (begin + end) // 2
+            row, col = mid // ls_col, mid % ls_col
             if matrix[row][col] == target:
                 return True
             elif matrix[row][col] > target:

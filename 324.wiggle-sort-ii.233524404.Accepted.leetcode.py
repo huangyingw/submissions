@@ -1,7 +1,7 @@
 class Solution(object):
     def wiggleSort(self, nums):
         nums.sort()
-        median = nums[len(nums) / 2]
+        median = nums[len(nums) // 2]
 
         def mapping(i):
             return (i * 2 + 1) % (len(nums) | 1)

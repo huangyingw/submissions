@@ -10,7 +10,7 @@ class Solution(object):
 
     def find_edge(self, left, right, column, black, image):
         while left < right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if black == self.any_black(mid, column, image):
                 right = mid
             else:

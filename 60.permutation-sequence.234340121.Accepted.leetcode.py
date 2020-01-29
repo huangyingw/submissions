@@ -8,7 +8,7 @@ class Solution:
         k -= 1
         res = ''
         while len(nums) > 0:
-            NN = int(NN / len(nums))
+            NN = int(NN // len(nums))
             idx, k = divmod(k, NN)
             res += str(nums.pop(idx))
         return res

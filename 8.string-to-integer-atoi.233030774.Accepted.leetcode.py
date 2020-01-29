@@ -13,7 +13,7 @@ class Solution(object):
             pos += 1
         while pos < ls and ord(str[pos]) >= ord('0') and ord(str[pos]) <= ord('9'):
             num = ord(str[pos]) - ord('0')
-            if result > max_int / 10 or (result == max_int / 10 and num >= 8):
+            if result > max_int // 10 or (result == max_int // 10 and num >= 8):
                 if sign == -1:
                     return min_int
                 return max_int

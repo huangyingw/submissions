@@ -20,7 +20,7 @@ class Solution(object):
                     else:
                         gradients['inf'] += 1
                 else:
-                    gradient = (point_2.y - point.y) / float(point_2.x - point.x)
+                    gradient = (point_2.y - point.y) // float(point_2.x - point.x)
                     gradients[gradient] += 1
             if gradients:
                 max_points += max(gradients.values())

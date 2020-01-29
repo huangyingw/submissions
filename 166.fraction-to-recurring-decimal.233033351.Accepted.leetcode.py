@@ -7,7 +7,7 @@ class Solution(object):
             fraction += '-'
         dividend = abs(numerator)
         divisor = abs(denominator)
-        fraction += str(dividend / divisor)
+        fraction += str(dividend // divisor)
         remainder = dividend % divisor
         if remainder == 0:
             return fraction
@@ -19,6 +19,6 @@ class Solution(object):
                 break
             dic[remainder] = len(fraction)
             remainder *= 10
-            fraction += str(remainder / divisor)
+            fraction += str(remainder // divisor)
             remainder %= divisor
         return fraction

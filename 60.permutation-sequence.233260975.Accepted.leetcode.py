@@ -8,7 +8,7 @@ class Solution(object):
         k -= 1
         result = []
         while chars:
-            digit = n * k / permutations
+            digit = n * k // permutations
             result.append(chars[digit])
             del chars[digit]
             permutations /= n

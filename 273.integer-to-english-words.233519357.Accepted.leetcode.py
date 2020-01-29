@@ -25,7 +25,7 @@ class Solution(object):
             if tens >= 20:
                 if tens % 10:
                     english.appendleft(int_to_word[tens % 10])
-                english.appendleft(int_to_word[10 * (tens / 10)])
+                english.appendleft(int_to_word[10 * (tens // 10)])
             elif tens:
                 english.appendleft(int_to_word[tens])
             if hundreds:

@@ -11,8 +11,8 @@ class Solution(object):
     def minTotalDistance(self, grid):
         rows = self.collectRows(grid)
         cols = self.collectCols(grid)
-        row = rows[len(rows) / 2]
-        col = cols[len(cols) / 2]
+        row = rows[len(rows) // 2]
+        col = cols[len(cols) // 2]
         return self.minDistance1D(rows) + self.minDistance1D(cols)
 
     def collectRows(self, grid):

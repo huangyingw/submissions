@@ -8,7 +8,7 @@ class Solution:
             if char_map[c] % 2 == 0:
                 ans += char_map.pop(c)
             else:
-                ans += char_map[c] / 2 * 2
+                ans += char_map[c] // 2 * 2
         if len(char_map) != 0:
             ans += 1
         return ans

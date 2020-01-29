@@ -15,8 +15,8 @@ class Solution(object):
                     stack.append(stack.pop() * num)
                 else:
                     left = stack.pop()
-                    stack.append(left / num)
-                    if left / num < 0 and left % num != 0:
+                    stack.append(left // num)
+                    if left // num < 0 and left % num != 0:
                         stack[-1] += 1
                 num = 0
                 op = c

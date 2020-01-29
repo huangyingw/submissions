@@ -2,7 +2,7 @@ class Solution(object):
     def searchRange(self, nums, target):
         left, right = 0, len(nums) - 1
         while left <= right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if target > nums[mid]:
                 left = mid + 1
             else:
@@ -12,7 +12,7 @@ class Solution(object):
         result = [left]
         left, right = 0, len(nums) - 1
         while left <= right:
-            mid = (left + right) / 2
+            mid = (left + right) // 2
             if nums[mid] > target:
                 right = mid
             else:

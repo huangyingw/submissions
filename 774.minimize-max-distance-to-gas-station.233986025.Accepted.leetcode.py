@@ -8,11 +8,11 @@ class Solution(object):
             for dist in distances:
                 if dist < d or remaining < 0:
                     break
-                remaining -= int(dist / d)
+                remaining -= int(dist // d)
             return remaining >= 0
         max_d, min_d = distances[0], 0
         while max_d - min_d > 10 ** -6:
-            mid = (max_d + min_d) / 2.0
+            mid = (max_d + min_d) // 2.0
             if can_minmax_dist(mid):
                 max_d = mid
             else:

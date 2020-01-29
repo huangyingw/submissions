@@ -12,9 +12,9 @@ class Solution(object):
         def find_split(node):
             if not node:
                 return False
-            if node.left and node.left.val == tree_sum / 2:
+            if node.left and node.left.val == tree_sum // 2:
                 return True
-            if node.right and node.right.val == tree_sum / 2:
+            if node.right and node.right.val == tree_sum // 2:
                 return True
             return find_split(node.left) or find_split(node.right)
         return find_split(root)

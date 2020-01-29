@@ -21,7 +21,7 @@ class SegmentTree(object):
             return None
         root = Node(start, end)
         if start != end:
-            mid = start + (end - start) / 2
+            mid = start + (end - start) // 2
             root.left = self.build(start, mid, vals)
             root.right = self.build(mid + 1, end, vals)
             root.sum = root.left.sum + root.right.sum
@@ -34,7 +34,7 @@ class SegmentTree(object):
             return 0
         if start <= root.start and end >= root.end:
             return root.sum
-        mid = root.start + (root.end - root.start) / 2
+        mid = root.start + (root.end - root.start) // 2
         left_sum = right_sum = 0
         if start <= mid:
             if end > mid:

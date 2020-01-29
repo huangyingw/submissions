@@ -11,5 +11,5 @@ class Solution(object):
                 heapq.heappush(heaps[id], score)
             else:
                 heapq.heappushpop(heaps[id], score)
-        result = [[id, sum(scores) / 5] for id, scores in heaps.items()]
+        result = [[id, sum(scores) // 5] for id, scores in heaps.items()]
         return sorted(result)

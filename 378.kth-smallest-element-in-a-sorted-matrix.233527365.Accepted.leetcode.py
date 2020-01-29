@@ -4,7 +4,7 @@ import heapq
 class Solution(object):
     def kthSmallest(self, matrix, k):
         rows, cols = len(matrix), len(matrix[0])
-        if k > (rows * cols) / 2:
+        if k > (rows * cols) // 2:
             back = True
             k = rows * cols - k + 1
             frontier = [(-matrix[rows - 1][cols - 1], rows - 1, cols - 1)]

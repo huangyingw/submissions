@@ -9,7 +9,7 @@ class Solution(object):
         def dfs(start, end):
             if start > end:
                 return None
-            mid = (start + end) / 2
+            mid = (start + end) // 2
             root = TreeNode(0)
             root.left = dfs(start, mid - 1)
             root.val = self.current.val

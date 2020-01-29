@@ -10,5 +10,5 @@ class Solution(object):
                 pos = i + 1
 
     def reverse(self, array_s, begin, end):
-        for i in range((end - begin) / 2):
+        for i in range((end - begin) // 2):
             array_s[begin + i], array_s[end - i - 1] = array_s[end - i - 1], array_s[begin + i]

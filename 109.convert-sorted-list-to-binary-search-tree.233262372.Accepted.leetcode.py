@@ -23,7 +23,7 @@ class Solution(object):
     def list_to_bst(self, node_as_list, start, end):
         if start > end:
             return None
-        mid = (start + end) / 2
+        mid = (start + end) // 2
         left_subtree = self.list_to_bst(node_as_list, start, mid - 1)
         root = TreeNode(node_as_list[0].val)
         root.left = left_subtree

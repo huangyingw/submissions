@@ -8,7 +8,7 @@ class Solution(object):
         points = [complex(*p) for p in sorted(points)]
         line_to_mid = defaultdict(list)
         for p1, p2 in combinations(points, 2):
-            line_to_mid[p2 - p1].append((p1 + p2) / 2)
+            line_to_mid[p2 - p1].append((p1 + p2) // 2)
         for line1, mid_points in line_to_mid.items():
             for mid1, mid2 in combinations(mid_points, 2):
                 line2 = mid2 - mid1

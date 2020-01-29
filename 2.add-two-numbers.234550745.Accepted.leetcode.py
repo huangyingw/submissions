@@ -7,7 +7,7 @@ class Solution(object):
             x = l1.val if l1 else 0
             y = l2.val if l2 else 0
             summ = carry + x + y
-            carry = summ / 10
+            carry = summ // 10
             cur.next = ListNode(summ % 10)
             cur = cur.next
             if l1:

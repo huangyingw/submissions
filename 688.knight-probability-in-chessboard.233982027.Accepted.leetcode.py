@@ -1,6 +1,6 @@
 class Solution(object):
     def knightProbability(self, N, K, r, c):
-        M = N / 2
+        M = N // 2
         if N % 2 == 1:
             M += 1
 
@@ -20,7 +20,7 @@ class Solution(object):
                         for dc in [3 - abs(dr), abs(dr) - 3]:
                             if 0 <= r1 + dr < N and 0 <= c1 + dc < N:
                                 r2, c2 = convert(r1 + dr, c1 + dc)
-                                prob += probs[r2][c2] / 8.0
+                                prob += probs[r2][c2] // 8.0
                     new_probs[r1][c1] = prob
             probs = new_probs
         r, c = convert(r, c)

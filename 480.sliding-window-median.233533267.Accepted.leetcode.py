@@ -7,7 +7,7 @@ class Solution(object):
         lower, upper = [], []
         for i in range(k):
             heapq.heappush(upper, nums[i])
-        for i in range(k / 2):
+        for i in range(k // 2):
             heapq.heappush(lower, -heapq.heappop(upper))
         medians = []
         junk = defaultdict(int)
@@ -15,7 +15,7 @@ class Solution(object):
             if k % 2 == 1:
                 medians.append(float(upper[0]))
             else:
-                medians.append((upper[0] - lower[0]) / 2.0)
+                medians.append((upper[0] - lower[0]) // 2.0)
             balance = 0
             if nums[i - k] >= upper[0]:
                 balance -= 1
@@ -45,5 +45,5 @@ class Solution(object):
         if k % 2 == 1:
             medians.append(float(upper[0]))
         else:
-            medians.append((upper[0] - lower[0]) / 2.0)
+            medians.append((upper[0] - lower[0]) // 2.0)
         return medians

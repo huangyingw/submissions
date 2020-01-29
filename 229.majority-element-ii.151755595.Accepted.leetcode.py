@@ -15,8 +15,8 @@ class Solution:
                 c1 -= 1
                 c2 -= 1
         ans, size = [], len(nums)
-        if n1 is not None and sum([x == n1 for x in nums]) > size / 3:
+        if n1 is not None and sum([x == n1 for x in nums]) > size // 3:
             ans.append(n1)
-        if n2 is not None and sum([x == n2 for x in nums]) > size / 3:
+        if n2 is not None and sum([x == n2 for x in nums]) > size // 3:
             ans.append(n2)
         return sorted(ans)

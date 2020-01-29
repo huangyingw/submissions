@@ -5,8 +5,8 @@ class Solution:
         m, n = len(matrix), len(matrix[0])
         l, r = 0, m * n - 1
         while l <= r:
-            mid = l + (r - l) / 2
-            val = matrix[mid / n][mid % n]
+            mid = l + (r - l) // 2
+            val = matrix[mid // n][mid % n]
             if val == target:
                 return True
             elif val > target:

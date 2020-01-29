@@ -4,7 +4,7 @@ class Solution(object):
             return False
         buckets = {}
         for i, num in enumerate(nums):
-            bucket = num / (t + 1)
+            bucket = num // (t + 1)
             if bucket in buckets:
                 return True
             if bucket + 1 in buckets and abs(num - buckets[bucket + 1]) <= t:
@@ -13,6 +13,6 @@ class Solution(object):
                 return True
             buckets[bucket] = num
             if i - k >= 0:
-                old_bucket = nums[i - k] / (t + 1)
+                old_bucket = nums[i - k] // (t + 1)
                 del buckets[old_bucket]
         return False

@@ -19,4 +19,4 @@ class MedianFinder:
         if len(self.minHeap) < len(self.maxHeap):
             return -1.0 * self.maxHeap[0]
         else:
-            return (self.minHeap[0] - self.maxHeap[0]) / 2.0
+            return (self.minHeap[0] - self.maxHeap[0]) // 2.0

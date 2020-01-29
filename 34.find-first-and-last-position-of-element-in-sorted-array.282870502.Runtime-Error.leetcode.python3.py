@@ -6,7 +6,7 @@ class Solution(object):
         left = 0
         right = length - 1
         while left <= right:
-            pos = (left + right) / 2
+            pos = (left + right) // 2
             if nums[pos] > target:
                 right = pos - 1
             elif nums[pos] < target:

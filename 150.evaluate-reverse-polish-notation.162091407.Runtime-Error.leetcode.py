@@ -16,5 +16,5 @@ class Solution(object):
             elif token == '/':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.append(num1 / num2)
+                stack.append(num1 // num2)
         return stack.pop()

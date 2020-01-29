@@ -6,4 +6,4 @@ class Solution(object):
         while b != 0:
             a, b = b, a % b
         candidate = str1[:a]
-        return candidate if str1 == candidate * (len(str1) / a) and str2 == candidate * (len(str2) / a) else ""
+        return candidate if str1 == candidate * (len(str1) // a) and str2 == candidate * (len(str2) // a) else ""

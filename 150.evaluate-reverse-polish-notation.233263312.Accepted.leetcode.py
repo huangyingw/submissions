@@ -7,7 +7,7 @@ class Solution(object):
                 right = stack.pop()
                 left = stack.pop()
                 if token == '/':
-                    stack.append(int(left / float(right)))
+                    stack.append(int(left // float(right)))
                 else:
                     stack.append((eval(str(left) + token + str(right))))
             else:

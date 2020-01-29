@@ -11,5 +11,5 @@ class Solution(object):
         for i in range(start, n + 1):
             if n % i == 0:
                 item.append(i)
-                self.dfs(ret, item, n / i, i)
+                self.dfs(ret, item, n // i, i)
                 item.pop()

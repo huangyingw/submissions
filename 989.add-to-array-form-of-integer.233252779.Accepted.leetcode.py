@@ -15,14 +15,14 @@ class Solution(object):
         while j >= 0:
             curr_sum = A[i] + arr_k[j] + carry
             sum_arr[k] = (curr_sum % 10)
-            carry = curr_sum / 10
+            carry = curr_sum // 10
             i -= 1
             k -= 1
             j -= 1
         while i >= 0:
             curr_sum = A[i] + carry
             sum_arr[k] = (curr_sum % 10)
-            carry = curr_sum / 10
+            carry = curr_sum // 10
             i -= 1
             k -= 1
         if carry:

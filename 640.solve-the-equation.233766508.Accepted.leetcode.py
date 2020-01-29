@@ -30,4 +30,4 @@ class Solution(object):
             return "Infinite solutions"
         if x == 0:
             return "No solution"
-        return "x=" + str(-val / x)
+        return "x=" + str(-val // x)

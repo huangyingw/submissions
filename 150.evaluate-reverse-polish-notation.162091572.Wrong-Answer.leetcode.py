@@ -16,5 +16,5 @@ class Solution(object):
             elif token == '/':
                 num1 = queue.pop(0)
                 num2 = queue.pop(0)
-                queue.append(num1 / num2)
+                queue.append(num1 // num2)
         return queue.pop(0)

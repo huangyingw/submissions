@@ -4,5 +4,5 @@ class Solution:
         for x in nums:
             for i in range(32):
                 bits[i][x % 2] += 1
-                x = x / 2
+                x = x // 2
         return sum(x * y for x, y in bits)

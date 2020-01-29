@@ -3,5 +3,5 @@ class Solution(object):
         if not nums:
             return 0
         totalSum, n = sum(nums), len(nums)
-        expectedSum = (n * (n + 1)) / 2
+        expectedSum = (n * (n + 1)) // 2
         return expectedSum - totalSum

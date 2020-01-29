@@ -15,9 +15,9 @@ class Solution:
                     continue
                 other_count = counts[other]
                 if small == med == other:
-                    result += small_count * (small_count - 1) * (small_count - 2) / 6
+                    result += small_count * (small_count - 1) * (small_count - 2) // 6
                 elif small == med:
-                    result += small_count * (small_count - 1) * other_count / 2
+                    result += small_count * (small_count - 1) * other_count // 2
                 elif other > med:
                     result += small_count * med_count * other_count
         return result % (10 ** 9 + 7)

@@ -42,7 +42,7 @@ class Solution(object):
                         dfs(arr, length, curLen + 1, curString + i, isOdd)
         arr = []
         if n % 2 == 0:
-            dfs(arr, n / 2, 0, "", False)
+            dfs(arr, n // 2, 0, "", False)
         else:
-            dfs(arr, (n + 1) / 2, 0, "", True)
+            dfs(arr, (n + 1) // 2, 0, "", True)
         return arr

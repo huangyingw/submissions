@@ -23,8 +23,8 @@ class Solution(object):
                 self.board[i][col].discard(self.board[row][col])
             if isinstance(self.board[row][i], set):
                 self.board[row][i].discard(self.board[row][col])
-        for box_row in range(3 * (row / 3), 3 + 3 * (row / 3)):
-            for box_col in range(3 * (col / 3), 3 + 3 * (col / 3)):
+        for box_row in range(3 * (row // 3), 3 + 3 * (row // 3)):
+            for box_col in range(3 * (col // 3), 3 + 3 * (col // 3)):
                 if isinstance(self.board[box_row][box_col], set):
                     self.board[box_row][box_col].discard(self.board[row][col])
 
@@ -54,9 +54,9 @@ class Solution(object):
         for i in range(self.size):
             if self.board[row][i] == digit or self.board[i][col] == digit:
                 return False
-        n = self.size / 3
-        for r in range(n * (row / n), n + n * (row / n)):
-            for c in range(n * (col / n), n + n * (col / n)):
+        n = self.size // 3
+        for r in range(n * (row // n), n + n * (row // n)):
+            for c in range(n * (col // n), n + n * (col // n)):
                 if self.board[r][c] == digit:
                     return False
         return True

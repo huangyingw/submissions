@@ -15,7 +15,7 @@ class Solution(object):
                 dy = points[j].y - points[i].y
                 d = self.gcd(dx, dy)
                 t = {}
-                t[dx / d] = dy / d
+                t[dx // d] = dy // d
                 m[t] = m.get(t, 0) + 1
             result = max(result, duplicate)
             for value in m.values():

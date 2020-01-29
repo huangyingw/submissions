@@ -14,7 +14,7 @@ class Solution:
             n = self.xlen(x)
             newx = 0
             for z in range(n, 0, -1):
-                a = x / (10**(z - 1))
+                a = x // (10**(z - 1))
                 b = a * (10**(n - z))
                 newx += b
                 x -= a * (10**(z - 1))

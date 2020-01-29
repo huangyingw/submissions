@@ -11,7 +11,7 @@ class CBTInserter:
         node = TreeNode(v)
         self.nodelist.append(node)
         n = len(self.nodelist)
-        parent = self.nodelist[(n / 2) - 1]
+        parent = self.nodelist[(n // 2) - 1]
         if n % 2 == 0:
             parent.left = node
         else:

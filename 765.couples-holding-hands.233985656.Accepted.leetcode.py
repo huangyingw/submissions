@@ -1,9 +1,9 @@
 class Solution(object):
     def minSwapsCouples(self, row):
-        n = len(row) / 2
+        n = len(row) // 2
         couple_to_location = [[] for _ in range(n)]
         for i, person in enumerate(row):
-            couple_to_location[person / 2].append(i / 2)
+            couple_to_location[person // 2].append(i // 2)
         adjacency = [[] for _ in range(n)]
         for a, b in couple_to_location:
             adjacency[a].append(b)

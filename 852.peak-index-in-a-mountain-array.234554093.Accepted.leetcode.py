@@ -2,7 +2,7 @@ class Solution(object):
     def peakIndexInMountainArray(self, A):
         first = 0
         last = len(A) - 1
-        mid = (first + last) / 2
+        mid = (first + last) // 2
         while first <= last:
             if A[mid] > A[mid + 1] and A[mid] > A[mid - 1]:
                 return mid
@@ -10,4 +10,4 @@ class Solution(object):
                 first = mid
             else:
                 last = mid
-            mid = (first + last) / 2
+            mid = (first + last) // 2

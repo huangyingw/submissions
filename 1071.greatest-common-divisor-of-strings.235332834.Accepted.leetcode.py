@@ -6,7 +6,7 @@ class Solution(object):
         for index in range(1, len(str1) + 1):
             if l_str1 % index != 0:
                 continue
-            size_to_take = int(l_str1 / index)
+            size_to_take = int(l_str1 // index)
             substr1 = str1[:size_to_take]
             substr2 = str2
             while substr1 == substr2[:size_to_take]:

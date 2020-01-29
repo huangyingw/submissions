@@ -27,7 +27,7 @@ class Solution(object):
                 text = ' '.join(curr)
                 text += ' ' * (maxWidth - remain - len(curr) + 1)
             else:
-                step = (maxWidth - remain) / (len(curr) - 1)
+                step = (maxWidth - remain) // (len(curr) - 1)
                 extra = (maxWidth - remain) % (len(curr) - 1)
                 for index in range(len(curr) - 1):
                     text += curr[index] + ' ' * step

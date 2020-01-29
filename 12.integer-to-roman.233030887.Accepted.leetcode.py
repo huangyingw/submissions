@@ -10,7 +10,7 @@ class Solution(object):
         roman = ''
         i = 0
         while num > 0:
-            k = num / values[i]
+            k = num // values[i]
             for j in range(k):
                 roman += symbols[i]
                 num -= values[i]

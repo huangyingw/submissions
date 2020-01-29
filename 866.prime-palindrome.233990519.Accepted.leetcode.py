@@ -10,7 +10,7 @@ class Solution(object):
         if 8 <= N <= 11:
             return 11
         n = len(str(N))
-        lhs = 10 ** (n / 2)
+        lhs = 10 ** (n // 2)
         while True:
             candidate = int(str(lhs) + str(lhs)[-2::-1])
             if candidate >= N and is_prime(candidate):

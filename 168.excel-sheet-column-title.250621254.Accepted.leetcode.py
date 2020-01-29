@@ -4,7 +4,7 @@ class Solution:
         res = ""
         while n > 0:
             word = (n - 1) % 26
-            n = (n - 1) / 26
+            n = (n - 1) // 26
             tempString = alpha[word]
             res = ''.join((tempString, res))
         return res

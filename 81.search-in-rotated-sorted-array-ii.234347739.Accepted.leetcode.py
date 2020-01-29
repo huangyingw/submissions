@@ -4,7 +4,7 @@ class Solution:
             return False
         l, r = 0, len(nums) - 1
         while l <= r:
-            m = l + (r - l) / 2
+            m = l + (r - l) // 2
             if nums[m] == target:
                 return True
             if nums[r] > nums[m]:

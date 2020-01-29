@@ -10,7 +10,7 @@ class Solution(object):
             for j in reversed(range(ls2)):
                 arr[i + j + 1] += int(num1[i]) * int(num2[j])
         for i in reversed(range(1, ls)):
-            arr[i - 1] += arr[i] / 10
+            arr[i - 1] += arr[i] // 10
             arr[i] %= 10
         pos = 0
         if arr[pos] == 0:

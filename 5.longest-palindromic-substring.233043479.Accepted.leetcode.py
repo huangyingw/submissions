@@ -37,6 +37,6 @@ class Solution(object):
             odd_len = expand(s, index, index)
             length = max(even_len, odd_len)
             if length > (end - start):
-                start = index - (length - 1) / 2
-                end = index + length / 2
+                start = index - (length - 1) // 2
+                end = index + length // 2
         return s[start:end + 1]

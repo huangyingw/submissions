@@ -18,7 +18,7 @@ class Solution(object):
         for c in dic:
             if dic[c] % 2 == 1:
                 mid = c
-            seed.extend([c] * (dic[c] / 2))
+            seed.extend([c] * (dic[c] // 2))
         self.permute(half, seed, 0)
         for r in half:
             res.append(''.join(r) + mid + ''.join(reversed(r)))

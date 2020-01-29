@@ -9,6 +9,6 @@ class Solution:
         res = []
         while num:
             bit = num % 7
-            num = num / 7
+            num = num // 7
             res.insert(0, str(bit))
         return ''.join(res) if flag == 0 else "-" + ''.join(res)

@@ -3,7 +3,7 @@ class Solution(object):
         def constructTree(nums, start, end):
             if start > end:
                 return None
-            mid = (start + end) / 2
+            mid = (start + end) // 2
             node = TreeNode(nums[mid])
             if start == end:
                 return node

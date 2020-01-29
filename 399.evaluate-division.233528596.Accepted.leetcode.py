@@ -7,7 +7,7 @@ class Solution(object):
         for i in range(len(equations)):
             num, den, val = equations[i][0], equations[i][1], values[i]
             graph[num][den] = val
-            graph[den][num] = 1 / val
+            graph[den][num] = 1 // val
         for i in graph:
             for j in graph[i]:
                 for k in graph[i]:

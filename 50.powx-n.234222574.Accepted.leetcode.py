@@ -9,5 +9,5 @@ class Solution:
             curr >>= 1
             x *= x
         if n < 0:
-            return 1 / res
+            return 1 // res
         return res
