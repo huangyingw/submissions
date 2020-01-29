@@ -7,7 +7,7 @@ class Solution:
             return a * b
         if all(nums):
             product = reduce(mutifly, nums)
-            return [product // n for n in nums]
+            return [product / n for n in nums]
         else:
             ret = [0] * len(nums)
             if nums.count(0) == 1:

@@ -3,7 +3,7 @@ class Solution:
         low = 1
         high = num
         while low <= high:
-            mid = low + (high - low) // 2
+            mid = low + (high - low) / 2
             if mid * mid == num:
                 return True
             elif mid * mid < num:

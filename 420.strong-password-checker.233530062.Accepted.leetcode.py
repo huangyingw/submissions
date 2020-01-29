@@ -15,7 +15,7 @@ class Solution(object):
                 while i < len(s) and s[i] == s[i - 1]:
                     seq += 1
                     i += 1
-                subs += seq // 3
+                subs += seq / 3
                 if seq % 3 == 0:
                     singles += 1
                 if seq % 3 == 1:

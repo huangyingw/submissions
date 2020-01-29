@@ -10,8 +10,8 @@ class Solution:
         i = 2
         while i <= bound:
             if num % i == 0:
-                res += i + num // i
-                bound = min(bound, num // i)
+                res += i + num / i
+                bound = min(bound, num / i)
             if res > num:
                 return False
             i += 1

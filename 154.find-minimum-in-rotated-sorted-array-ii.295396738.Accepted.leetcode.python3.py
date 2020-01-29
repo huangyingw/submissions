@@ -4,7 +4,7 @@ class Solution(object):
         while left < right:
             if nums[left] < nums[right]:
                 break
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if nums[right] < nums[mid]:
                 left = mid + 1
             elif nums[left] > nums[mid]:

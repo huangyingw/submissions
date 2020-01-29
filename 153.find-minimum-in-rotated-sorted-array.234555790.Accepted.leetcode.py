@@ -7,7 +7,7 @@ class Solution(object):
         start = 0
         end = len(nums) - 1
         while start < end:
-            mid = (start + end) // 2
+            mid = (start + end) / 2
             if nums[mid] > nums[mid + 1]:
                 return nums[mid + 1]
             if nums[mid - 1] > nums[mid]:

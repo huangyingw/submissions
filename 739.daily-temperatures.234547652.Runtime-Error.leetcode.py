@@ -4,7 +4,7 @@ class Codec:
         if longUrl not in self.hash:
             idx = hash(longUrl)
             self.hash[idx] = longUrl
-        final_string = 'https://tinyurl.com/' + str(idx)
+        final_string = 'https:/tinyurl.com/' + str(idx)
         return (final_string)
 
     def decode(self, shortUrl):

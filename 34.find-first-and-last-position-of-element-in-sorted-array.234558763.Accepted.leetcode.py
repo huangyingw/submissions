@@ -8,7 +8,7 @@ class Solution(object):
     def binarySearch(self, nums, target, flag):
         low, high = 0, len(nums) - 1
         while low <= high:
-            mid = (low + high) // 2
+            mid = (low + high) / 2
             if nums[mid] > target or (nums[mid] == target and flag):
                 high = mid - 1
             else:

@@ -10,7 +10,7 @@ class Solution(object):
                 if not comment_block and test == "/*":
                     comment_block = True
                     i += 2
-                elif not comment_block and test == "//":
+                elif not comment_block and test == "/":
                     i = len(line)
                 elif comment_block and test == "*/":
                     comment_block = False

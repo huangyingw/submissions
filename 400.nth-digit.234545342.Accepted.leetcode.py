@@ -6,7 +6,7 @@ class Solution:
             n -= bit * base
             bit += 1
             base *= 10
-        order = n // bit + 1
+        order = n / bit + 1
         num_bit = n % bit
         start = 10**(bit - 1)
         which = start + order - 1

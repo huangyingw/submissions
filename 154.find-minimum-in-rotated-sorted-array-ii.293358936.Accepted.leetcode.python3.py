@@ -5,7 +5,7 @@ class Solution(object):
         while start + 1 < end:
             if nums[start] < nums[end]:
                 return nums[start]
-            mid = (start + end) // 2
+            mid = (start + end) / 2
             if nums[mid] > nums[start]:
                 start = mid
             elif nums[mid] < nums[start]:

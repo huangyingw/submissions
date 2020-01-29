@@ -4,7 +4,7 @@ class Solution(object):
         while Y > X:
             operations += 1
             if Y % 2 == 0:
-                Y //= 2
+                Y /= 2
             else:
                 Y += 1
         return X - Y + operations

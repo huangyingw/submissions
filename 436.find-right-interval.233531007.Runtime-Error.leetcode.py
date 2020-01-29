@@ -12,7 +12,7 @@ class Solution(object):
         for interval, i in intervals:
             left, right = 0, len(intervals)
             while left < right:
-                mid = (left + right) // 2
+                mid = (left + right) / 2
                 if intervals[mid][0].start < interval.end:
                     left = mid + 1
                 else:

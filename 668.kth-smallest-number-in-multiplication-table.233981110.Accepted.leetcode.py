@@ -6,7 +6,7 @@ class Solution(object):
         def helper(guess):
             count = 0
             for i in range(1, m + 1):
-                temp = guess // i
+                temp = guess / i
                 if temp > n:
                     count += n
                 else:
@@ -16,7 +16,7 @@ class Solution(object):
             return False
         left, right = 1, m * n
         while left < right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if helper(mid):
                 right = mid
             else:

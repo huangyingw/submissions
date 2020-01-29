@@ -16,10 +16,10 @@ class Solution(object):
             while end + 1 < len(expression) and expression[end + 1] not in ["+", "-"]:
                 end += 1
             fraction.append(int(expression[start:end + 1]))
-            lcm = fraction[1] * result[1] // GCD(fraction[1], result[1])
-            result = [(result[0] * lcm // result[1]) + (fraction[0] * lcm // fraction[1]), lcm]
+            lcm = fraction[1] * result[1] / GCD(fraction[1], result[1])
+            result = [(result[0] * lcm / result[1]) + (fraction[0] * lcm / fraction[1]), lcm]
             start = end + 1
         if result[0] == 0:
             return "0/1"
         gcd = GCD(result[0], result[1])
-        return str(result[0] // gcd) + "/" + str(result[1] // gcd)
+        return str(result[0] / gcd) + "/" + str(result[1] / gcd)

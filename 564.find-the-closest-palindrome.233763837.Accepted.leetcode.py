@@ -4,7 +4,7 @@ class Solution(object):
         candidates = {int("1" + "0" * (digits - 1) + "1")}
         if len(n) > 1:
             candidates.add(int("9" * (digits - 1)))
-        mid = len(n) // 2
+        mid = len(n) / 2
         left = n[:mid]
         if len(n) % 2 == 1:
             centre_count = 1

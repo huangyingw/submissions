@@ -6,7 +6,7 @@ class Solution:
         start = 0
         end = len(nums) - 1
         while start < end:
-            mid = (start + end) // 2
+            mid = (start + end) / 2
             mis = self.missing(nums, mid)
             if mis < k:
                 start = mid + 1

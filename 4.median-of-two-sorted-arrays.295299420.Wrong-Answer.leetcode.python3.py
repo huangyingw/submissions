@@ -5,8 +5,8 @@ class Solution(object):
         x, y = len(nums1), len(nums2)
         low, high = 0, x
         while low <= high:
-            partitionx = (low + high) // 2
-            partitiony = (x + y + 1) // 2 - partitionx
+            partitionx = (low + high) / 2
+            partitiony = (x + y + 1) / 2 - partitionx
             if partitionx == 0:
                 maxLeftX = float('-inf')
             else:
@@ -25,7 +25,7 @@ class Solution(object):
                 minRightY = nums2[partitiony]
             if maxLeftX <= minRightY and maxLeftY <= minRightX:
                 if((x + y) % 2 == 0):
-                    return (max(maxLeftX, maxLeftY) + min(minRightX, minRightY)) // 2.0
+                    return (max(maxLeftX, maxLeftY) + min(minRightX, minRightY)) / 2.0
                 else:
                     return max(maxLeftY, maxLeftX)
             elif maxLeftX > minRightY:

@@ -3,7 +3,7 @@ class Solution(object):
         n = len(num)
         if n < 3:
             return False
-        for second in range(1, 1 + (n - 1) // 2):
+        for second in range(1, 1 + (n - 1) / 2):
             if num[0] == "0" and second > 1:
                 break
             third = second + 1

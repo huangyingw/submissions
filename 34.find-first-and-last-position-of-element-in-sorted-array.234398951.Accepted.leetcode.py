@@ -3,7 +3,7 @@ class Solution:
         def binarySearchLeft(A, x):
             left, right = 0, len(A) - 1
             while left <= right:
-                mid = (left + right) // 2
+                mid = (left + right) / 2
                 if x > A[mid]:
                     left = mid + 1
                 else:
@@ -13,7 +13,7 @@ class Solution:
         def binarySearchRight(A, x):
             left, right = 0, len(A) - 1
             while left <= right:
-                mid = (left + right) // 2
+                mid = (left + right) / 2
                 if x >= A[mid]:
                     left = mid + 1
                 else:

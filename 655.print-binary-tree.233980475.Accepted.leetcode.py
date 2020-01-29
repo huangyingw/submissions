@@ -14,5 +14,5 @@ class Solution(object):
         shift = 2 ** (rows - r - 2)
         place(node.left, r + 1, c - shift)
         place(node.right, r + 1, c + shift)
-    place(root, 0, cols // 2)
+    place(root, 0, cols / 2)
     return result

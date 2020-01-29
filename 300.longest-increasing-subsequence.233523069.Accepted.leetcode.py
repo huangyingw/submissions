@@ -12,7 +12,7 @@ class Solution(object):
     def binary_search(self, num, LIS):
         left, right = 0, len(LIS) - 1
         while left <= right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if num <= LIS[mid]:
                 right = mid - 1
             else:

@@ -6,7 +6,7 @@ class Solution(object):
         tmp = x
         while tmp != 0:
             ls += 1
-            tmp = tmp // 10
+            tmp = tmp / 10
         tmp = x
         for i in range(ls / 2):
             right = tmp % 10
@@ -14,5 +14,5 @@ class Solution(object):
             left = left % 10
             if left != right:
                 return False
-            tmp = tmp // 10
+            tmp = tmp / 10
         return True

@@ -10,7 +10,7 @@ class Solution(object):
         nums.sort()
         left, right = 0, nums[-1] - nums[0]
         while left < right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if k_pair_distances(mid):
                 right = mid
             else:

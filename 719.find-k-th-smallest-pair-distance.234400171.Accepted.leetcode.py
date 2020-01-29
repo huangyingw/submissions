@@ -9,7 +9,7 @@ class Solution(object):
         nums.sort()
         low, high = min([abs(nums[i] - nums[i + 1]) for i in range(len(nums) - 1)]), abs(nums[0] - nums[~0])
         while low < high:
-            mid = (low + high) // 2
+            mid = (low + high) / 2
             if self.countPairsLTE(nums, mid) < k:
                 low = mid + 1
             else:

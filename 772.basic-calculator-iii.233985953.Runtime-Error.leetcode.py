@@ -28,7 +28,7 @@ class Solution(object):
             for i in range(1, len(tokens), 2):
                 op, num = tokens[i], calculate(tokens[i + 1])
                 if op == "/":
-                    result.append(result.pop() // num)
+                    result.append(result.pop() / num)
                 elif op == "*":
                     result.append(result.pop() * num)
                 elif op == "+":

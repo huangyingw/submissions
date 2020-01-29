@@ -2,7 +2,7 @@ class Solution(object):
     def findClosestElements(self, arr, k, x):
         left, right = 0, len(arr) - 1
         while left <= right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if x == arr[mid]:
                 left, right = mid, mid
                 break

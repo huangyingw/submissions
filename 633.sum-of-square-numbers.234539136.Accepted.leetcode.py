@@ -22,7 +22,7 @@ class Solution:
             while c % i == 0:
                 if i % 4 == 3:
                     s += 1
-                c //= i
+                c /= i
             i += 1
             if s % 2 == 1:
                 return False

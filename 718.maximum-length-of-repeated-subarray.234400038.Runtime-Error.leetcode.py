@@ -17,7 +17,7 @@ class Solution:
         B = ''.join(map(chr, B))
         lo, hi = 0, min(len(A), len(B)) + 1
         while lo < hi:
-            mi = (lo + hi) // 2
+            mi = (lo + hi) / 2
             if check(mi):
                 lo = mi + 1
             else:

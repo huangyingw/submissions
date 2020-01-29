@@ -1,6 +1,6 @@
 class Solution:
     def majorityElement(self, nums):
-        return sorted(nums)[len(nums) // 2]
+        return sorted(nums)[len(nums) / 2]
 
     def majorityElement(self, nums):
         l = len(nums)

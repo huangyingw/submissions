@@ -3,7 +3,7 @@ from collections import Counter
 
 class Solution(object):
     def balancedString(self, s):
-        balance = len(s) // 4
+        balance = len(s) / 4
         excess = {}
         for c, count in Counter(s).items():
             if count - balance > 0:

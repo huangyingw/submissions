@@ -7,10 +7,10 @@ class Solution(object):
             if b == 0:
                 return a
             return gcd(a, b)
-        lcm = A * B // gcd(A, B)
+        lcm = A * B / gcd(A, B)
         while low < high:
-            mid = (low + high) // 2
-            num = (mid // A) + (mid // B) - (mid // lcm)
+            mid = (low + high) / 2
+            num = (mid / A) + (mid / B) - (mid / lcm)
             if num < N:
                 low = mid + 1
             elif num >= N:

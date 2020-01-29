@@ -12,5 +12,5 @@ class Solution(object):
                 l2 = l2.next
             current.next = ListNode(carry % 10)
             current = current.next
-            carry //= 10
+            carry /= 10
         return head.next

@@ -8,8 +8,8 @@ class Solution(object):
     def factorise(self, n, trial, partial, factors):
         while trial * trial <= n:
             if n % trial == 0:
-                factors.append(partial + [n // trial, trial])
-                self.factorise(n // trial, trial, partial + [trial], factors)
+                factors.append(partial + [n / trial, trial])
+                self.factorise(n / trial, trial, partial + [trial], factors)
             trial += 1
         return factors
 
@@ -22,7 +22,7 @@ class Solution2(object):
             num, trial, partial = stack.pop()
             while trial * trial <= num:
                 if num % trial == 0:
-                    factors.append(partial + [num // trial, trial])
-                    stack.append((num // trial, trial, partial + [trial]))
+                    factors.append(partial + [num / trial, trial])
+                    stack.append((num / trial, trial, partial + [trial]))
                 trial += 1
         return factors

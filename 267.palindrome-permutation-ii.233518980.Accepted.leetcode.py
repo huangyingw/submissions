@@ -12,7 +12,7 @@ class Solution(object):
                 odd_char = char
                 char_counts[odd_char] -= 1
         palindromes = []
-        self.build_palindromes(palindromes, [], char_counts, len(s) // 2)
+        self.build_palindromes(palindromes, [], char_counts, len(s) / 2)
         return ["".join(p + [odd_char] + p[::-1]) for p in palindromes]
 
     def build_palindromes(self, palindromes, partial, char_counts, remaining):

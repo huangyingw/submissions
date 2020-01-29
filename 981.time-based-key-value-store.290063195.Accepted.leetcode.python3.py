@@ -18,7 +18,7 @@ class TimeMap:
     def binarySearch(self, keyValues, timestamp):
         start, end = 0, len(keyValues) - 1
         while start < end:
-            mid = start + (end - start + 1) // 2
+            mid = start + (end - start + 1) / 2
             if keyValues[mid][0] > timestamp:
                 end = mid - 1
             else:

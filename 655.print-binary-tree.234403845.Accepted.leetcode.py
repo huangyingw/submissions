@@ -5,7 +5,7 @@ class Solution(object):
     def update_output(node, row, left, right):
         if not node:
             return
-        mid = (left + right) // 2
+        mid = (left + right) / 2
         self.output[row][mid] = str(node.val)
         update_output(node.left, row + 1, left, mid - 1)
         update_output(node.right, row + 1, mid + 1, right)

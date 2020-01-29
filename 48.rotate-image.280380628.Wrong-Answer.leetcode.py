@@ -1,7 +1,7 @@
 class Solution(object):
     def rotate(self, matrix):
         n = len(matrix)
-        m = n // 2
+        m = n / 2
         for i in range(n / 2):
             for j in range(m):
                 temp = matrix[i][j]

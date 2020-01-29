@@ -11,5 +11,5 @@ class Solution(object):
                             continue
                         total += M[r + dr][c + dc]
                         nbors += 1
-                smoothed[r][c] = total // nbors
+                smoothed[r][c] = total / nbors
         return smoothed

@@ -4,7 +4,7 @@ class Solution:
         res = ""
         while n > 0:
             word = (n - 1) % 26
-            n = (n - 1) // 26
+            n = (n - 1) / 26
             tempString = alpha[word]
             res = ''.join((tempString, res))
         return res
@@ -14,7 +14,7 @@ class Solution:
         dist = ord('A')
         while n > 0:
             word = (n - 1) % 26
-            n = (n - 1) // 26
+            n = (n - 1) / 26
             tempString = chr(word + dist)
             res = ''.join((tempString, res))
         return res

@@ -4,12 +4,12 @@ class Solution(object):
             factor = 5
             result = 0
             while factor <= n:
-                result += n // factor
+                result += n / factor
                 factor *= 5
             return result
         left, right = 0, 10 * K
         while left < right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             mid_zeros = factorial_zeros(mid)
             if mid_zeros < K:
                 left = mid + 1

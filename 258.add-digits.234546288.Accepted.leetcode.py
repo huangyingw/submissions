@@ -4,7 +4,7 @@ class Solution:
             result = 0
             while num != 0:
                 ind = num % 10
-                num = num // 10
+                num = num / 10
                 result += ind
             if result < 10:
                 break

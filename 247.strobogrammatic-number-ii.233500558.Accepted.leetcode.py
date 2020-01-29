@@ -10,6 +10,6 @@ class Solution(object):
         else:
             results = ['']
         strobo = {'0': '0', '1': '1', '8': '8', '6': '9', '9': '6'}
-        for i in range(n // 2):
+        for i in range(n / 2):
             results = [c + r + strobo[c] for r in results for c in strobo]
         return [result for result in results if (result[0] != '0' or n == 1)]

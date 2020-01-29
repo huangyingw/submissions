@@ -6,7 +6,7 @@ class Solution:
             temp = tail
             for n2 in reversed(num2):
                 result[temp] += int(n1) * int(n2)
-                result[temp - 1] += result[temp] // 10
+                result[temp - 1] += result[temp] / 10
                 result[temp] %= 10
                 temp -= 1
             tail -= 1

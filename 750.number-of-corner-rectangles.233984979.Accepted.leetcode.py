@@ -9,5 +9,5 @@ class Solution(object):
             for low_row in range(high_row):
                 common_cols = len(cols_by_row[high_row] & cols_by_row[low_row])
                 if common_cols >= 2:
-                    rectangles += common_cols * (common_cols - 1) // 2
+                    rectangles += common_cols * (common_cols - 1) / 2
         return rectangles
