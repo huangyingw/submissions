@@ -10,5 +10,5 @@ class Solution:
                         if 0 <= nr < R and 0 <= nc < C:
                             ans[r][c] += M[nr][nc]
                             count += 1
-                ans[r][c] //= count
+                ans[r][c] /= count
         return ans

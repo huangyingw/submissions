@@ -5,7 +5,7 @@ class Solution(object):
             while(n):
                 tmp = n % 10
                 sum += tmp * tmp
-                n //= 10
+                n /= 10
             return sum
         slow = fast = n
         while True:

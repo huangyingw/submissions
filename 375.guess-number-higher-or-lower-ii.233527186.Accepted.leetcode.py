@@ -6,7 +6,7 @@ class Solution(object):
             for lower in range(1, n + 2 - range_length):
                 upper = lower + range_length - 1
                 min_cost = float('inf')
-                for guess in range((lower + upper) // 2, upper):
+                for guess in range((lower + upper) / 2, upper):
                     cost = guess + max(min_money[guess - lower - 1][lower - 1], min_money[upper - guess - 1][guess])
                     min_cost = min(min_cost, cost)
                 min_money[-1].append(min_cost)

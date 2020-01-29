@@ -4,7 +4,7 @@ class Solution:
             return -1
         l, r = 1, n
         while l <= r:
-            m = l + (r - l) // 2
+            m = l + (r - l) / 2
             if isBadVersion(m):
                 r = m - 1
             else:

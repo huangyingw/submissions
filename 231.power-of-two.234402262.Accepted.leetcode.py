@@ -8,5 +8,5 @@ class Solution(object):
             if n % 2:
                 return False
             else:
-                n = n // 2
+                n = n / 2
         return True

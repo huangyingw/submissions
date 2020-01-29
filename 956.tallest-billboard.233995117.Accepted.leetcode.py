@@ -10,4 +10,4 @@ class Solution:
                 new_diffs[diff + rod] = max(used_len + rod, new_diffs[diff + rod])
                 new_diffs[abs(diff - rod)] = max(used_len + rod, new_diffs[abs(diff - rod)])
             diffs = new_diffs
-        return diffs[0] // 2
+        return diffs[0] / 2

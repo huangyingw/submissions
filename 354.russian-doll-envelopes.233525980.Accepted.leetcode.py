@@ -6,7 +6,7 @@ class Solution(object):
         def bin_search(target):
             left, right = 0, len(nested) - 1
             while left <= right:
-                mid = (left + right) // 2
+                mid = (left + right) / 2
                 if target > nested[mid]:
                     left = mid + 1
                 else:

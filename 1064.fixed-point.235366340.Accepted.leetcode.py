@@ -2,7 +2,7 @@ class Solution(object):
     def fixedPoint(self, A):
         left, right = 0, len(A) - 1
         while left <= right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if A[mid] == mid:
                 return mid
             if A[mid] > mid:

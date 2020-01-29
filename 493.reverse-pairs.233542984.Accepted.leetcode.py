@@ -5,7 +5,7 @@ class Solution(object):
         def mergesort(nums):
             if len(nums) < 2:
                 return nums
-            mid = len(nums) // 2
+            mid = len(nums) / 2
             left = mergesort(nums[:mid])
             right = mergesort(nums[mid:])
             return merge(left, right)

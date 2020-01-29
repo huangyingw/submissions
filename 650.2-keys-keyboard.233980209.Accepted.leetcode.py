@@ -5,6 +5,6 @@ class Solution(object):
         while n > 1:
             while n % divisor == 0:
                 steps += divisor
-                n //= divisor
+                n /= divisor
             divisor += 1
         return steps

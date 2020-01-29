@@ -14,7 +14,7 @@ class Solution(object):
         min_capacity = max(weights)
         max_capacity = sum(weights)
         while min_capacity < max_capacity:
-            mid_capacity = (min_capacity + max_capacity) // 2
+            mid_capacity = (min_capacity + max_capacity) / 2
             if can_ship(mid_capacity):
                 max_capacity = mid_capacity
             else:

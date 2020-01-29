@@ -6,8 +6,8 @@ class Solution(object):
         def heuristic(cell):
             dx, dy = abs(cell[0] - x), abs(cell[1] - y)
             min_d, max_d = sorted([dx, dy])
-            max_moves = (max_d + 1) // 2
-            return max_moves + max(0, (min_d - max_moves + 1) // 2)
+            max_moves = (max_d + 1) / 2
+            return max_moves + max(0, (min_d - max_moves + 1) / 2)
         queue = [[heuristic((0, 0)), 0, (0, 0)]]
         seen = set()
         while True:

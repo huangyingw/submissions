@@ -19,11 +19,11 @@ class Solution(object):
                     break
                 s2_index_to_reps[j] = (s1_reps, s2_reps)
         if s1_reps == n1:
-            return s2_reps // n2
+            return s2_reps / n2
         initial_s1_reps, initial_s2_reps = s2_index_to_reps[j]
         loop_s1_reps = s1_reps - initial_s1_reps
         loop_s2_reps = s2_reps - initial_s2_reps
-        loops = (n1 - initial_s1_reps) // loop_s1_reps
+        loops = (n1 - initial_s1_reps) / loop_s1_reps
         s1_reps = initial_s1_reps + loops * loop_s1_reps
         s2_reps = initial_s2_reps + loops * loop_s2_reps
         while s1_reps < n1:
@@ -36,4 +36,4 @@ class Solution(object):
             if j == len(s2):
                 j = 0
                 s2_reps += 1
-        return s2_reps // n2
+        return s2_reps / n2

@@ -7,7 +7,7 @@ class Solution(object):
                        for j in range(len(B) - length + 1))
         low, high = 0, min(len(A), len(B)) + 1
         while low < high:
-            mid = (low + high) // 2
+            mid = (low + high) / 2
             if mutual_subarray(mid):
                 low = mid + 1
             else:

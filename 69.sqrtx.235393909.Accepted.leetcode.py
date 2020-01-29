@@ -5,7 +5,7 @@ class Solution:
         if x == 0:
             return 0
         while high - low > 1:
-            mid = (low + high) // 2
+            mid = (low + high) / 2
             if mid**2 > x:
                 high = mid
             else:

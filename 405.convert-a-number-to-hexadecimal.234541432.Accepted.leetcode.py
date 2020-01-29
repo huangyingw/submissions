@@ -25,7 +25,7 @@ class Solution(object):
             res = ""
             while num:
                 res = d[num % 16] + res
-                num //= 16
+                num /= 16
             return res
 
     def toHex(self, num):
@@ -36,5 +36,5 @@ class Solution(object):
         mod_map = {10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f'}
 
         def hexHelper(num, digits):
-            return digits if num == 0 else hexHelper(num // 16, str(mod_map.get(int(num % 16)) or num % 16) + digits)
+            return digits if num == 0 else hexHelper(num / 16, str(mod_map.get(int(num % 16)) or num % 16) + digits)
         return hexHelper(num, "")

@@ -11,5 +11,5 @@ class Solution:
         new_no = 0
         while n:
             new_no += (n % 10) * (n % 10)
-            n //= 10
+            n /= 10
         return new_no

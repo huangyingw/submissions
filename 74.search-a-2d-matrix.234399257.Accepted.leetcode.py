@@ -22,7 +22,7 @@ class Solution:
         left = 0
         right = len(matrix) - 1
         while left < right:
-            mid = (left + right) // 2 + 1
+            mid = (left + right) / 2 + 1
             if matrix[mid][0] < target:
                 left = mid
             elif matrix[mid][0] > target:
@@ -33,7 +33,7 @@ class Solution:
         left = 0
         right = len(matrix[0]) - 1
         while left <= right:
-            mid = (left + right) // 2
+            mid = (left + right) / 2
             if matrix[index][mid] < target:
                 left = mid + 1
             elif matrix[index][mid] > target:

@@ -14,7 +14,7 @@ class Solution(object):
                 fib.append(next_num)
                 i += len(next_str)
             return fib
-        for len1 in range(1, (len(S) + 1) // 2):
+        for len1 in range(1, (len(S) + 1) / 2):
             if len1 > 1 and S[0] == "0":
                 return []
             n1 = int(S[:len1])

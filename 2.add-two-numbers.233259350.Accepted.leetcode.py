@@ -17,5 +17,5 @@ class Solution(object):
                 l2 = l2.next
             prev.next = ListNode(carry % 10)
             prev = prev.next
-            carry //= 10
+            carry /= 10
         return result.next

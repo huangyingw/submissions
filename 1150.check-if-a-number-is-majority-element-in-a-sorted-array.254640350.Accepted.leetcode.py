@@ -7,4 +7,4 @@ class Solution(object):
         i = bisect.bisect_left(nums, target)
         if i == n or nums[i] != target:
             return False
-        return nums[(i + n // 2) % n] == target
+        return nums[(i + n / 2) % n] == target

@@ -11,5 +11,5 @@ class Solution:
                     for y in (j - 1, j, j + 1)
                     if 0 <= x < m and 0 <= y < n
                 ]
-                ret[i][j] = sum(surrounding_cells) // len(surrounding_cells)
+                ret[i][j] = sum(surrounding_cells) / len(surrounding_cells)
         return ret

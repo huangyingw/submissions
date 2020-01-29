@@ -5,5 +5,5 @@ class Solution:
             digit = n % 10
             sum += digit
             product *= digit
-            n //= 10
+            n /= 10
         return product - sum

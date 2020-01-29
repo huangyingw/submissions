@@ -5,7 +5,7 @@ class Solution(object):
         sum_samples, samples_seen = 0, 0
         mode, mode_count = 0, 0
         median_sum = 0
-        median_indices = [sample_count // 2]
+        median_indices = [sample_count / 2]
         if sample_count % 2 == 0:
             median_indices.append(median_indices[-1] - 1)
         for num, freq in enumerate(count):

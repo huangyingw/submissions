@@ -3,6 +3,6 @@ class Solution(object):
         base = 5
         ans = 0
         while base <= n:
-            ans += n // base
+            ans += n / base
             base *= 5
         return ans

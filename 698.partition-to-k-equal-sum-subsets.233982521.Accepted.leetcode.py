@@ -3,7 +3,7 @@ class Solution(object):
         total = sum(nums)
         if total % k != 0:
             return False
-        target = total // k
+        target = total / k
         used = [False] * len(nums)
         nums.sort(reverse=True)
         if nums[0] > target:
@@ -28,7 +28,7 @@ class Solution2(object):
     def canPartitionKSubsets(self, nums, k):
         total = sum(nums)
         nums.sort(reverse=True)
-        target = total // k
+        target = total / k
         if total % k != 0 or nums[0] > target:
             return False
         partition = [0 for _ in range(k)]

@@ -1,6 +1,6 @@
 class Solution(object):
     def knightProbability(self, N, K, r, c):
-        M = N // 2
+        M = N / 2
         if N % 2 == 1:
             M += 1
 

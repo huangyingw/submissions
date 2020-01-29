@@ -5,5 +5,5 @@ class Solution:
         rev = 0
         while x > rev:
             rev = rev * 10 + x % 10
-            x = x // 10
-        return rev // 10 == x or rev == x
+            x = x / 10
+        return rev / 10 == x or rev == x

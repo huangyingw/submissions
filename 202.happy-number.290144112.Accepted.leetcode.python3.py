@@ -4,6 +4,6 @@ class Solution:
             nextN = 0
             while(n):
                 nextN += (n % 10) * (n % 10)
-                n //= 10
+                n /= 10
             n = nextN
         return n == 1

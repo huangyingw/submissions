@@ -7,7 +7,7 @@ class Solution(object):
         lower, upper = [], []
         for i in range(k):
             heapq.heappush(upper, nums[i])
-        for i in range(k // 2):
+        for i in range(k / 2):
             heapq.heappush(lower, -heapq.heappop(upper))
         medians = []
         junk = defaultdict(int)

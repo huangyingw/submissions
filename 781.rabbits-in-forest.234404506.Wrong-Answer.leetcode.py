@@ -4,7 +4,7 @@ class Solution:
         mapping = Counter(answers)
         ret = 0
         for idx, val in mapping.items():
-            ret += val if val % (idx + 1) == 0 else (val // (idx + 1) + 1) * (idx + 1)
+            ret += val if val % (idx + 1) == 0 else (val / (idx + 1) + 1) * (idx + 1)
         return ret
 
     def numRabbits(self, answers):

@@ -1,6 +1,6 @@
 class Solution(object):
     def crawl(self, startUrl, htmlParser):
-        PREFIX = "http://"
+        PREFIX = "http:/"
         n = len(PREFIX)
 
         def get_host_and_path(url):

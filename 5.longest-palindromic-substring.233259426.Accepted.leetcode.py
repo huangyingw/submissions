@@ -9,9 +9,9 @@ class Solution(object):
             if (min(centre + 1, 2 * len(s) - 1 - centre) <= len(longest)):
                 break
             if centre % 2 == 0:
-                left, right = (centre // 2) - 1, (centre // 2) + 1
+                left, right = (centre / 2) - 1, (centre / 2) + 1
             else:
-                left, right = centre // 2, (centre // 2) + 1
+                left, right = centre / 2, (centre / 2) + 1
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1

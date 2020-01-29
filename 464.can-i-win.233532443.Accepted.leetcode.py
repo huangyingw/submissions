@@ -1,6 +1,6 @@
 class Solution(object):
     def canIWin(self, maxChoosableInteger, desiredTotal):
-        if maxChoosableInteger * (maxChoosableInteger + 1) // 2 < desiredTotal:
+        if maxChoosableInteger * (maxChoosableInteger + 1) / 2 < desiredTotal:
             return False
         return self.next_player_win(desiredTotal, list(range(1, maxChoosableInteger + 1)), {})
 
