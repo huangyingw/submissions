@@ -6,5 +6,5 @@ class Solution(object):
             if K > length // 2:
                 inverse = not inverse
                 K -= length // 2
-            length /= 2
+            length //= 2
         return int(inverse)

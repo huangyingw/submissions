@@ -8,8 +8,8 @@ class Solution(object):
         result = []
         while a != 1:
             result.append(a)
-            a /= 2
-            b /= 2
+            a //= 2
+            b //= 2
             a, b = b, a
         result.append(1)
         return result[::-1]

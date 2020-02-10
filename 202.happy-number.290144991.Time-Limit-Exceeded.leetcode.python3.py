@@ -6,7 +6,7 @@ class Solution(object):
             while n:
                 mod = n % 10
                 sums += mod * mod
-                n /= 10
+                n //= 10
             if sums not in s:
                 s.add(sums)
             else:

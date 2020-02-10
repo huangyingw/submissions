@@ -9,5 +9,5 @@ class Solution:
         denominator = [x for x in range(1, n + 1)]
         for z in range(len(numerator)):
             ans *= numerator[z]
-            ans /= denominator[z]
+            ans //= denominator[z]
         return int(ans)

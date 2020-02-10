@@ -7,6 +7,6 @@ class Solution(object):
             for num in nums:
                 if subset_nb % 2 == 1:
                     subset.append(num)
-                subset_nb /= 2
+                subset_nb //= 2
             all_subsets.append(subset)
         return all_subsets

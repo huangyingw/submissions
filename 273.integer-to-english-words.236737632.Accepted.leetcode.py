@@ -3,7 +3,7 @@ class Solution(object):
         result = self.convertHundred(num % 1000)
         v = ["Thousand", "Million", "Billion"]
         for idx in range(3):
-            num /= 1000
+            num //= 1000
             result = self.convertHundred(num % 1000) + " " + v[idx] + " " + result if num % 1000 > 0 else result
         result = result.strip()
         return "Zero" if not result else result

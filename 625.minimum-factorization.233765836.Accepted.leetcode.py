@@ -9,7 +9,7 @@ class Solution(object):
                 result += digit * tens
                 if result > 2 ** 31:
                     return 0
-                a /= digit
+                a //= digit
                 if a == 1:
                     return result
                 tens *= 10

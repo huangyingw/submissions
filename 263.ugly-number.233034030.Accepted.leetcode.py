@@ -5,5 +5,5 @@ class Solution(object):
         divisors = [2, 3, 5]
         for d in divisors:
             while num % d == 0:
-                num /= d
+                num //= d
         return num == 1

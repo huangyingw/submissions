@@ -11,7 +11,7 @@ class Solution:
         new_no = 0
         while n:
             new_no += (n % 10) * (n % 10)
-            n /= 10
+            n //= 10
         return new_no
 
 
@@ -21,7 +21,7 @@ class Solution1:
             nextN = 0
             while(n):
                 nextN += (n % 10) * (n % 10)
-                n /= 10
+                n //= 10
             n = nextN
         return n == 1
 
@@ -42,5 +42,5 @@ class Solution2:
         new_no = 0
         while n:
             new_no += (n % 10) * (n % 10)
-            n /= 10
+            n //= 10
         return new_no

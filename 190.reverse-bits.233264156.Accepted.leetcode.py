@@ -13,5 +13,5 @@ class Solution2:
             if n % 2 == 1:
                 reversed += 2**bit
             bit -= 1
-            n /= 2
+            n //= 2
         return reversed

@@ -11,7 +11,7 @@ class Solution(object):
         for i in range(index, -1, -1):
             c = S[i]
             if "0" <= c <= "9":
-                length /= int(c)
+                length //= int(c)
                 K %= length
             else:
                 if K == length or K == 0:

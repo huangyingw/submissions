@@ -17,8 +17,8 @@ class Solution:
                     overlap += 1
                     continue
                 gcd = fractions.gcd(dx, dy)
-                dx /= gcd
-                dy /= gcd
+                dx //= gcd
+                dy //= gcd
                 d[(dx, dy)] = d.get((dx, dy), 0) + 1
                 curmax = max(curmax, d[(dx, dy)])
             result = max(result, curmax + overlap + 1)

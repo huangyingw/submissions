@@ -14,8 +14,8 @@ class Solution(object):
                     continue
                 gcd = self.generateGCD(x, y)
                 if gcd != 0:
-                    x /= gcd
-                    y /= gcd
+                    x //= gcd
+                    y //= gcd
                 if x in line_map:
                     if y in line_map[x]:
                         line_map[x][y] += 1

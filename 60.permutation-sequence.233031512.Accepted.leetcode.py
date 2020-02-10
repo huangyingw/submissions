@@ -14,6 +14,6 @@ class Solution(object):
             return remain
         step = k // curr
         k %= curr
-        curr /= n
+        curr //= n
         res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
         return res

@@ -4,7 +4,7 @@ class Solution:
             return False
         while num > 1:
             if num % 4 == 0:
-                num /= 4
+                num //= 4
             else:
                 return False
         return True

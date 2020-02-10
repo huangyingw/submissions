@@ -10,6 +10,6 @@ class Solution(object):
                 if n % 2 != 0:
                     head += step
             step *= 2
-            n /= 2
+            n //= 2
             l_to_r = not l_to_r
         return head

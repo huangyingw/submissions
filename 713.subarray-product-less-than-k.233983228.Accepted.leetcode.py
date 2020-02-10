@@ -6,7 +6,7 @@ class Solution(object):
         for end, num in enumerate(nums):
             product *= num
             while product >= k and start <= end:
-                product /= nums[start]
+                product //= nums[start]
                 start += 1
             subarrays += end - start + 1
         return subarrays

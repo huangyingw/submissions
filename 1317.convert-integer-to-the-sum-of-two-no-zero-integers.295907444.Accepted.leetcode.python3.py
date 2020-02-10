@@ -8,5 +8,5 @@ class Solution:
         while n:
             if n % 10 == 0:
                 return False
-            n /= 10
+            n //= 10
         return True

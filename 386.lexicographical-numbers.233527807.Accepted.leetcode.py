@@ -4,10 +4,10 @@ class Solution(object):
         while len(lexical) < n:
             num = lexical[-1] * 10
             while num > n:
-                num /= 10
+                num //= 10
                 num += 1
                 while num % 10 == 0:
-                    num /= 10
+                    num //= 10
             lexical.append(num)
         return lexical
 

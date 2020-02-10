@@ -25,5 +25,5 @@ class Solution(object):
             res = ""
             while num:
                 res = d[num % 16] + res
-                num /= 16
+                num //= 16
             return res

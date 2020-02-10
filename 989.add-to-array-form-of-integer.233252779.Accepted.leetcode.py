@@ -3,7 +3,7 @@ class Solution(object):
         arr_k = []
         while K > 0:
             digit = K % 10
-            K /= 10
+            K //= 10
             arr_k.append(digit)
         arr_k.reverse()
         if len(arr_k) > len(A):

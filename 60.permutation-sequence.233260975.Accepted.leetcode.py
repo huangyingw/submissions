@@ -11,7 +11,7 @@ class Solution(object):
             digit = n * k // permutations
             result.append(chars[digit])
             del chars[digit]
-            permutations /= n
+            permutations //= n
             k -= digit * permutations
             n -= 1
         return "".join(result)
