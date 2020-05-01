@@ -1,14 +1,9 @@
 class NestedInteger:
     def __init__(self, value=None):
-
     def isInteger(self):
-
     def add(self, elem):
-
     def setInteger(self, value):
-
     def getInteger(self):
-
     def getList(self):
 
 
