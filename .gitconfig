@@ -1,3 +1,6 @@
+[remote "origin"]
+	url = https://github.com/huangyingw/submissions.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
 [remote "github"]
     url = git@github.com:huangyingw/submissions.git
     fetch = +refs/heads/*:refs/remotes/github/*
@@ -7,8 +10,8 @@
 [commit]
     message = n
 [branch "master"]
-    remote = github
-    merge = refs/heads/master
+	remote = origin
+	merge = refs/heads/master
 [push]
     remote = github
     remote = bitbucket
