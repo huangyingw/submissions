@@ -5,4 +5,3 @@ class Solution(object):
             if target - num in num_to_index:
                 return [num_to_index[target - num], i]
             num_to_index[num] = i
-        return []
