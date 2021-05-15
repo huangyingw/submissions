@@ -6,7 +6,7 @@ class Solution(object):
         result = 0
 
         def valid(index_i, index_j):
-            return index_i + L <= len(A) and index_j + M <= len(A) and(index_j >= index_i + L or index_i >= index_j + M)
+            return index_i + L <= len(A) and index_j + M <= len(A) and (index_j >= index_i + L or index_i >= index_j + M)
         for index_i in range(len(A)):
             for index_j in range(len(A)):
                 if valid(index_i, index_j):
