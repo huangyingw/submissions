@@ -1,5 +1,6 @@
 class Solution:
     def sortedSquares(self, A):
+
         left, right = 0, len(A) - 1
         result = []
         while left <= right:
