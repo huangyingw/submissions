@@ -1,5 +1,6 @@
 class Solution(object):
     def zigzagLevelOrder(self, root):
+
         if root is None:
             return []
         q = [[root]]
@@ -12,6 +13,7 @@ class Solution(object):
                     record.append(node.right)
             if record:
                 q.append(record)
+
         res = []
         for index, level in enumerate(q):
             temp = [x.val for x in level]
