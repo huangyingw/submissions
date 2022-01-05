@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def hasPathSum(self, root, sum):
 
         if not root:

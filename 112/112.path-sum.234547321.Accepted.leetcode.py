@@ -1,5 +1,7 @@
 class Solution(object):
+
     def hasPathSum(self, root, sum):
+
         if root == None:
             return False
         elif root.left == None and root.right == None:
@@ -11,6 +13,7 @@ class Solution(object):
             return self.hasPathSum(root.left, sum - root.val) or self.hasPathSum(root.right, sum - root.val)
 
     def hasPathSum(self, root, sum):
+
         if root is None:
             return False
         stack = [(root, sum)]

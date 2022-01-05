@@ -7,6 +7,7 @@ class TreeNode(object):
 
 class Solution(object):
     def hasPathSum(self, root, sum):
+
         if not root:
             return False
         sum -= root.val

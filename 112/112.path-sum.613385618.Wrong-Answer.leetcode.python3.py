@@ -1,7 +1,8 @@
-class Solution:
+class Solution(object):
     def hasPathSum(self, root, sum):
-
         if not root:
+            return False
+        if root.val < 0:
             return False
         if not root.left and not root.right and root.val == sum:
             return True
