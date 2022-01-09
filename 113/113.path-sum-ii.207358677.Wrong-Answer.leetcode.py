@@ -5,10 +5,9 @@ class Solution(object):
 
     def pathSum(self, root, sum):
         if not root:
-            return []
-        if not root.left and not root.right and root.val == sum:
-            self.result.append(list(self.current).append(root.val))
             return
+        if not root.left and not root.right and root.val == sum:
+            self.result.append(list(self.current.append(root.val)))
         self.current.append(root.val)
         self.pathSum(root.left, sum - root.val)
         self.pathSum(root.right, sum - root.val)

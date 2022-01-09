@@ -1,5 +1,6 @@
 class Solution(object):
     def pathSum(self, root, sum):
+
         result = []
 
         def dfs(root, curr_sum, sum, path, result):
