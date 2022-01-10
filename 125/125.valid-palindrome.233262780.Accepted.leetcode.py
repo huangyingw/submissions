@@ -3,6 +3,7 @@ import string
 
 class Solution(object):
     def isPalindrome(self, s):
+
         allowed = set(string.ascii_lowercase + string.digits)
         s = [c for c in s.lower() if c in allowed]
         i, j = 0, len(s) - 1

@@ -1,5 +1,6 @@
 class Solution(object):
     def isPalindrome(self, s):
+
         alnum_s = [t.lower() for t in s if t.isalnum()]
         ls = len(alnum_s)
         if ls <= 1:

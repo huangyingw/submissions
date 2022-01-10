@@ -1,5 +1,6 @@
 class Solution:
     def isPalindrome(self, s):
+
         low, high = 0, len(s) - 1
         while low < high:
             while low < high and not s[low].isalnum():
