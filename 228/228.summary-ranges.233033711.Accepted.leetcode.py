@@ -1,4 +1,5 @@
 class Solution(object):
+
     def summaryRanges(self, nums):
         res = []
         start, ls = 0, len(nums)
