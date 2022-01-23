@@ -17,6 +17,7 @@ class Solution:
 
 class Solution1:
     def isHappy(self, n):
+
         while n > 6:
             nextN = 0
             while(n):

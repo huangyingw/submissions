@@ -1,8 +1,8 @@
 class Solution:
     def isHappy(self, n):
-        while n > 6:
+        while n > 1:
             nextN = 0
-            while(n):
+            while n:
                 nextN += (n % 10) * (n % 10)
                 n //= 10
             n = nextN

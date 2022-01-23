@@ -1,5 +1,6 @@
 class Solution(object):
     def lengthOfLongestSubstringTwoDistinct(self, s):
+
         start, end, counter, ret = 0, 0, 0, 0
         counts = {}
         while end < len(s):

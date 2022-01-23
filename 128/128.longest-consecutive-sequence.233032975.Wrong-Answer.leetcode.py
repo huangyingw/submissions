@@ -1,6 +1,8 @@
 class Solution(object):
     def longestConsecutive(self, nums):
+
         def longestConsecutive(self, num):
+
             num = set(num)
             maxLen = 0
             while num:
