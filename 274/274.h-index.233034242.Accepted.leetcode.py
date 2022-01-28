@@ -1,5 +1,7 @@
 class Solution(object):
+
     def hIndex(self, citations):
+
         ls = len(citations)
         papers = [0] * (ls + 1)
         for c in citations:

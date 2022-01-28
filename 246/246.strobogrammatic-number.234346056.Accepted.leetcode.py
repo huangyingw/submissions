@@ -1,5 +1,6 @@
 class Solution(object):
     def isStrobogrammatic(self, num):
+
         mapping = {'6': '9', '8': '8', '1': '1', '9': '6', '0': '0'}
         l, r = 0, len(num) - 1
         while l <= r:

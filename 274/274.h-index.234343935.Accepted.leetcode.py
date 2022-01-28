@@ -1,5 +1,6 @@
 class Solution:
     def hIndex(self, citations):
+
         n = len(citations)
         counts = [0] * (n + 1)
         for i in range(n):

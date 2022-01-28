@@ -1,5 +1,6 @@
 class Solution(object):
     def hIndex(self, citations):
+
         buckets = [0] * (len(citations) + 1)
         for citation in citations:
             buckets[min(citation, len(citations))] += 1
