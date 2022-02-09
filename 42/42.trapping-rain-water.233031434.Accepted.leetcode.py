@@ -1,5 +1,6 @@
 class Solution(object):
     def trap(self, height):
+
         ls = len(height)
         if ls == 0:
             return 0
@@ -9,10 +10,12 @@ class Solution(object):
         pos = left + 1
         while pos < ls:
             if height[pos] >= height[left]:
+
                 res += self.rain_water(height, left, pos)
                 left = pos
                 pos += 1
             elif pos == ls - 1:
+
                 max_value, max_index = 0, pos
                 for index in range(left + 1, ls):
                     if height[index] > max_value:
@@ -26,6 +29,7 @@ class Solution(object):
         return res
 
     def rain_water(self, height, start, end):
+
         if end - start <= 1:
             return 0
         min_m = min(height[start], height[end])
