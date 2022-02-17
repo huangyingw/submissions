@@ -1,14 +1,13 @@
 class Solution(object):
     def isBalanced(self, root):
-
-        if root is None:
+        if not root:
             return True
         if self.getDepth(root) < 0:
             return False
         return True
 
     def getDepth(self, node):
-        if node is None:
+        if not node:
             return 1
         ld = self.getDepth(node.left)
         if ld < 0:
