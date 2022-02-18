@@ -3,8 +3,6 @@ class Solution(object):
         result = []
         for i in range(numRows):
             result += [[1] * (i + 1)]
-            for j in range(1, i):
+            for j in range(0, i):
                 result[i][j] = result[i - 1][j - 1] + result[i - 1][j]
-                print
-            print
         return result

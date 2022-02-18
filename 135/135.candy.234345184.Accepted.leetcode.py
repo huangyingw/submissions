@@ -1,4 +1,5 @@
 class Solution:
+
     def candy(self, ratings):
         up, down, res, peak = 0, 0, 1, 0
         for i in range(1, len(ratings)):
