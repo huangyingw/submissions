@@ -1,7 +1,7 @@
 class Solution:
-    def invertTree(self, root: TreeNode) -> TreeNode:
+    def invertTree(self, root: TreeNode):
         if not root:
-            return None
+            return root
         queue = []
         queue.append(root)
         while queue:
