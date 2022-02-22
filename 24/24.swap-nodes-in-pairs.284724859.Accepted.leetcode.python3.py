@@ -6,6 +6,7 @@ class ListNode(object):
 
 class Solution(object):
     def swapPairs(self, head):
+
         if not head:
             return None
         cur = head.next if head.next else head
