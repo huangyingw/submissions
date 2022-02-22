@@ -1,5 +1,7 @@
 class Solution:
+
     def binaryTreePaths(self, root):
+
         def searchBT(root, path, ans):
             if root.left == None and root.right == None:
                 ans.append(path + str(root.val))
@@ -13,6 +15,7 @@ class Solution:
         return ans
 
     def binaryTreePaths(self, r):
+
         stack = []
         res = []
 

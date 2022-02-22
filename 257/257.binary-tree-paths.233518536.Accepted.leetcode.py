@@ -1,5 +1,6 @@
 class Solution(object):
     def binaryTreePaths(self, root):
+
         def helper(node, partial):
             if not node:
                 return

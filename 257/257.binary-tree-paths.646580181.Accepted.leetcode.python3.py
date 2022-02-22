@@ -1,12 +1,9 @@
 class Solution(object):
     def binaryTreePaths(self, root):
-
-        if not root:
-            return []
         paths = []
 
         def dfs(root, curr):
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 paths.append(curr + str(root.val))
                 return
             if root.left:

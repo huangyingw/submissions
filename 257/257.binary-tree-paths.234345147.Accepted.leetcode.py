@@ -1,5 +1,6 @@
 class Solution:
     def binaryTreePaths(self, root):
+
         if not root:
             return []
         stack = [(root, str(root.val))]
