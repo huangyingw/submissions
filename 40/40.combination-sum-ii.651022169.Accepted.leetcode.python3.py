@@ -1,6 +1,5 @@
 class Solution:
     def combinationSum2(self, candidates, target):
-
         result = []
         candidates.sort()
         self.findCombination(result, [], candidates, target)

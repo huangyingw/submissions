@@ -1,6 +1,5 @@
 class Codec:
     def serialize(self, root):
-
         def preorder(root):
             if root:
                 seralizeTree.append(str(root.val) + ',')
@@ -13,7 +12,6 @@ class Codec:
         return ''.join(seralizeTree)
 
     def deserialize(self, data):
-
         def buildTree(preorder):
             value = preorder.pop(0)
             if value == '#':

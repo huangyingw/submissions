@@ -1,5 +1,6 @@
 class Solution(object):
     def combinationSum2(self, candidates, target):
+
         candidates.sort()
         dp = [[] for _ in range(target + 1)]
         dp[0].append([])
@@ -9,8 +10,10 @@ class Solution(object):
                     break
                 for k in range(len(dp[i - candidates[j]])):
                     temp = dp[i - candidates[j]][k][:]
+
                     if len(temp) > 0 and temp[-1] >= j:
                         continue
+
                     temp.append(j)
                     dp[i].append(temp)
         res = []

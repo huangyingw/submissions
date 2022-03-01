@@ -1,5 +1,6 @@
 class Codec:
     def serialize(self, root):
+
         def serializeHelper(root, string):
             if root is None:
                 string += "None,"
@@ -11,6 +12,7 @@ class Codec:
         return serializeHelper(root, "")
 
     def deserialize(self, data):
+
         def deserializeHeper(l):
             if l[0] == "None":
                 l.pop(0)

@@ -1,13 +1,5 @@
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 class Codec:
     def serialize(self, root):
-
         def preorder(node):
             if node:
                 vals.append(str(node.val))
@@ -20,7 +12,6 @@ class Codec:
         return " ".join(vals)
 
     def deserialize(self, data):
-
         def preorder():
             val = next(vals)
             if val == '#':
