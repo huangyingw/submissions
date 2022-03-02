@@ -1,10 +1,6 @@
 class Solution(object):
     def jump(self, nums):
-
-        if len(nums) == 1:
-            return 0
-        start, end = 0, 0
-        max_index = 0
+        start, end, max_index = 0, 0, 0
         steps = 1
         while True:
             for i in range(start, end + 1):

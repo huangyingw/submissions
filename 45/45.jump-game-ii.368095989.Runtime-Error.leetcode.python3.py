@@ -14,7 +14,7 @@ You can assume that you can always reach the last index.
 
 class Solution(object):
 	def jump1(self, nums):
-		jumps = 0
+	jumps = 0
   current_jump_max = 0
   previous_jump_max = 0
   for i in range(len(nums) - 1):

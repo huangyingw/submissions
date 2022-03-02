@@ -1,6 +1,5 @@
 class Solution(object):
     def jump(self, nums):
-
         if len(nums) == 1:
             return 0
         start, end = 0, 0
@@ -12,4 +11,4 @@ class Solution(object):
             if max_index >= len(nums) - 1:
                 return steps
             steps += 1
-            start, end = end + 1, max_index
+            end = max_index

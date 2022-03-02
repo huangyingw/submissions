@@ -1,13 +1,11 @@
 class Solution(object):
     def jump(self, nums):
-
         if len(nums) == 1:
             return 0
-        start, end = 0, 0
-        max_index = 0
+        start, end, max_index = 0, 0, 0
         steps = 1
         while True:
-            for i in range(start, end + 1):
+            for i in range(start, end):
                 max_index = max(max_index, i + nums[i])
             if max_index >= len(nums) - 1:
                 return steps

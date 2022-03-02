@@ -1,6 +1,5 @@
 class Solution(object):
     def jump(self, nums):
-
         if len(nums) == 1:
             return 0
         start, end = 0, 0

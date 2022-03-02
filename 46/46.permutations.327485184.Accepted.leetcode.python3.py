@@ -1,6 +1,5 @@
 class Solution:
     def permute(self, nums):
-
         ret = []
         self.dfs(nums, ret, [])
         return ret
