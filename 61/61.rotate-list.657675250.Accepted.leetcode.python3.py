@@ -1,8 +1,7 @@
 class Solution:
     def rotateRight(self, head, k):
-
         if not head:
-            return []
+            return head
         l = 1
         dummy = head
         while dummy.next:

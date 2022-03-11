@@ -6,6 +6,7 @@ class ListNode(object):
 
 class Solution(object):
     def rotateRight(self, head, k):
+
         if not head:
             return
         count = 1
