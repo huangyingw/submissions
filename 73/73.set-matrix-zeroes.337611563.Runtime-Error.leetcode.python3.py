@@ -9,3 +9,4 @@ class Solution(object):
             for col in range(len(matrix[0])):
                 if matrix[row][col] == -1:
                     matrix[row][col] = 0:
+

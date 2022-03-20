@@ -4,7 +4,7 @@ class Solution(object):
         for row in range(len(matrix)):
             if matrix[row][0] == 0:
                 col0 = 0
-            for col in range(1, len(matrix[0])):
+            for col in range(len(matrix[0])):
                 if matrix[row][col] == 0:
                     matrix[row][0] = 0
                     matrix[0][col] = 0
@@ -14,3 +14,5 @@ class Solution(object):
                     matrix[row][col] = 0
             if col0 == 0:
                 matrix[row][0] = 0
+
+

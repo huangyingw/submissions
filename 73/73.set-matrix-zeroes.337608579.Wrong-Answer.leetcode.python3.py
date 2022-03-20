@@ -14,3 +14,4 @@ class Solution(object):
                     matrix[row][col] = 0
             if col0 == 0:
                 matrix[row][0] = 0
+

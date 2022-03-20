@@ -2,7 +2,7 @@ class Solution:
     def simplifyPath(self, path):
         stack = []
         for p in path.split('/'):
-            if p == '..':
+            if p == '..' and stack:
                 stack.pop()
             elif p and p != '.':
                 stack.append(p)

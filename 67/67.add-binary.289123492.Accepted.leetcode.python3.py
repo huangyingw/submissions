@@ -17,3 +17,4 @@ class Solution:
         if carry == '1':
             res.append(carry)
         return ''.join(res[::-1])
+

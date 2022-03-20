@@ -20,3 +20,4 @@ class Solution(object):
         if first_col_zero:
             for r in range(rows):
                 matrix[r][0] = 0
+
