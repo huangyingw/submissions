@@ -13,6 +13,5 @@ class Solution:
             if count_A > 1 or count_L > 2:
                 return False
         return True
-
     def checkRecord(self, s):
         return False if bool(re.search(r"(L){3,}", s)) or bool(re.search(r"(A).*\1", s)) else True

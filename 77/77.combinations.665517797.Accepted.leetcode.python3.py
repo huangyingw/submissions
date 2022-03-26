@@ -1,6 +1,5 @@
 class Solution(object):
     def combine(self, n, k):
-
         if k == 0:
             return [[]]
         if n < k:

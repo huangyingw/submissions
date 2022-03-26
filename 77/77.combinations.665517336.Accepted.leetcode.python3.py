@@ -1,6 +1,5 @@
 class Solution(object):
     def combine(self, n, k):
-
         def helper(left, right, k):
             if k == 0:
                 result.append(list(current))
