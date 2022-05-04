@@ -1,5 +1,6 @@
 class Solution(object):
     def detectCycle(self, head):
+
         if not head or not head.next:
             return None
         q1 = head
@@ -9,6 +10,7 @@ class Solution(object):
                 return None
             q1 = q1.next
             q2 = q2.next.next
+
         res = head
         q1 = q1.next
         while res != q1:

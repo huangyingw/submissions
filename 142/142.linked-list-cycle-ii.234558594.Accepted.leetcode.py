@@ -1,5 +1,6 @@
 class Solution(object):
     def detectCycle(self, head):
+
         slow = fast = head
         while fast != None and fast.next != None:
             slow = slow.next

@@ -1,5 +1,6 @@
 class Solution(object):
     def levelOrder(self, root):
+
         if root is None:
             return []
         current, res = [root], []

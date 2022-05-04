@@ -1,5 +1,6 @@
 class Solution(object):
     def sortedArrayToBST(self, nums):
+
         def constructTree(nums, start, end):
             if start > end:
                 return None

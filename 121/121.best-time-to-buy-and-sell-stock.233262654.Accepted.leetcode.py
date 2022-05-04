@@ -1,5 +1,6 @@
 class Solution(object):
     def maxProfit(self, prices):
+
         buy = float('-inf')
         sell = 0
         for price in prices:

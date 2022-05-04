@@ -1,5 +1,6 @@
 class Solution(object):
     def levelOrderBottom(self, root):
+
         if not root:
             return []
         queue = [(root, 0)]

@@ -1,5 +1,6 @@
 class Solution(object):
     def maxArea(self, height):
+
         left = 0
         right = len(height) - 1
         max_area = (right - left) * min(height[right], height[left])

@@ -1,5 +1,6 @@
 class Solution(object):
     def maxArea(self, height):
+
         maxArea = 0
         left = 0
         right = len(height) - 1

@@ -7,6 +7,7 @@ class TreeNode(object):
 
 class Solution(object):
     def levelOrderBottom(self, root):
+
         traversal = []
         self.inorder(root, 0, traversal)
         return traversal[::-1]

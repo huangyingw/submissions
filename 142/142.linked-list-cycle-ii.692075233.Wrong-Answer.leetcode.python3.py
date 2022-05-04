@@ -1,10 +1,13 @@
 class Solution(object):
     def detectCycle(self, head):
-        fast = slow = head
-        while fast and fast.next and fast != slow:
+        fast = head
+        slow = head
+        while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
+            if fast == slow:
+                break
         while fast != head:
             fast = fast.next
             head = head.next
-        return fast
+        return fast.next

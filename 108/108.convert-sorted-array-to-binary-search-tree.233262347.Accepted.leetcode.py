@@ -7,6 +7,7 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
+
         return self.convert(nums, 0, len(nums) - 1)
 
     def convert(self, nums, left, right):

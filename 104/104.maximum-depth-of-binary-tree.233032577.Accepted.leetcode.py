@@ -1,5 +1,6 @@
 class Solution:
     def maxDepth(self, root):
+
         if root is None:
             return 0
         ld = self.maxDepth(root.left)

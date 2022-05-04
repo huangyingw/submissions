@@ -1,5 +1,7 @@
 class Solution(object):
+
     def maxArea(self, height):
+
         ls = len(height)
         lm = min(height[0], height[ls - 1])
         max_v = lm * (ls - 1)

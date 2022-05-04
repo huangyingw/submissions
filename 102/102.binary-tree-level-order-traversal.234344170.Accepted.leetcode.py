@@ -7,6 +7,7 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
+
         if not root:
             return []
         result = []
