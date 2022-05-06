@@ -1,14 +1,11 @@
 class Solution:
     def reorderList(self, head: ListNode) -> None:
-
         if not head:
             return
-
         slow = fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-
         prev = None
         while slow:
             temp = slow

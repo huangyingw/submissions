@@ -4,11 +4,10 @@ class Solution(object):
             if not head or not head.next:
                 return head
             second = head.next
-            dfs(second)
+            ret = dfs(second)
             second.next = head
-            return second
-        if not head:
-            return head
+            return ret
         result = dfs(head)
-        head.next = None
+        if head:
+            head.next = None
         return result
