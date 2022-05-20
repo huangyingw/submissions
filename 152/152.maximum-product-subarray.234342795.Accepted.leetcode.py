@@ -1,5 +1,6 @@
 class Solution:
     def maxProduct(self, nums):
+
         if not nums:
             return 0
         result = big = small = nums[0]

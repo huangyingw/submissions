@@ -1,8 +1,11 @@
 class Solution(object):
+
     def reverseWords(self, s):
+
         s = s.strip(' ')
         array_s = []
         last = ' '
+
         for i in range(len(s)):
             if s[i] != ' ':
                 array_s.append(s[i])

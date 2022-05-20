@@ -16,4 +16,5 @@ class Solution(object):
             if cur - pre >= 2:
                 ranges.append(getRange(pre + 1, cur - 1))
             pre = cur
+            print
         return ranges

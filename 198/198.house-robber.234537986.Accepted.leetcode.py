@@ -1,5 +1,7 @@
 class Solution:
+
     def rob(self, nums):
+
         if not nums:
             return 0
         memo = [0 for _ in range(len(nums) + 1)]
@@ -9,6 +11,7 @@ class Solution:
         return memo[len(nums)]
 
     def rob(self, nums):
+
         if not nums:
             return 0
         pre1 = 0

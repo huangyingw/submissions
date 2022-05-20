@@ -1,5 +1,6 @@
 class Solution:
     def isValid(self, s):
+
         if s is None:
             return True
         stack = []

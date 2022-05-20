@@ -1,5 +1,6 @@
 class Solution(object):
     def maximumGap(self, nums):
+
         if len(nums) < 2:
             return 0
         lower = min(nums)

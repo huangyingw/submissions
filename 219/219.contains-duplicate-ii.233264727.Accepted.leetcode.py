@@ -1,5 +1,6 @@
 class Solution(object):
     def containsNearbyDuplicate(self, nums, k):
+
         window = set()
         for i, num in enumerate(nums):
             if i > k:

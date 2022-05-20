@@ -1,5 +1,6 @@
 class Solution:
     def removeElements(self, head, val):
+
         ret = res = ListNode(0)
         res.next = head
         while res.next:

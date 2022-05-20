@@ -2,6 +2,7 @@ import functools
 
 
 class Solution:
+
     def largestNumber(self, nums):
         def comparator(x, y):
             if x + y > y + x:

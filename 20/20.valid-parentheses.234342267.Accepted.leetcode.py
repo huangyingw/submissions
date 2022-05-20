@@ -1,5 +1,6 @@
 class Solution(object):
     def isValid(self, s):
+
         maps = {'(': ')', '{': '}', '[': ']'}
         stack = []
         for c in s:

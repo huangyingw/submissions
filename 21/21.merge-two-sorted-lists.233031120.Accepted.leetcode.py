@@ -1,5 +1,6 @@
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
+
         pos = dummyHead = ListNode(-1)
         while l1 is not None and l2 is not None:
             if l1.val <= l2.val:
@@ -9,8 +10,10 @@ class Solution(object):
                 pos.next = l2
                 l2 = l2.next
             pos = pos.next
+
         if l1 is not None:
             pos.next = l1
+
         if l2 is not None:
             pos.next = l2
         return dummyHead.next

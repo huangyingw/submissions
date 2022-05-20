@@ -6,6 +6,7 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, l1, l2):
+
         dummy_head = tail = ListNode(0)
         while l1 and l2:
             if l1.val < l2.val:
