@@ -1,6 +1,5 @@
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
-
         if not root:
             return None
         if root == p or root == q:
@@ -9,4 +8,4 @@ class Solution(object):
         r = self.lowestCommonAncestor(root.right, p, q)
         if l and r:
             return root
-        return l if l else r
+        return l or r

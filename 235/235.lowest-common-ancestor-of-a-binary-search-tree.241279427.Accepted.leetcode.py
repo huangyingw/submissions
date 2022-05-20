@@ -1,6 +1,5 @@
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
-
         if not root:
             return None
         if root.val > p.val and root.val > q.val:
