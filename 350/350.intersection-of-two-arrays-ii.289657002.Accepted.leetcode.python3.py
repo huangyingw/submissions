@@ -1,6 +1,8 @@
 class Solution:
+
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if len(nums2) > len(nums1):
+
             self.intersect(nums2, nums1)
         d = {}
         res = []
@@ -14,6 +16,7 @@ class Solution:
 
 
 class Solution:
+
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if len(nums2) > len(nums1):
             self.intersect(nums2, nums1)

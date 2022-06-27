@@ -1,4 +1,5 @@
 class Solution(object):
+
     def maxSubArray(self, nums):
         maxEndingHere = maxSofFar = nums[0]
         for i in range(1, len(nums)):

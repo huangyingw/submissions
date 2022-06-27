@@ -1,5 +1,6 @@
 class Solution:
     def isUgly(self, num):
+
         if num <= 0:
             return False
         while num % 5 == 0:

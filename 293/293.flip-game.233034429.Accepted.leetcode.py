@@ -1,5 +1,6 @@
 class Solution(object):
     def generatePossibleNextMoves(self, s):
+
         res = []
         if s is None or len(s) == 0:
             return res

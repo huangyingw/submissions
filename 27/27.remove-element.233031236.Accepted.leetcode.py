@@ -1,4 +1,5 @@
 class Solution(object):
+
     def removeElement(self, nums, val):
         ls = len(nums)
         if ls == 0:

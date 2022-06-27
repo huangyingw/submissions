@@ -1,5 +1,6 @@
 class Solution(object):
     def productExceptSelf(self, nums):
+
         products = [1]
         for i in range(1, len(nums)):
             products.append(nums[i - 1] * products[-1])

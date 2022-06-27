@@ -1,5 +1,6 @@
 class Solution(object):
     def searchMatrix(self, matrix, target):
+
         if not matrix or not matrix[0]:
             return False
         rows, cols = len(matrix), len(matrix[0])

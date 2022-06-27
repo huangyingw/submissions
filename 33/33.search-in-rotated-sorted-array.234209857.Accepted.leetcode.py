@@ -1,5 +1,6 @@
 class Solution:
     def search(self, nums, target):
+
         def get(start, end):
             if start > end:
                 return -1

@@ -1,5 +1,6 @@
 class Solution:
     def productExceptSelf(self, nums):
+
         n = 1
         output = []
         for z in range(len(nums)):
