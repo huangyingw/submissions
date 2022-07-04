@@ -1,6 +1,5 @@
 class Solution(object):
     def removeInterval(self, intervals, toBeRemoved):
-
         remove_start, remove_end = toBeRemoved
         result = []
         for i, (start, end) in enumerate(intervals):

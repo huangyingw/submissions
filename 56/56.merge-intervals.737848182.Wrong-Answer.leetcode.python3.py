@@ -3,20 +3,18 @@ class compare(object):
         self.interval = interval
 
     def __lt__(self, other):
-        if self.interval.start == other.interval.start:
-            return self.interval.end < other.interval.end
-        return self.interval.start < other.interval.end
+        if self.interval[0] == other.interval[0]:
+            return self.interval[1] < other.interval[1]
+        return self.interval[0] < other.interval[1]
 
 
 class Solution(object):
     def merge(self, intervals):
-
         intervals = sorted(intervals, key=compare)
-
         merged = []
         for interval in intervals:
-            if not merged or merged[-1].end < interval.start:
+            if not merged or merged[-1][1] < interval[0]:
                 merged.append(interval)
             else:
-                merged[-1].end = max(merged[-1].end, interval.end)
+                merged[-1][1] = max(merged[-1][1], interval[1])
         return merged

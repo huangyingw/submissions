@@ -1,6 +1,5 @@
 class Solution:
     def canJump(self, nums):
-
         memo = [0] * len(nums)
         memo[-1] = 1
 

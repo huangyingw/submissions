@@ -6,6 +6,7 @@ class Interval:
 
 class Solution:
     def merge(self, intervals):
+
         result = []
         for i in sorted(intervals, key=lambda x: x.start):
             if result and result[-1].end >= i.start:
