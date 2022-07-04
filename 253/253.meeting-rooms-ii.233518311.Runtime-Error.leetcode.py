@@ -7,6 +7,7 @@ import heapq
 
 class Solution(object):
     def minMeetingRooms(self, intervals):
+
         max_rooms = 0
         rooms = []
         intervals.sort(key=lambda x: x.start)

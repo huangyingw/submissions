@@ -1,15 +1,14 @@
 class Solution(object):
     def minMeetingRooms(self, intervals):
-
         class Point:
             def __init__(self, time, flag):
                 self.time = time
                 self.flag = flag
         points = []
         for interval in intervals:
-            points.append(Point(interval.start, 'start'))
-            points.append(Point(interval.end, 'end'))
-        points.sort(key=lambda point: point.time)
+            points.append(Point(interval[0], 'start'))
+            points.append(Point(interval[1], 'end'))
+        points.sort(key=lambda point: (point.time, point.flag))
         count = 0
         result = 0
         for point in points:
