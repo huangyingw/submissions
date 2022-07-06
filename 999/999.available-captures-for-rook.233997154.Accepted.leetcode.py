@@ -1,5 +1,6 @@
 class Solution(object):
     def numRookCaptures(self, board):
+
         SIZE = 8
         for r in range(SIZE):
             for c in range(SIZE):

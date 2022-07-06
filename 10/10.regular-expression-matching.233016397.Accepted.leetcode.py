@@ -1,5 +1,6 @@
 class Solution(object):
     def isMatch(self, s, p):
+
         if s == p:
             return True
         m, n = len(s), len(p)
@@ -8,6 +9,7 @@ class Solution(object):
         for j in range(1, n):
             if p[j] == '*' and dp[0][j - 1]:
                 dp[0][j + 1] = True
+
         for i in range(m):
             for j in range(n):
                 if p[j] == '.' or p[j] == s[i]:

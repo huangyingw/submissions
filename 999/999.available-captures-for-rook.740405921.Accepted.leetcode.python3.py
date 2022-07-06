@@ -1,6 +1,5 @@
 class Solution(object):
     def numRookCaptures(self, board):
-
         result = 0
         rook_index = (0, 0)
         for row in range(len(board)):

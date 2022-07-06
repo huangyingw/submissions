@@ -7,7 +7,9 @@ from typing import List
 
 
 class Solution:
+
     def mergeKLists(self, lists):
+
         dummy = curr = ListNode(0)
         q = []
         for idx, node in enumerate(lists):

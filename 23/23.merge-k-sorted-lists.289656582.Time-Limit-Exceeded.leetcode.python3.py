@@ -5,6 +5,7 @@ class ListNode:
 
 
 class SolutionDvivideAndConquer:
+
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         if not lists:
             return None
@@ -36,9 +37,11 @@ from queue import PriorityQueue
 
 
 class Solution_pq:
+
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         head = cur = ListNode(0)
         q = PriorityQueue()
+
         count = 0
         for l in lists:
             if l:
@@ -56,10 +59,12 @@ class Solution_pq:
 
 
 class Solution:
+
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         res = ListNode(0)
         cur = res
         while cur:
+
             minNode, index = None, -1
             for i in range(len(lists)):
                 if lists[i]:
