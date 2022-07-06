@@ -1,5 +1,6 @@
 class Solution(object):
     def removeNthFromEnd(self, head, n):
+
         p1, p2 = head, head
         if not head:
             return head

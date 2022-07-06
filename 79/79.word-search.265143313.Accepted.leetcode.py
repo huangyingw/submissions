@@ -1,6 +1,5 @@
 class Solution(object):
     def exist(self, board, word):
-
         result = False
         for row in range(len(board)):
             for col in range(len(board[0])):

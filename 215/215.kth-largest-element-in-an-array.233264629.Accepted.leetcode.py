@@ -3,6 +3,7 @@ import random
 
 class Solution(object):
     def findKthLargest(self, nums, k):
+
         k = len(nums) - k
         left, right = 0, len(nums) - 1
         while True:

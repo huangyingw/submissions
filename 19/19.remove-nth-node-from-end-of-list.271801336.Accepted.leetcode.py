@@ -1,7 +1,5 @@
 class Solution(object):
-
     def removeNthFromEnd(self, head, n):
-
         if head is None:
             return None
         slow = fast = head

@@ -1,5 +1,6 @@
 class Solution(object):
     def exist(self, board, word):
+
         if not board or not board[0]:
             return False
         rows, cols = len(board), len(board[0])

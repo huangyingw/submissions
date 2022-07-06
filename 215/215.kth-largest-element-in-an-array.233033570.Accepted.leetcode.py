@@ -1,5 +1,7 @@
 class Solution(object):
+
     def findKthLargest(self, nums, k):
+
         random.shuffle(nums)
         return self.quickSelection(nums, 0, len(nums) - 1, len(nums) - k)
 
@@ -10,6 +12,7 @@ class Solution(object):
         left = start
         for i in range(start, end):
             if nums[i] <= pivot:
+
                 nums[left], nums[i] = nums[i], nums[left]
                 left += 1
         nums[left], nums[end] = nums[end], nums[left]
