@@ -7,5 +7,11 @@ class WordDistance(object):
     def shortest(self, word1, word2):
         idxs1 = self.w_to_idx[word1]
         idxs2 = self.w_to_idx[word2]
-        print 'idxs1 --> %s' % idxs1
-        print 'idxs2 --> %s' % idxs2
+        idx1 = idx2 = 0
+        while idx1 < len(idxs1) and idx2 < len(idxs2):
+            result = min(result, abs(idxs1[idx1] - idxs2[idx2]))
+            if idxs1[idx1] < idxs2[idx2]:
+                idx1 += 1
+            else:
+                idx2 += 1
+        return result
