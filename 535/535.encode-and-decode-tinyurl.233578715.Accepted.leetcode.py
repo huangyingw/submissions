@@ -8,6 +8,7 @@ class Codec:
         self.map = {}
 
     def encode(self, longUrl):
+
         encoding = []
         for i in range(6):
             encoding.append(self.letters[random.randint(0, 61)])
@@ -18,4 +19,5 @@ class Codec:
         return encoding
 
     def decode(self, shortUrl):
+
         return self.map[shortUrl]

@@ -1,6 +1,5 @@
 class Solution:
     def fourSum(self, nums, target):
-
         def findNsum(nums, target, N, cur):
             if len(nums) < N or N < 2 or nums[0] * N > target or nums[-1] * N < target:
                 return
