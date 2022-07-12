@@ -1,6 +1,5 @@
 class Solution:
     def simplifyPath(self, path):
-
         stack = []
         for p in path.split('/'):
             if p == '..':

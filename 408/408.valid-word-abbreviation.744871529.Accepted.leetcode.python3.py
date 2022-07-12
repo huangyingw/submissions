@@ -1,11 +1,10 @@
 class Solution(object):
     def validWordAbbreviation(self, word, abbr):
-
         i, j = 0, 0
         while j < len(abbr):
-            if abbr[j] < "a":
-                if abbr[j] == "0":
-                    return False
+            if abbr[j] == "0":
+                return False
+            elif abbr[j] < "a":
                 count = 0
                 while j < len(abbr) and abbr[j] < "a":
                     count = count * 10 + int(abbr[j])

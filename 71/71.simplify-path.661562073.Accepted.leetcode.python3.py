@@ -9,4 +9,3 @@ class Solution(object):
             elif item and item != '.':
                 result.append(item)
         return '/' + '/'.join(result)
-

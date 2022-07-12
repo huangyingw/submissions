@@ -7,4 +7,3 @@ class Solution:
             elif p and p != '.':
                 stack.append(p)
         return '/' + '/'.join(stack)
-
