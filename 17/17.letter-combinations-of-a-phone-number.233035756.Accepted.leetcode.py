@@ -1,5 +1,6 @@
 class Solution(object):
     def letterCombinations(self, digits):
+
         if not digits or '0' in digits or '1' in digits:
             return []
         results = [[]]
@@ -17,4 +18,5 @@ class Solution(object):
                 for letter in mapping[digit]:
                     temp.append(result + [letter])
             results = temp
+
         return ["".join(result) for result in results]
