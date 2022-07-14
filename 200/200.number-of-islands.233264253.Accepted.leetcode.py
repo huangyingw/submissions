@@ -1,5 +1,6 @@
 class Solution(object):
     def numIslands(self, grid):
+
         if not grid:
             return 0
         rows, cols = len(grid), len(grid[0])

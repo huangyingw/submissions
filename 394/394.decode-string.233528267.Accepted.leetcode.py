@@ -1,5 +1,6 @@
 class Solution(object):
     def decodeString(self, s):
+
         stack = []
         repeats = 0
         digits = set("0123456789")
@@ -23,6 +24,7 @@ class Solution(object):
 
 class Solution2(object):
     def decodeString(self, s):
+
         self.i = 0
         return "".join(self.decode(s))
 

@@ -1,5 +1,6 @@
 class Solution(object):
     def compress(self, chars):
+
         chars += " "
         char_start = 0
         result_length = 0

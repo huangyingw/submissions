@@ -1,6 +1,5 @@
 class Solution:
     def decodeString(self, s):
-
         stack = []
         num = 0
         curString = ''
@@ -8,7 +7,6 @@ class Solution:
             if c == '[':
                 stack.append(curString)
                 stack.append(num)
-                curString = ''
                 num = 0
             elif c == ']':
                 curNum = stack.pop()

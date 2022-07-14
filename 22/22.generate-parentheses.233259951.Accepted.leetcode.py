@@ -1,5 +1,6 @@
 class Solution(object):
     def generateParenthesis(self, n):
+
         result = []
         self.generate([], n, n, result)
         return result

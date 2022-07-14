@@ -1,6 +1,5 @@
 class Solution:
     def decodeString(self, s):
-
         stack = []
         n = 0
         for c in s:

@@ -1,15 +1,12 @@
 class Solution(object):
     def compress(self, chars):
-
         n = len(chars)
-        if n == 0:
-            return 0
         idx = 0
-        cnt = 0
+        cnt = 1
         for i in range(n):
-            cnt += 1
-            if (i + 1 >= n) or (chars[i] != chars[i + 1]):
-                chars[idx] = chars[i]
+            if chars[i] == chars[i - 1]:
+                cnt += 1
+            else:
                 idx += 1
                 if cnt > 1:
                     for j in str(cnt):
