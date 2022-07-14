@@ -1,6 +1,5 @@
 class Solution:
     def addTwoNumbers(self, l1, l2):
-
         ans = []
         z = 0
         return self.add(l1, l2, ans, z)

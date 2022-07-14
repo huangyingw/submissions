@@ -1,5 +1,6 @@
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
+
         res = ListNode(0)
         cur = res
         carry = 0

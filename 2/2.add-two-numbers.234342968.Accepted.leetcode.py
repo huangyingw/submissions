@@ -6,6 +6,7 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
+
         dummy = current = ListNode(0)
         carry = 0
         while l1 or l2 or carry:

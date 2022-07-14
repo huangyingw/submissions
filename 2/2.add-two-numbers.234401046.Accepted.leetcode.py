@@ -1,5 +1,6 @@
 class Solution:
     def addTwoNumbers(self, l1, l2):
+
         carry = 0
         res = l1
         while l1 or l2:

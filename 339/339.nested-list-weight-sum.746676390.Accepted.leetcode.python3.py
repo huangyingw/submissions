@@ -1,6 +1,5 @@
 class Solution(object):
     def depthSum(self, nestedList):
-
         def helper(nested, depth):
             total = 0
             for item in nested:

@@ -5,8 +5,10 @@ class ListNode(object):
 
 
 class Solution(object):
+
     def addTwoNumbers(self, l1, l2):
         carry = 0
+
         head = curr = ListNode(0)
         while l1 or l2:
             val = carry
