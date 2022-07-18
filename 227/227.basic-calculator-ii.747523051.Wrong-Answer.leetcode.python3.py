@@ -1,13 +1,12 @@
 class Solution(object):
     def calculate(self, s):
-
         stack = []
         num = 0
         op = '+'
         for i, c in enumerate(s):
             if c.isdigit():
                 num = num * 10 + int(c)
-            if (not c.isdigit() and c != ' ') or i == len(s) - 1:
+            elif (not c.isdigit() and c != ' ') or i == len(s) - 1:
                 if op == '+':
                     stack.append(num)
                 elif op == '-':

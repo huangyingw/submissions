@@ -1,6 +1,5 @@
 class Solution:
     def longestPalindrome(self, s):
-
         result = ''
         for i in range(len(s)):
             odd = self.getPalindrome(i, i, s)
@@ -15,4 +14,4 @@ class Solution:
         while l >= 0 and r < len(s) and s[l] == s[r]:
             l -= 1
             r += 1
-        return s[l + 1:r]
+        return s[l:r]

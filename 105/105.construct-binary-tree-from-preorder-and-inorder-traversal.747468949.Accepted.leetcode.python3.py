@@ -1,6 +1,5 @@
 class Solution(object):
     def buildTree(self, preorder, inorder):
-
         map = {}
         for idx, val in enumerate(inorder):
             map[val] = idx

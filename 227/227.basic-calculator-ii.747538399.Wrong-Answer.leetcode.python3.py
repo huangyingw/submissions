@@ -1,6 +1,5 @@
 class Solution(object):
     def calculate(self, s):
-
         stack = []
         num = 0
         op = '+'
@@ -17,8 +16,6 @@ class Solution(object):
                 else:
                     left = stack.pop()
                     stack.append(left // num)
-                    if left // num < 0 and left % num != 0:
-                        stack[-1] += 1
                 num = 0
                 op = c
         return sum(stack)

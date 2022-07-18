@@ -10,6 +10,7 @@ class TreeNode(object):
 
 class Solution(object):
     def buildTree(self, preorder, inorder):
+
         def build(stop):
             if not inorder or inorder[-1] == stop:
                 return None
