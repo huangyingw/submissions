@@ -1,6 +1,5 @@
 class Solution(object):
     def minRemoveToMakeValid(self, s):
-
         opening = []
         removals = set()
         for i, c in enumerate(s):
