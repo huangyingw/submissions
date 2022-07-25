@@ -5,7 +5,7 @@ class Solution(object):
         for idx, val in enumerate(s):
             if val.isdigit():
                 num = num * 10 + ord(val) - ord('0')
-                if idx + 1 == len(s) or not s[idx + 1].isdigit():
+                if idx + 1 == len(s):
                     result += stack.pop() * num
             else:
                 num = 0

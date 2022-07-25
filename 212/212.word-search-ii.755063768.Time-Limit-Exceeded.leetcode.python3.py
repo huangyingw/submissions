@@ -32,7 +32,6 @@ class Solution(object):
         return
 
     def findWords(self, board, words):
-
         trie = Trie()
         for word in words:
             trie.insert(word)

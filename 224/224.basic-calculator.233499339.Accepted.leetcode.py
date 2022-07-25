@@ -1,5 +1,6 @@
 class Solution(object):
     def calculate(self, s):
+
         digits = {str(i) for i in range(10)}
         expression = ['(']
         for c in s:

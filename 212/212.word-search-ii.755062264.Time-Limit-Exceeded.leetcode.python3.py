@@ -1,8 +1,5 @@
 class Solution(object):
     def findWords(self, board, words):
-
-        if not board or not board[0]:
-            return []
         root = {}
         for word in words:
             curr = root
