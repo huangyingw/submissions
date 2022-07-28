@@ -7,18 +7,20 @@ class Solution(object):
             if c.isdigit():
                 num = num * 10 + int(c)
                 print("num --> %s" % num)
-            elif (not c.isdigit()) or i == len(s) - 1:
+            if (not c.isdigit()) or i == len(s) - 1:
                 if op == '+':
                     stack.append(num)
+                    print("stack --> %s" % stack)
                 elif op == '-':
                     stack.append(-num)
+                    print("stack --> %s" % stack)
                 elif op == '*':
                     stack.append(stack.pop() * num)
+                    print("stack --> %s" % stack)
                 else:
                     left = stack.pop()
-                    print("left --> %s" % left)
-                    print("stack.append --> %s" % (left // num))
                     stack.append(left // num)
+                    print("stack --> %s" % stack)
                     if left // num < 0 and left % num != 0:
                         stack[-1] += 1
                 num = 0

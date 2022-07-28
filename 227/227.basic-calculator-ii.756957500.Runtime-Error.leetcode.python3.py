@@ -6,8 +6,7 @@ class Solution(object):
         for i, c in enumerate(s):
             if c.isdigit():
                 num = num * 10 + int(c)
-                print("num --> %s" % num)
-            elif (not c.isdigit()) or i == len(s) - 1:
+            if (not c.isdigit() or c != ' ') or i == len(s) - 1:
                 if op == '+':
                     stack.append(num)
                 elif op == '-':
@@ -16,12 +15,9 @@ class Solution(object):
                     stack.append(stack.pop() * num)
                 else:
                     left = stack.pop()
-                    print("left --> %s" % left)
-                    print("stack.append --> %s" % (left // num))
                     stack.append(left // num)
                     if left // num < 0 and left % num != 0:
                         stack[-1] += 1
                 num = 0
                 op = c
         return sum(stack)
-
