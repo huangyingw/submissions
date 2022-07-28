@@ -19,4 +19,3 @@ class Solution(object):
                 num = 0
                 op = c
         return sum(stack)
-

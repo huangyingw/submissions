@@ -15,13 +15,9 @@ class Solution(object):
                     stack.append(stack.pop() * num)
                 else:
                     left = stack.pop()
-                    print("left --> %s" % left)
-                    print("num --> %s" % num)
                     stack.append(left // num)
-                    print("stack --> %s" % stack)
                     if left // num < 0:
                         stack[-1] = -(-left // num)
                 num = 0
                 op = c
         return sum(stack)
-
