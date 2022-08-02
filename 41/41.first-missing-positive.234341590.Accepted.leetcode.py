@@ -1,5 +1,6 @@
 class Solution:
     def firstMissingPositive(self, nums):
+
         if not nums or len(nums) == 0:
             return 1
         for i in range(len(nums)):
