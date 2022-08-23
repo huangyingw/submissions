@@ -1,5 +1,6 @@
 class Solution(object):
     def prefixesDivBy5(self, A):
+
         result = []
         num = 0
         for bit in A:
