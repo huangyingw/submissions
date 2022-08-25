@@ -1,6 +1,5 @@
 class Solution(object):
     def isValid(self, S):
-
         stack = []
         if not S:
             return False
