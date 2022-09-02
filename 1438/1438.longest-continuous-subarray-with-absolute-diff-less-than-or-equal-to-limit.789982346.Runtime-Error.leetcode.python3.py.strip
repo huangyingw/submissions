@@ -1,0 +1,7 @@
+class Solution(object):
+    def longestSubarray(self, nums, limit):
+        q_max = q_min = []
+        ans = end = begin = 0
+        while end < len(nums):
+           while q_min and nums[end] < q_min[-1]:
+               q_min.pop()
