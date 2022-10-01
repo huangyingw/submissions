@@ -3,9 +3,11 @@ from collections import deque
 
 class Solution:
     def maxSlidingWindow(self, nums, k):
+
         q = deque()
         ret = []
         for i, num in enumerate(nums):
+
             while q and nums[q[-1]] < num:
                 q.pop()
             q.append(i)
