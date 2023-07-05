@@ -1,5 +1,6 @@
 class Solution(object):
     def findJudge(self, N, trust):
+
         if not trust:
             return 1
         mapping = {}

@@ -1,5 +1,6 @@
 class Solution(object):
     def findJudge(self, N, trust):
+
         trust_count = [0] * (N + 1)
         for trustee, trusted in trust:
             trust_count[trusted] += 1
