@@ -1,5 +1,6 @@
 class Solution(object):
     def topKFrequent(self, nums, k):
+
         if not nums:
             return []
         frequency = {}

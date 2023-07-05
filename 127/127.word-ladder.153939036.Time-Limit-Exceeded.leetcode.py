@@ -1,5 +1,7 @@
 class Solution:
+
     def ladderLength(self, beginWord, endWord, wordList):
+
         queue = [(beginWord, 1)]
         while queue:
             e, lens = queue.pop(0)

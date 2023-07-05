@@ -3,6 +3,7 @@ import string
 
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
+
         wordList.discard(beginWord)
         wordList.discard(endWord)
         hash_map, res = {}, []

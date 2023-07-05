@@ -8,6 +8,7 @@ class Solution(object):
                     d[s].append(word)
                 else:
                     d[s] = [word]
+        print d
         queue, visited = [], set()
         queue.append((beginWord, 1))
         while queue:

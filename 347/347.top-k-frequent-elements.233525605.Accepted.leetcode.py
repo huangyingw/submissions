@@ -3,6 +3,7 @@ from collections import Counter
 
 class Solution(object):
     def topKFrequent(self, nums, k):
+
         n = len(nums)
         frequencies = [[] for _ in range(n + 1)]
         for num, freq in Counter(nums).items():

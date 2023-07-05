@@ -7,6 +7,7 @@ class TreeNode(object):
 
 class Solution(object):
     def recoverTree(self, root):
+
         self.swapped1 = None
         self.swapped2 = None
         self.prev = TreeNode(float('-inf'))
